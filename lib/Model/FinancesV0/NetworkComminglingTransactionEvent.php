@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * NetworkComminglingTransactionEvent Class Doc Comment
  *
  * @category Class
  * @description A network commingling transaction event.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -64,8 +64,8 @@ class NetworkComminglingTransactionEvent extends BaseModel implements ModelInter
         'swap_reason' => 'string',
         'asin' => 'string',
         'marketplace_id' => 'string',
-        'tax_exclusive_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'tax_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'tax_exclusive_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'tax_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -320,7 +320,7 @@ class NetworkComminglingTransactionEvent extends BaseModel implements ModelInter
     /**
      * Gets tax_exclusive_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTaxExclusiveAmount()
     {
@@ -330,7 +330,7 @@ class NetworkComminglingTransactionEvent extends BaseModel implements ModelInter
     /**
      * Sets tax_exclusive_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $tax_exclusive_amount tax_exclusive_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $tax_exclusive_amount tax_exclusive_amount
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class NetworkComminglingTransactionEvent extends BaseModel implements ModelInter
     /**
      * Gets tax_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTaxAmount()
     {
@@ -353,7 +353,7 @@ class NetworkComminglingTransactionEvent extends BaseModel implements ModelInter
     /**
      * Sets tax_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $tax_amount tax_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $tax_amount tax_amount
      *
      * @return self
      */

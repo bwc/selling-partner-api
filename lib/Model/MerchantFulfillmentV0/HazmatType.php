@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
 
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * HazmatType Class Doc Comment
  *
  * @category Class
  * @description Hazardous materials options for a package. Consult the terms and conditions for each carrier for more information on hazardous materials.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  */
 class HazmatType

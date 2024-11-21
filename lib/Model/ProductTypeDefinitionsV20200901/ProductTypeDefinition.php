@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductTypeDefinitionsV20200901;
+namespace SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ProductTypeDefinition Class Doc Comment
  *
  * @category Class
  * @description A product type definition represents the attributes and data requirements for a product type in the Amazon catalog. Product type definitions are used interchangeably between the Selling Partner API for Listings Items, Selling Partner API for Catalog Items, and JSON-based listings feeds in the Selling Partner API for Feeds.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,15 +58,15 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'meta_schema' => '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLink',
-        'schema' => '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLink',
+        'meta_schema' => '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLink',
+        'schema' => '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLink',
         'requirements' => 'string',
         'requirements_enforced' => 'string',
-        'property_groups' => 'map[string,\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\PropertyGroup]',
+        'property_groups' => 'map[string,\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\PropertyGroup]',
         'locale' => 'string',
         'marketplace_ids' => 'string[]',
         'product_type' => 'string',
-        'product_type_version' => '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeVersion'
+        'product_type_version' => '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeVersion'
     ];
 
     /**
@@ -304,7 +304,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets meta_schema
      *
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLink|null
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLink|null
      */
     public function getMetaSchema()
     {
@@ -314,7 +314,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets meta_schema
      *
-     * @param \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLink|null $meta_schema meta_schema
+     * @param \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLink|null $meta_schema meta_schema
      *
      * @return self
      */
@@ -327,7 +327,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets schema
      *
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLink
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLink
      */
     public function getSchema()
     {
@@ -337,7 +337,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets schema
      *
-     * @param \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLink $schema schema
+     * @param \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLink $schema schema
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets property_groups
      *
-     * @return map[string,\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\PropertyGroup]
+     * @return map[string,\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\PropertyGroup]
      */
     public function getPropertyGroups()
     {
@@ -426,7 +426,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets property_groups
      *
-     * @param map[string,\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\PropertyGroup] $property_groups Mapping of property group names to property groups. Property groups represent logical groupings of schema properties that can be used for display or informational purposes.
+     * @param map[string,\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\PropertyGroup] $property_groups Mapping of property group names to property groups. Property groups represent logical groupings of schema properties that can be used for display or informational purposes.
      *
      * @return self
      */
@@ -508,7 +508,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets product_type_version
      *
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeVersion
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeVersion
      */
     public function getProductTypeVersion()
     {
@@ -518,7 +518,7 @@ class ProductTypeDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets product_type_version
      *
-     * @param \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeVersion $product_type_version product_type_version
+     * @param \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeVersion $product_type_version product_type_version
      *
      * @return self
      */

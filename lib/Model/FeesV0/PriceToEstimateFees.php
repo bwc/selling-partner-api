@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PriceToEstimateFees Class Doc Comment
  *
  * @category Class
  * @description Price information for an item, used to estimate fees.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'listing_price' => '\SellingPartnerApi\Model\FeesV0\MoneyType',
-        'shipping' => '\SellingPartnerApi\Model\FeesV0\MoneyType',
-        'points' => '\SellingPartnerApi\Model\FeesV0\Points'
+        'listing_price' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType',
+        'shipping' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType',
+        'points' => '\SellingPartnerApiV5\Model\FeesV0\Points'
     ];
 
     /**
@@ -152,7 +152,7 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets listing_price
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType
      */
     public function getListingPrice()
     {
@@ -162,7 +162,7 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets listing_price
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType $listing_price listing_price
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType $listing_price listing_price
      *
      * @return self
      */
@@ -175,7 +175,7 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets shipping
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType|null
      */
     public function getShipping()
     {
@@ -185,7 +185,7 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets shipping
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType|null $shipping shipping
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType|null $shipping shipping
      *
      * @return self
      */
@@ -198,7 +198,7 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets points
      *
-     * @return \SellingPartnerApi\Model\FeesV0\Points|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\Points|null
      */
     public function getPoints()
     {
@@ -208,7 +208,7 @@ class PriceToEstimateFees extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets points
      *
-     * @param \SellingPartnerApi\Model\FeesV0\Points|null $points points
+     * @param \SellingPartnerApiV5\Model\FeesV0\Points|null $points points
      *
      * @return self
      */

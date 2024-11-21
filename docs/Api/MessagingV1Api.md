@@ -1,4 +1,4 @@
-# SellingPartnerApi\MessagingV1Api
+# SellingPartnerApiV5\MessagingV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 ## `confirmCustomizationDetails()`
 
 ```php
-confirmCustomizationDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateConfirmCustomizationDetailsResponse
+confirmCustomizationDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmCustomizationDetailsResponse
 ```
 
 
@@ -42,19 +42,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateConfirmCustomizationDetailsRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateConfirmCustomizationDetailsRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmCustomizationDetailsRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmCustomizationDetailsRequest
 
 try {
     $result = $apiInstance->confirmCustomizationDetails($amazon_order_id, $marketplace_ids, $body);
@@ -70,11 +70,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateConfirmCustomizationDetailsRequest**](../Model/MessagingV1/CreateConfirmCustomizationDetailsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmCustomizationDetailsRequest**](../Model/MessagingV1/CreateConfirmCustomizationDetailsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateConfirmCustomizationDetailsResponse**](../Model/MessagingV1/CreateConfirmCustomizationDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmCustomizationDetailsResponse**](../Model/MessagingV1/CreateConfirmCustomizationDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 ## `createAmazonMotors()`
 
 ```php
-createAmazonMotors($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateAmazonMotorsResponse
+createAmazonMotors($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateAmazonMotorsResponse
 ```
 
 
@@ -110,19 +110,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateAmazonMotorsRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateAmazonMotorsRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateAmazonMotorsRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateAmazonMotorsRequest
 
 try {
     $result = $apiInstance->createAmazonMotors($amazon_order_id, $marketplace_ids, $body);
@@ -138,11 +138,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateAmazonMotorsRequest**](../Model/MessagingV1/CreateAmazonMotorsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateAmazonMotorsRequest**](../Model/MessagingV1/CreateAmazonMotorsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateAmazonMotorsResponse**](../Model/MessagingV1/CreateAmazonMotorsResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateAmazonMotorsResponse**](../Model/MessagingV1/CreateAmazonMotorsResponse.md)
 
 ### HTTP request headers
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 ## `createConfirmDeliveryDetails()`
 
 ```php
-createConfirmDeliveryDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateConfirmDeliveryDetailsResponse
+createConfirmDeliveryDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmDeliveryDetailsResponse
 ```
 
 
@@ -178,19 +178,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateConfirmDeliveryDetailsRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateConfirmDeliveryDetailsRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmDeliveryDetailsRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmDeliveryDetailsRequest
 
 try {
     $result = $apiInstance->createConfirmDeliveryDetails($amazon_order_id, $marketplace_ids, $body);
@@ -206,11 +206,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateConfirmDeliveryDetailsRequest**](../Model/MessagingV1/CreateConfirmDeliveryDetailsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmDeliveryDetailsRequest**](../Model/MessagingV1/CreateConfirmDeliveryDetailsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateConfirmDeliveryDetailsResponse**](../Model/MessagingV1/CreateConfirmDeliveryDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmDeliveryDetailsResponse**](../Model/MessagingV1/CreateConfirmDeliveryDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 ## `createConfirmOrderDetails()`
 
 ```php
-createConfirmOrderDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateConfirmOrderDetailsResponse
+createConfirmOrderDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmOrderDetailsResponse
 ```
 
 
@@ -246,19 +246,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateConfirmOrderDetailsRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateConfirmOrderDetailsRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmOrderDetailsRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmOrderDetailsRequest
 
 try {
     $result = $apiInstance->createConfirmOrderDetails($amazon_order_id, $marketplace_ids, $body);
@@ -274,11 +274,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateConfirmOrderDetailsRequest**](../Model/MessagingV1/CreateConfirmOrderDetailsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmOrderDetailsRequest**](../Model/MessagingV1/CreateConfirmOrderDetailsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateConfirmOrderDetailsResponse**](../Model/MessagingV1/CreateConfirmOrderDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmOrderDetailsResponse**](../Model/MessagingV1/CreateConfirmOrderDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -292,7 +292,7 @@ Name | Type | Description  | Notes
 ## `createConfirmServiceDetails()`
 
 ```php
-createConfirmServiceDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateConfirmServiceDetailsResponse
+createConfirmServiceDetails($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmServiceDetailsResponse
 ```
 
 
@@ -314,19 +314,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateConfirmServiceDetailsRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateConfirmServiceDetailsRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmServiceDetailsRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateConfirmServiceDetailsRequest
 
 try {
     $result = $apiInstance->createConfirmServiceDetails($amazon_order_id, $marketplace_ids, $body);
@@ -342,11 +342,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateConfirmServiceDetailsRequest**](../Model/MessagingV1/CreateConfirmServiceDetailsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmServiceDetailsRequest**](../Model/MessagingV1/CreateConfirmServiceDetailsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateConfirmServiceDetailsResponse**](../Model/MessagingV1/CreateConfirmServiceDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateConfirmServiceDetailsResponse**](../Model/MessagingV1/CreateConfirmServiceDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 ## `createDigitalAccessKey()`
 
 ```php
-createDigitalAccessKey($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateDigitalAccessKeyResponse
+createDigitalAccessKey($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateDigitalAccessKeyResponse
 ```
 
 
@@ -382,19 +382,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateDigitalAccessKeyRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateDigitalAccessKeyRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateDigitalAccessKeyRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateDigitalAccessKeyRequest
 
 try {
     $result = $apiInstance->createDigitalAccessKey($amazon_order_id, $marketplace_ids, $body);
@@ -410,11 +410,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateDigitalAccessKeyRequest**](../Model/MessagingV1/CreateDigitalAccessKeyRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateDigitalAccessKeyRequest**](../Model/MessagingV1/CreateDigitalAccessKeyRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateDigitalAccessKeyResponse**](../Model/MessagingV1/CreateDigitalAccessKeyResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateDigitalAccessKeyResponse**](../Model/MessagingV1/CreateDigitalAccessKeyResponse.md)
 
 ### HTTP request headers
 
@@ -428,7 +428,7 @@ Name | Type | Description  | Notes
 ## `createLegalDisclosure()`
 
 ```php
-createLegalDisclosure($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateLegalDisclosureResponse
+createLegalDisclosure($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateLegalDisclosureResponse
 ```
 
 
@@ -450,19 +450,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateLegalDisclosureRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateLegalDisclosureRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateLegalDisclosureRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateLegalDisclosureRequest
 
 try {
     $result = $apiInstance->createLegalDisclosure($amazon_order_id, $marketplace_ids, $body);
@@ -478,11 +478,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateLegalDisclosureRequest**](../Model/MessagingV1/CreateLegalDisclosureRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateLegalDisclosureRequest**](../Model/MessagingV1/CreateLegalDisclosureRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateLegalDisclosureResponse**](../Model/MessagingV1/CreateLegalDisclosureResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateLegalDisclosureResponse**](../Model/MessagingV1/CreateLegalDisclosureResponse.md)
 
 ### HTTP request headers
 
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 ## `createNegativeFeedbackRemoval()`
 
 ```php
-createNegativeFeedbackRemoval($amazon_order_id, $marketplace_ids): \SellingPartnerApi\Model\MessagingV1\CreateNegativeFeedbackRemovalResponse
+createNegativeFeedbackRemoval($amazon_order_id, $marketplace_ids): \SellingPartnerApiV5\Model\MessagingV1\CreateNegativeFeedbackRemovalResponse
 ```
 
 
@@ -518,16 +518,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
@@ -548,7 +548,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateNegativeFeedbackRemovalResponse**](../Model/MessagingV1/CreateNegativeFeedbackRemovalResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateNegativeFeedbackRemovalResponse**](../Model/MessagingV1/CreateNegativeFeedbackRemovalResponse.md)
 
 ### HTTP request headers
 
@@ -562,7 +562,7 @@ Name | Type | Description  | Notes
 ## `createUnexpectedProblem()`
 
 ```php
-createUnexpectedProblem($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateUnexpectedProblemResponse
+createUnexpectedProblem($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateUnexpectedProblemResponse
 ```
 
 
@@ -584,19 +584,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateUnexpectedProblemRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateUnexpectedProblemRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateUnexpectedProblemRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateUnexpectedProblemRequest
 
 try {
     $result = $apiInstance->createUnexpectedProblem($amazon_order_id, $marketplace_ids, $body);
@@ -612,11 +612,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateUnexpectedProblemRequest**](../Model/MessagingV1/CreateUnexpectedProblemRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateUnexpectedProblemRequest**](../Model/MessagingV1/CreateUnexpectedProblemRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateUnexpectedProblemResponse**](../Model/MessagingV1/CreateUnexpectedProblemResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateUnexpectedProblemResponse**](../Model/MessagingV1/CreateUnexpectedProblemResponse.md)
 
 ### HTTP request headers
 
@@ -630,7 +630,7 @@ Name | Type | Description  | Notes
 ## `createWarranty()`
 
 ```php
-createWarranty($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\CreateWarrantyResponse
+createWarranty($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\CreateWarrantyResponse
 ```
 
 
@@ -652,19 +652,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\CreateWarrantyRequest(); // \SellingPartnerApi\Model\MessagingV1\CreateWarrantyRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\CreateWarrantyRequest(); // \SellingPartnerApiV5\Model\MessagingV1\CreateWarrantyRequest
 
 try {
     $result = $apiInstance->createWarranty($amazon_order_id, $marketplace_ids, $body);
@@ -680,11 +680,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\CreateWarrantyRequest**](../Model/MessagingV1/CreateWarrantyRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\CreateWarrantyRequest**](../Model/MessagingV1/CreateWarrantyRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\CreateWarrantyResponse**](../Model/MessagingV1/CreateWarrantyResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\CreateWarrantyResponse**](../Model/MessagingV1/CreateWarrantyResponse.md)
 
 ### HTTP request headers
 
@@ -698,7 +698,7 @@ Name | Type | Description  | Notes
 ## `getAttributes()`
 
 ```php
-getAttributes($amazon_order_id, $marketplace_ids): \SellingPartnerApi\Model\MessagingV1\GetAttributesResponse
+getAttributes($amazon_order_id, $marketplace_ids): \SellingPartnerApiV5\Model\MessagingV1\GetAttributesResponse
 ```
 
 
@@ -718,16 +718,16 @@ Returns a response containing attributes related to an order. This includes buye
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
@@ -748,7 +748,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\GetAttributesResponse**](../Model/MessagingV1/GetAttributesResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\GetAttributesResponse**](../Model/MessagingV1/GetAttributesResponse.md)
 
 ### HTTP request headers
 
@@ -762,7 +762,7 @@ Name | Type | Description  | Notes
 ## `getMessagingActionsForOrder()`
 
 ```php
-getMessagingActionsForOrder($amazon_order_id, $marketplace_ids): \SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponse
+getMessagingActionsForOrder($amazon_order_id, $marketplace_ids): \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponse
 ```
 
 
@@ -784,16 +784,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which you want a list of available message types.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
@@ -814,7 +814,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponse**](../Model/MessagingV1/GetMessagingActionsForOrderResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponse**](../Model/MessagingV1/GetMessagingActionsForOrderResponse.md)
 
 ### HTTP request headers
 
@@ -828,7 +828,7 @@ Name | Type | Description  | Notes
 ## `sendInvoice()`
 
 ```php
-sendInvoice($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApi\Model\MessagingV1\InvoiceResponse
+sendInvoice($amazon_order_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\MessagingV1\InvoiceResponse
 ```
 
 
@@ -842,19 +842,19 @@ Sends a message providing the buyer an invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MessagingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MessagingV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a message is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
-$body = new \SellingPartnerApi\Model\MessagingV1\InvoiceRequest(); // \SellingPartnerApi\Model\MessagingV1\InvoiceRequest
+$body = new \SellingPartnerApiV5\Model\MessagingV1\InvoiceRequest(); // \SellingPartnerApiV5\Model\MessagingV1\InvoiceRequest
 
 try {
     $result = $apiInstance->sendInvoice($amazon_order_id, $marketplace_ids, $body);
@@ -870,11 +870,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **amazon_order_id** | **string**| An Amazon order identifier. This specifies the order for which a message is sent. |
  **marketplace_ids** | [**string[]**](../Model/MessagingV1/string.md)| A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified. |
- **body** | [**\SellingPartnerApi\Model\MessagingV1\InvoiceRequest**](../Model/MessagingV1/InvoiceRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MessagingV1\InvoiceRequest**](../Model/MessagingV1/InvoiceRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MessagingV1\InvoiceResponse**](../Model/MessagingV1/InvoiceResponse.md)
+[**\SellingPartnerApiV5\Model\MessagingV1\InvoiceResponse**](../Model/MessagingV1/InvoiceResponse.md)
 
 ### HTTP request headers
 

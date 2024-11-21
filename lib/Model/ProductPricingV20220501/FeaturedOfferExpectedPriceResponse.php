@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeaturedOfferExpectedPriceResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
       */
     protected static $openAPITypes = [
         'headers' => 'map[string,string]',
-        'status' => '\SellingPartnerApi\Model\ProductPricingV20220501\HttpStatusLine',
-        'request' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams',
-        'body' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody'
+        'status' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\HttpStatusLine',
+        'request' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams',
+        'body' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody'
     ];
 
     /**
@@ -186,7 +186,7 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\HttpStatusLine
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\HttpStatusLine
      */
     public function getStatus()
     {
@@ -196,7 +196,7 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\HttpStatusLine $status status
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\HttpStatusLine $status status
      *
      * @return self
      */
@@ -209,7 +209,7 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
     /**
      * Gets request
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams
      */
     public function getRequest()
     {
@@ -219,7 +219,7 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
     /**
      * Sets request
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams $request request
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams $request request
      *
      * @return self
      */
@@ -232,7 +232,7 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null
      */
     public function getBody()
     {
@@ -242,7 +242,7 @@ class FeaturedOfferExpectedPriceResponse extends BaseModel implements ModelInter
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null $body body
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null $body body
      *
      * @return self
      */

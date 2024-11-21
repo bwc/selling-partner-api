@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InboundShipmentPlan Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information used to create an inbound shipment. Returned by the createInboundShipmentPlan operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'shipment_id' => 'string',
         'destination_fulfillment_center_id' => 'string',
-        'ship_to_address' => '\SellingPartnerApi\Model\FbaInboundV0\Address',
-        'label_prep_type' => '\SellingPartnerApi\Model\FbaInboundV0\LabelPrepType',
-        'items' => '\SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlanItem[]',
-        'estimated_box_contents_fee' => '\SellingPartnerApi\Model\FbaInboundV0\BoxContentsFeeDetails'
+        'ship_to_address' => '\SellingPartnerApiV5\Model\FbaInboundV0\Address',
+        'label_prep_type' => '\SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepType',
+        'items' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlanItem[]',
+        'estimated_box_contents_fee' => '\SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsFeeDetails'
     ];
 
     /**
@@ -228,7 +228,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets ship_to_address
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Address
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Address
      */
     public function getShipToAddress()
     {
@@ -238,7 +238,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets ship_to_address
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Address $ship_to_address ship_to_address
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Address $ship_to_address ship_to_address
      *
      * @return self
      */
@@ -251,7 +251,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets label_prep_type
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\LabelPrepType
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepType
      */
     public function getLabelPrepType()
     {
@@ -261,7 +261,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets label_prep_type
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\LabelPrepType $label_prep_type label_prep_type
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepType $label_prep_type label_prep_type
      *
      * @return self
      */
@@ -274,7 +274,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlanItem[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlanItem[]
      */
     public function getItems()
     {
@@ -284,7 +284,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlanItem[] $items A list of inbound shipment plan item information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlanItem[] $items A list of inbound shipment plan item information.
      *
      * @return self
      */
@@ -297,7 +297,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets estimated_box_contents_fee
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\BoxContentsFeeDetails|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsFeeDetails|null
      */
     public function getEstimatedBoxContentsFee()
     {
@@ -307,7 +307,7 @@ class InboundShipmentPlan extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets estimated_box_contents_fee
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\BoxContentsFeeDetails|null $estimated_box_contents_fee estimated_box_contents_fee
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsFeeDetails|null $estimated_box_contents_fee estimated_box_contents_fee
      *
      * @return self
      */

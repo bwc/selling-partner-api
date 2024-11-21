@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFeaturedOfferExpectedPriceBatchRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the getFeaturedOfferExpectedPriceBatch operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetFeaturedOfferExpectedPriceBatchRequest extends BaseModel implements Mod
       * @var string[]
       */
     protected static $openAPITypes = [
-        'requests' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequest[]'
+        'requests' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequest[]'
     ];
 
     /**
@@ -141,7 +141,7 @@ class GetFeaturedOfferExpectedPriceBatchRequest extends BaseModel implements Mod
     /**
      * Gets requests
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequest[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequest[]|null
      */
     public function getRequests()
     {
@@ -151,7 +151,7 @@ class GetFeaturedOfferExpectedPriceBatchRequest extends BaseModel implements Mod
     /**
      * Sets requests
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequest[]|null $requests A batched list of featured offer expected price requests.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequest[]|null $requests A batched list of featured offer expected price requests.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InventoryUpdate Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class InventoryUpdate extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\PartyIdentification',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\PartyIdentification',
         'is_full_update' => 'bool',
-        'items' => '\SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\ItemDetails[]'
+        'items' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\ItemDetails[]'
     ];
 
     /**
@@ -157,7 +157,7 @@ class InventoryUpdate extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -167,7 +167,7 @@ class InventoryUpdate extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -203,7 +203,7 @@ class InventoryUpdate extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\ItemDetails[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\ItemDetails[]
      */
     public function getItems()
     {
@@ -213,7 +213,7 @@ class InventoryUpdate extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\ItemDetails[] $items A list of inventory items with updated details, including quantity available.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\ItemDetails[] $items A list of inventory items with updated details, including quantity available.
      *
      * @return self
      */

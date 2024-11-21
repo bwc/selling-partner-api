@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsV20200901;
+namespace SellingPartnerApiV5\Model\ListingsV20200901;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListingsItemPatchRequest Class Doc Comment
  *
  * @category Class
  * @description The request body schema for the patchListingsItem operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ListingsItemPatchRequest extends BaseModel implements ModelInterface, Arra
       */
     protected static $openAPITypes = [
         'product_type' => 'string',
-        'patches' => '\SellingPartnerApi\Model\ListingsV20200901\PatchOperation[]'
+        'patches' => '\SellingPartnerApiV5\Model\ListingsV20200901\PatchOperation[]'
     ];
 
     /**
@@ -176,7 +176,7 @@ class ListingsItemPatchRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Gets patches
      *
-     * @return \SellingPartnerApi\Model\ListingsV20200901\PatchOperation[]
+     * @return \SellingPartnerApiV5\Model\ListingsV20200901\PatchOperation[]
      */
     public function getPatches()
     {
@@ -186,7 +186,7 @@ class ListingsItemPatchRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Sets patches
      *
-     * @param \SellingPartnerApi\Model\ListingsV20200901\PatchOperation[] $patches One or more JSON Patch operations to perform on the listings item.
+     * @param \SellingPartnerApiV5\Model\ListingsV20200901\PatchOperation[] $patches One or more JSON Patch operations to perform on the listings item.
      *
      * @return self
      */

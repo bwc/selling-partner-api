@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SolicitationsV1;
+namespace SellingPartnerApiV5\Model\SolicitationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSchemaResponseLinks Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetSchemaResponseLinks extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\SellingPartnerApi\Model\SolicitationsV1\LinkObject'
+        'self' => '\SellingPartnerApiV5\Model\SolicitationsV1\LinkObject'
     ];
 
     /**
@@ -139,7 +139,7 @@ class GetSchemaResponseLinks extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets self
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\LinkObject
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\LinkObject
      */
     public function getSelf()
     {
@@ -149,7 +149,7 @@ class GetSchemaResponseLinks extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets self
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\LinkObject $self self
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\LinkObject $self self
      *
      * @return self
      */

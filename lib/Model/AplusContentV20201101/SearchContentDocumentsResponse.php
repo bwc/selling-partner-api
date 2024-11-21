@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SearchContentDocumentsResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class SearchContentDocumentsResponse extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]',
+        'warnings' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]',
         'next_page_token' => 'string',
-        'content_metadata_records' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentMetadataRecord[]'
+        'content_metadata_records' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadataRecord[]'
     ];
 
     /**
@@ -180,7 +180,7 @@ class SearchContentDocumentsResponse extends BaseModel implements ModelInterface
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null
      */
     public function getWarnings()
     {
@@ -190,7 +190,7 @@ class SearchContentDocumentsResponse extends BaseModel implements ModelInterface
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class SearchContentDocumentsResponse extends BaseModel implements ModelInterface
     /**
      * Gets content_metadata_records
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentMetadataRecord[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadataRecord[]
      */
     public function getContentMetadataRecords()
     {
@@ -243,7 +243,7 @@ class SearchContentDocumentsResponse extends BaseModel implements ModelInterface
     /**
      * Sets content_metadata_records
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentMetadataRecord[] $content_metadata_records A list of A+ Content metadata records.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadataRecord[] $content_metadata_records A list of A+ Content metadata records.
      *
      * @return self
      */

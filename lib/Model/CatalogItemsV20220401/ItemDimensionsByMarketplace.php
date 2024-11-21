@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemDimensionsByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Dimensions associated with the item in the Amazon catalog for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class ItemDimensionsByMarketplace extends BaseModel implements ModelInterface, A
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'item' => '\SellingPartnerApi\Model\CatalogItemsV20220401\Dimensions',
-        'package' => '\SellingPartnerApi\Model\CatalogItemsV20220401\Dimensions'
+        'item' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimensions',
+        'package' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimensions'
     ];
 
     /**
@@ -175,7 +175,7 @@ class ItemDimensionsByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Gets item
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Dimensions|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimensions|null
      */
     public function getItem()
     {
@@ -185,7 +185,7 @@ class ItemDimensionsByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Sets item
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\Dimensions|null $item item
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimensions|null $item item
      *
      * @return self
      */
@@ -198,7 +198,7 @@ class ItemDimensionsByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Gets package
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Dimensions|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimensions|null
      */
     public function getPackage()
     {
@@ -208,7 +208,7 @@ class ItemDimensionsByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Sets package
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\Dimensions|null $package package
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimensions|null $package package
      *
      * @return self
      */

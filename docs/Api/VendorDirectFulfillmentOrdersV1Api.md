@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorDirectFulfillmentOrdersV1Api
+# SellingPartnerApiV5\VendorDirectFulfillmentOrdersV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getOrder()`
 
 ```php
-getOrder($purchase_order_number): \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\GetOrderResponse
+getOrder($purchase_order_number): \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\GetOrderResponse
 ```
 
 
@@ -32,16 +32,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentOrdersV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentOrdersV1Api($config);
 $purchase_order_number = 'purchase_order_number_example'; // string | The order identifier for the purchase order that you want. Formatting Notes: alpha-numeric code.
 
 try {
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\GetOrderResponse**](../Model/VendorDirectFulfillmentOrdersV1/GetOrderResponse.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\GetOrderResponse**](../Model/VendorDirectFulfillmentOrdersV1/GetOrderResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 ## `getOrders()`
 
 ```php
-getOrders($created_after, $created_before, $ship_from_party_id, $status, $limit, $sort_order, $next_token, $include_details): \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\GetOrdersResponse
+getOrders($created_after, $created_before, $ship_from_party_id, $status, $limit, $sort_order, $next_token, $include_details): \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\GetOrdersResponse
 ```
 
 
@@ -96,16 +96,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentOrdersV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentOrdersV1Api($config);
 $created_after = 'created_after_example'; // string | Purchase orders that became available after this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $created_before = 'created_before_example'; // string | Purchase orders that became available before this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $ship_from_party_id = 'ship_from_party_id_example'; // string | The vendor warehouse identifier for the fulfillment warehouse. If not specified, the result will contain orders for all warehouses.
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\GetOrdersResponse**](../Model/VendorDirectFulfillmentOrdersV1/GetOrdersResponse.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\GetOrdersResponse**](../Model/VendorDirectFulfillmentOrdersV1/GetOrdersResponse.md)
 
 ### HTTP request headers
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 ## `submitAcknowledgement()`
 
 ```php
-submitAcknowledgement($body): \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementResponse
+submitAcknowledgement($body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementResponse
 ```
 
 
@@ -174,17 +174,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentOrdersV1Api($config);
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentOrdersV1Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementRequest
 
 try {
     $result = $apiInstance->submitAcknowledgement($body);
@@ -198,11 +198,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementRequest**](../Model/VendorDirectFulfillmentOrdersV1/SubmitAcknowledgementRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementRequest**](../Model/VendorDirectFulfillmentOrdersV1/SubmitAcknowledgementRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementResponse**](../Model/VendorDirectFulfillmentOrdersV1/SubmitAcknowledgementResponse.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\SubmitAcknowledgementResponse**](../Model/VendorDirectFulfillmentOrdersV1/SubmitAcknowledgementResponse.md)
 
 ### HTTP request headers
 

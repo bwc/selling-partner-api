@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItemAcknowledgement Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class OrderItemAcknowledgement extends BaseModel implements ModelInterface, Arra
       */
     protected static $openAPITypes = [
         'acknowledgement_code' => 'string',
-        'acknowledged_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
+        'acknowledged_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
         'scheduled_ship_date' => 'string',
         'scheduled_delivery_date' => 'string',
         'rejection_reason' => 'string'
@@ -271,7 +271,7 @@ class OrderItemAcknowledgement extends BaseModel implements ModelInterface, Arra
     /**
      * Gets acknowledged_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity
      */
     public function getAcknowledgedQuantity()
     {
@@ -281,7 +281,7 @@ class OrderItemAcknowledgement extends BaseModel implements ModelInterface, Arra
     /**
      * Sets acknowledged_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity $acknowledged_quantity acknowledged_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity $acknowledged_quantity acknowledged_quantity
      *
      * @return self
      */

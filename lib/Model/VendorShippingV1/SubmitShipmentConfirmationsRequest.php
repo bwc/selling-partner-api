@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitShipmentConfirmationsRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the SubmitShipmentConfirmations operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitShipmentConfirmationsRequest extends BaseModel implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipment_confirmations' => '\SellingPartnerApi\Model\VendorShippingV1\ShipmentConfirmation[]'
+        'shipment_confirmations' => '\SellingPartnerApiV5\Model\VendorShippingV1\ShipmentConfirmation[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitShipmentConfirmationsRequest extends BaseModel implements ModelInter
     /**
      * Gets shipment_confirmations
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ShipmentConfirmation[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentConfirmation[]|null
      */
     public function getShipmentConfirmations()
     {
@@ -147,7 +147,7 @@ class SubmitShipmentConfirmationsRequest extends BaseModel implements ModelInter
     /**
      * Sets shipment_confirmations
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ShipmentConfirmation[]|null $shipment_confirmations shipment_confirmations
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentConfirmation[]|null $shipment_confirmations shipment_confirmations
      *
      * @return self
      */

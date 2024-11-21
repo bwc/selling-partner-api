@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardImageTextBlock Class Doc Comment
  *
  * @category Class
  * @description The A+ Content standard image and text box block.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'image' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageComponent',
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'body' => '\SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent'
+        'image' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent',
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'body' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent'
     ];
 
     /**
@@ -149,7 +149,7 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets image
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null
      */
     public function getImage()
     {
@@ -159,7 +159,7 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets image
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null $image image
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null $image image
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -182,7 +182,7 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent|null
      */
     public function getBody()
     {
@@ -205,7 +205,7 @@ class StandardImageTextBlock extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent|null $body body
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent|null $body body
      *
      * @return self
      */

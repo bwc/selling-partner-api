@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductTypeDefinitionsV20200901;
+namespace SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ProductTypeList Class Doc Comment
  *
  * @category Class
  * @description A list of Amazon product types with definitions available.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ProductTypeList extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product_types' => '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductType[]'
+        'product_types' => '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductType[]'
     ];
 
     /**
@@ -165,7 +165,7 @@ class ProductTypeList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets product_types
      *
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductType[]
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductType[]
      */
     public function getProductTypes()
     {
@@ -175,7 +175,7 @@ class ProductTypeList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets product_types
      *
-     * @param \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductType[] $product_types product_types
+     * @param \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductType[] $product_types product_types
      *
      * @return self
      */

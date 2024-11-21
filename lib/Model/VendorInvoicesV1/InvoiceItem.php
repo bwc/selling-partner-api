@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorInvoicesV1;
+namespace SellingPartnerApiV5\Model\VendorInvoicesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InvoiceItem Class Doc Comment
  *
  * @category Class
  * @description Details of the item being invoiced.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,14 +61,14 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
         'item_sequence_number' => 'int',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'invoiced_quantity' => '\SellingPartnerApi\Model\VendorInvoicesV1\ItemQuantity',
-        'net_cost' => '\SellingPartnerApi\Model\VendorInvoicesV1\Money',
+        'invoiced_quantity' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\ItemQuantity',
+        'net_cost' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\Money',
         'purchase_order_number' => 'string',
         'hsn_code' => 'string',
-        'credit_note_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\CreditNoteDetails',
-        'tax_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]',
-        'charge_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\ChargeDetails[]',
-        'allowance_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\AllowanceDetails[]'
+        'credit_note_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\CreditNoteDetails',
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]',
+        'charge_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\ChargeDetails[]',
+        'allowance_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\AllowanceDetails[]'
     ];
 
     /**
@@ -275,7 +275,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets invoiced_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\ItemQuantity
      */
     public function getInvoicedQuantity()
     {
@@ -285,7 +285,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets invoiced_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\ItemQuantity $invoiced_quantity invoiced_quantity
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\ItemQuantity $invoiced_quantity invoiced_quantity
      *
      * @return self
      */
@@ -298,7 +298,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets net_cost
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\Money
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\Money
      */
     public function getNetCost()
     {
@@ -308,7 +308,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets net_cost
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\Money $net_cost net_cost
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\Money $net_cost net_cost
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets credit_note_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\CreditNoteDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\CreditNoteDetails|null
      */
     public function getCreditNoteDetails()
     {
@@ -377,7 +377,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets credit_note_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\CreditNoteDetails|null $credit_note_details credit_note_details
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\CreditNoteDetails|null $credit_note_details credit_note_details
      *
      * @return self
      */
@@ -390,7 +390,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null
      */
     public function getTaxDetails()
     {
@@ -400,7 +400,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Individual tax details per line item.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Individual tax details per line item.
      *
      * @return self
      */
@@ -413,7 +413,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets charge_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\ChargeDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\ChargeDetails[]|null
      */
     public function getChargeDetails()
     {
@@ -423,7 +423,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets charge_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\ChargeDetails[]|null $charge_details Individual charge details per line item.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\ChargeDetails[]|null $charge_details Individual charge details per line item.
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets allowance_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\AllowanceDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\AllowanceDetails[]|null
      */
     public function getAllowanceDetails()
     {
@@ -446,7 +446,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets allowance_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\AllowanceDetails[]|null $allowance_details Individual allowance details per line item.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\AllowanceDetails[]|null $allowance_details Individual allowance details per line item.
      *
      * @return self
      */

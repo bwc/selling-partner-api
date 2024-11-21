@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContainerSpecification Class Doc Comment
  *
  * @category Class
  * @description Container specification for checking the service rate.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ContainerSpecification extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'dimensions' => '\SellingPartnerApi\Model\ShippingV1\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\ShippingV1\Weight'
+        'dimensions' => '\SellingPartnerApiV5\Model\ShippingV1\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\ShippingV1\Weight'
     ];
 
     /**
@@ -149,7 +149,7 @@ class ContainerSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Dimensions
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Dimensions
      */
     public function getDimensions()
     {
@@ -159,7 +159,7 @@ class ContainerSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Dimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class ContainerSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Weight
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Weight
      */
     public function getWeight()
     {
@@ -182,7 +182,7 @@ class ContainerSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Weight $weight weight
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardImageSidebarModule Class Doc Comment
  *
  * @category Class
  * @description Two images, two paragraphs, and two bulleted lists. One image is smaller and displayed in the sidebar.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'image_caption_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageCaptionBlock',
-        'description_text_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock',
-        'description_list_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextListBlock',
-        'sidebar_image_text_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'sidebar_list_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextListBlock'
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'image_caption_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageCaptionBlock',
+        'description_text_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock',
+        'description_list_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextListBlock',
+        'sidebar_image_text_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'sidebar_list_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextListBlock'
     ];
 
     /**
@@ -167,7 +167,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -177,7 +177,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Gets image_caption_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageCaptionBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageCaptionBlock|null
      */
     public function getImageCaptionBlock()
     {
@@ -200,7 +200,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Sets image_caption_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageCaptionBlock|null $image_caption_block image_caption_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageCaptionBlock|null $image_caption_block image_caption_block
      *
      * @return self
      */
@@ -213,7 +213,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Gets description_text_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getDescriptionTextBlock()
     {
@@ -223,7 +223,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Sets description_text_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $description_text_block description_text_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $description_text_block description_text_block
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Gets description_list_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextListBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextListBlock|null
      */
     public function getDescriptionListBlock()
     {
@@ -246,7 +246,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Sets description_list_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextListBlock|null $description_list_block description_list_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextListBlock|null $description_list_block description_list_block
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Gets sidebar_image_text_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getSidebarImageTextBlock()
     {
@@ -269,7 +269,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Sets sidebar_image_text_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $sidebar_image_text_block sidebar_image_text_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $sidebar_image_text_block sidebar_image_text_block
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Gets sidebar_list_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextListBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextListBlock|null
      */
     public function getSidebarListBlock()
     {
@@ -292,7 +292,7 @@ class StandardImageSidebarModule extends BaseModel implements ModelInterface, Ar
     /**
      * Sets sidebar_list_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextListBlock|null $sidebar_list_block sidebar_list_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextListBlock|null $sidebar_list_block sidebar_list_block
      *
      * @return self
      */

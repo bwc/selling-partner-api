@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InboundShipmentItem Class Doc Comment
  *
  * @category Class
  * @description Item information for an inbound shipment. Submitted with a call to the createInboundShipment or updateInboundShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -65,7 +65,7 @@ class InboundShipmentItem extends BaseModel implements ModelInterface, ArrayAcce
         'quantity_received' => 'int',
         'quantity_in_case' => 'int',
         'release_date' => 'string',
-        'prep_details_list' => '\SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]'
+        'prep_details_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]'
     ];
 
     /**
@@ -346,7 +346,7 @@ class InboundShipmentItem extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets prep_details_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]|null
      */
     public function getPrepDetailsList()
     {
@@ -356,7 +356,7 @@ class InboundShipmentItem extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets prep_details_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]|null $prep_details_list A list of preparation instructions and who is responsible for that preparation.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]|null $prep_details_list A list of preparation instructions and who is responsible for that preparation.
      *
      * @return self
      */

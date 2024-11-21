@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferIdentifier Class Doc Comment
  *
  * @category Class
  * @description Identifies an offer from a particular seller on an ASIN.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class OfferIdentifier extends BaseModel implements ModelInterface, ArrayAccess, 
         'seller_id' => 'string',
         'sku' => 'string',
         'asin' => 'string',
-        'fulfillment_type' => '\SellingPartnerApi\Model\ProductPricingV20220501\FulfillmentType'
+        'fulfillment_type' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FulfillmentType'
     ];
 
     /**
@@ -259,7 +259,7 @@ class OfferIdentifier extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets fulfillment_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FulfillmentType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FulfillmentType|null
      */
     public function getFulfillmentType()
     {
@@ -269,7 +269,7 @@ class OfferIdentifier extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets fulfillment_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FulfillmentType|null $fulfillment_type fulfillment_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FulfillmentType|null $fulfillment_type fulfillment_type
      *
      * @return self
      */

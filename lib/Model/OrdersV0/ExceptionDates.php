@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ExceptionDates Class Doc Comment
  *
  * @category Class
  * @description Dates when the business is closed or open with a different time window.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ExceptionDates extends BaseModel implements ModelInterface, ArrayAccess, \
     protected static $openAPITypes = [
         'exception_date' => 'string',
         'is_open' => 'bool',
-        'open_intervals' => '\SellingPartnerApi\Model\OrdersV0\OpenInterval[]'
+        'open_intervals' => '\SellingPartnerApiV5\Model\OrdersV0\OpenInterval[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class ExceptionDates extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets open_intervals
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OpenInterval[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OpenInterval[]|null
      */
     public function getOpenIntervals()
     {
@@ -205,7 +205,7 @@ class ExceptionDates extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets open_intervals
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OpenInterval[]|null $open_intervals Time window during the day when the business is open.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OpenInterval[]|null $open_intervals Time window during the day when the business is open.
      *
      * @return self
      */

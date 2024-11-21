@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Scenario Class Doc Comment
  *
  * @category Class
  * @description A scenario test case response returned when the request is successful.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Scenario extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'scenario_id' => 'string',
-        'orders' => '\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TestOrder[]'
+        'orders' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TestOrder[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class Scenario extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets orders
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TestOrder[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TestOrder[]
      */
     public function getOrders()
     {
@@ -182,7 +182,7 @@ class Scenario extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets orders
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TestOrder[] $orders A list of orders that can be used by the caller to test each life cycle or scenario.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TestOrder[] $orders A list of orders that can be used by the caller to test each life cycle or scenario.
      *
      * @return self
      */

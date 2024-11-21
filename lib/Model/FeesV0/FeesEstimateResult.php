@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeesEstimateResult Class Doc Comment
  *
  * @category Class
  * @description An item identifier and the estimated fees for the item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'fees_estimate_identifier' => '\SellingPartnerApi\Model\FeesV0\FeesEstimateIdentifier',
-        'fees_estimate' => '\SellingPartnerApi\Model\FeesV0\FeesEstimate',
-        'error' => '\SellingPartnerApi\Model\FeesV0\FeesEstimateError'
+        'fees_estimate_identifier' => '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateIdentifier',
+        'fees_estimate' => '\SellingPartnerApiV5\Model\FeesV0\FeesEstimate',
+        'error' => '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateError'
     ];
 
     /**
@@ -178,7 +178,7 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets fees_estimate_identifier
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimateIdentifier|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimateIdentifier|null
      */
     public function getFeesEstimateIdentifier()
     {
@@ -188,7 +188,7 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets fees_estimate_identifier
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeesEstimateIdentifier|null $fees_estimate_identifier fees_estimate_identifier
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeesEstimateIdentifier|null $fees_estimate_identifier fees_estimate_identifier
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets fees_estimate
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimate|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimate|null
      */
     public function getFeesEstimate()
     {
@@ -211,7 +211,7 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets fees_estimate
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeesEstimate|null $fees_estimate fees_estimate
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeesEstimate|null $fees_estimate fees_estimate
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets error
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimateError|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimateError|null
      */
     public function getError()
     {
@@ -234,7 +234,7 @@ class FeesEstimateResult extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets error
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeesEstimateError|null $error error
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeesEstimateError|null $error error
      *
      * @return self
      */

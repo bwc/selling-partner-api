@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FBALiquidationEvent Class Doc Comment
  *
  * @category Class
  * @description A payment event for Fulfillment by Amazon (FBA) inventory liquidation. This event is used only in the US marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class FBALiquidationEvent extends BaseModel implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'posted_date' => 'string',
         'original_removal_order_id' => 'string',
-        'liquidation_proceeds_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'liquidation_fee_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'liquidation_proceeds_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'liquidation_fee_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -201,7 +201,7 @@ class FBALiquidationEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets liquidation_proceeds_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getLiquidationProceedsAmount()
     {
@@ -211,7 +211,7 @@ class FBALiquidationEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets liquidation_proceeds_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $liquidation_proceeds_amount liquidation_proceeds_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $liquidation_proceeds_amount liquidation_proceeds_amount
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class FBALiquidationEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets liquidation_fee_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getLiquidationFeeAmount()
     {
@@ -234,7 +234,7 @@ class FBALiquidationEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets liquidation_fee_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $liquidation_fee_amount liquidation_fee_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $liquidation_fee_amount liquidation_fee_amount
      *
      * @return self
      */

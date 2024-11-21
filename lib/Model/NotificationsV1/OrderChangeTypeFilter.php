@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderChangeTypeFilter Class Doc Comment
  *
  * @category Class
  * @description Use this event filter to customize your subscription to send notifications for only the specified orderChangeType.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class OrderChangeTypeFilter extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_change_types' => '\SellingPartnerApi\Model\NotificationsV1\OrderChangeTypeEnum[]'
+        'order_change_types' => '\SellingPartnerApiV5\Model\NotificationsV1\OrderChangeTypeEnum[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class OrderChangeTypeFilter extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets order_change_types
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\OrderChangeTypeEnum[]|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\OrderChangeTypeEnum[]|null
      */
     public function getOrderChangeTypes()
     {
@@ -147,7 +147,7 @@ class OrderChangeTypeFilter extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets order_change_types
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\OrderChangeTypeEnum[]|null $order_change_types A list of order change types to subscribe to (e.g. BuyerRequestedChange). To receive notifications of all change types, do not provide this list.
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\OrderChangeTypeEnum[]|null $order_change_types A list of order change types to subscribe to (e.g. BuyerRequestedChange). To receive notifications of all change types, do not provide this list.
      *
      * @return self
      */

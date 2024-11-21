@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BatchRequest Class Doc Comment
  *
  * @category Class
  * @description Common properties of batch requests against individual APIs.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class BatchRequest extends BaseModel implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'uri' => 'string',
-        'method' => '\SellingPartnerApi\Model\ProductPricingV0\HttpMethod',
+        'method' => '\SellingPartnerApiV5\Model\ProductPricingV0\HttpMethod',
         'headers' => 'map[string,string]'
     ];
 
@@ -182,7 +182,7 @@ class BatchRequest extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets method
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\HttpMethod
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\HttpMethod
      */
     public function getMethod()
     {
@@ -192,7 +192,7 @@ class BatchRequest extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets method
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\HttpMethod $method method
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\HttpMethod $method method
      *
      * @return self
      */

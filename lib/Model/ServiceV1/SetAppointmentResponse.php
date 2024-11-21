@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SetAppointmentResponse Class Doc Comment
  *
  * @category Class
  * @description Response schema for the `addAppointmentForServiceJobByServiceJobId` and `rescheduleAppointmentForServiceJobByServiceJobId` operations.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class SetAppointmentResponse extends BaseModel implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'appointment_id' => 'string',
-        'warnings' => '\SellingPartnerApi\Model\ServiceV1\Warning[]',
-        'errors' => '\SellingPartnerApi\Model\ServiceV1\Error[]'
+        'warnings' => '\SellingPartnerApiV5\Model\ServiceV1\Warning[]',
+        'errors' => '\SellingPartnerApiV5\Model\ServiceV1\Error[]'
     ];
 
     /**
@@ -212,7 +212,7 @@ class SetAppointmentResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Warning[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null
      */
     public function getWarnings()
     {
@@ -222,7 +222,7 @@ class SetAppointmentResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
      *
      * @return self
      */
@@ -235,7 +235,7 @@ class SetAppointmentResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Error[]|null
      */
     public function getErrors()
     {
@@ -245,7 +245,7 @@ class SetAppointmentResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateVerificationStatusErrorResponse Class Doc Comment
  *
  * @category Class
  * @description The error response schema for the UpdateVerificationStatus operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class UpdateVerificationStatusErrorResponse extends BaseModel implements ModelIn
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\SellingPartnerApi\Model\OrdersV0\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\OrdersV0\Error[]'
     ];
 
     /**
@@ -162,7 +162,7 @@ class UpdateVerificationStatusErrorResponse extends BaseModel implements ModelIn
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Error[]|null
      */
     public function getErrors()
     {
@@ -172,7 +172,7 @@ class UpdateVerificationStatusErrorResponse extends BaseModel implements ModelIn
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

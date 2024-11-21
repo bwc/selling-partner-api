@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FixedSlotCapacityQuery Class Doc Comment
  *
  * @category Class
  * @description Request schema for the `getFixedSlotCapacity` operation. This schema is used to define the time range, capacity types and slot duration which are being queried.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class FixedSlotCapacityQuery extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'capacity_types' => '\SellingPartnerApi\Model\ServiceV1\CapacityType[]',
+        'capacity_types' => '\SellingPartnerApiV5\Model\ServiceV1\CapacityType[]',
         'slot_duration' => 'float',
         'start_date_time' => 'string',
         'end_date_time' => 'string'
@@ -161,7 +161,7 @@ class FixedSlotCapacityQuery extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets capacity_types
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\CapacityType[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CapacityType[]|null
      */
     public function getCapacityTypes()
     {
@@ -171,7 +171,7 @@ class FixedSlotCapacityQuery extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets capacity_types
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\CapacityType[]|null $capacity_types An array of capacity types which are being requested. Default value is `[SCHEDULED_CAPACITY]`.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\CapacityType[]|null $capacity_types An array of capacity types which are being requested. Default value is `[SCHEDULED_CAPACITY]`.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description Details of the item being shipped.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,8 +61,8 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'shipped_quantity' => '\SellingPartnerApi\Model\VendorShippingV1\ItemQuantity',
-        'item_details' => '\SellingPartnerApi\Model\VendorShippingV1\ItemDetails'
+        'shipped_quantity' => '\SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity',
+        'item_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\ItemDetails'
     ];
 
     /**
@@ -236,7 +236,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets shipped_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity
      */
     public function getShippedQuantity()
     {
@@ -246,7 +246,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets shipped_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ItemQuantity $shipped_quantity shipped_quantity
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity $shipped_quantity shipped_quantity
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets item_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ItemDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ItemDetails|null
      */
     public function getItemDetails()
     {
@@ -269,7 +269,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets item_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ItemDetails|null $item_details item_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ItemDetails|null $item_details item_details
      *
      * @return self
      */

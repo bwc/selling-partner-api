@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AppointmentSlotReport Class Doc Comment
  *
  * @category Class
  * @description Availability information as per the service context queried.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class AppointmentSlotReport extends BaseModel implements ModelInterface, ArrayAc
         'scheduling_type' => 'string',
         'start_time' => 'string',
         'end_time' => 'string',
-        'appointment_slots' => '\SellingPartnerApi\Model\ServiceV1\AppointmentSlot[]'
+        'appointment_slots' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentSlot[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class AppointmentSlotReport extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets appointment_slots
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentSlot[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentSlot[]|null
      */
     public function getAppointmentSlots()
     {
@@ -278,7 +278,7 @@ class AppointmentSlotReport extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets appointment_slots
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentSlot[]|null $appointment_slots A list of time windows along with associated capacity in which the service can be performed.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentSlot[]|null $appointment_slots A list of time windows along with associated capacity in which the service can be performed.
      *
      * @return self
      */

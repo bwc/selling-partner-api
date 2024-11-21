@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Promotion Class Doc Comment
  *
  * @category Class
  * @description Offer promotions to include in the result filter criteria.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_partner_funded_base_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding',
-        'selling_partner_funded_tiered_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding',
-        'amazon_funded_base_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding',
-        'amazon_funded_tiered_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding'
+        'selling_partner_funded_base_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding',
+        'selling_partner_funded_tiered_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding',
+        'amazon_funded_base_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding',
+        'amazon_funded_tiered_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding'
     ];
 
     /**
@@ -155,7 +155,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets selling_partner_funded_base_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null
      */
     public function getSellingPartnerFundedBaseDiscount()
     {
@@ -165,7 +165,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets selling_partner_funded_base_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null $selling_partner_funded_base_discount selling_partner_funded_base_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null $selling_partner_funded_base_discount selling_partner_funded_base_discount
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets selling_partner_funded_tiered_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null
      */
     public function getSellingPartnerFundedTieredDiscount()
     {
@@ -188,7 +188,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets selling_partner_funded_tiered_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null $selling_partner_funded_tiered_discount selling_partner_funded_tiered_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null $selling_partner_funded_tiered_discount selling_partner_funded_tiered_discount
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets amazon_funded_base_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null
      */
     public function getAmazonFundedBaseDiscount()
     {
@@ -211,7 +211,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets amazon_funded_base_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null $amazon_funded_base_discount amazon_funded_base_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null $amazon_funded_base_discount amazon_funded_base_discount
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets amazon_funded_tiered_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null
      */
     public function getAmazonFundedTieredDiscount()
     {
@@ -234,7 +234,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets amazon_funded_tiered_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\DiscountFunding|null $amazon_funded_tiered_discount amazon_funded_tiered_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\DiscountFunding|null $amazon_funded_tiered_discount amazon_funded_tiered_discount
      *
      * @return self
      */

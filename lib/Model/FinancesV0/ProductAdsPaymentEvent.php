@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ProductAdsPaymentEvent Class Doc Comment
  *
  * @category Class
  * @description A Sponsored Products payment event.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,9 +61,9 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
         'posted_date' => 'string',
         'transaction_type' => 'string',
         'invoice_id' => 'string',
-        'base_value' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'tax_value' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'transaction_value' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'base_value' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'tax_value' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'transaction_value' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -239,7 +239,7 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets base_value
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getBaseValue()
     {
@@ -249,7 +249,7 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets base_value
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $base_value base_value
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $base_value base_value
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets tax_value
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTaxValue()
     {
@@ -272,7 +272,7 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets tax_value
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $tax_value tax_value
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $tax_value tax_value
      *
      * @return self
      */
@@ -285,7 +285,7 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets transaction_value
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTransactionValue()
     {
@@ -295,7 +295,7 @@ class ProductAdsPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets transaction_value
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $transaction_value transaction_value
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $transaction_value transaction_value
      *
      * @return self
      */

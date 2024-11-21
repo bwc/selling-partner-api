@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
 
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContentModuleType Class Doc Comment
  *
  * @category Class
  * @description The type of A+ Content module.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  */
 class ContentModuleType

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListingOffersRequestParams Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ListingOffersRequestParams extends BaseModel implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'item_condition' => '\SellingPartnerApi\Model\ProductPricingV0\ItemCondition',
-        'customer_type' => '\SellingPartnerApi\Model\ProductPricingV0\CustomerType',
+        'item_condition' => '\SellingPartnerApiV5\Model\ProductPricingV0\ItemCondition',
+        'customer_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\CustomerType',
         'seller_sku' => 'string'
     ];
 
@@ -186,7 +186,7 @@ class ListingOffersRequestParams extends BaseModel implements ModelInterface, Ar
     /**
      * Gets item_condition
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ItemCondition
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ItemCondition
      */
     public function getItemCondition()
     {
@@ -196,7 +196,7 @@ class ListingOffersRequestParams extends BaseModel implements ModelInterface, Ar
     /**
      * Sets item_condition
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ItemCondition $item_condition item_condition
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ItemCondition $item_condition item_condition
      *
      * @return self
      */
@@ -209,7 +209,7 @@ class ListingOffersRequestParams extends BaseModel implements ModelInterface, Ar
     /**
      * Gets customer_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\CustomerType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\CustomerType|null
      */
     public function getCustomerType()
     {
@@ -219,7 +219,7 @@ class ListingOffersRequestParams extends BaseModel implements ModelInterface, Ar
     /**
      * Sets customer_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\CustomerType|null $customer_type customer_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\CustomerType|null $customer_type customer_type
      *
      * @return self
      */

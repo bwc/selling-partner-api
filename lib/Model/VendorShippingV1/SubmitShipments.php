@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitShipments Class Doc Comment
  *
  * @category Class
  * @description The request schema for the SubmitTransportRequestConfirmations operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitShipments extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipments' => '\SellingPartnerApi\Model\VendorShippingV1\Shipment[]'
+        'shipments' => '\SellingPartnerApiV5\Model\VendorShippingV1\Shipment[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitShipments extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets shipments
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Shipment[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Shipment[]|null
      */
     public function getShipments()
     {
@@ -147,7 +147,7 @@ class SubmitShipments extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets shipments
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Shipment[]|null $shipments shipments
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Shipment[]|null $shipments shipments
      *
      * @return self
      */

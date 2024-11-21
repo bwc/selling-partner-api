@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetListingOffersBatchRequest Class Doc Comment
  *
  * @category Class
  * @description The request associated with the `getListingOffersBatch` API call.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetListingOffersBatchRequest extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'requests' => '\SellingPartnerApi\Model\ProductPricingV0\ListingOffersRequest[]'
+        'requests' => '\SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersRequest[]'
     ];
 
     /**
@@ -145,7 +145,7 @@ class GetListingOffersBatchRequest extends BaseModel implements ModelInterface, 
     /**
      * Gets requests
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ListingOffersRequest[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersRequest[]|null
      */
     public function getRequests()
     {
@@ -155,7 +155,7 @@ class GetListingOffersBatchRequest extends BaseModel implements ModelInterface, 
     /**
      * Sets requests
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ListingOffersRequest[]|null $requests A list of `getListingOffers` batched requests to run.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersRequest[]|null $requests A list of `getListingOffers` batched requests to run.
      *
      * @return self
      */

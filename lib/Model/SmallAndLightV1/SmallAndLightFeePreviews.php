@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SmallAndLightV1;
+namespace SellingPartnerApiV5\Model\SmallAndLightV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SmallAndLightFeePreviews Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class SmallAndLightFeePreviews extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\SellingPartnerApi\Model\SmallAndLightV1\FeePreview[]'
+        'data' => '\SellingPartnerApiV5\Model\SmallAndLightV1\FeePreview[]'
     ];
 
     /**
@@ -161,7 +161,7 @@ class SmallAndLightFeePreviews extends BaseModel implements ModelInterface, Arra
     /**
      * Gets data
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\FeePreview[]|null
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\FeePreview[]|null
      */
     public function getData()
     {
@@ -171,7 +171,7 @@ class SmallAndLightFeePreviews extends BaseModel implements ModelInterface, Arra
     /**
      * Sets data
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\FeePreview[]|null $data A list of fee estimates for the requested items. The order of the fee estimates will follow the same order as the items in the request, with duplicates removed.
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\FeePreview[]|null $data A list of fee estimates for the requested items. The order of the fee estimates will follow the same order as the items in the request, with duplicates removed.
      *
      * @return self
      */

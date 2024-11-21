@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
 
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AddressTypeEnum Class Doc Comment
  *
  * @category Class
  * @description The shipping address type.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  */
 class AddressTypeEnum

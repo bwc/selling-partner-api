@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Pallet Class Doc Comment
  *
  * @category Class
  * @description Pallet information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'dimensions' => '\SellingPartnerApi\Model\FbaInboundV0\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\FbaInboundV0\Weight',
+        'dimensions' => '\SellingPartnerApiV5\Model\FbaInboundV0\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\FbaInboundV0\Weight',
         'is_stacked' => 'bool'
     ];
 
@@ -155,7 +155,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Dimensions
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Dimensions
      */
     public function getDimensions()
     {
@@ -165,7 +165,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Dimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Weight|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Weight|null
      */
     public function getWeight()
     {
@@ -188,7 +188,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Weight|null $weight weight
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Weight|null $weight weight
      *
      * @return self
      */

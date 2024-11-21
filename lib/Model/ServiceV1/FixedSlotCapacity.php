@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FixedSlotCapacity Class Doc Comment
  *
  * @category Class
  * @description Response schema for the `getFixedSlotCapacity` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class FixedSlotCapacity extends BaseModel implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'resource_id' => 'string',
         'slot_duration' => 'float',
-        'capacities' => '\SellingPartnerApi\Model\ServiceV1\FixedSlot[]',
+        'capacities' => '\SellingPartnerApiV5\Model\ServiceV1\FixedSlot[]',
         'next_page_token' => 'string'
     ];
 
@@ -228,7 +228,7 @@ class FixedSlotCapacity extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets capacities
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\FixedSlot[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\FixedSlot[]|null
      */
     public function getCapacities()
     {
@@ -238,7 +238,7 @@ class FixedSlotCapacity extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets capacities
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\FixedSlot[]|null $capacities Array of capacity slots in fixed slot format.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\FixedSlot[]|null $capacities Array of capacity slots in fixed slot format.
      *
      * @return self
      */

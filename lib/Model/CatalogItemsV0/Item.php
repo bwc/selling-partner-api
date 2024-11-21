@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description An item in the Amazon catalog.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'identifiers' => '\SellingPartnerApi\Model\CatalogItemsV0\IdentifierType',
-        'attribute_sets' => '\SellingPartnerApi\Model\CatalogItemsV0\AttributeSetListType[]',
-        'relationships' => '\SellingPartnerApi\Model\CatalogItemsV0\RelationshipType[]',
-        'sales_rankings' => '\SellingPartnerApi\Model\CatalogItemsV0\SalesRankType[]'
+        'identifiers' => '\SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType',
+        'attribute_sets' => '\SellingPartnerApiV5\Model\CatalogItemsV0\AttributeSetListType[]',
+        'relationships' => '\SellingPartnerApiV5\Model\CatalogItemsV0\RelationshipType[]',
+        'sales_rankings' => '\SellingPartnerApiV5\Model\CatalogItemsV0\SalesRankType[]'
     ];
 
     /**
@@ -158,7 +158,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets identifiers
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\IdentifierType
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType
      */
     public function getIdentifiers()
     {
@@ -168,7 +168,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets identifiers
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\IdentifierType $identifiers identifiers
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType $identifiers identifiers
      *
      * @return self
      */
@@ -181,7 +181,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets attribute_sets
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\AttributeSetListType[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\AttributeSetListType[]|null
      */
     public function getAttributeSets()
     {
@@ -191,7 +191,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets attribute_sets
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\AttributeSetListType[]|null $attribute_sets A list of attributes for the item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\AttributeSetListType[]|null $attribute_sets A list of attributes for the item.
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets relationships
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\RelationshipType[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\RelationshipType[]|null
      */
     public function getRelationships()
     {
@@ -214,7 +214,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets relationships
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\RelationshipType[]|null $relationships A list of variation relationship information, if applicable for the item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\RelationshipType[]|null $relationships A list of variation relationship information, if applicable for the item.
      *
      * @return self
      */
@@ -227,7 +227,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets sales_rankings
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\SalesRankType[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\SalesRankType[]|null
      */
     public function getSalesRankings()
     {
@@ -237,7 +237,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets sales_rankings
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\SalesRankType[]|null $sales_rankings A list of sales rank information for the item by category.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\SalesRankType[]|null $sales_rankings A list of sales rank information for the item by category.
      *
      * @return self
      */

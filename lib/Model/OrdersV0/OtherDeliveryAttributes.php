@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
 
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OtherDeliveryAttributes Class Doc Comment
  *
  * @category Class
  * @description Miscellaneous delivery attributes associated with the shipping address.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  */
 class OtherDeliveryAttributes

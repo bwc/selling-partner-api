@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
 
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemCondition Class Doc Comment
  *
  * @category Class
  * @description Filters the offer listings to be considered based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  */
 class ItemCondition

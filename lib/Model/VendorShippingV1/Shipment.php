@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Shipment Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,20 +63,20 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
         'transaction_date' => 'string',
         'current_shipment_status' => 'string',
         'currentshipment_status_date' => 'string',
-        'shipment_status_details' => '\SellingPartnerApi\Model\VendorShippingV1\ShipmentStatusDetails[]',
+        'shipment_status_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\ShipmentStatusDetails[]',
         'shipment_create_date' => 'string',
         'shipment_confirm_date' => 'string',
         'package_label_create_date' => 'string',
         'shipment_freight_term' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'shipment_measurements' => '\SellingPartnerApi\Model\VendorShippingV1\TransportShipmentMeasurements',
-        'collect_freight_pickup_details' => '\SellingPartnerApi\Model\VendorShippingV1\CollectFreightPickupDetails',
-        'purchase_orders' => '\SellingPartnerApi\Model\VendorShippingV1\PurchaseOrders[]',
-        'import_details' => '\SellingPartnerApi\Model\VendorShippingV1\ImportDetails',
-        'containers' => '\SellingPartnerApi\Model\VendorShippingV1\Containers[]',
-        'transportation_details' => '\SellingPartnerApi\Model\VendorShippingV1\TransportationDetails'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'shipment_measurements' => '\SellingPartnerApiV5\Model\VendorShippingV1\TransportShipmentMeasurements',
+        'collect_freight_pickup_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\CollectFreightPickupDetails',
+        'purchase_orders' => '\SellingPartnerApiV5\Model\VendorShippingV1\PurchaseOrders[]',
+        'import_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\ImportDetails',
+        'containers' => '\SellingPartnerApiV5\Model\VendorShippingV1\Containers[]',
+        'transportation_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\TransportationDetails'
     ];
 
     /**
@@ -532,7 +532,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets shipment_status_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ShipmentStatusDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentStatusDetails[]|null
      */
     public function getShipmentStatusDetails()
     {
@@ -542,7 +542,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets shipment_status_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ShipmentStatusDetails[]|null $shipment_status_details Indicates the list of current shipment status details and when the last update was received from carrier this is available on shipment Details response.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentStatusDetails[]|null $shipment_status_details Indicates the list of current shipment status details and when the last update was received from carrier this is available on shipment Details response.
      *
      * @return self
      */
@@ -657,7 +657,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -667,7 +667,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -680,7 +680,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -690,7 +690,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -703,7 +703,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification
      */
     public function getShipToParty()
     {
@@ -713,7 +713,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -726,7 +726,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets shipment_measurements
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\TransportShipmentMeasurements|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\TransportShipmentMeasurements|null
      */
     public function getShipmentMeasurements()
     {
@@ -736,7 +736,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets shipment_measurements
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\TransportShipmentMeasurements|null $shipment_measurements shipment_measurements
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\TransportShipmentMeasurements|null $shipment_measurements shipment_measurements
      *
      * @return self
      */
@@ -749,7 +749,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets collect_freight_pickup_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\CollectFreightPickupDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\CollectFreightPickupDetails|null
      */
     public function getCollectFreightPickupDetails()
     {
@@ -759,7 +759,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets collect_freight_pickup_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\CollectFreightPickupDetails|null $collect_freight_pickup_details collect_freight_pickup_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\CollectFreightPickupDetails|null $collect_freight_pickup_details collect_freight_pickup_details
      *
      * @return self
      */
@@ -772,7 +772,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets purchase_orders
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PurchaseOrders[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PurchaseOrders[]|null
      */
     public function getPurchaseOrders()
     {
@@ -782,7 +782,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets purchase_orders
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PurchaseOrders[]|null $purchase_orders Indicates the purchase orders involved for the transportation request. This group is an array create 1 for each PO and list their corresponding items. This information is used for deciding the route,truck allocation and storage efficiently. This is a mandatory information for Buyer performing transportation from vendor warehouse (WePay/Collect)
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PurchaseOrders[]|null $purchase_orders Indicates the purchase orders involved for the transportation request. This group is an array create 1 for each PO and list their corresponding items. This information is used for deciding the route,truck allocation and storage efficiently. This is a mandatory information for Buyer performing transportation from vendor warehouse (WePay/Collect)
      *
      * @return self
      */
@@ -795,7 +795,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets import_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ImportDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ImportDetails|null
      */
     public function getImportDetails()
     {
@@ -805,7 +805,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets import_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ImportDetails|null $import_details import_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ImportDetails|null $import_details import_details
      *
      * @return self
      */
@@ -818,7 +818,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Containers[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Containers[]|null
      */
     public function getContainers()
     {
@@ -828,7 +828,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Containers[]|null $containers A list of the items in this transportation and their associated inner container details. If any of the item detail fields are common at a carton or a pallet level, provide them at the corresponding carton or pallet level.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Containers[]|null $containers A list of the items in this transportation and their associated inner container details. If any of the item detail fields are common at a carton or a pallet level, provide them at the corresponding carton or pallet level.
      *
      * @return self
      */
@@ -841,7 +841,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets transportation_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\TransportationDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\TransportationDetails|null
      */
     public function getTransportationDetails()
     {
@@ -851,7 +851,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets transportation_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\TransportationDetails|null $transportation_details transportation_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\TransportationDetails|null $transportation_details transportation_details
      *
      * @return self
      */

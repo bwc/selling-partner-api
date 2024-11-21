@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportLabel Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class TransportLabel extends BaseModel implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'label_create_date_time' => 'string',
-        'shipment_information' => '\SellingPartnerApi\Model\VendorShippingV1\ShipmentInformation',
-        'label_data' => '\SellingPartnerApi\Model\VendorShippingV1\LabelData[]'
+        'shipment_information' => '\SellingPartnerApiV5\Model\VendorShippingV1\ShipmentInformation',
+        'label_data' => '\SellingPartnerApiV5\Model\VendorShippingV1\LabelData[]'
     ];
 
     /**
@@ -171,7 +171,7 @@ class TransportLabel extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets shipment_information
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ShipmentInformation|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentInformation|null
      */
     public function getShipmentInformation()
     {
@@ -181,7 +181,7 @@ class TransportLabel extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets shipment_information
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ShipmentInformation|null $shipment_information shipment_information
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentInformation|null $shipment_information shipment_information
      *
      * @return self
      */
@@ -194,7 +194,7 @@ class TransportLabel extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets label_data
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\LabelData[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\LabelData[]|null
      */
     public function getLabelData()
     {
@@ -204,7 +204,7 @@ class TransportLabel extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets label_data
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\LabelData[]|null $label_data Indicates the label data,format and type associated .
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\LabelData[]|null $label_data Indicates the label data,format and type associated .
      *
      * @return self
      */

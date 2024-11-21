@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * AplusContentV20201101Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class AplusContentV20201101Api extends BaseApi
 {
@@ -44,11 +44,11 @@ class AplusContentV20201101Api extends BaseApi
      * Operation createContentDocument
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse
      */
     public function createContentDocument($marketplace_id, $post_content_document_request)
     {
@@ -60,11 +60,11 @@ class AplusContentV20201101Api extends BaseApi
      * Operation createContentDocumentWithHttpInfo
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createContentDocumentWithHttpInfo($marketplace_id, $post_content_document_request)
     {
@@ -113,72 +113,72 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -193,7 +193,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -201,7 +201,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -209,7 +209,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -217,7 +217,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -225,7 +225,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -233,7 +233,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -241,7 +241,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -249,7 +249,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -266,7 +266,7 @@ class AplusContentV20201101Api extends BaseApi
      * 
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -282,14 +282,14 @@ class AplusContentV20201101Api extends BaseApi
      * 
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createContentDocumentAsyncWithHttpInfo($marketplace_id, $post_content_document_request)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse';
         $request = $this->createContentDocumentRequest($marketplace_id, $post_content_document_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -336,7 +336,7 @@ class AplusContentV20201101Api extends BaseApi
      * Create request for operation 'createContentDocument'
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -444,9 +444,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      * @param  string[] $included_data_set The set of A+ Content data types to include in the response. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse
      */
     public function getContentDocument($content_reference_key, $marketplace_id, $included_data_set)
     {
@@ -461,9 +461,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      * @param  string[] $included_data_set The set of A+ Content data types to include in the response. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContentDocumentWithHttpInfo($content_reference_key, $marketplace_id, $included_data_set)
     {
@@ -512,80 +512,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -600,7 +600,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -608,7 +608,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -616,7 +616,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -624,7 +624,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -632,7 +632,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -640,7 +640,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -648,7 +648,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -656,7 +656,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -664,7 +664,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function getContentDocumentAsyncWithHttpInfo($content_reference_key, $marketplace_id, $included_data_set)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse';
         $request = $this->getContentDocumentRequest($content_reference_key, $marketplace_id, $included_data_set);
         $signedRequest = $this->config->signRequest(
             $request
@@ -889,9 +889,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string[] $asin_set The set of ASINs. (optional)
      * @param  string $page_token A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse
      */
     public function listContentDocumentAsinRelations($content_reference_key, $marketplace_id, $included_data_set = null, $asin_set = null, $page_token = null)
     {
@@ -908,9 +908,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string[] $asin_set The set of ASINs. (optional)
      * @param  string $page_token A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listContentDocumentAsinRelationsWithHttpInfo($content_reference_key, $marketplace_id, $included_data_set = null, $asin_set = null, $page_token = null)
     {
@@ -959,80 +959,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1047,7 +1047,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1055,7 +1055,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1063,7 +1063,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1071,7 +1071,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1079,7 +1079,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1087,7 +1087,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1095,7 +1095,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1103,7 +1103,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1111,7 +1111,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1157,7 +1157,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function listContentDocumentAsinRelationsAsyncWithHttpInfo($content_reference_key, $marketplace_id, $included_data_set = null, $asin_set = null, $page_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse';
         $request = $this->listContentDocumentAsinRelationsRequest($content_reference_key, $marketplace_id, $included_data_set, $asin_set, $page_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1354,9 +1354,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse
      */
     public function postContentDocumentApprovalSubmission($content_reference_key, $marketplace_id)
     {
@@ -1370,9 +1370,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postContentDocumentApprovalSubmissionWithHttpInfo($content_reference_key, $marketplace_id)
     {
@@ -1421,80 +1421,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1509,7 +1509,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1517,7 +1517,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1525,7 +1525,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1533,7 +1533,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1541,7 +1541,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1549,7 +1549,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1557,7 +1557,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1565,7 +1565,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1573,7 +1573,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1613,7 +1613,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function postContentDocumentApprovalSubmissionAsyncWithHttpInfo($content_reference_key, $marketplace_id)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse';
         $request = $this->postContentDocumentApprovalSubmissionRequest($content_reference_key, $marketplace_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1773,11 +1773,11 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse
      */
     public function postContentDocumentAsinRelations($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request)
     {
@@ -1790,11 +1790,11 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postContentDocumentAsinRelationsWithHttpInfo($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request)
     {
@@ -1843,80 +1843,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1931,7 +1931,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1939,7 +1939,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1947,7 +1947,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1955,7 +1955,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1963,7 +1963,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1971,7 +1971,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1979,7 +1979,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1987,7 +1987,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1995,7 +1995,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2013,7 +2013,7 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2030,14 +2030,14 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postContentDocumentAsinRelationsAsyncWithHttpInfo($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse';
         $request = $this->postContentDocumentAsinRelationsRequest($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2085,7 +2085,7 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest $post_content_document_asin_relations_request The content document ASIN relations request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2211,9 +2211,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse
      */
     public function postContentDocumentSuspendSubmission($content_reference_key, $marketplace_id)
     {
@@ -2227,9 +2227,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postContentDocumentSuspendSubmissionWithHttpInfo($content_reference_key, $marketplace_id)
     {
@@ -2278,80 +2278,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2366,7 +2366,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2374,7 +2374,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2382,7 +2382,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2390,7 +2390,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2398,7 +2398,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2406,7 +2406,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2414,7 +2414,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2422,7 +2422,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2430,7 +2430,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2470,7 +2470,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function postContentDocumentSuspendSubmissionAsyncWithHttpInfo($content_reference_key, $marketplace_id)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse';
         $request = $this->postContentDocumentSuspendSubmissionRequest($content_reference_key, $marketplace_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2631,9 +2631,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      * @param  string $page_token A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse
      */
     public function searchContentDocuments($marketplace_id, $page_token = null)
     {
@@ -2647,9 +2647,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
      * @param  string $page_token A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchContentDocumentsWithHttpInfo($marketplace_id, $page_token = null)
     {
@@ -2698,80 +2698,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2786,7 +2786,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2794,7 +2794,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2802,7 +2802,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2810,7 +2810,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2818,7 +2818,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2826,7 +2826,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2834,7 +2834,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2842,7 +2842,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2850,7 +2850,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2890,7 +2890,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function searchContentDocumentsAsyncWithHttpInfo($marketplace_id, $page_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse';
         $request = $this->searchContentDocumentsRequest($marketplace_id, $page_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3045,9 +3045,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $asin The Amazon Standard Identification Number (ASIN). (required)
      * @param  string $page_token A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse
      */
     public function searchContentPublishRecords($marketplace_id, $asin, $page_token = null)
     {
@@ -3062,9 +3062,9 @@ class AplusContentV20201101Api extends BaseApi
      * @param  string $asin The Amazon Standard Identification Number (ASIN). (required)
      * @param  string $page_token A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchContentPublishRecordsWithHttpInfo($marketplace_id, $asin, $page_token = null)
     {
@@ -3113,72 +3113,72 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3193,7 +3193,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3201,7 +3201,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3209,7 +3209,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3217,7 +3217,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3225,7 +3225,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3233,7 +3233,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3241,7 +3241,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3249,7 +3249,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3291,7 +3291,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function searchContentPublishRecordsAsyncWithHttpInfo($marketplace_id, $asin, $page_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse';
         $request = $this->searchContentPublishRecordsRequest($marketplace_id, $asin, $page_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3463,11 +3463,11 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse
      */
     public function updateContentDocument($content_reference_key, $marketplace_id, $post_content_document_request)
     {
@@ -3480,11 +3480,11 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateContentDocumentWithHttpInfo($content_reference_key, $marketplace_id, $post_content_document_request)
     {
@@ -3533,80 +3533,80 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 410:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3621,7 +3621,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3629,7 +3629,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3637,7 +3637,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3645,7 +3645,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3653,7 +3653,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3661,7 +3661,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 410:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3669,7 +3669,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3677,7 +3677,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3685,7 +3685,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3703,7 +3703,7 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3720,14 +3720,14 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateContentDocumentAsyncWithHttpInfo($content_reference_key, $marketplace_id, $post_content_document_request)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse';
         $request = $this->updateContentDocumentRequest($content_reference_key, $marketplace_id, $post_content_document_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3775,7 +3775,7 @@ class AplusContentV20201101Api extends BaseApi
      *
      * @param  string $content_reference_key The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier. (required)
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3899,12 +3899,12 @@ class AplusContentV20201101Api extends BaseApi
      * Operation validateContentDocumentAsinRelations
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      * @param  string[] $asin_set The set of ASINs. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse
      */
     public function validateContentDocumentAsinRelations($marketplace_id, $post_content_document_request, $asin_set = null)
     {
@@ -3916,12 +3916,12 @@ class AplusContentV20201101Api extends BaseApi
      * Operation validateContentDocumentAsinRelationsWithHttpInfo
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      * @param  string[] $asin_set The set of ASINs. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function validateContentDocumentAsinRelationsWithHttpInfo($marketplace_id, $post_content_document_request, $asin_set = null)
     {
@@ -3970,72 +3970,72 @@ class AplusContentV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -4050,7 +4050,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4058,7 +4058,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4066,7 +4066,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4074,7 +4074,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4082,7 +4082,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4090,7 +4090,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4098,7 +4098,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4106,7 +4106,7 @@ class AplusContentV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\AplusContentV20201101\ErrorList',
+                        '\SellingPartnerApiV5\Model\AplusContentV20201101\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4123,7 +4123,7 @@ class AplusContentV20201101Api extends BaseApi
      * 
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      * @param  string[] $asin_set The set of ASINs. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4140,7 +4140,7 @@ class AplusContentV20201101Api extends BaseApi
      * 
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      * @param  string[] $asin_set The set of ASINs. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4148,7 +4148,7 @@ class AplusContentV20201101Api extends BaseApi
      */
     public function validateContentDocumentAsinRelationsAsyncWithHttpInfo($marketplace_id, $post_content_document_request, $asin_set = null)
     {
-        $returnType = '\SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse';
         $request = $this->validateContentDocumentAsinRelationsRequest($marketplace_id, $post_content_document_request, $asin_set);
         $signedRequest = $this->config->signRequest(
             $request
@@ -4195,7 +4195,7 @@ class AplusContentV20201101Api extends BaseApi
      * Create request for operation 'validateContentDocumentAsinRelations'
      *
      * @param  string $marketplace_id The identifier for the marketplace where the A+ Content is published. (required)
-     * @param  \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
+     * @param  \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest $post_content_document_request The content document request details. (required)
      * @param  string[] $asin_set The set of ASINs. (optional)
      *
      * @throws \InvalidArgumentException

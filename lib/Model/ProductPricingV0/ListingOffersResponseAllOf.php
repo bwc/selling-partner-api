@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListingOffersResponseAllOf Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class ListingOffersResponseAllOf extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'request' => '\SellingPartnerApi\Model\ProductPricingV0\ListingOffersRequestParams'
+        'request' => '\SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersRequestParams'
     ];
 
     /**
@@ -136,7 +136,7 @@ class ListingOffersResponseAllOf extends BaseModel implements ModelInterface, Ar
     /**
      * Gets request
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ListingOffersRequestParams|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersRequestParams|null
      */
     public function getRequest()
     {
@@ -146,7 +146,7 @@ class ListingOffersResponseAllOf extends BaseModel implements ModelInterface, Ar
     /**
      * Sets request
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ListingOffersRequestParams|null $request request
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersRequestParams|null $request request
      *
      * @return self
      */

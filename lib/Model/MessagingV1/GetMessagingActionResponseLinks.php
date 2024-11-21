@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMessagingActionResponseLinks Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class GetMessagingActionResponseLinks extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\SellingPartnerApi\Model\MessagingV1\LinkObject',
-        'schema' => '\SellingPartnerApi\Model\MessagingV1\LinkObject'
+        'self' => '\SellingPartnerApiV5\Model\MessagingV1\LinkObject',
+        'schema' => '\SellingPartnerApiV5\Model\MessagingV1\LinkObject'
     ];
 
     /**
@@ -148,7 +148,7 @@ class GetMessagingActionResponseLinks extends BaseModel implements ModelInterfac
     /**
      * Gets self
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\LinkObject
+     * @return \SellingPartnerApiV5\Model\MessagingV1\LinkObject
      */
     public function getSelf()
     {
@@ -158,7 +158,7 @@ class GetMessagingActionResponseLinks extends BaseModel implements ModelInterfac
     /**
      * Sets self
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\LinkObject $self self
+     * @param \SellingPartnerApiV5\Model\MessagingV1\LinkObject $self self
      *
      * @return self
      */
@@ -171,7 +171,7 @@ class GetMessagingActionResponseLinks extends BaseModel implements ModelInterfac
     /**
      * Gets schema
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\LinkObject
+     * @return \SellingPartnerApiV5\Model\MessagingV1\LinkObject
      */
     public function getSchema()
     {
@@ -181,7 +181,7 @@ class GetMessagingActionResponseLinks extends BaseModel implements ModelInterfac
     /**
      * Sets schema
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\LinkObject $schema schema
+     * @param \SellingPartnerApiV5\Model\MessagingV1\LinkObject $schema schema
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardTechSpecsModule Class Doc Comment
  *
  * @category Class
  * @description The standard table of technical feature names and definitions.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardTechSpecsModule extends BaseModel implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'specification_list' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextPairBlock[]',
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'specification_list' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextPairBlock[]',
         'table_count' => 'int'
     ];
 
@@ -168,7 +168,7 @@ class StandardTechSpecsModule extends BaseModel implements ModelInterface, Array
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -178,7 +178,7 @@ class StandardTechSpecsModule extends BaseModel implements ModelInterface, Array
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class StandardTechSpecsModule extends BaseModel implements ModelInterface, Array
     /**
      * Gets specification_list
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextPairBlock[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextPairBlock[]
      */
     public function getSpecificationList()
     {
@@ -201,7 +201,7 @@ class StandardTechSpecsModule extends BaseModel implements ModelInterface, Array
     /**
      * Sets specification_list
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextPairBlock[] $specification_list The specification list.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextPairBlock[] $specification_list The specification list.
      *
      * @return self
      */

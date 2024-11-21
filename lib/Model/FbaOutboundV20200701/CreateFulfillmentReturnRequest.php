@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateFulfillmentReturnRequest Class Doc Comment
  *
  * @category Class
  * @description The createFulfillmentReturn operation creates a fulfillment return for items that were fulfilled using the createFulfillmentOrder operation. For calls to createFulfillmentReturn, you must include ReturnReasonCode values returned by a previous call to the listReturnReasonCodes operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class CreateFulfillmentReturnRequest extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateReturnItem[]'
+        'items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateReturnItem[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class CreateFulfillmentReturnRequest extends BaseModel implements ModelInterface
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CreateReturnItem[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateReturnItem[]
      */
     public function getItems()
     {
@@ -150,7 +150,7 @@ class CreateFulfillmentReturnRequest extends BaseModel implements ModelInterface
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\CreateReturnItem[] $items An array of items to be returned.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateReturnItem[] $items An array of items to be returned.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BuyerInfo Class Doc Comment
  *
  * @category Class
  * @description Buyer information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class BuyerInfo extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
         'buyer_email' => 'string',
         'buyer_name' => 'string',
         'buyer_county' => 'string',
-        'buyer_tax_info' => '\SellingPartnerApi\Model\OrdersV0\BuyerTaxInfo',
+        'buyer_tax_info' => '\SellingPartnerApiV5\Model\OrdersV0\BuyerTaxInfo',
         'purchase_order_number' => 'string'
     ];
 
@@ -230,7 +230,7 @@ class BuyerInfo extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets buyer_tax_info
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\BuyerTaxInfo|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\BuyerTaxInfo|null
      */
     public function getBuyerTaxInfo()
     {
@@ -240,7 +240,7 @@ class BuyerInfo extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets buyer_tax_info
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\BuyerTaxInfo|null $buyer_tax_info buyer_tax_info
+     * @param \SellingPartnerApiV5\Model\OrdersV0\BuyerTaxInfo|null $buyer_tax_info buyer_tax_info
      *
      * @return self
      */

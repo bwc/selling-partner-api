@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateScheduledPackagesRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the `updateScheduledPackages` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class UpdateScheduledPackagesRequest extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'update_package_details_list' => '\SellingPartnerApi\Model\EasyShipV20220323\UpdatePackageDetails[]'
+        'update_package_details_list' => '\SellingPartnerApiV5\Model\EasyShipV20220323\UpdatePackageDetails[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class UpdateScheduledPackagesRequest extends BaseModel implements ModelInterface
     /**
      * Gets update_package_details_list
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\UpdatePackageDetails[]
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\UpdatePackageDetails[]
      */
     public function getUpdatePackageDetailsList()
     {
@@ -205,7 +205,7 @@ class UpdateScheduledPackagesRequest extends BaseModel implements ModelInterface
     /**
      * Sets update_package_details_list
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\UpdatePackageDetails[] $update_package_details_list A list of package update details.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\UpdatePackageDetails[] $update_package_details_list A list of package update details.
      *
      * @return self
      */

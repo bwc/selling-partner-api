@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Dimensions Class Doc Comment
  *
  * @category Class
  * @description Dimensions of an Amazon catalog item or item in its packaging.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'height' => '\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension',
-        'length' => '\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension',
-        'weight' => '\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension',
-        'width' => '\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension'
+        'height' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension',
+        'length' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension',
+        'weight' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension',
+        'width' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension'
     ];
 
     /**
@@ -155,7 +155,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets height
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null
      */
     public function getHeight()
     {
@@ -165,7 +165,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets height
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null $height height
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null $height height
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets length
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null
      */
     public function getLength()
     {
@@ -188,7 +188,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets length
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null $length length
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null $length length
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null
      */
     public function getWeight()
     {
@@ -211,7 +211,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null $weight weight
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null $weight weight
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets width
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null
      */
     public function getWidth()
     {
@@ -234,7 +234,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets width
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\Dimension|null $width width
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension|null $width width
      *
      * @return self
      */

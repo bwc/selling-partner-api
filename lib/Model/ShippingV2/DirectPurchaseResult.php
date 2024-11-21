@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DirectPurchaseResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the directPurchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class DirectPurchaseResult extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'shipment_id' => 'string',
-        'package_document_detail_list' => '\SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail[]'
+        'package_document_detail_list' => '\SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail[]'
     ];
 
     /**
@@ -169,7 +169,7 @@ class DirectPurchaseResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets package_document_detail_list
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail[]|null
      */
     public function getPackageDocumentDetailList()
     {
@@ -179,7 +179,7 @@ class DirectPurchaseResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets package_document_detail_list
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail[]|null $package_document_detail_list A list of post-purchase details about a package that will be shipped using a shipping service.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail[]|null $package_document_detail_list A list of post-purchase details about a package that will be shipped using a shipping service.
      *
      * @return self
      */

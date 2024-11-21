@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetTrackingResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the getTracking operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,9 +60,9 @@ class GetTrackingResult extends BaseModel implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'tracking_id' => 'string',
         'alternate_leg_tracking_id' => 'string',
-        'event_history' => '\SellingPartnerApi\Model\ShippingV2\Event[]',
+        'event_history' => '\SellingPartnerApiV5\Model\ShippingV2\Event[]',
         'promised_delivery_date' => 'string',
-        'summary' => '\SellingPartnerApi\Model\ShippingV2\TrackingSummary'
+        'summary' => '\SellingPartnerApiV5\Model\ShippingV2\TrackingSummary'
     ];
 
     /**
@@ -222,7 +222,7 @@ class GetTrackingResult extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets event_history
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Event[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Event[]
      */
     public function getEventHistory()
     {
@@ -232,7 +232,7 @@ class GetTrackingResult extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets event_history
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Event[] $event_history A list of tracking events.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Event[] $event_history A list of tracking events.
      *
      * @return self
      */
@@ -268,7 +268,7 @@ class GetTrackingResult extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets summary
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\TrackingSummary
+     * @return \SellingPartnerApiV5\Model\ShippingV2\TrackingSummary
      */
     public function getSummary()
     {
@@ -278,7 +278,7 @@ class GetTrackingResult extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets summary
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\TrackingSummary $summary summary
+     * @param \SellingPartnerApiV5\Model\ShippingV2\TrackingSummary $summary summary
      *
      * @return self
      */

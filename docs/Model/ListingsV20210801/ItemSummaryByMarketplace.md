@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **item_name** | **string** | Name, or title, associated with an Amazon catalog item. |
 **created_date** | **string** | Date the listings item was created, in ISO 8601 format. |
 **last_updated_date** | **string** | Date the listings item was last updated, in ISO 8601 format. |
-**main_image** | [**\SellingPartnerApi\Model\ListingsV20210801\ItemImage**](ItemImage.md) |  | [optional]
+**main_image** | [**\SellingPartnerApiV5\Model\ListingsV20210801\ItemImage**](ItemImage.md) |  | [optional]
 
 [[ListingsV20210801 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

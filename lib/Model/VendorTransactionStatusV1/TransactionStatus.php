@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorTransactionStatusV1;
+namespace SellingPartnerApiV5\Model\VendorTransactionStatusV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransactionStatus Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class TransactionStatus extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transaction_status' => '\SellingPartnerApi\Model\VendorTransactionStatusV1\Transaction'
+        'transaction_status' => '\SellingPartnerApiV5\Model\VendorTransactionStatusV1\Transaction'
     ];
 
     /**
@@ -136,7 +136,7 @@ class TransactionStatus extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets transaction_status
      *
-     * @return \SellingPartnerApi\Model\VendorTransactionStatusV1\Transaction|null
+     * @return \SellingPartnerApiV5\Model\VendorTransactionStatusV1\Transaction|null
      */
     public function getTransactionStatus()
     {
@@ -146,7 +146,7 @@ class TransactionStatus extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets transaction_status
      *
-     * @param \SellingPartnerApi\Model\VendorTransactionStatusV1\Transaction|null $transaction_status transaction_status
+     * @param \SellingPartnerApiV5\Model\VendorTransactionStatusV1\Transaction|null $transaction_status transaction_status
      *
      * @return self
      */

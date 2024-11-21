@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SolicitationsV1;
+namespace SellingPartnerApiV5\Model\SolicitationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSolicitationActionResponse Class Doc Comment
  *
  * @category Class
  * @description Describes a solicitation action that can be taken for an order. Provides a JSON Hypertext Application Language (HAL) link to the JSON schema document that describes the expected input.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_links' => '\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponseLinks',
-        '_embedded' => '\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponseEmbedded',
-        'payload' => '\SellingPartnerApi\Model\SolicitationsV1\SolicitationsAction',
-        'errors' => '\SellingPartnerApi\Model\SolicitationsV1\Error[]'
+        '_links' => '\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponseLinks',
+        '_embedded' => '\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponseEmbedded',
+        'payload' => '\SellingPartnerApiV5\Model\SolicitationsV1\SolicitationsAction',
+        'errors' => '\SellingPartnerApiV5\Model\SolicitationsV1\Error[]'
     ];
 
     /**
@@ -155,7 +155,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Gets _links
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponseLinks|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponseLinks|null
      */
     public function getLinks()
     {
@@ -165,7 +165,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Sets _links
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponseLinks|null $_links _links
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponseLinks|null $_links _links
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Gets _embedded
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponseEmbedded|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponseEmbedded|null
      */
     public function getEmbedded()
     {
@@ -188,7 +188,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Sets _embedded
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponseEmbedded|null $_embedded _embedded
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponseEmbedded|null $_embedded _embedded
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\SolicitationsAction|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\SolicitationsAction|null
      */
     public function getPayload()
     {
@@ -211,7 +211,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\SolicitationsAction|null $payload payload
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\SolicitationsAction|null $payload payload
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\Error[]|null
      */
     public function getErrors()
     {
@@ -234,7 +234,7 @@ class GetSolicitationActionResponse extends BaseModel implements ModelInterface,
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

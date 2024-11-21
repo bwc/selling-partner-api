@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderListStatus Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class OrderListStatus extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\VendorOrdersV1\Pagination',
-        'orders_status' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderStatus[]'
+        'pagination' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Pagination',
+        'orders_status' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderStatus[]'
     ];
 
     /**
@@ -142,7 +142,7 @@ class OrderListStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Pagination|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Pagination|null
      */
     public function getPagination()
     {
@@ -152,7 +152,7 @@ class OrderListStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -165,7 +165,7 @@ class OrderListStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets orders_status
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderStatus[]|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderStatus[]|null
      */
     public function getOrdersStatus()
     {
@@ -175,7 +175,7 @@ class OrderListStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets orders_status
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderStatus[]|null $orders_status orders_status
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderStatus[]|null $orders_status orders_status
      *
      * @return self
      */

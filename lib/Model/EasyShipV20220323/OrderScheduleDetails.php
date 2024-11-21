@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderScheduleDetails Class Doc Comment
  *
  * @category Class
  * @description This object allows users to specify an order to be scheduled. Only the amazonOrderId is required.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class OrderScheduleDetails extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
-        'package_details' => '\SellingPartnerApi\Model\EasyShipV20220323\PackageDetails'
+        'package_details' => '\SellingPartnerApiV5\Model\EasyShipV20220323\PackageDetails'
     ];
 
     /**
@@ -169,7 +169,7 @@ class OrderScheduleDetails extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets package_details
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\PackageDetails|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\PackageDetails|null
      */
     public function getPackageDetails()
     {
@@ -179,7 +179,7 @@ class OrderScheduleDetails extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets package_details
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\PackageDetails|null $package_details package_details
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\PackageDetails|null $package_details package_details
      *
      * @return self
      */

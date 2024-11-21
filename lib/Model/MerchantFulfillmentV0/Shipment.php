@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Shipment Class Doc Comment
  *
  * @category Class
  * @description The details of a shipment, including the shipment status.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,15 +61,15 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
         'shipment_id' => 'string',
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
-        'item_list' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\FBMItem[]',
-        'ship_from_address' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Address',
-        'ship_to_address' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Address',
-        'package_dimensions' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\PackageDimensions',
-        'weight' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Weight',
-        'insurance' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount',
-        'shipping_service' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingService',
-        'label' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Label',
-        'status' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentStatus',
+        'item_list' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\FBMItem[]',
+        'ship_from_address' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address',
+        'ship_to_address' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address',
+        'package_dimensions' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\PackageDimensions',
+        'weight' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight',
+        'insurance' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount',
+        'shipping_service' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingService',
+        'label' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Label',
+        'status' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentStatus',
         'tracking_id' => 'string',
         'created_date' => 'string',
         'last_updated_date' => 'string'
@@ -334,7 +334,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets item_list
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\FBMItem[]
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FBMItem[]
      */
     public function getItemList()
     {
@@ -344,7 +344,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets item_list
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\FBMItem[] $item_list The list of items to be included in a shipment.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FBMItem[] $item_list The list of items to be included in a shipment.
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ship_from_address
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Address
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address
      */
     public function getShipFromAddress()
     {
@@ -367,7 +367,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ship_from_address
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Address $ship_from_address ship_from_address
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address $ship_from_address ship_from_address
      *
      * @return self
      */
@@ -380,7 +380,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ship_to_address
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Address
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address
      */
     public function getShipToAddress()
     {
@@ -390,7 +390,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ship_to_address
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Address $ship_to_address ship_to_address
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address $ship_to_address ship_to_address
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets package_dimensions
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\PackageDimensions
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\PackageDimensions
      */
     public function getPackageDimensions()
     {
@@ -413,7 +413,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets package_dimensions
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\PackageDimensions $package_dimensions package_dimensions
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\PackageDimensions $package_dimensions package_dimensions
      *
      * @return self
      */
@@ -426,7 +426,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Weight
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight
      */
     public function getWeight()
     {
@@ -436,7 +436,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight $weight weight
      *
      * @return self
      */
@@ -449,7 +449,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets insurance
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount
      */
     public function getInsurance()
     {
@@ -459,7 +459,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets insurance
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount $insurance insurance
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount $insurance insurance
      *
      * @return self
      */
@@ -472,7 +472,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets shipping_service
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingService
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingService
      */
     public function getShippingService()
     {
@@ -482,7 +482,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets shipping_service
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingService $shipping_service shipping_service
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingService $shipping_service shipping_service
      *
      * @return self
      */
@@ -495,7 +495,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets label
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Label
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Label
      */
     public function getLabel()
     {
@@ -505,7 +505,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets label
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Label $label label
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Label $label label
      *
      * @return self
      */
@@ -518,7 +518,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentStatus
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentStatus
      */
     public function getStatus()
     {
@@ -528,7 +528,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentStatus $status status
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentStatus $status status
      *
      * @return self
      */

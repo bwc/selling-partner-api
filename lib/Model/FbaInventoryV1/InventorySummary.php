@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInventoryV1;
+namespace SellingPartnerApiV5\Model\FbaInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InventorySummary Class Doc Comment
  *
  * @category Class
  * @description Inventory summary for a specific item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class InventorySummary extends BaseModel implements ModelInterface, ArrayAccess,
         'fn_sku' => 'string',
         'seller_sku' => 'string',
         'condition' => 'string',
-        'inventory_details' => '\SellingPartnerApi\Model\FbaInventoryV1\InventoryDetails',
+        'inventory_details' => '\SellingPartnerApiV5\Model\FbaInventoryV1\InventoryDetails',
         'last_updated_time' => 'string',
         'product_name' => 'string',
         'total_quantity' => 'int'
@@ -271,7 +271,7 @@ class InventorySummary extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets inventory_details
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\InventoryDetails|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\InventoryDetails|null
      */
     public function getInventoryDetails()
     {
@@ -281,7 +281,7 @@ class InventorySummary extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets inventory_details
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\InventoryDetails|null $inventory_details inventory_details
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\InventoryDetails|null $inventory_details inventory_details
      *
      * @return self
      */

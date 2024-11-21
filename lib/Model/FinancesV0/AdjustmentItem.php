@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AdjustmentItem Class Doc Comment
  *
  * @category Class
  * @description An item in an adjustment to the seller's account.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class AdjustmentItem extends BaseModel implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'quantity' => 'string',
-        'per_unit_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'total_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'per_unit_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'total_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'seller_sku' => 'string',
         'fn_sku' => 'string',
         'product_description' => 'string',
@@ -196,7 +196,7 @@ class AdjustmentItem extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets per_unit_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getPerUnitAmount()
     {
@@ -206,7 +206,7 @@ class AdjustmentItem extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets per_unit_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $per_unit_amount per_unit_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $per_unit_amount per_unit_amount
      *
      * @return self
      */
@@ -219,7 +219,7 @@ class AdjustmentItem extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets total_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTotalAmount()
     {
@@ -229,7 +229,7 @@ class AdjustmentItem extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets total_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $total_amount total_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $total_amount total_amount
      *
      * @return self
      */

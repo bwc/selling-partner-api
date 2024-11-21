@@ -1,4 +1,4 @@
-# SellingPartnerApi\FeesV0Api
+# SellingPartnerApiV5\FeesV0Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getMyFeesEstimateForASIN()`
 
 ```php
-getMyFeesEstimateForASIN($asin, $body): \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse
+getMyFeesEstimateForASIN($asin, $body): \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse
 ```
 
 
@@ -36,18 +36,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeesV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FeesV0Api($config);
 $asin = 'asin_example'; // string | The Amazon Standard Identification Number (ASIN) of the item.
-$body = new \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest(); // \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest
+$body = new \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest(); // \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest
 
 try {
     $result = $apiInstance->getMyFeesEstimateForASIN($asin, $body);
@@ -62,11 +62,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asin** | **string**| The Amazon Standard Identification Number (ASIN) of the item. |
- **body** | [**\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest**](../Model/FeesV0/GetMyFeesEstimateRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest**](../Model/FeesV0/GetMyFeesEstimateRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse**](../Model/FeesV0/GetMyFeesEstimateResponse.md)
+[**\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse**](../Model/FeesV0/GetMyFeesEstimateResponse.md)
 
 ### HTTP request headers
 
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 ## `getMyFeesEstimateForSKU()`
 
 ```php
-getMyFeesEstimateForSKU($seller_sku, $body): \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse
+getMyFeesEstimateForSKU($seller_sku, $body): \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse
 ```
 
 
@@ -108,18 +108,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeesV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FeesV0Api($config);
 $seller_sku = 'seller_sku_example'; // string | Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
-$body = new \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest(); // \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest
+$body = new \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest(); // \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest
 
 try {
     $result = $apiInstance->getMyFeesEstimateForSKU($seller_sku, $body);
@@ -134,11 +134,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_sku** | **string**| Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. |
- **body** | [**\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest**](../Model/FeesV0/GetMyFeesEstimateRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest**](../Model/FeesV0/GetMyFeesEstimateRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse**](../Model/FeesV0/GetMyFeesEstimateResponse.md)
+[**\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse**](../Model/FeesV0/GetMyFeesEstimateResponse.md)
 
 ### HTTP request headers
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 ## `getMyFeesEstimates()`
 
 ```php
-getMyFeesEstimates($body): \SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]
+getMyFeesEstimates($body): \SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]
 ```
 
 
@@ -174,17 +174,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeesV0Api($config);
-$body = array(new \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest()); // \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[]
+$apiInstance = new SellingPartnerApiV5\Api\FeesV0Api($config);
+$body = array(new \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest()); // \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[]
 
 try {
     $result = $apiInstance->getMyFeesEstimates($body);
@@ -198,11 +198,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[]**](../Model/FeesV0/FeesEstimateByIdRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[]**](../Model/FeesV0/FeesEstimateByIdRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]**](../Model/FeesV0/FeesEstimateResult.md)
+[**\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]**](../Model/FeesV0/FeesEstimateResult.md)
 
 ### HTTP request headers
 

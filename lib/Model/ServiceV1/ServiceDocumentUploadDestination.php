@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ServiceDocumentUploadDestination Class Doc Comment
  *
  * @category Class
  * @description Information about an upload destination.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ServiceDocumentUploadDestination extends BaseModel implements ModelInterfa
     protected static $openAPITypes = [
         'upload_destination_id' => 'string',
         'url' => 'string',
-        'encryption_details' => '\SellingPartnerApi\Model\ServiceV1\EncryptionDetails',
+        'encryption_details' => '\SellingPartnerApiV5\Model\ServiceV1\EncryptionDetails',
         'headers' => 'object'
     ];
 
@@ -210,7 +210,7 @@ class ServiceDocumentUploadDestination extends BaseModel implements ModelInterfa
     /**
      * Gets encryption_details
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\EncryptionDetails
+     * @return \SellingPartnerApiV5\Model\ServiceV1\EncryptionDetails
      */
     public function getEncryptionDetails()
     {
@@ -220,7 +220,7 @@ class ServiceDocumentUploadDestination extends BaseModel implements ModelInterfa
     /**
      * Sets encryption_details
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\EncryptionDetails $encryption_details encryption_details
+     * @param \SellingPartnerApiV5\Model\ServiceV1\EncryptionDetails $encryption_details encryption_details
      *
      * @return self
      */

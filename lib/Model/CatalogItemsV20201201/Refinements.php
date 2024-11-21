@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20201201;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20201201;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Refinements Class Doc Comment
  *
  * @category Class
  * @description Search refinements.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class Refinements extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'brands' => '\SellingPartnerApi\Model\CatalogItemsV20201201\BrandRefinement[]',
-        'classifications' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ClassificationRefinement[]'
+        'brands' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\BrandRefinement[]',
+        'classifications' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ClassificationRefinement[]'
     ];
 
     /**
@@ -149,7 +149,7 @@ class Refinements extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets brands
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\BrandRefinement[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\BrandRefinement[]
      */
     public function getBrands()
     {
@@ -159,7 +159,7 @@ class Refinements extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets brands
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\BrandRefinement[] $brands Brand search refinements.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\BrandRefinement[] $brands Brand search refinements.
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class Refinements extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets classifications
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ClassificationRefinement[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ClassificationRefinement[]
      */
     public function getClassifications()
     {
@@ -182,7 +182,7 @@ class Refinements extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets classifications
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ClassificationRefinement[] $classifications Classification search refinements.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ClassificationRefinement[] $classifications Classification search refinements.
      *
      * @return self
      */

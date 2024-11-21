@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * QuantityDiscountPriceType Class Doc Comment
  *
  * @category Class
  * @description Contains pricing information that includes special pricing when buying in bulk.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class QuantityDiscountPriceType extends BaseModel implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         'quantity_tier' => 'int',
-        'quantity_discount_type' => '\SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType',
-        'listing_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType'
+        'quantity_discount_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType',
+        'listing_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType'
     ];
 
     /**
@@ -181,7 +181,7 @@ class QuantityDiscountPriceType extends BaseModel implements ModelInterface, Arr
     /**
      * Gets quantity_discount_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType
      */
     public function getQuantityDiscountType()
     {
@@ -191,7 +191,7 @@ class QuantityDiscountPriceType extends BaseModel implements ModelInterface, Arr
     /**
      * Sets quantity_discount_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType $quantity_discount_type quantity_discount_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType $quantity_discount_type quantity_discount_type
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class QuantityDiscountPriceType extends BaseModel implements ModelInterface, Arr
     /**
      * Gets listing_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getListingPrice()
     {
@@ -214,7 +214,7 @@ class QuantityDiscountPriceType extends BaseModel implements ModelInterface, Arr
     /**
      * Sets listing_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $listing_price listing_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $listing_price listing_price
      *
      * @return self
      */

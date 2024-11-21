@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Promotion Class Doc Comment
  *
  * @category Class
  * @description A promotion applied to an item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     protected static $openAPITypes = [
         'promotion_type' => 'string',
         'promotion_id' => 'string',
-        'promotion_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'promotion_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -195,7 +195,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets promotion_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getPromotionAmount()
     {
@@ -205,7 +205,7 @@ class Promotion extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets promotion_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $promotion_amount promotion_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $promotion_amount promotion_amount
      *
      * @return self
      */

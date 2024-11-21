@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CouponPaymentEvent Class Doc Comment
  *
  * @category Class
  * @description An event related to coupon payments.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,9 +63,9 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
         'seller_coupon_description' => 'string',
         'clip_or_redemption_count' => 'int',
         'payment_event_id' => 'string',
-        'fee_component' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent',
-        'charge_component' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent',
-        'total_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'fee_component' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent',
+        'charge_component' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent',
+        'total_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -294,7 +294,7 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets fee_component
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent|null
      */
     public function getFeeComponent()
     {
@@ -304,7 +304,7 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets fee_component
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent|null $fee_component fee_component
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent|null $fee_component fee_component
      *
      * @return self
      */
@@ -317,7 +317,7 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets charge_component
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent|null
      */
     public function getChargeComponent()
     {
@@ -327,7 +327,7 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets charge_component
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent|null $charge_component charge_component
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent|null $charge_component charge_component
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets total_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTotalAmount()
     {
@@ -350,7 +350,7 @@ class CouponPaymentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets total_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $total_amount total_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $total_amount total_amount
      *
      * @return self
      */

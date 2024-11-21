@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SupportedDocumentDetail Class Doc Comment
  *
  * @category Class
  * @description The supported document types for a service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SupportedDocumentDetail extends BaseModel implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'name' => '\SellingPartnerApi\Model\ShippingV2\DocumentType',
+        'name' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentType',
         'is_mandatory' => 'bool'
     ];
 
@@ -149,7 +149,7 @@ class SupportedDocumentDetail extends BaseModel implements ModelInterface, Array
     /**
      * Gets name
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentType
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentType
      */
     public function getName()
     {
@@ -159,7 +159,7 @@ class SupportedDocumentDetail extends BaseModel implements ModelInterface, Array
     /**
      * Sets name
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentType $name name
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentType $name name
      *
      * @return self
      */

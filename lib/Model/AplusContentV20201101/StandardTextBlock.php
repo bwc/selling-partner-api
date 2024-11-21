@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardTextBlock Class Doc Comment
  *
  * @category Class
  * @description The A+ Content standard text box block, comprised of a paragraph with a headline.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardTextBlock extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'body' => '\SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent'
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'body' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent'
     ];
 
     /**
@@ -143,7 +143,7 @@ class StandardTextBlock extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -153,7 +153,7 @@ class StandardTextBlock extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class StandardTextBlock extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent|null
      */
     public function getBody()
     {
@@ -176,7 +176,7 @@ class StandardTextBlock extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent|null $body body
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent|null $body body
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * UploadsV20201101Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class UploadsV20201101Api extends BaseApi
 {
@@ -48,9 +48,9 @@ class UploadsV20201101Api extends BaseApi
      * @param  string $resource The resource for the upload destination that you are creating. For example, if you are creating an upload destination for the createLegalDisclosure operation of the Messaging API, the `{resource}` would be `/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure`, and the entire path would be `/uploads/2020-11-01/uploadDestinations/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure`. If you are creating an upload destination for an Aplus content document, the `{resource}` would be `aplus/2020-11-01/contentDocuments` and the path would be `/uploads/v1/uploadDestinations/aplus/2020-11-01/contentDocuments`. (required)
      * @param  string $content_type The content type of the file to be uploaded. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse
+     * @return \SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse
      */
     public function createUploadDestinationForResource($marketplace_ids, $content_md5, $resource, $content_type = null)
     {
@@ -66,9 +66,9 @@ class UploadsV20201101Api extends BaseApi
      * @param  string $resource The resource for the upload destination that you are creating. For example, if you are creating an upload destination for the createLegalDisclosure operation of the Messaging API, the `{resource}` would be `/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure`, and the entire path would be `/uploads/2020-11-01/uploadDestinations/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure`. If you are creating an upload destination for an Aplus content document, the `{resource}` would be `aplus/2020-11-01/contentDocuments` and the path would be `/uploads/v1/uploadDestinations/aplus/2020-11-01/contentDocuments`. (required)
      * @param  string $content_type The content type of the file to be uploaded. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createUploadDestinationForResourceWithHttpInfo($marketplace_ids, $content_md5, $resource, $content_type = null)
     {
@@ -117,80 +117,80 @@ class UploadsV20201101Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 201:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -205,7 +205,7 @@ class UploadsV20201101Api extends BaseApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +213,7 @@ class UploadsV20201101Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +221,7 @@ class UploadsV20201101Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +229,7 @@ class UploadsV20201101Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -237,7 +237,7 @@ class UploadsV20201101Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class UploadsV20201101Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -253,7 +253,7 @@ class UploadsV20201101Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -261,7 +261,7 @@ class UploadsV20201101Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -269,7 +269,7 @@ class UploadsV20201101Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse',
+                        '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -313,7 +313,7 @@ class UploadsV20201101Api extends BaseApi
      */
     public function createUploadDestinationForResourceAsyncWithHttpInfo($marketplace_ids, $content_md5, $resource, $content_type = null)
     {
-        $returnType = '\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse';
         $request = $this->createUploadDestinationForResourceRequest($marketplace_ids, $content_md5, $resource, $content_type);
         $signedRequest = $this->config->signRequest(
             $request

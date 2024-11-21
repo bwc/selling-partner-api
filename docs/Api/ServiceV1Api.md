@@ -1,4 +1,4 @@
-# SellingPartnerApi\ServiceV1Api
+# SellingPartnerApiV5\ServiceV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ Method | HTTP request | Description
 ## `addAppointmentForServiceJobByServiceJobId()`
 
 ```php
-addAppointmentForServiceJobByServiceJobId($service_job_id, $body): \SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse
+addAppointmentForServiceJobByServiceJobId($service_job_id, $body): \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse
 ```
 
 
@@ -46,18 +46,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | An Amazon defined service job identifier.
-$body = new \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest(); // \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest | Add appointment operation input details.
+$body = new \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest(); // \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest | Add appointment operation input details.
 
 try {
     $result = $apiInstance->addAppointmentForServiceJobByServiceJobId($service_job_id, $body);
@@ -72,11 +72,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service_job_id** | **string**| An Amazon defined service job identifier. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest**](../Model/ServiceV1/AddAppointmentRequest.md)| Add appointment operation input details. |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest**](../Model/ServiceV1/AddAppointmentRequest.md)| Add appointment operation input details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse**](../Model/ServiceV1/SetAppointmentResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse**](../Model/ServiceV1/SetAppointmentResponse.md)
 
 ### HTTP request headers
 
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 ## `assignAppointmentResources()`
 
 ```php
-assignAppointmentResources($service_job_id, $appointment_id, $body): \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse
+assignAppointmentResources($service_job_id, $appointment_id, $body): \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse
 ```
 
 
@@ -112,19 +112,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API.
 $appointment_id = 'appointment_id_example'; // string | An Amazon-defined identifier of active service job appointment.
-$body = new \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest(); // \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest
+$body = new \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest(); // \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest
 
 try {
     $result = $apiInstance->assignAppointmentResources($service_job_id, $appointment_id, $body);
@@ -140,11 +140,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service_job_id** | **string**| An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. |
  **appointment_id** | **string**| An Amazon-defined identifier of active service job appointment. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest**](../Model/ServiceV1/AssignAppointmentResourcesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest**](../Model/ServiceV1/AssignAppointmentResourcesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse**](../Model/ServiceV1/AssignAppointmentResourcesResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse**](../Model/ServiceV1/AssignAppointmentResourcesResponse.md)
 
 ### HTTP request headers
 
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 ## `cancelReservation()`
 
 ```php
-cancelReservation($reservation_id, $marketplace_ids): \SellingPartnerApi\Model\ServiceV1\CancelReservationResponse
+cancelReservation($reservation_id, $marketplace_ids): \SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse
 ```
 
 
@@ -180,16 +180,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $reservation_id = 'reservation_id_example'; // string | Reservation Identifier
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
 
@@ -210,7 +210,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse**](../Model/ServiceV1/CancelReservationResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse**](../Model/ServiceV1/CancelReservationResponse.md)
 
 ### HTTP request headers
 
@@ -224,7 +224,7 @@ Name | Type | Description  | Notes
 ## `cancelServiceJobByServiceJobId()`
 
 ```php
-cancelServiceJobByServiceJobId($service_job_id, $cancellation_reason_code): \SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse
+cancelServiceJobByServiceJobId($service_job_id, $cancellation_reason_code): \SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse
 ```
 
 
@@ -246,16 +246,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | An Amazon defined service job identifier.
 $cancellation_reason_code = 'cancellation_reason_code_example'; // string | A cancel reason code that specifies the reason for cancelling a service job.
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse**](../Model/ServiceV1/CancelServiceJobByServiceJobIdResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse**](../Model/ServiceV1/CancelServiceJobByServiceJobIdResponse.md)
 
 ### HTTP request headers
 
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 ## `completeServiceJobByServiceJobId()`
 
 ```php
-completeServiceJobByServiceJobId($service_job_id): \SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse
+completeServiceJobByServiceJobId($service_job_id): \SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse
 ```
 
 
@@ -312,16 +312,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | An Amazon defined service job identifier.
 
 try {
@@ -340,7 +340,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse**](../Model/ServiceV1/CompleteServiceJobByServiceJobIdResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse**](../Model/ServiceV1/CompleteServiceJobByServiceJobIdResponse.md)
 
 ### HTTP request headers
 
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 ## `createReservation()`
 
 ```php
-createReservation($marketplace_ids, $body): \SellingPartnerApi\Model\ServiceV1\CreateReservationResponse
+createReservation($marketplace_ids, $body): \SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse
 ```
 
 
@@ -376,18 +376,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
-$body = new \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest(); // \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest | Reservation details
+$body = new \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest(); // \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest | Reservation details
 
 try {
     $result = $apiInstance->createReservation($marketplace_ids, $body);
@@ -402,11 +402,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **marketplace_ids** | [**string[]**](../Model/ServiceV1/string.md)| An identifier for the marketplace in which the resource operates. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\CreateReservationRequest**](../Model/ServiceV1/CreateReservationRequest.md)| Reservation details |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest**](../Model/ServiceV1/CreateReservationRequest.md)| Reservation details |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse**](../Model/ServiceV1/CreateReservationResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse**](../Model/ServiceV1/CreateReservationResponse.md)
 
 ### HTTP request headers
 
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 ## `createServiceDocumentUploadDestination()`
 
 ```php
-createServiceDocumentUploadDestination($body): \SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination
+createServiceDocumentUploadDestination($body): \SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination
 ```
 
 
@@ -442,17 +442,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
-$body = new \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument(); // \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument | Upload document operation input details.
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
+$body = new \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument(); // \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument | Upload document operation input details.
 
 try {
     $result = $apiInstance->createServiceDocumentUploadDestination($body);
@@ -466,11 +466,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument**](../Model/ServiceV1/ServiceUploadDocument.md)| Upload document operation input details. |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument**](../Model/ServiceV1/ServiceUploadDocument.md)| Upload document operation input details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination**](../Model/ServiceV1/CreateServiceDocumentUploadDestination.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination**](../Model/ServiceV1/CreateServiceDocumentUploadDestination.md)
 
 ### HTTP request headers
 
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 ## `getAppointmentSlots()`
 
 ```php
-getAppointmentSlots($asin, $store_id, $marketplace_ids, $start_time, $end_time): \SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse
+getAppointmentSlots($asin, $store_id, $marketplace_ids, $start_time, $end_time): \SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse
 ```
 
 
@@ -506,16 +506,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $asin = 'asin_example'; // string | ASIN associated with the service.
 $store_id = 'store_id_example'; // string | Store identifier defining the region scope to retrive appointment slots.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace for which appointment slots are queried
@@ -542,7 +542,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse**](../Model/ServiceV1/GetAppointmentSlotsResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse**](../Model/ServiceV1/GetAppointmentSlotsResponse.md)
 
 ### HTTP request headers
 
@@ -556,7 +556,7 @@ Name | Type | Description  | Notes
 ## `getAppointmmentSlotsByJobId()`
 
 ```php
-getAppointmmentSlotsByJobId($service_job_id, $marketplace_ids, $start_time, $end_time): \SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse
+getAppointmmentSlotsByJobId($service_job_id, $marketplace_ids, $start_time, $end_time): \SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse
 ```
 
 
@@ -578,16 +578,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | A service job identifier to retrive appointment slots for associated service.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
 $start_time = 'start_time_example'; // string | A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `startTime` is provided, `endTime` should also be provided. Default value is as per business configuration.
@@ -612,7 +612,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse**](../Model/ServiceV1/GetAppointmentSlotsResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse**](../Model/ServiceV1/GetAppointmentSlotsResponse.md)
 
 ### HTTP request headers
 
@@ -626,7 +626,7 @@ Name | Type | Description  | Notes
 ## `getFixedSlotCapacity()`
 
 ```php
-getFixedSlotCapacity($resource_id, $marketplace_ids, $body, $next_page_token): \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity
+getFixedSlotCapacity($resource_id, $marketplace_ids, $body, $next_page_token): \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity
 ```
 
 
@@ -648,19 +648,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $resource_id = 'resource_id_example'; // string | Resource Identifier.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
-$body = new \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery(); // \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery | Request body.
+$body = new \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery(); // \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery | Request body.
 $next_page_token = 'next_page_token_example'; // string | Next page token returned in the response of your previous request.
 
 try {
@@ -677,12 +677,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **resource_id** | **string**| Resource Identifier. |
  **marketplace_ids** | [**string[]**](../Model/ServiceV1/string.md)| An identifier for the marketplace in which the resource operates. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery**](../Model/ServiceV1/FixedSlotCapacityQuery.md)| Request body. |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery**](../Model/ServiceV1/FixedSlotCapacityQuery.md)| Request body. |
  **next_page_token** | **string**| Next page token returned in the response of your previous request. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity**](../Model/ServiceV1/FixedSlotCapacity.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity**](../Model/ServiceV1/FixedSlotCapacity.md)
 
 ### HTTP request headers
 
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 ## `getRangeSlotCapacity()`
 
 ```php
-getRangeSlotCapacity($resource_id, $marketplace_ids, $body, $next_page_token): \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity
+getRangeSlotCapacity($resource_id, $marketplace_ids, $body, $next_page_token): \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity
 ```
 
 
@@ -718,19 +718,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $resource_id = 'resource_id_example'; // string | Resource Identifier.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
-$body = new \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery(); // \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery | Request body.
+$body = new \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery(); // \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery | Request body.
 $next_page_token = 'next_page_token_example'; // string | Next page token returned in the response of your previous request.
 
 try {
@@ -747,12 +747,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **resource_id** | **string**| Resource Identifier. |
  **marketplace_ids** | [**string[]**](../Model/ServiceV1/string.md)| An identifier for the marketplace in which the resource operates. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery**](../Model/ServiceV1/RangeSlotCapacityQuery.md)| Request body. |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery**](../Model/ServiceV1/RangeSlotCapacityQuery.md)| Request body. |
  **next_page_token** | **string**| Next page token returned in the response of your previous request. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity**](../Model/ServiceV1/RangeSlotCapacity.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity**](../Model/ServiceV1/RangeSlotCapacity.md)
 
 ### HTTP request headers
 
@@ -766,7 +766,7 @@ Name | Type | Description  | Notes
 ## `getServiceJobByServiceJobId()`
 
 ```php
-getServiceJobByServiceJobId($service_job_id): \SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse
+getServiceJobByServiceJobId($service_job_id): \SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse
 ```
 
 
@@ -788,16 +788,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | A service job identifier.
 
 try {
@@ -816,7 +816,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse**](../Model/ServiceV1/GetServiceJobByServiceJobIdResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse**](../Model/ServiceV1/GetServiceJobByServiceJobIdResponse.md)
 
 ### HTTP request headers
 
@@ -830,7 +830,7 @@ Name | Type | Description  | Notes
 ## `getServiceJobs()`
 
 ```php
-getServiceJobs($marketplace_ids, $service_order_ids, $service_job_status, $page_token, $page_size, $sort_field, $sort_order, $created_after, $created_before, $last_updated_after, $last_updated_before, $schedule_start_date, $schedule_end_date, $asins, $required_skills, $store_ids): \SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse
+getServiceJobs($marketplace_ids, $service_order_ids, $service_job_status, $page_token, $page_size, $sort_field, $sort_order, $created_after, $created_before, $last_updated_after, $last_updated_before, $schedule_start_date, $schedule_end_date, $asins, $required_skills, $store_ids): \SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse
 ```
 
 
@@ -852,16 +852,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $marketplace_ids = array('marketplace_ids_example'); // string[] | Used to select jobs that were placed in the specified marketplaces.
 $service_order_ids = array('service_order_ids_example'); // string[] | List of service order ids for the query you want to perform.Max values supported 20.
 $service_job_status = array('service_job_status_example'); // string[] | A list of one or more job status by which to filter the list of jobs.
@@ -910,7 +910,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse**](../Model/ServiceV1/GetServiceJobsResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse**](../Model/ServiceV1/GetServiceJobsResponse.md)
 
 ### HTTP request headers
 
@@ -924,7 +924,7 @@ Name | Type | Description  | Notes
 ## `rescheduleAppointmentForServiceJobByServiceJobId()`
 
 ```php
-rescheduleAppointmentForServiceJobByServiceJobId($service_job_id, $appointment_id, $body): \SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse
+rescheduleAppointmentForServiceJobByServiceJobId($service_job_id, $appointment_id, $body): \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse
 ```
 
 
@@ -946,19 +946,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | An Amazon defined service job identifier.
 $appointment_id = 'appointment_id_example'; // string | An existing appointment identifier for the Service Job.
-$body = new \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest(); // \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest | Reschedule appointment operation input details.
+$body = new \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest(); // \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest | Reschedule appointment operation input details.
 
 try {
     $result = $apiInstance->rescheduleAppointmentForServiceJobByServiceJobId($service_job_id, $appointment_id, $body);
@@ -974,11 +974,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service_job_id** | **string**| An Amazon defined service job identifier. |
  **appointment_id** | **string**| An existing appointment identifier for the Service Job. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest**](../Model/ServiceV1/RescheduleAppointmentRequest.md)| Reschedule appointment operation input details. |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest**](../Model/ServiceV1/RescheduleAppointmentRequest.md)| Reschedule appointment operation input details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse**](../Model/ServiceV1/SetAppointmentResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse**](../Model/ServiceV1/SetAppointmentResponse.md)
 
 ### HTTP request headers
 
@@ -1014,19 +1014,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $service_job_id = 'service_job_id_example'; // string | An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API.
 $appointment_id = 'appointment_id_example'; // string | An Amazon-defined identifier of active service job appointment.
-$body = new \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest(); // \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest | Appointment fulfillment data collection details.
+$body = new \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest(); // \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest | Appointment fulfillment data collection details.
 
 try {
     $result = $apiInstance->setAppointmentFulfillmentData($service_job_id, $appointment_id, $body);
@@ -1042,7 +1042,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **service_job_id** | **string**| An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. |
  **appointment_id** | **string**| An Amazon-defined identifier of active service job appointment. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest**](../Model/ServiceV1/SetAppointmentFulfillmentDataRequest.md)| Appointment fulfillment data collection details. |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest**](../Model/ServiceV1/SetAppointmentFulfillmentDataRequest.md)| Appointment fulfillment data collection details. |
 
 ### Return type
 
@@ -1060,7 +1060,7 @@ Name | Type | Description  | Notes
 ## `updateReservation()`
 
 ```php
-updateReservation($reservation_id, $marketplace_ids, $body): \SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse
+updateReservation($reservation_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse
 ```
 
 
@@ -1082,19 +1082,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $reservation_id = 'reservation_id_example'; // string | Reservation Identifier
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
-$body = new \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest(); // \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest | Reservation details
+$body = new \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest(); // \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest | Reservation details
 
 try {
     $result = $apiInstance->updateReservation($reservation_id, $marketplace_ids, $body);
@@ -1110,11 +1110,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **reservation_id** | **string**| Reservation Identifier |
  **marketplace_ids** | [**string[]**](../Model/ServiceV1/string.md)| An identifier for the marketplace in which the resource operates. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest**](../Model/ServiceV1/UpdateReservationRequest.md)| Reservation details |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest**](../Model/ServiceV1/UpdateReservationRequest.md)| Reservation details |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse**](../Model/ServiceV1/UpdateReservationResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse**](../Model/ServiceV1/UpdateReservationResponse.md)
 
 ### HTTP request headers
 
@@ -1128,7 +1128,7 @@ Name | Type | Description  | Notes
 ## `updateSchedule()`
 
 ```php
-updateSchedule($resource_id, $marketplace_ids, $body): \SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse
+updateSchedule($resource_id, $marketplace_ids, $body): \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse
 ```
 
 
@@ -1150,19 +1150,19 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ServiceV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ServiceV1Api($config);
 $resource_id = 'resource_id_example'; // string | Resource (store) Identifier
 $marketplace_ids = array('marketplace_ids_example'); // string[] | An identifier for the marketplace in which the resource operates.
-$body = new \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest(); // \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest | Schedule details
+$body = new \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest(); // \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest | Schedule details
 
 try {
     $result = $apiInstance->updateSchedule($resource_id, $marketplace_ids, $body);
@@ -1178,11 +1178,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **resource_id** | **string**| Resource (store) Identifier |
  **marketplace_ids** | [**string[]**](../Model/ServiceV1/string.md)| An identifier for the marketplace in which the resource operates. |
- **body** | [**\SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest**](../Model/ServiceV1/UpdateScheduleRequest.md)| Schedule details |
+ **body** | [**\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest**](../Model/ServiceV1/UpdateScheduleRequest.md)| Schedule details |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse**](../Model/ServiceV1/UpdateScheduleResponse.md)
+[**\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse**](../Model/ServiceV1/UpdateScheduleResponse.md)
 
 ### HTTP request headers
 

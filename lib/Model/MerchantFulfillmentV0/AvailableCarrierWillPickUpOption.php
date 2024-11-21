@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AvailableCarrierWillPickUpOption Class Doc Comment
  *
  * @category Class
  * @description Indicates whether the carrier will pick up the package, and what fee is charged, if any.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class AvailableCarrierWillPickUpOption extends BaseModel implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'carrier_will_pick_up_option' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption',
-        'charge' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount'
+        'carrier_will_pick_up_option' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption',
+        'charge' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount'
     ];
 
     /**
@@ -149,7 +149,7 @@ class AvailableCarrierWillPickUpOption extends BaseModel implements ModelInterfa
     /**
      * Gets carrier_will_pick_up_option
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption
      */
     public function getCarrierWillPickUpOption()
     {
@@ -159,7 +159,7 @@ class AvailableCarrierWillPickUpOption extends BaseModel implements ModelInterfa
     /**
      * Sets carrier_will_pick_up_option
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption $carrier_will_pick_up_option carrier_will_pick_up_option
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption $carrier_will_pick_up_option carrier_will_pick_up_option
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class AvailableCarrierWillPickUpOption extends BaseModel implements ModelInterfa
     /**
      * Gets charge
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount
      */
     public function getCharge()
     {
@@ -182,7 +182,7 @@ class AvailableCarrierWillPickUpOption extends BaseModel implements ModelInterfa
     /**
      * Sets charge
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount $charge charge
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount $charge charge
      *
      * @return self
      */

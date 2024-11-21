@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Price Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'listing_price' => '\SellingPartnerApi\Model\ProductPricingV20220501\MoneyType',
-        'shipping_price' => '\SellingPartnerApi\Model\ProductPricingV20220501\MoneyType',
-        'points' => '\SellingPartnerApi\Model\ProductPricingV20220501\Points'
+        'listing_price' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType',
+        'shipping_price' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType',
+        'points' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\Points'
     ];
 
     /**
@@ -151,7 +151,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets listing_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType
      */
     public function getListingPrice()
     {
@@ -161,7 +161,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets listing_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\MoneyType $listing_price listing_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType $listing_price listing_price
      *
      * @return self
      */
@@ -174,7 +174,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets shipping_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType|null
      */
     public function getShippingPrice()
     {
@@ -184,7 +184,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets shipping_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\MoneyType|null $shipping_price shipping_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType|null $shipping_price shipping_price
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets points
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\Points|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\Points|null
      */
     public function getPoints()
     {
@@ -207,7 +207,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets points
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\Points|null $points points
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\Points|null $points points
      *
      * @return self
      */

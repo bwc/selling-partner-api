@@ -85,7 +85,7 @@ If you're looking for more information on how to set those things up, check out 
 The [`Configuration`](https://github.com/jlevers/selling-partner-api/blob/main/lib/Configuration.php) constructor takes a single argument: an associative array with all the configuration information that's needed to connect to the Selling Partner API:
 
 ```php
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
@@ -93,14 +93,14 @@ $config = new SellingPartnerApi\Configuration([
     "awsSecretAccessKey" => "<AWS secret access key>",
     // If you're not working in the North American marketplace, change
     // this to another endpoint from lib/Endpoint.php
-    "endpoint" => SellingPartnerApi\Endpoint::NA,
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA,
 ]);
 ```
 
 If you created your Selling Partner API application using an IAM role ARN instead of a user ARN, pass that role ARN in the configuration array:
 
 ```php
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
@@ -108,14 +108,14 @@ $config = new SellingPartnerApi\Configuration([
     "awsSecretAccessKey" => "<AWS secret access key>",
     // If you're not working in the North American marketplace, change
     // this to another endpoint from lib/Endpoint.php
-    "endpoint" => SellingPartnerApi\Endpoint::NA,
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA,
     "roleArn" => "<Role ARN>",
 ]);
 ```
 
 Getter and setter methods exist for the `Configuration` class's `lwaClientId`, `lwaClientSecret`, `lwaRefreshToken`, `awsAccessKeyId`, `awsSecretAccessKey`, and `endpoint` properties. The methods are named in accordance with the name of the property they interact with: `getLwaClientId`, `setLwaClientId`, `getLwaClientSecret`, etc.
 
-`$config` can then be passed into the constructor of any `SellingPartnerApi\Api\*Api` class. See the `Example` section for a complete example.
+`$config` can then be passed into the constructor of any `SellingPartnerApiV5\Api\*Api` class. See the `Example` section for a complete example.
 
 ##### Configuration options
 
@@ -129,12 +129,12 @@ The array passed to the `Configuration` constructor accepts the following keys:
 * `endpoint (array)`: Required. An array containing a `url` key (the endpoint URL) and a `region` key (the AWS region). There are predefined constants for these arrays in [`lib/Endpoint.php`](https://github.com/jlevers/selling-partner-api/blob/main/lib/Endpoint.php): (`NA`, `EU`, `FE`, and `NA_SANDBOX`, `EU_SANDBOX`, and `FE_SANDBOX`. See [here](https://developer-docs.amazon.com/amazon-shipping/docs/sp-api-endpoints) for more details.
 * `accessToken (string)`: An access token generated from the refresh token.
 * `accessTokenExpiration (int)`: A Unix timestamp corresponding to the time when the `accessToken` expires. If `accessToken` is given, `accessTokenExpiration` is required (and vice versa).
-* `onUpdateCredentials (callable|Closure)`: A callback function to call when a new access token is generated. The function should accept a single argument of type [`SellingPartnerApi\Credentials`](https://github.com/jlevers/selling-partner-api/blob/main/lib/Credentials.php).
+* `onUpdateCredentials (callable|Closure)`: A callback function to call when a new access token is generated. The function should accept a single argument of type [`SellingPartnerApiV5\Credentials`](https://github.com/jlevers/selling-partner-api/blob/main/lib/Credentials.php).
 * `roleArn (string)`: If you set up your SP API application with an AWS IAM role ARN instead of a user ARN, pass that ARN here.
 * `authenticationClient (GuzzleHttp\ClientInterface)`: Optional `GuzzleHttp\ClientInterface` object that will be used to generate the access token from the refresh token
-* `tokensApi (SellingPartnerApi\Api\TokensApi)`: Optional `SellingPartnerApi\Api\TokensApi` object that will be used to fetch Restricted Data Tokens (RDTs) when you call a [restricted operation](https://developer-docs.amazon.com/sp-api/docs/tokens-api-use-case-guide)
-* `authorizationSigner (SellingPartnerApi\Contract\AuthorizationSignerContract)`: Optional `SellingPartnerApi\Contract\AuthorizationSignerContract` implementation. See [Custom Authorization Signer](#custom-authorization-signer) section
-* `requestSigner (SellingPartnerApi\Contract\RequestSignerContract)`: Optional `SellingPartnerApi\Contract\RequestSignerContract` implementation. See [Custom Request Signer](#custom-request-signer) section.
+* `tokensApi (SellingPartnerApiV5\Api\TokensApi)`: Optional `SellingPartnerApiV5\Api\TokensApi` object that will be used to fetch Restricted Data Tokens (RDTs) when you call a [restricted operation](https://developer-docs.amazon.com/sp-api/docs/tokens-api-use-case-guide)
+* `authorizationSigner (SellingPartnerApiV5\Contract\AuthorizationSignerContract)`: Optional `SellingPartnerApiV5\Contract\AuthorizationSignerContract` implementation. See [Custom Authorization Signer](#custom-authorization-signer) section
+* `requestSigner (SellingPartnerApiV5\Contract\RequestSignerContract)`: Optional `SellingPartnerApiV5\Contract\RequestSignerContract` implementation. See [Custom Request Signer](#custom-request-signer) section.
 
 ### Examples
 
@@ -144,9 +144,9 @@ This example assumes you have access to the `Seller Insights` Selling Partner AP
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use SellingPartnerApi\Api\SellersV1Api as SellersApi;
-use SellingPartnerApi\Configuration;
-use SellingPartnerApi\Endpoint;
+use SellingPartnerApiV5\Api\SellersV1Api as SellersApi;
+use SellingPartnerApiV5\Configuration;
+use SellingPartnerApiV5\Endpoint;
 
 $config = new Configuration([
     "lwaClientId" => "amzn1.application-oa2-client.....",
@@ -178,7 +178,7 @@ To get debugging output when you make an API request, you can call `$config->set
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use SellingPartnerApi\Configuration;
+use SellingPartnerApiV5\Configuration;
 
 $config = new Configuration([/* ... */]);
 $config->setDebug(true);
@@ -192,8 +192,8 @@ $config->setDebugFile('./debug.log');
 Each API class name contains the API's version. This allows for multiple versions of the same API to be accessible in a single version of this package. It makes the class names a little uglier, but allows for simultaneously using new and old versions of the same API segment, which is often useful. The uglier names can be remedied by formatting `use` statements like so:
 
 ```php
-use SellingPartnerApi\Api\SellersV1Api as SellersApi;
-use SellingPartnerApi\Model\SellersV1 as Sellers;
+use SellingPartnerApiV5\Api\SellersV1Api as SellersApi;
+use SellingPartnerApiV5\Model\SellersV1 as Sellers;
 ```
 
 It also means that if a new version of an existing API is introduced, the library can be updated to include that new version without introducing breaking changes.
@@ -259,13 +259,13 @@ Note that if you want to call a restricted operation on a sandbox endpoint (e.g.
 
 ## Uploading and downloading documents
 
-The Feeds and Reports APIs include operations that involve uploading and downloading documents to and from Amazon. Amazon encrypts all documents they generate, and requires that all uploaded documents be encrypted. The `SellingPartnerApi\Document` class handles all the encryption/decryption, given an instance of one of the `Model\ReportsV20210630\ReportDocument`, `Model\FeedsV20210630\FeedDocument`, or `Model\FeedsV20210630\CreateFeedDocumentResponse` classes. Instances of those classes are in the response returned by Amazon when you make a call to the [`getReportDocument`](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/ReportsV20210630.md#getReportDocument), [`getFeedDocument`](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/FeedsV20210630.md#getFeedDocument), and [`createFeedDocument`](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/FeedsV20210630.md#createFeedDocument) endpoints, respectively.
+The Feeds and Reports APIs include operations that involve uploading and downloading documents to and from Amazon. Amazon encrypts all documents they generate, and requires that all uploaded documents be encrypted. The `SellingPartnerApiV5\Document` class handles all the encryption/decryption, given an instance of one of the `Model\ReportsV20210630\ReportDocument`, `Model\FeedsV20210630\FeedDocument`, or `Model\FeedsV20210630\CreateFeedDocumentResponse` classes. Instances of those classes are in the response returned by Amazon when you make a call to the [`getReportDocument`](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/ReportsV20210630.md#getReportDocument), [`getFeedDocument`](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/FeedsV20210630.md#getFeedDocument), and [`createFeedDocument`](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/FeedsV20210630.md#createFeedDocument) endpoints, respectively.
 
 ### Downloading a report document
 
 ```php
-use SellingPartnerApi\Api\ReportsV20210630Api as ReportsApi;
-use SellingPartnerApi\ReportType;
+use SellingPartnerApiV5\Api\ReportsV20210630Api as ReportsApi;
+use SellingPartnerApiV5\ReportType;
 
 // Assume we've already fetched a report document ID, and that a $config object was defined above
 $documentId = 'foo.1234';
@@ -274,7 +274,7 @@ $reportType = ReportType::GET_FLAT_FILE_OPEN_LISTINGS_DATA;
 $reportsApi = new ReportsApi($config);
 $reportDocumentInfo = $reportsApi->getReportDocument($documentId, $reportType['name']);
 
-$docToDownload = new SellingPartnerApi\Document($reportDocumentInfo, $reportType);
+$docToDownload = new SellingPartnerApiV5\Document($reportDocumentInfo, $reportType);
 $contents = $docToDownload->download();  // The raw report text
 /*
  * - Array of associative arrays, (each sub array corresponds to a row of the report) if content type is ContentType::TAB or ContentType::CSV
@@ -297,9 +297,9 @@ $streamContents = $docToDownload->downloadStream();  // The raw report stream
 ### Uploading a feed document
 
 ```php
-use SellingPartnerApi\Api\FeedsV20210630Api as FeedsApi;
-use SellingPartnerApi\FeedType;
-use SellingPartnerApi\Model\FeedsV20210630 as Feeds;
+use SellingPartnerApiV5\Api\FeedsV20210630Api as FeedsApi;
+use SellingPartnerApiV5\FeedType;
+use SellingPartnerApiV5\Model\FeedsV20210630 as Feeds;
 
 $feedType = FeedType::POST_PRODUCT_PRICING_DATA;
 $feedsApi = new FeedsApi($config);
@@ -313,7 +313,7 @@ $feedDocumentId = $feedDocumentInfo->getFeedDocumentId();
 $feedContents = file_get_contents('<your/feed/file.xml>');
 // The Document constructor accepts a custom \GuzzleHttp\Client object as an optional 3rd parameter. If that
 // parameter is passed, your custom Guzzle client will be used when uploading the feed document contents to Amazon.
-$docToUpload = new SellingPartnerApi\Document($feedDocumentInfo, $feedType);
+$docToUpload = new SellingPartnerApiV5\Document($feedDocumentInfo, $feedType);
 $docToUpload->upload($feedContents);
 
 $createFeedSpec = new Feeds\CreateFeedSpecification();
@@ -333,8 +333,8 @@ If you are manipulating huge feed documents you can pass to `upload()` anything 
 This works very similarly to downloading a report document:
 
 ```php
-use SellingPartnerApi\Api\FeedsV20210630Api as FeedsApi;
-use SellingPartnerApi\FeedType;
+use SellingPartnerApiV5\Api\FeedsV20210630Api as FeedsApi;
+use SellingPartnerApiV5\FeedType;
 
 $feedType = FeedType::POST_PRODUCT_PRICING_DATA;
 $feedsApi = new FeedsApi($config);
@@ -349,7 +349,7 @@ $feed = $feedsApi->getFeed($feedId);
 $feedResultDocumentId = $feed->resultFeedDocumentId;
 $feedResultDocument = $feedsApi->getFeedDocument($feedResultDocumentId);
 
-$docToDownload = new SellingPartnerApi\Document($feedResultDocument, $feedType);
+$docToDownload = new SellingPartnerApiV5\Document($feedResultDocument, $feedType);
 $contents = $docToDownload->download();  // The raw report data
 $data = $docToDownload->getData();  // Parsed/formatted report data
 ```
@@ -362,7 +362,7 @@ Most operations have one or more models associated with it. These models are cla
 The `Buyer` model has four attributes: `buyer_id`, `name`, `phone`, and `is_prime_member`. (If you're wondering how you would figure out which attributes the model has on your own, check out the `docs` link above.) To create an instance of the `Buyer` model with all those attributes set:
 
 ```php
-$buyer = new SellingPartnerApi\Model\ServiceV1\Buyer([
+$buyer = new SellingPartnerApiV5\Model\ServiceV1\Buyer([
     "buyer_id" => "ABCDEFGHIJKLMNOPQRSTU0123456",
     "name" => "Jane Doe",
     "phone" => "+12345678901",
@@ -373,7 +373,7 @@ $buyer = new SellingPartnerApi\Model\ServiceV1\Buyer([
 Alternatively, you can create an instance of the `Buyer` model and then populate its fields:
 
 ```php
-$buyer = new SellingPartnerApi\Model\ServiceV1\Buyer();
+$buyer = new SellingPartnerApiV5\Model\ServiceV1\Buyer();
 $buyer->buyerId = "ABCDEFGHIJKLMNOPQRSTU0123456";
 $buyer->name = "Jane Doe";
 $buyer->phone = "+12345678901";
@@ -392,7 +392,7 @@ $buyer->isPrimeMember;  // -> true
 Models can (and usually do) have other models as attributes:
 
 ``` php
-$serviceJob = new SellingPartnerApi\Model\ServiceV1\Buyer([
+$serviceJob = new SellingPartnerApiV5\Model\ServiceV1\Buyer([
     // ...
     "buyer" => $buyer,
     // ...
@@ -410,9 +410,9 @@ Amazon includes some useful headers with each SP API response. If you need those
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use SellingPartnerApi\Api\SellersV1Api as SellersApi;
-use SellingPartnerApi\Configuration;
-use SellingPartnerApi\Endpoint;
+use SellingPartnerApiV5\Api\SellersV1Api as SellersApi;
+use SellingPartnerApiV5\Configuration;
+use SellingPartnerApiV5\Endpoint;
 
 $config = new Configuration([...]);
 $api = new Api\SellersApi($config);
@@ -431,7 +431,7 @@ You may need to do custom operations while signing the API request. You can crea
 ```php
 // CustomAuthorizationSigner.php
 use Psr\Http\Message\RequestInterface;
-use SellingPartnerApi\Contract\AuthorizationSignerContract;
+use SellingPartnerApiV5\Contract\AuthorizationSignerContract;
 
 class CustomAuthorizationSigner implements AuthorizationSignerContract
 {
@@ -456,9 +456,9 @@ class CustomAuthorizationSigner implements AuthorizationSignerContract
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use SellingPartnerApi\Api\SellersV1Api as SellersApi;
-use SellingPartnerApi\Configuration;
-use SellingPartnerApi\Endpoint;
+use SellingPartnerApiV5\Api\SellersV1Api as SellersApi;
+use SellingPartnerApiV5\Configuration;
+use SellingPartnerApiV5\Endpoint;
 use CustomAuthorizationSigner;
 
 $config = new Configuration([
@@ -480,7 +480,7 @@ You may also need to customize the entire request signing process – for instan
 ```php
 // RemoteRequestSigner.php
 use Psr\Http\Message\RequestInterface;
-use SellingPartnerApi\Contract\RequestSignerContract;
+use SellingPartnerApiV5\Contract\RequestSignerContract;
 
 class RemoteRequestSigner implements RequestSignerContract
 {
@@ -501,9 +501,9 @@ class RemoteRequestSigner implements RequestSignerContract
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-use SellingPartnerApi\Api\SellersV1Api as SellersApi;
-use SellingPartnerApi\Configuration;
-use SellingPartnerApi\Endpoint;
+use SellingPartnerApiV5\Api\SellersV1Api as SellersApi;
+use SellingPartnerApiV5\Configuration;
+use SellingPartnerApiV5\Endpoint;
 use RemoteRequestSigner;
 
 $config = new Configuration([

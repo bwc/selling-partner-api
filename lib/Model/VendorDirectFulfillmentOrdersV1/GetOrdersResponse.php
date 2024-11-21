@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetOrdersResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getOrders operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetOrdersResponse extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderList',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderList',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetOrdersResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderList|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderList|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetOrdersResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderList|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderList|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetOrdersResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetOrdersResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

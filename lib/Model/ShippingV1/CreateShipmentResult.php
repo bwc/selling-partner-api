@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateShipmentResult Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the createShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class CreateShipmentResult extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'shipment_id' => 'string',
-        'eligible_rates' => '\SellingPartnerApi\Model\ShippingV1\Rate[]'
+        'eligible_rates' => '\SellingPartnerApiV5\Model\ShippingV1\Rate[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class CreateShipmentResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets eligible_rates
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Rate[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Rate[]
      */
     public function getEligibleRates()
     {
@@ -182,7 +182,7 @@ class CreateShipmentResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets eligible_rates
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Rate[] $eligible_rates A list of all the available rates that can be used to send the shipment.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Rate[] $eligible_rates A list of all the available rates that can be used to send the shipment.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FulfillmentOrderItem Class Doc Comment
  *
  * @category Class
  * @description Item information for a fulfillment order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -69,9 +69,9 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
         'unfulfillable_quantity' => 'int',
         'estimated_ship_date' => 'string',
         'estimated_arrival_date' => 'string',
-        'per_unit_price' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money',
-        'per_unit_tax' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money',
-        'per_unit_declared_value' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money'
+        'per_unit_price' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money',
+        'per_unit_tax' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money',
+        'per_unit_declared_value' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money'
     ];
 
     /**
@@ -483,7 +483,7 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets per_unit_price
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getPerUnitPrice()
     {
@@ -493,7 +493,7 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets per_unit_price
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $per_unit_price per_unit_price
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $per_unit_price per_unit_price
      *
      * @return self
      */
@@ -506,7 +506,7 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets per_unit_tax
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getPerUnitTax()
     {
@@ -516,7 +516,7 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets per_unit_tax
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $per_unit_tax per_unit_tax
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $per_unit_tax per_unit_tax
      *
      * @return self
      */
@@ -529,7 +529,7 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets per_unit_declared_value
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getPerUnitDeclaredValue()
     {
@@ -539,7 +539,7 @@ class FulfillmentOrderItem extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets per_unit_declared_value
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $per_unit_declared_value per_unit_declared_value
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $per_unit_declared_value per_unit_declared_value
      *
      * @return self
      */

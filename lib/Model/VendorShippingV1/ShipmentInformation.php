@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentInformation Class Doc Comment
  *
  * @category Class
  * @description Shipment Information details for Label request.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'vendor_details' => '\SellingPartnerApi\Model\VendorShippingV1\VendorDetails',
+        'vendor_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\VendorDetails',
         'buyer_reference_number' => 'string',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
         'warehouse_id' => 'string',
         'master_tracking_id' => 'string',
         'total_label_count' => 'int',
@@ -213,7 +213,7 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets vendor_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\VendorDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\VendorDetails|null
      */
     public function getVendorDetails()
     {
@@ -223,7 +223,7 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets vendor_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\VendorDetails|null $vendor_details vendor_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\VendorDetails|null $vendor_details vendor_details
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification|null
      */
     public function getShipToParty()
     {
@@ -269,7 +269,7 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification|null $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification|null $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification|null
      */
     public function getShipFromParty()
     {
@@ -292,7 +292,7 @@ class ShipmentInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification|null $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification|null $ship_from_party ship_from_party
      *
      * @return self
      */

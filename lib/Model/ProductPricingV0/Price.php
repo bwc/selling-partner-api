@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Price Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
         'status' => 'string',
         'seller_sku' => 'string',
         'asin' => 'string',
-        'product' => '\SellingPartnerApi\Model\ProductPricingV0\Product'
+        'product' => '\SellingPartnerApiV5\Model\ProductPricingV0\Product'
     ];
 
     /**
@@ -226,7 +226,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets product
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Product|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Product|null
      */
     public function getProduct()
     {
@@ -236,7 +236,7 @@ class Price extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets product
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Product|null $product product
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Product|null $product product
      *
      * @return self
      */

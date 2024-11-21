@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardSingleImageHighlightsModule Class Doc Comment
  *
  * @category Class
  * @description A standard image with several paragraphs and a bulleted list.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'image' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageComponent',
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'text_block1' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock',
-        'text_block2' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock',
-        'text_block3' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock',
-        'bulleted_list_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardHeaderTextListBlock'
+        'image' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent',
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'text_block1' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock',
+        'text_block2' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock',
+        'text_block3' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock',
+        'bulleted_list_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardHeaderTextListBlock'
     ];
 
     /**
@@ -167,7 +167,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Gets image
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null
      */
     public function getImage()
     {
@@ -177,7 +177,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Sets image
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null $image image
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null $image image
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -200,7 +200,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -213,7 +213,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Gets text_block1
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getTextBlock1()
     {
@@ -223,7 +223,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Sets text_block1
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $text_block1 text_block1
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $text_block1 text_block1
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Gets text_block2
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getTextBlock2()
     {
@@ -246,7 +246,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Sets text_block2
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $text_block2 text_block2
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $text_block2 text_block2
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Gets text_block3
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getTextBlock3()
     {
@@ -269,7 +269,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Sets text_block3
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $text_block3 text_block3
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $text_block3 text_block3
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Gets bulleted_list_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardHeaderTextListBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardHeaderTextListBlock|null
      */
     public function getBulletedListBlock()
     {
@@ -292,7 +292,7 @@ class StandardSingleImageHighlightsModule extends BaseModel implements ModelInte
     /**
      * Sets bulleted_list_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardHeaderTextListBlock|null $bulleted_list_block bulleted_list_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardHeaderTextListBlock|null $bulleted_list_block bulleted_list_block
      *
      * @return self
      */

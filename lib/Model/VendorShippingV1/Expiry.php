@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Expiry Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Expiry extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'manufacturer_date' => 'string',
         'expiry_date' => 'string',
-        'expiry_after_duration' => '\SellingPartnerApi\Model\VendorShippingV1\Duration'
+        'expiry_after_duration' => '\SellingPartnerApiV5\Model\VendorShippingV1\Duration'
     ];
 
     /**
@@ -194,7 +194,7 @@ class Expiry extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets expiry_after_duration
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Duration|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Duration|null
      */
     public function getExpiryAfterDuration()
     {
@@ -204,7 +204,7 @@ class Expiry extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets expiry_after_duration
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Duration|null $expiry_after_duration expiry_after_duration
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Duration|null $expiry_after_duration expiry_after_duration
      *
      * @return self
      */

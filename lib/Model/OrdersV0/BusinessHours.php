@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BusinessHours Class Doc Comment
  *
  * @category Class
  * @description Business days and hours when the destination is open for deliveries.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class BusinessHours extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'day_of_week' => 'string',
-        'open_intervals' => '\SellingPartnerApi\Model\OrdersV0\OpenInterval[]'
+        'open_intervals' => '\SellingPartnerApiV5\Model\OrdersV0\OpenInterval[]'
     ];
 
     /**
@@ -220,7 +220,7 @@ class BusinessHours extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets open_intervals
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OpenInterval[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OpenInterval[]|null
      */
     public function getOpenIntervals()
     {
@@ -230,7 +230,7 @@ class BusinessHours extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets open_intervals
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OpenInterval[]|null $open_intervals Time window during the day when the business is open.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OpenInterval[]|null $open_intervals Time window during the day when the business is open.
      *
      * @return self
      */

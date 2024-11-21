@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**requests** | [**\SellingPartnerApi\Model\ProductPricingV0\ItemOffersRequest[]**](ItemOffersRequest.md) | A list of `getListingOffers` batched requests to run. | [optional]
+**requests** | [**\SellingPartnerApiV5\Model\ProductPricingV0\ItemOffersRequest[]**](ItemOffersRequest.md) | A list of `getListingOffers` batched requests to run. | [optional]
 
 [[ProductPricingV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

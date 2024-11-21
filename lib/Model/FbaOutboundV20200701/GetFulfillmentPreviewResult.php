@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFulfillmentPreviewResult Class Doc Comment
  *
  * @category Class
  * @description A list of fulfillment order previews, including estimated shipping weights, estimated shipping fees, and estimated ship dates and arrival dates.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetFulfillmentPreviewResult extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fulfillment_previews' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPreview[]'
+        'fulfillment_previews' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPreview[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class GetFulfillmentPreviewResult extends BaseModel implements ModelInterface, A
     /**
      * Gets fulfillment_previews
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPreview[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPreview[]|null
      */
     public function getFulfillmentPreviews()
     {
@@ -147,7 +147,7 @@ class GetFulfillmentPreviewResult extends BaseModel implements ModelInterface, A
     /**
      * Sets fulfillment_previews
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPreview[]|null $fulfillment_previews An array of fulfillment preview information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPreview[]|null $fulfillment_previews An array of fulfillment preview information.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**identifiers** | [**\SellingPartnerApi\Model\CatalogItemsV0\IdentifierType**](IdentifierType.md) |  | [optional]
+**identifiers** | [**\SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType**](IdentifierType.md) |  | [optional]
 **color** | **string** | The color variation of the item. | [optional]
 **edition** | **string** | The edition variation of the item. | [optional]
 **flavor** | **string** | The flavor variation of the item. | [optional]
@@ -22,10 +22,10 @@ Name | Type | Description | Notes
 **scent** | **string** | The scent variation of an item. | [optional]
 **size** | **string** | The size variation of an item. | [optional]
 **size_per_pearl** | **string** | The size per pearl variation of an item. | [optional]
-**golf_club_loft** | [**\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits**](DecimalWithUnits.md) |  | [optional]
-**total_diamond_weight** | [**\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits**](DecimalWithUnits.md) |  | [optional]
-**total_gem_weight** | [**\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits**](DecimalWithUnits.md) |  | [optional]
+**golf_club_loft** | [**\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits**](DecimalWithUnits.md) |  | [optional]
+**total_diamond_weight** | [**\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits**](DecimalWithUnits.md) |  | [optional]
+**total_gem_weight** | [**\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits**](DecimalWithUnits.md) |  | [optional]
 **package_quantity** | **int** | The package quantity variation of an item. | [optional]
-**item_dimensions** | [**\SellingPartnerApi\Model\CatalogItemsV0\DimensionType**](DimensionType.md) |  | [optional]
+**item_dimensions** | [**\SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType**](DimensionType.md) |  | [optional]
 
 [[CatalogItemsV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

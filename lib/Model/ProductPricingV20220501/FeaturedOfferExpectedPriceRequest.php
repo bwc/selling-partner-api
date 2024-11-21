@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeaturedOfferExpectedPriceRequest Class Doc Comment
  *
  * @category Class
  * @description An individual featured offer expected price request for a particular SKU.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class FeaturedOfferExpectedPriceRequest extends BaseModel implements ModelInterf
       */
     protected static $openAPITypes = [
         'uri' => 'string',
-        'method' => '\SellingPartnerApi\Model\ProductPricingV20220501\HttpMethod',
+        'method' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\HttpMethod',
         'body' => 'map[string,object]',
         'headers' => 'map[string,string]',
         'marketplace_id' => 'string',
@@ -202,7 +202,7 @@ class FeaturedOfferExpectedPriceRequest extends BaseModel implements ModelInterf
     /**
      * Gets method
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\HttpMethod
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\HttpMethod
      */
     public function getMethod()
     {
@@ -212,7 +212,7 @@ class FeaturedOfferExpectedPriceRequest extends BaseModel implements ModelInterf
     /**
      * Sets method
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\HttpMethod $method method
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\HttpMethod $method method
      *
      * @return self
      */

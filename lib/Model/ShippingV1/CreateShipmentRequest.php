@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the createShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'client_reference_id' => 'string',
-        'ship_to' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'ship_from' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'containers' => '\SellingPartnerApi\Model\ShippingV1\Container[]'
+        'ship_to' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'ship_from' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'containers' => '\SellingPartnerApiV5\Model\ShippingV1\Container[]'
     ];
 
     /**
@@ -198,7 +198,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets ship_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipTo()
     {
@@ -208,7 +208,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets ship_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_to ship_to
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_to ship_to
      *
      * @return self
      */
@@ -221,7 +221,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets ship_from
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipFrom()
     {
@@ -231,7 +231,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets ship_from
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_from ship_from
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_from ship_from
      *
      * @return self
      */
@@ -244,7 +244,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Container[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Container[]
      */
     public function getContainers()
     {
@@ -254,7 +254,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Container[] $containers A list of container.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Container[] $containers A list of container.
      *
      * @return self
      */

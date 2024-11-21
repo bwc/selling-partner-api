@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**invoices** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]**](InvoiceDetail.md) |  | [optional]
+**invoices** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]**](InvoiceDetail.md) |  | [optional]
 
 [[VendorDirectFulfillmentPaymentsV1 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

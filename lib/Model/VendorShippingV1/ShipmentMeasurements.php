@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentMeasurements Class Doc Comment
  *
  * @category Class
  * @description Shipment measurement details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ShipmentMeasurements extends BaseModel implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'gross_shipment_weight' => '\SellingPartnerApi\Model\VendorShippingV1\Weight',
-        'shipment_volume' => '\SellingPartnerApi\Model\VendorShippingV1\Volume',
+        'gross_shipment_weight' => '\SellingPartnerApiV5\Model\VendorShippingV1\Weight',
+        'shipment_volume' => '\SellingPartnerApiV5\Model\VendorShippingV1\Volume',
         'carton_count' => 'int',
         'pallet_count' => 'int'
     ];
@@ -155,7 +155,7 @@ class ShipmentMeasurements extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets gross_shipment_weight
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null
      */
     public function getGrossShipmentWeight()
     {
@@ -165,7 +165,7 @@ class ShipmentMeasurements extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets gross_shipment_weight
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Weight|null $gross_shipment_weight gross_shipment_weight
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null $gross_shipment_weight gross_shipment_weight
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class ShipmentMeasurements extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets shipment_volume
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Volume|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Volume|null
      */
     public function getShipmentVolume()
     {
@@ -188,7 +188,7 @@ class ShipmentMeasurements extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets shipment_volume
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Volume|null $shipment_volume shipment_volume
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Volume|null $shipment_volume shipment_volume
      *
      * @return self
      */

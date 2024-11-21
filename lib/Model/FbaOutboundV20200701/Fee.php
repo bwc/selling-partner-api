@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Fee Class Doc Comment
  *
  * @category Class
  * @description Fee type and cost.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Fee extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'amount' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money'
+        'amount' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money'
     ];
 
     /**
@@ -220,7 +220,7 @@ class Fee extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets amount
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money
      */
     public function getAmount()
     {
@@ -230,7 +230,7 @@ class Fee extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets amount
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money $amount amount
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money $amount amount
      *
      * @return self
      */

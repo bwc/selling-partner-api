@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Event Class Doc Comment
  *
  * @category Class
  * @description A tracking event.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class Event extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'event_code' => '\SellingPartnerApi\Model\ShippingV2\EventCode',
-        'location' => '\SellingPartnerApi\Model\ShippingV2\Location',
+        'event_code' => '\SellingPartnerApiV5\Model\ShippingV2\EventCode',
+        'location' => '\SellingPartnerApiV5\Model\ShippingV2\Location',
         'event_time' => 'string'
     ];
 
@@ -155,7 +155,7 @@ class Event extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets event_code
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\EventCode
+     * @return \SellingPartnerApiV5\Model\ShippingV2\EventCode
      */
     public function getEventCode()
     {
@@ -165,7 +165,7 @@ class Event extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets event_code
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\EventCode $event_code event_code
+     * @param \SellingPartnerApiV5\Model\ShippingV2\EventCode $event_code event_code
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class Event extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets location
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Location|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Location|null
      */
     public function getLocation()
     {
@@ -188,7 +188,7 @@ class Event extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets location
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Location|null $location location
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Location|null $location location
      *
      * @return self
      */

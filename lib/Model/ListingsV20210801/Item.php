@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsV20210801;
+namespace SellingPartnerApiV5\Model\ListingsV20210801;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description A listings item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,12 +59,12 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'sku' => 'string',
-        'summaries' => '\SellingPartnerApi\Model\ListingsV20210801\ItemSummaryByMarketplace[]',
+        'summaries' => '\SellingPartnerApiV5\Model\ListingsV20210801\ItemSummaryByMarketplace[]',
         'attributes' => 'object',
-        'issues' => '\SellingPartnerApi\Model\ListingsV20210801\Issue[]',
-        'offers' => '\SellingPartnerApi\Model\ListingsV20210801\ItemOfferByMarketplace[]',
-        'fulfillment_availability' => '\SellingPartnerApi\Model\ListingsV20210801\FulfillmentAvailability[]',
-        'procurement' => '\SellingPartnerApi\Model\ListingsV20210801\ItemProcurement[]'
+        'issues' => '\SellingPartnerApiV5\Model\ListingsV20210801\Issue[]',
+        'offers' => '\SellingPartnerApiV5\Model\ListingsV20210801\ItemOfferByMarketplace[]',
+        'fulfillment_availability' => '\SellingPartnerApiV5\Model\ListingsV20210801\FulfillmentAvailability[]',
+        'procurement' => '\SellingPartnerApiV5\Model\ListingsV20210801\ItemProcurement[]'
     ];
 
     /**
@@ -224,7 +224,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets summaries
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ItemSummaryByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ItemSummaryByMarketplace[]|null
      */
     public function getSummaries()
     {
@@ -234,7 +234,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets summaries
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\ItemSummaryByMarketplace[]|null $summaries Summary details of a listings item.
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\ItemSummaryByMarketplace[]|null $summaries Summary details of a listings item.
      *
      * @return self
      */
@@ -270,7 +270,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets issues
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\Issue[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\Issue[]|null
      */
     public function getIssues()
     {
@@ -280,7 +280,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets issues
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\Issue[]|null $issues Issues associated with the listings item.
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\Issue[]|null $issues Issues associated with the listings item.
      *
      * @return self
      */
@@ -293,7 +293,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets offers
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ItemOfferByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ItemOfferByMarketplace[]|null
      */
     public function getOffers()
     {
@@ -303,7 +303,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets offers
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\ItemOfferByMarketplace[]|null $offers Offer details for the listings item.
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\ItemOfferByMarketplace[]|null $offers Offer details for the listings item.
      *
      * @return self
      */
@@ -316,7 +316,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets fulfillment_availability
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\FulfillmentAvailability[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\FulfillmentAvailability[]|null
      */
     public function getFulfillmentAvailability()
     {
@@ -326,7 +326,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets fulfillment_availability
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\FulfillmentAvailability[]|null $fulfillment_availability Fulfillment availability for the listings item.
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\FulfillmentAvailability[]|null $fulfillment_availability Fulfillment availability for the listings item.
      *
      * @return self
      */
@@ -339,7 +339,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets procurement
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ItemProcurement[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ItemProcurement[]|null
      */
     public function getProcurement()
     {
@@ -349,7 +349,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets procurement
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\ItemProcurement[]|null $procurement Procurement details of a listings item.
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\ItemProcurement[]|null $procurement Procurement details of a listings item.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ASINPrepInstructions Class Doc Comment
  *
  * @category Class
  * @description Item preparation instructions to help with item sourcing decisions.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'asin' => 'string',
-        'barcode_instruction' => '\SellingPartnerApi\Model\FbaInboundV0\BarcodeInstruction',
-        'prep_guidance' => '\SellingPartnerApi\Model\FbaInboundV0\PrepGuidance',
-        'prep_instruction_list' => '\SellingPartnerApi\Model\FbaInboundV0\PrepInstruction[]'
+        'barcode_instruction' => '\SellingPartnerApiV5\Model\FbaInboundV0\BarcodeInstruction',
+        'prep_guidance' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepGuidance',
+        'prep_instruction_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction[]'
     ];
 
     /**
@@ -178,7 +178,7 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets barcode_instruction
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\BarcodeInstruction|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\BarcodeInstruction|null
      */
     public function getBarcodeInstruction()
     {
@@ -188,7 +188,7 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets barcode_instruction
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\BarcodeInstruction|null $barcode_instruction barcode_instruction
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\BarcodeInstruction|null $barcode_instruction barcode_instruction
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets prep_guidance
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepGuidance|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepGuidance|null
      */
     public function getPrepGuidance()
     {
@@ -211,7 +211,7 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets prep_guidance
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepGuidance|null $prep_guidance prep_guidance
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepGuidance|null $prep_guidance prep_guidance
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets prep_instruction_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction[]|null
      */
     public function getPrepInstructionList()
     {
@@ -234,7 +234,7 @@ class ASINPrepInstructions extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets prep_instruction_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction[]|null $prep_instruction_list A list of preparation instructions to help with item sourcing decisions.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction[]|null $prep_instruction_list A list of preparation instructions to help with item sourcing decisions.
      *
      * @return self
      */

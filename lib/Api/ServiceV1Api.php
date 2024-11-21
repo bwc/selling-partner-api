@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * ServiceV1Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class ServiceV1Api extends BaseApi
 {
@@ -44,11 +44,11 @@ class ServiceV1Api extends BaseApi
      * Operation addAppointmentForServiceJobByServiceJobId
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse
      */
     public function addAppointmentForServiceJobByServiceJobId($service_job_id, $body)
     {
@@ -60,11 +60,11 @@ class ServiceV1Api extends BaseApi
      * Operation addAppointmentForServiceJobByServiceJobIdWithHttpInfo
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function addAppointmentForServiceJobByServiceJobIdWithHttpInfo($service_job_id, $body)
     {
@@ -113,88 +113,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -209,7 +209,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -217,7 +217,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -225,7 +225,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -233,7 +233,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -241,7 +241,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -249,7 +249,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -257,7 +257,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -265,7 +265,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -273,7 +273,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -298,7 +298,7 @@ class ServiceV1Api extends BaseApi
      * 
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -314,14 +314,14 @@ class ServiceV1Api extends BaseApi
      * 
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function addAppointmentForServiceJobByServiceJobIdAsyncWithHttpInfo($service_job_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse';
         $request = $this->addAppointmentForServiceJobByServiceJobIdRequest($service_job_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -368,7 +368,7 @@ class ServiceV1Api extends BaseApi
      * Create request for operation 'addAppointmentForServiceJobByServiceJobId'
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AddAppointmentRequest $body Add appointment operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -478,11 +478,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse
      */
     public function assignAppointmentResources($service_job_id, $appointment_id, $body)
     {
@@ -495,11 +495,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function assignAppointmentResourcesWithHttpInfo($service_job_id, $appointment_id, $body)
     {
@@ -548,88 +548,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -644,7 +644,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -652,7 +652,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -660,7 +660,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -668,7 +668,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -676,7 +676,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -684,7 +684,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -692,7 +692,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -700,7 +700,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -708,7 +708,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -716,7 +716,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -734,7 +734,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -751,14 +751,14 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function assignAppointmentResourcesAsyncWithHttpInfo($service_job_id, $appointment_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponse';
         $request = $this->assignAppointmentResourcesRequest($service_job_id, $appointment_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -806,7 +806,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -939,9 +939,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\CancelReservationResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse
      */
     public function cancelReservation($reservation_id, $marketplace_ids)
     {
@@ -955,9 +955,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\CancelReservationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelReservationWithHttpInfo($reservation_id, $marketplace_ids)
     {
@@ -1006,80 +1006,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 204:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1094,7 +1094,7 @@ class ServiceV1Api extends BaseApi
                 case 204:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1102,7 +1102,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1110,7 +1110,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1118,7 +1118,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1126,7 +1126,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1134,7 +1134,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1142,7 +1142,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1150,7 +1150,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1158,7 +1158,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1198,7 +1198,7 @@ class ServiceV1Api extends BaseApi
      */
     public function cancelReservationAsyncWithHttpInfo($reservation_id, $marketplace_ids)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\CancelReservationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CancelReservationResponse';
         $request = $this->cancelReservationRequest($reservation_id, $marketplace_ids);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1362,9 +1362,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $cancellation_reason_code A cancel reason code that specifies the reason for cancelling a service job. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse
      */
     public function cancelServiceJobByServiceJobId($service_job_id, $cancellation_reason_code)
     {
@@ -1378,9 +1378,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $cancellation_reason_code A cancel reason code that specifies the reason for cancelling a service job. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelServiceJobByServiceJobIdWithHttpInfo($service_job_id, $cancellation_reason_code)
     {
@@ -1429,88 +1429,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1525,7 +1525,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1533,7 +1533,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1541,7 +1541,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1549,7 +1549,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1557,7 +1557,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1565,7 +1565,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1573,7 +1573,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1581,7 +1581,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1589,7 +1589,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1597,7 +1597,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1637,7 +1637,7 @@ class ServiceV1Api extends BaseApi
      */
     public function cancelServiceJobByServiceJobIdAsyncWithHttpInfo($service_job_id, $cancellation_reason_code)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CancelServiceJobByServiceJobIdResponse';
         $request = $this->cancelServiceJobByServiceJobIdRequest($service_job_id, $cancellation_reason_code);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1806,9 +1806,9 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse
      */
     public function completeServiceJobByServiceJobId($service_job_id)
     {
@@ -1821,9 +1821,9 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function completeServiceJobByServiceJobIdWithHttpInfo($service_job_id)
     {
@@ -1872,88 +1872,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1968,7 +1968,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1976,7 +1976,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1984,7 +1984,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1992,7 +1992,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2000,7 +2000,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2008,7 +2008,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2016,7 +2016,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2024,7 +2024,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2032,7 +2032,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2040,7 +2040,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2078,7 +2078,7 @@ class ServiceV1Api extends BaseApi
      */
     public function completeServiceJobByServiceJobIdAsyncWithHttpInfo($service_job_id)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CompleteServiceJobByServiceJobIdResponse';
         $request = $this->completeServiceJobByServiceJobIdRequest($service_job_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2221,11 +2221,11 @@ class ServiceV1Api extends BaseApi
      * Operation createReservation
      *
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\CreateReservationResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse
      */
     public function createReservation($marketplace_ids, $body)
     {
@@ -2237,11 +2237,11 @@ class ServiceV1Api extends BaseApi
      * Operation createReservationWithHttpInfo
      *
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\CreateReservationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createReservationWithHttpInfo($marketplace_ids, $body)
     {
@@ -2290,80 +2290,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2378,7 +2378,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2386,7 +2386,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2394,7 +2394,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2402,7 +2402,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2410,7 +2410,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2418,7 +2418,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2426,7 +2426,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2434,7 +2434,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2442,7 +2442,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2459,7 +2459,7 @@ class ServiceV1Api extends BaseApi
      * 
      *
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2475,14 +2475,14 @@ class ServiceV1Api extends BaseApi
      * 
      *
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createReservationAsyncWithHttpInfo($marketplace_ids, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\CreateReservationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CreateReservationResponse';
         $request = $this->createReservationRequest($marketplace_ids, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2529,7 +2529,7 @@ class ServiceV1Api extends BaseApi
      * Create request for operation 'createReservation'
      *
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\CreateReservationRequest $body Reservation details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2633,11 +2633,11 @@ class ServiceV1Api extends BaseApi
     /**
      * Operation createServiceDocumentUploadDestination
      *
-     * @param  \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination
      */
     public function createServiceDocumentUploadDestination($body)
     {
@@ -2648,11 +2648,11 @@ class ServiceV1Api extends BaseApi
     /**
      * Operation createServiceDocumentUploadDestinationWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination, HTTP status code, HTTP response headers (array of strings)
      */
     public function createServiceDocumentUploadDestinationWithHttpInfo($body)
     {
@@ -2701,88 +2701,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2797,7 +2797,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2805,7 +2805,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2813,7 +2813,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2821,7 +2821,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2829,7 +2829,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2837,7 +2837,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2845,7 +2845,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2853,7 +2853,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2861,7 +2861,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2869,7 +2869,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination',
+                        '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2885,7 +2885,7 @@ class ServiceV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2900,14 +2900,14 @@ class ServiceV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createServiceDocumentUploadDestinationAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\CreateServiceDocumentUploadDestination';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\CreateServiceDocumentUploadDestination';
         $request = $this->createServiceDocumentUploadDestinationRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2953,7 +2953,7 @@ class ServiceV1Api extends BaseApi
     /**
      * Create request for operation 'createServiceDocumentUploadDestination'
      *
-     * @param  \SellingPartnerApi\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\ServiceUploadDocument $body Upload document operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3045,9 +3045,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $start_time A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `startTime` is provided, `endTime` should also be provided. Default value is as per business configuration. (optional)
      * @param  string $end_time A time up to which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `endTime` is provided, `startTime` should also be provided. Default value is as per business configuration. Maximum range of appointment slots can be 90 days. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse
      */
     public function getAppointmentSlots($asin, $store_id, $marketplace_ids, $start_time = null, $end_time = null)
     {
@@ -3064,9 +3064,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $start_time A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `startTime` is provided, `endTime` should also be provided. Default value is as per business configuration. (optional)
      * @param  string $end_time A time up to which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `endTime` is provided, `startTime` should also be provided. Default value is as per business configuration. Maximum range of appointment slots can be 90 days. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAppointmentSlotsWithHttpInfo($asin, $store_id, $marketplace_ids, $start_time = null, $end_time = null)
     {
@@ -3115,80 +3115,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3203,7 +3203,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3211,7 +3211,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3219,7 +3219,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3227,7 +3227,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3235,7 +3235,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3243,7 +3243,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3251,7 +3251,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3259,7 +3259,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3267,7 +3267,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3313,7 +3313,7 @@ class ServiceV1Api extends BaseApi
      */
     public function getAppointmentSlotsAsyncWithHttpInfo($asin, $store_id, $marketplace_ids, $start_time = null, $end_time = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse';
         $request = $this->getAppointmentSlotsRequest($asin, $store_id, $marketplace_ids, $start_time, $end_time);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3511,9 +3511,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $start_time A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `startTime` is provided, `endTime` should also be provided. Default value is as per business configuration. (optional)
      * @param  string $end_time A time up to which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `endTime` is provided, `startTime` should also be provided. Default value is as per business configuration. Maximum range of appointment slots can be 90 days. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse
      */
     public function getAppointmmentSlotsByJobId($service_job_id, $marketplace_ids, $start_time = null, $end_time = null)
     {
@@ -3529,9 +3529,9 @@ class ServiceV1Api extends BaseApi
      * @param  string $start_time A time from which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `startTime` is provided, `endTime` should also be provided. Default value is as per business configuration. (optional)
      * @param  string $end_time A time up to which the appointment slots will be retrieved. The specified time must be in ISO 8601 format. If `endTime` is provided, `startTime` should also be provided. Default value is as per business configuration. Maximum range of appointment slots can be 90 days. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAppointmmentSlotsByJobIdWithHttpInfo($service_job_id, $marketplace_ids, $start_time = null, $end_time = null)
     {
@@ -3580,80 +3580,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3668,7 +3668,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3676,7 +3676,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3684,7 +3684,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3692,7 +3692,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3700,7 +3700,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3708,7 +3708,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3716,7 +3716,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3724,7 +3724,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3732,7 +3732,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3776,7 +3776,7 @@ class ServiceV1Api extends BaseApi
      */
     public function getAppointmmentSlotsByJobIdAsyncWithHttpInfo($service_job_id, $marketplace_ids, $start_time = null, $end_time = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\GetAppointmentSlotsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetAppointmentSlotsResponse';
         $request = $this->getAppointmmentSlotsByJobIdRequest($service_job_id, $marketplace_ids, $start_time, $end_time);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3957,12 +3957,12 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity
+     * @return \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity
      */
     public function getFixedSlotCapacity($resource_id, $marketplace_ids, $body, $next_page_token = null)
     {
@@ -3975,12 +3975,12 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFixedSlotCapacityWithHttpInfo($resource_id, $marketplace_ids, $body, $next_page_token = null)
     {
@@ -4029,88 +4029,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -4125,7 +4125,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4133,7 +4133,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4141,7 +4141,7 @@ class ServiceV1Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4149,7 +4149,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4157,7 +4157,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4165,7 +4165,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4173,7 +4173,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4181,7 +4181,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4189,7 +4189,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4197,7 +4197,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4215,7 +4215,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4233,7 +4233,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4241,7 +4241,7 @@ class ServiceV1Api extends BaseApi
      */
     public function getFixedSlotCapacityAsyncWithHttpInfo($resource_id, $marketplace_ids, $body, $next_page_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\FixedSlotCapacity';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacity';
         $request = $this->getFixedSlotCapacityRequest($resource_id, $marketplace_ids, $body, $next_page_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -4289,7 +4289,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\FixedSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4426,12 +4426,12 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity
+     * @return \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity
      */
     public function getRangeSlotCapacity($resource_id, $marketplace_ids, $body, $next_page_token = null)
     {
@@ -4444,12 +4444,12 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRangeSlotCapacityWithHttpInfo($resource_id, $marketplace_ids, $body, $next_page_token = null)
     {
@@ -4498,88 +4498,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -4594,7 +4594,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4602,7 +4602,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4610,7 +4610,7 @@ class ServiceV1Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4618,7 +4618,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4626,7 +4626,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4634,7 +4634,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4642,7 +4642,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4650,7 +4650,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4658,7 +4658,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4666,7 +4666,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityErrors',
+                        '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityErrors',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4684,7 +4684,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4702,7 +4702,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4710,7 +4710,7 @@ class ServiceV1Api extends BaseApi
      */
     public function getRangeSlotCapacityAsyncWithHttpInfo($resource_id, $marketplace_ids, $body, $next_page_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\RangeSlotCapacity';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacity';
         $request = $this->getRangeSlotCapacityRequest($resource_id, $marketplace_ids, $body, $next_page_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -4758,7 +4758,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource Identifier. (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RangeSlotCapacityQuery $body Request body. (required)
      * @param  string $next_page_token Next page token returned in the response of your previous request. (optional)
      *
      * @throws \InvalidArgumentException
@@ -4895,9 +4895,9 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id A service job identifier. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse
      */
     public function getServiceJobByServiceJobId($service_job_id)
     {
@@ -4910,9 +4910,9 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id A service job identifier. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getServiceJobByServiceJobIdWithHttpInfo($service_job_id)
     {
@@ -4961,88 +4961,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -5057,7 +5057,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5065,7 +5065,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5073,7 +5073,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5081,7 +5081,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5089,7 +5089,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5097,7 +5097,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5105,7 +5105,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5113,7 +5113,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5121,7 +5121,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5129,7 +5129,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5167,7 +5167,7 @@ class ServiceV1Api extends BaseApi
      */
     public function getServiceJobByServiceJobIdAsyncWithHttpInfo($service_job_id)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\GetServiceJobByServiceJobIdResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobByServiceJobIdResponse';
         $request = $this->getServiceJobByServiceJobIdRequest($service_job_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -5326,9 +5326,9 @@ class ServiceV1Api extends BaseApi
      * @param  string[] $required_skills A defined set of related knowledge, skills, experience, tools, materials, and work processes common to service delivery for a set of products and/or service scenarios. Max values supported is 20. (optional)
      * @param  string[] $store_ids List of Amazon-defined identifiers for the region scope. Max values supported is 50. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse
      */
     public function getServiceJobs($marketplace_ids, $service_order_ids = null, $service_job_status = null, $page_token = null, $page_size = 20, $sort_field = null, $sort_order = null, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $schedule_start_date = null, $schedule_end_date = null, $asins = null, $required_skills = null, $store_ids = null)
     {
@@ -5356,9 +5356,9 @@ class ServiceV1Api extends BaseApi
      * @param  string[] $required_skills A defined set of related knowledge, skills, experience, tools, materials, and work processes common to service delivery for a set of products and/or service scenarios. Max values supported is 20. (optional)
      * @param  string[] $store_ids List of Amazon-defined identifiers for the region scope. Max values supported is 50. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getServiceJobsWithHttpInfo($marketplace_ids, $service_order_ids = null, $service_job_status = null, $page_token = null, $page_size = 20, $sort_field = null, $sort_order = null, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $schedule_start_date = null, $schedule_end_date = null, $asins = null, $required_skills = null, $store_ids = null)
     {
@@ -5407,80 +5407,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -5495,7 +5495,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5503,7 +5503,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5511,7 +5511,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5519,7 +5519,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5527,7 +5527,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5535,7 +5535,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5543,7 +5543,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5551,7 +5551,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5559,7 +5559,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5627,7 +5627,7 @@ class ServiceV1Api extends BaseApi
      */
     public function getServiceJobsAsyncWithHttpInfo($marketplace_ids, $service_order_ids = null, $service_job_status = null, $page_token = null, $page_size = 20, $sort_field = null, $sort_order = null, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $schedule_start_date = null, $schedule_end_date = null, $asins = null, $required_skills = null, $store_ids = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\GetServiceJobsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\GetServiceJobsResponse';
         $request = $this->getServiceJobsRequest($marketplace_ids, $service_order_ids, $service_job_status, $page_token, $page_size, $sort_field, $sort_order, $created_after, $created_before, $last_updated_after, $last_updated_before, $schedule_start_date, $schedule_end_date, $asins, $required_skills, $store_ids);
         $signedRequest = $this->config->signRequest(
             $request
@@ -5937,11 +5937,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse
      */
     public function rescheduleAppointmentForServiceJobByServiceJobId($service_job_id, $appointment_id, $body)
     {
@@ -5954,11 +5954,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function rescheduleAppointmentForServiceJobByServiceJobIdWithHttpInfo($service_job_id, $appointment_id, $body)
     {
@@ -6007,88 +6007,88 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -6103,7 +6103,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6111,7 +6111,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6119,7 +6119,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6127,7 +6127,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6135,7 +6135,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6143,7 +6143,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6151,7 +6151,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6159,7 +6159,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6167,7 +6167,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6175,7 +6175,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6193,7 +6193,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6210,14 +6210,14 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function rescheduleAppointmentForServiceJobByServiceJobIdAsyncWithHttpInfo($service_job_id, $appointment_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\SetAppointmentResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\SetAppointmentResponse';
         $request = $this->rescheduleAppointmentForServiceJobByServiceJobIdRequest($service_job_id, $appointment_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -6265,7 +6265,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon defined service job identifier. (required)
      * @param  string $appointment_id An existing appointment identifier for the Service Job. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\RescheduleAppointmentRequest $body Reschedule appointment operation input details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6397,9 +6397,9 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -6414,9 +6414,9 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -6475,77 +6475,77 @@ class ServiceV1Api extends BaseApi
 
                     return ObjectSerializer::deserialize($content, 'string', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 422:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\Error[]', $response->getHeaders());
             }
 
             $returnType = 'string';
@@ -6571,7 +6571,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6579,7 +6579,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6587,7 +6587,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6595,7 +6595,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6603,7 +6603,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6611,7 +6611,7 @@ class ServiceV1Api extends BaseApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6619,7 +6619,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6627,7 +6627,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6635,7 +6635,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\Error[]',
+                        '\SellingPartnerApiV5\Model\ServiceV1\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6653,7 +6653,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6670,7 +6670,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -6725,7 +6725,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $service_job_id An Amazon-defined service job identifier. Get this value by calling the `getServiceJobs` operation of the Services API. (required)
      * @param  string $appointment_id An Amazon-defined identifier of active service job appointment. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\SetAppointmentFulfillmentDataRequest $body Appointment fulfillment data collection details. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -6857,11 +6857,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse
      */
     public function updateReservation($reservation_id, $marketplace_ids, $body)
     {
@@ -6874,11 +6874,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateReservationWithHttpInfo($reservation_id, $marketplace_ids, $body)
     {
@@ -6927,80 +6927,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -7015,7 +7015,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7023,7 +7023,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7031,7 +7031,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7039,7 +7039,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7047,7 +7047,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7055,7 +7055,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7063,7 +7063,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7071,7 +7071,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7079,7 +7079,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7097,7 +7097,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7114,14 +7114,14 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateReservationAsyncWithHttpInfo($reservation_id, $marketplace_ids, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\UpdateReservationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\UpdateReservationResponse';
         $request = $this->updateReservationRequest($reservation_id, $marketplace_ids, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -7169,7 +7169,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $reservation_id Reservation Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateReservationRequest $body Reservation details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -7297,11 +7297,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource (store) Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse
+     * @return \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse
      */
     public function updateSchedule($resource_id, $marketplace_ids, $body)
     {
@@ -7314,11 +7314,11 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource (store) Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateScheduleWithHttpInfo($resource_id, $marketplace_ids, $body)
     {
@@ -7367,80 +7367,80 @@ class ServiceV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -7455,7 +7455,7 @@ class ServiceV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7463,7 +7463,7 @@ class ServiceV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7471,7 +7471,7 @@ class ServiceV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7479,7 +7479,7 @@ class ServiceV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7487,7 +7487,7 @@ class ServiceV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7495,7 +7495,7 @@ class ServiceV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7503,7 +7503,7 @@ class ServiceV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7511,7 +7511,7 @@ class ServiceV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7519,7 +7519,7 @@ class ServiceV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse',
+                        '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7537,7 +7537,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource (store) Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -7554,14 +7554,14 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource (store) Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateScheduleAsyncWithHttpInfo($resource_id, $marketplace_ids, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ServiceV1\UpdateScheduleResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleResponse';
         $request = $this->updateScheduleRequest($resource_id, $marketplace_ids, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -7609,7 +7609,7 @@ class ServiceV1Api extends BaseApi
      *
      * @param  string $resource_id Resource (store) Identifier (required)
      * @param  string[] $marketplace_ids An identifier for the marketplace in which the resource operates. (required)
-     * @param  \SellingPartnerApi\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
+     * @param  \SellingPartnerApiV5\Model\ServiceV1\UpdateScheduleRequest $body Schedule details (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

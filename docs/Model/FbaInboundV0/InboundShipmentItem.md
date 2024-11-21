@@ -11,6 +11,6 @@ Name | Type | Description | Notes
 **quantity_received** | **int** | The item quantity. | [optional]
 **quantity_in_case** | **int** | The item quantity. | [optional]
 **release_date** | **string** | A date string in ISO 8601 format. | [optional]
-**prep_details_list** | [**\SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]**](PrepDetails.md) | A list of preparation instructions and who is responsible for that preparation. | [optional]
+**prep_details_list** | [**\SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]**](PrepDetails.md) | A list of preparation instructions and who is responsible for that preparation. | [optional]
 
 [[FbaInboundV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

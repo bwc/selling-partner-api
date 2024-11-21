@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * ListingsV20210801Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class ListingsV20210801Api extends BaseApi
 {
@@ -48,9 +48,9 @@ class ListingsV20210801Api extends BaseApi
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse
      */
     public function deleteListingsItem($seller_id, $sku, $marketplace_ids, $issue_locale = null)
     {
@@ -66,9 +66,9 @@ class ListingsV20210801Api extends BaseApi
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteListingsItemWithHttpInfo($seller_id, $sku, $marketplace_ids, $issue_locale = null)
     {
@@ -117,72 +117,72 @@ class ListingsV20210801Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -197,7 +197,7 @@ class ListingsV20210801Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -205,7 +205,7 @@ class ListingsV20210801Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +213,7 @@ class ListingsV20210801Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +221,7 @@ class ListingsV20210801Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +229,7 @@ class ListingsV20210801Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -237,7 +237,7 @@ class ListingsV20210801Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class ListingsV20210801Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -253,7 +253,7 @@ class ListingsV20210801Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -297,7 +297,7 @@ class ListingsV20210801Api extends BaseApi
      */
     public function deleteListingsItemAsyncWithHttpInfo($seller_id, $sku, $marketplace_ids, $issue_locale = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse';
         $request = $this->deleteListingsItemRequest($seller_id, $sku, $marketplace_ids, $issue_locale);
         $signedRequest = $this->config->signRequest(
             $request
@@ -478,9 +478,9 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      * @param  string[] $included_data A comma-delimited list of data sets to include in the response. Default: summaries. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ListingsV20210801\Item
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\Item
      */
     public function getListingsItem($seller_id, $sku, $marketplace_ids, $issue_locale = null, $included_data = null)
     {
@@ -497,9 +497,9 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      * @param  string[] $included_data A comma-delimited list of data sets to include in the response. Default: summaries. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ListingsV20210801\Item, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ListingsV20210801\Item, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListingsItemWithHttpInfo($seller_id, $sku, $marketplace_ids, $issue_locale = null, $included_data = null)
     {
@@ -548,80 +548,80 @@ class ListingsV20210801Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\Item' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\Item' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\Item', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\Item', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ListingsV20210801\Item';
+            $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\Item';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -636,7 +636,7 @@ class ListingsV20210801Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\Item',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\Item',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class ListingsV20210801Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -652,7 +652,7 @@ class ListingsV20210801Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -660,7 +660,7 @@ class ListingsV20210801Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -668,7 +668,7 @@ class ListingsV20210801Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -676,7 +676,7 @@ class ListingsV20210801Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -684,7 +684,7 @@ class ListingsV20210801Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -692,7 +692,7 @@ class ListingsV20210801Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -700,7 +700,7 @@ class ListingsV20210801Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -746,7 +746,7 @@ class ListingsV20210801Api extends BaseApi
      */
     public function getListingsItemAsyncWithHttpInfo($seller_id, $sku, $marketplace_ids, $issue_locale = null, $included_data = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ListingsV20210801\Item';
+        $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\Item';
         $request = $this->getListingsItemRequest($seller_id, $sku, $marketplace_ids, $issue_locale, $included_data);
         $signedRequest = $this->config->signRequest(
             $request
@@ -933,12 +933,12 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse
      */
     public function patchListingsItem($seller_id, $sku, $marketplace_ids, $body, $issue_locale = null)
     {
@@ -952,12 +952,12 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchListingsItemWithHttpInfo($seller_id, $sku, $marketplace_ids, $body, $issue_locale = null)
     {
@@ -1006,72 +1006,72 @@ class ListingsV20210801Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1086,7 +1086,7 @@ class ListingsV20210801Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1094,7 +1094,7 @@ class ListingsV20210801Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1102,7 +1102,7 @@ class ListingsV20210801Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1110,7 +1110,7 @@ class ListingsV20210801Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1118,7 +1118,7 @@ class ListingsV20210801Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1126,7 +1126,7 @@ class ListingsV20210801Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1134,7 +1134,7 @@ class ListingsV20210801Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1142,7 +1142,7 @@ class ListingsV20210801Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1161,7 +1161,7 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1180,7 +1180,7 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1188,7 +1188,7 @@ class ListingsV20210801Api extends BaseApi
      */
     public function patchListingsItemAsyncWithHttpInfo($seller_id, $sku, $marketplace_ids, $body, $issue_locale = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse';
         $request = $this->patchListingsItemRequest($seller_id, $sku, $marketplace_ids, $body, $issue_locale);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1237,7 +1237,7 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest $body The request body schema for the patchListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1379,12 +1379,12 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse
      */
     public function putListingsItem($seller_id, $sku, $marketplace_ids, $body, $issue_locale = null)
     {
@@ -1398,12 +1398,12 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function putListingsItemWithHttpInfo($seller_id, $sku, $marketplace_ids, $body, $issue_locale = null)
     {
@@ -1452,72 +1452,72 @@ class ListingsV20210801Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsV20210801\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1532,7 +1532,7 @@ class ListingsV20210801Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1540,7 +1540,7 @@ class ListingsV20210801Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1548,7 +1548,7 @@ class ListingsV20210801Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1556,7 +1556,7 @@ class ListingsV20210801Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1564,7 +1564,7 @@ class ListingsV20210801Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1572,7 +1572,7 @@ class ListingsV20210801Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1580,7 +1580,7 @@ class ListingsV20210801Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1588,7 +1588,7 @@ class ListingsV20210801Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsV20210801\ErrorList',
+                        '\SellingPartnerApiV5\Model\ListingsV20210801\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1607,7 +1607,7 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1626,7 +1626,7 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
      * @throws \InvalidArgumentException
@@ -1634,7 +1634,7 @@ class ListingsV20210801Api extends BaseApi
      */
     public function putListingsItemAsyncWithHttpInfo($seller_id, $sku, $marketplace_ids, $body, $issue_locale = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse';
         $request = $this->putListingsItemRequest($seller_id, $sku, $marketplace_ids, $body, $issue_locale);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1683,7 +1683,7 @@ class ListingsV20210801Api extends BaseApi
      * @param  string $seller_id A selling partner identifier, such as a merchant account or vendor code. (required)
      * @param  string $sku A selling partner provided identifier for an Amazon listing. (required)
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
-     * @param  \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
+     * @param  \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest $body The request body schema for the putListingsItem operation. (required)
      * @param  string $issue_locale A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
      * @throws \InvalidArgumentException

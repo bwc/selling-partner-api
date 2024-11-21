@@ -1,4 +1,4 @@
-# SellingPartnerApi\SalesV1Api
+# SellingPartnerApiV5\SalesV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getOrderMetrics()`
 
 ```php
-getOrderMetrics($marketplace_ids, $interval, $granularity, $granularity_time_zone, $buyer_type, $fulfillment_network, $first_day_of_week, $asin, $sku): \SellingPartnerApi\Model\SalesV1\GetOrderMetricsResponse
+getOrderMetrics($marketplace_ids, $interval, $granularity, $granularity_time_zone, $buyer_type, $fulfillment_network, $first_day_of_week, $asin, $sku): \SellingPartnerApiV5\Model\SalesV1\GetOrderMetricsResponse
 ```
 
 
@@ -30,16 +30,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SalesV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SalesV1Api($config);
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
     // For example, ATVPDKIKX0DER indicates the US marketplace.
 $interval = 'interval_example'; // string | A time interval used for selecting order metrics. This takes the form of two dates separated by two hyphens (first date is inclusive; second date is exclusive). Dates are in ISO8601 format and must represent absolute time (either Z notation or offset notation). Example: 2018-09-01T00:00:00-07:00--2018-09-04T00:00:00-07:00 requests order metrics for Sept 1st, 2nd and 3rd in the -07:00 zone.
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SalesV1\GetOrderMetricsResponse**](../Model/SalesV1/GetOrderMetricsResponse.md)
+[**\SellingPartnerApiV5\Model\SalesV1\GetOrderMetricsResponse**](../Model/SalesV1/GetOrderMetricsResponse.md)
 
 ### HTTP request headers
 

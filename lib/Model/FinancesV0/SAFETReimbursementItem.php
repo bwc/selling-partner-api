@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SAFETReimbursementItem Class Doc Comment
  *
  * @category Class
  * @description An item from a SAFE-T claim reimbursement.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SAFETReimbursementItem extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'item_charge_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]',
+        'item_charge_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]',
         'product_description' => 'string',
         'quantity' => 'string'
     ];
@@ -149,7 +149,7 @@ class SAFETReimbursementItem extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets item_charge_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getItemChargeList()
     {
@@ -159,7 +159,7 @@ class SAFETReimbursementItem extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets item_charge_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $item_charge_list A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $item_charge_list A list of charge information on the seller's account.
      *
      * @return self
      */

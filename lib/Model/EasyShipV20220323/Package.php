@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Package Class Doc Comment
  *
  * @category Class
  * @description A package. This object contains all the details of the scheduled Easy Ship package including the package identifier, physical attributes such as dimensions and weight, selected time slot to handover the package to carrier, status of the package, and tracking/invoice details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,15 +58,15 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'scheduled_package_id' => '\SellingPartnerApi\Model\EasyShipV20220323\ScheduledPackageId',
-        'package_dimensions' => '\SellingPartnerApi\Model\EasyShipV20220323\Dimensions',
-        'package_weight' => '\SellingPartnerApi\Model\EasyShipV20220323\Weight',
-        'package_items' => '\SellingPartnerApi\Model\EasyShipV20220323\Item[]',
-        'package_time_slot' => '\SellingPartnerApi\Model\EasyShipV20220323\TimeSlot',
+        'scheduled_package_id' => '\SellingPartnerApiV5\Model\EasyShipV20220323\ScheduledPackageId',
+        'package_dimensions' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Dimensions',
+        'package_weight' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Weight',
+        'package_items' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Item[]',
+        'package_time_slot' => '\SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot',
         'package_identifier' => 'string',
-        'invoice' => '\SellingPartnerApi\Model\EasyShipV20220323\InvoiceData',
-        'package_status' => '\SellingPartnerApi\Model\EasyShipV20220323\PackageStatus',
-        'tracking_details' => '\SellingPartnerApi\Model\EasyShipV20220323\TrackingDetails'
+        'invoice' => '\SellingPartnerApiV5\Model\EasyShipV20220323\InvoiceData',
+        'package_status' => '\SellingPartnerApiV5\Model\EasyShipV20220323\PackageStatus',
+        'tracking_details' => '\SellingPartnerApiV5\Model\EasyShipV20220323\TrackingDetails'
     ];
 
     /**
@@ -226,7 +226,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets scheduled_package_id
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\ScheduledPackageId
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\ScheduledPackageId
      */
     public function getScheduledPackageId()
     {
@@ -236,7 +236,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets scheduled_package_id
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\ScheduledPackageId $scheduled_package_id scheduled_package_id
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\ScheduledPackageId $scheduled_package_id scheduled_package_id
      *
      * @return self
      */
@@ -249,7 +249,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets package_dimensions
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Dimensions
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Dimensions
      */
     public function getPackageDimensions()
     {
@@ -259,7 +259,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets package_dimensions
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Dimensions $package_dimensions package_dimensions
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Dimensions $package_dimensions package_dimensions
      *
      * @return self
      */
@@ -272,7 +272,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets package_weight
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Weight
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Weight
      */
     public function getPackageWeight()
     {
@@ -282,7 +282,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets package_weight
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Weight $package_weight package_weight
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Weight $package_weight package_weight
      *
      * @return self
      */
@@ -295,7 +295,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets package_items
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Item[]|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Item[]|null
      */
     public function getPackageItems()
     {
@@ -305,7 +305,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets package_items
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Item[]|null $package_items A list of items contained in the package.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Item[]|null $package_items A list of items contained in the package.
      *
      * @return self
      */
@@ -322,7 +322,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets package_time_slot
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot
      */
     public function getPackageTimeSlot()
     {
@@ -332,7 +332,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets package_time_slot
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot $package_time_slot package_time_slot
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot $package_time_slot package_time_slot
      *
      * @return self
      */
@@ -368,7 +368,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets invoice
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\InvoiceData|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\InvoiceData|null
      */
     public function getInvoice()
     {
@@ -378,7 +378,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets invoice
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\InvoiceData|null $invoice invoice
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\InvoiceData|null $invoice invoice
      *
      * @return self
      */
@@ -391,7 +391,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets package_status
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\PackageStatus|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\PackageStatus|null
      */
     public function getPackageStatus()
     {
@@ -401,7 +401,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets package_status
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\PackageStatus|null $package_status package_status
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\PackageStatus|null $package_status package_status
      *
      * @return self
      */
@@ -414,7 +414,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets tracking_details
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\TrackingDetails|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\TrackingDetails|null
      */
     public function getTrackingDetails()
     {
@@ -424,7 +424,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets tracking_details
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\TrackingDetails|null $tracking_details tracking_details
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\TrackingDetails|null $tracking_details tracking_details
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitAcknowledgementResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the submitAcknowledgement operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class SubmitAcknowledgementResponse extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList'
     ];
 
     /**
@@ -143,7 +143,7 @@ class SubmitAcknowledgementResponse extends BaseModel implements ModelInterface,
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId|null
      */
     public function getPayload()
     {
@@ -153,7 +153,7 @@ class SubmitAcknowledgementResponse extends BaseModel implements ModelInterface,
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId|null $payload payload
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class SubmitAcknowledgementResponse extends BaseModel implements ModelInterface,
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList|null
      */
     public function getErrors()
     {
@@ -176,7 +176,7 @@ class SubmitAcknowledgementResponse extends BaseModel implements ModelInterface,
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList|null $errors errors
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList|null $errors errors
      *
      * @return self
      */

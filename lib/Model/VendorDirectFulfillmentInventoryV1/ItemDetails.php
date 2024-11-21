@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemDetails Class Doc Comment
  *
  * @category Class
  * @description Updated inventory details for an item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'available_quantity' => '\SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\ItemQuantity',
+        'available_quantity' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\ItemQuantity',
         'is_obsolete' => 'bool'
     ];
 
@@ -204,7 +204,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets available_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\ItemQuantity
      */
     public function getAvailableQuantity()
     {
@@ -214,7 +214,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets available_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\ItemQuantity $available_quantity available_quantity
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\ItemQuantity $available_quantity available_quantity
      *
      * @return self
      */

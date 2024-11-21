@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CompetitivePriceType Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'competitive_price_id' => 'string',
-        'price' => '\SellingPartnerApi\Model\ProductPricingV0\PriceType',
+        'price' => '\SellingPartnerApiV5\Model\ProductPricingV0\PriceType',
         'condition' => 'string',
         'subcondition' => 'string',
-        'offer_type' => '\SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType',
+        'offer_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType',
         'quantity_tier' => 'int',
-        'quantity_discount_type' => '\SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType',
+        'quantity_discount_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType',
         'seller_id' => 'string',
         'belongs_to_requester' => 'bool'
     ];
@@ -216,7 +216,7 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\PriceType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\PriceType
      */
     public function getPrice()
     {
@@ -226,7 +226,7 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\PriceType $price price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\PriceType $price price
      *
      * @return self
      */
@@ -285,7 +285,7 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets offer_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null
      */
     public function getOfferType()
     {
@@ -295,7 +295,7 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets offer_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
      *
      * @return self
      */
@@ -331,7 +331,7 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets quantity_discount_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType|null
      */
     public function getQuantityDiscountType()
     {
@@ -341,7 +341,7 @@ class CompetitivePriceType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets quantity_discount_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType|null $quantity_discount_type quantity_discount_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType|null $quantity_discount_type quantity_discount_type
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DebtRecoveryEvent Class Doc Comment
  *
  * @category Class
  * @description A debt payment or debt adjustment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,10 +59,10 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'debt_recovery_type' => 'string',
-        'recovery_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'over_payment_credit' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'debt_recovery_item_list' => '\SellingPartnerApi\Model\FinancesV0\DebtRecoveryItem[]',
-        'charge_instrument_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeInstrument[]'
+        'recovery_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'over_payment_credit' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'debt_recovery_item_list' => '\SellingPartnerApiV5\Model\FinancesV0\DebtRecoveryItem[]',
+        'charge_instrument_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeInstrument[]'
     ];
 
     /**
@@ -188,7 +188,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets recovery_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getRecoveryAmount()
     {
@@ -198,7 +198,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets recovery_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $recovery_amount recovery_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $recovery_amount recovery_amount
      *
      * @return self
      */
@@ -211,7 +211,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets over_payment_credit
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getOverPaymentCredit()
     {
@@ -221,7 +221,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets over_payment_credit
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $over_payment_credit over_payment_credit
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $over_payment_credit over_payment_credit
      *
      * @return self
      */
@@ -234,7 +234,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets debt_recovery_item_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\DebtRecoveryItem[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\DebtRecoveryItem[]|null
      */
     public function getDebtRecoveryItemList()
     {
@@ -244,7 +244,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets debt_recovery_item_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\DebtRecoveryItem[]|null $debt_recovery_item_list A list of debt recovery item information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\DebtRecoveryItem[]|null $debt_recovery_item_list A list of debt recovery item information.
      *
      * @return self
      */
@@ -257,7 +257,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets charge_instrument_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeInstrument[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeInstrument[]|null
      */
     public function getChargeInstrumentList()
     {
@@ -267,7 +267,7 @@ class DebtRecoveryEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets charge_instrument_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeInstrument[]|null $charge_instrument_list A list of payment instruments.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeInstrument[]|null $charge_instrument_list A list of payment instruments.
      *
      * @return self
      */

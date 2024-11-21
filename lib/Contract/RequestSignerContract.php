@@ -1,6 +1,6 @@
 <?php
 
-namespace SellingPartnerApi\Contract;
+namespace SellingPartnerApiV5\Contract;
 
 use Psr\Http\Message\RequestInterface;
 

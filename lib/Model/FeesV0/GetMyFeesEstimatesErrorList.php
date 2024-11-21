@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMyFeesEstimatesErrorList Class Doc Comment
  *
  * @category Class
  * @description A list of error responses returned when a request is unsuccessful.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetMyFeesEstimatesErrorList extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\SellingPartnerApi\Model\FeesV0\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\FeesV0\Error[]'
     ];
 
     /**
@@ -165,7 +165,7 @@ class GetMyFeesEstimatesErrorList extends BaseModel implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\FeesV0\Error[]
+     * @return \SellingPartnerApiV5\Model\FeesV0\Error[]
      */
     public function getErrors()
     {
@@ -175,7 +175,7 @@ class GetMyFeesEstimatesErrorList extends BaseModel implements ModelInterface, A
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\FeesV0\Error[] $errors errors
+     * @param \SellingPartnerApiV5\Model\FeesV0\Error[] $errors errors
      *
      * @return self
      */

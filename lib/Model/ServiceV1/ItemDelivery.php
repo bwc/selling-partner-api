@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemDelivery Class Doc Comment
  *
  * @category Class
  * @description Delivery information for the item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ItemDelivery extends BaseModel implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'estimated_delivery_date' => 'string',
-        'item_delivery_promise' => '\SellingPartnerApi\Model\ServiceV1\ItemDeliveryPromise'
+        'item_delivery_promise' => '\SellingPartnerApiV5\Model\ServiceV1\ItemDeliveryPromise'
     ];
 
     /**
@@ -166,7 +166,7 @@ class ItemDelivery extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_delivery_promise
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\ItemDeliveryPromise|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\ItemDeliveryPromise|null
      */
     public function getItemDeliveryPromise()
     {
@@ -176,7 +176,7 @@ class ItemDelivery extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_delivery_promise
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\ItemDeliveryPromise|null $item_delivery_promise item_delivery_promise
+     * @param \SellingPartnerApiV5\Model\ServiceV1\ItemDeliveryPromise|null $item_delivery_promise item_delivery_promise
      *
      * @return self
      */

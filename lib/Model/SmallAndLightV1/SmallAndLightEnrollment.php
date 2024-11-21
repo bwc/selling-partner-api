@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SmallAndLightV1;
+namespace SellingPartnerApiV5\Model\SmallAndLightV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SmallAndLightEnrollment Class Doc Comment
  *
  * @category Class
  * @description The Small and Light enrollment status of the item indicated by the specified seller SKU.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class SmallAndLightEnrollment extends BaseModel implements ModelInterface, Array
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
         'seller_sku' => 'string',
-        'status' => '\SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollmentStatus'
+        'status' => '\SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollmentStatus'
     ];
 
     /**
@@ -229,7 +229,7 @@ class SmallAndLightEnrollment extends BaseModel implements ModelInterface, Array
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollmentStatus
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollmentStatus
      */
     public function getStatus()
     {
@@ -239,7 +239,7 @@ class SmallAndLightEnrollment extends BaseModel implements ModelInterface, Array
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollmentStatus $status status
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollmentStatus $status status
      *
      * @return self
      */

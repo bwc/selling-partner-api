@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFeaturedOfferExpectedPriceBatchResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getFeaturedOfferExpectedPriceBatch operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetFeaturedOfferExpectedPriceBatchResponse extends BaseModel implements Mo
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responses' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponse[]'
+        'responses' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponse[]'
     ];
 
     /**
@@ -166,7 +166,7 @@ class GetFeaturedOfferExpectedPriceBatchResponse extends BaseModel implements Mo
     /**
      * Gets responses
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponse[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponse[]|null
      */
     public function getResponses()
     {
@@ -176,7 +176,7 @@ class GetFeaturedOfferExpectedPriceBatchResponse extends BaseModel implements Mo
     /**
      * Sets responses
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponse[]|null $responses A batched list of featured offer expected price responses.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponse[]|null $responses A batched list of featured offer expected price responses.
      *
      * @return self
      */

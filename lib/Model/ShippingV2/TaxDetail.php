@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TaxDetail Class Doc Comment
  *
  * @category Class
  * @description Indicates the tax specifications associated with the shipment for customs compliance purposes in certain regions.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class TaxDetail extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tax_type' => '\SellingPartnerApi\Model\ShippingV2\TaxType',
+        'tax_type' => '\SellingPartnerApiV5\Model\ShippingV2\TaxType',
         'tax_registration_number' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class TaxDetail extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets tax_type
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\TaxType
+     * @return \SellingPartnerApiV5\Model\ShippingV2\TaxType
      */
     public function getTaxType()
     {
@@ -159,7 +159,7 @@ class TaxDetail extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets tax_type
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\TaxType $tax_type tax_type
+     * @param \SellingPartnerApiV5\Model\ShippingV2\TaxType $tax_type tax_type
      *
      * @return self
      */

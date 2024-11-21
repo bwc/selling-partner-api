@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Route Class Doc Comment
  *
  * @category Class
  * @description This is used only for direct import shipment confirmations.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class Route extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'stops' => '\SellingPartnerApi\Model\VendorShippingV1\Stop[]'
+        'stops' => '\SellingPartnerApiV5\Model\VendorShippingV1\Stop[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class Route extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets stops
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Stop[]
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Stop[]
      */
     public function getStops()
     {
@@ -150,7 +150,7 @@ class Route extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets stops
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Stop[] $stops stops
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Stop[] $stops stops
      *
      * @return self
      */

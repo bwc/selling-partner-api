@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Address Class Doc Comment
  *
  * @category Class
  * @description The shipping address details of the shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -69,7 +69,7 @@ class Address extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
         'postal_code' => 'string',
         'country_code' => 'string',
         'phone' => 'string',
-        'address_type' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\AddressTypeEnum'
+        'address_type' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\AddressTypeEnum'
     ];
 
     /**
@@ -456,7 +456,7 @@ class Address extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets address_type
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\AddressTypeEnum|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\AddressTypeEnum|null
      */
     public function getAddressType()
     {
@@ -466,7 +466,7 @@ class Address extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets address_type
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\AddressTypeEnum|null $address_type address_type
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\AddressTypeEnum|null $address_type address_type
      *
      * @return self
      */

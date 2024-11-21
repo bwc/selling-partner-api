@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AttributeSetListType Class Doc Comment
  *
  * @category Class
  * @description The attributes of the item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -73,12 +73,12 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
         'clasp_type' => 'string',
         'color' => 'string',
         'cpu_manufacturer' => 'string',
-        'cpu_speed' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'cpu_speed' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'cpu_type' => 'string',
-        'creator' => '\SellingPartnerApi\Model\CatalogItemsV0\CreatorType[]',
+        'creator' => '\SellingPartnerApiV5\Model\CatalogItemsV0\CreatorType[]',
         'department' => 'string',
         'director' => 'string[]',
-        'display_size' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'display_size' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'edition' => 'string',
         'episode_sequence' => 'string',
         'esrb_age_rating' => 'string',
@@ -88,13 +88,13 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
         'gem_type' => 'string[]',
         'genre' => 'string',
         'golf_club_flex' => 'string',
-        'golf_club_loft' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'golf_club_loft' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'hand_orientation' => 'string',
         'hard_disk_interface' => 'string',
-        'hard_disk_size' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'hard_disk_size' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'hardware_platform' => 'string',
         'hazardous_material_type' => 'string',
-        'item_dimensions' => '\SellingPartnerApi\Model\CatalogItemsV0\DimensionType',
+        'item_dimensions' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType',
         'is_adult_product' => 'bool',
         'is_autographed' => 'bool',
         'is_eligible_for_trade_in' => 'bool',
@@ -102,15 +102,15 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
         'issues_per_year' => 'string',
         'item_part_number' => 'string',
         'label' => 'string',
-        'languages' => '\SellingPartnerApi\Model\CatalogItemsV0\LanguageType[]',
+        'languages' => '\SellingPartnerApiV5\Model\CatalogItemsV0\LanguageType[]',
         'legal_disclaimer' => 'string',
-        'list_price' => '\SellingPartnerApi\Model\CatalogItemsV0\Price',
+        'list_price' => '\SellingPartnerApiV5\Model\CatalogItemsV0\Price',
         'manufacturer' => 'string',
-        'manufacturer_maximum_age' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'manufacturer_minimum_age' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'manufacturer_maximum_age' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'manufacturer_minimum_age' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'manufacturer_parts_warranty_description' => 'string',
         'material_type' => 'string[]',
-        'maximum_resolution' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'maximum_resolution' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'media_type' => 'string[]',
         'metal_stamp' => 'string',
         'metal_type' => 'string',
@@ -121,8 +121,8 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
         'number_of_pages' => 'int',
         'number_of_tracks' => 'int',
         'operating_system' => 'string[]',
-        'optical_zoom' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'package_dimensions' => '\SellingPartnerApi\Model\CatalogItemsV0\DimensionType',
+        'optical_zoom' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'package_dimensions' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType',
         'package_quantity' => 'int',
         'part_number' => 'string',
         'pegi_rating' => 'string',
@@ -136,24 +136,24 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
         'region_code' => 'string',
         'release_date' => 'string',
         'ring_size' => 'string',
-        'running_time' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'running_time' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'shaft_material' => 'string',
         'scent' => 'string',
         'season_sequence' => 'string',
         'seikodo_product_code' => 'string',
         'size' => 'string',
         'size_per_pearl' => 'string',
-        'small_image' => '\SellingPartnerApi\Model\CatalogItemsV0\Image',
+        'small_image' => '\SellingPartnerApiV5\Model\CatalogItemsV0\Image',
         'studio' => 'string',
-        'subscription_length' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'system_memory_size' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'subscription_length' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'system_memory_size' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'system_memory_type' => 'string',
         'theatrical_release_date' => 'string',
         'title' => 'string',
-        'total_diamond_weight' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'total_gem_weight' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'total_diamond_weight' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'total_gem_weight' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'warranty' => 'string',
-        'weee_tax_value' => '\SellingPartnerApi\Model\CatalogItemsV0\Price'
+        'weee_tax_value' => '\SellingPartnerApiV5\Model\CatalogItemsV0\Price'
     ];
 
     /**
@@ -1052,7 +1052,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets cpu_speed
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getCpuSpeed()
     {
@@ -1062,7 +1062,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets cpu_speed
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $cpu_speed cpu_speed
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $cpu_speed cpu_speed
      *
      * @return self
      */
@@ -1098,7 +1098,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets creator
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\CreatorType[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\CreatorType[]|null
      */
     public function getCreator()
     {
@@ -1108,7 +1108,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets creator
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\CreatorType[]|null $creator The creator attributes of the item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\CreatorType[]|null $creator The creator attributes of the item.
      *
      * @return self
      */
@@ -1167,7 +1167,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets display_size
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getDisplaySize()
     {
@@ -1177,7 +1177,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets display_size
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $display_size display_size
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $display_size display_size
      *
      * @return self
      */
@@ -1397,7 +1397,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets golf_club_loft
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getGolfClubLoft()
     {
@@ -1407,7 +1407,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets golf_club_loft
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $golf_club_loft golf_club_loft
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $golf_club_loft golf_club_loft
      *
      * @return self
      */
@@ -1466,7 +1466,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets hard_disk_size
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getHardDiskSize()
     {
@@ -1476,7 +1476,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets hard_disk_size
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $hard_disk_size hard_disk_size
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $hard_disk_size hard_disk_size
      *
      * @return self
      */
@@ -1535,7 +1535,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets item_dimensions
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DimensionType|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType|null
      */
     public function getItemDimensions()
     {
@@ -1545,7 +1545,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets item_dimensions
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DimensionType|null $item_dimensions item_dimensions
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType|null $item_dimensions item_dimensions
      *
      * @return self
      */
@@ -1719,7 +1719,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets languages
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\LanguageType[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\LanguageType[]|null
      */
     public function getLanguages()
     {
@@ -1729,7 +1729,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets languages
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\LanguageType[]|null $languages The languages attribute of the item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\LanguageType[]|null $languages The languages attribute of the item.
      *
      * @return self
      */
@@ -1765,7 +1765,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets list_price
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\Price|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\Price|null
      */
     public function getListPrice()
     {
@@ -1775,7 +1775,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets list_price
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\Price|null $list_price list_price
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\Price|null $list_price list_price
      *
      * @return self
      */
@@ -1811,7 +1811,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets manufacturer_maximum_age
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getManufacturerMaximumAge()
     {
@@ -1821,7 +1821,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets manufacturer_maximum_age
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $manufacturer_maximum_age manufacturer_maximum_age
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $manufacturer_maximum_age manufacturer_maximum_age
      *
      * @return self
      */
@@ -1834,7 +1834,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets manufacturer_minimum_age
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getManufacturerMinimumAge()
     {
@@ -1844,7 +1844,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets manufacturer_minimum_age
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $manufacturer_minimum_age manufacturer_minimum_age
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $manufacturer_minimum_age manufacturer_minimum_age
      *
      * @return self
      */
@@ -1903,7 +1903,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets maximum_resolution
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getMaximumResolution()
     {
@@ -1913,7 +1913,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets maximum_resolution
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $maximum_resolution maximum_resolution
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $maximum_resolution maximum_resolution
      *
      * @return self
      */
@@ -2156,7 +2156,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets optical_zoom
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getOpticalZoom()
     {
@@ -2166,7 +2166,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets optical_zoom
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $optical_zoom optical_zoom
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $optical_zoom optical_zoom
      *
      * @return self
      */
@@ -2179,7 +2179,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets package_dimensions
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DimensionType|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType|null
      */
     public function getPackageDimensions()
     {
@@ -2189,7 +2189,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets package_dimensions
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DimensionType|null $package_dimensions package_dimensions
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType|null $package_dimensions package_dimensions
      *
      * @return self
      */
@@ -2501,7 +2501,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets running_time
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getRunningTime()
     {
@@ -2511,7 +2511,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets running_time
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $running_time running_time
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $running_time running_time
      *
      * @return self
      */
@@ -2662,7 +2662,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets small_image
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\Image|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\Image|null
      */
     public function getSmallImage()
     {
@@ -2672,7 +2672,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets small_image
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\Image|null $small_image small_image
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\Image|null $small_image small_image
      *
      * @return self
      */
@@ -2708,7 +2708,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets subscription_length
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getSubscriptionLength()
     {
@@ -2718,7 +2718,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets subscription_length
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $subscription_length subscription_length
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $subscription_length subscription_length
      *
      * @return self
      */
@@ -2731,7 +2731,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets system_memory_size
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getSystemMemorySize()
     {
@@ -2741,7 +2741,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets system_memory_size
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $system_memory_size system_memory_size
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $system_memory_size system_memory_size
      *
      * @return self
      */
@@ -2823,7 +2823,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets total_diamond_weight
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getTotalDiamondWeight()
     {
@@ -2833,7 +2833,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets total_diamond_weight
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $total_diamond_weight total_diamond_weight
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $total_diamond_weight total_diamond_weight
      *
      * @return self
      */
@@ -2846,7 +2846,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets total_gem_weight
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getTotalGemWeight()
     {
@@ -2856,7 +2856,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets total_gem_weight
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $total_gem_weight total_gem_weight
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $total_gem_weight total_gem_weight
      *
      * @return self
      */
@@ -2892,7 +2892,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets weee_tax_value
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\Price|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\Price|null
      */
     public function getWeeeTaxValue()
     {
@@ -2902,7 +2902,7 @@ class AttributeSetListType extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets weee_tax_value
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\Price|null $weee_tax_value weee_tax_value
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\Price|null $weee_tax_value weee_tax_value
      *
      * @return self
      */

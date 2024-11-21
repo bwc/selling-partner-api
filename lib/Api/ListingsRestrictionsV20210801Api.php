@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * ListingsRestrictionsV20210801Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class ListingsRestrictionsV20210801Api extends BaseApi
 {
@@ -49,9 +49,9 @@ class ListingsRestrictionsV20210801Api extends BaseApi
      * @param  string $condition_type The condition used to filter restrictions. (optional)
      * @param  string $reason_locale A locale for reason text localization. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList
+     * @return \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList
      */
     public function getListingsRestrictions($asin, $seller_id, $marketplace_ids, $condition_type = null, $reason_locale = null)
     {
@@ -68,9 +68,9 @@ class ListingsRestrictionsV20210801Api extends BaseApi
      * @param  string $condition_type The condition used to filter restrictions. (optional)
      * @param  string $reason_locale A locale for reason text localization. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListingsRestrictionsWithHttpInfo($asin, $seller_id, $marketplace_ids, $condition_type = null, $reason_locale = null)
     {
@@ -119,80 +119,80 @@ class ListingsRestrictionsV20210801Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList';
+            $returnType = '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -207,7 +207,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -271,7 +271,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Error[]',
+                        '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Error[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -317,7 +317,7 @@ class ListingsRestrictionsV20210801Api extends BaseApi
      */
     public function getListingsRestrictionsAsyncWithHttpInfo($asin, $seller_id, $marketplace_ids, $condition_type = null, $reason_locale = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList';
+        $returnType = '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList';
         $request = $this->getListingsRestrictionsRequest($asin, $seller_id, $marketplace_ids, $condition_type, $reason_locale);
         $signedRequest = $this->config->signRequest(
             $request

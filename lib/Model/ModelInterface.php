@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi\Model
+ * @package  SellingPartnerApiV5\Model
  */
 
 /**
@@ -14,12 +14,12 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model;
+namespace SellingPartnerApiV5\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package SellingPartnerApi\Model
+ * @package SellingPartnerApiV5\Model
  */
 interface ModelInterface
 {

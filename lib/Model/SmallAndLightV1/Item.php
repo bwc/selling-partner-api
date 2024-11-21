@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SmallAndLightV1;
+namespace SellingPartnerApiV5\Model\SmallAndLightV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description An item to be sold.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'asin' => 'string',
-        'price' => '\SellingPartnerApi\Model\SmallAndLightV1\MoneyType'
+        'price' => '\SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType'
     ];
 
     /**
@@ -172,7 +172,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets price
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\MoneyType
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType
      */
     public function getPrice()
     {
@@ -182,7 +182,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets price
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\MoneyType $price price
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType $price price
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardTextPairBlock Class Doc Comment
  *
  * @category Class
  * @description The A+ Content standard label and description block, comprised of a pair of text components.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardTextPairBlock extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'label' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'description' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent'
+        'label' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'description' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent'
     ];
 
     /**
@@ -143,7 +143,7 @@ class StandardTextPairBlock extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets label
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getLabel()
     {
@@ -153,7 +153,7 @@ class StandardTextPairBlock extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets label
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $label label
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $label label
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class StandardTextPairBlock extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets description
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getDescription()
     {
@@ -176,7 +176,7 @@ class StandardTextPairBlock extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets description
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $description description
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $description description
      *
      * @return self
      */

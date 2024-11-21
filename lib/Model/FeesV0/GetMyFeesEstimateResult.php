@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMyFeesEstimateResult Class Doc Comment
  *
  * @category Class
  * @description Response schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetMyFeesEstimateResult extends BaseModel implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fees_estimate_result' => '\SellingPartnerApi\Model\FeesV0\FeesEstimateResult'
+        'fees_estimate_result' => '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult'
     ];
 
     /**
@@ -137,7 +137,7 @@ class GetMyFeesEstimateResult extends BaseModel implements ModelInterface, Array
     /**
      * Gets fees_estimate_result
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimateResult|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult|null
      */
     public function getFeesEstimateResult()
     {
@@ -147,7 +147,7 @@ class GetMyFeesEstimateResult extends BaseModel implements ModelInterface, Array
     /**
      * Sets fees_estimate_result
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeesEstimateResult|null $fees_estimate_result fees_estimate_result
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult|null $fees_estimate_result fees_estimate_result
      *
      * @return self
      */

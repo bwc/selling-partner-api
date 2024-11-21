@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardComparisonTableModule Class Doc Comment
  *
  * @category Class
  * @description The standard product comparison table.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardComparisonTableModule extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product_columns' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardComparisonProductBlock[]',
-        'metric_row_labels' => '\SellingPartnerApi\Model\AplusContentV20201101\PlainTextItem[]'
+        'product_columns' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardComparisonProductBlock[]',
+        'metric_row_labels' => '\SellingPartnerApiV5\Model\AplusContentV20201101\PlainTextItem[]'
     ];
 
     /**
@@ -159,7 +159,7 @@ class StandardComparisonTableModule extends BaseModel implements ModelInterface,
     /**
      * Gets product_columns
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardComparisonProductBlock[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardComparisonProductBlock[]|null
      */
     public function getProductColumns()
     {
@@ -169,7 +169,7 @@ class StandardComparisonTableModule extends BaseModel implements ModelInterface,
     /**
      * Sets product_columns
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardComparisonProductBlock[]|null $product_columns product_columns
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardComparisonProductBlock[]|null $product_columns product_columns
      *
      * @return self
      */
@@ -189,7 +189,7 @@ class StandardComparisonTableModule extends BaseModel implements ModelInterface,
     /**
      * Gets metric_row_labels
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PlainTextItem[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PlainTextItem[]|null
      */
     public function getMetricRowLabels()
     {
@@ -199,7 +199,7 @@ class StandardComparisonTableModule extends BaseModel implements ModelInterface,
     /**
      * Sets metric_row_labels
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\PlainTextItem[]|null $metric_row_labels metric_row_labels
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\PlainTextItem[]|null $metric_row_labels metric_row_labels
      *
      * @return self
      */

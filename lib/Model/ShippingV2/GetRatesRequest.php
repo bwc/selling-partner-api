@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetRatesRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the getRates operation. When the channelType is Amazon, the shipTo address is not required and will be ignored.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,14 +58,14 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ship_to' => '\SellingPartnerApi\Model\ShippingV2\Address',
-        'ship_from' => '\SellingPartnerApi\Model\ShippingV2\Address',
-        'return_to' => '\SellingPartnerApi\Model\ShippingV2\Address',
+        'ship_to' => '\SellingPartnerApiV5\Model\ShippingV2\Address',
+        'ship_from' => '\SellingPartnerApiV5\Model\ShippingV2\Address',
+        'return_to' => '\SellingPartnerApiV5\Model\ShippingV2\Address',
         'ship_date' => 'string',
-        'packages' => '\SellingPartnerApi\Model\ShippingV2\Package[]',
-        'value_added_services' => '\SellingPartnerApi\Model\ShippingV2\ValueAddedServiceDetails',
-        'tax_details' => '\SellingPartnerApi\Model\ShippingV2\TaxDetail[]',
-        'channel_details' => '\SellingPartnerApi\Model\ShippingV2\ChannelDetails'
+        'packages' => '\SellingPartnerApiV5\Model\ShippingV2\Package[]',
+        'value_added_services' => '\SellingPartnerApiV5\Model\ShippingV2\ValueAddedServiceDetails',
+        'tax_details' => '\SellingPartnerApiV5\Model\ShippingV2\TaxDetail[]',
+        'channel_details' => '\SellingPartnerApiV5\Model\ShippingV2\ChannelDetails'
     ];
 
     /**
@@ -188,7 +188,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets ship_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Address|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Address|null
      */
     public function getShipTo()
     {
@@ -198,7 +198,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets ship_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Address|null $ship_to ship_to
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Address|null $ship_to ship_to
      *
      * @return self
      */
@@ -211,7 +211,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets ship_from
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Address
      */
     public function getShipFrom()
     {
@@ -221,7 +221,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets ship_from
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Address $ship_from ship_from
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Address $ship_from ship_from
      *
      * @return self
      */
@@ -234,7 +234,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets return_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Address|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Address|null
      */
     public function getReturnTo()
     {
@@ -244,7 +244,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets return_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Address|null $return_to return_to
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Address|null $return_to return_to
      *
      * @return self
      */
@@ -280,7 +280,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets packages
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Package[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Package[]
      */
     public function getPackages()
     {
@@ -290,7 +290,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets packages
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Package[] $packages A list of packages to be shipped through a shipping service offering.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Package[] $packages A list of packages to be shipped through a shipping service offering.
      *
      * @return self
      */
@@ -303,7 +303,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets value_added_services
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\ValueAddedServiceDetails|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\ValueAddedServiceDetails|null
      */
     public function getValueAddedServices()
     {
@@ -313,7 +313,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets value_added_services
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\ValueAddedServiceDetails|null $value_added_services value_added_services
+     * @param \SellingPartnerApiV5\Model\ShippingV2\ValueAddedServiceDetails|null $value_added_services value_added_services
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\TaxDetail[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\TaxDetail[]|null
      */
     public function getTaxDetails()
     {
@@ -336,7 +336,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\TaxDetail[]|null $tax_details A list of tax detail information.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\TaxDetail[]|null $tax_details A list of tax detail information.
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets channel_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\ChannelDetails
+     * @return \SellingPartnerApiV5\Model\ShippingV2\ChannelDetails
      */
     public function getChannelDetails()
     {
@@ -359,7 +359,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets channel_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\ChannelDetails $channel_details channel_details
+     * @param \SellingPartnerApiV5\Model\ShippingV2\ChannelDetails $channel_details channel_details
      *
      * @return self
      */

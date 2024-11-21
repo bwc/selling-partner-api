@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ParagraphComponent Class Doc Comment
  *
  * @category Class
  * @description A list of rich text content, usually presented in a text box.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ParagraphComponent extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'text_list' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent[]'
+        'text_list' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent[]'
     ];
 
     /**
@@ -148,7 +148,7 @@ class ParagraphComponent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets text_list
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent[]
      */
     public function getTextList()
     {
@@ -158,7 +158,7 @@ class ParagraphComponent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets text_list
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent[] $text_list text_list
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent[] $text_list text_list
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * ProductTypeDefinitionsV20200901Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class ProductTypeDefinitionsV20200901Api extends BaseApi
 {
@@ -52,9 +52,9 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
      * @param  string $requirements_enforced Identifies if the required attributes for a requirements set are enforced by the product type definition schema. Non-enforced requirements enable structural validation of individual attributes without all the required attributes being present (such as for partial updates). (optional, default to 'ENFORCED')
      * @param  string $locale Locale for retrieving display labels and other presentation details. Defaults to the default language of the first marketplace in the request. (optional, default to 'DEFAULT')
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition
      */
     public function getDefinitionsProductType($product_type, $marketplace_ids, $seller_id = null, $product_type_version = 'LATEST', $requirements = 'LISTING', $requirements_enforced = 'ENFORCED', $locale = 'DEFAULT')
     {
@@ -74,9 +74,9 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
      * @param  string $requirements_enforced Identifies if the required attributes for a requirements set are enforced by the product type definition schema. Non-enforced requirements enable structural validation of individual attributes without all the required attributes being present (such as for partial updates). (optional, default to 'ENFORCED')
      * @param  string $locale Locale for retrieving display labels and other presentation details. Defaults to the default language of the first marketplace in the request. (optional, default to 'DEFAULT')
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDefinitionsProductTypeWithHttpInfo($product_type, $marketplace_ids, $seller_id = null, $product_type_version = 'LATEST', $requirements = 'LISTING', $requirements_enforced = 'ENFORCED', $locale = 'DEFAULT')
     {
@@ -125,80 +125,80 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition';
+            $returnType = '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -213,7 +213,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +221,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +229,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -237,7 +237,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -253,7 +253,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -261,7 +261,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -269,7 +269,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -277,7 +277,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -329,7 +329,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
      */
     public function getDefinitionsProductTypeAsyncWithHttpInfo($product_type, $marketplace_ids, $seller_id = null, $product_type_version = 'LATEST', $requirements = 'LISTING', $requirements_enforced = 'ENFORCED', $locale = 'DEFAULT')
     {
-        $returnType = '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition';
+        $returnType = '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition';
         $request = $this->getDefinitionsProductTypeRequest($product_type, $marketplace_ids, $seller_id, $product_type_version, $requirements, $requirements_enforced, $locale);
         $signedRequest = $this->config->signRequest(
             $request
@@ -528,9 +528,9 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
      * @param  string[] $keywords A comma-delimited list of keywords to search product types by. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList
      */
     public function searchDefinitionsProductTypes($marketplace_ids, $keywords = null)
     {
@@ -544,9 +544,9 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
      * @param  string[] $marketplace_ids A comma-delimited list of Amazon marketplace identifiers for the request. (required)
      * @param  string[] $keywords A comma-delimited list of keywords to search product types by. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchDefinitionsProductTypesWithHttpInfo($marketplace_ids, $keywords = null)
     {
@@ -595,80 +595,80 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList';
+            $returnType = '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -683,7 +683,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -691,7 +691,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -699,7 +699,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -707,7 +707,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,7 +723,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -731,7 +731,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -739,7 +739,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -747,7 +747,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ErrorList',
+                        '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -787,7 +787,7 @@ class ProductTypeDefinitionsV20200901Api extends BaseApi
      */
     public function searchDefinitionsProductTypesAsyncWithHttpInfo($marketplace_ids, $keywords = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList';
+        $returnType = '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList';
         $request = $this->searchDefinitionsProductTypesRequest($marketplace_ids, $keywords);
         $signedRequest = $this->config->signRequest(
             $request

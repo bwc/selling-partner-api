@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetInboundGuidanceResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,10 +57,10 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sku_inbound_guidance_list' => '\SellingPartnerApi\Model\FbaInboundV0\SKUInboundGuidance[]',
-        'invalid_sku_list' => '\SellingPartnerApi\Model\FbaInboundV0\InvalidSKU[]',
-        'asin_inbound_guidance_list' => '\SellingPartnerApi\Model\FbaInboundV0\ASINInboundGuidance[]',
-        'invalid_asin_list' => '\SellingPartnerApi\Model\FbaInboundV0\InvalidASIN[]'
+        'sku_inbound_guidance_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\SKUInboundGuidance[]',
+        'invalid_sku_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\InvalidSKU[]',
+        'asin_inbound_guidance_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\ASINInboundGuidance[]',
+        'invalid_asin_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\InvalidASIN[]'
     ];
 
     /**
@@ -154,7 +154,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Gets sku_inbound_guidance_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\SKUInboundGuidance[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\SKUInboundGuidance[]|null
      */
     public function getSkuInboundGuidanceList()
     {
@@ -164,7 +164,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Sets sku_inbound_guidance_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\SKUInboundGuidance[]|null $sku_inbound_guidance_list A list of SKU inbound guidance information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\SKUInboundGuidance[]|null $sku_inbound_guidance_list A list of SKU inbound guidance information.
      *
      * @return self
      */
@@ -177,7 +177,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Gets invalid_sku_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InvalidSKU[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InvalidSKU[]|null
      */
     public function getInvalidSkuList()
     {
@@ -187,7 +187,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Sets invalid_sku_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InvalidSKU[]|null $invalid_sku_list A list of invalid SKU values and the reason they are invalid.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InvalidSKU[]|null $invalid_sku_list A list of invalid SKU values and the reason they are invalid.
      *
      * @return self
      */
@@ -200,7 +200,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Gets asin_inbound_guidance_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\ASINInboundGuidance[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\ASINInboundGuidance[]|null
      */
     public function getAsinInboundGuidanceList()
     {
@@ -210,7 +210,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Sets asin_inbound_guidance_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\ASINInboundGuidance[]|null $asin_inbound_guidance_list A list of ASINs and their associated inbound guidance.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\ASINInboundGuidance[]|null $asin_inbound_guidance_list A list of ASINs and their associated inbound guidance.
      *
      * @return self
      */
@@ -223,7 +223,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Gets invalid_asin_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InvalidASIN[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InvalidASIN[]|null
      */
     public function getInvalidAsinList()
     {
@@ -233,7 +233,7 @@ class GetInboundGuidanceResult extends BaseModel implements ModelInterface, Arra
     /**
      * Sets invalid_asin_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InvalidASIN[]|null $invalid_asin_list A list of invalid ASIN values and the reasons they are invalid.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InvalidASIN[]|null $invalid_asin_list A list of invalid ASIN values and the reasons they are invalid.
      *
      * @return self
      */

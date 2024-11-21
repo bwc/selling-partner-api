@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TestCaseData Class Doc Comment
  *
  * @category Class
  * @description The set of test case data returned in response to the test data request.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class TestCaseData extends BaseModel implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'scenarios' => '\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\Scenario[]'
+        'scenarios' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\Scenario[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class TestCaseData extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets scenarios
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\Scenario[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\Scenario[]|null
      */
     public function getScenarios()
     {
@@ -147,7 +147,7 @@ class TestCaseData extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets scenarios
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\Scenario[]|null $scenarios Set of use cases that describes the possible test scenarios.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\Scenario[]|null $scenarios Set of use cases that describes the possible test scenarios.
      *
      * @return self
      */

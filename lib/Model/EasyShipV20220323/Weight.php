@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Weight Class Doc Comment
  *
  * @category Class
  * @description The weight of the scheduled package
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Weight extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'value' => 'float',
-        'unit' => '\SellingPartnerApi\Model\EasyShipV20220323\UnitOfWeight'
+        'unit' => '\SellingPartnerApiV5\Model\EasyShipV20220323\UnitOfWeight'
     ];
 
     /**
@@ -175,7 +175,7 @@ class Weight extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets unit
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\UnitOfWeight|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\UnitOfWeight|null
      */
     public function getUnit()
     {
@@ -185,7 +185,7 @@ class Weight extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets unit
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\UnitOfWeight|null $unit unit
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\UnitOfWeight|null $unit unit
      *
      * @return self
      */

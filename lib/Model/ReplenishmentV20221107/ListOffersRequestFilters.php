@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOffersRequestFilters Class Doc Comment
  *
  * @category Class
  * @description Use these parameters to filter results. Any result must match all of the provided parameters. For any parameter that is an array, the result must match at least one element in the provided array.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,10 +61,10 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
         'marketplace_id' => 'string',
         'skus' => 'string[]',
         'asins' => 'string[]',
-        'eligibilities' => '\SellingPartnerApi\Model\ReplenishmentV20221107\EligibilityStatus[]',
-        'preferences' => '\SellingPartnerApi\Model\ReplenishmentV20221107\Preference',
-        'promotions' => '\SellingPartnerApi\Model\ReplenishmentV20221107\Promotion',
-        'program_types' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[]'
+        'eligibilities' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\EligibilityStatus[]',
+        'preferences' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\Preference',
+        'promotions' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\Promotion',
+        'program_types' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[]'
     ];
 
     /**
@@ -286,7 +286,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Gets eligibilities
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\EligibilityStatus[]|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\EligibilityStatus[]|null
      */
     public function getEligibilities()
     {
@@ -296,7 +296,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Sets eligibilities
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\EligibilityStatus[]|null $eligibilities A list of eligibilities associated with an offer.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\EligibilityStatus[]|null $eligibilities A list of eligibilities associated with an offer.
      *
      * @return self
      */
@@ -314,7 +314,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Gets preferences
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\Preference|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\Preference|null
      */
     public function getPreferences()
     {
@@ -324,7 +324,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Sets preferences
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\Preference|null $preferences preferences
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\Preference|null $preferences preferences
      *
      * @return self
      */
@@ -337,7 +337,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Gets promotions
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\Promotion|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\Promotion|null
      */
     public function getPromotions()
     {
@@ -347,7 +347,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Sets promotions
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\Promotion|null $promotions promotions
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\Promotion|null $promotions promotions
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Gets program_types
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[]
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[]
      */
     public function getProgramTypes()
     {
@@ -370,7 +370,7 @@ class ListOffersRequestFilters extends BaseModel implements ModelInterface, Arra
     /**
      * Sets program_types
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[] $program_types A list of replenishment program types.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[] $program_types A list of replenishment program types.
      *
      * @return self
      */

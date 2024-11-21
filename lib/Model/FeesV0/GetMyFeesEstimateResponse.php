@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMyFeesEstimateResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class GetMyFeesEstimateResponse extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResult',
-        'errors' => '\SellingPartnerApi\Model\FeesV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResult',
+        'errors' => '\SellingPartnerApiV5\Model\FeesV0\Error[]'
     ];
 
     /**
@@ -167,7 +167,7 @@ class GetMyFeesEstimateResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResult|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResult|null
      */
     public function getPayload()
     {
@@ -177,7 +177,7 @@ class GetMyFeesEstimateResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResult|null $payload payload
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class GetMyFeesEstimateResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\FeesV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\Error[]|null
      */
     public function getErrors()
     {
@@ -200,7 +200,7 @@ class GetMyFeesEstimateResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\FeesV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\FeesV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

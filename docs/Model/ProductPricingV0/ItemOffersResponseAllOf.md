@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**request** | [**\SellingPartnerApi\Model\ProductPricingV0\ItemOffersRequestParams**](ItemOffersRequestParams.md) |  |
+**request** | [**\SellingPartnerApiV5\Model\ProductPricingV0\ItemOffersRequestParams**](ItemOffersRequestParams.md) |  |
 
 [[ProductPricingV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

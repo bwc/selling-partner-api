@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetShipmentItemsResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetShipmentItemsResult extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'item_data' => '\SellingPartnerApi\Model\FbaInboundV0\InboundShipmentItem[]',
+        'item_data' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentItem[]',
         'next_token' => 'string'
     ];
 
@@ -142,7 +142,7 @@ class GetShipmentItemsResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets item_data
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentItem[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentItem[]|null
      */
     public function getItemData()
     {
@@ -152,7 +152,7 @@ class GetShipmentItemsResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets item_data
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentItem[]|null $item_data A list of inbound shipment item information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentItem[]|null $item_data A list of inbound shipment item information.
      *
      * @return self
      */

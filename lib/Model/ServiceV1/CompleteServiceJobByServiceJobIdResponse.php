@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CompleteServiceJobByServiceJobIdResponse Class Doc Comment
  *
  * @category Class
  * @description Response schema for the `completeServiceJobByServiceJobId` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class CompleteServiceJobByServiceJobIdResponse extends BaseModel implements Mode
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\SellingPartnerApi\Model\ServiceV1\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\ServiceV1\Error[]'
     ];
 
     /**
@@ -162,7 +162,7 @@ class CompleteServiceJobByServiceJobIdResponse extends BaseModel implements Mode
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Error[]|null
      */
     public function getErrors()
     {
@@ -172,7 +172,7 @@ class CompleteServiceJobByServiceJobIdResponse extends BaseModel implements Mode
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

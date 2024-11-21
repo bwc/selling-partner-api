@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateReservationRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema for the `updateReservation` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class UpdateReservationRequest extends BaseModel implements ModelInterface, Arra
       */
     protected static $openAPITypes = [
         'resource_id' => 'string',
-        'reservation' => '\SellingPartnerApi\Model\ServiceV1\Reservation'
+        'reservation' => '\SellingPartnerApiV5\Model\ServiceV1\Reservation'
     ];
 
     /**
@@ -172,7 +172,7 @@ class UpdateReservationRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Gets reservation
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Reservation
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Reservation
      */
     public function getReservation()
     {
@@ -182,7 +182,7 @@ class UpdateReservationRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Sets reservation
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Reservation $reservation reservation
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Reservation $reservation reservation
      *
      * @return self
      */

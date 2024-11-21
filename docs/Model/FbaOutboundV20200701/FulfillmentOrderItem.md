@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **unfulfillable_quantity** | **int** | The item quantity. |
 **estimated_ship_date** | **string** | A datetime string in ISO 8601 format. | [optional]
 **estimated_arrival_date** | **string** | A datetime string in ISO 8601 format. | [optional]
-**per_unit_price** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
-**per_unit_tax** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
-**per_unit_declared_value** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
+**per_unit_price** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
+**per_unit_tax** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
+**per_unit_declared_value** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
 
 [[FbaOutboundV20200701 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardTextListBlock Class Doc Comment
  *
  * @category Class
  * @description The A+ Content standard fixed length list of text, usually presented as bullet points.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class StandardTextListBlock extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'text_list' => '\SellingPartnerApi\Model\AplusContentV20201101\TextItem[]'
+        'text_list' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextItem[]'
     ];
 
     /**
@@ -148,7 +148,7 @@ class StandardTextListBlock extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets text_list
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextItem[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextItem[]
      */
     public function getTextList()
     {
@@ -158,7 +158,7 @@ class StandardTextListBlock extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets text_list
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextItem[] $text_list text_list
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextItem[] $text_list text_list
      *
      * @return self
      */

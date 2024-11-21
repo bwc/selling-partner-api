@@ -9,11 +9,11 @@ Name | Type | Description | Notes
 **order_item_id** | **string** | The Amazon-defined identifier for the order item. | [optional]
 **title** | **string** | The name of the item. | [optional]
 **quantity_ordered** | **float** | The number of items ordered. | [optional]
-**item_price** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
-**shipping_price** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
-**gift_wrap_price** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
-**shipping_discount** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
-**promotion_discount** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
+**item_price** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
+**shipping_price** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
+**gift_wrap_price** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
+**shipping_discount** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
+**promotion_discount** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money**](Money.md) |  | [optional]
 **serial_numbers** | **string[]** | The list of serial numbers. | [optional]
 
 [[ShipmentInvoicingV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

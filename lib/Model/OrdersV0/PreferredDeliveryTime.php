@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PreferredDeliveryTime Class Doc Comment
  *
  * @category Class
  * @description The time window when the delivery is preferred.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PreferredDeliveryTime extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'business_hours' => '\SellingPartnerApi\Model\OrdersV0\BusinessHours[]',
-        'exception_dates' => '\SellingPartnerApi\Model\OrdersV0\ExceptionDates[]'
+        'business_hours' => '\SellingPartnerApiV5\Model\OrdersV0\BusinessHours[]',
+        'exception_dates' => '\SellingPartnerApiV5\Model\OrdersV0\ExceptionDates[]'
     ];
 
     /**
@@ -143,7 +143,7 @@ class PreferredDeliveryTime extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets business_hours
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\BusinessHours[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\BusinessHours[]|null
      */
     public function getBusinessHours()
     {
@@ -153,7 +153,7 @@ class PreferredDeliveryTime extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets business_hours
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\BusinessHours[]|null $business_hours Business hours when the business is open for deliveries.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\BusinessHours[]|null $business_hours Business hours when the business is open for deliveries.
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class PreferredDeliveryTime extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets exception_dates
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\ExceptionDates[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\ExceptionDates[]|null
      */
     public function getExceptionDates()
     {
@@ -176,7 +176,7 @@ class PreferredDeliveryTime extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets exception_dates
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\ExceptionDates[]|null $exception_dates Dates when the business is closed in the next 30 days.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\ExceptionDates[]|null $exception_dates Dates when the business is closed in the next 30 days.
      *
      * @return self
      */

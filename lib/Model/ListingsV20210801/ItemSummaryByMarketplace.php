@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsV20210801;
+namespace SellingPartnerApiV5\Model\ListingsV20210801;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemSummaryByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Summary details of a listings item for an Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -67,7 +67,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
         'item_name' => 'string',
         'created_date' => 'string',
         'last_updated_date' => 'string',
-        'main_image' => '\SellingPartnerApi\Model\ListingsV20210801\ItemImage'
+        'main_image' => '\SellingPartnerApiV5\Model\ListingsV20210801\ItemImage'
     ];
 
     /**
@@ -516,7 +516,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
     /**
      * Gets main_image
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\ItemImage|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\ItemImage|null
      */
     public function getMainImage()
     {
@@ -526,7 +526,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
     /**
      * Sets main_image
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\ItemImage|null $main_image main_image
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\ItemImage|null $main_image main_image
      *
      * @return self
      */

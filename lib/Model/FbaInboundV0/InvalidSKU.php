@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InvalidSKU Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class InvalidSKU extends BaseModel implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'seller_sku' => 'string',
-        'error_reason' => '\SellingPartnerApi\Model\FbaInboundV0\ErrorReason'
+        'error_reason' => '\SellingPartnerApiV5\Model\FbaInboundV0\ErrorReason'
     ];
 
     /**
@@ -165,7 +165,7 @@ class InvalidSKU extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets error_reason
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\ErrorReason|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\ErrorReason|null
      */
     public function getErrorReason()
     {
@@ -175,7 +175,7 @@ class InvalidSKU extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets error_reason
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\ErrorReason|null $error_reason error_reason
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\ErrorReason|null $error_reason error_reason
      *
      * @return self
      */

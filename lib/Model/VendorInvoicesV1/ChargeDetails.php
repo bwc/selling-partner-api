@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorInvoicesV1;
+namespace SellingPartnerApiV5\Model\VendorInvoicesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ChargeDetails Class Doc Comment
  *
  * @category Class
  * @description Monetary and tax details of the charge.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     protected static $openAPITypes = [
         'type' => 'string',
         'description' => 'string',
-        'charge_amount' => '\SellingPartnerApi\Model\VendorInvoicesV1\Money',
-        'tax_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]'
+        'charge_amount' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\Money',
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]'
     ];
 
     /**
@@ -269,7 +269,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets charge_amount
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\Money
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\Money
      */
     public function getChargeAmount()
     {
@@ -279,7 +279,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets charge_amount
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\Money $charge_amount charge_amount
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\Money $charge_amount charge_amount
      *
      * @return self
      */
@@ -292,7 +292,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null
      */
     public function getTaxDetails()
     {
@@ -302,7 +302,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Tax amount details applied on this charge.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Tax amount details applied on this charge.
      *
      * @return self
      */

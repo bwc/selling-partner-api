@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Container Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -66,9 +66,9 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
         'scac_code' => 'string',
         'carrier' => 'string',
         'container_sequence_number' => 'int',
-        'dimensions' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Weight',
-        'packed_items' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackedItem[]'
+        'dimensions' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Weight',
+        'packed_items' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackedItem[]'
     ];
 
     /**
@@ -462,7 +462,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Dimensions|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Dimensions|null
      */
     public function getDimensions()
     {
@@ -472,7 +472,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Dimensions|null $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Dimensions|null $dimensions dimensions
      *
      * @return self
      */
@@ -485,7 +485,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Weight|null
      */
     public function getWeight()
     {
@@ -495,7 +495,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Weight|null $weight weight
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Weight|null $weight weight
      *
      * @return self
      */
@@ -508,7 +508,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets packed_items
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackedItem[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackedItem[]
      */
     public function getPackedItems()
     {
@@ -518,7 +518,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets packed_items
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackedItem[] $packed_items A list of packed items.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackedItem[] $packed_items A list of packed items.
      *
      * @return self
      */

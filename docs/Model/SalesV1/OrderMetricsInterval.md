@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **unit_count** | **int** | The number of units in orders based on the specified filters. |
 **order_item_count** | **int** | The number of order items based on the specified filters. |
 **order_count** | **int** | The number of orders based on the specified filters. |
-**average_unit_price** | [**\SellingPartnerApi\Model\SalesV1\Money**](Money.md) |  |
-**total_sales** | [**\SellingPartnerApi\Model\SalesV1\Money**](Money.md) |  |
+**average_unit_price** | [**\SellingPartnerApiV5\Model\SalesV1\Money**](Money.md) |  |
+**total_sales** | [**\SellingPartnerApiV5\Model\SalesV1\Money**](Money.md) |  |
 
 [[SalesV1 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

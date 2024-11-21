@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TaxRegistrationDetails Class Doc Comment
  *
  * @category Class
  * @description Tax registration details of the entity.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class TaxRegistrationDetails extends BaseModel implements ModelInterface, ArrayA
     protected static $openAPITypes = [
         'tax_registration_type' => 'string',
         'tax_registration_number' => 'string',
-        'tax_registration_address' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Address',
+        'tax_registration_address' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Address',
         'tax_registration_messages' => 'string'
     ];
 
@@ -248,7 +248,7 @@ class TaxRegistrationDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets tax_registration_address
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Address|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Address|null
      */
     public function getTaxRegistrationAddress()
     {
@@ -258,7 +258,7 @@ class TaxRegistrationDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets tax_registration_address
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Address|null $tax_registration_address tax_registration_address
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Address|null $tax_registration_address tax_registration_address
      *
      * @return self
      */

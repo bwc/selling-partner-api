@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFulfillmentOrderResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,11 +57,11 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fulfillment_order' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrder',
-        'fulfillment_order_items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderItem[]',
-        'fulfillment_shipments' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipment[]',
-        'return_items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItem[]',
-        'return_authorizations' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ReturnAuthorization[]'
+        'fulfillment_order' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrder',
+        'fulfillment_order_items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderItem[]',
+        'fulfillment_shipments' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipment[]',
+        'return_items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItem[]',
+        'return_authorizations' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnAuthorization[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets fulfillment_order
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrder
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrder
      */
     public function getFulfillmentOrder()
     {
@@ -182,7 +182,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets fulfillment_order
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrder $fulfillment_order fulfillment_order
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrder $fulfillment_order fulfillment_order
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets fulfillment_order_items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderItem[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderItem[]
      */
     public function getFulfillmentOrderItems()
     {
@@ -205,7 +205,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets fulfillment_order_items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderItem[] $fulfillment_order_items An array of fulfillment order item information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderItem[] $fulfillment_order_items An array of fulfillment order item information.
      *
      * @return self
      */
@@ -218,7 +218,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets fulfillment_shipments
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipment[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipment[]|null
      */
     public function getFulfillmentShipments()
     {
@@ -228,7 +228,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets fulfillment_shipments
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipment[]|null $fulfillment_shipments An array of fulfillment shipment information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipment[]|null $fulfillment_shipments An array of fulfillment shipment information.
      *
      * @return self
      */
@@ -241,7 +241,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets return_items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItem[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItem[]
      */
     public function getReturnItems()
     {
@@ -251,7 +251,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets return_items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItem[] $return_items An array of items that Amazon accepted for return. Returns empty if no items were accepted for return.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItem[] $return_items An array of items that Amazon accepted for return. Returns empty if no items were accepted for return.
      *
      * @return self
      */
@@ -264,7 +264,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets return_authorizations
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnAuthorization[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnAuthorization[]
      */
     public function getReturnAuthorizations()
     {
@@ -274,7 +274,7 @@ class GetFulfillmentOrderResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets return_authorizations
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnAuthorization[] $return_authorizations An array of return authorization information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnAuthorization[] $return_authorizations An array of return authorization information.
      *
      * @return self
      */

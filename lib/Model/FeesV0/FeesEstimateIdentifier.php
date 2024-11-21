@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeesEstimateIdentifier Class Doc Comment
  *
  * @category Class
  * @description An item identifier, marketplace, time of request, and other details that identify an estimate.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,12 +60,12 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
         'seller_id' => 'string',
-        'id_type' => '\SellingPartnerApi\Model\FeesV0\IdType',
+        'id_type' => '\SellingPartnerApiV5\Model\FeesV0\IdType',
         'id_value' => 'string',
         'is_amazon_fulfilled' => 'bool',
-        'price_to_estimate_fees' => '\SellingPartnerApi\Model\FeesV0\PriceToEstimateFees',
+        'price_to_estimate_fees' => '\SellingPartnerApiV5\Model\FeesV0\PriceToEstimateFees',
         'seller_input_identifier' => 'string',
-        'optional_fulfillment_program' => '\SellingPartnerApi\Model\FeesV0\OptionalFulfillmentProgram'
+        'optional_fulfillment_program' => '\SellingPartnerApiV5\Model\FeesV0\OptionalFulfillmentProgram'
     ];
 
     /**
@@ -225,7 +225,7 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets id_type
      *
-     * @return \SellingPartnerApi\Model\FeesV0\IdType|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\IdType|null
      */
     public function getIdType()
     {
@@ -235,7 +235,7 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets id_type
      *
-     * @param \SellingPartnerApi\Model\FeesV0\IdType|null $id_type id_type
+     * @param \SellingPartnerApiV5\Model\FeesV0\IdType|null $id_type id_type
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets price_to_estimate_fees
      *
-     * @return \SellingPartnerApi\Model\FeesV0\PriceToEstimateFees|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\PriceToEstimateFees|null
      */
     public function getPriceToEstimateFees()
     {
@@ -304,7 +304,7 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets price_to_estimate_fees
      *
-     * @param \SellingPartnerApi\Model\FeesV0\PriceToEstimateFees|null $price_to_estimate_fees price_to_estimate_fees
+     * @param \SellingPartnerApiV5\Model\FeesV0\PriceToEstimateFees|null $price_to_estimate_fees price_to_estimate_fees
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets optional_fulfillment_program
      *
-     * @return \SellingPartnerApi\Model\FeesV0\OptionalFulfillmentProgram|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\OptionalFulfillmentProgram|null
      */
     public function getOptionalFulfillmentProgram()
     {
@@ -350,7 +350,7 @@ class FeesEstimateIdentifier extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets optional_fulfillment_program
      *
-     * @param \SellingPartnerApi\Model\FeesV0\OptionalFulfillmentProgram|null $optional_fulfillment_program optional_fulfillment_program
+     * @param \SellingPartnerApiV5\Model\FeesV0\OptionalFulfillmentProgram|null $optional_fulfillment_program optional_fulfillment_program
      *
      * @return self
      */

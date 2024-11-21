@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetShippingLabelListResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getShippingLabels operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetShippingLabelListResponse extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ShippingLabelList',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ShippingLabelList',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetShippingLabelListResponse extends BaseModel implements ModelInterface, 
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ShippingLabelList|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ShippingLabelList|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetShippingLabelListResponse extends BaseModel implements ModelInterface, 
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ShippingLabelList|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ShippingLabelList|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetShippingLabelListResponse extends BaseModel implements ModelInterface, 
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetShippingLabelListResponse extends BaseModel implements ModelInterface, 
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

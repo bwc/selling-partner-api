@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SalesV1;
+namespace SellingPartnerApiV5\Model\SalesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderMetricsInterval Class Doc Comment
  *
  * @category Class
  * @description Contains order metrics.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,8 +62,8 @@ class OrderMetricsInterval extends BaseModel implements ModelInterface, ArrayAcc
         'unit_count' => 'int',
         'order_item_count' => 'int',
         'order_count' => 'int',
-        'average_unit_price' => '\SellingPartnerApi\Model\SalesV1\Money',
-        'total_sales' => '\SellingPartnerApi\Model\SalesV1\Money'
+        'average_unit_price' => '\SellingPartnerApiV5\Model\SalesV1\Money',
+        'total_sales' => '\SellingPartnerApiV5\Model\SalesV1\Money'
     ];
 
     /**
@@ -277,7 +277,7 @@ class OrderMetricsInterval extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets average_unit_price
      *
-     * @return \SellingPartnerApi\Model\SalesV1\Money
+     * @return \SellingPartnerApiV5\Model\SalesV1\Money
      */
     public function getAverageUnitPrice()
     {
@@ -287,7 +287,7 @@ class OrderMetricsInterval extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets average_unit_price
      *
-     * @param \SellingPartnerApi\Model\SalesV1\Money $average_unit_price average_unit_price
+     * @param \SellingPartnerApiV5\Model\SalesV1\Money $average_unit_price average_unit_price
      *
      * @return self
      */
@@ -300,7 +300,7 @@ class OrderMetricsInterval extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets total_sales
      *
-     * @return \SellingPartnerApi\Model\SalesV1\Money
+     * @return \SellingPartnerApiV5\Model\SalesV1\Money
      */
     public function getTotalSales()
     {
@@ -310,7 +310,7 @@ class OrderMetricsInterval extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets total_sales
      *
-     * @param \SellingPartnerApi\Model\SalesV1\Money $total_sales total_sales
+     * @param \SellingPartnerApiV5\Model\SalesV1\Money $total_sales total_sales
      *
      * @return self
      */

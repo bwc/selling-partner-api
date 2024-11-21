@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AggregationFilter Class Doc Comment
  *
  * @category Class
  * @description Use this filter to select the aggregation time period at which to send notifications (e.g. limit to one notification every five minutes for high frequency notifications).
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class AggregationFilter extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregation_settings' => '\SellingPartnerApi\Model\NotificationsV1\AggregationSettings'
+        'aggregation_settings' => '\SellingPartnerApiV5\Model\NotificationsV1\AggregationSettings'
     ];
 
     /**
@@ -137,7 +137,7 @@ class AggregationFilter extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets aggregation_settings
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\AggregationSettings|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\AggregationSettings|null
      */
     public function getAggregationSettings()
     {
@@ -147,7 +147,7 @@ class AggregationFilter extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets aggregation_settings
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\AggregationSettings|null $aggregation_settings aggregation_settings
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\AggregationSettings|null $aggregation_settings aggregation_settings
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TextComponent Class Doc Comment
  *
  * @category Class
  * @description Rich text content.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class TextComponent extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'value' => 'string',
-        'decorator_set' => '\SellingPartnerApi\Model\AplusContentV20201101\Decorator[]'
+        'decorator_set' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Decorator[]'
     ];
 
     /**
@@ -177,7 +177,7 @@ class TextComponent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets decorator_set
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Decorator[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Decorator[]|null
      */
     public function getDecoratorSet()
     {
@@ -187,7 +187,7 @@ class TextComponent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets decorator_set
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Decorator[]|null $decorator_set A set of content decorators.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Decorator[]|null $decorator_set A set of content decorators.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Dimensions Class Doc Comment
  *
  * @category Class
  * @description The dimension values and unit of measurement.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
         'length' => 'double',
         'width' => 'double',
         'height' => 'double',
-        'unit' => '\SellingPartnerApi\Model\FbaInboundV0\UnitOfMeasurement'
+        'unit' => '\SellingPartnerApiV5\Model\FbaInboundV0\UnitOfMeasurement'
     ];
 
     /**
@@ -236,7 +236,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets unit
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\UnitOfMeasurement
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\UnitOfMeasurement
      */
     public function getUnit()
     {
@@ -246,7 +246,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets unit
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\UnitOfMeasurement $unit unit
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\UnitOfMeasurement $unit unit
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AvailableDeliveryExperienceOption Class Doc Comment
  *
  * @category Class
  * @description The available delivery confirmation options, and the fee charged, if any.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class AvailableDeliveryExperienceOption extends BaseModel implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_experience_option' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceOption',
-        'charge' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount'
+        'delivery_experience_option' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceOption',
+        'charge' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount'
     ];
 
     /**
@@ -149,7 +149,7 @@ class AvailableDeliveryExperienceOption extends BaseModel implements ModelInterf
     /**
      * Gets delivery_experience_option
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceOption
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceOption
      */
     public function getDeliveryExperienceOption()
     {
@@ -159,7 +159,7 @@ class AvailableDeliveryExperienceOption extends BaseModel implements ModelInterf
     /**
      * Sets delivery_experience_option
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceOption $delivery_experience_option delivery_experience_option
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceOption $delivery_experience_option delivery_experience_option
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class AvailableDeliveryExperienceOption extends BaseModel implements ModelInterf
     /**
      * Gets charge
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount
      */
     public function getCharge()
     {
@@ -182,7 +182,7 @@ class AvailableDeliveryExperienceOption extends BaseModel implements ModelInterf
     /**
      * Sets charge
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount $charge charge
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount $charge charge
      *
      * @return self
      */

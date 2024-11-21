@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShippingLabelList Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class ShippingLabelList extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Pagination',
-        'shipping_labels' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel[]'
+        'pagination' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Pagination',
+        'shipping_labels' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel[]'
     ];
 
     /**
@@ -167,7 +167,7 @@ class ShippingLabelList extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null
      */
     public function getPagination()
     {
@@ -177,7 +177,7 @@ class ShippingLabelList extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class ShippingLabelList extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_labels
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel[]|null
      */
     public function getShippingLabels()
     {
@@ -200,7 +200,7 @@ class ShippingLabelList extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_labels
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel[]|null $shipping_labels shipping_labels
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel[]|null $shipping_labels shipping_labels
      *
      * @return self
      */

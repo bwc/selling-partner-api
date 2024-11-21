@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Destination Class Doc Comment
  *
  * @category Class
  * @description Represents a destination created when you call the createDestination operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Destination extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'name' => 'string',
         'destination_id' => 'string',
-        'resource' => '\SellingPartnerApi\Model\NotificationsV1\DestinationResource'
+        'resource' => '\SellingPartnerApiV5\Model\NotificationsV1\DestinationResource'
     ];
 
     /**
@@ -212,7 +212,7 @@ class Destination extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets resource
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\DestinationResource
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\DestinationResource
      */
     public function getResource()
     {
@@ -222,7 +222,7 @@ class Destination extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets resource
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\DestinationResource $resource resource
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\DestinationResource $resource resource
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SolicitationsV1;
+namespace SellingPartnerApiV5\Model\SolicitationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSolicitationActionsForOrderResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getSolicitationActionsForOrder operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_links' => '\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseLinks',
-        '_embedded' => '\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseEmbedded',
-        'errors' => '\SellingPartnerApi\Model\SolicitationsV1\Error[]'
+        '_links' => '\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseLinks',
+        '_embedded' => '\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseEmbedded',
+        'errors' => '\SellingPartnerApiV5\Model\SolicitationsV1\Error[]'
     ];
 
     /**
@@ -174,7 +174,7 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
     /**
      * Gets _links
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseLinks|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseLinks|null
      */
     public function getLinks()
     {
@@ -184,7 +184,7 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
     /**
      * Sets _links
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseLinks|null $_links _links
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseLinks|null $_links _links
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
     /**
      * Gets _embedded
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseEmbedded|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseEmbedded|null
      */
     public function getEmbedded()
     {
@@ -207,7 +207,7 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
     /**
      * Sets _embedded
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseEmbedded|null $_embedded _embedded
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponseEmbedded|null $_embedded _embedded
      *
      * @return self
      */
@@ -220,7 +220,7 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\Error[]|null
      */
     public function getErrors()
     {
@@ -230,7 +230,7 @@ class GetSolicitationActionsForOrderResponse extends BaseModel implements ModelI
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

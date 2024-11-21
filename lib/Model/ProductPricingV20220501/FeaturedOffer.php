@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeaturedOffer Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_identifier' => '\SellingPartnerApi\Model\ProductPricingV20220501\OfferIdentifier',
-        'condition' => '\SellingPartnerApi\Model\ProductPricingV20220501\Condition',
-        'price' => '\SellingPartnerApi\Model\ProductPricingV20220501\Price'
+        'offer_identifier' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\OfferIdentifier',
+        'condition' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\Condition',
+        'price' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\Price'
     ];
 
     /**
@@ -151,7 +151,7 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets offer_identifier
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\OfferIdentifier
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\OfferIdentifier
      */
     public function getOfferIdentifier()
     {
@@ -161,7 +161,7 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets offer_identifier
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\OfferIdentifier $offer_identifier offer_identifier
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\OfferIdentifier $offer_identifier offer_identifier
      *
      * @return self
      */
@@ -174,7 +174,7 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets condition
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\Condition|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\Condition|null
      */
     public function getCondition()
     {
@@ -184,7 +184,7 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets condition
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\Condition|null $condition condition
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\Condition|null $condition condition
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\Price|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\Price|null
      */
     public function getPrice()
     {
@@ -207,7 +207,7 @@ class FeaturedOffer extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\Price|null $price price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\Price|null $price price
      *
      * @return self
      */

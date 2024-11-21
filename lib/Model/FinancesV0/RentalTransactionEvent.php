@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RentalTransactionEvent Class Doc Comment
  *
  * @category Class
  * @description An event related to a rental transaction.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,12 +62,12 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
         'rental_event_type' => 'string',
         'extension_length' => 'int',
         'posted_date' => 'string',
-        'rental_charge_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]',
-        'rental_fee_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
+        'rental_charge_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]',
+        'rental_fee_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
         'marketplace_name' => 'string',
-        'rental_initial_value' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'rental_reimbursement' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'rental_tax_withheld_list' => '\SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]'
+        'rental_initial_value' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'rental_reimbursement' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'rental_tax_withheld_list' => '\SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]'
     ];
 
     /**
@@ -291,7 +291,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets rental_charge_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getRentalChargeList()
     {
@@ -301,7 +301,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets rental_charge_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $rental_charge_list A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $rental_charge_list A list of charge information on the seller's account.
      *
      * @return self
      */
@@ -314,7 +314,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets rental_fee_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getRentalFeeList()
     {
@@ -324,7 +324,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets rental_fee_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $rental_fee_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $rental_fee_list A list of fee component information.
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets rental_initial_value
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getRentalInitialValue()
     {
@@ -370,7 +370,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets rental_initial_value
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $rental_initial_value rental_initial_value
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $rental_initial_value rental_initial_value
      *
      * @return self
      */
@@ -383,7 +383,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets rental_reimbursement
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getRentalReimbursement()
     {
@@ -393,7 +393,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets rental_reimbursement
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $rental_reimbursement rental_reimbursement
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $rental_reimbursement rental_reimbursement
      *
      * @return self
      */
@@ -406,7 +406,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets rental_tax_withheld_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]|null
      */
     public function getRentalTaxWithheldList()
     {
@@ -416,7 +416,7 @@ class RentalTransactionEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets rental_tax_withheld_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]|null $rental_tax_withheld_list A list of information about taxes withheld.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]|null $rental_tax_withheld_list A list of information about taxes withheld.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
  * @description Order information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -67,15 +67,15 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
         'sales_channel' => 'string',
         'order_channel' => 'string',
         'ship_service_level' => 'string',
-        'order_total' => '\SellingPartnerApi\Model\OrdersV0\Money',
+        'order_total' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
         'number_of_items_shipped' => 'int',
         'number_of_items_unshipped' => 'int',
-        'payment_execution_detail' => '\SellingPartnerApi\Model\OrdersV0\PaymentExecutionDetailItem[]',
+        'payment_execution_detail' => '\SellingPartnerApiV5\Model\OrdersV0\PaymentExecutionDetailItem[]',
         'payment_method' => 'string',
         'payment_method_details' => 'string[]',
         'marketplace_id' => 'string',
         'shipment_service_level_category' => 'string',
-        'easy_ship_shipment_status' => '\SellingPartnerApi\Model\OrdersV0\EasyShipShipmentStatus',
+        'easy_ship_shipment_status' => '\SellingPartnerApiV5\Model\OrdersV0\EasyShipShipmentStatus',
         'cba_displayable_shipping_label' => 'string',
         'order_type' => 'string',
         'earliest_ship_date' => 'string',
@@ -92,19 +92,19 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
         'is_estimated_ship_date_set' => 'bool',
         'is_sold_by_ab' => 'bool',
         'is_iba' => 'bool',
-        'default_ship_from_location_address' => '\SellingPartnerApi\Model\OrdersV0\Address',
+        'default_ship_from_location_address' => '\SellingPartnerApiV5\Model\OrdersV0\Address',
         'buyer_invoice_preference' => 'string',
-        'buyer_tax_information' => '\SellingPartnerApi\Model\OrdersV0\BuyerTaxInformation',
-        'fulfillment_instruction' => '\SellingPartnerApi\Model\OrdersV0\FulfillmentInstruction',
+        'buyer_tax_information' => '\SellingPartnerApiV5\Model\OrdersV0\BuyerTaxInformation',
+        'fulfillment_instruction' => '\SellingPartnerApiV5\Model\OrdersV0\FulfillmentInstruction',
         'is_ispu' => 'bool',
         'is_access_point_order' => 'bool',
-        'marketplace_tax_info' => '\SellingPartnerApi\Model\OrdersV0\MarketplaceTaxInfo',
+        'marketplace_tax_info' => '\SellingPartnerApiV5\Model\OrdersV0\MarketplaceTaxInfo',
         'seller_display_name' => 'string',
-        'shipping_address' => '\SellingPartnerApi\Model\OrdersV0\Address',
-        'buyer_info' => '\SellingPartnerApi\Model\OrdersV0\BuyerInfo',
-        'automated_shipping_settings' => '\SellingPartnerApi\Model\OrdersV0\AutomatedShippingSettings',
+        'shipping_address' => '\SellingPartnerApiV5\Model\OrdersV0\Address',
+        'buyer_info' => '\SellingPartnerApiV5\Model\OrdersV0\BuyerInfo',
+        'automated_shipping_settings' => '\SellingPartnerApiV5\Model\OrdersV0\AutomatedShippingSettings',
         'has_regulated_items' => 'bool',
-        'electronic_invoice_status' => '\SellingPartnerApi\Model\OrdersV0\ElectronicInvoiceStatus'
+        'electronic_invoice_status' => '\SellingPartnerApiV5\Model\OrdersV0\ElectronicInvoiceStatus'
     ];
 
     /**
@@ -843,7 +843,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets order_total
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getOrderTotal()
     {
@@ -853,7 +853,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets order_total
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $order_total order_total
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $order_total order_total
      *
      * @return self
      */
@@ -912,7 +912,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets payment_execution_detail
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\PaymentExecutionDetailItem[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\PaymentExecutionDetailItem[]|null
      */
     public function getPaymentExecutionDetail()
     {
@@ -922,7 +922,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets payment_execution_detail
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\PaymentExecutionDetailItem[]|null $payment_execution_detail A list of payment execution detail items.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\PaymentExecutionDetailItem[]|null $payment_execution_detail A list of payment execution detail items.
      *
      * @return self
      */
@@ -1038,7 +1038,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets easy_ship_shipment_status
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\EasyShipShipmentStatus|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\EasyShipShipmentStatus|null
      */
     public function getEasyShipShipmentStatus()
     {
@@ -1048,7 +1048,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets easy_ship_shipment_status
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\EasyShipShipmentStatus|null $easy_ship_shipment_status easy_ship_shipment_status
+     * @param \SellingPartnerApiV5\Model\OrdersV0\EasyShipShipmentStatus|null $easy_ship_shipment_status easy_ship_shipment_status
      *
      * @return self
      */
@@ -1441,7 +1441,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets default_ship_from_location_address
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Address|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Address|null
      */
     public function getDefaultShipFromLocationAddress()
     {
@@ -1451,7 +1451,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets default_ship_from_location_address
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Address|null $default_ship_from_location_address default_ship_from_location_address
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Address|null $default_ship_from_location_address default_ship_from_location_address
      *
      * @return self
      */
@@ -1497,7 +1497,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets buyer_tax_information
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\BuyerTaxInformation|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\BuyerTaxInformation|null
      */
     public function getBuyerTaxInformation()
     {
@@ -1507,7 +1507,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets buyer_tax_information
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\BuyerTaxInformation|null $buyer_tax_information buyer_tax_information
+     * @param \SellingPartnerApiV5\Model\OrdersV0\BuyerTaxInformation|null $buyer_tax_information buyer_tax_information
      *
      * @return self
      */
@@ -1520,7 +1520,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets fulfillment_instruction
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\FulfillmentInstruction|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\FulfillmentInstruction|null
      */
     public function getFulfillmentInstruction()
     {
@@ -1530,7 +1530,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets fulfillment_instruction
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\FulfillmentInstruction|null $fulfillment_instruction fulfillment_instruction
+     * @param \SellingPartnerApiV5\Model\OrdersV0\FulfillmentInstruction|null $fulfillment_instruction fulfillment_instruction
      *
      * @return self
      */
@@ -1589,7 +1589,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets marketplace_tax_info
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\MarketplaceTaxInfo|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\MarketplaceTaxInfo|null
      */
     public function getMarketplaceTaxInfo()
     {
@@ -1599,7 +1599,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets marketplace_tax_info
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\MarketplaceTaxInfo|null $marketplace_tax_info marketplace_tax_info
+     * @param \SellingPartnerApiV5\Model\OrdersV0\MarketplaceTaxInfo|null $marketplace_tax_info marketplace_tax_info
      *
      * @return self
      */
@@ -1635,7 +1635,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets shipping_address
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Address|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Address|null
      */
     public function getShippingAddress()
     {
@@ -1645,7 +1645,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets shipping_address
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Address|null $shipping_address shipping_address
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Address|null $shipping_address shipping_address
      *
      * @return self
      */
@@ -1658,7 +1658,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets buyer_info
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\BuyerInfo|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\BuyerInfo|null
      */
     public function getBuyerInfo()
     {
@@ -1668,7 +1668,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets buyer_info
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\BuyerInfo|null $buyer_info buyer_info
+     * @param \SellingPartnerApiV5\Model\OrdersV0\BuyerInfo|null $buyer_info buyer_info
      *
      * @return self
      */
@@ -1681,7 +1681,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets automated_shipping_settings
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\AutomatedShippingSettings|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\AutomatedShippingSettings|null
      */
     public function getAutomatedShippingSettings()
     {
@@ -1691,7 +1691,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets automated_shipping_settings
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\AutomatedShippingSettings|null $automated_shipping_settings automated_shipping_settings
+     * @param \SellingPartnerApiV5\Model\OrdersV0\AutomatedShippingSettings|null $automated_shipping_settings automated_shipping_settings
      *
      * @return self
      */
@@ -1727,7 +1727,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets electronic_invoice_status
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\ElectronicInvoiceStatus|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\ElectronicInvoiceStatus|null
      */
     public function getElectronicInvoiceStatus()
     {
@@ -1737,7 +1737,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets electronic_invoice_status
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\ElectronicInvoiceStatus|null $electronic_invoice_status electronic_invoice_status
+     * @param \SellingPartnerApiV5\Model\OrdersV0\ElectronicInvoiceStatus|null $electronic_invoice_status electronic_invoice_status
      *
      * @return self
      */

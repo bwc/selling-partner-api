@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AggregationSettings Class Doc Comment
  *
  * @category Class
  * @description A container that holds all of the necessary properties to configure the aggregation of notifications.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class AggregationSettings extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregation_time_period' => '\SellingPartnerApi\Model\NotificationsV1\AggregationTimePeriod'
+        'aggregation_time_period' => '\SellingPartnerApiV5\Model\NotificationsV1\AggregationTimePeriod'
     ];
 
     /**
@@ -140,7 +140,7 @@ class AggregationSettings extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets aggregation_time_period
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\AggregationTimePeriod
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\AggregationTimePeriod
      */
     public function getAggregationTimePeriod()
     {
@@ -150,7 +150,7 @@ class AggregationSettings extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets aggregation_time_period
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\AggregationTimePeriod $aggregation_time_period aggregation_time_period
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\AggregationTimePeriod $aggregation_time_period aggregation_time_period
      *
      * @return self
      */

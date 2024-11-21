@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItem Class Doc Comment
  *
  * @category Class
  * @description A single order item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -64,19 +64,19 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
         'title' => 'string',
         'quantity_ordered' => 'int',
         'quantity_shipped' => 'int',
-        'product_info' => '\SellingPartnerApi\Model\OrdersV0\ProductInfoDetail',
-        'points_granted' => '\SellingPartnerApi\Model\OrdersV0\PointsGrantedDetail',
-        'item_price' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'shipping_price' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'item_tax' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'shipping_tax' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'shipping_discount' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'shipping_discount_tax' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'promotion_discount' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'promotion_discount_tax' => '\SellingPartnerApi\Model\OrdersV0\Money',
+        'product_info' => '\SellingPartnerApiV5\Model\OrdersV0\ProductInfoDetail',
+        'points_granted' => '\SellingPartnerApiV5\Model\OrdersV0\PointsGrantedDetail',
+        'item_price' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'shipping_price' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'item_tax' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'shipping_tax' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'shipping_discount' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'shipping_discount_tax' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'promotion_discount' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'promotion_discount_tax' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
         'promotion_ids' => 'string[]',
-        'cod_fee' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'cod_fee_discount' => '\SellingPartnerApi\Model\OrdersV0\Money',
+        'cod_fee' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'cod_fee_discount' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
         'is_gift' => 'bool',
         'condition_note' => 'string',
         'condition_id' => 'string',
@@ -84,14 +84,14 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
         'scheduled_delivery_start_date' => 'string',
         'scheduled_delivery_end_date' => 'string',
         'price_designation' => 'string',
-        'tax_collection' => '\SellingPartnerApi\Model\OrdersV0\TaxCollection',
+        'tax_collection' => '\SellingPartnerApiV5\Model\OrdersV0\TaxCollection',
         'serial_number_required' => 'bool',
         'is_transparency' => 'bool',
         'ioss_number' => 'string',
         'store_chain_store_id' => 'string',
         'deemed_reseller_category' => 'string',
-        'buyer_info' => '\SellingPartnerApi\Model\OrdersV0\ItemBuyerInfo',
-        'buyer_requested_cancel' => '\SellingPartnerApi\Model\OrdersV0\BuyerRequestedCancel',
+        'buyer_info' => '\SellingPartnerApiV5\Model\OrdersV0\ItemBuyerInfo',
+        'buyer_requested_cancel' => '\SellingPartnerApiV5\Model\OrdersV0\BuyerRequestedCancel',
         'serial_numbers' => 'string[]'
     ];
 
@@ -544,7 +544,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets product_info
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\ProductInfoDetail|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\ProductInfoDetail|null
      */
     public function getProductInfo()
     {
@@ -554,7 +554,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets product_info
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\ProductInfoDetail|null $product_info product_info
+     * @param \SellingPartnerApiV5\Model\OrdersV0\ProductInfoDetail|null $product_info product_info
      *
      * @return self
      */
@@ -567,7 +567,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets points_granted
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\PointsGrantedDetail|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\PointsGrantedDetail|null
      */
     public function getPointsGranted()
     {
@@ -577,7 +577,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets points_granted
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\PointsGrantedDetail|null $points_granted points_granted
+     * @param \SellingPartnerApiV5\Model\OrdersV0\PointsGrantedDetail|null $points_granted points_granted
      *
      * @return self
      */
@@ -590,7 +590,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets item_price
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getItemPrice()
     {
@@ -600,7 +600,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets item_price
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $item_price item_price
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $item_price item_price
      *
      * @return self
      */
@@ -613,7 +613,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets shipping_price
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getShippingPrice()
     {
@@ -623,7 +623,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets shipping_price
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $shipping_price shipping_price
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $shipping_price shipping_price
      *
      * @return self
      */
@@ -636,7 +636,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets item_tax
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getItemTax()
     {
@@ -646,7 +646,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets item_tax
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $item_tax item_tax
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $item_tax item_tax
      *
      * @return self
      */
@@ -659,7 +659,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets shipping_tax
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getShippingTax()
     {
@@ -669,7 +669,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets shipping_tax
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $shipping_tax shipping_tax
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $shipping_tax shipping_tax
      *
      * @return self
      */
@@ -682,7 +682,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets shipping_discount
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getShippingDiscount()
     {
@@ -692,7 +692,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets shipping_discount
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $shipping_discount shipping_discount
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $shipping_discount shipping_discount
      *
      * @return self
      */
@@ -705,7 +705,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets shipping_discount_tax
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getShippingDiscountTax()
     {
@@ -715,7 +715,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets shipping_discount_tax
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $shipping_discount_tax shipping_discount_tax
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $shipping_discount_tax shipping_discount_tax
      *
      * @return self
      */
@@ -728,7 +728,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets promotion_discount
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getPromotionDiscount()
     {
@@ -738,7 +738,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets promotion_discount
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $promotion_discount promotion_discount
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $promotion_discount promotion_discount
      *
      * @return self
      */
@@ -751,7 +751,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets promotion_discount_tax
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getPromotionDiscountTax()
     {
@@ -761,7 +761,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets promotion_discount_tax
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $promotion_discount_tax promotion_discount_tax
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $promotion_discount_tax promotion_discount_tax
      *
      * @return self
      */
@@ -797,7 +797,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets cod_fee
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getCodFee()
     {
@@ -807,7 +807,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets cod_fee
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $cod_fee cod_fee
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $cod_fee cod_fee
      *
      * @return self
      */
@@ -820,7 +820,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets cod_fee_discount
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getCodFeeDiscount()
     {
@@ -830,7 +830,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets cod_fee_discount
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $cod_fee_discount cod_fee_discount
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $cod_fee_discount cod_fee_discount
      *
      * @return self
      */
@@ -1007,7 +1007,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets tax_collection
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\TaxCollection|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\TaxCollection|null
      */
     public function getTaxCollection()
     {
@@ -1017,7 +1017,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets tax_collection
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\TaxCollection|null $tax_collection tax_collection
+     * @param \SellingPartnerApiV5\Model\OrdersV0\TaxCollection|null $tax_collection tax_collection
      *
      * @return self
      */
@@ -1156,7 +1156,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets buyer_info
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\ItemBuyerInfo|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\ItemBuyerInfo|null
      */
     public function getBuyerInfo()
     {
@@ -1166,7 +1166,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets buyer_info
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\ItemBuyerInfo|null $buyer_info buyer_info
+     * @param \SellingPartnerApiV5\Model\OrdersV0\ItemBuyerInfo|null $buyer_info buyer_info
      *
      * @return self
      */
@@ -1179,7 +1179,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets buyer_requested_cancel
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\BuyerRequestedCancel|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\BuyerRequestedCancel|null
      */
     public function getBuyerRequestedCancel()
     {
@@ -1189,7 +1189,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets buyer_requested_cancel
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\BuyerRequestedCancel|null $buyer_requested_cancel buyer_requested_cancel
+     * @param \SellingPartnerApiV5\Model\OrdersV0\BuyerRequestedCancel|null $buyer_requested_cancel buyer_requested_cancel
      *
      * @return self
      */

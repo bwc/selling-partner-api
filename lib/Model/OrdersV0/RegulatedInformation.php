@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RegulatedInformation Class Doc Comment
  *
  * @category Class
  * @description The regulated information collected during purchase and used to verify the order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class RegulatedInformation extends BaseModel implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fields' => '\SellingPartnerApi\Model\OrdersV0\RegulatedInformationField[]'
+        'fields' => '\SellingPartnerApiV5\Model\OrdersV0\RegulatedInformationField[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class RegulatedInformation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets fields
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\RegulatedInformationField[]
+     * @return \SellingPartnerApiV5\Model\OrdersV0\RegulatedInformationField[]
      */
     public function getFields()
     {
@@ -150,7 +150,7 @@ class RegulatedInformation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets fields
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\RegulatedInformationField[] $fields A list of regulated information fields as collected from the regulatory form.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\RegulatedInformationField[] $fields A list of regulated information fields as collected from the regulatory form.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateDestinationRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the createDestination operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class CreateDestinationRequest extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'resource_specification' => '\SellingPartnerApi\Model\NotificationsV1\DestinationResourceSpecification',
+        'resource_specification' => '\SellingPartnerApiV5\Model\NotificationsV1\DestinationResourceSpecification',
         'name' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class CreateDestinationRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Gets resource_specification
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\DestinationResourceSpecification
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\DestinationResourceSpecification
      */
     public function getResourceSpecification()
     {
@@ -159,7 +159,7 @@ class CreateDestinationRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Sets resource_specification
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\DestinationResourceSpecification $resource_specification resource_specification
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\DestinationResourceSpecification $resource_specification resource_specification
      *
      * @return self
      */

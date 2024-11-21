@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Label Class Doc Comment
  *
  * @category Class
  * @description The label details of the container.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'label_stream' => 'string',
-        'label_specification' => '\SellingPartnerApi\Model\ShippingV1\LabelSpecification'
+        'label_specification' => '\SellingPartnerApiV5\Model\ShippingV1\LabelSpecification'
     ];
 
     /**
@@ -166,7 +166,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets label_specification
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\LabelSpecification|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\LabelSpecification|null
      */
     public function getLabelSpecification()
     {
@@ -176,7 +176,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets label_specification
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\LabelSpecification|null $label_specification label_specification
+     * @param \SellingPartnerApiV5\Model\ShippingV1\LabelSpecification|null $label_specification label_specification
      *
      * @return self
      */

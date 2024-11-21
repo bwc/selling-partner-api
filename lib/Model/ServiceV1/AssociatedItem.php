@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AssociatedItem Class Doc Comment
  *
  * @category Class
  * @description Information about an item associated with the service job.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -64,7 +64,7 @@ class AssociatedItem extends BaseModel implements ModelInterface, ArrayAccess, \
         'order_id' => 'string',
         'item_status' => 'string',
         'brand_name' => 'string',
-        'item_delivery' => '\SellingPartnerApi\Model\ServiceV1\ItemDelivery'
+        'item_delivery' => '\SellingPartnerApiV5\Model\ServiceV1\ItemDelivery'
     ];
 
     /**
@@ -374,7 +374,7 @@ class AssociatedItem extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets item_delivery
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\ItemDelivery|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\ItemDelivery|null
      */
     public function getItemDelivery()
     {
@@ -384,7 +384,7 @@ class AssociatedItem extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets item_delivery
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\ItemDelivery|null $item_delivery item_delivery
+     * @param \SellingPartnerApiV5\Model\ServiceV1\ItemDelivery|null $item_delivery item_delivery
      *
      * @return self
      */

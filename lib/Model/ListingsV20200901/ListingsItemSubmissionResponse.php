@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsV20200901;
+namespace SellingPartnerApiV5\Model\ListingsV20200901;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListingsItemSubmissionResponse Class Doc Comment
  *
  * @category Class
  * @description Response containing the results of a submission to the Selling Partner API for Listings Items.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class ListingsItemSubmissionResponse extends BaseModel implements ModelInterface
         'sku' => 'string',
         'status' => 'string',
         'submission_id' => 'string',
-        'issues' => '\SellingPartnerApi\Model\ListingsV20200901\Issue[]'
+        'issues' => '\SellingPartnerApiV5\Model\ListingsV20200901\Issue[]'
     ];
 
     /**
@@ -302,7 +302,7 @@ class ListingsItemSubmissionResponse extends BaseModel implements ModelInterface
     /**
      * Gets issues
      *
-     * @return \SellingPartnerApi\Model\ListingsV20200901\Issue[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20200901\Issue[]|null
      */
     public function getIssues()
     {
@@ -312,7 +312,7 @@ class ListingsItemSubmissionResponse extends BaseModel implements ModelInterface
     /**
      * Sets issues
      *
-     * @param \SellingPartnerApi\Model\ListingsV20200901\Issue[]|null $issues Listings item issues related to the listings item submission.
+     * @param \SellingPartnerApiV5\Model\ListingsV20200901\Issue[]|null $issues Listings item issues related to the listings item submission.
      *
      * @return self
      */

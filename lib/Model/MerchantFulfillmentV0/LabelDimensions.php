@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * LabelDimensions Class Doc Comment
  *
  * @category Class
  * @description Dimensions for printing a shipping label.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class LabelDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     protected static $openAPITypes = [
         'length' => 'float',
         'width' => 'float',
-        'unit' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\UnitOfLength'
+        'unit' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\UnitOfLength'
     ];
 
     /**
@@ -204,7 +204,7 @@ class LabelDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets unit
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\UnitOfLength
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\UnitOfLength
      */
     public function getUnit()
     {
@@ -214,7 +214,7 @@ class LabelDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets unit
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\UnitOfLength $unit unit
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\UnitOfLength $unit unit
      *
      * @return self
      */

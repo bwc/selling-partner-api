@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InboundShipmentHeader Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information used to create and update inbound shipments.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,12 +59,12 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'shipment_name' => 'string',
-        'ship_from_address' => '\SellingPartnerApi\Model\FbaInboundV0\Address',
+        'ship_from_address' => '\SellingPartnerApiV5\Model\FbaInboundV0\Address',
         'destination_fulfillment_center_id' => 'string',
         'are_cases_required' => 'bool',
-        'shipment_status' => '\SellingPartnerApi\Model\FbaInboundV0\ShipmentStatus',
-        'label_prep_preference' => '\SellingPartnerApi\Model\FbaInboundV0\LabelPrepPreference',
-        'intended_box_contents_source' => '\SellingPartnerApi\Model\FbaInboundV0\IntendedBoxContentsSource'
+        'shipment_status' => '\SellingPartnerApiV5\Model\FbaInboundV0\ShipmentStatus',
+        'label_prep_preference' => '\SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepPreference',
+        'intended_box_contents_source' => '\SellingPartnerApiV5\Model\FbaInboundV0\IntendedBoxContentsSource'
     ];
 
     /**
@@ -211,7 +211,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets ship_from_address
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Address
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Address
      */
     public function getShipFromAddress()
     {
@@ -221,7 +221,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets ship_from_address
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Address $ship_from_address ship_from_address
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Address $ship_from_address ship_from_address
      *
      * @return self
      */
@@ -280,7 +280,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets shipment_status
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\ShipmentStatus
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentStatus
      */
     public function getShipmentStatus()
     {
@@ -290,7 +290,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets shipment_status
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\ShipmentStatus $shipment_status shipment_status
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentStatus $shipment_status shipment_status
      *
      * @return self
      */
@@ -303,7 +303,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets label_prep_preference
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\LabelPrepPreference
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepPreference
      */
     public function getLabelPrepPreference()
     {
@@ -313,7 +313,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets label_prep_preference
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\LabelPrepPreference $label_prep_preference label_prep_preference
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepPreference $label_prep_preference label_prep_preference
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets intended_box_contents_source
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\IntendedBoxContentsSource|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\IntendedBoxContentsSource|null
      */
     public function getIntendedBoxContentsSource()
     {
@@ -336,7 +336,7 @@ class InboundShipmentHeader extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets intended_box_contents_source
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\IntendedBoxContentsSource|null $intended_box_contents_source intended_box_contents_source
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\IntendedBoxContentsSource|null $intended_box_contents_source intended_box_contents_source
      *
      * @return self
      */

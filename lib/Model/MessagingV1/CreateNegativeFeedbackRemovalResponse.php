@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateNegativeFeedbackRemovalResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the createNegativeFeedbackRemoval operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class CreateNegativeFeedbackRemovalResponse extends BaseModel implements ModelIn
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\SellingPartnerApi\Model\MessagingV1\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\MessagingV1\Error[]'
     ];
 
     /**
@@ -162,7 +162,7 @@ class CreateNegativeFeedbackRemovalResponse extends BaseModel implements ModelIn
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -172,7 +172,7 @@ class CreateNegativeFeedbackRemovalResponse extends BaseModel implements ModelIn
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

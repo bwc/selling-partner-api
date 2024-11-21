@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ScheduledDeliveryInfo Class Doc Comment
  *
  * @category Class
  * @description Delivery information for a scheduled delivery. This is only available in the JP marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ScheduledDeliveryInfo extends BaseModel implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'delivery_time_zone' => 'string',
-        'delivery_windows' => '\SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow[]'
+        'delivery_windows' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class ScheduledDeliveryInfo extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets delivery_windows
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow[]
      */
     public function getDeliveryWindows()
     {
@@ -182,7 +182,7 @@ class ScheduledDeliveryInfo extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets delivery_windows
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow[] $delivery_windows An array of delivery windows.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow[] $delivery_windows An array of delivery windows.
      *
      * @return self
      */

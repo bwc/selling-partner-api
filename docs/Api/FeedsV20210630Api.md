@@ -1,4 +1,4 @@
-# SellingPartnerApi\FeedsV20210630Api
+# SellingPartnerApiV5\FeedsV20210630Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -35,16 +35,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeedsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FeedsV20210630Api($config);
 $feed_id = 'feed_id_example'; // string | The identifier for the feed. This identifier is unique only in combination with a seller ID.
 
 try {
@@ -76,7 +76,7 @@ void (empty response body)
 ## `createFeed()`
 
 ```php
-createFeed($body): \SellingPartnerApi\Model\FeedsV20210630\CreateFeedResponse
+createFeed($body): \SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedResponse
 ```
 
 
@@ -98,17 +98,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeedsV20210630Api($config);
-$body = new \SellingPartnerApi\Model\FeedsV20210630\CreateFeedSpecification(); // \SellingPartnerApi\Model\FeedsV20210630\CreateFeedSpecification
+$apiInstance = new SellingPartnerApiV5\Api\FeedsV20210630Api($config);
+$body = new \SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedSpecification(); // \SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedSpecification
 
 try {
     $result = $apiInstance->createFeed($body);
@@ -122,11 +122,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\FeedsV20210630\CreateFeedSpecification**](../Model/FeedsV20210630/CreateFeedSpecification.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedSpecification**](../Model/FeedsV20210630/CreateFeedSpecification.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeedsV20210630\CreateFeedResponse**](../Model/FeedsV20210630/CreateFeedResponse.md)
+[**\SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedResponse**](../Model/FeedsV20210630/CreateFeedResponse.md)
 
 ### HTTP request headers
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 ## `createFeedDocument()`
 
 ```php
-createFeedDocument($body): \SellingPartnerApi\Model\FeedsV20210630\CreateFeedDocumentResponse
+createFeedDocument($body): \SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedDocumentResponse
 ```
 
 
@@ -162,17 +162,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeedsV20210630Api($config);
-$body = new \SellingPartnerApi\Model\FeedsV20210630\CreateFeedDocumentSpecification(); // \SellingPartnerApi\Model\FeedsV20210630\CreateFeedDocumentSpecification
+$apiInstance = new SellingPartnerApiV5\Api\FeedsV20210630Api($config);
+$body = new \SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedDocumentSpecification(); // \SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedDocumentSpecification
 
 try {
     $result = $apiInstance->createFeedDocument($body);
@@ -186,11 +186,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\FeedsV20210630\CreateFeedDocumentSpecification**](../Model/FeedsV20210630/CreateFeedDocumentSpecification.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedDocumentSpecification**](../Model/FeedsV20210630/CreateFeedDocumentSpecification.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeedsV20210630\CreateFeedDocumentResponse**](../Model/FeedsV20210630/CreateFeedDocumentResponse.md)
+[**\SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedDocumentResponse**](../Model/FeedsV20210630/CreateFeedDocumentResponse.md)
 
 ### HTTP request headers
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 ## `getFeed()`
 
 ```php
-getFeed($feed_id): \SellingPartnerApi\Model\FeedsV20210630\Feed
+getFeed($feed_id): \SellingPartnerApiV5\Model\FeedsV20210630\Feed
 ```
 
 
@@ -226,16 +226,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeedsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FeedsV20210630Api($config);
 $feed_id = 'feed_id_example'; // string | The identifier for the feed. This identifier is unique only in combination with a seller ID.
 
 try {
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeedsV20210630\Feed**](../Model/FeedsV20210630/Feed.md)
+[**\SellingPartnerApiV5\Model\FeedsV20210630\Feed**](../Model/FeedsV20210630/Feed.md)
 
 ### HTTP request headers
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 ## `getFeedDocument()`
 
 ```php
-getFeedDocument($feed_document_id): \SellingPartnerApi\Model\FeedsV20210630\FeedDocument
+getFeedDocument($feed_document_id): \SellingPartnerApiV5\Model\FeedsV20210630\FeedDocument
 ```
 
 
@@ -290,16 +290,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeedsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FeedsV20210630Api($config);
 $feed_document_id = 'feed_document_id_example'; // string | The identifier of the feed document.
 
 try {
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeedsV20210630\FeedDocument**](../Model/FeedsV20210630/FeedDocument.md)
+[**\SellingPartnerApiV5\Model\FeedsV20210630\FeedDocument**](../Model/FeedsV20210630/FeedDocument.md)
 
 ### HTTP request headers
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 ## `getFeeds()`
 
 ```php
-getFeeds($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token): \SellingPartnerApi\Model\FeedsV20210630\GetFeedsResponse
+getFeeds($feed_types, $marketplace_ids, $page_size, $processing_statuses, $created_since, $created_until, $next_token): \SellingPartnerApiV5\Model\FeedsV20210630\GetFeedsResponse
 ```
 
 
@@ -354,16 +354,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FeedsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FeedsV20210630Api($config);
 $feed_types = array('feed_types_example'); // string[] | A list of feed types used to filter feeds. When feedTypes is provided, the other filter parameters (processingStatuses, marketplaceIds, createdSince, createdUntil) and pageSize may also be provided. Either feedTypes or nextToken is required.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A list of marketplace identifiers used to filter feeds. The feeds returned will match at least one of the marketplaces that you specify.
 $page_size = 10; // int | The maximum number of feeds to return in a single call.
@@ -394,7 +394,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FeedsV20210630\GetFeedsResponse**](../Model/FeedsV20210630/GetFeedsResponse.md)
+[**\SellingPartnerApiV5\Model\FeedsV20210630\GetFeedsResponse**](../Model/FeedsV20210630/GetFeedsResponse.md)
 
 ### HTTP request headers
 

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardHeaderImageTextModule Class Doc Comment
  *
  * @category Class
  * @description Standard headline text, an image, and body text.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardHeaderImageTextModule extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock'
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock'
     ];
 
     /**
@@ -143,7 +143,7 @@ class StandardHeaderImageTextModule extends BaseModel implements ModelInterface,
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -153,7 +153,7 @@ class StandardHeaderImageTextModule extends BaseModel implements ModelInterface,
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class StandardHeaderImageTextModule extends BaseModel implements ModelInterface,
     /**
      * Gets block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getBlock()
     {
@@ -176,7 +176,7 @@ class StandardHeaderImageTextModule extends BaseModel implements ModelInterface,
     /**
      * Sets block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $block block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $block block
      *
      * @return self
      */

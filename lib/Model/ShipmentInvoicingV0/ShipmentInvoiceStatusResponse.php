@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentInvoiceStatusResponse Class Doc Comment
  *
  * @category Class
  * @description The shipment invoice status response.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ShipmentInvoiceStatusResponse extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipments' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentInvoiceStatusInfo'
+        'shipments' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentInvoiceStatusInfo'
     ];
 
     /**
@@ -137,7 +137,7 @@ class ShipmentInvoiceStatusResponse extends BaseModel implements ModelInterface,
     /**
      * Gets shipments
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentInvoiceStatusInfo|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentInvoiceStatusInfo|null
      */
     public function getShipments()
     {
@@ -147,7 +147,7 @@ class ShipmentInvoiceStatusResponse extends BaseModel implements ModelInterface,
     /**
      * Sets shipments
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentInvoiceStatusInfo|null $shipments shipments
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentInvoiceStatusInfo|null $shipments shipments
      *
      * @return self
      */

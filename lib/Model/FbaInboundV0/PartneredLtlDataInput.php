@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartneredLtlDataInput Class Doc Comment
  *
  * @category Class
  * @description Information that is required by an Amazon-partnered carrier to ship a Less Than Truckload/Full Truckload (LTL/FTL) inbound shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,13 +58,13 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact' => '\SellingPartnerApi\Model\FbaInboundV0\Contact',
+        'contact' => '\SellingPartnerApiV5\Model\FbaInboundV0\Contact',
         'box_count' => 'int',
         'seller_freight_class' => 'string',
         'freight_ready_date' => 'string',
-        'pallet_list' => '\SellingPartnerApi\Model\FbaInboundV0\Pallet[]',
-        'total_weight' => '\SellingPartnerApi\Model\FbaInboundV0\Weight',
-        'seller_declared_value' => '\SellingPartnerApi\Model\FbaInboundV0\Amount'
+        'pallet_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\Pallet[]',
+        'total_weight' => '\SellingPartnerApiV5\Model\FbaInboundV0\Weight',
+        'seller_declared_value' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount'
     ];
 
     /**
@@ -173,7 +173,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets contact
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Contact|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Contact|null
      */
     public function getContact()
     {
@@ -183,7 +183,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets contact
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Contact|null $contact contact
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Contact|null $contact contact
      *
      * @return self
      */
@@ -265,7 +265,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets pallet_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Pallet[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Pallet[]|null
      */
     public function getPalletList()
     {
@@ -275,7 +275,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets pallet_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Pallet[]|null $pallet_list A list of pallet information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Pallet[]|null $pallet_list A list of pallet information.
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets total_weight
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Weight|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Weight|null
      */
     public function getTotalWeight()
     {
@@ -298,7 +298,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets total_weight
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Weight|null $total_weight total_weight
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Weight|null $total_weight total_weight
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets seller_declared_value
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null
      */
     public function getSellerDeclaredValue()
     {
@@ -321,7 +321,7 @@ class PartneredLtlDataInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets seller_declared_value
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount|null $seller_declared_value seller_declared_value
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null $seller_declared_value seller_declared_value
      *
      * @return self
      */

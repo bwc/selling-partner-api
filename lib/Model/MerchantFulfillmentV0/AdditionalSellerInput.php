@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AdditionalSellerInput Class Doc Comment
  *
  * @category Class
  * @description Additional information required to purchase shipping.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,10 +63,10 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
         'value_as_boolean' => 'bool',
         'value_as_integer' => 'int',
         'value_as_timestamp' => 'string',
-        'value_as_address' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Address',
-        'value_as_weight' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Weight',
-        'value_as_dimension' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Length',
-        'value_as_currency' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount'
+        'value_as_address' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address',
+        'value_as_weight' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight',
+        'value_as_dimension' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Length',
+        'value_as_currency' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount'
     ];
 
     /**
@@ -300,7 +300,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets value_as_address
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Address|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address|null
      */
     public function getValueAsAddress()
     {
@@ -310,7 +310,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets value_as_address
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Address|null $value_as_address value_as_address
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address|null $value_as_address value_as_address
      *
      * @return self
      */
@@ -323,7 +323,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets value_as_weight
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Weight|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight|null
      */
     public function getValueAsWeight()
     {
@@ -333,7 +333,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets value_as_weight
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Weight|null $value_as_weight value_as_weight
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight|null $value_as_weight value_as_weight
      *
      * @return self
      */
@@ -346,7 +346,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets value_as_dimension
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Length|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Length|null
      */
     public function getValueAsDimension()
     {
@@ -356,7 +356,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets value_as_dimension
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Length|null $value_as_dimension value_as_dimension
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Length|null $value_as_dimension value_as_dimension
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets value_as_currency
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount|null
      */
     public function getValueAsCurrency()
     {
@@ -379,7 +379,7 @@ class AdditionalSellerInput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets value_as_currency
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount|null $value_as_currency value_as_currency
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount|null $value_as_currency value_as_currency
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,30 +24,30 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * ReplenishmentV20221107Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class ReplenishmentV20221107Api extends BaseApi
 {
     /**
      * Operation getSellingPartnerMetrics
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body body (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse
      */
     public function getSellingPartnerMetrics($body = null)
     {
@@ -58,11 +58,11 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Operation getSellingPartnerMetricsWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSellingPartnerMetricsWithHttpInfo($body = null)
     {
@@ -111,80 +111,80 @@ class ReplenishmentV20221107Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -199,7 +199,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -279,7 +279,7 @@ class ReplenishmentV20221107Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -294,14 +294,14 @@ class ReplenishmentV20221107Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getSellingPartnerMetricsAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse';
         $request = $this->getSellingPartnerMetricsRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -347,7 +347,7 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Create request for operation 'getSellingPartnerMetrics'
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -427,11 +427,11 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Operation listOfferMetrics
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse
      */
     public function listOfferMetrics($body = null)
     {
@@ -442,11 +442,11 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Operation listOfferMetricsWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listOfferMetricsWithHttpInfo($body = null)
     {
@@ -495,80 +495,80 @@ class ReplenishmentV20221107Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -583,7 +583,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -591,7 +591,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -599,7 +599,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -607,7 +607,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -623,7 +623,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -631,7 +631,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -639,7 +639,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -647,7 +647,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -663,7 +663,7 @@ class ReplenishmentV20221107Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -678,14 +678,14 @@ class ReplenishmentV20221107Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function listOfferMetricsAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse';
         $request = $this->listOfferMetricsRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -731,7 +731,7 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Create request for operation 'listOfferMetrics'
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest $body The request body for the `listOfferMetrics` operation. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -811,11 +811,11 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Operation listOffers
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest $body body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest $body body (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse
      */
     public function listOffers($body = null)
     {
@@ -826,11 +826,11 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Operation listOffersWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listOffersWithHttpInfo($body = null)
     {
@@ -879,80 +879,80 @@ class ReplenishmentV20221107Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -967,7 +967,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -975,7 +975,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -983,7 +983,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -991,7 +991,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1007,7 +1007,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1023,7 +1023,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1031,7 +1031,7 @@ class ReplenishmentV20221107Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ReplenishmentV20221107\ErrorList',
+                        '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1047,7 +1047,7 @@ class ReplenishmentV20221107Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1062,14 +1062,14 @@ class ReplenishmentV20221107Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function listOffersAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse';
         $request = $this->listOffersRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1115,7 +1115,7 @@ class ReplenishmentV20221107Api extends BaseApi
     /**
      * Create request for operation 'listOffers'
      *
-     * @param  \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
+     * @param  \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

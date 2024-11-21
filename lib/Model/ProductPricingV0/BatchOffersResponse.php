@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BatchOffersResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headers' => '\SellingPartnerApi\Model\ProductPricingV0\HttpResponseHeaders',
-        'status' => '\SellingPartnerApi\Model\ProductPricingV0\GetOffersHttpStatusLine',
-        'body' => '\SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse'
+        'headers' => '\SellingPartnerApiV5\Model\ProductPricingV0\HttpResponseHeaders',
+        'status' => '\SellingPartnerApiV5\Model\ProductPricingV0\GetOffersHttpStatusLine',
+        'body' => '\SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse'
     ];
 
     /**
@@ -151,7 +151,7 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets headers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\HttpResponseHeaders|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\HttpResponseHeaders|null
      */
     public function getHeaders()
     {
@@ -161,7 +161,7 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets headers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\HttpResponseHeaders|null $headers headers
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\HttpResponseHeaders|null $headers headers
      *
      * @return self
      */
@@ -174,7 +174,7 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\GetOffersHttpStatusLine|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersHttpStatusLine|null
      */
     public function getStatus()
     {
@@ -184,7 +184,7 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\GetOffersHttpStatusLine|null $status status
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersHttpStatusLine|null $status status
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse
      */
     public function getBody()
     {
@@ -207,7 +207,7 @@ class BatchOffersResponse extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse $body body
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse $body body
      *
      * @return self
      */

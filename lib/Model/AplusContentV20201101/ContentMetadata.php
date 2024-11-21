@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContentMetadata Class Doc Comment
  *
  * @category Class
  * @description The metadata of an A+ Content document.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class ContentMetadata extends BaseModel implements ModelInterface, ArrayAccess, 
     protected static $openAPITypes = [
         'name' => 'string',
         'marketplace_id' => 'string',
-        'status' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentStatus',
-        'badge_set' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentBadge[]',
+        'status' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentStatus',
+        'badge_set' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentBadge[]',
         'update_time' => 'string'
     ];
 
@@ -246,7 +246,7 @@ class ContentMetadata extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentStatus
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentStatus
      */
     public function getStatus()
     {
@@ -256,7 +256,7 @@ class ContentMetadata extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentStatus $status status
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentStatus $status status
      *
      * @return self
      */
@@ -269,7 +269,7 @@ class ContentMetadata extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets badge_set
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentBadge[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentBadge[]
      */
     public function getBadgeSet()
     {
@@ -279,7 +279,7 @@ class ContentMetadata extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets badge_set
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentBadge[] $badge_set The set of content badges.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentBadge[] $badge_set The set of content badges.
      *
      * @return self
      */

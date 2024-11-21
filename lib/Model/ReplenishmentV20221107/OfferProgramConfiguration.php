@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferProgramConfiguration Class Doc Comment
  *
  * @category Class
  * @description The offer program configuration contains a set of program properties for an offer.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'preferences' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPreferences',
-        'promotions' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotions',
-        'enrollment_method' => '\SellingPartnerApi\Model\ReplenishmentV20221107\EnrollmentMethod'
+        'preferences' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPreferences',
+        'promotions' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotions',
+        'enrollment_method' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\EnrollmentMethod'
     ];
 
     /**
@@ -149,7 +149,7 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
     /**
      * Gets preferences
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPreferences|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPreferences|null
      */
     public function getPreferences()
     {
@@ -159,7 +159,7 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
     /**
      * Sets preferences
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPreferences|null $preferences preferences
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPreferences|null $preferences preferences
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
     /**
      * Gets promotions
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotions|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotions|null
      */
     public function getPromotions()
     {
@@ -182,7 +182,7 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
     /**
      * Sets promotions
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotions|null $promotions promotions
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotions|null $promotions promotions
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
     /**
      * Gets enrollment_method
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\EnrollmentMethod|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\EnrollmentMethod|null
      */
     public function getEnrollmentMethod()
     {
@@ -205,7 +205,7 @@ class OfferProgramConfiguration extends BaseModel implements ModelInterface, Arr
     /**
      * Sets enrollment_method
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\EnrollmentMethod|null $enrollment_method enrollment_method
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\EnrollmentMethod|null $enrollment_method enrollment_method
      *
      * @return self
      */

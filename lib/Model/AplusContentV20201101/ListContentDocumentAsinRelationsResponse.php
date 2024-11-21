@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListContentDocumentAsinRelationsResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class ListContentDocumentAsinRelationsResponse extends BaseModel implements Mode
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]',
+        'warnings' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]',
         'next_page_token' => 'string',
-        'asin_metadata_set' => '\SellingPartnerApi\Model\AplusContentV20201101\AsinMetadata[]'
+        'asin_metadata_set' => '\SellingPartnerApiV5\Model\AplusContentV20201101\AsinMetadata[]'
     ];
 
     /**
@@ -180,7 +180,7 @@ class ListContentDocumentAsinRelationsResponse extends BaseModel implements Mode
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null
      */
     public function getWarnings()
     {
@@ -190,7 +190,7 @@ class ListContentDocumentAsinRelationsResponse extends BaseModel implements Mode
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class ListContentDocumentAsinRelationsResponse extends BaseModel implements Mode
     /**
      * Gets asin_metadata_set
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\AsinMetadata[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\AsinMetadata[]
      */
     public function getAsinMetadataSet()
     {
@@ -243,7 +243,7 @@ class ListContentDocumentAsinRelationsResponse extends BaseModel implements Mode
     /**
      * Sets asin_metadata_set
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\AsinMetadata[] $asin_metadata_set The set of ASIN metadata.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\AsinMetadata[] $asin_metadata_set The set of ASIN metadata.
      *
      * @return self
      */

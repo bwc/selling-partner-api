@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateInboundShipmentPlanRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the createInboundShipmentPlan operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,11 +58,11 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ship_from_address' => '\SellingPartnerApi\Model\FbaInboundV0\Address',
-        'label_prep_preference' => '\SellingPartnerApi\Model\FbaInboundV0\LabelPrepPreference',
+        'ship_from_address' => '\SellingPartnerApiV5\Model\FbaInboundV0\Address',
+        'label_prep_preference' => '\SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepPreference',
         'ship_to_country_code' => 'string',
         'ship_to_country_subdivision_code' => 'string',
-        'inbound_shipment_plan_request_items' => '\SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlanRequestItem[]'
+        'inbound_shipment_plan_request_items' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlanRequestItem[]'
     ];
 
     /**
@@ -170,7 +170,7 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
     /**
      * Gets ship_from_address
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Address
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Address
      */
     public function getShipFromAddress()
     {
@@ -180,7 +180,7 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
     /**
      * Sets ship_from_address
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Address $ship_from_address ship_from_address
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Address $ship_from_address ship_from_address
      *
      * @return self
      */
@@ -193,7 +193,7 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
     /**
      * Gets label_prep_preference
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\LabelPrepPreference
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepPreference
      */
     public function getLabelPrepPreference()
     {
@@ -203,7 +203,7 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
     /**
      * Sets label_prep_preference
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\LabelPrepPreference $label_prep_preference label_prep_preference
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepPreference $label_prep_preference label_prep_preference
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
     /**
      * Gets inbound_shipment_plan_request_items
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlanRequestItem[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlanRequestItem[]
      */
     public function getInboundShipmentPlanRequestItems()
     {
@@ -272,7 +272,7 @@ class CreateInboundShipmentPlanRequest extends BaseModel implements ModelInterfa
     /**
      * Sets inbound_shipment_plan_request_items
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlanRequestItem[] $inbound_shipment_plan_request_items inbound_shipment_plan_request_items
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlanRequestItem[] $inbound_shipment_plan_request_items inbound_shipment_plan_request_items
      *
      * @return self
      */

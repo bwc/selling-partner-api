@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetContentDocumentResponseAllOf Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetContentDocumentResponseAllOf extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'content_record' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentRecord'
+        'content_record' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentRecord'
     ];
 
     /**
@@ -139,7 +139,7 @@ class GetContentDocumentResponseAllOf extends BaseModel implements ModelInterfac
     /**
      * Gets content_record
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentRecord
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentRecord
      */
     public function getContentRecord()
     {
@@ -149,7 +149,7 @@ class GetContentDocumentResponseAllOf extends BaseModel implements ModelInterfac
     /**
      * Sets content_record
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentRecord $content_record content_record
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentRecord $content_record content_record
      *
      * @return self
      */

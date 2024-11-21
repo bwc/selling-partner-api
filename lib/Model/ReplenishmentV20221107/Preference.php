@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Preference Class Doc Comment
  *
  * @category Class
  * @description Offer preferences that you can include in the result filter criteria.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class Preference extends BaseModel implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'auto_enrollment' => '\SellingPartnerApi\Model\ReplenishmentV20221107\AutoEnrollmentPreference[]'
+        'auto_enrollment' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\AutoEnrollmentPreference[]'
     ];
 
     /**
@@ -141,7 +141,7 @@ class Preference extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets auto_enrollment
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\AutoEnrollmentPreference[]|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\AutoEnrollmentPreference[]|null
      */
     public function getAutoEnrollment()
     {
@@ -151,7 +151,7 @@ class Preference extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets auto_enrollment
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\AutoEnrollmentPreference[]|null $auto_enrollment Filters the results to only include offers with the auto-enrollment preference specified.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\AutoEnrollmentPreference[]|null $auto_enrollment Filters the results to only include offers with the auto-enrollment preference specified.
      *
      * @return self
      */

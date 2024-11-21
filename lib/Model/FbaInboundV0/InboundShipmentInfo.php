@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InboundShipmentInfo Class Doc Comment
  *
  * @category Class
  * @description Information about the seller's inbound shipments. Returned by the listInboundShipments operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,14 +60,14 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'shipment_id' => 'string',
         'shipment_name' => 'string',
-        'ship_from_address' => '\SellingPartnerApi\Model\FbaInboundV0\Address',
+        'ship_from_address' => '\SellingPartnerApiV5\Model\FbaInboundV0\Address',
         'destination_fulfillment_center_id' => 'string',
-        'shipment_status' => '\SellingPartnerApi\Model\FbaInboundV0\ShipmentStatus',
-        'label_prep_type' => '\SellingPartnerApi\Model\FbaInboundV0\LabelPrepType',
+        'shipment_status' => '\SellingPartnerApiV5\Model\FbaInboundV0\ShipmentStatus',
+        'label_prep_type' => '\SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepType',
         'are_cases_required' => 'bool',
         'confirmed_need_by_date' => 'string',
-        'box_contents_source' => '\SellingPartnerApi\Model\FbaInboundV0\BoxContentsSource',
-        'estimated_box_contents_fee' => '\SellingPartnerApi\Model\FbaInboundV0\BoxContentsFeeDetails'
+        'box_contents_source' => '\SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsSource',
+        'estimated_box_contents_fee' => '\SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsFeeDetails'
     ];
 
     /**
@@ -243,7 +243,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets ship_from_address
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Address
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Address
      */
     public function getShipFromAddress()
     {
@@ -253,7 +253,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets ship_from_address
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Address $ship_from_address ship_from_address
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Address $ship_from_address ship_from_address
      *
      * @return self
      */
@@ -289,7 +289,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets shipment_status
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\ShipmentStatus|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentStatus|null
      */
     public function getShipmentStatus()
     {
@@ -299,7 +299,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets shipment_status
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\ShipmentStatus|null $shipment_status shipment_status
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentStatus|null $shipment_status shipment_status
      *
      * @return self
      */
@@ -312,7 +312,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets label_prep_type
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\LabelPrepType|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepType|null
      */
     public function getLabelPrepType()
     {
@@ -322,7 +322,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets label_prep_type
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\LabelPrepType|null $label_prep_type label_prep_type
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\LabelPrepType|null $label_prep_type label_prep_type
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets box_contents_source
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\BoxContentsSource|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsSource|null
      */
     public function getBoxContentsSource()
     {
@@ -391,7 +391,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets box_contents_source
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\BoxContentsSource|null $box_contents_source box_contents_source
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsSource|null $box_contents_source box_contents_source
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets estimated_box_contents_fee
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\BoxContentsFeeDetails|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsFeeDetails|null
      */
     public function getEstimatedBoxContentsFee()
     {
@@ -414,7 +414,7 @@ class InboundShipmentInfo extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets estimated_box_contents_fee
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\BoxContentsFeeDetails|null $estimated_box_contents_fee estimated_box_contents_fee
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\BoxContentsFeeDetails|null $estimated_box_contents_fee estimated_box_contents_fee
      *
      * @return self
      */

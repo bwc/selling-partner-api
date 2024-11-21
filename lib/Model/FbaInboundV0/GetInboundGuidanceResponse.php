@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetInboundGuidanceResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getInboundGuidance operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetInboundGuidanceResponse extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\FbaInboundV0\GetInboundGuidanceResult',
-        'errors' => '\SellingPartnerApi\Model\FbaInboundV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\FbaInboundV0\GetInboundGuidanceResult',
+        'errors' => '\SellingPartnerApiV5\Model\FbaInboundV0\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetInboundGuidanceResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\GetInboundGuidanceResult|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\GetInboundGuidanceResult|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetInboundGuidanceResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\GetInboundGuidanceResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\GetInboundGuidanceResult|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetInboundGuidanceResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetInboundGuidanceResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

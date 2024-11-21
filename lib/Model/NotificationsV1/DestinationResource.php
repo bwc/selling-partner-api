@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DestinationResource Class Doc Comment
  *
  * @category Class
  * @description The destination resource types.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class DestinationResource extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sqs' => '\SellingPartnerApi\Model\NotificationsV1\SqsResource',
-        'event_bridge' => '\SellingPartnerApi\Model\NotificationsV1\EventBridgeResource'
+        'sqs' => '\SellingPartnerApiV5\Model\NotificationsV1\SqsResource',
+        'event_bridge' => '\SellingPartnerApiV5\Model\NotificationsV1\EventBridgeResource'
     ];
 
     /**
@@ -143,7 +143,7 @@ class DestinationResource extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets sqs
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\SqsResource|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\SqsResource|null
      */
     public function getSqs()
     {
@@ -153,7 +153,7 @@ class DestinationResource extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets sqs
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\SqsResource|null $sqs sqs
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\SqsResource|null $sqs sqs
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class DestinationResource extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets event_bridge
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\EventBridgeResource|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\EventBridgeResource|null
      */
     public function getEventBridge()
     {
@@ -176,7 +176,7 @@ class DestinationResource extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets event_bridge
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\EventBridgeResource|null $event_bridge event_bridge
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\EventBridgeResource|null $event_bridge event_bridge
      *
      * @return self
      */

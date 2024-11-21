@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInventoryV1;
+namespace SellingPartnerApiV5\Model\FbaInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetInventorySummariesResponse Class Doc Comment
  *
  * @category Class
  * @description The Response schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\FbaInventoryV1\GetInventorySummariesResult',
-        'pagination' => '\SellingPartnerApi\Model\FbaInventoryV1\Pagination',
-        'errors' => '\SellingPartnerApi\Model\FbaInventoryV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\FbaInventoryV1\GetInventorySummariesResult',
+        'pagination' => '\SellingPartnerApiV5\Model\FbaInventoryV1\Pagination',
+        'errors' => '\SellingPartnerApiV5\Model\FbaInventoryV1\Error[]'
     ];
 
     /**
@@ -174,7 +174,7 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\GetInventorySummariesResult|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\GetInventorySummariesResult|null
      */
     public function getPayload()
     {
@@ -184,7 +184,7 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\GetInventorySummariesResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\GetInventorySummariesResult|null $payload payload
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\Pagination|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\Pagination|null
      */
     public function getPagination()
     {
@@ -207,7 +207,7 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -220,7 +220,7 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\Error[]|null
      */
     public function getErrors()
     {
@@ -230,7 +230,7 @@ class GetInventorySummariesResponse extends BaseModel implements ModelInterface,
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

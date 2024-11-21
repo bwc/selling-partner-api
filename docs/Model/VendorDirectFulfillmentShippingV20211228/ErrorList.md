@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**errors** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Error[]**](Error.md) |  |
+**errors** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Error[]**](Error.md) |  |
 
 [[VendorDirectFulfillmentShippingV20211228 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

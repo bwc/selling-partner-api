@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItemStatusReceivingStatus Class Doc Comment
  *
  * @category Class
  * @description Item receive status at the buyer's warehouse.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class OrderItemStatusReceivingStatus extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'receive_status' => 'string',
-        'received_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
+        'received_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
         'last_receive_date' => 'string'
     ];
 
@@ -218,7 +218,7 @@ class OrderItemStatusReceivingStatus extends BaseModel implements ModelInterface
     /**
      * Gets received_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null
      */
     public function getReceivedQuantity()
     {
@@ -228,7 +228,7 @@ class OrderItemStatusReceivingStatus extends BaseModel implements ModelInterface
     /**
      * Sets received_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null $received_quantity received_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null $received_quantity received_quantity
      *
      * @return self
      */

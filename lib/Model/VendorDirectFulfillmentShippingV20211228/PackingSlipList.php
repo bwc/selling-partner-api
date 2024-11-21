@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackingSlipList Class Doc Comment
  *
  * @category Class
  * @description A list of packing slips.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PackingSlipList extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Pagination',
-        'packing_slips' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip[]'
+        'pagination' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Pagination',
+        'packing_slips' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class PackingSlipList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null
      */
     public function getPagination()
     {
@@ -178,7 +178,7 @@ class PackingSlipList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class PackingSlipList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets packing_slips
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip[]|null
      */
     public function getPackingSlips()
     {
@@ -201,7 +201,7 @@ class PackingSlipList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets packing_slips
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip[]|null $packing_slips packing_slips
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip[]|null $packing_slips packing_slips
      *
      * @return self
      */

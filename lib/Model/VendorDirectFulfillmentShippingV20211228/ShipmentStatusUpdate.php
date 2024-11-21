@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentStatusUpdate Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
-        'status_update_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\StatusUpdateDetails'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
+        'status_update_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\StatusUpdateDetails'
     ];
 
     /**
@@ -198,7 +198,7 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -208,7 +208,7 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -221,7 +221,7 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -231,7 +231,7 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -244,7 +244,7 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets status_update_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\StatusUpdateDetails
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\StatusUpdateDetails
      */
     public function getStatusUpdateDetails()
     {
@@ -254,7 +254,7 @@ class ShipmentStatusUpdate extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets status_update_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\StatusUpdateDetails $status_update_details status_update_details
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\StatusUpdateDetails $status_update_details status_update_details
      *
      * @return self
      */

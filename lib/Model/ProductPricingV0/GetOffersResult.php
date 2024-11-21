@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetOffersResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,11 +60,11 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
         'marketplace_id' => 'string',
         'asin' => 'string',
         'sku' => 'string',
-        'item_condition' => '\SellingPartnerApi\Model\ProductPricingV0\ConditionType',
+        'item_condition' => '\SellingPartnerApiV5\Model\ProductPricingV0\ConditionType',
         'status' => 'string',
-        'identifier' => '\SellingPartnerApi\Model\ProductPricingV0\ItemIdentifier',
-        'summary' => '\SellingPartnerApi\Model\ProductPricingV0\Summary',
-        'offers' => '\SellingPartnerApi\Model\ProductPricingV0\OfferDetail[]'
+        'identifier' => '\SellingPartnerApiV5\Model\ProductPricingV0\ItemIdentifier',
+        'summary' => '\SellingPartnerApiV5\Model\ProductPricingV0\Summary',
+        'offers' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferDetail[]'
     ];
 
     /**
@@ -269,7 +269,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets item_condition
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ConditionType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ConditionType
      */
     public function getItemCondition()
     {
@@ -279,7 +279,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets item_condition
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ConditionType $item_condition item_condition
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ConditionType $item_condition item_condition
      *
      * @return self
      */
@@ -315,7 +315,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets identifier
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ItemIdentifier
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ItemIdentifier
      */
     public function getIdentifier()
     {
@@ -325,7 +325,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets identifier
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ItemIdentifier $identifier identifier
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ItemIdentifier $identifier identifier
      *
      * @return self
      */
@@ -338,7 +338,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets summary
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Summary
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Summary
      */
     public function getSummary()
     {
@@ -348,7 +348,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets summary
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Summary $summary summary
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Summary $summary summary
      *
      * @return self
      */
@@ -361,7 +361,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets offers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferDetail[]
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferDetail[]
      */
     public function getOffers()
     {
@@ -371,7 +371,7 @@ class GetOffersResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets offers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferDetail[] $offers offers
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferDetail[] $offers offers
      *
      * @return self
      */

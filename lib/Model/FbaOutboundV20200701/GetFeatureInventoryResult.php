@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFeatureInventoryResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the getEligibileInventory operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class GetFeatureInventoryResult extends BaseModel implements ModelInterface, Arr
         'marketplace_id' => 'string',
         'feature_name' => 'string',
         'next_token' => 'string',
-        'feature_skus' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSku[]'
+        'feature_skus' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSku[]'
     ];
 
     /**
@@ -230,7 +230,7 @@ class GetFeatureInventoryResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets feature_skus
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSku[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSku[]|null
      */
     public function getFeatureSkus()
     {
@@ -240,7 +240,7 @@ class GetFeatureInventoryResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets feature_skus
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSku[]|null $feature_skus An array of SKUs eligible for this feature and the quantity available.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSku[]|null $feature_skus An array of SKUs eligible for this feature and the quantity available.
      *
      * @return self
      */

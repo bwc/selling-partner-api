@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InvoiceItem Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,13 +60,13 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'invoiced_quantity' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\ItemQuantity',
-        'net_cost' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Money',
+        'invoiced_quantity' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\ItemQuantity',
+        'net_cost' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Money',
         'purchase_order_number' => 'string',
         'vendor_order_number' => 'string',
         'hsn_code' => 'string',
-        'tax_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]',
-        'charge_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\ChargeDetails[]'
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]',
+        'charge_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\ChargeDetails[]'
     ];
 
     /**
@@ -271,7 +271,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets invoiced_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\ItemQuantity
      */
     public function getInvoicedQuantity()
     {
@@ -281,7 +281,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets invoiced_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\ItemQuantity $invoiced_quantity invoiced_quantity
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\ItemQuantity $invoiced_quantity invoiced_quantity
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets net_cost
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Money
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Money
      */
     public function getNetCost()
     {
@@ -304,7 +304,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets net_cost
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Money $net_cost net_cost
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Money $net_cost net_cost
      *
      * @return self
      */
@@ -386,7 +386,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null
      */
     public function getTaxDetails()
     {
@@ -396,7 +396,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null $tax_details Individual tax details per line item.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null $tax_details Individual tax details per line item.
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets charge_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\ChargeDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\ChargeDetails[]|null
      */
     public function getChargeDetails()
     {
@@ -419,7 +419,7 @@ class InvoiceItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets charge_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\ChargeDetails[]|null $charge_details Individual charge details per line item.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\ChargeDetails[]|null $charge_details Individual charge details per line item.
      *
      * @return self
      */

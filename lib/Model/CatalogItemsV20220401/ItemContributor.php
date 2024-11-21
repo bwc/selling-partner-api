@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemContributor Class Doc Comment
  *
  * @category Class
  * @description Individual contributor to the creation of an item, such as an author or actor.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ItemContributor extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'role' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemContributorRole',
+        'role' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemContributorRole',
         'value' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class ItemContributor extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets role
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemContributorRole
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemContributorRole
      */
     public function getRole()
     {
@@ -159,7 +159,7 @@ class ItemContributor extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets role
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemContributorRole $role role
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemContributorRole $role role
      *
      * @return self
      */

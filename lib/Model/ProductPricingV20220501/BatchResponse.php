@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BatchResponse Class Doc Comment
  *
  * @category Class
  * @description The common properties for responses to individual requests within a batch.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class BatchResponse extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'headers' => 'map[string,string]',
-        'status' => '\SellingPartnerApi\Model\ProductPricingV20220501\HttpStatusLine'
+        'status' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\HttpStatusLine'
     ];
 
     /**
@@ -172,7 +172,7 @@ class BatchResponse extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\HttpStatusLine
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\HttpStatusLine
      */
     public function getStatus()
     {
@@ -182,7 +182,7 @@ class BatchResponse extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\HttpStatusLine $status status
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\HttpStatusLine $status status
      *
      * @return self
      */

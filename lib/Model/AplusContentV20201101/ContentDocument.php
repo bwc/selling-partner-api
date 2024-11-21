@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContentDocument Class Doc Comment
  *
  * @category Class
  * @description The A+ Content document. This is the enhanced content that is published to product detail pages.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,10 +59,10 @@ class ContentDocument extends BaseModel implements ModelInterface, ArrayAccess, 
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'content_type' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentType',
+        'content_type' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentType',
         'content_sub_type' => 'string',
         'locale' => 'string',
-        'content_module_list' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentModule[]'
+        'content_module_list' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentModule[]'
     ];
 
     /**
@@ -223,7 +223,7 @@ class ContentDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets content_type
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentType
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentType
      */
     public function getContentType()
     {
@@ -233,7 +233,7 @@ class ContentDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets content_type
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentType $content_type content_type
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentType $content_type content_type
      *
      * @return self
      */
@@ -297,7 +297,7 @@ class ContentDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets content_module_list
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentModule[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentModule[]
      */
     public function getContentModuleList()
     {
@@ -307,7 +307,7 @@ class ContentDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets content_module_list
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentModule[] $content_module_list A list of A+ Content modules.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentModule[] $content_module_list A list of A+ Content modules.
      *
      * @return self
      */

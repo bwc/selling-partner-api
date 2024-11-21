@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderAddress Class Doc Comment
  *
  * @category Class
  * @description The shipping address for the order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class OrderAddress extends BaseModel implements ModelInterface, ArrayAccess, \Js
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
         'buyer_company_name' => 'string',
-        'shipping_address' => '\SellingPartnerApi\Model\OrdersV0\Address',
-        'delivery_preferences' => '\SellingPartnerApi\Model\OrdersV0\DeliveryPreferences'
+        'shipping_address' => '\SellingPartnerApiV5\Model\OrdersV0\Address',
+        'delivery_preferences' => '\SellingPartnerApiV5\Model\OrdersV0\DeliveryPreferences'
     ];
 
     /**
@@ -204,7 +204,7 @@ class OrderAddress extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets shipping_address
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Address|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Address|null
      */
     public function getShippingAddress()
     {
@@ -214,7 +214,7 @@ class OrderAddress extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets shipping_address
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Address|null $shipping_address shipping_address
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Address|null $shipping_address shipping_address
      *
      * @return self
      */
@@ -227,7 +227,7 @@ class OrderAddress extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets delivery_preferences
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\DeliveryPreferences|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\DeliveryPreferences|null
      */
     public function getDeliveryPreferences()
     {
@@ -237,7 +237,7 @@ class OrderAddress extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets delivery_preferences
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\DeliveryPreferences|null $delivery_preferences delivery_preferences
+     * @param \SellingPartnerApiV5\Model\OrdersV0\DeliveryPreferences|null $delivery_preferences delivery_preferences
      *
      * @return self
      */

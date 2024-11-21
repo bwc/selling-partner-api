@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemIdentifier Class Doc Comment
  *
  * @category Class
  * @description Information that identifies an item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class ItemIdentifier extends BaseModel implements ModelInterface, ArrayAccess, \
         'marketplace_id' => 'string',
         'asin' => 'string',
         'seller_sku' => 'string',
-        'item_condition' => '\SellingPartnerApi\Model\ProductPricingV0\ConditionType'
+        'item_condition' => '\SellingPartnerApiV5\Model\ProductPricingV0\ConditionType'
     ];
 
     /**
@@ -230,7 +230,7 @@ class ItemIdentifier extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets item_condition
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ConditionType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ConditionType
      */
     public function getItemCondition()
     {
@@ -240,7 +240,7 @@ class ItemIdentifier extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets item_condition
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ConditionType $item_condition item_condition
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ConditionType $item_condition item_condition
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackageDetails Class Doc Comment
  *
  * @category Class
  * @description Package details. Includes `packageItems`, `packageTimeSlot`, and `packageIdentifier`.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PackageDetails extends BaseModel implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'package_items' => '\SellingPartnerApi\Model\EasyShipV20220323\Item[]',
-        'package_time_slot' => '\SellingPartnerApi\Model\EasyShipV20220323\TimeSlot',
+        'package_items' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Item[]',
+        'package_time_slot' => '\SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot',
         'package_identifier' => 'string'
     ];
 
@@ -156,7 +156,7 @@ class PackageDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets package_items
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Item[]|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Item[]|null
      */
     public function getPackageItems()
     {
@@ -166,7 +166,7 @@ class PackageDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets package_items
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Item[]|null $package_items A list of items contained in the package.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Item[]|null $package_items A list of items contained in the package.
      *
      * @return self
      */
@@ -183,7 +183,7 @@ class PackageDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets package_time_slot
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot
      */
     public function getPackageTimeSlot()
     {
@@ -193,7 +193,7 @@ class PackageDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets package_time_slot
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot $package_time_slot package_time_slot
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot $package_time_slot package_time_slot
      *
      * @return self
      */

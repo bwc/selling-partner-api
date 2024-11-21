@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Amount Class Doc Comment
  *
  * @category Class
  * @description The monetary value.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class Amount extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'currency_code' => '\SellingPartnerApi\Model\FbaInboundV0\CurrencyCode',
+        'currency_code' => '\SellingPartnerApiV5\Model\FbaInboundV0\CurrencyCode',
         'value' => 'double'
     ];
 
@@ -149,7 +149,7 @@ class Amount extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets currency_code
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\CurrencyCode
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\CurrencyCode
      */
     public function getCurrencyCode()
     {
@@ -159,7 +159,7 @@ class Amount extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets currency_code
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\CurrencyCode $currency_code currency_code
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\CurrencyCode $currency_code currency_code
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AdditionalInputs Class Doc Comment
  *
  * @category Class
  * @description Maps the additional seller input to the definition. The key to the map is the field name.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class AdditionalInputs extends BaseModel implements ModelInterface, ArrayAccess,
       */
     protected static $openAPITypes = [
         'additional_input_field_name' => 'string',
-        'seller_input_definition' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\SellerInputDefinition'
+        'seller_input_definition' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\SellerInputDefinition'
     ];
 
     /**
@@ -166,7 +166,7 @@ class AdditionalInputs extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets seller_input_definition
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\SellerInputDefinition|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\SellerInputDefinition|null
      */
     public function getSellerInputDefinition()
     {
@@ -176,7 +176,7 @@ class AdditionalInputs extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets seller_input_definition
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\SellerInputDefinition|null $seller_input_definition seller_input_definition
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\SellerInputDefinition|null $seller_input_definition seller_input_definition
      *
      * @return self
      */

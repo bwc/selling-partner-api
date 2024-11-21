@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TaxWithheldComponent Class Doc Comment
  *
  * @category Class
  * @description Information about the taxes withheld.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class TaxWithheldComponent extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'tax_collection_model' => 'string',
-        'taxes_withheld' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]'
+        'taxes_withheld' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]'
     ];
 
     /**
@@ -169,7 +169,7 @@ class TaxWithheldComponent extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets taxes_withheld
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getTaxesWithheld()
     {
@@ -179,7 +179,7 @@ class TaxWithheldComponent extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets taxes_withheld
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $taxes_withheld A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $taxes_withheld A list of charge information on the seller's account.
      *
      * @return self
      */

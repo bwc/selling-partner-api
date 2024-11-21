@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * LabelCustomization Class Doc Comment
  *
  * @category Class
  * @description Custom text for shipping labels.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class LabelCustomization extends BaseModel implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'custom_text_for_label' => 'string',
-        'standard_id_for_label' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\StandardIdForLabel'
+        'standard_id_for_label' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\StandardIdForLabel'
     ];
 
     /**
@@ -166,7 +166,7 @@ class LabelCustomization extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets standard_id_for_label
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\StandardIdForLabel|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\StandardIdForLabel|null
      */
     public function getStandardIdForLabel()
     {
@@ -176,7 +176,7 @@ class LabelCustomization extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets standard_id_for_label
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\StandardIdForLabel|null $standard_id_for_label standard_id_for_label
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\StandardIdForLabel|null $standard_id_for_label standard_id_for_label
      *
      * @return self
      */

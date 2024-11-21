@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderedQuantityDetails Class Doc Comment
  *
  * @category Class
  * @description Details of item quantity ordered
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class OrderedQuantityDetails extends BaseModel implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'updated_date' => 'string',
-        'ordered_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
-        'cancelled_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity'
+        'ordered_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
+        'cancelled_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity'
     ];
 
     /**
@@ -172,7 +172,7 @@ class OrderedQuantityDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets ordered_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null
      */
     public function getOrderedQuantity()
     {
@@ -182,7 +182,7 @@ class OrderedQuantityDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets ordered_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null $ordered_quantity ordered_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null $ordered_quantity ordered_quantity
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class OrderedQuantityDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets cancelled_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null
      */
     public function getCancelledQuantity()
     {
@@ -205,7 +205,7 @@ class OrderedQuantityDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets cancelled_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null $cancelled_quantity cancelled_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null $cancelled_quantity cancelled_quantity
      *
      * @return self
      */

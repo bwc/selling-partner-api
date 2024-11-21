@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ImportDetails Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class ImportDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     protected static $openAPITypes = [
         'method_of_payment' => 'string',
         'seal_number' => 'string',
-        'route' => '\SellingPartnerApi\Model\VendorShippingV1\Route',
+        'route' => '\SellingPartnerApiV5\Model\VendorShippingV1\Route',
         'import_containers' => 'string',
-        'billable_weight' => '\SellingPartnerApi\Model\VendorShippingV1\Weight',
+        'billable_weight' => '\SellingPartnerApiV5\Model\VendorShippingV1\Weight',
         'estimated_ship_by_date' => 'string',
         'handling_instructions' => 'string'
     ];
@@ -312,7 +312,7 @@ class ImportDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets route
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Route|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Route|null
      */
     public function getRoute()
     {
@@ -322,7 +322,7 @@ class ImportDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets route
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Route|null $route route
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Route|null $route route
      *
      * @return self
      */
@@ -362,7 +362,7 @@ class ImportDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets billable_weight
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null
      */
     public function getBillableWeight()
     {
@@ -372,7 +372,7 @@ class ImportDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets billable_weight
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Weight|null $billable_weight billable_weight
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null $billable_weight billable_weight
      *
      * @return self
      */

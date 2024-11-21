@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderAcknowledgementItem Class Doc Comment
  *
  * @category Class
  * @description Details of an individual order being acknowledged.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,10 +61,10 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
         'purchase_order_number' => 'string',
         'vendor_order_number' => 'string',
         'acknowledgement_date' => 'string',
-        'acknowledgement_status' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\AcknowledgementStatus',
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification',
-        'item_acknowledgements' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderItemAcknowledgement[]'
+        'acknowledgement_status' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\AcknowledgementStatus',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification',
+        'item_acknowledgements' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderItemAcknowledgement[]'
     ];
 
     /**
@@ -263,7 +263,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets acknowledgement_status
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\AcknowledgementStatus
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\AcknowledgementStatus
      */
     public function getAcknowledgementStatus()
     {
@@ -273,7 +273,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets acknowledgement_status
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\AcknowledgementStatus $acknowledgement_status acknowledgement_status
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\AcknowledgementStatus $acknowledgement_status acknowledgement_status
      *
      * @return self
      */
@@ -286,7 +286,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -296,7 +296,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -309,7 +309,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -319,7 +319,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets item_acknowledgements
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderItemAcknowledgement[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderItemAcknowledgement[]
      */
     public function getItemAcknowledgements()
     {
@@ -342,7 +342,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets item_acknowledgements
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderItemAcknowledgement[] $item_acknowledgements Item details including acknowledged quantity.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderItemAcknowledgement[] $item_acknowledgements Item details including acknowledged quantity.
      *
      * @return self
      */

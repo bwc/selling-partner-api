@@ -1,12 +1,12 @@
 <?php
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\RequestOptions;
-use SellingPartnerApi\Configuration;
-use SellingPartnerApi\HeaderSelector;
+use SellingPartnerApiV5\Configuration;
+use SellingPartnerApiV5\HeaderSelector;
 
 abstract class BaseApi
 {
@@ -41,7 +41,7 @@ abstract class BaseApi
     }
 
     /**
-     * @return SellingPartnerApi\Configuration
+     * @return SellingPartnerApiV5\Configuration
      */
     public function getConfig()
     {
@@ -49,7 +49,7 @@ abstract class BaseApi
     }
 
     /**
-     * @param SellingPartnerApi\Configuration $config
+     * @param SellingPartnerApiV5\Configuration $config
      * @return $this
      */
     public function setConfig(Configuration $config)

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DimensionType Class Doc Comment
  *
  * @category Class
  * @description The dimension type attribute of an item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'height' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'length' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'width' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'weight' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits'
+        'height' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'length' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'width' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'weight' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits'
     ];
 
     /**
@@ -155,7 +155,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets height
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getHeight()
     {
@@ -165,7 +165,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets height
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $height height
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $height height
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets length
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getLength()
     {
@@ -188,7 +188,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets length
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $length length
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $length length
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets width
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getWidth()
     {
@@ -211,7 +211,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets width
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $width width
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $width width
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getWeight()
     {
@@ -234,7 +234,7 @@ class DimensionType extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $weight weight
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $weight weight
      *
      * @return self
      */

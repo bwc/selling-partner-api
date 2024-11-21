@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * LabelResult Class Doc Comment
  *
  * @category Class
  * @description Label details including label stream, format, size.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class LabelResult extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'container_reference_id' => 'string',
         'tracking_id' => 'string',
-        'label' => '\SellingPartnerApi\Model\ShippingV1\Label'
+        'label' => '\SellingPartnerApiV5\Model\ShippingV1\Label'
     ];
 
     /**
@@ -203,7 +203,7 @@ class LabelResult extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets label
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Label|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Label|null
      */
     public function getLabel()
     {
@@ -213,7 +213,7 @@ class LabelResult extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets label
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Label|null $label label
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Label|null $label label
      *
      * @return self
      */

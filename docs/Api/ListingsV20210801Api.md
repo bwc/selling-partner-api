@@ -1,4 +1,4 @@
-# SellingPartnerApi\ListingsV20210801Api
+# SellingPartnerApiV5\ListingsV20210801Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `deleteListingsItem()`
 
 ```php
-deleteListingsItem($seller_id, $sku, $marketplace_ids, $issue_locale): \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse
+deleteListingsItem($seller_id, $sku, $marketplace_ids, $issue_locale): \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse
 ```
 
 
@@ -35,16 +35,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ListingsV20210801Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ListingsV20210801Api($config);
 $seller_id = 'seller_id_example'; // string | A selling partner identifier, such as a merchant account or vendor code.
 $sku = 'sku_example'; // string | A selling partner provided identifier for an Amazon listing.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse**](../Model/ListingsV20210801/ListingsItemSubmissionResponse.md)
+[**\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse**](../Model/ListingsV20210801/ListingsItemSubmissionResponse.md)
 
 ### HTTP request headers
 
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 ## `getListingsItem()`
 
 ```php
-getListingsItem($seller_id, $sku, $marketplace_ids, $issue_locale, $included_data): \SellingPartnerApi\Model\ListingsV20210801\Item
+getListingsItem($seller_id, $sku, $marketplace_ids, $issue_locale, $included_data): \SellingPartnerApiV5\Model\ListingsV20210801\Item
 ```
 
 
@@ -107,16 +107,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ListingsV20210801Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ListingsV20210801Api($config);
 $seller_id = 'seller_id_example'; // string | A selling partner identifier, such as a merchant account or vendor code.
 $sku = 'sku_example'; // string | A selling partner provided identifier for an Amazon listing.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ListingsV20210801\Item**](../Model/ListingsV20210801/Item.md)
+[**\SellingPartnerApiV5\Model\ListingsV20210801\Item**](../Model/ListingsV20210801/Item.md)
 
 ### HTTP request headers
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 ## `patchListingsItem()`
 
 ```php
-patchListingsItem($seller_id, $sku, $marketplace_ids, $body, $issue_locale): \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse
+patchListingsItem($seller_id, $sku, $marketplace_ids, $body, $issue_locale): \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse
 ```
 
 
@@ -181,20 +181,20 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ListingsV20210801Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ListingsV20210801Api($config);
 $seller_id = 'seller_id_example'; // string | A selling partner identifier, such as a merchant account or vendor code.
 $sku = 'sku_example'; // string | A selling partner provided identifier for an Amazon listing.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
-$body = new \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest(); // \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest | The request body schema for the patchListingsItem operation.
+$body = new \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest(); // \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest | The request body schema for the patchListingsItem operation.
 $issue_locale = en_US; // string | A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale.
 
 try {
@@ -212,12 +212,12 @@ Name | Type | Description  | Notes
  **seller_id** | **string**| A selling partner identifier, such as a merchant account or vendor code. |
  **sku** | **string**| A selling partner provided identifier for an Amazon listing. |
  **marketplace_ids** | [**string[]**](../Model/ListingsV20210801/string.md)| A comma-delimited list of Amazon marketplace identifiers for the request. |
- **body** | [**\SellingPartnerApi\Model\ListingsV20210801\ListingsItemPatchRequest**](../Model/ListingsV20210801/ListingsItemPatchRequest.md)| The request body schema for the patchListingsItem operation. |
+ **body** | [**\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPatchRequest**](../Model/ListingsV20210801/ListingsItemPatchRequest.md)| The request body schema for the patchListingsItem operation. |
  **issue_locale** | **string**| A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse**](../Model/ListingsV20210801/ListingsItemSubmissionResponse.md)
+[**\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse**](../Model/ListingsV20210801/ListingsItemSubmissionResponse.md)
 
 ### HTTP request headers
 
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 ## `putListingsItem()`
 
 ```php
-putListingsItem($seller_id, $sku, $marketplace_ids, $body, $issue_locale): \SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse
+putListingsItem($seller_id, $sku, $marketplace_ids, $body, $issue_locale): \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse
 ```
 
 
@@ -255,20 +255,20 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ListingsV20210801Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ListingsV20210801Api($config);
 $seller_id = 'seller_id_example'; // string | A selling partner identifier, such as a merchant account or vendor code.
 $sku = 'sku_example'; // string | A selling partner provided identifier for an Amazon listing.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
-$body = new \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest(); // \SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest | The request body schema for the putListingsItem operation.
+$body = new \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest(); // \SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest | The request body schema for the putListingsItem operation.
 $issue_locale = en_US; // string | A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale.
 
 try {
@@ -286,12 +286,12 @@ Name | Type | Description  | Notes
  **seller_id** | **string**| A selling partner identifier, such as a merchant account or vendor code. |
  **sku** | **string**| A selling partner provided identifier for an Amazon listing. |
  **marketplace_ids** | [**string[]**](../Model/ListingsV20210801/string.md)| A comma-delimited list of Amazon marketplace identifiers for the request. |
- **body** | [**\SellingPartnerApi\Model\ListingsV20210801\ListingsItemPutRequest**](../Model/ListingsV20210801/ListingsItemPutRequest.md)| The request body schema for the putListingsItem operation. |
+ **body** | [**\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemPutRequest**](../Model/ListingsV20210801/ListingsItemPutRequest.md)| The request body schema for the putListingsItem operation. |
  **issue_locale** | **string**| A locale for localization of issues. When not provided, the default language code of the first marketplace is used. Examples: \"en_US\", \"fr_CA\", \"fr_FR\". Localized messages default to \"en_US\" when a localization is not available in the specified locale. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ListingsV20210801\ListingsItemSubmissionResponse**](../Model/ListingsV20210801/ListingsItemSubmissionResponse.md)
+[**\SellingPartnerApiV5\Model\ListingsV20210801\ListingsItemSubmissionResponse**](../Model/ListingsV20210801/ListingsItemSubmissionResponse.md)
 
 ### HTTP request headers
 

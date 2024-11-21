@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **next30_day_shipped_subscription_units** | **float** | The forecasted shipped subscription units for the next 30 days. Applicable only for the FORECAST timePeriodType. | [optional]
 **next60_day_shipped_subscription_units** | **float** | The forecasted shipped subscription units for the next 60 days. Applicable only for the FORECAST timePeriodType. | [optional]
 **next90_day_shipped_subscription_units** | **float** | The forecasted shipped subscription units for the next 90 days. Applicable only for the FORECAST timePeriodType. | [optional]
-**time_interval** | [**\SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval**](TimeInterval.md) |  | [optional]
+**time_interval** | [**\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval**](TimeInterval.md) |  | [optional]
 **currency_code** | **string** | The currency code in ISO 4217 format. | [optional]
 
 [[ReplenishmentV20221107 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

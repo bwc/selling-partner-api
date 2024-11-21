@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PublishRecord Class Doc Comment
  *
  * @category Class
  * @description The full context for an A+ Content publishing event.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class PublishRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
         'marketplace_id' => 'string',
         'locale' => 'string',
         'asin' => 'string',
-        'content_type' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentType',
+        'content_type' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentType',
         'content_sub_type' => 'string',
         'content_reference_key' => 'string'
     ];
@@ -273,7 +273,7 @@ class PublishRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets content_type
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentType
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentType
      */
     public function getContentType()
     {
@@ -283,7 +283,7 @@ class PublishRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets content_type
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentType $content_type content_type
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentType $content_type content_type
      *
      * @return self
      */

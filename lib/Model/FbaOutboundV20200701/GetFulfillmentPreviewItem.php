@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFulfillmentPreviewItem Class Doc Comment
  *
  * @category Class
  * @description Item information for a fulfillment order preview.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class GetFulfillmentPreviewItem extends BaseModel implements ModelInterface, Arr
     protected static $openAPITypes = [
         'seller_sku' => 'string',
         'quantity' => 'int',
-        'per_unit_declared_value' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money',
+        'per_unit_declared_value' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money',
         'seller_fulfillment_order_item_id' => 'string'
     ];
 
@@ -222,7 +222,7 @@ class GetFulfillmentPreviewItem extends BaseModel implements ModelInterface, Arr
     /**
      * Gets per_unit_declared_value
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getPerUnitDeclaredValue()
     {
@@ -232,7 +232,7 @@ class GetFulfillmentPreviewItem extends BaseModel implements ModelInterface, Arr
     /**
      * Sets per_unit_declared_value
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $per_unit_declared_value per_unit_declared_value
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $per_unit_declared_value per_unit_declared_value
      *
      * @return self
      */

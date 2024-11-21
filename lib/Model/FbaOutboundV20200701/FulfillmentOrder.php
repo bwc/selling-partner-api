@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FulfillmentOrder Class Doc Comment
  *
  * @category Class
  * @description General information about a fulfillment order, including its status.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,17 +63,17 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
         'displayable_order_id' => 'string',
         'displayable_order_date' => 'string',
         'displayable_order_comment' => 'string',
-        'shipping_speed_category' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory',
-        'delivery_window' => '\SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow',
-        'destination_address' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Address',
-        'fulfillment_action' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction',
-        'fulfillment_policy' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy',
-        'cod_settings' => '\SellingPartnerApi\Model\FbaOutboundV20200701\CODSettings',
+        'shipping_speed_category' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory',
+        'delivery_window' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow',
+        'destination_address' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Address',
+        'fulfillment_action' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction',
+        'fulfillment_policy' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy',
+        'cod_settings' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CODSettings',
         'received_date' => 'string',
-        'fulfillment_order_status' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderStatus',
+        'fulfillment_order_status' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderStatus',
         'status_updated_date' => 'string',
         'notification_emails' => 'string[]',
-        'feature_constraints' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]'
+        'feature_constraints' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]'
     ];
 
     /**
@@ -372,7 +372,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets shipping_speed_category
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory
      */
     public function getShippingSpeedCategory()
     {
@@ -382,7 +382,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets shipping_speed_category
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets delivery_window
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow|null
      */
     public function getDeliveryWindow()
     {
@@ -405,7 +405,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets delivery_window
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow|null $delivery_window delivery_window
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow|null $delivery_window delivery_window
      *
      * @return self
      */
@@ -418,7 +418,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets destination_address
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Address
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address
      */
     public function getDestinationAddress()
     {
@@ -428,7 +428,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets destination_address
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Address $destination_address destination_address
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address $destination_address destination_address
      *
      * @return self
      */
@@ -441,7 +441,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets fulfillment_action
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction|null
      */
     public function getFulfillmentAction()
     {
@@ -451,7 +451,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets fulfillment_action
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction|null $fulfillment_action fulfillment_action
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction|null $fulfillment_action fulfillment_action
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets fulfillment_policy
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy|null
      */
     public function getFulfillmentPolicy()
     {
@@ -474,7 +474,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets fulfillment_policy
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy|null $fulfillment_policy fulfillment_policy
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy|null $fulfillment_policy fulfillment_policy
      *
      * @return self
      */
@@ -487,7 +487,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets cod_settings
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CODSettings|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CODSettings|null
      */
     public function getCodSettings()
     {
@@ -497,7 +497,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets cod_settings
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\CODSettings|null $cod_settings cod_settings
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\CODSettings|null $cod_settings cod_settings
      *
      * @return self
      */
@@ -533,7 +533,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets fulfillment_order_status
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderStatus
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderStatus
      */
     public function getFulfillmentOrderStatus()
     {
@@ -543,7 +543,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets fulfillment_order_status
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderStatus $fulfillment_order_status fulfillment_order_status
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderStatus $fulfillment_order_status fulfillment_order_status
      *
      * @return self
      */
@@ -602,7 +602,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets feature_constraints
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null
      */
     public function getFeatureConstraints()
     {
@@ -612,7 +612,7 @@ class FulfillmentOrder extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets feature_constraints
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
      *
      * @return self
      */

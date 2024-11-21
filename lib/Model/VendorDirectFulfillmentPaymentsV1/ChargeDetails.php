@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ChargeDetails Class Doc Comment
  *
  * @category Class
  * @description Monetary and tax details of the charge.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'charge_amount' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Money',
-        'tax_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]'
+        'charge_amount' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Money',
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]'
     ];
 
     /**
@@ -232,7 +232,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets charge_amount
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Money
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Money
      */
     public function getChargeAmount()
     {
@@ -242,7 +242,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets charge_amount
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Money $charge_amount charge_amount
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Money $charge_amount charge_amount
      *
      * @return self
      */
@@ -255,7 +255,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null
      */
     public function getTaxDetails()
     {
@@ -265,7 +265,7 @@ class ChargeDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null $tax_details Individual tax details per line item.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TaxDetail[]|null $tax_details Individual tax details per line item.
      *
      * @return self
      */

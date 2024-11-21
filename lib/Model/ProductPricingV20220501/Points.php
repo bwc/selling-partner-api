@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Points Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class Points extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'points_number' => 'int',
-        'points_monetary_value' => '\SellingPartnerApi\Model\ProductPricingV20220501\MoneyType'
+        'points_monetary_value' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType'
     ];
 
     /**
@@ -165,7 +165,7 @@ class Points extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets points_monetary_value
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType|null
      */
     public function getPointsMonetaryValue()
     {
@@ -175,7 +175,7 @@ class Points extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets points_monetary_value
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\MoneyType|null $points_monetary_value points_monetary_value
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\MoneyType|null $points_monetary_value points_monetary_value
      *
      * @return self
      */

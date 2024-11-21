@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSellingPartnerMetricsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the `getSellingPartnerMetrics` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetSellingPartnerMetricsResponse extends BaseModel implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'metrics' => '\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponseMetric[]'
+        'metrics' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponseMetric[]'
     ];
 
     /**
@@ -162,7 +162,7 @@ class GetSellingPartnerMetricsResponse extends BaseModel implements ModelInterfa
     /**
      * Gets metrics
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponseMetric[]|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponseMetric[]|null
      */
     public function getMetrics()
     {
@@ -172,7 +172,7 @@ class GetSellingPartnerMetricsResponse extends BaseModel implements ModelInterfa
     /**
      * Sets metrics
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponseMetric[]|null $metrics A list of metrics data for the selling partner.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponseMetric[]|null $metrics A list of metrics data for the selling partner.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SmallAndLightV1;
+namespace SellingPartnerApiV5\Model\SmallAndLightV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeePreview Class Doc Comment
  *
  * @category Class
  * @description The fee estimate for a specific item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,10 +59,10 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'asin' => 'string',
-        'price' => '\SellingPartnerApi\Model\SmallAndLightV1\MoneyType',
-        'fee_breakdown' => '\SellingPartnerApi\Model\SmallAndLightV1\FeeLineItem[]',
-        'total_fees' => '\SellingPartnerApi\Model\SmallAndLightV1\MoneyType',
-        'errors' => '\SellingPartnerApi\Model\SmallAndLightV1\Error[]'
+        'price' => '\SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType',
+        'fee_breakdown' => '\SellingPartnerApiV5\Model\SmallAndLightV1\FeeLineItem[]',
+        'total_fees' => '\SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType',
+        'errors' => '\SellingPartnerApiV5\Model\SmallAndLightV1\Error[]'
     ];
 
     /**
@@ -184,7 +184,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets price
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType|null
      */
     public function getPrice()
     {
@@ -194,7 +194,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets price
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\MoneyType|null $price price
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType|null $price price
      *
      * @return self
      */
@@ -207,7 +207,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets fee_breakdown
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\FeeLineItem[]|null
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\FeeLineItem[]|null
      */
     public function getFeeBreakdown()
     {
@@ -217,7 +217,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets fee_breakdown
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\FeeLineItem[]|null $fee_breakdown A list of the Small and Light fees for the item.
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\FeeLineItem[]|null $fee_breakdown A list of the Small and Light fees for the item.
      *
      * @return self
      */
@@ -230,7 +230,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets total_fees
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType|null
      */
     public function getTotalFees()
     {
@@ -240,7 +240,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets total_fees
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\MoneyType|null $total_fees total_fees
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType|null $total_fees total_fees
      *
      * @return self
      */
@@ -253,7 +253,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\Error[]|null
      */
     public function getErrors()
     {
@@ -263,7 +263,7 @@ class FeePreview extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\Error[]|null $errors One or more unexpected errors occurred during the getSmallAndLightFeePreview operation.
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\Error[]|null $errors One or more unexpected errors occurred during the getSmallAndLightFeePreview operation.
      *
      * @return self
      */

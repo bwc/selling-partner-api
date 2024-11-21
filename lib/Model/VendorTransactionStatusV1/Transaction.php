@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorTransactionStatusV1;
+namespace SellingPartnerApiV5\Model\VendorTransactionStatusV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Transaction Class Doc Comment
  *
  * @category Class
  * @description The transaction status.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'transaction_id' => 'string',
         'status' => 'string',
-        'errors' => '\SellingPartnerApi\Model\VendorTransactionStatusV1\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\VendorTransactionStatusV1\Error[]'
     ];
 
     /**
@@ -247,7 +247,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorTransactionStatusV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorTransactionStatusV1\Error[]|null
      */
     public function getErrors()
     {
@@ -257,7 +257,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorTransactionStatusV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorTransactionStatusV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Rate Class Doc Comment
  *
  * @category Class
  * @description The details of a shipping service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,11 +63,11 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
         'carrier_name' => 'string',
         'service_id' => 'string',
         'service_name' => 'string',
-        'billed_weight' => '\SellingPartnerApi\Model\ShippingV2\Weight',
-        'total_charge' => '\SellingPartnerApi\Model\ShippingV2\Currency',
-        'promise' => '\SellingPartnerApi\Model\ShippingV2\Promise',
-        'supported_document_specifications' => '\SellingPartnerApi\Model\ShippingV2\SupportedDocumentSpecification[]',
-        'available_value_added_service_groups' => '\SellingPartnerApi\Model\ShippingV2\AvailableValueAddedServiceGroup[]',
+        'billed_weight' => '\SellingPartnerApiV5\Model\ShippingV2\Weight',
+        'total_charge' => '\SellingPartnerApiV5\Model\ShippingV2\Currency',
+        'promise' => '\SellingPartnerApiV5\Model\ShippingV2\Promise',
+        'supported_document_specifications' => '\SellingPartnerApiV5\Model\ShippingV2\SupportedDocumentSpecification[]',
+        'available_value_added_service_groups' => '\SellingPartnerApiV5\Model\ShippingV2\AvailableValueAddedServiceGroup[]',
         'requires_additional_inputs' => 'bool'
     ];
 
@@ -339,7 +339,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets billed_weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Weight|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Weight|null
      */
     public function getBilledWeight()
     {
@@ -349,7 +349,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets billed_weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Weight|null $billed_weight billed_weight
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Weight|null $billed_weight billed_weight
      *
      * @return self
      */
@@ -362,7 +362,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets total_charge
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Currency
      */
     public function getTotalCharge()
     {
@@ -372,7 +372,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets total_charge
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Currency $total_charge total_charge
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Currency $total_charge total_charge
      *
      * @return self
      */
@@ -385,7 +385,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets promise
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Promise
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Promise
      */
     public function getPromise()
     {
@@ -395,7 +395,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets promise
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Promise $promise promise
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Promise $promise promise
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets supported_document_specifications
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\SupportedDocumentSpecification[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\SupportedDocumentSpecification[]
      */
     public function getSupportedDocumentSpecifications()
     {
@@ -418,7 +418,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets supported_document_specifications
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\SupportedDocumentSpecification[] $supported_document_specifications A list of the document specifications supported for a shipment service offering.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\SupportedDocumentSpecification[] $supported_document_specifications A list of the document specifications supported for a shipment service offering.
      *
      * @return self
      */
@@ -431,7 +431,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets available_value_added_service_groups
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\AvailableValueAddedServiceGroup[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\AvailableValueAddedServiceGroup[]|null
      */
     public function getAvailableValueAddedServiceGroups()
     {
@@ -441,7 +441,7 @@ class Rate extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets available_value_added_service_groups
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\AvailableValueAddedServiceGroup[]|null $available_value_added_service_groups A list of value-added services available for a shipping service offering.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\AvailableValueAddedServiceGroup[]|null $available_value_added_service_groups A list of value-added services available for a shipping service offering.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AmazonPrepFeesDetails Class Doc Comment
  *
  * @category Class
  * @description The fees for Amazon to prep goods for shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class AmazonPrepFeesDetails extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'prep_instruction' => '\SellingPartnerApi\Model\FbaInboundV0\PrepInstruction',
-        'fee_per_unit' => '\SellingPartnerApi\Model\FbaInboundV0\Amount'
+        'prep_instruction' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction',
+        'fee_per_unit' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount'
     ];
 
     /**
@@ -143,7 +143,7 @@ class AmazonPrepFeesDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets prep_instruction
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction|null
      */
     public function getPrepInstruction()
     {
@@ -153,7 +153,7 @@ class AmazonPrepFeesDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets prep_instruction
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction|null $prep_instruction prep_instruction
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction|null $prep_instruction prep_instruction
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class AmazonPrepFeesDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets fee_per_unit
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null
      */
     public function getFeePerUnit()
     {
@@ -176,7 +176,7 @@ class AmazonPrepFeesDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets fee_per_unit
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount|null $fee_per_unit fee_per_unit
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null $fee_per_unit fee_per_unit
      *
      * @return self
      */

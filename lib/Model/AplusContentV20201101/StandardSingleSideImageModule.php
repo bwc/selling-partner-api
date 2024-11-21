@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardSingleSideImageModule Class Doc Comment
  *
  * @category Class
  * @description A standard headline and body text with an image on the side.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardSingleSideImageModule extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'image_position_type' => '\SellingPartnerApi\Model\AplusContentV20201101\PositionType',
-        'block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock'
+        'image_position_type' => '\SellingPartnerApiV5\Model\AplusContentV20201101\PositionType',
+        'block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock'
     ];
 
     /**
@@ -146,7 +146,7 @@ class StandardSingleSideImageModule extends BaseModel implements ModelInterface,
     /**
      * Gets image_position_type
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PositionType
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PositionType
      */
     public function getImagePositionType()
     {
@@ -156,7 +156,7 @@ class StandardSingleSideImageModule extends BaseModel implements ModelInterface,
     /**
      * Sets image_position_type
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\PositionType $image_position_type image_position_type
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\PositionType $image_position_type image_position_type
      *
      * @return self
      */
@@ -169,7 +169,7 @@ class StandardSingleSideImageModule extends BaseModel implements ModelInterface,
     /**
      * Gets block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getBlock()
     {
@@ -179,7 +179,7 @@ class StandardSingleSideImageModule extends BaseModel implements ModelInterface,
     /**
      * Sets block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $block block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $block block
      *
      * @return self
      */

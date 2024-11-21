@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitShipmentStatusUpdatesRequest Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class SubmitShipmentStatusUpdatesRequest extends BaseModel implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipment_status_updates' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ShipmentStatusUpdate[]'
+        'shipment_status_updates' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ShipmentStatusUpdate[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class SubmitShipmentStatusUpdatesRequest extends BaseModel implements ModelInter
     /**
      * Gets shipment_status_updates
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ShipmentStatusUpdate[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ShipmentStatusUpdate[]|null
      */
     public function getShipmentStatusUpdates()
     {
@@ -150,7 +150,7 @@ class SubmitShipmentStatusUpdatesRequest extends BaseModel implements ModelInter
     /**
      * Sets shipment_status_updates
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ShipmentStatusUpdate[]|null $shipment_status_updates shipment_status_updates
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ShipmentStatusUpdate[]|null $shipment_status_updates shipment_status_updates
      *
      * @return self
      */

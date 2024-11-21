@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardCompanyLogoModule Class Doc Comment
  *
  * @category Class
  * @description The standard company logo image.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class StandardCompanyLogoModule extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'company_logo' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageComponent'
+        'company_logo' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent'
     ];
 
     /**
@@ -140,7 +140,7 @@ class StandardCompanyLogoModule extends BaseModel implements ModelInterface, Arr
     /**
      * Gets company_logo
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent
      */
     public function getCompanyLogo()
     {
@@ -150,7 +150,7 @@ class StandardCompanyLogoModule extends BaseModel implements ModelInterface, Arr
     /**
      * Sets company_logo
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent $company_logo company_logo
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent $company_logo company_logo
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# SellingPartnerApi\AplusContentV20201101Api
+# SellingPartnerApiV5\AplusContentV20201101Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 ## `createContentDocument()`
 
 ```php
-createContentDocument($marketplace_id, $post_content_document_request): \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse
+createContentDocument($marketplace_id, $post_content_document_request): \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse
 ```
 
 
@@ -40,18 +40,18 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
-$post_content_document_request = new \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest(); // \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest | The content document request details.
+$post_content_document_request = new \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest(); // \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest | The content document request details.
 
 try {
     $result = $apiInstance->createContentDocument($marketplace_id, $post_content_document_request);
@@ -66,11 +66,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **marketplace_id** | **string**| The identifier for the marketplace where the A+ Content is published. |
- **post_content_document_request** | [**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest**](../Model/AplusContentV20201101/PostContentDocumentRequest.md)| The content document request details. |
+ **post_content_document_request** | [**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest**](../Model/AplusContentV20201101/PostContentDocumentRequest.md)| The content document request details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse**](../Model/AplusContentV20201101/PostContentDocumentResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse**](../Model/AplusContentV20201101/PostContentDocumentResponse.md)
 
 ### HTTP request headers
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 ## `getContentDocument()`
 
 ```php
-getContentDocument($content_reference_key, $marketplace_id, $included_data_set): \SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse
+getContentDocument($content_reference_key, $marketplace_id, $included_data_set): \SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse
 ```
 
 
@@ -107,16 +107,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $content_reference_key = 'content_reference_key_example'; // string | The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier.
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
 $included_data_set = array('included_data_set_example'); // string[] | The set of A+ Content data types to include in the response.
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\GetContentDocumentResponse**](../Model/AplusContentV20201101/GetContentDocumentResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\GetContentDocumentResponse**](../Model/AplusContentV20201101/GetContentDocumentResponse.md)
 
 ### HTTP request headers
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 ## `listContentDocumentAsinRelations()`
 
 ```php
-listContentDocumentAsinRelations($content_reference_key, $marketplace_id, $included_data_set, $asin_set, $page_token): \SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse
+listContentDocumentAsinRelations($content_reference_key, $marketplace_id, $included_data_set, $asin_set, $page_token): \SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse
 ```
 
 
@@ -176,16 +176,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $content_reference_key = 'content_reference_key_example'; // string | The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier.
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
 $included_data_set = array('included_data_set_example'); // string[] | The set of A+ Content data types to include in the response. If you do not include this parameter, the operation returns the related ASINs without metadata.
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse**](../Model/AplusContentV20201101/ListContentDocumentAsinRelationsResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\ListContentDocumentAsinRelationsResponse**](../Model/AplusContentV20201101/ListContentDocumentAsinRelationsResponse.md)
 
 ### HTTP request headers
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Notes
 ## `postContentDocumentApprovalSubmission()`
 
 ```php
-postContentDocumentApprovalSubmission($content_reference_key, $marketplace_id): \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse
+postContentDocumentApprovalSubmission($content_reference_key, $marketplace_id): \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse
 ```
 
 
@@ -249,16 +249,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $content_reference_key = 'content_reference_key_example'; // string | The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier.
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
 
@@ -279,7 +279,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse**](../Model/AplusContentV20201101/PostContentDocumentApprovalSubmissionResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentApprovalSubmissionResponse**](../Model/AplusContentV20201101/PostContentDocumentApprovalSubmissionResponse.md)
 
 ### HTTP request headers
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 ## `postContentDocumentAsinRelations()`
 
 ```php
-postContentDocumentAsinRelations($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request): \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse
+postContentDocumentAsinRelations($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request): \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse
 ```
 
 
@@ -316,19 +316,19 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $content_reference_key = 'content_reference_key_example'; // string | The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier.
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
-$post_content_document_asin_relations_request = new \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest(); // \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest | The content document ASIN relations request details.
+$post_content_document_asin_relations_request = new \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest(); // \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest | The content document ASIN relations request details.
 
 try {
     $result = $apiInstance->postContentDocumentAsinRelations($content_reference_key, $marketplace_id, $post_content_document_asin_relations_request);
@@ -344,11 +344,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_reference_key** | **string**| The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier. |
  **marketplace_id** | **string**| The identifier for the marketplace where the A+ Content is published. |
- **post_content_document_asin_relations_request** | [**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest**](../Model/AplusContentV20201101/PostContentDocumentAsinRelationsRequest.md)| The content document ASIN relations request details. |
+ **post_content_document_asin_relations_request** | [**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsRequest**](../Model/AplusContentV20201101/PostContentDocumentAsinRelationsRequest.md)| The content document ASIN relations request details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse**](../Model/AplusContentV20201101/PostContentDocumentAsinRelationsResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentAsinRelationsResponse**](../Model/AplusContentV20201101/PostContentDocumentAsinRelationsResponse.md)
 
 ### HTTP request headers
 
@@ -362,7 +362,7 @@ Name | Type | Description  | Notes
 ## `postContentDocumentSuspendSubmission()`
 
 ```php
-postContentDocumentSuspendSubmission($content_reference_key, $marketplace_id): \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse
+postContentDocumentSuspendSubmission($content_reference_key, $marketplace_id): \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse
 ```
 
 
@@ -385,16 +385,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $content_reference_key = 'content_reference_key_example'; // string | The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ content identifier.
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
 
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse**](../Model/AplusContentV20201101/PostContentDocumentSuspendSubmissionResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentSuspendSubmissionResponse**](../Model/AplusContentV20201101/PostContentDocumentSuspendSubmissionResponse.md)
 
 ### HTTP request headers
 
@@ -429,7 +429,7 @@ Name | Type | Description  | Notes
 ## `searchContentDocuments()`
 
 ```php
-searchContentDocuments($marketplace_id, $page_token): \SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse
+searchContentDocuments($marketplace_id, $page_token): \SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse
 ```
 
 
@@ -452,16 +452,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
 $page_token = 'page_token_example'; // string | A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations.
 
@@ -482,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\SearchContentDocumentsResponse**](../Model/AplusContentV20201101/SearchContentDocumentsResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentDocumentsResponse**](../Model/AplusContentV20201101/SearchContentDocumentsResponse.md)
 
 ### HTTP request headers
 
@@ -496,7 +496,7 @@ Name | Type | Description  | Notes
 ## `searchContentPublishRecords()`
 
 ```php
-searchContentPublishRecords($marketplace_id, $asin, $page_token): \SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse
+searchContentPublishRecords($marketplace_id, $asin, $page_token): \SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse
 ```
 
 
@@ -519,16 +519,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
 $asin = 'asin_example'; // string | The Amazon Standard Identification Number (ASIN).
 $page_token = 'page_token_example'; // string | A page token from the nextPageToken response element returned by your previous call to this operation. nextPageToken is returned when the results of a call exceed the page size. To get the next page of results, call the operation and include pageToken as the only parameter. Specifying pageToken with any other parameter will cause the request to fail. When no nextPageToken value is returned there are no more pages to return. A pageToken value is not usable across different operations.
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\SearchContentPublishRecordsResponse**](../Model/AplusContentV20201101/SearchContentPublishRecordsResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\SearchContentPublishRecordsResponse**](../Model/AplusContentV20201101/SearchContentPublishRecordsResponse.md)
 
 ### HTTP request headers
 
@@ -565,7 +565,7 @@ Name | Type | Description  | Notes
 ## `updateContentDocument()`
 
 ```php
-updateContentDocument($content_reference_key, $marketplace_id, $post_content_document_request): \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse
+updateContentDocument($content_reference_key, $marketplace_id, $post_content_document_request): \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse
 ```
 
 
@@ -588,19 +588,19 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $content_reference_key = 'content_reference_key_example'; // string | The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier.
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
-$post_content_document_request = new \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest(); // \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest | The content document request details.
+$post_content_document_request = new \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest(); // \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest | The content document request details.
 
 try {
     $result = $apiInstance->updateContentDocument($content_reference_key, $marketplace_id, $post_content_document_request);
@@ -616,11 +616,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **content_reference_key** | **string**| The unique reference key for the A+ Content document. A content reference key cannot form a permalink and may change in the future. A content reference key is not guaranteed to match any A+ Content identifier. |
  **marketplace_id** | **string**| The identifier for the marketplace where the A+ Content is published. |
- **post_content_document_request** | [**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest**](../Model/AplusContentV20201101/PostContentDocumentRequest.md)| The content document request details. |
+ **post_content_document_request** | [**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest**](../Model/AplusContentV20201101/PostContentDocumentRequest.md)| The content document request details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentResponse**](../Model/AplusContentV20201101/PostContentDocumentResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentResponse**](../Model/AplusContentV20201101/PostContentDocumentResponse.md)
 
 ### HTTP request headers
 
@@ -634,7 +634,7 @@ Name | Type | Description  | Notes
 ## `validateContentDocumentAsinRelations()`
 
 ```php
-validateContentDocumentAsinRelations($marketplace_id, $post_content_document_request, $asin_set): \SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse
+validateContentDocumentAsinRelations($marketplace_id, $post_content_document_request, $asin_set): \SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse
 ```
 
 
@@ -657,18 +657,18 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AplusContentV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AplusContentV20201101Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The identifier for the marketplace where the A+ Content is published.
-$post_content_document_request = new \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest(); // \SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest | The content document request details.
+$post_content_document_request = new \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest(); // \SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest | The content document request details.
 $asin_set = array('asin_set_example'); // string[] | The set of ASINs.
 
 try {
@@ -684,12 +684,12 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **marketplace_id** | **string**| The identifier for the marketplace where the A+ Content is published. |
- **post_content_document_request** | [**\SellingPartnerApi\Model\AplusContentV20201101\PostContentDocumentRequest**](../Model/AplusContentV20201101/PostContentDocumentRequest.md)| The content document request details. |
+ **post_content_document_request** | [**\SellingPartnerApiV5\Model\AplusContentV20201101\PostContentDocumentRequest**](../Model/AplusContentV20201101/PostContentDocumentRequest.md)| The content document request details. |
  **asin_set** | [**string[]**](../Model/AplusContentV20201101/string.md)| The set of ASINs. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse**](../Model/AplusContentV20201101/ValidateContentDocumentAsinRelationsResponse.md)
+[**\SellingPartnerApiV5\Model\AplusContentV20201101\ValidateContentDocumentAsinRelationsResponse**](../Model/AplusContentV20201101/ValidateContentDocumentAsinRelationsResponse.md)
 
 ### HTTP request headers
 

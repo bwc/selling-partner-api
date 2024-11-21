@@ -1,6 +1,6 @@
 <?php
 
-namespace SellingPartnerApi;
+namespace SellingPartnerApiV5;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Header;
@@ -11,9 +11,9 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use Psr\Http\Message\StreamInterface;
 use RuntimeException;
 
-use SellingPartnerApi\Model\FeedsV20210630\CreateFeedDocumentResponse;
-use SellingPartnerApi\Model\FeedsV20210630\FeedDocument;
-use SellingPartnerApi\Model\ReportsV20210630\ReportDocument;
+use SellingPartnerApiV5\Model\FeedsV20210630\CreateFeedDocumentResponse;
+use SellingPartnerApiV5\Model\FeedsV20210630\FeedDocument;
+use SellingPartnerApiV5\Model\ReportsV20210630\ReportDocument;
 
 class Document
 {
@@ -65,7 +65,7 @@ class Document
         if (!in_array($this->contentType, array_values($validContentTypes), true)) {
             $readableContentTypes = [];
             foreach ($validContentTypes as $name => $value) {
-                $readableContentTypes[] = "SellingPartnerApi\ContentType::{$name} ($value)";
+                $readableContentTypes[] = "SellingPartnerApiV5\ContentType::{$name} ($value)";
             }
             throw new \InvalidArgumentException("Valid content types are: " . implode(", ", $readableContentTypes));
         }

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Reservation Class Doc Comment
  *
  * @category Class
  * @description Reservation object reduces the capacity of a resource.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Reservation extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'reservation_id' => 'string',
         'type' => 'string',
-        'availability' => '\SellingPartnerApi\Model\ServiceV1\AvailabilityRecord'
+        'availability' => '\SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord'
     ];
 
     /**
@@ -251,7 +251,7 @@ class Reservation extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets availability
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AvailabilityRecord
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord
      */
     public function getAvailability()
     {
@@ -261,7 +261,7 @@ class Reservation extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets availability
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AvailabilityRecord $availability availability
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord $availability availability
      *
      * @return self
      */

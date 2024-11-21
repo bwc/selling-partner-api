@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * EventFilter Class Doc Comment
  *
  * @category Class
  * @description A notificationType specific filter. This object contains all of the currently available filters and properties that you can use to define a notificationType specific filter.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class EventFilter extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregation_settings' => '\SellingPartnerApi\Model\NotificationsV1\AggregationSettings',
+        'aggregation_settings' => '\SellingPartnerApiV5\Model\NotificationsV1\AggregationSettings',
         'marketplace_ids' => 'string[]',
-        'order_change_types' => '\SellingPartnerApi\Model\NotificationsV1\OrderChangeTypeEnum[]',
+        'order_change_types' => '\SellingPartnerApiV5\Model\NotificationsV1\OrderChangeTypeEnum[]',
         'event_filter_type' => 'string'
     ];
 
@@ -192,7 +192,7 @@ class EventFilter extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets aggregation_settings
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\AggregationSettings|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\AggregationSettings|null
      */
     public function getAggregationSettings()
     {
@@ -202,7 +202,7 @@ class EventFilter extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets aggregation_settings
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\AggregationSettings|null $aggregation_settings aggregation_settings
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\AggregationSettings|null $aggregation_settings aggregation_settings
      *
      * @return self
      */
@@ -238,7 +238,7 @@ class EventFilter extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets order_change_types
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\OrderChangeTypeEnum[]|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\OrderChangeTypeEnum[]|null
      */
     public function getOrderChangeTypes()
     {
@@ -248,7 +248,7 @@ class EventFilter extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets order_change_types
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\OrderChangeTypeEnum[]|null $order_change_types A list of order change types to subscribe to (e.g. BuyerRequestedChange). To receive notifications of all change types, do not provide this list.
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\OrderChangeTypeEnum[]|null $order_change_types A list of order change types to subscribe to (e.g. BuyerRequestedChange). To receive notifications of all change types, do not provide this list.
      *
      * @return self
      */

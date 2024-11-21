@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetOrderBuyerInfoResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getOrderBuyerInfo operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetOrderBuyerInfoResponse extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\OrdersV0\OrderBuyerInfo',
-        'errors' => '\SellingPartnerApi\Model\OrdersV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\OrdersV0\OrderBuyerInfo',
+        'errors' => '\SellingPartnerApiV5\Model\OrdersV0\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetOrderBuyerInfoResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OrderBuyerInfo|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OrderBuyerInfo|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetOrderBuyerInfoResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OrderBuyerInfo|null $payload payload
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OrderBuyerInfo|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetOrderBuyerInfoResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetOrderBuyerInfoResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Packages Class Doc Comment
  *
  * @category Class
  * @description A list of packages.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class Packages extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'packages' => '\SellingPartnerApi\Model\EasyShipV20220323\Package[]'
+        'packages' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Package[]'
     ];
 
     /**
@@ -173,7 +173,7 @@ class Packages extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets packages
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Package[]
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Package[]
      */
     public function getPackages()
     {
@@ -183,7 +183,7 @@ class Packages extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets packages
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Package[] $packages packages
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Package[] $packages packages
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ReturnAuthorization Class Doc Comment
  *
  * @category Class
  * @description Return authorization information for items accepted for return.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ReturnAuthorization extends BaseModel implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'return_authorization_id' => 'string',
         'fulfillment_center_id' => 'string',
-        'return_to_address' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Address',
+        'return_to_address' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Address',
         'amazon_rma_id' => 'string',
         'rma_page_url' => 'string'
     ];
@@ -222,7 +222,7 @@ class ReturnAuthorization extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets return_to_address
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Address
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address
      */
     public function getReturnToAddress()
     {
@@ -232,7 +232,7 @@ class ReturnAuthorization extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets return_to_address
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Address $return_to_address return_to_address
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address $return_to_address return_to_address
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitInvoiceResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the submitInvoice operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class SubmitInvoiceResponse extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TransactionReference',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TransactionReference',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class SubmitInvoiceResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TransactionReference|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TransactionReference|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class SubmitInvoiceResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\TransactionReference|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\TransactionReference|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class SubmitInvoiceResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class SubmitInvoiceResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

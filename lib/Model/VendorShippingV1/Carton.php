@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Carton Class Doc Comment
  *
  * @category Class
  * @description Details of the carton/package being shipped.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'carton_identifiers' => '\SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]',
+        'carton_identifiers' => '\SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]',
         'carton_sequence_number' => 'string',
-        'dimensions' => '\SellingPartnerApi\Model\VendorShippingV1\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\VendorShippingV1\Weight',
+        'dimensions' => '\SellingPartnerApiV5\Model\VendorShippingV1\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\VendorShippingV1\Weight',
         'tracking_number' => 'string',
-        'items' => '\SellingPartnerApi\Model\VendorShippingV1\ContainerItem[]'
+        'items' => '\SellingPartnerApiV5\Model\VendorShippingV1\ContainerItem[]'
     ];
 
     /**
@@ -173,7 +173,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets carton_identifiers
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]|null
      */
     public function getCartonIdentifiers()
     {
@@ -183,7 +183,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets carton_identifiers
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]|null $carton_identifiers A list of carton identifiers.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]|null $carton_identifiers A list of carton identifiers.
      *
      * @return self
      */
@@ -219,7 +219,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Dimensions|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Dimensions|null
      */
     public function getDimensions()
     {
@@ -229,7 +229,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Dimensions|null $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Dimensions|null $dimensions dimensions
      *
      * @return self
      */
@@ -242,7 +242,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null
      */
     public function getWeight()
     {
@@ -252,7 +252,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Weight|null $weight weight
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null $weight weight
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ContainerItem[]
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ContainerItem[]
      */
     public function getItems()
     {
@@ -298,7 +298,7 @@ class Carton extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ContainerItem[] $items A list of container item details.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ContainerItem[] $items A list of container item details.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdatePackageDetails Class Doc Comment
  *
  * @category Class
  * @description Request to update the time slot of a package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class UpdatePackageDetails extends BaseModel implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'scheduled_package_id' => '\SellingPartnerApi\Model\EasyShipV20220323\ScheduledPackageId',
-        'package_time_slot' => '\SellingPartnerApi\Model\EasyShipV20220323\TimeSlot'
+        'scheduled_package_id' => '\SellingPartnerApiV5\Model\EasyShipV20220323\ScheduledPackageId',
+        'package_time_slot' => '\SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot'
     ];
 
     /**
@@ -149,7 +149,7 @@ class UpdatePackageDetails extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets scheduled_package_id
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\ScheduledPackageId
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\ScheduledPackageId
      */
     public function getScheduledPackageId()
     {
@@ -159,7 +159,7 @@ class UpdatePackageDetails extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets scheduled_package_id
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\ScheduledPackageId $scheduled_package_id scheduled_package_id
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\ScheduledPackageId $scheduled_package_id scheduled_package_id
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class UpdatePackageDetails extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets package_time_slot
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot
      */
     public function getPackageTimeSlot()
     {
@@ -182,7 +182,7 @@ class UpdatePackageDetails extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets package_time_slot
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot $package_time_slot package_time_slot
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot $package_time_slot package_time_slot
      *
      * @return self
      */

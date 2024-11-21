@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferDetail Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,19 +58,19 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'my_offer' => 'bool',
-        'offer_type' => '\SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType',
+        'offer_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType',
         'sub_condition' => 'string',
         'seller_id' => 'string',
         'condition_notes' => 'string',
-        'seller_feedback_rating' => '\SellingPartnerApi\Model\ProductPricingV0\SellerFeedbackType',
-        'shipping_time' => '\SellingPartnerApi\Model\ProductPricingV0\DetailedShippingTimeType',
-        'listing_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'quantity_discount_prices' => '\SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountPriceType[]',
-        'points' => '\SellingPartnerApi\Model\ProductPricingV0\Points',
-        'shipping' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'ships_from' => '\SellingPartnerApi\Model\ProductPricingV0\ShipsFromType',
+        'seller_feedback_rating' => '\SellingPartnerApiV5\Model\ProductPricingV0\SellerFeedbackType',
+        'shipping_time' => '\SellingPartnerApiV5\Model\ProductPricingV0\DetailedShippingTimeType',
+        'listing_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'quantity_discount_prices' => '\SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountPriceType[]',
+        'points' => '\SellingPartnerApiV5\Model\ProductPricingV0\Points',
+        'shipping' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'ships_from' => '\SellingPartnerApiV5\Model\ProductPricingV0\ShipsFromType',
         'is_fulfilled_by_amazon' => 'bool',
-        'prime_information' => '\SellingPartnerApi\Model\ProductPricingV0\PrimeInformationType',
+        'prime_information' => '\SellingPartnerApiV5\Model\ProductPricingV0\PrimeInformationType',
         'is_buy_box_winner' => 'bool',
         'is_featured_merchant' => 'bool'
     ];
@@ -264,7 +264,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets offer_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null
      */
     public function getOfferType()
     {
@@ -274,7 +274,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets offer_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
      *
      * @return self
      */
@@ -356,7 +356,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets seller_feedback_rating
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\SellerFeedbackType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\SellerFeedbackType|null
      */
     public function getSellerFeedbackRating()
     {
@@ -366,7 +366,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets seller_feedback_rating
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\SellerFeedbackType|null $seller_feedback_rating seller_feedback_rating
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\SellerFeedbackType|null $seller_feedback_rating seller_feedback_rating
      *
      * @return self
      */
@@ -379,7 +379,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets shipping_time
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\DetailedShippingTimeType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\DetailedShippingTimeType
      */
     public function getShippingTime()
     {
@@ -389,7 +389,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets shipping_time
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\DetailedShippingTimeType $shipping_time shipping_time
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\DetailedShippingTimeType $shipping_time shipping_time
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets listing_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getListingPrice()
     {
@@ -412,7 +412,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets listing_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $listing_price listing_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $listing_price listing_price
      *
      * @return self
      */
@@ -425,7 +425,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets quantity_discount_prices
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountPriceType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountPriceType[]|null
      */
     public function getQuantityDiscountPrices()
     {
@@ -435,7 +435,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets quantity_discount_prices
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountPriceType[]|null $quantity_discount_prices quantity_discount_prices
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountPriceType[]|null $quantity_discount_prices quantity_discount_prices
      *
      * @return self
      */
@@ -448,7 +448,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets points
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Points|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Points|null
      */
     public function getPoints()
     {
@@ -458,7 +458,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets points
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Points|null $points points
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Points|null $points points
      *
      * @return self
      */
@@ -471,7 +471,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets shipping
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getShipping()
     {
@@ -481,7 +481,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets shipping
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $shipping shipping
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $shipping shipping
      *
      * @return self
      */
@@ -494,7 +494,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets ships_from
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ShipsFromType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ShipsFromType|null
      */
     public function getShipsFrom()
     {
@@ -504,7 +504,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets ships_from
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ShipsFromType|null $ships_from ships_from
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ShipsFromType|null $ships_from ships_from
      *
      * @return self
      */
@@ -540,7 +540,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets prime_information
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\PrimeInformationType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\PrimeInformationType|null
      */
     public function getPrimeInformation()
     {
@@ -550,7 +550,7 @@ class OfferDetail extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets prime_information
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\PrimeInformationType|null $prime_information prime_information
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\PrimeInformationType|null $prime_information prime_information
      *
      * @return self
      */

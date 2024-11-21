@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartneredLtlDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Less Than Truckload/Full Truckload (LTL/FTL) shipment by an Amazon-partnered carrier.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,20 +58,20 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'contact' => '\SellingPartnerApi\Model\FbaInboundV0\Contact',
+        'contact' => '\SellingPartnerApiV5\Model\FbaInboundV0\Contact',
         'box_count' => 'int',
         'seller_freight_class' => 'string',
         'freight_ready_date' => 'string',
-        'pallet_list' => '\SellingPartnerApi\Model\FbaInboundV0\Pallet[]',
-        'total_weight' => '\SellingPartnerApi\Model\FbaInboundV0\Weight',
-        'seller_declared_value' => '\SellingPartnerApi\Model\FbaInboundV0\Amount',
-        'amazon_calculated_value' => '\SellingPartnerApi\Model\FbaInboundV0\Amount',
+        'pallet_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\Pallet[]',
+        'total_weight' => '\SellingPartnerApiV5\Model\FbaInboundV0\Weight',
+        'seller_declared_value' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount',
+        'amazon_calculated_value' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount',
         'preview_pickup_date' => 'string',
         'preview_delivery_date' => 'string',
         'preview_freight_class' => 'string',
         'amazon_reference_id' => 'string',
         'is_bill_of_lading_available' => 'bool',
-        'partnered_estimate' => '\SellingPartnerApi\Model\FbaInboundV0\PartneredEstimate',
+        'partnered_estimate' => '\SellingPartnerApiV5\Model\FbaInboundV0\PartneredEstimate',
         'carrier_name' => 'string'
     ];
 
@@ -254,7 +254,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets contact
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Contact
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Contact
      */
     public function getContact()
     {
@@ -264,7 +264,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets contact
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Contact $contact contact
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Contact $contact contact
      *
      * @return self
      */
@@ -346,7 +346,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets pallet_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Pallet[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Pallet[]
      */
     public function getPalletList()
     {
@@ -356,7 +356,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets pallet_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Pallet[] $pallet_list A list of pallet information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Pallet[] $pallet_list A list of pallet information.
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets total_weight
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Weight
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Weight
      */
     public function getTotalWeight()
     {
@@ -379,7 +379,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets total_weight
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Weight $total_weight total_weight
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Weight $total_weight total_weight
      *
      * @return self
      */
@@ -392,7 +392,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets seller_declared_value
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null
      */
     public function getSellerDeclaredValue()
     {
@@ -402,7 +402,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets seller_declared_value
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount|null $seller_declared_value seller_declared_value
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null $seller_declared_value seller_declared_value
      *
      * @return self
      */
@@ -415,7 +415,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets amazon_calculated_value
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null
      */
     public function getAmazonCalculatedValue()
     {
@@ -425,7 +425,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets amazon_calculated_value
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount|null $amazon_calculated_value amazon_calculated_value
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null $amazon_calculated_value amazon_calculated_value
      *
      * @return self
      */
@@ -553,7 +553,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets partnered_estimate
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PartneredEstimate|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PartneredEstimate|null
      */
     public function getPartneredEstimate()
     {
@@ -563,7 +563,7 @@ class PartneredLtlDataOutput extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets partnered_estimate
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PartneredEstimate|null $partnered_estimate partnered_estimate
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PartneredEstimate|null $partnered_estimate partnered_estimate
      *
      * @return self
      */

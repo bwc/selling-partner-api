@@ -1,4 +1,4 @@
-# SellingPartnerApi\FbaInboundEligibilityV1Api
+# SellingPartnerApiV5\FbaInboundEligibilityV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getItemEligibilityPreview()`
 
 ```php
-getItemEligibilityPreview($asin, $program, $marketplace_ids): \SellingPartnerApi\Model\FbaInboundEligibilityV1\GetItemEligibilityPreviewResponse
+getItemEligibilityPreview($asin, $program, $marketplace_ids): \SellingPartnerApiV5\Model\FbaInboundEligibilityV1\GetItemEligibilityPreviewResponse
 ```
 
 
@@ -30,16 +30,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaInboundEligibilityV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaInboundEligibilityV1Api($config);
 $asin = 'asin_example'; // string | The ASIN of the item for which you want an eligibility preview.
 $program = 'program_example'; // string | The program that you want to check eligibility against.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | The identifier for the marketplace in which you want to determine eligibility. Required only when program=INBOUND.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaInboundEligibilityV1\GetItemEligibilityPreviewResponse**](../Model/FbaInboundEligibilityV1/GetItemEligibilityPreviewResponse.md)
+[**\SellingPartnerApiV5\Model\FbaInboundEligibilityV1\GetItemEligibilityPreviewResponse**](../Model/FbaInboundEligibilityV1/GetItemEligibilityPreviewResponse.md)
 
 ### HTTP request headers
 

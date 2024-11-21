@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * FbaOutboundV20200701Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class FbaOutboundV20200701Api extends BaseApi
 {
@@ -45,9 +45,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse
      */
     public function cancelFulfillmentOrder($seller_fulfillment_order_id)
     {
@@ -60,9 +60,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelFulfillmentOrderWithHttpInfo($seller_fulfillment_order_id)
     {
@@ -111,72 +111,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -191,7 +191,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -199,7 +199,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function cancelFulfillmentOrderAsyncWithHttpInfo($seller_fulfillment_order_id)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse';
         $request = $this->cancelFulfillmentOrderRequest($seller_fulfillment_order_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -424,11 +424,11 @@ class FbaOutboundV20200701Api extends BaseApi
     /**
      * Operation createFulfillmentOrder
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse
      */
     public function createFulfillmentOrder($body)
     {
@@ -439,11 +439,11 @@ class FbaOutboundV20200701Api extends BaseApi
     /**
      * Operation createFulfillmentOrderWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFulfillmentOrderWithHttpInfo($body)
     {
@@ -492,72 +492,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -572,7 +572,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -580,7 +580,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -588,7 +588,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -596,7 +596,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -612,7 +612,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -620,7 +620,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -628,7 +628,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -659,14 +659,14 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createFulfillmentOrderAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse';
         $request = $this->createFulfillmentOrderRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -712,7 +712,7 @@ class FbaOutboundV20200701Api extends BaseApi
     /**
      * Create request for operation 'createFulfillmentOrder'
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -799,11 +799,11 @@ class FbaOutboundV20200701Api extends BaseApi
      * Operation createFulfillmentReturn
      *
      * @param  string $seller_fulfillment_order_id An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse
      */
     public function createFulfillmentReturn($seller_fulfillment_order_id, $body)
     {
@@ -815,11 +815,11 @@ class FbaOutboundV20200701Api extends BaseApi
      * Operation createFulfillmentReturnWithHttpInfo
      *
      * @param  string $seller_fulfillment_order_id An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFulfillmentReturnWithHttpInfo($seller_fulfillment_order_id, $body)
     {
@@ -868,72 +868,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -948,7 +948,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -956,7 +956,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -972,7 +972,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -980,7 +980,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -988,7 +988,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -996,7 +996,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1004,7 +1004,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1021,7 +1021,7 @@ class FbaOutboundV20200701Api extends BaseApi
      * 
      *
      * @param  string $seller_fulfillment_order_id An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1037,14 +1037,14 @@ class FbaOutboundV20200701Api extends BaseApi
      * 
      *
      * @param  string $seller_fulfillment_order_id An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createFulfillmentReturnAsyncWithHttpInfo($seller_fulfillment_order_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse';
         $request = $this->createFulfillmentReturnRequest($seller_fulfillment_order_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1091,7 +1091,7 @@ class FbaOutboundV20200701Api extends BaseApi
      * Create request for operation 'createFulfillmentReturn'
      *
      * @param  string $seller_fulfillment_order_id An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1196,9 +1196,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $feature_name The name of the feature for which to return a list of eligible inventory. (required)
      * @param  string $next_token A string token returned in the response to your previous request that is used to return the next response page. A value of null will return the first page. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse
      */
     public function getFeatureInventory($marketplace_id, $feature_name, $next_token = null)
     {
@@ -1213,9 +1213,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $feature_name The name of the feature for which to return a list of eligible inventory. (required)
      * @param  string $next_token A string token returned in the response to your previous request that is used to return the next response page. A value of null will return the first page. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeatureInventoryWithHttpInfo($marketplace_id, $feature_name, $next_token = null)
     {
@@ -1264,72 +1264,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1344,7 +1344,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1352,7 +1352,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1360,7 +1360,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1368,7 +1368,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1376,7 +1376,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1384,7 +1384,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1392,7 +1392,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1400,7 +1400,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1442,7 +1442,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function getFeatureInventoryAsyncWithHttpInfo($marketplace_id, $feature_name, $next_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse';
         $request = $this->getFeatureInventoryRequest($marketplace_id, $feature_name, $next_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1605,9 +1605,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $feature_name The name of the feature. (required)
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse
      */
     public function getFeatureSKU($marketplace_id, $feature_name, $seller_sku)
     {
@@ -1622,9 +1622,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $feature_name The name of the feature. (required)
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeatureSKUWithHttpInfo($marketplace_id, $feature_name, $seller_sku)
     {
@@ -1673,72 +1673,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1753,7 +1753,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1761,7 +1761,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1769,7 +1769,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1777,7 +1777,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1785,7 +1785,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1793,7 +1793,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1801,7 +1801,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1809,7 +1809,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1851,7 +1851,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function getFeatureSKUAsyncWithHttpInfo($marketplace_id, $feature_name, $seller_sku)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse';
         $request = $this->getFeatureSKURequest($marketplace_id, $feature_name, $seller_sku);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2019,9 +2019,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  string $marketplace_id The marketplace for which to return the list of features. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse
      */
     public function getFeatures($marketplace_id)
     {
@@ -2034,9 +2034,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  string $marketplace_id The marketplace for which to return the list of features. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFeaturesWithHttpInfo($marketplace_id)
     {
@@ -2085,72 +2085,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2165,7 +2165,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2173,7 +2173,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2181,7 +2181,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2189,7 +2189,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2197,7 +2197,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2205,7 +2205,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2213,7 +2213,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2221,7 +2221,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2259,7 +2259,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function getFeaturesAsyncWithHttpInfo($marketplace_id)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse';
         $request = $this->getFeaturesRequest($marketplace_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2395,9 +2395,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse
      */
     public function getFulfillmentOrder($seller_fulfillment_order_id)
     {
@@ -2410,9 +2410,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFulfillmentOrderWithHttpInfo($seller_fulfillment_order_id)
     {
@@ -2461,72 +2461,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2541,7 +2541,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2549,7 +2549,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2557,7 +2557,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2565,7 +2565,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2573,7 +2573,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2581,7 +2581,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2589,7 +2589,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2597,7 +2597,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2635,7 +2635,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function getFulfillmentOrderAsyncWithHttpInfo($seller_fulfillment_order_id)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse';
         $request = $this->getFulfillmentOrderRequest($seller_fulfillment_order_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2774,11 +2774,11 @@ class FbaOutboundV20200701Api extends BaseApi
     /**
      * Operation getFulfillmentPreview
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse
      */
     public function getFulfillmentPreview($body)
     {
@@ -2789,11 +2789,11 @@ class FbaOutboundV20200701Api extends BaseApi
     /**
      * Operation getFulfillmentPreviewWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFulfillmentPreviewWithHttpInfo($body)
     {
@@ -2842,72 +2842,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2922,7 +2922,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2930,7 +2930,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2938,7 +2938,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2946,7 +2946,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2954,7 +2954,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2962,7 +2962,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2970,7 +2970,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2978,7 +2978,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2994,7 +2994,7 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3009,14 +3009,14 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getFulfillmentPreviewAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse';
         $request = $this->getFulfillmentPreviewRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3062,7 +3062,7 @@ class FbaOutboundV20200701Api extends BaseApi
     /**
      * Create request for operation 'getFulfillmentPreview'
      *
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3150,9 +3150,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  int $package_number The unencrypted package identifier returned by the getFulfillmentOrder operation. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse
      */
     public function getPackageTrackingDetails($package_number)
     {
@@ -3165,9 +3165,9 @@ class FbaOutboundV20200701Api extends BaseApi
      *
      * @param  int $package_number The unencrypted package identifier returned by the getFulfillmentOrder operation. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPackageTrackingDetailsWithHttpInfo($package_number)
     {
@@ -3216,72 +3216,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3296,7 +3296,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3304,7 +3304,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3312,7 +3312,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3320,7 +3320,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3328,7 +3328,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3336,7 +3336,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3344,7 +3344,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3352,7 +3352,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3390,7 +3390,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function getPackageTrackingDetailsAsyncWithHttpInfo($package_number)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse';
         $request = $this->getPackageTrackingDetailsRequest($package_number);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3527,9 +3527,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $query_start_date A date used to select fulfillment orders that were last updated after (or at) a specified time. An update is defined as any change in fulfillment order status, including the creation of a new fulfillment order. Must be in ISO 8601 format. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse
      */
     public function listAllFulfillmentOrders($query_start_date = null, $next_token = null)
     {
@@ -3543,9 +3543,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $query_start_date A date used to select fulfillment orders that were last updated after (or at) a specified time. An update is defined as any change in fulfillment order status, including the creation of a new fulfillment order. Must be in ISO 8601 format. (optional)
      * @param  string $next_token A string token returned in the response to your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listAllFulfillmentOrdersWithHttpInfo($query_start_date = null, $next_token = null)
     {
@@ -3594,72 +3594,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3674,7 +3674,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3682,7 +3682,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3690,7 +3690,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3698,7 +3698,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3706,7 +3706,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3714,7 +3714,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3722,7 +3722,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3730,7 +3730,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3770,7 +3770,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function listAllFulfillmentOrdersAsyncWithHttpInfo($query_start_date = null, $next_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse';
         $request = $this->listAllFulfillmentOrdersRequest($query_start_date, $next_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -3912,9 +3912,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $marketplace_id The marketplace for which the seller wants return reason codes. (optional)
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. The service uses this value to determine the marketplace for which the seller wants return reason codes. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse
      */
     public function listReturnReasonCodes($seller_sku, $language, $marketplace_id = null, $seller_fulfillment_order_id = null)
     {
@@ -3930,9 +3930,9 @@ class FbaOutboundV20200701Api extends BaseApi
      * @param  string $marketplace_id The marketplace for which the seller wants return reason codes. (optional)
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. The service uses this value to determine the marketplace for which the seller wants return reason codes. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listReturnReasonCodesWithHttpInfo($seller_sku, $language, $marketplace_id = null, $seller_fulfillment_order_id = null)
     {
@@ -3981,72 +3981,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -4061,7 +4061,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4069,7 +4069,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4077,7 +4077,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4085,7 +4085,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4093,7 +4093,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4101,7 +4101,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4109,7 +4109,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4117,7 +4117,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4161,7 +4161,7 @@ class FbaOutboundV20200701Api extends BaseApi
      */
     public function listReturnReasonCodesAsyncWithHttpInfo($seller_sku, $language, $marketplace_id = null, $seller_fulfillment_order_id = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse';
         $request = $this->listReturnReasonCodesRequest($seller_sku, $language, $marketplace_id, $seller_fulfillment_order_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -4329,11 +4329,11 @@ class FbaOutboundV20200701Api extends BaseApi
      * Operation submitFulfillmentOrderStatusUpdate
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse
      */
     public function submitFulfillmentOrderStatusUpdate($seller_fulfillment_order_id, $body)
     {
@@ -4345,11 +4345,11 @@ class FbaOutboundV20200701Api extends BaseApi
      * Operation submitFulfillmentOrderStatusUpdateWithHttpInfo
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitFulfillmentOrderStatusUpdateWithHttpInfo($seller_fulfillment_order_id, $body)
     {
@@ -4398,72 +4398,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -4478,7 +4478,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4486,7 +4486,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4494,7 +4494,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4502,7 +4502,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4510,7 +4510,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4518,7 +4518,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4526,7 +4526,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4534,7 +4534,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4551,7 +4551,7 @@ class FbaOutboundV20200701Api extends BaseApi
      * 
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4567,14 +4567,14 @@ class FbaOutboundV20200701Api extends BaseApi
      * 
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitFulfillmentOrderStatusUpdateAsyncWithHttpInfo($seller_fulfillment_order_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse';
         $request = $this->submitFulfillmentOrderStatusUpdateRequest($seller_fulfillment_order_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -4621,7 +4621,7 @@ class FbaOutboundV20200701Api extends BaseApi
      * Create request for operation 'submitFulfillmentOrderStatusUpdate'
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4727,11 +4727,11 @@ class FbaOutboundV20200701Api extends BaseApi
      * Operation updateFulfillmentOrder
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse
      */
     public function updateFulfillmentOrder($seller_fulfillment_order_id, $body)
     {
@@ -4743,11 +4743,11 @@ class FbaOutboundV20200701Api extends BaseApi
      * Operation updateFulfillmentOrderWithHttpInfo
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateFulfillmentOrderWithHttpInfo($seller_fulfillment_order_id, $body)
     {
@@ -4796,72 +4796,72 @@ class FbaOutboundV20200701Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -4876,7 +4876,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4884,7 +4884,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4892,7 +4892,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4900,7 +4900,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4908,7 +4908,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4916,7 +4916,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4924,7 +4924,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4932,7 +4932,7 @@ class FbaOutboundV20200701Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
+                        '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4949,7 +4949,7 @@ class FbaOutboundV20200701Api extends BaseApi
      * 
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4965,14 +4965,14 @@ class FbaOutboundV20200701Api extends BaseApi
      * 
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateFulfillmentOrderAsyncWithHttpInfo($seller_fulfillment_order_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse';
         $request = $this->updateFulfillmentOrderRequest($seller_fulfillment_order_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -5019,7 +5019,7 @@ class FbaOutboundV20200701Api extends BaseApi
      * Create request for operation 'updateFulfillmentOrder'
      *
      * @param  string $seller_fulfillment_order_id The identifier assigned to the item by the seller when the fulfillment order was created. (required)
-     * @param  \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**acknowledgements** | [**\SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgement[]**](OrderAcknowledgement.md) |  | [optional]
+**acknowledgements** | [**\SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgement[]**](OrderAcknowledgement.md) |  | [optional]
 
 [[VendorOrdersV1 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

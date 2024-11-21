@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorDirectFulfillmentPaymentsV1Api
+# SellingPartnerApiV5\VendorDirectFulfillmentPaymentsV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `submitInvoice()`
 
 ```php
-submitInvoice($body): \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse
+submitInvoice($body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse
 ```
 
 
@@ -30,17 +30,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentPaymentsV1Api($config);
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentPaymentsV1Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest
 
 try {
     $result = $apiInstance->submitInvoice($body);
@@ -54,11 +54,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest**](../Model/VendorDirectFulfillmentPaymentsV1/SubmitInvoiceRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest**](../Model/VendorDirectFulfillmentPaymentsV1/SubmitInvoiceRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse**](../Model/VendorDirectFulfillmentPaymentsV1/SubmitInvoiceResponse.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse**](../Model/VendorDirectFulfillmentPaymentsV1/SubmitInvoiceResponse.md)
 
 ### HTTP request headers
 

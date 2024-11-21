@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReportsV20210630;
+namespace SellingPartnerApiV5\Model\ReportsV20210630;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetReportsResponse Class Doc Comment
  *
  * @category Class
  * @description The response for the getReports operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetReportsResponse extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reports' => '\SellingPartnerApi\Model\ReportsV20210630\Report[]',
+        'reports' => '\SellingPartnerApiV5\Model\ReportsV20210630\Report[]',
         'next_token' => 'string'
     ];
 
@@ -171,7 +171,7 @@ class GetReportsResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets reports
      *
-     * @return \SellingPartnerApi\Model\ReportsV20210630\Report[]
+     * @return \SellingPartnerApiV5\Model\ReportsV20210630\Report[]
      */
     public function getReports()
     {
@@ -181,7 +181,7 @@ class GetReportsResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets reports
      *
-     * @param \SellingPartnerApi\Model\ReportsV20210630\Report[] $reports A list of reports.
+     * @param \SellingPartnerApiV5\Model\ReportsV20210630\Report[] $reports A list of reports.
      *
      * @return self
      */

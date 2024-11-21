@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CompetitivePricingType Class Doc Comment
  *
  * @category Class
  * @description Competitive pricing information for the item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'competitive_prices' => '\SellingPartnerApi\Model\ProductPricingV0\CompetitivePriceType[]',
-        'number_of_offer_listings' => '\SellingPartnerApi\Model\ProductPricingV0\OfferListingCountType[]',
-        'trade_in_value' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType'
+        'competitive_prices' => '\SellingPartnerApiV5\Model\ProductPricingV0\CompetitivePriceType[]',
+        'number_of_offer_listings' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferListingCountType[]',
+        'trade_in_value' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType'
     ];
 
     /**
@@ -155,7 +155,7 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets competitive_prices
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\CompetitivePriceType[]
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\CompetitivePriceType[]
      */
     public function getCompetitivePrices()
     {
@@ -165,7 +165,7 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets competitive_prices
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\CompetitivePriceType[] $competitive_prices A list of competitive pricing information.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\CompetitivePriceType[] $competitive_prices A list of competitive pricing information.
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets number_of_offer_listings
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferListingCountType[]
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferListingCountType[]
      */
     public function getNumberOfOfferListings()
     {
@@ -188,7 +188,7 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets number_of_offer_listings
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferListingCountType[] $number_of_offer_listings The number of active offer listings for the item that was submitted. The listing count is returned by condition, one for each listing condition value that is returned.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferListingCountType[] $number_of_offer_listings The number of active offer listings for the item that was submitted. The listing count is returned by condition, one for each listing condition value that is returned.
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets trade_in_value
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getTradeInValue()
     {
@@ -211,7 +211,7 @@ class CompetitivePricingType extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets trade_in_value
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $trade_in_value trade_in_value
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $trade_in_value trade_in_value
      *
      * @return self
      */

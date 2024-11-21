@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMyFeesEstimateRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetMyFeesEstimateRequest extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fees_estimate_request' => '\SellingPartnerApi\Model\FeesV0\FeesEstimateRequest'
+        'fees_estimate_request' => '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateRequest'
     ];
 
     /**
@@ -137,7 +137,7 @@ class GetMyFeesEstimateRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Gets fees_estimate_request
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimateRequest|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimateRequest|null
      */
     public function getFeesEstimateRequest()
     {
@@ -147,7 +147,7 @@ class GetMyFeesEstimateRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Sets fees_estimate_request
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeesEstimateRequest|null $fees_estimate_request fees_estimate_request
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeesEstimateRequest|null $fees_estimate_request fees_estimate_request
      *
      * @return self
      */

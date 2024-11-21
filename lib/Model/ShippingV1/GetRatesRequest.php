@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetRatesRequest Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the getRates operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,11 +58,11 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ship_to' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'ship_from' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'service_types' => '\SellingPartnerApi\Model\ShippingV1\ServiceType[]',
+        'ship_to' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'ship_from' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'service_types' => '\SellingPartnerApiV5\Model\ShippingV1\ServiceType[]',
         'ship_date' => 'string',
-        'container_specifications' => '\SellingPartnerApi\Model\ShippingV1\ContainerSpecification[]'
+        'container_specifications' => '\SellingPartnerApiV5\Model\ShippingV1\ContainerSpecification[]'
     ];
 
     /**
@@ -173,7 +173,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets ship_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipTo()
     {
@@ -183,7 +183,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets ship_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_to ship_to
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_to ship_to
      *
      * @return self
      */
@@ -196,7 +196,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets ship_from
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipFrom()
     {
@@ -206,7 +206,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets ship_from
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_from ship_from
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_from ship_from
      *
      * @return self
      */
@@ -219,7 +219,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets service_types
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ServiceType[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ServiceType[]
      */
     public function getServiceTypes()
     {
@@ -229,7 +229,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets service_types
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ServiceType[] $service_types A list of service types that can be used to send the shipment.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ServiceType[] $service_types A list of service types that can be used to send the shipment.
      *
      * @return self
      */
@@ -265,7 +265,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets container_specifications
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ContainerSpecification[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ContainerSpecification[]
      */
     public function getContainerSpecifications()
     {
@@ -275,7 +275,7 @@ class GetRatesRequest extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets container_specifications
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ContainerSpecification[] $container_specifications A list of container specifications.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ContainerSpecification[] $container_specifications A list of container specifications.
      *
      * @return self
      */

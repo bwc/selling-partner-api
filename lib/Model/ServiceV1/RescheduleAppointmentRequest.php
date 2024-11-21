@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RescheduleAppointmentRequest Class Doc Comment
  *
  * @category Class
  * @description Input for rescheduled appointment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class RescheduleAppointmentRequest extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'appointment_time' => '\SellingPartnerApi\Model\ServiceV1\AppointmentTimeInput',
+        'appointment_time' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentTimeInput',
         'reschedule_reason_code' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class RescheduleAppointmentRequest extends BaseModel implements ModelInterface, 
     /**
      * Gets appointment_time
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentTimeInput
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentTimeInput
      */
     public function getAppointmentTime()
     {
@@ -159,7 +159,7 @@ class RescheduleAppointmentRequest extends BaseModel implements ModelInterface, 
     /**
      * Sets appointment_time
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentTimeInput $appointment_time appointment_time
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentTimeInput $appointment_time appointment_time
      *
      * @return self
      */

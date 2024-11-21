@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShippingLabel Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
         'label_format' => 'string',
-        'label_data' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\LabelData[]'
+        'label_data' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\LabelData[]'
     ];
 
     /**
@@ -241,7 +241,7 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -251,7 +251,7 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -264,7 +264,7 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -274,7 +274,7 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -320,7 +320,7 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets label_data
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\LabelData[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\LabelData[]
      */
     public function getLabelData()
     {
@@ -330,7 +330,7 @@ class ShippingLabel extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets label_data
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\LabelData[] $label_data Provides the details of the packages in this shipment.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\LabelData[] $label_data Provides the details of the packages in this shipment.
      *
      * @return self
      */

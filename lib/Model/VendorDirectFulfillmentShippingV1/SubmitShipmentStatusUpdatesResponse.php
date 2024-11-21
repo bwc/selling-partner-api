@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitShipmentStatusUpdatesResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the submitShipmentStatusUpdates operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class SubmitShipmentStatusUpdatesResponse extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\TransactionReference',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\TransactionReference',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class SubmitShipmentStatusUpdatesResponse extends BaseModel implements ModelInte
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\TransactionReference|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\TransactionReference|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class SubmitShipmentStatusUpdatesResponse extends BaseModel implements ModelInte
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\TransactionReference|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\TransactionReference|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class SubmitShipmentStatusUpdatesResponse extends BaseModel implements ModelInte
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class SubmitShipmentStatusUpdatesResponse extends BaseModel implements ModelInte
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

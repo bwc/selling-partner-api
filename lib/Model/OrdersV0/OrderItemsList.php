@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItemsList Class Doc Comment
  *
  * @category Class
  * @description The order items list along with the order ID.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class OrderItemsList extends BaseModel implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_items' => '\SellingPartnerApi\Model\OrdersV0\OrderItem[]',
+        'order_items' => '\SellingPartnerApiV5\Model\OrdersV0\OrderItem[]',
         'next_token' => 'string',
         'amazon_order_id' => 'string'
     ];
@@ -155,7 +155,7 @@ class OrderItemsList extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets order_items
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OrderItem[]
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OrderItem[]
      */
     public function getOrderItems()
     {
@@ -165,7 +165,7 @@ class OrderItemsList extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets order_items
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OrderItem[] $order_items A list of order items.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OrderItem[] $order_items A list of order items.
      *
      * @return self
      */

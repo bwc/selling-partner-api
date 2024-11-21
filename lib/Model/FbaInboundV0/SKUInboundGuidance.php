@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SKUInboundGuidance Class Doc Comment
  *
  * @category Class
  * @description Reasons why a given seller SKU is not recommended for shipment to Amazon's fulfillment network.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class SKUInboundGuidance extends BaseModel implements ModelInterface, ArrayAcces
     protected static $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'inbound_guidance' => '\SellingPartnerApi\Model\FbaInboundV0\InboundGuidance',
-        'guidance_reason_list' => '\SellingPartnerApi\Model\FbaInboundV0\GuidanceReason[]'
+        'inbound_guidance' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundGuidance',
+        'guidance_reason_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\GuidanceReason[]'
     ];
 
     /**
@@ -210,7 +210,7 @@ class SKUInboundGuidance extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets inbound_guidance
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundGuidance
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundGuidance
      */
     public function getInboundGuidance()
     {
@@ -220,7 +220,7 @@ class SKUInboundGuidance extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets inbound_guidance
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundGuidance $inbound_guidance inbound_guidance
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundGuidance $inbound_guidance inbound_guidance
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class SKUInboundGuidance extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets guidance_reason_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\GuidanceReason[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\GuidanceReason[]|null
      */
     public function getGuidanceReasonList()
     {
@@ -243,7 +243,7 @@ class SKUInboundGuidance extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets guidance_reason_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\GuidanceReason[]|null $guidance_reason_list A list of inbound guidance reason information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\GuidanceReason[]|null $guidance_reason_list A list of inbound guidance reason information.
      *
      * @return self
      */

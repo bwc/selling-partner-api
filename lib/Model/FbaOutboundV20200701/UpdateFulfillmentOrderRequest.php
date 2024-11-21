@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateFulfillmentOrderRequest Class Doc Comment
  *
  * @category Class
  * @description The request body schema for the updateFulfillmentOrder operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,14 +62,14 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
         'displayable_order_id' => 'string',
         'displayable_order_date' => 'string',
         'displayable_order_comment' => 'string',
-        'shipping_speed_category' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory',
-        'destination_address' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Address',
-        'fulfillment_action' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction',
-        'fulfillment_policy' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy',
+        'shipping_speed_category' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory',
+        'destination_address' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Address',
+        'fulfillment_action' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction',
+        'fulfillment_policy' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy',
         'ship_from_country_code' => 'string',
         'notification_emails' => 'string[]',
-        'feature_constraints' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]',
-        'items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderItem[]'
+        'feature_constraints' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]',
+        'items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderItem[]'
     ];
 
     /**
@@ -311,7 +311,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets shipping_speed_category
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory|null
      */
     public function getShippingSpeedCategory()
     {
@@ -321,7 +321,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets shipping_speed_category
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory|null $shipping_speed_category shipping_speed_category
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory|null $shipping_speed_category shipping_speed_category
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets destination_address
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Address|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address|null
      */
     public function getDestinationAddress()
     {
@@ -344,7 +344,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets destination_address
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Address|null $destination_address destination_address
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address|null $destination_address destination_address
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets fulfillment_action
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction|null
      */
     public function getFulfillmentAction()
     {
@@ -367,7 +367,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets fulfillment_action
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction|null $fulfillment_action fulfillment_action
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction|null $fulfillment_action fulfillment_action
      *
      * @return self
      */
@@ -380,7 +380,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets fulfillment_policy
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy|null
      */
     public function getFulfillmentPolicy()
     {
@@ -390,7 +390,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets fulfillment_policy
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy|null $fulfillment_policy fulfillment_policy
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy|null $fulfillment_policy fulfillment_policy
      *
      * @return self
      */
@@ -449,7 +449,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets feature_constraints
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null
      */
     public function getFeatureConstraints()
     {
@@ -459,7 +459,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets feature_constraints
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
      *
      * @return self
      */
@@ -472,7 +472,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderItem[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderItem[]|null
      */
     public function getItems()
     {
@@ -482,7 +482,7 @@ class UpdateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderItem[]|null $items An array of fulfillment order item information for updating a fulfillment order.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderItem[]|null $items An array of fulfillment order item information for updating a fulfillment order.
      *
      * @return self
      */

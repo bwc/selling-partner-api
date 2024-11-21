@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RemovalShipmentEvent Class Doc Comment
  *
  * @category Class
  * @description A removal shipment event for a removal order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class RemovalShipmentEvent extends BaseModel implements ModelInterface, ArrayAcc
         'merchant_order_id' => 'string',
         'order_id' => 'string',
         'transaction_type' => 'string',
-        'removal_shipment_item_list' => '\SellingPartnerApi\Model\FinancesV0\RemovalShipmentItem[]'
+        'removal_shipment_item_list' => '\SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentItem[]'
     ];
 
     /**
@@ -255,7 +255,7 @@ class RemovalShipmentEvent extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets removal_shipment_item_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\RemovalShipmentItem[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentItem[]|null
      */
     public function getRemovalShipmentItemList()
     {
@@ -265,7 +265,7 @@ class RemovalShipmentEvent extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets removal_shipment_item_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\RemovalShipmentItem[]|null $removal_shipment_item_list A list of information about removal shipment items.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentItem[]|null $removal_shipment_item_list A list of information about removal shipment items.
      *
      * @return self
      */

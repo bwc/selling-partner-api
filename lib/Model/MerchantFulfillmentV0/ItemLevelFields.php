@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemLevelFields Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ItemLevelFields extends BaseModel implements ModelInterface, ArrayAccess, 
       */
     protected static $openAPITypes = [
         'asin' => 'string',
-        'additional_inputs' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalInputs[]'
+        'additional_inputs' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalInputs[]'
     ];
 
     /**
@@ -171,7 +171,7 @@ class ItemLevelFields extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets additional_inputs
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalInputs[]
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalInputs[]
      */
     public function getAdditionalInputs()
     {
@@ -181,7 +181,7 @@ class ItemLevelFields extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets additional_inputs
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalInputs[] $additional_inputs A list of additional inputs.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalInputs[] $additional_inputs A list of additional inputs.
      *
      * @return self
      */

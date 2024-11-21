@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorDirectFulfillmentInventoryV1Api
+# SellingPartnerApiV5\VendorDirectFulfillmentInventoryV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `submitInventoryUpdate()`
 
 ```php
-submitInventoryUpdate($warehouse_id, $body): \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateResponse
+submitInventoryUpdate($warehouse_id, $body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateResponse
 ```
 
 
@@ -30,18 +30,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentInventoryV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentInventoryV1Api($config);
 $warehouse_id = 'warehouse_id_example'; // string | Identifier for the warehouse for which to update inventory.
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateRequest
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateRequest
 
 try {
     $result = $apiInstance->submitInventoryUpdate($warehouse_id, $body);
@@ -56,11 +56,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **warehouse_id** | **string**| Identifier for the warehouse for which to update inventory. |
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateRequest**](../Model/VendorDirectFulfillmentInventoryV1/SubmitInventoryUpdateRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateRequest**](../Model/VendorDirectFulfillmentInventoryV1/SubmitInventoryUpdateRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateResponse**](../Model/VendorDirectFulfillmentInventoryV1/SubmitInventoryUpdateResponse.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\SubmitInventoryUpdateResponse**](../Model/VendorDirectFulfillmentInventoryV1/SubmitInventoryUpdateResponse.md)
 
 ### HTTP request headers
 

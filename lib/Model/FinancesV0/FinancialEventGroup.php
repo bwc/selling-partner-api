@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FinancialEventGroup Class Doc Comment
  *
  * @category Class
  * @description Information related to a financial event group.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,12 +61,12 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
         'financial_event_group_id' => 'string',
         'processing_status' => 'string',
         'fund_transfer_status' => 'string',
-        'original_total' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'converted_total' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'original_total' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'converted_total' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'fund_transfer_date' => 'string',
         'trace_id' => 'string',
         'account_tail' => 'string',
-        'beginning_balance' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'beginning_balance' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'financial_event_group_start' => 'string',
         'financial_event_group_end' => 'string'
     ];
@@ -269,7 +269,7 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets original_total
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getOriginalTotal()
     {
@@ -279,7 +279,7 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets original_total
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $original_total original_total
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $original_total original_total
      *
      * @return self
      */
@@ -292,7 +292,7 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets converted_total
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getConvertedTotal()
     {
@@ -302,7 +302,7 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets converted_total
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $converted_total converted_total
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $converted_total converted_total
      *
      * @return self
      */
@@ -384,7 +384,7 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets beginning_balance
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getBeginningBalance()
     {
@@ -394,7 +394,7 @@ class FinancialEventGroup extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets beginning_balance
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $beginning_balance beginning_balance
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $beginning_balance beginning_balance
      *
      * @return self
      */

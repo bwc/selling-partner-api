@@ -1,4 +1,4 @@
-# SellingPartnerApi\OrdersV0Api
+# SellingPartnerApiV5\OrdersV0Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -39,18 +39,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An Amazon-defined order identifier, in 3-7-7 format.
-$payload = new \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest(); // \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest | Request body of confirmShipment.
+$payload = new \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest(); // \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest | Request body of confirmShipment.
 
 try {
     $apiInstance->confirmShipment($order_id, $payload);
@@ -64,7 +64,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| An Amazon-defined order identifier, in 3-7-7 format. |
- **payload** | [**\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest**](../Model/OrdersV0/ConfirmShipmentRequest.md)| Request body of confirmShipment. |
+ **payload** | [**\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest**](../Model/OrdersV0/ConfirmShipmentRequest.md)| Request body of confirmShipment. |
 
 ### Return type
 
@@ -82,7 +82,7 @@ void (empty response body)
 ## `getOrder()`
 
 ```php
-getOrder($order_id, $data_elements): \SellingPartnerApi\Model\OrdersV0\GetOrderResponse
+getOrder($order_id, $data_elements): \SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse
 ```
 
 
@@ -104,16 +104,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An Amazon-defined order identifier, in 3-7-7 format.
 $data_elements = array('data_elements_example'); // string[] | An array of restricted order data elements to retrieve (valid array elements are \"buyerInfo\" and \"shippingAddress\")
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrderResponse**](../Model/OrdersV0/GetOrderResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse**](../Model/OrdersV0/GetOrderResponse.md)
 
 ### HTTP request headers
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 ## `getOrderAddress()`
 
 ```php
-getOrderAddress($order_id): \SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse
+getOrderAddress($order_id): \SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse
 ```
 
 
@@ -170,16 +170,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An orderId is an Amazon-defined order identifier, in 3-7-7 format.
 
 try {
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse**](../Model/OrdersV0/GetOrderAddressResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse**](../Model/OrdersV0/GetOrderAddressResponse.md)
 
 ### HTTP request headers
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 ## `getOrderBuyerInfo()`
 
 ```php
-getOrderBuyerInfo($order_id): \SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse
+getOrderBuyerInfo($order_id): \SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse
 ```
 
 
@@ -234,16 +234,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An orderId is an Amazon-defined order identifier, in 3-7-7 format.
 
 try {
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse**](../Model/OrdersV0/GetOrderBuyerInfoResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse**](../Model/OrdersV0/GetOrderBuyerInfoResponse.md)
 
 ### HTTP request headers
 
@@ -276,7 +276,7 @@ Name | Type | Description  | Notes
 ## `getOrderItems()`
 
 ```php
-getOrderItems($order_id, $next_token, $data_elements): \SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse
+getOrderItems($order_id, $next_token, $data_elements): \SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse
 ```
 
 
@@ -300,16 +300,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An Amazon-defined order identifier, in 3-7-7 format.
 $next_token = 'next_token_example'; // string | A string token returned in the response of your previous request.
 $data_elements = array('data_elements_example'); // string[] | An array of restricted order data elements to retrieve (the only valid array element is \"buyerInfo\")
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse**](../Model/OrdersV0/GetOrderItemsResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse**](../Model/OrdersV0/GetOrderItemsResponse.md)
 
 ### HTTP request headers
 
@@ -346,7 +346,7 @@ Name | Type | Description  | Notes
 ## `getOrderItemsBuyerInfo()`
 
 ```php
-getOrderItemsBuyerInfo($order_id, $next_token): \SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse
+getOrderItemsBuyerInfo($order_id, $next_token): \SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse
 ```
 
 
@@ -368,16 +368,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An Amazon-defined order identifier, in 3-7-7 format.
 $next_token = 'next_token_example'; // string | A string token returned in the response of your previous request.
 
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse**](../Model/OrdersV0/GetOrderItemsBuyerInfoResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse**](../Model/OrdersV0/GetOrderItemsBuyerInfoResponse.md)
 
 ### HTTP request headers
 
@@ -412,7 +412,7 @@ Name | Type | Description  | Notes
 ## `getOrderRegulatedInfo()`
 
 ```php
-getOrderRegulatedInfo($order_id): \SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse
+getOrderRegulatedInfo($order_id): \SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse
 ```
 
 
@@ -434,16 +434,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An orderId is an Amazon-defined order identifier, in 3-7-7 format.
 
 try {
@@ -462,7 +462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse**](../Model/OrdersV0/GetOrderRegulatedInfoResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse**](../Model/OrdersV0/GetOrderRegulatedInfoResponse.md)
 
 ### HTTP request headers
 
@@ -476,7 +476,7 @@ Name | Type | Description  | Notes
 ## `getOrders()`
 
 ```php
-getOrders($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $electronic_invoice_statuses, $next_token, $amazon_order_ids, $actual_fulfillment_supply_source_id, $is_ispu, $store_chain_store_id, $data_elements): \SellingPartnerApi\Model\OrdersV0\GetOrdersResponse
+getOrders($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $electronic_invoice_statuses, $next_token, $amazon_order_ids, $actual_fulfillment_supply_source_id, $is_ispu, $store_chain_store_id, $data_elements): \SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse
 ```
 
 
@@ -498,16 +498,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A list of MarketplaceId values. Used to select orders that were placed in the specified marketplaces. See the [Selling Partner API Developer Guide](https://developer-docs.amazon.com/sp-api/docs/marketplace-ids) for a complete list of marketplaceId values.
 $created_after = 'created_after_example'; // string | A date used for selecting orders created after (or at) a specified time. Only orders placed after the specified time are returned. Either the CreatedAfter parameter or the LastUpdatedAfter parameter is required. Both cannot be empty. The date must be in ISO 8601 format.
 $created_before = 'created_before_example'; // string | A date used for selecting orders created before (or at) a specified time. Only orders placed before the specified time are returned. The date must be in ISO 8601 format.
@@ -594,7 +594,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse**](../Model/OrdersV0/GetOrdersResponse.md)
+[**\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse**](../Model/OrdersV0/GetOrdersResponse.md)
 
 ### HTTP request headers
 
@@ -630,18 +630,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An Amazon-defined order identifier, in 3-7-7 format.
-$payload = new \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest(); // \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest | The request body for the updateShipmentStatus operation.
+$payload = new \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest(); // \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest | The request body for the updateShipmentStatus operation.
 
 try {
     $apiInstance->updateShipmentStatus($order_id, $payload);
@@ -655,7 +655,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| An Amazon-defined order identifier, in 3-7-7 format. |
- **payload** | [**\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest**](../Model/OrdersV0/UpdateShipmentStatusRequest.md)| The request body for the updateShipmentStatus operation. |
+ **payload** | [**\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest**](../Model/OrdersV0/UpdateShipmentStatusRequest.md)| The request body for the updateShipmentStatus operation. |
 
 ### Return type
 
@@ -695,18 +695,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\OrdersV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\OrdersV0Api($config);
 $order_id = 'order_id_example'; // string | An orderId is an Amazon-defined order identifier, in 3-7-7 format.
-$payload = new \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest(); // \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest | The request body for the updateVerificationStatus operation.
+$payload = new \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest(); // \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest | The request body for the updateVerificationStatus operation.
 
 try {
     $apiInstance->updateVerificationStatus($order_id, $payload);
@@ -720,7 +720,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_id** | **string**| An orderId is an Amazon-defined order identifier, in 3-7-7 format. |
- **payload** | [**\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest**](../Model/OrdersV0/UpdateVerificationStatusRequest.md)| The request body for the updateVerificationStatus operation. |
+ **payload** | [**\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest**](../Model/OrdersV0/UpdateVerificationStatusRequest.md)| The request body for the updateVerificationStatus operation. |
 
 ### Return type
 

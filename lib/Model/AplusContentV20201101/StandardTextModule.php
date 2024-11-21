@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardTextModule Class Doc Comment
  *
  * @category Class
  * @description A standard headline and body text.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardTextModule extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'body' => '\SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent'
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'body' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent'
     ];
 
     /**
@@ -146,7 +146,7 @@ class StandardTextModule extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -156,7 +156,7 @@ class StandardTextModule extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -169,7 +169,7 @@ class StandardTextModule extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent
      */
     public function getBody()
     {
@@ -179,7 +179,7 @@ class StandardTextModule extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ParagraphComponent $body body
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ParagraphComponent $body body
      *
      * @return self
      */

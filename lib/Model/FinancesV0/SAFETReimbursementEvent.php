@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SAFETReimbursementEvent Class Doc Comment
  *
  * @category Class
  * @description A SAFE-T claim reimbursement on the seller's account.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,9 +60,9 @@ class SAFETReimbursementEvent extends BaseModel implements ModelInterface, Array
     protected static $openAPITypes = [
         'posted_date' => 'string',
         'safet_claim_id' => 'string',
-        'reimbursed_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'reimbursed_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'reason_code' => 'string',
-        'safet_reimbursement_item_list' => '\SellingPartnerApi\Model\FinancesV0\SAFETReimbursementItem[]'
+        'safet_reimbursement_item_list' => '\SellingPartnerApiV5\Model\FinancesV0\SAFETReimbursementItem[]'
     ];
 
     /**
@@ -207,7 +207,7 @@ class SAFETReimbursementEvent extends BaseModel implements ModelInterface, Array
     /**
      * Gets reimbursed_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getReimbursedAmount()
     {
@@ -217,7 +217,7 @@ class SAFETReimbursementEvent extends BaseModel implements ModelInterface, Array
     /**
      * Sets reimbursed_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $reimbursed_amount reimbursed_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $reimbursed_amount reimbursed_amount
      *
      * @return self
      */
@@ -253,7 +253,7 @@ class SAFETReimbursementEvent extends BaseModel implements ModelInterface, Array
     /**
      * Gets safet_reimbursement_item_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\SAFETReimbursementItem[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\SAFETReimbursementItem[]|null
      */
     public function getSafetReimbursementItemList()
     {
@@ -263,7 +263,7 @@ class SAFETReimbursementEvent extends BaseModel implements ModelInterface, Array
     /**
      * Sets safet_reimbursement_item_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\SAFETReimbursementItem[]|null $safet_reimbursement_item_list A list of SAFETReimbursementItems.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\SAFETReimbursementItem[]|null $safet_reimbursement_item_list A list of SAFETReimbursementItems.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItem Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,13 +61,13 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
         'title' => 'string',
-        'ordered_quantity' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ItemQuantity',
-        'scheduled_delivery_shipment' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ScheduledDeliveryShipment',
-        'gift_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\GiftDetails',
-        'net_price' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money',
-        'tax_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TaxItemDetails',
-        'total_price' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money',
-        'buyer_customized_info' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\BuyerCustomizedInfoDetail'
+        'ordered_quantity' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ItemQuantity',
+        'scheduled_delivery_shipment' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ScheduledDeliveryShipment',
+        'gift_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\GiftDetails',
+        'net_price' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money',
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TaxItemDetails',
+        'total_price' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money',
+        'buyer_customized_info' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\BuyerCustomizedInfoDetail'
     ];
 
     /**
@@ -297,7 +297,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets ordered_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -307,7 +307,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets ordered_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ItemQuantity $ordered_quantity ordered_quantity
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ItemQuantity $ordered_quantity ordered_quantity
      *
      * @return self
      */
@@ -320,7 +320,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets scheduled_delivery_shipment
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ScheduledDeliveryShipment|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ScheduledDeliveryShipment|null
      */
     public function getScheduledDeliveryShipment()
     {
@@ -330,7 +330,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets scheduled_delivery_shipment
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ScheduledDeliveryShipment|null $scheduled_delivery_shipment scheduled_delivery_shipment
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ScheduledDeliveryShipment|null $scheduled_delivery_shipment scheduled_delivery_shipment
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets gift_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\GiftDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\GiftDetails|null
      */
     public function getGiftDetails()
     {
@@ -353,7 +353,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets gift_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\GiftDetails|null $gift_details gift_details
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\GiftDetails|null $gift_details gift_details
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets net_price
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money
      */
     public function getNetPrice()
     {
@@ -376,7 +376,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets net_price
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money $net_price net_price
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money $net_price net_price
      *
      * @return self
      */
@@ -389,7 +389,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TaxItemDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TaxItemDetails|null
      */
     public function getTaxDetails()
     {
@@ -399,7 +399,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TaxItemDetails|null $tax_details tax_details
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TaxItemDetails|null $tax_details tax_details
      *
      * @return self
      */
@@ -412,7 +412,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets total_price
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money|null
      */
     public function getTotalPrice()
     {
@@ -422,7 +422,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets total_price
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money|null $total_price total_price
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money|null $total_price total_price
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets buyer_customized_info
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\BuyerCustomizedInfoDetail|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\BuyerCustomizedInfoDetail|null
      */
     public function getBuyerCustomizedInfo()
     {
@@ -445,7 +445,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets buyer_customized_info
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\BuyerCustomizedInfoDetail|null $buyer_customized_info buyer_customized_info
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\BuyerCustomizedInfoDetail|null $buyer_customized_info buyer_customized_info
      *
      * @return self
      */

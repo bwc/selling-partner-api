@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TimeSlot Class Doc Comment
  *
  * @category Class
  * @description A time window to hand over an Easy Ship package to Amazon Logistics.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class TimeSlot extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
         'slot_id' => 'string',
         'start_time' => 'string',
         'end_time' => 'string',
-        'handover_method' => '\SellingPartnerApi\Model\EasyShipV20220323\HandoverMethod'
+        'handover_method' => '\SellingPartnerApiV5\Model\EasyShipV20220323\HandoverMethod'
     ];
 
     /**
@@ -242,7 +242,7 @@ class TimeSlot extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets handover_method
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\HandoverMethod|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\HandoverMethod|null
      */
     public function getHandoverMethod()
     {
@@ -252,7 +252,7 @@ class TimeSlot extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets handover_method
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\HandoverMethod|null $handover_method handover_method
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\HandoverMethod|null $handover_method handover_method
      *
      * @return self
      */

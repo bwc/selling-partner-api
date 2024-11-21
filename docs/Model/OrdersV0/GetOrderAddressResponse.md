@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**payload** | [**\SellingPartnerApi\Model\OrdersV0\OrderAddress**](OrderAddress.md) |  | [optional]
-**errors** | [**\SellingPartnerApi\Model\OrdersV0\Error[]**](Error.md) | A list of error responses returned when a request is unsuccessful. | [optional]
+**payload** | [**\SellingPartnerApiV5\Model\OrdersV0\OrderAddress**](OrderAddress.md) |  | [optional]
+**errors** | [**\SellingPartnerApiV5\Model\OrdersV0\Error[]**](Error.md) | A list of error responses returned when a request is unsuccessful. | [optional]
 
 [[OrdersV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

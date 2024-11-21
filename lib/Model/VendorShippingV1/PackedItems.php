@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackedItems Class Doc Comment
  *
  * @category Class
  * @description Details of the item being shipped.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,8 +61,8 @@ class PackedItems extends BaseModel implements ModelInterface, ArrayAccess, \Jso
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'packed_quantity' => '\SellingPartnerApi\Model\VendorShippingV1\ItemQuantity',
-        'item_details' => '\SellingPartnerApi\Model\VendorShippingV1\PackageItemDetails'
+        'packed_quantity' => '\SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity',
+        'item_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\PackageItemDetails'
     ];
 
     /**
@@ -230,7 +230,7 @@ class PackedItems extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets packed_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity|null
      */
     public function getPackedQuantity()
     {
@@ -240,7 +240,7 @@ class PackedItems extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets packed_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ItemQuantity|null $packed_quantity packed_quantity
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity|null $packed_quantity packed_quantity
      *
      * @return self
      */
@@ -253,7 +253,7 @@ class PackedItems extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets item_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PackageItemDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PackageItemDetails|null
      */
     public function getItemDetails()
     {
@@ -263,7 +263,7 @@ class PackedItems extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets item_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PackageItemDetails|null $item_details item_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PackageItemDetails|null $item_details item_details
      *
      * @return self
      */

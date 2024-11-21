@@ -1,4 +1,4 @@
-# SellingPartnerApi\ListingsRestrictionsV20210801Api
+# SellingPartnerApiV5\ListingsRestrictionsV20210801Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getListingsRestrictions()`
 
 ```php
-getListingsRestrictions($asin, $seller_id, $marketplace_ids, $condition_type, $reason_locale): \SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList
+getListingsRestrictions($asin, $seller_id, $marketplace_ids, $condition_type, $reason_locale): \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList
 ```
 
 
@@ -30,16 +30,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ListingsRestrictionsV20210801Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ListingsRestrictionsV20210801Api($config);
 $asin = B0000ASIN1; // string | The Amazon Standard Identification Number (ASIN) of the item.
 $seller_id = 'seller_id_example'; // string | A selling partner identifier, such as a merchant account.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ListingsRestrictionsV20210801\RestrictionList**](../Model/ListingsRestrictionsV20210801/RestrictionList.md)
+[**\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\RestrictionList**](../Model/ListingsRestrictionsV20210801/RestrictionList.md)
 
 ### HTTP request headers
 

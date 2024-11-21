@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSellingPartnerMetricsResponseMetric Class Doc Comment
  *
  * @category Class
  * @description An object which contains metric data for a selling partner.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -64,7 +64,7 @@ class GetSellingPartnerMetricsResponseMetric extends BaseModel implements ModelI
         'active_subscriptions' => 'float',
         'subscriber_average_revenue' => 'double',
         'non_subscriber_average_revenue' => 'double',
-        'time_interval' => '\SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval',
+        'time_interval' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval',
         'currency_code' => 'string'
     ];
 
@@ -378,7 +378,7 @@ class GetSellingPartnerMetricsResponseMetric extends BaseModel implements ModelI
     /**
      * Gets time_interval
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval|null
      */
     public function getTimeInterval()
     {
@@ -388,7 +388,7 @@ class GetSellingPartnerMetricsResponseMetric extends BaseModel implements ModelI
     /**
      * Sets time_interval
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval|null $time_interval time_interval
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval|null $time_interval time_interval
      *
      * @return self
      */

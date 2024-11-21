@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SearchContentPublishRecordsResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class SearchContentPublishRecordsResponse extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]',
+        'warnings' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]',
         'next_page_token' => 'string',
-        'publish_record_list' => '\SellingPartnerApi\Model\AplusContentV20201101\PublishRecord[]'
+        'publish_record_list' => '\SellingPartnerApiV5\Model\AplusContentV20201101\PublishRecord[]'
     ];
 
     /**
@@ -180,7 +180,7 @@ class SearchContentPublishRecordsResponse extends BaseModel implements ModelInte
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null
      */
     public function getWarnings()
     {
@@ -190,7 +190,7 @@ class SearchContentPublishRecordsResponse extends BaseModel implements ModelInte
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class SearchContentPublishRecordsResponse extends BaseModel implements ModelInte
     /**
      * Gets publish_record_list
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PublishRecord[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PublishRecord[]
      */
     public function getPublishRecordList()
     {
@@ -243,7 +243,7 @@ class SearchContentPublishRecordsResponse extends BaseModel implements ModelInte
     /**
      * Sets publish_record_list
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\PublishRecord[] $publish_record_list A list of A+ Content publishing records.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\PublishRecord[] $publish_record_list A list of A+ Content publishing records.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentConfirmation Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,11 +58,11 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
-        'shipment_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShipmentDetails',
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
-        'items' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Item[]',
-        'containers' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Container[]'
+        'shipment_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShipmentDetails',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
+        'items' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Item[]',
+        'containers' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Container[]'
     ];
 
     /**
@@ -213,7 +213,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets shipment_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShipmentDetails
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShipmentDetails
      */
     public function getShipmentDetails()
     {
@@ -223,7 +223,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets shipment_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShipmentDetails $shipment_details shipment_details
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShipmentDetails $shipment_details shipment_details
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -246,7 +246,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -269,7 +269,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Item[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Item[]
      */
     public function getItems()
     {
@@ -292,7 +292,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Item[] $items Provide the details of the items in this shipment. If any of the item details field is common at a package or a pallet level, then provide them at the corresponding package.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Item[] $items Provide the details of the items in this shipment. If any of the item details field is common at a package or a pallet level, then provide them at the corresponding package.
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null
      */
     public function getContainers()
     {
@@ -315,7 +315,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null $containers Provide the details of the items in this shipment. If any of the item details field is common at a package or a pallet level, then provide them at the corresponding package.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null $containers Provide the details of the items in this shipment. If any of the item details field is common at a package or a pallet level, then provide them at the corresponding package.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TaxDetails Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class TaxDetails extends BaseModel implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'tax_rate' => 'string',
-        'tax_amount' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money',
-        'taxable_amount' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money',
+        'tax_amount' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money',
+        'taxable_amount' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money',
         'type' => 'string'
     ];
 
@@ -224,7 +224,7 @@ class TaxDetails extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets tax_amount
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money
      */
     public function getTaxAmount()
     {
@@ -234,7 +234,7 @@ class TaxDetails extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets tax_amount
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money $tax_amount tax_amount
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money $tax_amount tax_amount
      *
      * @return self
      */
@@ -247,7 +247,7 @@ class TaxDetails extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets taxable_amount
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money|null
      */
     public function getTaxableAmount()
     {
@@ -257,7 +257,7 @@ class TaxDetails extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets taxable_amount
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Money|null $taxable_amount taxable_amount
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Money|null $taxable_amount taxable_amount
      *
      * @return self
      */

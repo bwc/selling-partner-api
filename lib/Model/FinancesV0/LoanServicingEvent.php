@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * LoanServicingEvent Class Doc Comment
  *
  * @category Class
  * @description A loan advance, loan payment, or loan refund.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class LoanServicingEvent extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'loan_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'loan_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'source_business_event_type' => 'string'
     ];
 
@@ -143,7 +143,7 @@ class LoanServicingEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets loan_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getLoanAmount()
     {
@@ -153,7 +153,7 @@ class LoanServicingEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets loan_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $loan_amount loan_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $loan_amount loan_amount
      *
      * @return self
      */

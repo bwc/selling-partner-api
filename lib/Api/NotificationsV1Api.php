@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,30 +24,30 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * NotificationsV1Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class NotificationsV1Api extends BaseApi
 {
     /**
      * Operation createDestination
      *
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse
      */
     public function createDestination($body)
     {
@@ -58,11 +58,11 @@ class NotificationsV1Api extends BaseApi
     /**
      * Operation createDestinationWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDestinationWithHttpInfo($body)
     {
@@ -112,88 +112,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -208,7 +208,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -240,7 +240,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -256,7 +256,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -264,7 +264,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -280,7 +280,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -296,7 +296,7 @@ class NotificationsV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -311,14 +311,14 @@ class NotificationsV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createDestinationAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse';
         $request = $this->createDestinationRequest($body);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -365,7 +365,7 @@ class NotificationsV1Api extends BaseApi
     /**
      * Create request for operation 'createDestination'
      *
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -453,11 +453,11 @@ class NotificationsV1Api extends BaseApi
      * Operation createSubscription
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse
      */
     public function createSubscription($notification_type, $body)
     {
@@ -469,11 +469,11 @@ class NotificationsV1Api extends BaseApi
      * Operation createSubscriptionWithHttpInfo
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createSubscriptionWithHttpInfo($notification_type, $body)
     {
@@ -522,88 +522,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -618,7 +618,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -626,7 +626,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -634,7 +634,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -642,7 +642,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -650,7 +650,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -658,7 +658,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -666,7 +666,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -674,7 +674,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -682,7 +682,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -690,7 +690,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -707,7 +707,7 @@ class NotificationsV1Api extends BaseApi
      * 
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -723,14 +723,14 @@ class NotificationsV1Api extends BaseApi
      * 
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createSubscriptionAsyncWithHttpInfo($notification_type, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse';
         $request = $this->createSubscriptionRequest($notification_type, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -777,7 +777,7 @@ class NotificationsV1Api extends BaseApi
      * Create request for operation 'createSubscription'
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
-     * @param  \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -880,9 +880,9 @@ class NotificationsV1Api extends BaseApi
      *
      * @param  string $destination_id The identifier for the destination that you want to delete. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse
      */
     public function deleteDestination($destination_id)
     {
@@ -895,9 +895,9 @@ class NotificationsV1Api extends BaseApi
      *
      * @param  string $destination_id The identifier for the destination that you want to delete. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteDestinationWithHttpInfo($destination_id)
     {
@@ -947,88 +947,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1043,7 +1043,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1051,7 +1051,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1059,7 +1059,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1067,7 +1067,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1075,7 +1075,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1083,7 +1083,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1091,7 +1091,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1099,7 +1099,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1107,7 +1107,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1115,7 +1115,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1153,7 +1153,7 @@ class NotificationsV1Api extends BaseApi
      */
     public function deleteDestinationAsyncWithHttpInfo($destination_id)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse';
         $request = $this->deleteDestinationRequest($destination_id);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -1293,9 +1293,9 @@ class NotificationsV1Api extends BaseApi
      * @param  string $subscription_id The identifier for the subscription that you want to delete. (required)
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse
      */
     public function deleteSubscriptionById($subscription_id, $notification_type)
     {
@@ -1309,9 +1309,9 @@ class NotificationsV1Api extends BaseApi
      * @param  string $subscription_id The identifier for the subscription that you want to delete. (required)
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteSubscriptionByIdWithHttpInfo($subscription_id, $notification_type)
     {
@@ -1361,88 +1361,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1457,7 +1457,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1465,7 +1465,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1473,7 +1473,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1481,7 +1481,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1489,7 +1489,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1497,7 +1497,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1505,7 +1505,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1513,7 +1513,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1521,7 +1521,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1529,7 +1529,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1569,7 +1569,7 @@ class NotificationsV1Api extends BaseApi
      */
     public function deleteSubscriptionByIdAsyncWithHttpInfo($subscription_id, $notification_type)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse';
         $request = $this->deleteSubscriptionByIdRequest($subscription_id, $notification_type);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -1724,9 +1724,9 @@ class NotificationsV1Api extends BaseApi
      *
      * @param  string $destination_id The identifier generated when you created the destination. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse
      */
     public function getDestination($destination_id)
     {
@@ -1739,9 +1739,9 @@ class NotificationsV1Api extends BaseApi
      *
      * @param  string $destination_id The identifier generated when you created the destination. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDestinationWithHttpInfo($destination_id)
     {
@@ -1791,88 +1791,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1887,7 +1887,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1895,7 +1895,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1903,7 +1903,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1911,7 +1911,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1919,7 +1919,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1927,7 +1927,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1935,7 +1935,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1943,7 +1943,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1951,7 +1951,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1959,7 +1959,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1997,7 +1997,7 @@ class NotificationsV1Api extends BaseApi
      */
     public function getDestinationAsyncWithHttpInfo($destination_id)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse';
         $request = $this->getDestinationRequest($destination_id);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -2135,9 +2135,9 @@ class NotificationsV1Api extends BaseApi
      * Operation getDestinations
      *
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse
      */
     public function getDestinations()
     {
@@ -2149,9 +2149,9 @@ class NotificationsV1Api extends BaseApi
      * Operation getDestinationsWithHttpInfo
      *
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDestinationsWithHttpInfo()
     {
@@ -2201,88 +2201,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2297,7 +2297,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2305,7 +2305,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2313,7 +2313,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2321,7 +2321,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2329,7 +2329,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2337,7 +2337,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2345,7 +2345,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2353,7 +2353,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2361,7 +2361,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2369,7 +2369,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2405,7 +2405,7 @@ class NotificationsV1Api extends BaseApi
      */
     public function getDestinationsAsyncWithHttpInfo()
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse';
         $request = $this->getDestinationsRequest();
         $signedRequest = $this->config->signRequest(
             $request,
@@ -2528,9 +2528,9 @@ class NotificationsV1Api extends BaseApi
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse
      */
     public function getSubscription($notification_type)
     {
@@ -2543,9 +2543,9 @@ class NotificationsV1Api extends BaseApi
      *
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSubscriptionWithHttpInfo($notification_type)
     {
@@ -2594,80 +2594,80 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2682,7 +2682,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2690,7 +2690,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2698,7 +2698,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2706,7 +2706,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2714,7 +2714,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2722,7 +2722,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2730,7 +2730,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2738,7 +2738,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2746,7 +2746,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2784,7 +2784,7 @@ class NotificationsV1Api extends BaseApi
      */
     public function getSubscriptionAsyncWithHttpInfo($notification_type)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse';
         $request = $this->getSubscriptionRequest($notification_type);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2922,9 +2922,9 @@ class NotificationsV1Api extends BaseApi
      * @param  string $subscription_id The identifier for the subscription that you want to get. (required)
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse
      */
     public function getSubscriptionById($subscription_id, $notification_type)
     {
@@ -2938,9 +2938,9 @@ class NotificationsV1Api extends BaseApi
      * @param  string $subscription_id The identifier for the subscription that you want to get. (required)
      * @param  string $notification_type The type of notification.  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSubscriptionByIdWithHttpInfo($subscription_id, $notification_type)
     {
@@ -2990,88 +2990,88 @@ class NotificationsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse', $response->getHeaders());
                 case 409:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse';
+            $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -3086,7 +3086,7 @@ class NotificationsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3094,7 +3094,7 @@ class NotificationsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3102,7 +3102,7 @@ class NotificationsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3110,7 +3110,7 @@ class NotificationsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3118,7 +3118,7 @@ class NotificationsV1Api extends BaseApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3126,7 +3126,7 @@ class NotificationsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3134,7 +3134,7 @@ class NotificationsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3142,7 +3142,7 @@ class NotificationsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3150,7 +3150,7 @@ class NotificationsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3158,7 +3158,7 @@ class NotificationsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse',
+                        '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3198,7 +3198,7 @@ class NotificationsV1Api extends BaseApi
      */
     public function getSubscriptionByIdAsyncWithHttpInfo($subscription_id, $notification_type)
     {
-        $returnType = '\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse';
+        $returnType = '\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse';
         $request = $this->getSubscriptionByIdRequest($subscription_id, $notification_type);
         $signedRequest = $this->config->signRequest(
             $request,

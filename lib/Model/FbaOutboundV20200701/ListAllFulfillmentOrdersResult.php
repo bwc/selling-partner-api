@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListAllFulfillmentOrdersResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ListAllFulfillmentOrdersResult extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'next_token' => 'string',
-        'fulfillment_orders' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrder[]'
+        'fulfillment_orders' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrder[]'
     ];
 
     /**
@@ -165,7 +165,7 @@ class ListAllFulfillmentOrdersResult extends BaseModel implements ModelInterface
     /**
      * Gets fulfillment_orders
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrder[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrder[]|null
      */
     public function getFulfillmentOrders()
     {
@@ -175,7 +175,7 @@ class ListAllFulfillmentOrdersResult extends BaseModel implements ModelInterface
     /**
      * Sets fulfillment_orders
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrder[]|null $fulfillment_orders An array of fulfillment order information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrder[]|null $fulfillment_orders An array of fulfillment order information.
      *
      * @return self
      */

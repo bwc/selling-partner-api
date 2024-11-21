@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartyIdentification Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class PartyIdentification extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'address' => '\SellingPartnerApi\Model\VendorShippingV1\Address',
+        'address' => '\SellingPartnerApiV5\Model\VendorShippingV1\Address',
         'party_id' => 'string',
-        'tax_registration_details' => '\SellingPartnerApi\Model\VendorShippingV1\TaxRegistrationDetails[]'
+        'tax_registration_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\TaxRegistrationDetails[]'
     ];
 
     /**
@@ -151,7 +151,7 @@ class PartyIdentification extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets address
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Address|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Address|null
      */
     public function getAddress()
     {
@@ -161,7 +161,7 @@ class PartyIdentification extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets address
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Address|null $address address
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Address|null $address address
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class PartyIdentification extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets tax_registration_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\TaxRegistrationDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\TaxRegistrationDetails[]|null
      */
     public function getTaxRegistrationDetails()
     {
@@ -207,7 +207,7 @@ class PartyIdentification extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets tax_registration_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\TaxRegistrationDetails[]|null $tax_registration_details Tax registration details of the entity.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\TaxRegistrationDetails[]|null $tax_registration_details Tax registration details of the entity.
      *
      * @return self
      */

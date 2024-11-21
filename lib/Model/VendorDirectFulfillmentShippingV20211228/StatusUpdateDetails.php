@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StatusUpdateDetails Class Doc Comment
  *
  * @category Class
  * @description Details for the shipment status update given by the vendor for the specific package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,8 +62,8 @@ class StatusUpdateDetails extends BaseModel implements ModelInterface, ArrayAcce
         'status_code' => 'string',
         'reason_code' => 'string',
         'status_date_time' => 'string',
-        'status_location_address' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Address',
-        'shipment_schedule' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShipmentSchedule'
+        'status_location_address' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Address',
+        'shipment_schedule' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShipmentSchedule'
     ];
 
     /**
@@ -274,7 +274,7 @@ class StatusUpdateDetails extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets status_location_address
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Address
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Address
      */
     public function getStatusLocationAddress()
     {
@@ -284,7 +284,7 @@ class StatusUpdateDetails extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets status_location_address
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Address $status_location_address status_location_address
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Address $status_location_address status_location_address
      *
      * @return self
      */
@@ -297,7 +297,7 @@ class StatusUpdateDetails extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets shipment_schedule
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShipmentSchedule|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShipmentSchedule|null
      */
     public function getShipmentSchedule()
     {
@@ -307,7 +307,7 @@ class StatusUpdateDetails extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets shipment_schedule
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShipmentSchedule|null $shipment_schedule shipment_schedule
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShipmentSchedule|null $shipment_schedule shipment_schedule
      *
      * @return self
      */

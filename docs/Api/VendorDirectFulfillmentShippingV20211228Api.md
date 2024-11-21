@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorDirectFulfillmentShippingV20211228Api
+# SellingPartnerApiV5\VendorDirectFulfillmentShippingV20211228Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 ## `createShippingLabels()`
 
 ```php
-createShippingLabels($purchase_order_number, $body): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel
+createShippingLabels($purchase_order_number, $body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel
 ```
 
 
@@ -39,18 +39,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $purchase_order_number = 'purchase_order_number_example'; // string | The purchase order number for which you want to return the shipping labels. It should be the same purchaseOrderNumber as received in the order.
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CreateShippingLabelsRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CreateShippingLabelsRequest
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CreateShippingLabelsRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CreateShippingLabelsRequest
 
 try {
     $result = $apiInstance->createShippingLabels($purchase_order_number, $body);
@@ -65,11 +65,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **purchase_order_number** | **string**| The purchase order number for which you want to return the shipping labels. It should be the same purchaseOrderNumber as received in the order. |
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CreateShippingLabelsRequest**](../Model/VendorDirectFulfillmentShippingV20211228/CreateShippingLabelsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CreateShippingLabelsRequest**](../Model/VendorDirectFulfillmentShippingV20211228/CreateShippingLabelsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel**](../Model/VendorDirectFulfillmentShippingV20211228/ShippingLabel.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel**](../Model/VendorDirectFulfillmentShippingV20211228/ShippingLabel.md)
 
 ### HTTP request headers
 
@@ -83,7 +83,7 @@ Name | Type | Description  | Notes
 ## `getCustomerInvoice()`
 
 ```php
-getCustomerInvoice($purchase_order_number): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoice
+getCustomerInvoice($purchase_order_number): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoice
 ```
 
 
@@ -105,16 +105,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $purchase_order_number = 'purchase_order_number_example'; // string | Purchase order number of the shipment for which to return the invoice.
 
 try {
@@ -133,7 +133,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoice**](../Model/VendorDirectFulfillmentShippingV20211228/CustomerInvoice.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoice**](../Model/VendorDirectFulfillmentShippingV20211228/CustomerInvoice.md)
 
 ### HTTP request headers
 
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 ## `getCustomerInvoices()`
 
 ```php
-getCustomerInvoices($created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoiceList
+getCustomerInvoices($created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoiceList
 ```
 
 
@@ -169,16 +169,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $created_after = 'created_after_example'; // string | Orders that became available after this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $created_before = 'created_before_example'; // string | Orders that became available before this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $ship_from_party_id = 'ship_from_party_id_example'; // string | The vendor warehouseId for order fulfillment. If not specified, the result will contain orders for all warehouses.
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoiceList**](../Model/VendorDirectFulfillmentShippingV20211228/CustomerInvoiceList.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\CustomerInvoiceList**](../Model/VendorDirectFulfillmentShippingV20211228/CustomerInvoiceList.md)
 
 ### HTTP request headers
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 ## `getPackingSlip()`
 
 ```php
-getPackingSlip($purchase_order_number): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip
+getPackingSlip($purchase_order_number): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip
 ```
 
 
@@ -243,16 +243,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $purchase_order_number = 'purchase_order_number_example'; // string | The purchaseOrderNumber for the packing slip you want.
 
 try {
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip**](../Model/VendorDirectFulfillmentShippingV20211228/PackingSlip.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlip**](../Model/VendorDirectFulfillmentShippingV20211228/PackingSlip.md)
 
 ### HTTP request headers
 
@@ -285,7 +285,7 @@ Name | Type | Description  | Notes
 ## `getPackingSlips()`
 
 ```php
-getPackingSlips($created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlipList
+getPackingSlips($created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlipList
 ```
 
 
@@ -307,16 +307,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $created_after = 'created_after_example'; // string | Packing slips that became available after this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $created_before = 'created_before_example'; // string | Packing slips that became available before this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $ship_from_party_id = 'ship_from_party_id_example'; // string | The vendor warehouseId for order fulfillment. If not specified the result will contain orders for all warehouses.
@@ -345,7 +345,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PackingSlipList**](../Model/VendorDirectFulfillmentShippingV20211228/PackingSlipList.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PackingSlipList**](../Model/VendorDirectFulfillmentShippingV20211228/PackingSlipList.md)
 
 ### HTTP request headers
 
@@ -359,7 +359,7 @@ Name | Type | Description  | Notes
 ## `getShippingLabel()`
 
 ```php
-getShippingLabel($purchase_order_number): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel
+getShippingLabel($purchase_order_number): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel
 ```
 
 
@@ -381,16 +381,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $purchase_order_number = 'purchase_order_number_example'; // string | The purchase order number for which you want to return the shipping label. It should be the same purchaseOrderNumber as received in the order.
 
 try {
@@ -409,7 +409,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel**](../Model/VendorDirectFulfillmentShippingV20211228/ShippingLabel.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabel**](../Model/VendorDirectFulfillmentShippingV20211228/ShippingLabel.md)
 
 ### HTTP request headers
 
@@ -423,7 +423,7 @@ Name | Type | Description  | Notes
 ## `getShippingLabels()`
 
 ```php
-getShippingLabels($created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelList
+getShippingLabels($created_after, $created_before, $ship_from_party_id, $limit, $sort_order, $next_token): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelList
 ```
 
 
@@ -445,16 +445,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
 $created_after = 'created_after_example'; // string | Shipping labels that became available after this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $created_before = 'created_before_example'; // string | Shipping labels that became available before this date and time will be included in the result. Must be in ISO-8601 date/time format.
 $ship_from_party_id = 'ship_from_party_id_example'; // string | The vendor warehouseId for order fulfillment. If not specified, the result will contain orders for all warehouses.
@@ -483,7 +483,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelList**](../Model/VendorDirectFulfillmentShippingV20211228/ShippingLabelList.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelList**](../Model/VendorDirectFulfillmentShippingV20211228/ShippingLabelList.md)
 
 ### HTTP request headers
 
@@ -497,7 +497,7 @@ Name | Type | Description  | Notes
 ## `submitShipmentConfirmations()`
 
 ```php
-submitShipmentConfirmations($body): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference
+submitShipmentConfirmations($body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference
 ```
 
 
@@ -519,17 +519,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentConfirmationsRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentConfirmationsRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentConfirmationsRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentConfirmationsRequest
 
 try {
     $result = $apiInstance->submitShipmentConfirmations($body);
@@ -543,11 +543,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentConfirmationsRequest**](../Model/VendorDirectFulfillmentShippingV20211228/SubmitShipmentConfirmationsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentConfirmationsRequest**](../Model/VendorDirectFulfillmentShippingV20211228/SubmitShipmentConfirmationsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference**](../Model/VendorDirectFulfillmentShippingV20211228/TransactionReference.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference**](../Model/VendorDirectFulfillmentShippingV20211228/TransactionReference.md)
 
 ### HTTP request headers
 
@@ -561,7 +561,7 @@ Name | Type | Description  | Notes
 ## `submitShipmentStatusUpdates()`
 
 ```php
-submitShipmentStatusUpdates($body): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference
+submitShipmentStatusUpdates($body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference
 ```
 
 
@@ -583,17 +583,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentStatusUpdatesRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentStatusUpdatesRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentStatusUpdatesRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentStatusUpdatesRequest
 
 try {
     $result = $apiInstance->submitShipmentStatusUpdates($body);
@@ -607,11 +607,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentStatusUpdatesRequest**](../Model/VendorDirectFulfillmentShippingV20211228/SubmitShipmentStatusUpdatesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShipmentStatusUpdatesRequest**](../Model/VendorDirectFulfillmentShippingV20211228/SubmitShipmentStatusUpdatesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference**](../Model/VendorDirectFulfillmentShippingV20211228/TransactionReference.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference**](../Model/VendorDirectFulfillmentShippingV20211228/TransactionReference.md)
 
 ### HTTP request headers
 
@@ -625,7 +625,7 @@ Name | Type | Description  | Notes
 ## `submitShippingLabelRequest()`
 
 ```php
-submitShippingLabelRequest($body): \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference
+submitShippingLabelRequest($body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference
 ```
 
 
@@ -647,17 +647,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentShippingV20211228Api($config);
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShippingLabelsRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShippingLabelsRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentShippingV20211228Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShippingLabelsRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShippingLabelsRequest
 
 try {
     $result = $apiInstance->submitShippingLabelRequest($body);
@@ -671,11 +671,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\SubmitShippingLabelsRequest**](../Model/VendorDirectFulfillmentShippingV20211228/SubmitShippingLabelsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\SubmitShippingLabelsRequest**](../Model/VendorDirectFulfillmentShippingV20211228/SubmitShippingLabelsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference**](../Model/VendorDirectFulfillmentShippingV20211228/TransactionReference.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\TransactionReference**](../Model/VendorDirectFulfillmentShippingV20211228/TransactionReference.md)
 
 ### HTTP request headers
 

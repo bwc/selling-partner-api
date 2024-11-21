@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FulfillmentPreview Class Doc Comment
  *
  * @category Class
  * @description Information about a fulfillment order preview, including delivery and fee information based on shipping method.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,17 +58,17 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipping_speed_category' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory',
-        'scheduled_delivery_info' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ScheduledDeliveryInfo',
+        'shipping_speed_category' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory',
+        'scheduled_delivery_info' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ScheduledDeliveryInfo',
         'is_fulfillable' => 'bool',
         'is_cod_capable' => 'bool',
-        'estimated_shipping_weight' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Weight',
-        'estimated_fees' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Fee[]',
-        'fulfillment_preview_shipments' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPreviewShipment[]',
-        'unfulfillable_preview_items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\UnfulfillablePreviewItem[]',
+        'estimated_shipping_weight' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Weight',
+        'estimated_fees' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Fee[]',
+        'fulfillment_preview_shipments' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPreviewShipment[]',
+        'unfulfillable_preview_items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\UnfulfillablePreviewItem[]',
         'order_unfulfillable_reasons' => 'string[]',
         'marketplace_id' => 'string',
-        'feature_constraints' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]'
+        'feature_constraints' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets shipping_speed_category
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory
      */
     public function getShippingSpeedCategory()
     {
@@ -219,7 +219,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets shipping_speed_category
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      *
      * @return self
      */
@@ -232,7 +232,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets scheduled_delivery_info
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ScheduledDeliveryInfo|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ScheduledDeliveryInfo|null
      */
     public function getScheduledDeliveryInfo()
     {
@@ -242,7 +242,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets scheduled_delivery_info
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ScheduledDeliveryInfo|null $scheduled_delivery_info scheduled_delivery_info
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ScheduledDeliveryInfo|null $scheduled_delivery_info scheduled_delivery_info
      *
      * @return self
      */
@@ -301,7 +301,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets estimated_shipping_weight
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Weight|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Weight|null
      */
     public function getEstimatedShippingWeight()
     {
@@ -311,7 +311,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets estimated_shipping_weight
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Weight|null $estimated_shipping_weight estimated_shipping_weight
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Weight|null $estimated_shipping_weight estimated_shipping_weight
      *
      * @return self
      */
@@ -324,7 +324,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets estimated_fees
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Fee[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Fee[]|null
      */
     public function getEstimatedFees()
     {
@@ -334,7 +334,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets estimated_fees
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Fee[]|null $estimated_fees An array of fee type and cost pairs.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Fee[]|null $estimated_fees An array of fee type and cost pairs.
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets fulfillment_preview_shipments
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPreviewShipment[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPreviewShipment[]|null
      */
     public function getFulfillmentPreviewShipments()
     {
@@ -357,7 +357,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets fulfillment_preview_shipments
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPreviewShipment[]|null $fulfillment_preview_shipments An array of fulfillment preview shipment information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPreviewShipment[]|null $fulfillment_preview_shipments An array of fulfillment preview shipment information.
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets unfulfillable_preview_items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\UnfulfillablePreviewItem[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\UnfulfillablePreviewItem[]|null
      */
     public function getUnfulfillablePreviewItems()
     {
@@ -380,7 +380,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets unfulfillable_preview_items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\UnfulfillablePreviewItem[]|null $unfulfillable_preview_items An array of unfulfillable preview item information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\UnfulfillablePreviewItem[]|null $unfulfillable_preview_items An array of unfulfillable preview item information.
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets feature_constraints
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null
      */
     public function getFeatureConstraints()
     {
@@ -449,7 +449,7 @@ class FulfillmentPreview extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets feature_constraints
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
      *
      * @return self
      */

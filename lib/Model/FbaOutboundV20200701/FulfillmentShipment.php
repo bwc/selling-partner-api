@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FulfillmentShipment Class Doc Comment
  *
  * @category Class
  * @description Delivery and item information for a shipment in a fulfillment order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -64,8 +64,8 @@ class FulfillmentShipment extends BaseModel implements ModelInterface, ArrayAcce
         'shipping_date' => 'string',
         'estimated_arrival_date' => 'string',
         'shipping_notes' => 'string[]',
-        'fulfillment_shipment_item' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipmentItem[]',
-        'fulfillment_shipment_package' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipmentPackage[]'
+        'fulfillment_shipment_item' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipmentItem[]',
+        'fulfillment_shipment_package' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipmentPackage[]'
     ];
 
     /**
@@ -377,7 +377,7 @@ class FulfillmentShipment extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets fulfillment_shipment_item
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipmentItem[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipmentItem[]
      */
     public function getFulfillmentShipmentItem()
     {
@@ -387,7 +387,7 @@ class FulfillmentShipment extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets fulfillment_shipment_item
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipmentItem[] $fulfillment_shipment_item An array of fulfillment shipment item information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipmentItem[] $fulfillment_shipment_item An array of fulfillment shipment item information.
      *
      * @return self
      */
@@ -400,7 +400,7 @@ class FulfillmentShipment extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets fulfillment_shipment_package
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipmentPackage[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipmentPackage[]|null
      */
     public function getFulfillmentShipmentPackage()
     {
@@ -410,7 +410,7 @@ class FulfillmentShipment extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets fulfillment_shipment_package
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentShipmentPackage[]|null $fulfillment_shipment_package An array of fulfillment shipment package information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentShipmentPackage[]|null $fulfillment_shipment_package An array of fulfillment shipment package information.
      *
      * @return self
      */

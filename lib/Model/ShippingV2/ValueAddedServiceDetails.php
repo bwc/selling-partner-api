@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ValueAddedServiceDetails Class Doc Comment
  *
  * @category Class
  * @description A collection of supported value-added services.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ValueAddedServiceDetails extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'collect_on_delivery' => '\SellingPartnerApi\Model\ShippingV2\CollectOnDelivery'
+        'collect_on_delivery' => '\SellingPartnerApiV5\Model\ShippingV2\CollectOnDelivery'
     ];
 
     /**
@@ -137,7 +137,7 @@ class ValueAddedServiceDetails extends BaseModel implements ModelInterface, Arra
     /**
      * Gets collect_on_delivery
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\CollectOnDelivery|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\CollectOnDelivery|null
      */
     public function getCollectOnDelivery()
     {
@@ -147,7 +147,7 @@ class ValueAddedServiceDetails extends BaseModel implements ModelInterface, Arra
     /**
      * Sets collect_on_delivery
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\CollectOnDelivery|null $collect_on_delivery collect_on_delivery
+     * @param \SellingPartnerApiV5\Model\ShippingV2\CollectOnDelivery|null $collect_on_delivery collect_on_delivery
      *
      * @return self
      */

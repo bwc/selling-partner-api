@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListFinancialEventsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the listFinancialEvents operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ListFinancialEventsResponse extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsPayload',
-        'errors' => '\SellingPartnerApi\Model\FinancesV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsPayload',
+        'errors' => '\SellingPartnerApiV5\Model\FinancesV0\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class ListFinancialEventsResponse extends BaseModel implements ModelInterface, A
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsPayload|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsPayload|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class ListFinancialEventsResponse extends BaseModel implements ModelInterface, A
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsPayload|null $payload payload
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsPayload|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class ListFinancialEventsResponse extends BaseModel implements ModelInterface, A
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class ListFinancialEventsResponse extends BaseModel implements ModelInterface, A
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

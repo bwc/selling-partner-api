@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMessagingActionResponseEmbedded Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetMessagingActionResponseEmbedded extends BaseModel implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'schema' => '\SellingPartnerApi\Model\MessagingV1\GetSchemaResponse'
+        'schema' => '\SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponse'
     ];
 
     /**
@@ -136,7 +136,7 @@ class GetMessagingActionResponseEmbedded extends BaseModel implements ModelInter
     /**
      * Gets schema
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetSchemaResponse|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponse|null
      */
     public function getSchema()
     {
@@ -146,7 +146,7 @@ class GetMessagingActionResponseEmbedded extends BaseModel implements ModelInter
     /**
      * Sets schema
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetSchemaResponse|null $schema schema
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponse|null $schema schema
      *
      * @return self
      */

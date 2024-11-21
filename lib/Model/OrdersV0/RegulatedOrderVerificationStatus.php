@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RegulatedOrderVerificationStatus Class Doc Comment
  *
  * @category Class
  * @description The verification status of the order along with associated approval or rejection metadata.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\SellingPartnerApi\Model\OrdersV0\VerificationStatus',
+        'status' => '\SellingPartnerApiV5\Model\OrdersV0\VerificationStatus',
         'requires_merchant_action' => 'bool',
-        'valid_rejection_reasons' => '\SellingPartnerApi\Model\OrdersV0\RejectionReason[]',
-        'rejection_reason' => '\SellingPartnerApi\Model\OrdersV0\RejectionReason',
+        'valid_rejection_reasons' => '\SellingPartnerApiV5\Model\OrdersV0\RejectionReason[]',
+        'rejection_reason' => '\SellingPartnerApiV5\Model\OrdersV0\RejectionReason',
         'review_date' => 'string',
         'external_reviewer_id' => 'string'
     ];
@@ -176,7 +176,7 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\VerificationStatus
+     * @return \SellingPartnerApiV5\Model\OrdersV0\VerificationStatus
      */
     public function getStatus()
     {
@@ -186,7 +186,7 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\VerificationStatus $status status
+     * @param \SellingPartnerApiV5\Model\OrdersV0\VerificationStatus $status status
      *
      * @return self
      */
@@ -222,7 +222,7 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
     /**
      * Gets valid_rejection_reasons
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\RejectionReason[]
+     * @return \SellingPartnerApiV5\Model\OrdersV0\RejectionReason[]
      */
     public function getValidRejectionReasons()
     {
@@ -232,7 +232,7 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
     /**
      * Sets valid_rejection_reasons
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\RejectionReason[] $valid_rejection_reasons A list of valid rejection reasons that may be used to reject the order's regulated information.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\RejectionReason[] $valid_rejection_reasons A list of valid rejection reasons that may be used to reject the order's regulated information.
      *
      * @return self
      */
@@ -245,7 +245,7 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
     /**
      * Gets rejection_reason
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\RejectionReason|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\RejectionReason|null
      */
     public function getRejectionReason()
     {
@@ -255,7 +255,7 @@ class RegulatedOrderVerificationStatus extends BaseModel implements ModelInterfa
     /**
      * Sets rejection_reason
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\RejectionReason|null $rejection_reason rejection_reason
+     * @param \SellingPartnerApiV5\Model\OrdersV0\RejectionReason|null $rejection_reason rejection_reason
      *
      * @return self
      */

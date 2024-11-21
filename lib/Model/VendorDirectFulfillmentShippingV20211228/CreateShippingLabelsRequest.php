@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateShippingLabelsRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the createShippingLabels operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
-        'containers' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Container[]'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification',
+        'containers' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Container[]'
     ];
 
     /**
@@ -155,7 +155,7 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -165,7 +165,7 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -188,7 +188,7 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null
      */
     public function getContainers()
     {
@@ -211,7 +211,7 @@ class CreateShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null $containers A list of the packages in this shipment.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\Container[]|null $containers A list of the packages in this shipment.
      *
      * @return self
      */

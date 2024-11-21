@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartneredEstimate Class Doc Comment
  *
  * @category Class
  * @description The estimated shipping cost for a shipment using an Amazon-partnered carrier.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class PartneredEstimate extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'amount' => '\SellingPartnerApi\Model\FbaInboundV0\Amount',
+        'amount' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount',
         'confirm_deadline' => 'string',
         'void_deadline' => 'string'
     ];
@@ -152,7 +152,7 @@ class PartneredEstimate extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount
      */
     public function getAmount()
     {
@@ -162,7 +162,7 @@ class PartneredEstimate extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount $amount amount
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount $amount amount
      *
      * @return self
      */

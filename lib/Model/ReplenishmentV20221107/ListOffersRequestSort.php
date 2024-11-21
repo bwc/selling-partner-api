@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOffersRequestSort Class Doc Comment
  *
  * @category Class
  * @description Use these parameters to sort the response.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ListOffersRequestSort extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order' => '\SellingPartnerApi\Model\ReplenishmentV20221107\SortOrder',
-        'key' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersSortKey'
+        'order' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\SortOrder',
+        'key' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersSortKey'
     ];
 
     /**
@@ -149,7 +149,7 @@ class ListOffersRequestSort extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets order
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\SortOrder
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\SortOrder
      */
     public function getOrder()
     {
@@ -159,7 +159,7 @@ class ListOffersRequestSort extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets order
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\SortOrder $order order
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\SortOrder $order order
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class ListOffersRequestSort extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets key
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersSortKey
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersSortKey
      */
     public function getKey()
     {
@@ -182,7 +182,7 @@ class ListOffersRequestSort extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets key
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersSortKey $key key
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersSortKey $key key
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AcceptedRate Class Doc Comment
  *
  * @category Class
  * @description The specific rate purchased for the shipment, or null if unpurchased.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'total_charge' => '\SellingPartnerApi\Model\ShippingV1\Currency',
-        'billed_weight' => '\SellingPartnerApi\Model\ShippingV1\Weight',
-        'service_type' => '\SellingPartnerApi\Model\ShippingV1\ServiceType',
-        'promise' => '\SellingPartnerApi\Model\ShippingV1\ShippingPromiseSet'
+        'total_charge' => '\SellingPartnerApiV5\Model\ShippingV1\Currency',
+        'billed_weight' => '\SellingPartnerApiV5\Model\ShippingV1\Weight',
+        'service_type' => '\SellingPartnerApiV5\Model\ShippingV1\ServiceType',
+        'promise' => '\SellingPartnerApiV5\Model\ShippingV1\ShippingPromiseSet'
     ];
 
     /**
@@ -155,7 +155,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets total_charge
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Currency|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Currency|null
      */
     public function getTotalCharge()
     {
@@ -165,7 +165,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets total_charge
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Currency|null $total_charge total_charge
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Currency|null $total_charge total_charge
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets billed_weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Weight|null
      */
     public function getBilledWeight()
     {
@@ -188,7 +188,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets billed_weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Weight|null $billed_weight billed_weight
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Weight|null $billed_weight billed_weight
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets service_type
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ServiceType|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ServiceType|null
      */
     public function getServiceType()
     {
@@ -211,7 +211,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets service_type
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ServiceType|null $service_type service_type
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ServiceType|null $service_type service_type
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets promise
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ShippingPromiseSet|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ShippingPromiseSet|null
      */
     public function getPromise()
     {
@@ -234,7 +234,7 @@ class AcceptedRate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets promise
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ShippingPromiseSet|null $promise promise
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ShippingPromiseSet|null $promise promise
      *
      * @return self
      */

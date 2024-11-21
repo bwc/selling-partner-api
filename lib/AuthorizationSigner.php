@@ -1,11 +1,11 @@
 <?php
 
-namespace SellingPartnerApi;
+namespace SellingPartnerApiV5;
 
 use DateTime;
 use DateTimeZone;
 use Psr\Http\Message\RequestInterface;
-use SellingPartnerApi\Contract\AuthorizationSignerContract;
+use SellingPartnerApiV5\Contract\AuthorizationSignerContract;
 
 class AuthorizationSigner implements AuthorizationSignerContract
 {
@@ -17,7 +17,7 @@ class AuthorizationSigner implements AuthorizationSignerContract
     private const TERMINATION_STR = 'aws4_request';
 
     /**
-     * @see \SellingPartnerApi\Endpoint
+     * @see \SellingPartnerApiV5\Endpoint
      * @var array
      */
     private $endpoint;

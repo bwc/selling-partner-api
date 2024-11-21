@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemSalesRanksByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Sales ranks of an Amazon catalog item for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'classification_ranks' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemClassificationSalesRank[]',
-        'display_group_ranks' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemDisplayGroupSalesRank[]'
+        'classification_ranks' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemClassificationSalesRank[]',
+        'display_group_ranks' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemDisplayGroupSalesRank[]'
     ];
 
     /**
@@ -175,7 +175,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Gets classification_ranks
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemClassificationSalesRank[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemClassificationSalesRank[]|null
      */
     public function getClassificationRanks()
     {
@@ -185,7 +185,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Sets classification_ranks
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemClassificationSalesRank[]|null $classification_ranks Sales ranks of an Amazon catalog item for an Amazon marketplace by classification.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemClassificationSalesRank[]|null $classification_ranks Sales ranks of an Amazon catalog item for an Amazon marketplace by classification.
      *
      * @return self
      */
@@ -198,7 +198,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Gets display_group_ranks
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemDisplayGroupSalesRank[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemDisplayGroupSalesRank[]|null
      */
     public function getDisplayGroupRanks()
     {
@@ -208,7 +208,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Sets display_group_ranks
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemDisplayGroupSalesRank[]|null $display_group_ranks Sales ranks of an Amazon catalog item for an Amazon marketplace by website display group.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemDisplayGroupSalesRank[]|null $display_group_ranks Sales ranks of an Amazon catalog item for an Amazon marketplace by website display group.
      *
      * @return self
      */

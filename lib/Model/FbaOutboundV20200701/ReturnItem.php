@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ReturnItem Class Doc Comment
  *
  * @category Class
  * @description An item that Amazon accepted for return.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -64,10 +64,10 @@ class ReturnItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
         'seller_return_reason_code' => 'string',
         'return_comment' => 'string',
         'amazon_return_reason_code' => 'string',
-        'status' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentReturnItemStatus',
+        'status' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentReturnItemStatus',
         'status_changed_date' => 'string',
         'return_authorization_id' => 'string',
-        'return_received_condition' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItemDisposition',
+        'return_received_condition' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItemDisposition',
         'fulfillment_center_id' => 'string'
     ];
 
@@ -353,7 +353,7 @@ class ReturnItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentReturnItemStatus
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentReturnItemStatus
      */
     public function getStatus()
     {
@@ -363,7 +363,7 @@ class ReturnItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentReturnItemStatus $status status
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentReturnItemStatus $status status
      *
      * @return self
      */
@@ -422,7 +422,7 @@ class ReturnItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets return_received_condition
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItemDisposition|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItemDisposition|null
      */
     public function getReturnReceivedCondition()
     {
@@ -432,7 +432,7 @@ class ReturnItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets return_received_condition
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItemDisposition|null $return_received_condition return_received_condition
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItemDisposition|null $return_received_condition return_received_condition
      *
      * @return self
      */

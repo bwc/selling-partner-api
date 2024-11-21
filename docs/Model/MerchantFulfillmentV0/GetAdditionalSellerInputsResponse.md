@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**payload** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResult**](GetAdditionalSellerInputsResult.md) |  | [optional]
-**errors** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\Error[]**](Error.md) | A list of error responses returned when a request is unsuccessful. | [optional]
+**payload** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResult**](GetAdditionalSellerInputsResult.md) |  | [optional]
+**errors** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Error[]**](Error.md) | A list of error responses returned when a request is unsuccessful. | [optional]
 
 [[MerchantFulfillmentV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

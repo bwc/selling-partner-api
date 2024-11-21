@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorInvoicesV1;
+namespace SellingPartnerApiV5\Model\VendorInvoicesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AllowanceDetails Class Doc Comment
  *
  * @category Class
  * @description Monetary and tax details of the allowance.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class AllowanceDetails extends BaseModel implements ModelInterface, ArrayAccess,
     protected static $openAPITypes = [
         'type' => 'string',
         'description' => 'string',
-        'allowance_amount' => '\SellingPartnerApi\Model\VendorInvoicesV1\Money',
-        'tax_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]'
+        'allowance_amount' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\Money',
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]'
     ];
 
     /**
@@ -259,7 +259,7 @@ class AllowanceDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets allowance_amount
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\Money
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\Money
      */
     public function getAllowanceAmount()
     {
@@ -269,7 +269,7 @@ class AllowanceDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets allowance_amount
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\Money $allowance_amount allowance_amount
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\Money $allowance_amount allowance_amount
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class AllowanceDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null
      */
     public function getTaxDetails()
     {
@@ -292,7 +292,7 @@ class AllowanceDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Tax amount details applied on this allowance.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Tax amount details applied on this allowance.
      *
      * @return self
      */

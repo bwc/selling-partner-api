@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContainerItem Class Doc Comment
  *
  * @category Class
  * @description Item in the container.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class ContainerItem extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'quantity' => 'float',
-        'unit_price' => '\SellingPartnerApi\Model\ShippingV1\Currency',
-        'unit_weight' => '\SellingPartnerApi\Model\ShippingV1\Weight',
+        'unit_price' => '\SellingPartnerApiV5\Model\ShippingV1\Currency',
+        'unit_weight' => '\SellingPartnerApiV5\Model\ShippingV1\Weight',
         'title' => 'string'
     ];
 
@@ -194,7 +194,7 @@ class ContainerItem extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets unit_price
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Currency
      */
     public function getUnitPrice()
     {
@@ -204,7 +204,7 @@ class ContainerItem extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets unit_price
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Currency $unit_price unit_price
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Currency $unit_price unit_price
      *
      * @return self
      */
@@ -217,7 +217,7 @@ class ContainerItem extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets unit_weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Weight
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Weight
      */
     public function getUnitWeight()
     {
@@ -227,7 +227,7 @@ class ContainerItem extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets unit_weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Weight $unit_weight unit_weight
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Weight $unit_weight unit_weight
      *
      * @return self
      */

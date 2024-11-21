@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SalesV1;
+namespace SellingPartnerApiV5\Model\SalesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetOrderMetricsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getOrderMetrics operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetOrderMetricsResponse extends BaseModel implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\SalesV1\OrderMetricsInterval[]',
-        'errors' => '\SellingPartnerApi\Model\SalesV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\SalesV1\OrderMetricsInterval[]',
+        'errors' => '\SellingPartnerApiV5\Model\SalesV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetOrderMetricsResponse extends BaseModel implements ModelInterface, Array
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\SalesV1\OrderMetricsInterval[]|null
+     * @return \SellingPartnerApiV5\Model\SalesV1\OrderMetricsInterval[]|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetOrderMetricsResponse extends BaseModel implements ModelInterface, Array
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\SalesV1\OrderMetricsInterval[]|null $payload A set of order metrics, each scoped to a particular time interval.
+     * @param \SellingPartnerApiV5\Model\SalesV1\OrderMetricsInterval[]|null $payload A set of order metrics, each scoped to a particular time interval.
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetOrderMetricsResponse extends BaseModel implements ModelInterface, Array
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\SalesV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\SalesV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetOrderMetricsResponse extends BaseModel implements ModelInterface, Array
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\SalesV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\SalesV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

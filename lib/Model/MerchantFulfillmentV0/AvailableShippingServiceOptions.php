@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AvailableShippingServiceOptions Class Doc Comment
  *
  * @category Class
  * @description The available shipping service options.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class AvailableShippingServiceOptions extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'available_carrier_will_pick_up_options' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AvailableCarrierWillPickUpOption[]',
-        'available_delivery_experience_options' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AvailableDeliveryExperienceOption[]'
+        'available_carrier_will_pick_up_options' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AvailableCarrierWillPickUpOption[]',
+        'available_delivery_experience_options' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AvailableDeliveryExperienceOption[]'
     ];
 
     /**
@@ -149,7 +149,7 @@ class AvailableShippingServiceOptions extends BaseModel implements ModelInterfac
     /**
      * Gets available_carrier_will_pick_up_options
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AvailableCarrierWillPickUpOption[]
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AvailableCarrierWillPickUpOption[]
      */
     public function getAvailableCarrierWillPickUpOptions()
     {
@@ -159,7 +159,7 @@ class AvailableShippingServiceOptions extends BaseModel implements ModelInterfac
     /**
      * Sets available_carrier_will_pick_up_options
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AvailableCarrierWillPickUpOption[] $available_carrier_will_pick_up_options List of available carrier pickup options.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AvailableCarrierWillPickUpOption[] $available_carrier_will_pick_up_options List of available carrier pickup options.
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class AvailableShippingServiceOptions extends BaseModel implements ModelInterfac
     /**
      * Gets available_delivery_experience_options
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AvailableDeliveryExperienceOption[]
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AvailableDeliveryExperienceOption[]
      */
     public function getAvailableDeliveryExperienceOptions()
     {
@@ -182,7 +182,7 @@ class AvailableShippingServiceOptions extends BaseModel implements ModelInterfac
     /**
      * Sets available_delivery_experience_options
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AvailableDeliveryExperienceOption[] $available_delivery_experience_options List of available delivery experience options.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AvailableDeliveryExperienceOption[] $available_delivery_experience_options List of available delivery experience options.
      *
      * @return self
      */

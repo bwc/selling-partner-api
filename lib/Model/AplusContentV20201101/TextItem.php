@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TextItem Class Doc Comment
  *
  * @category Class
  * @description Rich positional text, usually presented as a collection of bullet points.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class TextItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'position' => 'int',
-        'text' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent'
+        'text' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent'
     ];
 
     /**
@@ -188,7 +188,7 @@ class TextItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets text
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent
      */
     public function getText()
     {
@@ -198,7 +198,7 @@ class TextItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets text
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent $text text
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent $text text
      *
      * @return self
      */

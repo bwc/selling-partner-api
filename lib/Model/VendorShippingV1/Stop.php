@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Stop Class Doc Comment
  *
  * @category Class
  * @description Contractual or operational port or point relevant to the movement of the cargo.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Stop extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'function_code' => 'string',
-        'location_identification' => '\SellingPartnerApi\Model\VendorShippingV1\Location',
+        'location_identification' => '\SellingPartnerApiV5\Model\VendorShippingV1\Location',
         'arrival_time' => 'string',
         'departure_time' => 'string'
     ];
@@ -227,7 +227,7 @@ class Stop extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets location_identification
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Location|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Location|null
      */
     public function getLocationIdentification()
     {
@@ -237,7 +237,7 @@ class Stop extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets location_identification
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Location|null $location_identification location_identification
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Location|null $location_identification location_identification
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorInvoicesV1Api
+# SellingPartnerApiV5\VendorInvoicesV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `submitInvoices()`
 
 ```php
-submitInvoices($body): \SellingPartnerApi\Model\VendorInvoicesV1\SubmitInvoicesResponse
+submitInvoices($body): \SellingPartnerApiV5\Model\VendorInvoicesV1\SubmitInvoicesResponse
 ```
 
 
@@ -30,17 +30,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorInvoicesV1Api($config);
-$body = new \SellingPartnerApi\Model\VendorInvoicesV1\SubmitInvoicesRequest(); // \SellingPartnerApi\Model\VendorInvoicesV1\SubmitInvoicesRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorInvoicesV1Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorInvoicesV1\SubmitInvoicesRequest(); // \SellingPartnerApiV5\Model\VendorInvoicesV1\SubmitInvoicesRequest
 
 try {
     $result = $apiInstance->submitInvoices($body);
@@ -54,11 +54,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorInvoicesV1\SubmitInvoicesRequest**](../Model/VendorInvoicesV1/SubmitInvoicesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorInvoicesV1\SubmitInvoicesRequest**](../Model/VendorInvoicesV1/SubmitInvoicesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorInvoicesV1\SubmitInvoicesResponse**](../Model/VendorInvoicesV1/SubmitInvoicesResponse.md)
+[**\SellingPartnerApiV5\Model\VendorInvoicesV1\SubmitInvoicesResponse**](../Model/VendorInvoicesV1/SubmitInvoicesResponse.md)
 
 ### HTTP request headers
 

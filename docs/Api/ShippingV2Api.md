@@ -1,4 +1,4 @@
-# SellingPartnerApi\ShippingV2Api
+# SellingPartnerApiV5\ShippingV2Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 ## `cancelShipment()`
 
 ```php
-cancelShipment($shipment_id, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\CancelShipmentResponse
+cancelShipment($shipment_id, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\CancelShipmentResponse
 ```
 
 
@@ -36,16 +36,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
 $shipment_id = 'shipment_id_example'; // string | The shipment identifier originally returned by the purchaseShipment operation.
 $x_amzn_shipping_business_id = 'x_amzn_shipping_business_id_example'; // string | Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\CancelShipmentResponse**](../Model/ShippingV2/CancelShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\CancelShipmentResponse**](../Model/ShippingV2/CancelShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 ## `directPurchaseShipment()`
 
 ```php
-directPurchaseShipment($body, $x_amzn_idempotency_key, $locale, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\DirectPurchaseResponse
+directPurchaseShipment($body, $x_amzn_idempotency_key, $locale, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseResponse
 ```
 
 
@@ -102,17 +102,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
-$body = new \SellingPartnerApi\Model\ShippingV2\DirectPurchaseRequest(); // \SellingPartnerApi\Model\ShippingV2\DirectPurchaseRequest
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
+$body = new \SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseRequest(); // \SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseRequest
 $x_amzn_idempotency_key = 'x_amzn_idempotency_key_example'; // string | A unique value which the server uses to recognize subsequent retries of the same request.
 $locale = 'locale_example'; // string | The IETF Language Tag. Note that this only supports the primary language subtag with one secondary language subtag (i.e. en-US, fr-CA).
     // The secondary language subtag is almost always a regional designation.
@@ -131,14 +131,14 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ShippingV2\DirectPurchaseRequest**](../Model/ShippingV2/DirectPurchaseRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseRequest**](../Model/ShippingV2/DirectPurchaseRequest.md)|  |
  **x_amzn_idempotency_key** | **string**| A unique value which the server uses to recognize subsequent retries of the same request. | [optional]
  **locale** | **string**| The IETF Language Tag. Note that this only supports the primary language subtag with one secondary language subtag (i.e. en-US, fr-CA).<br>The secondary language subtag is almost always a regional designation.<br>This does not support additional subtags beyond the primary and secondary language subtags.<br> | [optional]
  **x_amzn_shipping_business_id** | **string**| Amazon shipping business to assume for this request. The default is AmazonShipping_UK. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\DirectPurchaseResponse**](../Model/ShippingV2/DirectPurchaseResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseResponse**](../Model/ShippingV2/DirectPurchaseResponse.md)
 
 ### HTTP request headers
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 ## `getAdditionalInputs()`
 
 ```php
-getAdditionalInputs($request_token, $rate_id, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\GetAdditionalInputsResponse
+getAdditionalInputs($request_token, $rate_id, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\GetAdditionalInputsResponse
 ```
 
 
@@ -174,16 +174,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
 $request_token = 'request_token_example'; // string | The request token returned in the response to the getRates operation.
 $rate_id = 'rate_id_example'; // string | The rate identifier for the shipping offering (rate) returned in the response to the getRates operation.
 $x_amzn_shipping_business_id = 'x_amzn_shipping_business_id_example'; // string | Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\GetAdditionalInputsResponse**](../Model/ShippingV2/GetAdditionalInputsResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\GetAdditionalInputsResponse**](../Model/ShippingV2/GetAdditionalInputsResponse.md)
 
 ### HTTP request headers
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 ## `getRates()`
 
 ```php
-getRates($body, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\GetRatesResponse
+getRates($body, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\GetRatesResponse
 ```
 
 
@@ -242,17 +242,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
-$body = new \SellingPartnerApi\Model\ShippingV2\GetRatesRequest(); // \SellingPartnerApi\Model\ShippingV2\GetRatesRequest
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
+$body = new \SellingPartnerApiV5\Model\ShippingV2\GetRatesRequest(); // \SellingPartnerApiV5\Model\ShippingV2\GetRatesRequest
 $x_amzn_shipping_business_id = 'x_amzn_shipping_business_id_example'; // string | Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 
 try {
@@ -267,12 +267,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ShippingV2\GetRatesRequest**](../Model/ShippingV2/GetRatesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV2\GetRatesRequest**](../Model/ShippingV2/GetRatesRequest.md)|  |
  **x_amzn_shipping_business_id** | **string**| Amazon shipping business to assume for this request. The default is AmazonShipping_UK. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\GetRatesResponse**](../Model/ShippingV2/GetRatesResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\GetRatesResponse**](../Model/ShippingV2/GetRatesResponse.md)
 
 ### HTTP request headers
 
@@ -286,7 +286,7 @@ Name | Type | Description  | Notes
 ## `getShipmentDocuments()`
 
 ```php
-getShipmentDocuments($shipment_id, $package_client_reference_id, $format, $dpi, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\GetShipmentDocumentsResponse
+getShipmentDocuments($shipment_id, $package_client_reference_id, $format, $dpi, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\GetShipmentDocumentsResponse
 ```
 
 
@@ -308,16 +308,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
 $shipment_id = 'shipment_id_example'; // string | The shipment identifier originally returned by the purchaseShipment operation.
 $package_client_reference_id = 'package_client_reference_id_example'; // string | The package client reference identifier originally provided in the request body parameter for the getRates operation.
 $format = 'format_example'; // string | The file format of the document. Must be one of the supported formats returned by the getRates operation.
@@ -344,7 +344,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\GetShipmentDocumentsResponse**](../Model/ShippingV2/GetShipmentDocumentsResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\GetShipmentDocumentsResponse**](../Model/ShippingV2/GetShipmentDocumentsResponse.md)
 
 ### HTTP request headers
 
@@ -358,7 +358,7 @@ Name | Type | Description  | Notes
 ## `getTracking()`
 
 ```php
-getTracking($tracking_id, $carrier_id, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\GetTrackingResponse
+getTracking($tracking_id, $carrier_id, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\GetTrackingResponse
 ```
 
 
@@ -380,16 +380,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
 $tracking_id = 'tracking_id_example'; // string | A carrier-generated tracking identifier originally returned by the purchaseShipment operation.
 $carrier_id = 'carrier_id_example'; // string | A carrier identifier originally returned by the getRates operation for the selected rate.
 $x_amzn_shipping_business_id = 'x_amzn_shipping_business_id_example'; // string | Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
@@ -412,7 +412,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\GetTrackingResponse**](../Model/ShippingV2/GetTrackingResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\GetTrackingResponse**](../Model/ShippingV2/GetTrackingResponse.md)
 
 ### HTTP request headers
 
@@ -426,7 +426,7 @@ Name | Type | Description  | Notes
 ## `purchaseShipment()`
 
 ```php
-purchaseShipment($body, $x_amzn_idempotency_key, $x_amzn_shipping_business_id): \SellingPartnerApi\Model\ShippingV2\PurchaseShipmentResponse
+purchaseShipment($body, $x_amzn_idempotency_key, $x_amzn_shipping_business_id): \SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentResponse
 ```
 
 
@@ -450,17 +450,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV2Api($config);
-$body = new \SellingPartnerApi\Model\ShippingV2\PurchaseShipmentRequest(); // \SellingPartnerApi\Model\ShippingV2\PurchaseShipmentRequest
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV2Api($config);
+$body = new \SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentRequest(); // \SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentRequest
 $x_amzn_idempotency_key = 'x_amzn_idempotency_key_example'; // string | A unique value which the server uses to recognize subsequent retries of the same request.
 $x_amzn_shipping_business_id = 'x_amzn_shipping_business_id_example'; // string | Amazon shipping business to assume for this request. The default is AmazonShipping_UK.
 
@@ -476,13 +476,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ShippingV2\PurchaseShipmentRequest**](../Model/ShippingV2/PurchaseShipmentRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentRequest**](../Model/ShippingV2/PurchaseShipmentRequest.md)|  |
  **x_amzn_idempotency_key** | **string**| A unique value which the server uses to recognize subsequent retries of the same request. | [optional]
  **x_amzn_shipping_business_id** | **string**| Amazon shipping business to assume for this request. The default is AmazonShipping_UK. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV2\PurchaseShipmentResponse**](../Model/ShippingV2/PurchaseShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentResponse**](../Model/ShippingV2/PurchaseShipmentResponse.md)
 
 ### HTTP request headers
 

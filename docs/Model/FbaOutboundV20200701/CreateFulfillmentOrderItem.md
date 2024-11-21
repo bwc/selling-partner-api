@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **gift_message** | **string** | A message to the gift recipient, if applicable. | [optional]
 **displayable_comment** | **string** | Item-specific text that displays in recipient-facing materials such as the outbound shipment packing slip. | [optional]
 **fulfillment_network_sku** | **string** | Amazon's fulfillment network SKU of the item. | [optional]
-**per_unit_declared_value** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
-**per_unit_price** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
-**per_unit_tax** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
+**per_unit_declared_value** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
+**per_unit_price** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
+**per_unit_tax** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money**](Money.md) |  | [optional]
 
 [[FbaOutboundV20200701 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

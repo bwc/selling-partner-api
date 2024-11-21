@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShippingServiceOptions Class Doc Comment
  *
  * @category Class
  * @description Extra services provided by a carrier.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,11 +58,11 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_experience' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceType',
-        'declared_value' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount',
+        'delivery_experience' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceType',
+        'declared_value' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount',
         'carrier_will_pick_up' => 'bool',
-        'carrier_will_pick_up_option' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption',
-        'label_format' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat'
+        'carrier_will_pick_up_option' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption',
+        'label_format' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat'
     ];
 
     /**
@@ -167,7 +167,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets delivery_experience
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceType
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceType
      */
     public function getDeliveryExperience()
     {
@@ -177,7 +177,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets delivery_experience
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceType $delivery_experience delivery_experience
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceType $delivery_experience delivery_experience
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets declared_value
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount|null
      */
     public function getDeclaredValue()
     {
@@ -200,7 +200,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets declared_value
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CurrencyAmount|null $declared_value declared_value
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CurrencyAmount|null $declared_value declared_value
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets carrier_will_pick_up_option
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null
      */
     public function getCarrierWillPickUpOption()
     {
@@ -246,7 +246,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets carrier_will_pick_up_option
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null $carrier_will_pick_up_option carrier_will_pick_up_option
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null $carrier_will_pick_up_option carrier_will_pick_up_option
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets label_format
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat|null
      */
     public function getLabelFormat()
     {
@@ -269,7 +269,7 @@ class ShippingServiceOptions extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets label_format
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat|null $label_format label_format
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat|null $label_format label_format
      *
      * @return self
      */

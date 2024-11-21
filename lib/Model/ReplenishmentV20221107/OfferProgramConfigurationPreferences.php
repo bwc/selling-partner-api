@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferProgramConfigurationPreferences Class Doc Comment
  *
  * @category Class
  * @description An object which contains the preferences applied to the offer.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class OfferProgramConfigurationPreferences extends BaseModel implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'auto_enrollment' => '\SellingPartnerApi\Model\ReplenishmentV20221107\AutoEnrollmentPreference'
+        'auto_enrollment' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\AutoEnrollmentPreference'
     ];
 
     /**
@@ -137,7 +137,7 @@ class OfferProgramConfigurationPreferences extends BaseModel implements ModelInt
     /**
      * Gets auto_enrollment
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\AutoEnrollmentPreference|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\AutoEnrollmentPreference|null
      */
     public function getAutoEnrollment()
     {
@@ -147,7 +147,7 @@ class OfferProgramConfigurationPreferences extends BaseModel implements ModelInt
     /**
      * Sets auto_enrollment
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\AutoEnrollmentPreference|null $auto_enrollment auto_enrollment
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\AutoEnrollmentPreference|null $auto_enrollment auto_enrollment
      *
      * @return self
      */

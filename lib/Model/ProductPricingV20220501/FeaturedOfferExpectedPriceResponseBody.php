@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeaturedOfferExpectedPriceResponseBody Class Doc Comment
  *
  * @category Class
  * @description The featured offer expected price response data for a requested SKU.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_identifier' => '\SellingPartnerApi\Model\ProductPricingV20220501\OfferIdentifier',
-        'featured_offer_expected_price_results' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResult[]',
-        'errors' => '\SellingPartnerApi\Model\ProductPricingV20220501\Error[]'
+        'offer_identifier' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\OfferIdentifier',
+        'featured_offer_expected_price_results' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResult[]',
+        'errors' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\Error[]'
     ];
 
     /**
@@ -152,7 +152,7 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
     /**
      * Gets offer_identifier
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\OfferIdentifier
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\OfferIdentifier
      */
     public function getOfferIdentifier()
     {
@@ -162,7 +162,7 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
     /**
      * Sets offer_identifier
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\OfferIdentifier $offer_identifier offer_identifier
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\OfferIdentifier $offer_identifier offer_identifier
      *
      * @return self
      */
@@ -175,7 +175,7 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
     /**
      * Gets featured_offer_expected_price_results
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResult[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResult[]|null
      */
     public function getFeaturedOfferExpectedPriceResults()
     {
@@ -185,7 +185,7 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
     /**
      * Sets featured_offer_expected_price_results
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResult[]|null $featured_offer_expected_price_results A list of featured offer expected price results for the requested offer.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResult[]|null $featured_offer_expected_price_results A list of featured offer expected price results for the requested offer.
      *
      * @return self
      */
@@ -198,7 +198,7 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\Error[]|null
      */
     public function getErrors()
     {
@@ -208,7 +208,7 @@ class FeaturedOfferExpectedPriceResponseBody extends BaseModel implements ModelI
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

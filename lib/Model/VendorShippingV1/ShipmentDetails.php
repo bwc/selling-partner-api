@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentDetails Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class ShipmentDetails extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\VendorShippingV1\Pagination',
-        'shipments' => '\SellingPartnerApi\Model\VendorShippingV1\Shipment[]'
+        'pagination' => '\SellingPartnerApiV5\Model\VendorShippingV1\Pagination',
+        'shipments' => '\SellingPartnerApiV5\Model\VendorShippingV1\Shipment[]'
     ];
 
     /**
@@ -142,7 +142,7 @@ class ShipmentDetails extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Pagination|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Pagination|null
      */
     public function getPagination()
     {
@@ -152,7 +152,7 @@ class ShipmentDetails extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -165,7 +165,7 @@ class ShipmentDetails extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets shipments
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Shipment[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Shipment[]|null
      */
     public function getShipments()
     {
@@ -175,7 +175,7 @@ class ShipmentDetails extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets shipments
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Shipment[]|null $shipments shipments
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Shipment[]|null $shipments shipments
      *
      * @return self
      */

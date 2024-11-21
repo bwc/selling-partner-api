@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ValidateContentDocumentAsinRelationsResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class ValidateContentDocumentAsinRelationsResponse extends BaseModel implements 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]',
-        'errors' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]'
+        'warnings' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]',
+        'errors' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]'
     ];
 
     /**
@@ -170,7 +170,7 @@ class ValidateContentDocumentAsinRelationsResponse extends BaseModel implements 
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null
      */
     public function getWarnings()
     {
@@ -180,7 +180,7 @@ class ValidateContentDocumentAsinRelationsResponse extends BaseModel implements 
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class ValidateContentDocumentAsinRelationsResponse extends BaseModel implements 
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]
      */
     public function getErrors()
     {
@@ -205,7 +205,7 @@ class ValidateContentDocumentAsinRelationsResponse extends BaseModel implements 
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[] $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[] $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

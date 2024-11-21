@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Transaction Class Doc Comment
  *
  * @category Class
  * @description The transaction details including the status. If the transaction was successful, also includes the requested test order data.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'transaction_id' => 'string',
         'status' => 'string',
-        'test_case_data' => '\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TestCaseData'
+        'test_case_data' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TestCaseData'
     ];
 
     /**
@@ -247,7 +247,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets test_case_data
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TestCaseData|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TestCaseData|null
      */
     public function getTestCaseData()
     {
@@ -257,7 +257,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets test_case_data
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TestCaseData|null $test_case_data test_case_data
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TestCaseData|null $test_case_data test_case_data
      *
      * @return self
      */

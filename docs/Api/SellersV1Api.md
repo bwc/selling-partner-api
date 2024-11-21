@@ -1,4 +1,4 @@
-# SellingPartnerApi\SellersV1Api
+# SellingPartnerApiV5\SellersV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getMarketplaceParticipations()`
 
 ```php
-getMarketplaceParticipations(): \SellingPartnerApi\Model\SellersV1\GetMarketplaceParticipationsResponse
+getMarketplaceParticipations(): \SellingPartnerApiV5\Model\SellersV1\GetMarketplaceParticipationsResponse
 ```
 
 
@@ -30,16 +30,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SellersV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SellersV1Api($config);
 
 try {
     $result = $apiInstance->getMarketplaceParticipations();
@@ -55,7 +55,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SellersV1\GetMarketplaceParticipationsResponse**](../Model/SellersV1/GetMarketplaceParticipationsResponse.md)
+[**\SellingPartnerApiV5\Model\SellersV1\GetMarketplaceParticipationsResponse**](../Model/SellersV1/GetMarketplaceParticipationsResponse.md)
 
 ### HTTP request headers
 

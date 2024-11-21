@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AssignAppointmentResourcesResponsePayload Class Doc Comment
  *
  * @category Class
  * @description The payload for the `assignAppointmentResource` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class AssignAppointmentResourcesResponsePayload extends BaseModel implements Mod
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\ServiceV1\Warning[]'
+        'warnings' => '\SellingPartnerApiV5\Model\ServiceV1\Warning[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class AssignAppointmentResourcesResponsePayload extends BaseModel implements Mod
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Warning[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null
      */
     public function getWarnings()
     {
@@ -147,7 +147,7 @@ class AssignAppointmentResourcesResponsePayload extends BaseModel implements Mod
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
      *
      * @return self
      */

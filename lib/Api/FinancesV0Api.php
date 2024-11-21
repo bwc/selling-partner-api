@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * FinancesV0Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class FinancesV0Api extends BaseApi
 {
@@ -48,9 +48,9 @@ class FinancesV0Api extends BaseApi
      * @param  string $financial_event_group_started_after A date used for selecting financial event groups that opened after (or at) a specified date and time, in ISO 8601 format. The date-time must be no later than two minutes before the request was submitted. (optional)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse
      */
     public function listFinancialEventGroups($max_results_per_page = 100, $financial_event_group_started_before = null, $financial_event_group_started_after = null, $next_token = null)
     {
@@ -66,9 +66,9 @@ class FinancesV0Api extends BaseApi
      * @param  string $financial_event_group_started_after A date used for selecting financial event groups that opened after (or at) a specified date and time, in ISO 8601 format. The date-time must be no later than two minutes before the request was submitted. (optional)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listFinancialEventGroupsWithHttpInfo($max_results_per_page = 100, $financial_event_group_started_before = null, $financial_event_group_started_after = null, $next_token = null)
     {
@@ -117,64 +117,64 @@ class FinancesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -189,7 +189,7 @@ class FinancesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -197,7 +197,7 @@ class FinancesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -205,7 +205,7 @@ class FinancesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +213,7 @@ class FinancesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +221,7 @@ class FinancesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +229,7 @@ class FinancesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -237,7 +237,7 @@ class FinancesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class FinancesV0Api extends BaseApi
      */
     public function listFinancialEventGroupsAsyncWithHttpInfo($max_results_per_page = 100, $financial_event_group_started_before = null, $financial_event_group_started_after = null, $next_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventGroupsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventGroupsResponse';
         $request = $this->listFinancialEventGroupsRequest($max_results_per_page, $financial_event_group_started_before, $financial_event_group_started_after, $next_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -448,9 +448,9 @@ class FinancesV0Api extends BaseApi
      * @param  string $posted_before A date used for selecting financial events posted before (but not at) a specified time. The date-time must be later than PostedAfter and no later than two minutes before the request was submitted, in ISO 8601 date time format. If PostedAfter and PostedBefore are more than 180 days apart, no financial events are returned. You must specify the PostedAfter parameter if you specify the PostedBefore parameter. Default: Now minus two minutes. (optional)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse
      */
     public function listFinancialEvents($max_results_per_page = 100, $posted_after = null, $posted_before = null, $next_token = null)
     {
@@ -466,9 +466,9 @@ class FinancesV0Api extends BaseApi
      * @param  string $posted_before A date used for selecting financial events posted before (but not at) a specified time. The date-time must be later than PostedAfter and no later than two minutes before the request was submitted, in ISO 8601 date time format. If PostedAfter and PostedBefore are more than 180 days apart, no financial events are returned. You must specify the PostedAfter parameter if you specify the PostedBefore parameter. Default: Now minus two minutes. (optional)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listFinancialEventsWithHttpInfo($max_results_per_page = 100, $posted_after = null, $posted_before = null, $next_token = null)
     {
@@ -517,64 +517,64 @@ class FinancesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -589,7 +589,7 @@ class FinancesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -597,7 +597,7 @@ class FinancesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -605,7 +605,7 @@ class FinancesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -613,7 +613,7 @@ class FinancesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -621,7 +621,7 @@ class FinancesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -629,7 +629,7 @@ class FinancesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -637,7 +637,7 @@ class FinancesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -681,7 +681,7 @@ class FinancesV0Api extends BaseApi
      */
     public function listFinancialEventsAsyncWithHttpInfo($max_results_per_page = 100, $posted_after = null, $posted_before = null, $next_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse';
         $request = $this->listFinancialEventsRequest($max_results_per_page, $posted_after, $posted_before, $next_token);
         $signedRequest = $this->config->signRequest(
             $request
@@ -849,9 +849,9 @@ class FinancesV0Api extends BaseApi
      * @param  string $posted_after A date used for selecting financial events posted after (or at) a specified time. The date-time **must** be more than two minutes before the time of the request, in ISO 8601 date time format. (optional)
      * @param  string $posted_before A date used for selecting financial events posted before (but not at) a specified time. The date-time must be later than `PostedAfter` and no later than two minutes before the request was submitted, in ISO 8601 date time format. If `PostedAfter` and `PostedBefore` are more than 180 days apart, no financial events are returned. You must specify the `PostedAfter` parameter if you specify the `PostedBefore` parameter. Default: Now minus two minutes. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse
      */
     public function listFinancialEventsByGroupId($event_group_id, $max_results_per_page = 100, $next_token = null, $posted_after = null, $posted_before = null)
     {
@@ -868,9 +868,9 @@ class FinancesV0Api extends BaseApi
      * @param  string $posted_after A date used for selecting financial events posted after (or at) a specified time. The date-time **must** be more than two minutes before the time of the request, in ISO 8601 date time format. (optional)
      * @param  string $posted_before A date used for selecting financial events posted before (but not at) a specified time. The date-time must be later than `PostedAfter` and no later than two minutes before the request was submitted, in ISO 8601 date time format. If `PostedAfter` and `PostedBefore` are more than 180 days apart, no financial events are returned. You must specify the `PostedAfter` parameter if you specify the `PostedBefore` parameter. Default: Now minus two minutes. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listFinancialEventsByGroupIdWithHttpInfo($event_group_id, $max_results_per_page = 100, $next_token = null, $posted_after = null, $posted_before = null)
     {
@@ -919,64 +919,64 @@ class FinancesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -991,7 +991,7 @@ class FinancesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class FinancesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1007,7 +1007,7 @@ class FinancesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class FinancesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1023,7 +1023,7 @@ class FinancesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1031,7 +1031,7 @@ class FinancesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1039,7 +1039,7 @@ class FinancesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1085,7 +1085,7 @@ class FinancesV0Api extends BaseApi
      */
     public function listFinancialEventsByGroupIdAsyncWithHttpInfo($event_group_id, $max_results_per_page = 100, $next_token = null, $posted_after = null, $posted_before = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse';
         $request = $this->listFinancialEventsByGroupIdRequest($event_group_id, $max_results_per_page, $next_token, $posted_after, $posted_before);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1267,9 +1267,9 @@ class FinancesV0Api extends BaseApi
      * @param  int $max_results_per_page The maximum number of results to return per page. If the response exceeds the maximum number of transactions or 10 MB, the API responds with 'InvalidInput'. (optional, default to 100)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse
      */
     public function listFinancialEventsByOrderId($order_id, $max_results_per_page = 100, $next_token = null)
     {
@@ -1284,9 +1284,9 @@ class FinancesV0Api extends BaseApi
      * @param  int $max_results_per_page The maximum number of results to return per page. If the response exceeds the maximum number of transactions or 10 MB, the API responds with 'InvalidInput'. (optional, default to 100)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listFinancialEventsByOrderIdWithHttpInfo($order_id, $max_results_per_page = 100, $next_token = null)
     {
@@ -1335,64 +1335,64 @@ class FinancesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1407,7 +1407,7 @@ class FinancesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1415,7 +1415,7 @@ class FinancesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1423,7 +1423,7 @@ class FinancesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1431,7 +1431,7 @@ class FinancesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1439,7 +1439,7 @@ class FinancesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1447,7 +1447,7 @@ class FinancesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1455,7 +1455,7 @@ class FinancesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse',
+                        '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1497,7 +1497,7 @@ class FinancesV0Api extends BaseApi
      */
     public function listFinancialEventsByOrderIdAsyncWithHttpInfo($order_id, $max_results_per_page = 100, $next_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\FinancesV0\ListFinancialEventsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FinancesV0\ListFinancialEventsResponse';
         $request = $this->listFinancialEventsByOrderIdRequest($order_id, $max_results_per_page, $next_token);
         $signedRequest = $this->config->signRequest(
             $request

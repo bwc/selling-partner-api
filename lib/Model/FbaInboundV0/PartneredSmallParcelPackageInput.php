@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartneredSmallParcelPackageInput Class Doc Comment
  *
  * @category Class
  * @description Dimension and weight information for the package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PartneredSmallParcelPackageInput extends BaseModel implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'dimensions' => '\SellingPartnerApi\Model\FbaInboundV0\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\FbaInboundV0\Weight'
+        'dimensions' => '\SellingPartnerApiV5\Model\FbaInboundV0\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\FbaInboundV0\Weight'
     ];
 
     /**
@@ -149,7 +149,7 @@ class PartneredSmallParcelPackageInput extends BaseModel implements ModelInterfa
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Dimensions
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Dimensions
      */
     public function getDimensions()
     {
@@ -159,7 +159,7 @@ class PartneredSmallParcelPackageInput extends BaseModel implements ModelInterfa
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Dimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class PartneredSmallParcelPackageInput extends BaseModel implements ModelInterfa
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Weight
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Weight
      */
     public function getWeight()
     {
@@ -182,7 +182,7 @@ class PartneredSmallParcelPackageInput extends BaseModel implements ModelInterfa
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Weight $weight weight
      *
      * @return self
      */

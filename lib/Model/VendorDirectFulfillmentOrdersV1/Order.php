@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Order Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
-        'order_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderDetails'
+        'order_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderDetails'
     ];
 
     /**
@@ -168,7 +168,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets order_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderDetails|null
      */
     public function getOrderDetails()
     {
@@ -178,7 +178,7 @@ class Order extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets order_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderDetails|null $order_details order_details
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderDetails|null $order_details order_details
      *
      * @return self
      */

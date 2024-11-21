@@ -1,4 +1,4 @@
-# SellingPartnerApi\UploadsV20201101Api
+# SellingPartnerApiV5\UploadsV20201101Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `createUploadDestinationForResource()`
 
 ```php
-createUploadDestinationForResource($marketplace_ids, $content_md5, $resource, $content_type): \SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse
+createUploadDestinationForResource($marketplace_ids, $content_md5, $resource, $content_type): \SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse
 ```
 
 
@@ -30,16 +30,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\UploadsV20201101Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\UploadsV20201101Api($config);
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A list of marketplace identifiers. This specifies the marketplaces where the upload will be available. Only one marketplace can be specified.
 $content_md5 = 'content_md5_example'; // string | An MD5 hash of the content to be submitted to the upload destination. This value is used to determine if the data has been corrupted or tampered with during transit.
 $resource = 'resource_example'; // string | The resource for the upload destination that you are creating. For example, if you are creating an upload destination for the createLegalDisclosure operation of the Messaging API, the `{resource}` would be `/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure`, and the entire path would be `/uploads/2020-11-01/uploadDestinations/messaging/v1/orders/{amazonOrderId}/messages/legalDisclosure`. If you are creating an upload destination for an Aplus content document, the `{resource}` would be `aplus/2020-11-01/contentDocuments` and the path would be `/uploads/v1/uploadDestinations/aplus/2020-11-01/contentDocuments`.
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\UploadsV20201101\CreateUploadDestinationResponse**](../Model/UploadsV20201101/CreateUploadDestinationResponse.md)
+[**\SellingPartnerApiV5\Model\UploadsV20201101\CreateUploadDestinationResponse**](../Model/UploadsV20201101/CreateUploadDestinationResponse.md)
 
 ### HTTP request headers
 

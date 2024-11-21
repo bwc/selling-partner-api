@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitAcknowledgementRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the submitAcknowledgement operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitAcknowledgementRequest extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_acknowledgements' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderAcknowledgementItem[]'
+        'order_acknowledgements' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderAcknowledgementItem[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitAcknowledgementRequest extends BaseModel implements ModelInterface, 
     /**
      * Gets order_acknowledgements
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderAcknowledgementItem[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderAcknowledgementItem[]|null
      */
     public function getOrderAcknowledgements()
     {
@@ -147,7 +147,7 @@ class SubmitAcknowledgementRequest extends BaseModel implements ModelInterface, 
     /**
      * Sets order_acknowledgements
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderAcknowledgementItem[]|null $order_acknowledgements A list of one or more purchase orders.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderAcknowledgementItem[]|null $order_acknowledgements A list of one or more purchase orders.
      *
      * @return self
      */

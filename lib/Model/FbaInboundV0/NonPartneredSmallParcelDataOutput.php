@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * NonPartneredSmallParcelDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Small Parcel shipment by a carrier that has not partnered with Amazon.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class NonPartneredSmallParcelDataOutput extends BaseModel implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'package_list' => '\SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelPackageOutput[]'
+        'package_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelPackageOutput[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class NonPartneredSmallParcelDataOutput extends BaseModel implements ModelInterf
     /**
      * Gets package_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelPackageOutput[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelPackageOutput[]
      */
     public function getPackageList()
     {
@@ -150,7 +150,7 @@ class NonPartneredSmallParcelDataOutput extends BaseModel implements ModelInterf
     /**
      * Sets package_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelPackageOutput[] $package_list A list of packages, including carrier, tracking number, and status information for each package.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelPackageOutput[] $package_list A list of packages, including carrier, tracking number, and status information for each package.
      *
      * @return self
      */

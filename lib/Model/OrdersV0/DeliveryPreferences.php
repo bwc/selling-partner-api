@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DeliveryPreferences Class Doc Comment
  *
  * @category Class
  * @description Contains all of the delivery instructions provided by the customer for the shipping address.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class DeliveryPreferences extends BaseModel implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'drop_off_location' => 'string',
-        'preferred_delivery_time' => '\SellingPartnerApi\Model\OrdersV0\PreferredDeliveryTime',
-        'other_attributes' => '\SellingPartnerApi\Model\OrdersV0\OtherDeliveryAttributes[]',
+        'preferred_delivery_time' => '\SellingPartnerApiV5\Model\OrdersV0\PreferredDeliveryTime',
+        'other_attributes' => '\SellingPartnerApiV5\Model\OrdersV0\OtherDeliveryAttributes[]',
         'address_instructions' => 'string'
     ];
 
@@ -178,7 +178,7 @@ class DeliveryPreferences extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets preferred_delivery_time
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\PreferredDeliveryTime|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\PreferredDeliveryTime|null
      */
     public function getPreferredDeliveryTime()
     {
@@ -188,7 +188,7 @@ class DeliveryPreferences extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets preferred_delivery_time
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\PreferredDeliveryTime|null $preferred_delivery_time preferred_delivery_time
+     * @param \SellingPartnerApiV5\Model\OrdersV0\PreferredDeliveryTime|null $preferred_delivery_time preferred_delivery_time
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class DeliveryPreferences extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets other_attributes
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OtherDeliveryAttributes[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OtherDeliveryAttributes[]|null
      */
     public function getOtherAttributes()
     {
@@ -211,7 +211,7 @@ class DeliveryPreferences extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets other_attributes
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OtherDeliveryAttributes[]|null $other_attributes Enumerated list of miscellaneous delivery attributes associated with the shipping address.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OtherDeliveryAttributes[]|null $other_attributes Enumerated list of miscellaneous delivery attributes associated with the shipping address.
      *
      * @return self
      */

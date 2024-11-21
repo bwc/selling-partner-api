@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackageDocumentDetail Class Doc Comment
  *
  * @category Class
  * @description The post-purchase details of a package that will be shipped using a shipping service.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class PackageDocumentDetail extends BaseModel implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'package_client_reference_id' => 'string',
-        'package_documents' => '\SellingPartnerApi\Model\ShippingV2\PackageDocument[]',
+        'package_documents' => '\SellingPartnerApiV5\Model\ShippingV2\PackageDocument[]',
         'tracking_id' => 'string'
     ];
 
@@ -178,7 +178,7 @@ class PackageDocumentDetail extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets package_documents
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\PackageDocument[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\PackageDocument[]
      */
     public function getPackageDocuments()
     {
@@ -188,7 +188,7 @@ class PackageDocumentDetail extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets package_documents
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\PackageDocument[] $package_documents A list of documents related to a package.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\PackageDocument[] $package_documents A list of documents related to a package.
      *
      * @return self
      */

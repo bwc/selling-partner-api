@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentInvoiceStatusInfo Class Doc Comment
  *
  * @category Class
  * @description The shipment invoice status information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ShipmentInvoiceStatusInfo extends BaseModel implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         'amazon_shipment_id' => 'string',
-        'invoice_status' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentInvoiceStatus'
+        'invoice_status' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentInvoiceStatus'
     ];
 
     /**
@@ -166,7 +166,7 @@ class ShipmentInvoiceStatusInfo extends BaseModel implements ModelInterface, Arr
     /**
      * Gets invoice_status
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentInvoiceStatus|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentInvoiceStatus|null
      */
     public function getInvoiceStatus()
     {
@@ -176,7 +176,7 @@ class ShipmentInvoiceStatusInfo extends BaseModel implements ModelInterface, Arr
     /**
      * Sets invoice_status
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentInvoiceStatus|null $invoice_status invoice_status
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentInvoiceStatus|null $invoice_status invoice_status
      *
      * @return self
      */

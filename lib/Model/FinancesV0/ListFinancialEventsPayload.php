@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListFinancialEventsPayload Class Doc Comment
  *
  * @category Class
  * @description The payload for the listFinancialEvents operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ListFinancialEventsPayload extends BaseModel implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'next_token' => 'string',
-        'financial_events' => '\SellingPartnerApi\Model\FinancesV0\FinancialEvents'
+        'financial_events' => '\SellingPartnerApiV5\Model\FinancesV0\FinancialEvents'
     ];
 
     /**
@@ -166,7 +166,7 @@ class ListFinancialEventsPayload extends BaseModel implements ModelInterface, Ar
     /**
      * Gets financial_events
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FinancialEvents|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FinancialEvents|null
      */
     public function getFinancialEvents()
     {
@@ -176,7 +176,7 @@ class ListFinancialEventsPayload extends BaseModel implements ModelInterface, Ar
     /**
      * Sets financial_events
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FinancialEvents|null $financial_events financial_events
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FinancialEvents|null $financial_events financial_events
      *
      * @return self
      */

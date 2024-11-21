@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InnerContainersDetails Class Doc Comment
  *
  * @category Class
  * @description Details of the innerContainersDetails.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class InnerContainersDetails extends BaseModel implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'container_count' => 'int',
-        'container_sequence_numbers' => '\SellingPartnerApi\Model\VendorShippingV1\ContainerSequenceNumbers[]'
+        'container_sequence_numbers' => '\SellingPartnerApiV5\Model\VendorShippingV1\ContainerSequenceNumbers[]'
     ];
 
     /**
@@ -166,7 +166,7 @@ class InnerContainersDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets container_sequence_numbers
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ContainerSequenceNumbers[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ContainerSequenceNumbers[]|null
      */
     public function getContainerSequenceNumbers()
     {
@@ -176,7 +176,7 @@ class InnerContainersDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets container_sequence_numbers
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ContainerSequenceNumbers[]|null $container_sequence_numbers Container sequence numbers that are involved in this shipment.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ContainerSequenceNumbers[]|null $container_sequence_numbers Container sequence numbers that are involved in this shipment.
      *
      * @return self
      */

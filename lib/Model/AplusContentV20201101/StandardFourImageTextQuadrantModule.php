@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardFourImageTextQuadrantModule Class Doc Comment
  *
  * @category Class
  * @description Four standard images with text, presented on a grid of four quadrants.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'block1' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'block2' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'block3' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'block4' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock'
+        'block1' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'block2' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'block3' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'block4' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock'
     ];
 
     /**
@@ -167,7 +167,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Gets block1
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock
      */
     public function getBlock1()
     {
@@ -177,7 +177,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Sets block1
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock $block1 block1
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock $block1 block1
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Gets block2
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock
      */
     public function getBlock2()
     {
@@ -200,7 +200,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Sets block2
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock $block2 block2
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock $block2 block2
      *
      * @return self
      */
@@ -213,7 +213,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Gets block3
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock
      */
     public function getBlock3()
     {
@@ -223,7 +223,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Sets block3
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock $block3 block3
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock $block3 block3
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Gets block4
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock
      */
     public function getBlock4()
     {
@@ -246,7 +246,7 @@ class StandardFourImageTextQuadrantModule extends BaseModel implements ModelInte
     /**
      * Sets block4
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock $block4 block4
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock $block4 block4
      *
      * @return self
      */

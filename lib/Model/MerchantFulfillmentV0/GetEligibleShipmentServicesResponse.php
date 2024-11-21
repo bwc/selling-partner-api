@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetEligibleShipmentServicesResponse Class Doc Comment
  *
  * @category Class
  * @description Response schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetEligibleShipmentServicesResponse extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResult',
-        'errors' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResult',
+        'errors' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetEligibleShipmentServicesResponse extends BaseModel implements ModelInte
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResult|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResult|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetEligibleShipmentServicesResponse extends BaseModel implements ModelInte
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResult|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetEligibleShipmentServicesResponse extends BaseModel implements ModelInte
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetEligibleShipmentServicesResponse extends BaseModel implements ModelInte
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

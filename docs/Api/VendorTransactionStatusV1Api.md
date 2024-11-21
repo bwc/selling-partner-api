@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorTransactionStatusV1Api
+# SellingPartnerApiV5\VendorTransactionStatusV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getTransaction()`
 
 ```php
-getTransaction($transaction_id): \SellingPartnerApi\Model\VendorTransactionStatusV1\GetTransactionResponse
+getTransaction($transaction_id): \SellingPartnerApiV5\Model\VendorTransactionStatusV1\GetTransactionResponse
 ```
 
 
@@ -30,16 +30,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorTransactionStatusV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorTransactionStatusV1Api($config);
 $transaction_id = 'transaction_id_example'; // string | The GUID provided by Amazon in the 'transactionId' field in response to the post request of a specific transaction.
 
 try {
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorTransactionStatusV1\GetTransactionResponse**](../Model/VendorTransactionStatusV1/GetTransactionResponse.md)
+[**\SellingPartnerApiV5\Model\VendorTransactionStatusV1\GetTransactionResponse**](../Model/VendorTransactionStatusV1/GetTransactionResponse.md)
 
 ### HTTP request headers
 

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * IncludedFeeDetail Class Doc Comment
  *
  * @category Class
  * @description The type of fee, fee amount, and other details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,10 +59,10 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'fee_type' => 'string',
-        'fee_amount' => '\SellingPartnerApi\Model\FeesV0\MoneyType',
-        'fee_promotion' => '\SellingPartnerApi\Model\FeesV0\MoneyType',
-        'tax_amount' => '\SellingPartnerApi\Model\FeesV0\MoneyType',
-        'final_fee' => '\SellingPartnerApi\Model\FeesV0\MoneyType'
+        'fee_amount' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType',
+        'fee_promotion' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType',
+        'tax_amount' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType',
+        'final_fee' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType'
     ];
 
     /**
@@ -193,7 +193,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets fee_amount
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType
      */
     public function getFeeAmount()
     {
@@ -203,7 +203,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets fee_amount
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType $fee_amount fee_amount
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType $fee_amount fee_amount
      *
      * @return self
      */
@@ -216,7 +216,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets fee_promotion
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType|null
      */
     public function getFeePromotion()
     {
@@ -226,7 +226,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets fee_promotion
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType|null $fee_promotion fee_promotion
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType|null $fee_promotion fee_promotion
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets tax_amount
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType|null
      */
     public function getTaxAmount()
     {
@@ -249,7 +249,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets tax_amount
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType|null $tax_amount tax_amount
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType|null $tax_amount tax_amount
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets final_fee
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType
      */
     public function getFinalFee()
     {
@@ -272,7 +272,7 @@ class IncludedFeeDetail extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets final_fee
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType $final_fee final_fee
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType $final_fee final_fee
      *
      * @return self
      */

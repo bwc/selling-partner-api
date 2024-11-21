@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SmallAndLightV1;
+namespace SellingPartnerApiV5\Model\SmallAndLightV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SmallAndLightFeePreviewRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema for submitting items for which to retrieve fee estimates.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class SmallAndLightFeePreviewRequest extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'items' => '\SellingPartnerApi\Model\SmallAndLightV1\Item[]'
+        'items' => '\SellingPartnerApiV5\Model\SmallAndLightV1\Item[]'
     ];
 
     /**
@@ -176,7 +176,7 @@ class SmallAndLightFeePreviewRequest extends BaseModel implements ModelInterface
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\Item[]
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\Item[]
      */
     public function getItems()
     {
@@ -186,7 +186,7 @@ class SmallAndLightFeePreviewRequest extends BaseModel implements ModelInterface
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\Item[] $items A list of items for which to retrieve fee estimates (limit: 25).
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\Item[] $items A list of items for which to retrieve fee estimates (limit: 25).
      *
      * @return self
      */

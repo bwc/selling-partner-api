@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CommonTransportResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class CommonTransportResult extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transport_result' => '\SellingPartnerApi\Model\FbaInboundV0\TransportResult'
+        'transport_result' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportResult'
     ];
 
     /**
@@ -136,7 +136,7 @@ class CommonTransportResult extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets transport_result
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportResult|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportResult|null
      */
     public function getTransportResult()
     {
@@ -146,7 +146,7 @@ class CommonTransportResult extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets transport_result
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportResult|null $transport_result transport_result
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportResult|null $transport_result transport_result
      *
      * @return self
      */

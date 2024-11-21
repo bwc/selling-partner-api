@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateScheduledPackagesResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the bulk scheduling API. It returns by the bulk scheduling API containing an array of the scheduled packtages, an optional list of orders we couldn't schedule with the reason, and a pre-signed URL for a ZIP file containing the associated shipping labels plus the documents enabled for your marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class CreateScheduledPackagesResponse extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'scheduled_packages' => '\SellingPartnerApi\Model\EasyShipV20220323\Package[]',
-        'rejected_orders' => '\SellingPartnerApi\Model\EasyShipV20220323\RejectedOrder[]',
+        'scheduled_packages' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Package[]',
+        'rejected_orders' => '\SellingPartnerApiV5\Model\EasyShipV20220323\RejectedOrder[]',
         'printable_documents_url' => 'string'
     ];
 
@@ -178,7 +178,7 @@ class CreateScheduledPackagesResponse extends BaseModel implements ModelInterfac
     /**
      * Gets scheduled_packages
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Package[]|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Package[]|null
      */
     public function getScheduledPackages()
     {
@@ -188,7 +188,7 @@ class CreateScheduledPackagesResponse extends BaseModel implements ModelInterfac
     /**
      * Sets scheduled_packages
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Package[]|null $scheduled_packages A list of packages. Refer to the `Package` object.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Package[]|null $scheduled_packages A list of packages. Refer to the `Package` object.
      *
      * @return self
      */
@@ -205,7 +205,7 @@ class CreateScheduledPackagesResponse extends BaseModel implements ModelInterfac
     /**
      * Gets rejected_orders
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\RejectedOrder[]|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\RejectedOrder[]|null
      */
     public function getRejectedOrders()
     {
@@ -215,7 +215,7 @@ class CreateScheduledPackagesResponse extends BaseModel implements ModelInterfac
     /**
      * Sets rejected_orders
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\RejectedOrder[]|null $rejected_orders A list of orders we couldn't scheduled on your behalf. Each element contains the reason and details on the error.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\RejectedOrder[]|null $rejected_orders A list of orders we couldn't scheduled on your behalf. Each element contains the reason and details on the error.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CollectOnDelivery Class Doc Comment
  *
  * @category Class
  * @description The amount to collect on delivery.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class CollectOnDelivery extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'amount' => '\SellingPartnerApi\Model\ShippingV2\Currency'
+        'amount' => '\SellingPartnerApiV5\Model\ShippingV2\Currency'
     ];
 
     /**
@@ -140,7 +140,7 @@ class CollectOnDelivery extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets amount
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Currency
      */
     public function getAmount()
     {
@@ -150,7 +150,7 @@ class CollectOnDelivery extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets amount
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Currency $amount amount
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Currency $amount amount
      *
      * @return self
      */

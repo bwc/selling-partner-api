@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AplusPaginatedResponse Class Doc Comment
  *
  * @category Class
  * @description The base response data for paginated A+ Content operations. Individual operations may extend this with additional data. If nextPageToken is not returned, there are no more pages to return.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class AplusPaginatedResponse extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]',
+        'warnings' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]',
         'next_page_token' => 'string'
     ];
 
@@ -147,7 +147,7 @@ class AplusPaginatedResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null
      */
     public function getWarnings()
     {
@@ -157,7 +157,7 @@ class AplusPaginatedResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
      *
      * @return self
      */

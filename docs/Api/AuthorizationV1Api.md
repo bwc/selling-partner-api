@@ -1,4 +1,4 @@
-# SellingPartnerApi\AuthorizationV1Api
+# SellingPartnerApiV5\AuthorizationV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getAuthorizationCode()`
 
 ```php
-getAuthorizationCode($selling_partner_id, $developer_id, $mws_auth_token): \SellingPartnerApi\Model\AuthorizationV1\GetAuthorizationCodeResponse
+getAuthorizationCode($selling_partner_id, $developer_id, $mws_auth_token): \SellingPartnerApiV5\Model\AuthorizationV1\GetAuthorizationCodeResponse
 ```
 
 Returns the Login with Amazon (LWA) authorization code for an existing Amazon MWS authorization.
@@ -30,16 +30,16 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\AuthorizationV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\AuthorizationV1Api($config);
 $selling_partner_id = 'selling_partner_id_example'; // string | The seller ID of the seller for whom you are requesting Selling Partner API authorization. This must be the seller ID of the seller who authorized your application on the Marketplace Appstore.
 $developer_id = 'developer_id_example'; // string | Your developer ID. This must be one of the developer ID values that you provided when you registered your application in Developer Central.
 $mws_auth_token = 'mws_auth_token_example'; // string | The MWS Auth Token that was generated when the seller authorized your application on the Marketplace Appstore.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\AuthorizationV1\GetAuthorizationCodeResponse**](../Model/AuthorizationV1/GetAuthorizationCodeResponse.md)
+[**\SellingPartnerApiV5\Model\AuthorizationV1\GetAuthorizationCodeResponse**](../Model/AuthorizationV1/GetAuthorizationCodeResponse.md)
 
 ### HTTP request headers
 

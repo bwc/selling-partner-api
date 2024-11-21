@@ -1,4 +1,4 @@
-# SellingPartnerApi\ShippingV1Api
+# SellingPartnerApiV5\ShippingV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 ## `cancelShipment()`
 
 ```php
-cancelShipment($shipment_id): \SellingPartnerApi\Model\ShippingV1\CancelShipmentResponse
+cancelShipment($shipment_id): \SellingPartnerApiV5\Model\ShippingV1\CancelShipmentResponse
 ```
 
 
@@ -38,16 +38,16 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
 $shipment_id = 'shipment_id_example'; // string
 
 try {
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\CancelShipmentResponse**](../Model/ShippingV1/CancelShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\CancelShipmentResponse**](../Model/ShippingV1/CancelShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 ## `createShipment()`
 
 ```php
-createShipment($body): \SellingPartnerApi\Model\ShippingV1\CreateShipmentResponse
+createShipment($body): \SellingPartnerApiV5\Model\ShippingV1\CreateShipmentResponse
 ```
 
 
@@ -102,17 +102,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
-$body = new \SellingPartnerApi\Model\ShippingV1\CreateShipmentRequest(); // \SellingPartnerApi\Model\ShippingV1\CreateShipmentRequest
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
+$body = new \SellingPartnerApiV5\Model\ShippingV1\CreateShipmentRequest(); // \SellingPartnerApiV5\Model\ShippingV1\CreateShipmentRequest
 
 try {
     $result = $apiInstance->createShipment($body);
@@ -126,11 +126,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ShippingV1\CreateShipmentRequest**](../Model/ShippingV1/CreateShipmentRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV1\CreateShipmentRequest**](../Model/ShippingV1/CreateShipmentRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\CreateShipmentResponse**](../Model/ShippingV1/CreateShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\CreateShipmentResponse**](../Model/ShippingV1/CreateShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 ## `getAccount()`
 
 ```php
-getAccount(): \SellingPartnerApi\Model\ShippingV1\GetAccountResponse
+getAccount(): \SellingPartnerApiV5\Model\ShippingV1\GetAccountResponse
 ```
 
 
@@ -166,16 +166,16 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
 
 try {
     $result = $apiInstance->getAccount();
@@ -191,7 +191,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\GetAccountResponse**](../Model/ShippingV1/GetAccountResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\GetAccountResponse**](../Model/ShippingV1/GetAccountResponse.md)
 
 ### HTTP request headers
 
@@ -205,7 +205,7 @@ This endpoint does not need any parameter.
 ## `getRates()`
 
 ```php
-getRates($body): \SellingPartnerApi\Model\ShippingV1\GetRatesResponse
+getRates($body): \SellingPartnerApiV5\Model\ShippingV1\GetRatesResponse
 ```
 
 
@@ -227,17 +227,17 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
-$body = new \SellingPartnerApi\Model\ShippingV1\GetRatesRequest(); // \SellingPartnerApi\Model\ShippingV1\GetRatesRequest
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
+$body = new \SellingPartnerApiV5\Model\ShippingV1\GetRatesRequest(); // \SellingPartnerApiV5\Model\ShippingV1\GetRatesRequest
 
 try {
     $result = $apiInstance->getRates($body);
@@ -251,11 +251,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ShippingV1\GetRatesRequest**](../Model/ShippingV1/GetRatesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV1\GetRatesRequest**](../Model/ShippingV1/GetRatesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\GetRatesResponse**](../Model/ShippingV1/GetRatesResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\GetRatesResponse**](../Model/ShippingV1/GetRatesResponse.md)
 
 ### HTTP request headers
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 ## `getShipment()`
 
 ```php
-getShipment($shipment_id): \SellingPartnerApi\Model\ShippingV1\GetShipmentResponse
+getShipment($shipment_id): \SellingPartnerApiV5\Model\ShippingV1\GetShipmentResponse
 ```
 
 
@@ -291,16 +291,16 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
 $shipment_id = 'shipment_id_example'; // string
 
 try {
@@ -319,7 +319,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\GetShipmentResponse**](../Model/ShippingV1/GetShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\GetShipmentResponse**](../Model/ShippingV1/GetShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 ## `getTrackingInformation()`
 
 ```php
-getTrackingInformation($tracking_id): \SellingPartnerApi\Model\ShippingV1\GetTrackingInformationResponse
+getTrackingInformation($tracking_id): \SellingPartnerApiV5\Model\ShippingV1\GetTrackingInformationResponse
 ```
 
 
@@ -355,16 +355,16 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
 $tracking_id = 'tracking_id_example'; // string
 
 try {
@@ -383,7 +383,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\GetTrackingInformationResponse**](../Model/ShippingV1/GetTrackingInformationResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\GetTrackingInformationResponse**](../Model/ShippingV1/GetTrackingInformationResponse.md)
 
 ### HTTP request headers
 
@@ -397,7 +397,7 @@ Name | Type | Description  | Notes
 ## `purchaseLabels()`
 
 ```php
-purchaseLabels($shipment_id, $body): \SellingPartnerApi\Model\ShippingV1\PurchaseLabelsResponse
+purchaseLabels($shipment_id, $body): \SellingPartnerApiV5\Model\ShippingV1\PurchaseLabelsResponse
 ```
 
 
@@ -419,18 +419,18 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
 $shipment_id = 'shipment_id_example'; // string
-$body = new \SellingPartnerApi\Model\ShippingV1\PurchaseLabelsRequest(); // \SellingPartnerApi\Model\ShippingV1\PurchaseLabelsRequest
+$body = new \SellingPartnerApiV5\Model\ShippingV1\PurchaseLabelsRequest(); // \SellingPartnerApiV5\Model\ShippingV1\PurchaseLabelsRequest
 
 try {
     $result = $apiInstance->purchaseLabels($shipment_id, $body);
@@ -445,11 +445,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shipment_id** | **string**|  |
- **body** | [**\SellingPartnerApi\Model\ShippingV1\PurchaseLabelsRequest**](../Model/ShippingV1/PurchaseLabelsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV1\PurchaseLabelsRequest**](../Model/ShippingV1/PurchaseLabelsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\PurchaseLabelsResponse**](../Model/ShippingV1/PurchaseLabelsResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\PurchaseLabelsResponse**](../Model/ShippingV1/PurchaseLabelsResponse.md)
 
 ### HTTP request headers
 
@@ -463,7 +463,7 @@ Name | Type | Description  | Notes
 ## `purchaseShipment()`
 
 ```php
-purchaseShipment($body): \SellingPartnerApi\Model\ShippingV1\PurchaseShipmentResponse
+purchaseShipment($body): \SellingPartnerApiV5\Model\ShippingV1\PurchaseShipmentResponse
 ```
 
 
@@ -485,17 +485,17 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
-$body = new \SellingPartnerApi\Model\ShippingV1\PurchaseShipmentRequest(); // \SellingPartnerApi\Model\ShippingV1\PurchaseShipmentRequest
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
+$body = new \SellingPartnerApiV5\Model\ShippingV1\PurchaseShipmentRequest(); // \SellingPartnerApiV5\Model\ShippingV1\PurchaseShipmentRequest
 
 try {
     $result = $apiInstance->purchaseShipment($body);
@@ -509,11 +509,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ShippingV1\PurchaseShipmentRequest**](../Model/ShippingV1/PurchaseShipmentRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV1\PurchaseShipmentRequest**](../Model/ShippingV1/PurchaseShipmentRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\PurchaseShipmentResponse**](../Model/ShippingV1/PurchaseShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\PurchaseShipmentResponse**](../Model/ShippingV1/PurchaseShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -527,7 +527,7 @@ Name | Type | Description  | Notes
 ## `retrieveShippingLabel()`
 
 ```php
-retrieveShippingLabel($shipment_id, $tracking_id, $body): \SellingPartnerApi\Model\ShippingV1\RetrieveShippingLabelResponse
+retrieveShippingLabel($shipment_id, $tracking_id, $body): \SellingPartnerApiV5\Model\ShippingV1\RetrieveShippingLabelResponse
 ```
 
 
@@ -549,19 +549,19 @@ For more information, see \"Usage Plans and Rate Limits\" in the Selling Partner
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShippingV1Api($config);
 $shipment_id = 'shipment_id_example'; // string
 $tracking_id = 'tracking_id_example'; // string
-$body = new \SellingPartnerApi\Model\ShippingV1\RetrieveShippingLabelRequest(); // \SellingPartnerApi\Model\ShippingV1\RetrieveShippingLabelRequest
+$body = new \SellingPartnerApiV5\Model\ShippingV1\RetrieveShippingLabelRequest(); // \SellingPartnerApiV5\Model\ShippingV1\RetrieveShippingLabelRequest
 
 try {
     $result = $apiInstance->retrieveShippingLabel($shipment_id, $tracking_id, $body);
@@ -577,11 +577,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shipment_id** | **string**|  |
  **tracking_id** | **string**|  |
- **body** | [**\SellingPartnerApi\Model\ShippingV1\RetrieveShippingLabelRequest**](../Model/ShippingV1/RetrieveShippingLabelRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShippingV1\RetrieveShippingLabelRequest**](../Model/ShippingV1/RetrieveShippingLabelRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShippingV1\RetrieveShippingLabelResponse**](../Model/ShippingV1/RetrieveShippingLabelResponse.md)
+[**\SellingPartnerApiV5\Model\ShippingV1\RetrieveShippingLabelResponse**](../Model/ShippingV1/RetrieveShippingLabelResponse.md)
 
 ### HTTP request headers
 

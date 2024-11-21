@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetEligibleShipmentServicesRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetEligibleShipmentServicesRequest extends BaseModel implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipment_request_details' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentRequestDetails',
-        'shipping_offering_filter' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingOfferingFilter'
+        'shipment_request_details' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentRequestDetails',
+        'shipping_offering_filter' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingOfferingFilter'
     ];
 
     /**
@@ -146,7 +146,7 @@ class GetEligibleShipmentServicesRequest extends BaseModel implements ModelInter
     /**
      * Gets shipment_request_details
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentRequestDetails
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentRequestDetails
      */
     public function getShipmentRequestDetails()
     {
@@ -156,7 +156,7 @@ class GetEligibleShipmentServicesRequest extends BaseModel implements ModelInter
     /**
      * Sets shipment_request_details
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentRequestDetails $shipment_request_details shipment_request_details
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentRequestDetails $shipment_request_details shipment_request_details
      *
      * @return self
      */
@@ -169,7 +169,7 @@ class GetEligibleShipmentServicesRequest extends BaseModel implements ModelInter
     /**
      * Gets shipping_offering_filter
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingOfferingFilter|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingOfferingFilter|null
      */
     public function getShippingOfferingFilter()
     {
@@ -179,7 +179,7 @@ class GetEligibleShipmentServicesRequest extends BaseModel implements ModelInter
     /**
      * Sets shipping_offering_filter
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingOfferingFilter|null $shipping_offering_filter shipping_offering_filter
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingOfferingFilter|null $shipping_offering_filter shipping_offering_filter
      *
      * @return self
      */

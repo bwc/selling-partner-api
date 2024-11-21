@@ -1,4 +1,4 @@
-# SellingPartnerApi\ReportsV20210630Api
+# SellingPartnerApiV5\ReportsV20210630Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -38,16 +38,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_id = 'report_id_example'; // string | The identifier for the report. This identifier is unique only in combination with a seller ID.
 
 try {
@@ -101,16 +101,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_schedule_id = 'report_schedule_id_example'; // string | The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
 
 try {
@@ -142,7 +142,7 @@ void (empty response body)
 ## `createReport()`
 
 ```php
-createReport($body): \SellingPartnerApi\Model\ReportsV20210630\CreateReportResponse
+createReport($body): \SellingPartnerApiV5\Model\ReportsV20210630\CreateReportResponse
 ```
 
 
@@ -164,17 +164,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
-$body = new \SellingPartnerApi\Model\ReportsV20210630\CreateReportSpecification(); // \SellingPartnerApi\Model\ReportsV20210630\CreateReportSpecification
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
+$body = new \SellingPartnerApiV5\Model\ReportsV20210630\CreateReportSpecification(); // \SellingPartnerApiV5\Model\ReportsV20210630\CreateReportSpecification
 
 try {
     $result = $apiInstance->createReport($body);
@@ -188,11 +188,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ReportsV20210630\CreateReportSpecification**](../Model/ReportsV20210630/CreateReportSpecification.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ReportsV20210630\CreateReportSpecification**](../Model/ReportsV20210630/CreateReportSpecification.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\CreateReportResponse**](../Model/ReportsV20210630/CreateReportResponse.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\CreateReportResponse**](../Model/ReportsV20210630/CreateReportResponse.md)
 
 ### HTTP request headers
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 ## `createReportSchedule()`
 
 ```php
-createReportSchedule($body): \SellingPartnerApi\Model\ReportsV20210630\CreateReportScheduleResponse
+createReportSchedule($body): \SellingPartnerApiV5\Model\ReportsV20210630\CreateReportScheduleResponse
 ```
 
 
@@ -228,17 +228,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
-$body = new \SellingPartnerApi\Model\ReportsV20210630\CreateReportScheduleSpecification(); // \SellingPartnerApi\Model\ReportsV20210630\CreateReportScheduleSpecification
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
+$body = new \SellingPartnerApiV5\Model\ReportsV20210630\CreateReportScheduleSpecification(); // \SellingPartnerApiV5\Model\ReportsV20210630\CreateReportScheduleSpecification
 
 try {
     $result = $apiInstance->createReportSchedule($body);
@@ -252,11 +252,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ReportsV20210630\CreateReportScheduleSpecification**](../Model/ReportsV20210630/CreateReportScheduleSpecification.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ReportsV20210630\CreateReportScheduleSpecification**](../Model/ReportsV20210630/CreateReportScheduleSpecification.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\CreateReportScheduleResponse**](../Model/ReportsV20210630/CreateReportScheduleResponse.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\CreateReportScheduleResponse**](../Model/ReportsV20210630/CreateReportScheduleResponse.md)
 
 ### HTTP request headers
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 ## `getReport()`
 
 ```php
-getReport($report_id): \SellingPartnerApi\Model\ReportsV20210630\Report
+getReport($report_id): \SellingPartnerApiV5\Model\ReportsV20210630\Report
 ```
 
 
@@ -292,16 +292,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_id = 'report_id_example'; // string | The identifier for the report. This identifier is unique only in combination with a seller ID.
 
 try {
@@ -320,7 +320,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\Report**](../Model/ReportsV20210630/Report.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\Report**](../Model/ReportsV20210630/Report.md)
 
 ### HTTP request headers
 
@@ -334,7 +334,7 @@ Name | Type | Description  | Notes
 ## `getReportDocument()`
 
 ```php
-getReportDocument($report_document_id, $report_type): \SellingPartnerApi\Model\ReportsV20210630\ReportDocument
+getReportDocument($report_document_id, $report_type): \SellingPartnerApiV5\Model\ReportsV20210630\ReportDocument
 ```
 
 
@@ -356,16 +356,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_document_id = 'report_document_id_example'; // string | The identifier for the report document.
 $report_type = 'report_type_example'; // string | The name of the document's report type.
 
@@ -386,7 +386,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\ReportDocument**](../Model/ReportsV20210630/ReportDocument.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\ReportDocument**](../Model/ReportsV20210630/ReportDocument.md)
 
 ### HTTP request headers
 
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 ## `getReportSchedule()`
 
 ```php
-getReportSchedule($report_schedule_id): \SellingPartnerApi\Model\ReportsV20210630\ReportSchedule
+getReportSchedule($report_schedule_id): \SellingPartnerApiV5\Model\ReportsV20210630\ReportSchedule
 ```
 
 
@@ -422,16 +422,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_schedule_id = 'report_schedule_id_example'; // string | The identifier for the report schedule. This identifier is unique only in combination with a seller ID.
 
 try {
@@ -450,7 +450,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\ReportSchedule**](../Model/ReportsV20210630/ReportSchedule.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\ReportSchedule**](../Model/ReportsV20210630/ReportSchedule.md)
 
 ### HTTP request headers
 
@@ -464,7 +464,7 @@ Name | Type | Description  | Notes
 ## `getReportSchedules()`
 
 ```php
-getReportSchedules($report_types): \SellingPartnerApi\Model\ReportsV20210630\ReportScheduleList
+getReportSchedules($report_types): \SellingPartnerApiV5\Model\ReportsV20210630\ReportScheduleList
 ```
 
 
@@ -486,16 +486,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_types = array('report_types_example'); // string[] | A list of report types used to filter report schedules. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values) for more information.
 
 try {
@@ -514,7 +514,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\ReportScheduleList**](../Model/ReportsV20210630/ReportScheduleList.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\ReportScheduleList**](../Model/ReportsV20210630/ReportScheduleList.md)
 
 ### HTTP request headers
 
@@ -528,7 +528,7 @@ Name | Type | Description  | Notes
 ## `getReports()`
 
 ```php
-getReports($report_types, $processing_statuses, $marketplace_ids, $page_size, $created_since, $created_until, $next_token): \SellingPartnerApi\Model\ReportsV20210630\GetReportsResponse
+getReports($report_types, $processing_statuses, $marketplace_ids, $page_size, $created_since, $created_until, $next_token): \SellingPartnerApiV5\Model\ReportsV20210630\GetReportsResponse
 ```
 
 
@@ -550,16 +550,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReportsV20210630Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ReportsV20210630Api($config);
 $report_types = array('report_types_example'); // string[] | A list of report types used to filter reports. Refer to [Report Type Values](https://developer-docs.amazon.com/sp-api/docs/report-type-values) for more information. When reportTypes is provided, the other filter parameters (processingStatuses, marketplaceIds, createdSince, createdUntil) and pageSize may also be provided. Either reportTypes or nextToken is required.
 $processing_statuses = array('processing_statuses_example'); // string[] | A list of processing statuses used to filter reports.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A list of marketplace identifiers used to filter reports. The reports returned will match at least one of the marketplaces that you specify.
@@ -590,7 +590,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReportsV20210630\GetReportsResponse**](../Model/ReportsV20210630/GetReportsResponse.md)
+[**\SellingPartnerApiV5\Model\ReportsV20210630\GetReportsResponse**](../Model/ReportsV20210630/GetReportsResponse.md)
 
 ### HTTP request headers
 

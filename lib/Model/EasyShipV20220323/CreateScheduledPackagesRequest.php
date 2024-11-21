@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateScheduledPackagesRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the POST /easyShip/2022-03-23/packages/bulk API.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class CreateScheduledPackagesRequest extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'order_schedule_details_list' => '\SellingPartnerApi\Model\EasyShipV20220323\OrderScheduleDetails[]',
-        'label_format' => '\SellingPartnerApi\Model\EasyShipV20220323\LabelFormat'
+        'order_schedule_details_list' => '\SellingPartnerApiV5\Model\EasyShipV20220323\OrderScheduleDetails[]',
+        'label_format' => '\SellingPartnerApiV5\Model\EasyShipV20220323\LabelFormat'
     ];
 
     /**
@@ -200,7 +200,7 @@ class CreateScheduledPackagesRequest extends BaseModel implements ModelInterface
     /**
      * Gets order_schedule_details_list
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\OrderScheduleDetails[]
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\OrderScheduleDetails[]
      */
     public function getOrderScheduleDetailsList()
     {
@@ -210,7 +210,7 @@ class CreateScheduledPackagesRequest extends BaseModel implements ModelInterface
     /**
      * Sets order_schedule_details_list
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\OrderScheduleDetails[] $order_schedule_details_list An array allowing users to specify orders to be scheduled.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\OrderScheduleDetails[] $order_schedule_details_list An array allowing users to specify orders to be scheduled.
      *
      * @return self
      */
@@ -228,7 +228,7 @@ class CreateScheduledPackagesRequest extends BaseModel implements ModelInterface
     /**
      * Gets label_format
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\LabelFormat
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\LabelFormat
      */
     public function getLabelFormat()
     {
@@ -238,7 +238,7 @@ class CreateScheduledPackagesRequest extends BaseModel implements ModelInterface
     /**
      * Sets label_format
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\LabelFormat $label_format label_format
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\LabelFormat $label_format label_format
      *
      * @return self
      */

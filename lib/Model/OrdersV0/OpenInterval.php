@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OpenInterval Class Doc Comment
  *
  * @category Class
  * @description The time interval for which the business is open.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class OpenInterval extends BaseModel implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'start_time' => '\SellingPartnerApi\Model\OrdersV0\OpenTimeInterval',
-        'end_time' => '\SellingPartnerApi\Model\OrdersV0\OpenTimeInterval'
+        'start_time' => '\SellingPartnerApiV5\Model\OrdersV0\OpenTimeInterval',
+        'end_time' => '\SellingPartnerApiV5\Model\OrdersV0\OpenTimeInterval'
     ];
 
     /**
@@ -143,7 +143,7 @@ class OpenInterval extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets start_time
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OpenTimeInterval|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OpenTimeInterval|null
      */
     public function getStartTime()
     {
@@ -153,7 +153,7 @@ class OpenInterval extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets start_time
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OpenTimeInterval|null $start_time start_time
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OpenTimeInterval|null $start_time start_time
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class OpenInterval extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets end_time
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\OpenTimeInterval|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\OpenTimeInterval|null
      */
     public function getEndTime()
     {
@@ -176,7 +176,7 @@ class OpenInterval extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets end_time
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\OpenTimeInterval|null $end_time end_time
+     * @param \SellingPartnerApiV5\Model\OrdersV0\OpenTimeInterval|null $end_time end_time
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PrintOption Class Doc Comment
  *
  * @category Class
  * @description The format options available for a label.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class PrintOption extends BaseModel implements ModelInterface, ArrayAccess, \Jso
         'supported_dpis' => 'int[]',
         'supported_page_layouts' => 'string[]',
         'supported_file_joining_options' => 'bool[]',
-        'supported_document_details' => '\SellingPartnerApi\Model\ShippingV2\SupportedDocumentDetail[]'
+        'supported_document_details' => '\SellingPartnerApiV5\Model\ShippingV2\SupportedDocumentDetail[]'
     ];
 
     /**
@@ -233,7 +233,7 @@ class PrintOption extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets supported_document_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\SupportedDocumentDetail[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\SupportedDocumentDetail[]
      */
     public function getSupportedDocumentDetails()
     {
@@ -243,7 +243,7 @@ class PrintOption extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets supported_document_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\SupportedDocumentDetail[] $supported_document_details A list of the supported documented details.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\SupportedDocumentDetail[] $supported_document_details A list of the supported documented details.
      *
      * @return self
      */

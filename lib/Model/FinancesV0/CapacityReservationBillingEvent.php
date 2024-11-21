@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CapacityReservationBillingEvent Class Doc Comment
  *
  * @category Class
  * @description An event related to a capacity reservation billing charge.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class CapacityReservationBillingEvent extends BaseModel implements ModelInterfac
         'transaction_type' => 'string',
         'posted_date' => 'string',
         'description' => 'string',
-        'transaction_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'transaction_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -224,7 +224,7 @@ class CapacityReservationBillingEvent extends BaseModel implements ModelInterfac
     /**
      * Gets transaction_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTransactionAmount()
     {
@@ -234,7 +234,7 @@ class CapacityReservationBillingEvent extends BaseModel implements ModelInterfac
     /**
      * Sets transaction_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $transaction_amount transaction_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $transaction_amount transaction_amount
      *
      * @return self
      */

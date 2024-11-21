@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SellerDealPaymentEvent Class Doc Comment
  *
  * @category Class
  * @description An event linked to the payment of a fee related to the specified deal.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,9 +63,9 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
         'deal_description' => 'string',
         'event_type' => 'string',
         'fee_type' => 'string',
-        'fee_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'tax_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'total_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'fee_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'tax_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'total_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -294,7 +294,7 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets fee_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getFeeAmount()
     {
@@ -304,7 +304,7 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets fee_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $fee_amount fee_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $fee_amount fee_amount
      *
      * @return self
      */
@@ -317,7 +317,7 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets tax_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTaxAmount()
     {
@@ -327,7 +327,7 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets tax_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $tax_amount tax_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $tax_amount tax_amount
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets total_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTotalAmount()
     {
@@ -350,7 +350,7 @@ class SellerDealPaymentEvent extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets total_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $total_amount total_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $total_amount total_amount
      *
      * @return self
      */

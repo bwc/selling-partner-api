@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **marketplace_id** | **string** | Amazon marketplace identifier. |
-**identifiers** | [**\SellingPartnerApi\Model\CatalogItemsV20220401\ItemIdentifier[]**](ItemIdentifier.md) | Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace. |
+**identifiers** | [**\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemIdentifier[]**](ItemIdentifier.md) | Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace. |
 
 [[CatalogItemsV20220401 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

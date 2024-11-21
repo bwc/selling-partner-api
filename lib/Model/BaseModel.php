@@ -5,18 +5,18 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi\Model
+ * @package  SellingPartnerApiV5\Model
  */
 
-namespace SellingPartnerApi\Model;
+namespace SellingPartnerApiV5\Model;
 
 use InvalidArgumentException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * Basic model functionality that is needed by all non-enum models.
  *
- * @package SellingPartnerApi\Model
+ * @package SellingPartnerApiV5\Model
  */
 abstract class BaseModel implements ModelInterface
 {    

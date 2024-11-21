@@ -1,4 +1,4 @@
-# SellingPartnerApi\SolicitationsV1Api
+# SellingPartnerApiV5\SolicitationsV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 ## `createProductReviewAndSellerFeedbackSolicitation()`
 
 ```php
-createProductReviewAndSellerFeedbackSolicitation($amazon_order_id, $marketplace_ids): \SellingPartnerApi\Model\SolicitationsV1\CreateProductReviewAndSellerFeedbackSolicitationResponse
+createProductReviewAndSellerFeedbackSolicitation($amazon_order_id, $marketplace_ids): \SellingPartnerApiV5\Model\SolicitationsV1\CreateProductReviewAndSellerFeedbackSolicitationResponse
 ```
 
 
@@ -31,16 +31,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SolicitationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SolicitationsV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which a solicitation is sent.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SolicitationsV1\CreateProductReviewAndSellerFeedbackSolicitationResponse**](../Model/SolicitationsV1/CreateProductReviewAndSellerFeedbackSolicitationResponse.md)
+[**\SellingPartnerApiV5\Model\SolicitationsV1\CreateProductReviewAndSellerFeedbackSolicitationResponse**](../Model/SolicitationsV1/CreateProductReviewAndSellerFeedbackSolicitationResponse.md)
 
 ### HTTP request headers
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 ## `getSolicitationActionsForOrder()`
 
 ```php
-getSolicitationActionsForOrder($amazon_order_id, $marketplace_ids): \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponse
+getSolicitationActionsForOrder($amazon_order_id, $marketplace_ids): \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponse
 ```
 
 
@@ -97,16 +97,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SolicitationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SolicitationsV1Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon order identifier. This specifies the order for which you want a list of available solicitation types.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | A marketplace identifier. This specifies the marketplace in which the order was placed. Only one marketplace can be specified.
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionsForOrderResponse**](../Model/SolicitationsV1/GetSolicitationActionsForOrderResponse.md)
+[**\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionsForOrderResponse**](../Model/SolicitationsV1/GetSolicitationActionsForOrderResponse.md)
 
 ### HTTP request headers
 

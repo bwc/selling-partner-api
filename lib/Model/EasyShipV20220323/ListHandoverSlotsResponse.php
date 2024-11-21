@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListHandoverSlotsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the `listHandoverSlots` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ListHandoverSlotsResponse extends BaseModel implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
-        'time_slots' => '\SellingPartnerApi\Model\EasyShipV20220323\TimeSlot[]'
+        'time_slots' => '\SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot[]'
     ];
 
     /**
@@ -205,7 +205,7 @@ class ListHandoverSlotsResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Gets time_slots
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot[]
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot[]
      */
     public function getTimeSlots()
     {
@@ -215,7 +215,7 @@ class ListHandoverSlotsResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Sets time_slots
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\TimeSlot[] $time_slots A list of time slots.
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\TimeSlot[] $time_slots A list of time slots.
      *
      * @return self
      */

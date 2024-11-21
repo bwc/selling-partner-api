@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20201201;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20201201;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemSalesRanksByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Sales ranks of an Amazon catalog item for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'ranks' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemSalesRank[]'
+        'ranks' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSalesRank[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Gets ranks
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSalesRank[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSalesRank[]
      */
     public function getRanks()
     {
@@ -182,7 +182,7 @@ class ItemSalesRanksByMarketplace extends BaseModel implements ModelInterface, A
     /**
      * Sets ranks
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSalesRank[] $ranks Sales ranks of an Amazon catalog item for an Amazon marketplace.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSalesRank[] $ranks Sales ranks of an Amazon catalog item for an Amazon marketplace.
      *
      * @return self
      */

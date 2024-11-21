@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DirectPayment Class Doc Comment
  *
  * @category Class
  * @description A payment made directly to a seller.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class DirectPayment extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'direct_payment_type' => 'string',
-        'direct_payment_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'direct_payment_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -173,7 +173,7 @@ class DirectPayment extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets direct_payment_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getDirectPaymentAmount()
     {
@@ -183,7 +183,7 @@ class DirectPayment extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets direct_payment_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $direct_payment_amount direct_payment_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $direct_payment_amount direct_payment_amount
      *
      * @return self
      */

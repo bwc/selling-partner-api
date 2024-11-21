@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentItem Class Doc Comment
  *
  * @category Class
  * @description An item of a shipment, refund, guarantee claim, or chargeback.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,15 +62,15 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
         'order_item_id' => 'string',
         'order_adjustment_item_id' => 'string',
         'quantity_shipped' => 'int',
-        'item_charge_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]',
-        'item_charge_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]',
-        'item_fee_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
-        'item_fee_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
-        'item_tax_withheld_list' => '\SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]',
-        'promotion_list' => '\SellingPartnerApi\Model\FinancesV0\Promotion[]',
-        'promotion_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\Promotion[]',
-        'cost_of_points_granted' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'cost_of_points_returned' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'item_charge_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]',
+        'item_charge_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]',
+        'item_fee_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
+        'item_fee_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
+        'item_tax_withheld_list' => '\SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]',
+        'promotion_list' => '\SellingPartnerApiV5\Model\FinancesV0\Promotion[]',
+        'promotion_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\Promotion[]',
+        'cost_of_points_granted' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'cost_of_points_returned' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -301,7 +301,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_charge_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getItemChargeList()
     {
@@ -311,7 +311,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_charge_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $item_charge_list A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $item_charge_list A list of charge information on the seller's account.
      *
      * @return self
      */
@@ -324,7 +324,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_charge_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getItemChargeAdjustmentList()
     {
@@ -334,7 +334,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_charge_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $item_charge_adjustment_list A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $item_charge_adjustment_list A list of charge information on the seller's account.
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_fee_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getItemFeeList()
     {
@@ -357,7 +357,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_fee_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $item_fee_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $item_fee_list A list of fee component information.
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_fee_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getItemFeeAdjustmentList()
     {
@@ -380,7 +380,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_fee_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $item_fee_adjustment_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $item_fee_adjustment_list A list of fee component information.
      *
      * @return self
      */
@@ -393,7 +393,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_tax_withheld_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]|null
      */
     public function getItemTaxWithheldList()
     {
@@ -403,7 +403,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_tax_withheld_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]|null $item_tax_withheld_list A list of information about taxes withheld.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]|null $item_tax_withheld_list A list of information about taxes withheld.
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets promotion_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Promotion[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Promotion[]|null
      */
     public function getPromotionList()
     {
@@ -426,7 +426,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets promotion_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Promotion[]|null $promotion_list A list of promotions.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Promotion[]|null $promotion_list A list of promotions.
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets promotion_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Promotion[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Promotion[]|null
      */
     public function getPromotionAdjustmentList()
     {
@@ -449,7 +449,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets promotion_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Promotion[]|null $promotion_adjustment_list A list of promotions.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Promotion[]|null $promotion_adjustment_list A list of promotions.
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets cost_of_points_granted
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getCostOfPointsGranted()
     {
@@ -472,7 +472,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets cost_of_points_granted
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $cost_of_points_granted cost_of_points_granted
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $cost_of_points_granted cost_of_points_granted
      *
      * @return self
      */
@@ -485,7 +485,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets cost_of_points_returned
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getCostOfPointsReturned()
     {
@@ -495,7 +495,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets cost_of_points_returned
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $cost_of_points_returned cost_of_points_returned
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $cost_of_points_returned cost_of_points_returned
      *
      * @return self
      */

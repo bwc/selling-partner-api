@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSellingPartnerMetricsRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the `getSellingPartnerMetrics` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregation_frequency' => '\SellingPartnerApi\Model\ReplenishmentV20221107\AggregationFrequency',
-        'time_interval' => '\SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval',
-        'metrics' => '\SellingPartnerApi\Model\ReplenishmentV20221107\Metric[]',
-        'time_period_type' => '\SellingPartnerApi\Model\ReplenishmentV20221107\TimePeriodType',
+        'aggregation_frequency' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\AggregationFrequency',
+        'time_interval' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval',
+        'metrics' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\Metric[]',
+        'time_period_type' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimePeriodType',
         'marketplace_id' => 'string',
-        'program_types' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[]'
+        'program_types' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[]'
     ];
 
     /**
@@ -187,7 +187,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Gets aggregation_frequency
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\AggregationFrequency|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\AggregationFrequency|null
      */
     public function getAggregationFrequency()
     {
@@ -197,7 +197,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Sets aggregation_frequency
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\AggregationFrequency|null $aggregation_frequency aggregation_frequency
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\AggregationFrequency|null $aggregation_frequency aggregation_frequency
      *
      * @return self
      */
@@ -210,7 +210,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Gets time_interval
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval
      */
     public function getTimeInterval()
     {
@@ -220,7 +220,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Sets time_interval
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval $time_interval time_interval
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval $time_interval time_interval
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Gets metrics
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\Metric[]|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\Metric[]|null
      */
     public function getMetrics()
     {
@@ -243,7 +243,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Sets metrics
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\Metric[]|null $metrics The list of metrics requested. If no metric value is provided, data for all of the metrics will be returned.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\Metric[]|null $metrics The list of metrics requested. If no metric value is provided, data for all of the metrics will be returned.
      *
      * @return self
      */
@@ -261,7 +261,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Gets time_period_type
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\TimePeriodType
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimePeriodType
      */
     public function getTimePeriodType()
     {
@@ -271,7 +271,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Sets time_period_type
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\TimePeriodType $time_period_type time_period_type
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimePeriodType $time_period_type time_period_type
      *
      * @return self
      */
@@ -307,7 +307,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Gets program_types
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[]
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[]
      */
     public function getProgramTypes()
     {
@@ -317,7 +317,7 @@ class GetSellingPartnerMetricsRequest extends BaseModel implements ModelInterfac
     /**
      * Sets program_types
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[] $program_types A list of replenishment program types.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[] $program_types A list of replenishment program types.
      *
      * @return self
      */

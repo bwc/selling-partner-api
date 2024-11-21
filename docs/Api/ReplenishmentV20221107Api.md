@@ -1,4 +1,4 @@
-# SellingPartnerApi\ReplenishmentV20221107Api
+# SellingPartnerApiV5\ReplenishmentV20221107Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getSellingPartnerMetrics()`
 
 ```php
-getSellingPartnerMetrics($body): \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse
+getSellingPartnerMetrics($body): \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse
 ```
 
 
@@ -32,17 +32,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReplenishmentV20221107Api($config);
-$body = new \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest(); // \SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest
+$apiInstance = new SellingPartnerApiV5\Api\ReplenishmentV20221107Api($config);
+$body = new \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest(); // \SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest
 
 try {
     $result = $apiInstance->getSellingPartnerMetrics($body);
@@ -56,11 +56,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest**](../Model/ReplenishmentV20221107/GetSellingPartnerMetricsRequest.md)|  | [optional]
+ **body** | [**\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsRequest**](../Model/ReplenishmentV20221107/GetSellingPartnerMetricsRequest.md)|  | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse**](../Model/ReplenishmentV20221107/GetSellingPartnerMetricsResponse.md)
+[**\SellingPartnerApiV5\Model\ReplenishmentV20221107\GetSellingPartnerMetricsResponse**](../Model/ReplenishmentV20221107/GetSellingPartnerMetricsResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 ## `listOfferMetrics()`
 
 ```php
-listOfferMetrics($body): \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse
+listOfferMetrics($body): \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse
 ```
 
 
@@ -96,17 +96,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReplenishmentV20221107Api($config);
-$body = new \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest(); // \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest | The request body for the `listOfferMetrics` operation.
+$apiInstance = new SellingPartnerApiV5\Api\ReplenishmentV20221107Api($config);
+$body = new \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest(); // \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest | The request body for the `listOfferMetrics` operation.
 
 try {
     $result = $apiInstance->listOfferMetrics($body);
@@ -120,11 +120,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsRequest**](../Model/ReplenishmentV20221107/ListOfferMetricsRequest.md)| The request body for the `listOfferMetrics` operation. | [optional]
+ **body** | [**\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsRequest**](../Model/ReplenishmentV20221107/ListOfferMetricsRequest.md)| The request body for the `listOfferMetrics` operation. | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponse**](../Model/ReplenishmentV20221107/ListOfferMetricsResponse.md)
+[**\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponse**](../Model/ReplenishmentV20221107/ListOfferMetricsResponse.md)
 
 ### HTTP request headers
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 ## `listOffers()`
 
 ```php
-listOffers($body): \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse
+listOffers($body): \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse
 ```
 
 
@@ -160,17 +160,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ReplenishmentV20221107Api($config);
-$body = new \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest(); // \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest
+$apiInstance = new SellingPartnerApiV5\Api\ReplenishmentV20221107Api($config);
+$body = new \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest(); // \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest
 
 try {
     $result = $apiInstance->listOffers($body);
@@ -184,11 +184,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequest**](../Model/ReplenishmentV20221107/ListOffersRequest.md)|  | [optional]
+ **body** | [**\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequest**](../Model/ReplenishmentV20221107/ListOffersRequest.md)|  | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersResponse**](../Model/ReplenishmentV20221107/ListOffersResponse.md)
+[**\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersResponse**](../Model/ReplenishmentV20221107/ListOffersResponse.md)
 
 ### HTTP request headers
 

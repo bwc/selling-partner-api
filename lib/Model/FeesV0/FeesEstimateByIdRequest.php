@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeesEstimateByIdRequest Class Doc Comment
  *
  * @category Class
  * @description A product, marketplace, and proposed price used to request estimated fees.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class FeesEstimateByIdRequest extends BaseModel implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fees_estimate_request' => '\SellingPartnerApi\Model\FeesV0\FeesEstimateRequest',
-        'id_type' => '\SellingPartnerApi\Model\FeesV0\IdType',
+        'fees_estimate_request' => '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateRequest',
+        'id_type' => '\SellingPartnerApiV5\Model\FeesV0\IdType',
         'id_value' => 'string'
     ];
 
@@ -155,7 +155,7 @@ class FeesEstimateByIdRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets fees_estimate_request
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimateRequest|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimateRequest|null
      */
     public function getFeesEstimateRequest()
     {
@@ -165,7 +165,7 @@ class FeesEstimateByIdRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets fees_estimate_request
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeesEstimateRequest|null $fees_estimate_request fees_estimate_request
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeesEstimateRequest|null $fees_estimate_request fees_estimate_request
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class FeesEstimateByIdRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets id_type
      *
-     * @return \SellingPartnerApi\Model\FeesV0\IdType
+     * @return \SellingPartnerApiV5\Model\FeesV0\IdType
      */
     public function getIdType()
     {
@@ -188,7 +188,7 @@ class FeesEstimateByIdRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets id_type
      *
-     * @param \SellingPartnerApi\Model\FeesV0\IdType $id_type id_type
+     * @param \SellingPartnerApiV5\Model\FeesV0\IdType $id_type id_type
      *
      * @return self
      */

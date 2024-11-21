@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInventoryV1;
+namespace SellingPartnerApiV5\Model\FbaInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InventoryDetails Class Doc Comment
  *
  * @category Class
  * @description Summarized inventory details. This object will not appear if the details parameter in the request is false.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,9 +62,9 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
         'inbound_working_quantity' => 'int',
         'inbound_shipped_quantity' => 'int',
         'inbound_receiving_quantity' => 'int',
-        'reserved_quantity' => '\SellingPartnerApi\Model\FbaInventoryV1\ReservedQuantity',
-        'researching_quantity' => '\SellingPartnerApi\Model\FbaInventoryV1\ResearchingQuantity',
-        'unfulfillable_quantity' => '\SellingPartnerApi\Model\FbaInventoryV1\UnfulfillableQuantity'
+        'reserved_quantity' => '\SellingPartnerApiV5\Model\FbaInventoryV1\ReservedQuantity',
+        'researching_quantity' => '\SellingPartnerApiV5\Model\FbaInventoryV1\ResearchingQuantity',
+        'unfulfillable_quantity' => '\SellingPartnerApiV5\Model\FbaInventoryV1\UnfulfillableQuantity'
     ];
 
     /**
@@ -265,7 +265,7 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets reserved_quantity
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\ReservedQuantity|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\ReservedQuantity|null
      */
     public function getReservedQuantity()
     {
@@ -275,7 +275,7 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets reserved_quantity
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\ReservedQuantity|null $reserved_quantity reserved_quantity
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\ReservedQuantity|null $reserved_quantity reserved_quantity
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets researching_quantity
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\ResearchingQuantity|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\ResearchingQuantity|null
      */
     public function getResearchingQuantity()
     {
@@ -298,7 +298,7 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets researching_quantity
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\ResearchingQuantity|null $researching_quantity researching_quantity
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\ResearchingQuantity|null $researching_quantity researching_quantity
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets unfulfillable_quantity
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\UnfulfillableQuantity|null
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\UnfulfillableQuantity|null
      */
     public function getUnfulfillableQuantity()
     {
@@ -321,7 +321,7 @@ class InventoryDetails extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets unfulfillable_quantity
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\UnfulfillableQuantity|null $unfulfillable_quantity unfulfillable_quantity
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\UnfulfillableQuantity|null $unfulfillable_quantity unfulfillable_quantity
      *
      * @return self
      */

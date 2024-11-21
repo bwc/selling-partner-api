@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **deal_description** | **string** | The internal description of the deal. | [optional]
 **event_type** | **string** | The type of event: SellerDealComplete. | [optional]
 **fee_type** | **string** | The type of fee: RunLightningDealFee. | [optional]
-**fee_amount** | [**\SellingPartnerApi\Model\FinancesV0\Currency**](Currency.md) |  | [optional]
-**tax_amount** | [**\SellingPartnerApi\Model\FinancesV0\Currency**](Currency.md) |  | [optional]
-**total_amount** | [**\SellingPartnerApi\Model\FinancesV0\Currency**](Currency.md) |  | [optional]
+**fee_amount** | [**\SellingPartnerApiV5\Model\FinancesV0\Currency**](Currency.md) |  | [optional]
+**tax_amount** | [**\SellingPartnerApiV5\Model\FinancesV0\Currency**](Currency.md) |  | [optional]
+**total_amount** | [**\SellingPartnerApiV5\Model\FinancesV0\Currency**](Currency.md) |  | [optional]
 
 [[FinancesV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

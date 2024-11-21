@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeaturedOfferExpectedPriceResponseAllOf Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class FeaturedOfferExpectedPriceResponseAllOf extends BaseModel implements Model
       * @var string[]
       */
     protected static $openAPITypes = [
-        'request' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams',
-        'body' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody'
+        'request' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams',
+        'body' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody'
     ];
 
     /**
@@ -145,7 +145,7 @@ class FeaturedOfferExpectedPriceResponseAllOf extends BaseModel implements Model
     /**
      * Gets request
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams
      */
     public function getRequest()
     {
@@ -155,7 +155,7 @@ class FeaturedOfferExpectedPriceResponseAllOf extends BaseModel implements Model
     /**
      * Sets request
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams $request request
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceRequestParams $request request
      *
      * @return self
      */
@@ -168,7 +168,7 @@ class FeaturedOfferExpectedPriceResponseAllOf extends BaseModel implements Model
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null
      */
     public function getBody()
     {
@@ -178,7 +178,7 @@ class FeaturedOfferExpectedPriceResponseAllOf extends BaseModel implements Model
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null $body body
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPriceResponseBody|null $body body
      *
      * @return self
      */

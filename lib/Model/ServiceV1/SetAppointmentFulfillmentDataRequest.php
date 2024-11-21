@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SetAppointmentFulfillmentDataRequest Class Doc Comment
  *
  * @category Class
  * @description Input for set appointment fulfillment data operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fulfillment_time' => '\SellingPartnerApi\Model\ServiceV1\FulfillmentTime',
-        'appointment_resources' => '\SellingPartnerApi\Model\ServiceV1\AppointmentResource[]',
-        'fulfillment_documents' => '\SellingPartnerApi\Model\ServiceV1\FulfillmentDocument[]'
+        'fulfillment_time' => '\SellingPartnerApiV5\Model\ServiceV1\FulfillmentTime',
+        'appointment_resources' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentResource[]',
+        'fulfillment_documents' => '\SellingPartnerApiV5\Model\ServiceV1\FulfillmentDocument[]'
     ];
 
     /**
@@ -149,7 +149,7 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
     /**
      * Gets fulfillment_time
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\FulfillmentTime|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\FulfillmentTime|null
      */
     public function getFulfillmentTime()
     {
@@ -159,7 +159,7 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
     /**
      * Sets fulfillment_time
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\FulfillmentTime|null $fulfillment_time fulfillment_time
+     * @param \SellingPartnerApiV5\Model\ServiceV1\FulfillmentTime|null $fulfillment_time fulfillment_time
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
     /**
      * Gets appointment_resources
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentResource[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentResource[]|null
      */
     public function getAppointmentResources()
     {
@@ -182,7 +182,7 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
     /**
      * Sets appointment_resources
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentResource[]|null $appointment_resources List of resources that performs or performed job appointment fulfillment.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentResource[]|null $appointment_resources List of resources that performs or performed job appointment fulfillment.
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
     /**
      * Gets fulfillment_documents
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\FulfillmentDocument[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\FulfillmentDocument[]|null
      */
     public function getFulfillmentDocuments()
     {
@@ -205,7 +205,7 @@ class SetAppointmentFulfillmentDataRequest extends BaseModel implements ModelInt
     /**
      * Sets fulfillment_documents
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\FulfillmentDocument[]|null $fulfillment_documents List of documents captured during service appointment fulfillment.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\FulfillmentDocument[]|null $fulfillment_documents List of documents captured during service appointment fulfillment.
      *
      * @return self
      */

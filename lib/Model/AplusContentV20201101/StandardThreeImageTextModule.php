@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardThreeImageTextModule Class Doc Comment
  *
  * @category Class
  * @description Three standard images with text, presented across a single row.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'block1' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'block2' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'block3' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock'
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'block1' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'block2' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'block3' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock'
     ];
 
     /**
@@ -155,7 +155,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -165,7 +165,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Gets block1
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getBlock1()
     {
@@ -188,7 +188,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Sets block1
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $block1 block1
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $block1 block1
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Gets block2
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getBlock2()
     {
@@ -211,7 +211,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Sets block2
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $block2 block2
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $block2 block2
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Gets block3
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getBlock3()
     {
@@ -234,7 +234,7 @@ class StandardThreeImageTextModule extends BaseModel implements ModelInterface, 
     /**
      * Sets block3
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $block3 block3
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $block3 block3
      *
      * @return self
      */

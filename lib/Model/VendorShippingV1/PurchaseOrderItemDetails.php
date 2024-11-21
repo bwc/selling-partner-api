@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseOrderItemDetails Class Doc Comment
  *
  * @category Class
  * @description Item details for be provided for every item in shipment at either the item or carton or pallet level, whichever is appropriate.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class PurchaseOrderItemDetails extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'maximum_retail_price' => '\SellingPartnerApi\Model\VendorShippingV1\Money'
+        'maximum_retail_price' => '\SellingPartnerApiV5\Model\VendorShippingV1\Money'
     ];
 
     /**
@@ -137,7 +137,7 @@ class PurchaseOrderItemDetails extends BaseModel implements ModelInterface, Arra
     /**
      * Gets maximum_retail_price
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Money|null
      */
     public function getMaximumRetailPrice()
     {
@@ -147,7 +147,7 @@ class PurchaseOrderItemDetails extends BaseModel implements ModelInterface, Arra
     /**
      * Sets maximum_retail_price
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Money|null $maximum_retail_price maximum_retail_price
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Money|null $maximum_retail_price maximum_retail_price
      *
      * @return self
      */

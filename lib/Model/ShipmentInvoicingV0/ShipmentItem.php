@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentItem Class Doc Comment
  *
  * @category Class
  * @description The shipment item information required by a seller to issue a shipment invoice.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,11 +63,11 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
         'order_item_id' => 'string',
         'title' => 'string',
         'quantity_ordered' => 'float',
-        'item_price' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\Money',
-        'shipping_price' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\Money',
-        'gift_wrap_price' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\Money',
-        'shipping_discount' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\Money',
-        'promotion_discount' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\Money',
+        'item_price' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money',
+        'shipping_price' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money',
+        'gift_wrap_price' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money',
+        'shipping_discount' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money',
+        'promotion_discount' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money',
         'serial_numbers' => 'string[]'
     ];
 
@@ -312,7 +312,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets item_price
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null
      */
     public function getItemPrice()
     {
@@ -322,7 +322,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets item_price
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null $item_price item_price
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null $item_price item_price
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets shipping_price
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null
      */
     public function getShippingPrice()
     {
@@ -345,7 +345,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets shipping_price
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null $shipping_price shipping_price
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null $shipping_price shipping_price
      *
      * @return self
      */
@@ -358,7 +358,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets gift_wrap_price
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null
      */
     public function getGiftWrapPrice()
     {
@@ -368,7 +368,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets gift_wrap_price
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null $gift_wrap_price gift_wrap_price
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null $gift_wrap_price gift_wrap_price
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets shipping_discount
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null
      */
     public function getShippingDiscount()
     {
@@ -391,7 +391,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets shipping_discount
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null $shipping_discount shipping_discount
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null $shipping_discount shipping_discount
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets promotion_discount
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null
      */
     public function getPromotionDiscount()
     {
@@ -414,7 +414,7 @@ class ShipmentItem extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets promotion_discount
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\Money|null $promotion_discount promotion_discount
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Money|null $promotion_discount promotion_discount
      *
      * @return self
      */

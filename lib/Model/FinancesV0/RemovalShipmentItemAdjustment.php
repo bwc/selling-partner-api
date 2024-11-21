@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RemovalShipmentItemAdjustment Class Doc Comment
  *
  * @category Class
  * @description Item-level information for a removal shipment item adjustment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,9 +62,9 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
         'tax_collection_model' => 'string',
         'fulfillment_network_sku' => 'string',
         'adjusted_quantity' => 'int',
-        'revenue_adjustment' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'tax_amount_adjustment' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'tax_withheld_adjustment' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'revenue_adjustment' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'tax_amount_adjustment' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'tax_withheld_adjustment' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -268,7 +268,7 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
     /**
      * Gets revenue_adjustment
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getRevenueAdjustment()
     {
@@ -278,7 +278,7 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
     /**
      * Sets revenue_adjustment
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $revenue_adjustment revenue_adjustment
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $revenue_adjustment revenue_adjustment
      *
      * @return self
      */
@@ -291,7 +291,7 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
     /**
      * Gets tax_amount_adjustment
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTaxAmountAdjustment()
     {
@@ -301,7 +301,7 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
     /**
      * Sets tax_amount_adjustment
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $tax_amount_adjustment tax_amount_adjustment
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $tax_amount_adjustment tax_amount_adjustment
      *
      * @return self
      */
@@ -314,7 +314,7 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
     /**
      * Gets tax_withheld_adjustment
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTaxWithheldAdjustment()
     {
@@ -324,7 +324,7 @@ class RemovalShipmentItemAdjustment extends BaseModel implements ModelInterface,
     /**
      * Sets tax_withheld_adjustment
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $tax_withheld_adjustment tax_withheld_adjustment
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $tax_withheld_adjustment tax_withheld_adjustment
      *
      * @return self
      */

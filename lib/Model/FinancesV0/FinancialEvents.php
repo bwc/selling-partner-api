@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FinancialEvents Class Doc Comment
  *
  * @category Class
  * @description Contains all information related to a financial event.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,39 +58,39 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipment_event_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]',
-        'shipment_settle_event_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]',
-        'refund_event_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]',
-        'guarantee_claim_event_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]',
-        'chargeback_event_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]',
-        'pay_with_amazon_event_list' => '\SellingPartnerApi\Model\FinancesV0\PayWithAmazonEvent[]',
-        'service_provider_credit_event_list' => '\SellingPartnerApi\Model\FinancesV0\SolutionProviderCreditEvent[]',
-        'retrocharge_event_list' => '\SellingPartnerApi\Model\FinancesV0\RetrochargeEvent[]',
-        'rental_transaction_event_list' => '\SellingPartnerApi\Model\FinancesV0\RentalTransactionEvent[]',
-        'product_ads_payment_event_list' => '\SellingPartnerApi\Model\FinancesV0\ProductAdsPaymentEvent[]',
-        'service_fee_event_list' => '\SellingPartnerApi\Model\FinancesV0\ServiceFeeEvent[]',
-        'seller_deal_payment_event_list' => '\SellingPartnerApi\Model\FinancesV0\SellerDealPaymentEvent[]',
-        'debt_recovery_event_list' => '\SellingPartnerApi\Model\FinancesV0\DebtRecoveryEvent[]',
-        'loan_servicing_event_list' => '\SellingPartnerApi\Model\FinancesV0\LoanServicingEvent[]',
-        'adjustment_event_list' => '\SellingPartnerApi\Model\FinancesV0\AdjustmentEvent[]',
-        'safet_reimbursement_event_list' => '\SellingPartnerApi\Model\FinancesV0\SAFETReimbursementEvent[]',
-        'seller_review_enrollment_payment_event_list' => '\SellingPartnerApi\Model\FinancesV0\SellerReviewEnrollmentPaymentEvent[]',
-        'fba_liquidation_event_list' => '\SellingPartnerApi\Model\FinancesV0\FBALiquidationEvent[]',
-        'coupon_payment_event_list' => '\SellingPartnerApi\Model\FinancesV0\CouponPaymentEvent[]',
-        'imaging_services_fee_event_list' => '\SellingPartnerApi\Model\FinancesV0\ImagingServicesFeeEvent[]',
-        'network_commingling_transaction_event_list' => '\SellingPartnerApi\Model\FinancesV0\NetworkComminglingTransactionEvent[]',
-        'affordability_expense_event_list' => '\SellingPartnerApi\Model\FinancesV0\AffordabilityExpenseEvent[]',
-        'affordability_expense_reversal_event_list' => '\SellingPartnerApi\Model\FinancesV0\AffordabilityExpenseEvent[]',
-        'removal_shipment_event_list' => '\SellingPartnerApi\Model\FinancesV0\RemovalShipmentEvent[]',
-        'removal_shipment_adjustment_event_list' => '\SellingPartnerApi\Model\FinancesV0\RemovalShipmentAdjustmentEvent[]',
-        'trial_shipment_event_list' => '\SellingPartnerApi\Model\FinancesV0\TrialShipmentEvent[]',
-        'tds_reimbursement_event_list' => '\SellingPartnerApi\Model\FinancesV0\TDSReimbursementEvent[]',
-        'adhoc_disbursement_event_list' => '\SellingPartnerApi\Model\FinancesV0\AdhocDisbursementEvent[]',
-        'tax_withholding_event_list' => '\SellingPartnerApi\Model\FinancesV0\TaxWithholdingEvent[]',
-        'charge_refund_event_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeRefundEvent[]',
-        'failed_adhoc_disbursement_event_list' => '\SellingPartnerApi\Model\FinancesV0\FailedAdhocDisbursementEventList',
-        'value_added_service_charge_event_list' => '\SellingPartnerApi\Model\FinancesV0\ValueAddedServiceChargeEventList',
-        'capacity_reservation_billing_event_list' => '\SellingPartnerApi\Model\FinancesV0\CapacityReservationBillingEvent[]'
+        'shipment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]',
+        'shipment_settle_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]',
+        'refund_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]',
+        'guarantee_claim_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]',
+        'chargeback_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]',
+        'pay_with_amazon_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\PayWithAmazonEvent[]',
+        'service_provider_credit_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\SolutionProviderCreditEvent[]',
+        'retrocharge_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\RetrochargeEvent[]',
+        'rental_transaction_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\RentalTransactionEvent[]',
+        'product_ads_payment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ProductAdsPaymentEvent[]',
+        'service_fee_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ServiceFeeEvent[]',
+        'seller_deal_payment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\SellerDealPaymentEvent[]',
+        'debt_recovery_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\DebtRecoveryEvent[]',
+        'loan_servicing_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\LoanServicingEvent[]',
+        'adjustment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\AdjustmentEvent[]',
+        'safet_reimbursement_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\SAFETReimbursementEvent[]',
+        'seller_review_enrollment_payment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\SellerReviewEnrollmentPaymentEvent[]',
+        'fba_liquidation_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\FBALiquidationEvent[]',
+        'coupon_payment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\CouponPaymentEvent[]',
+        'imaging_services_fee_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ImagingServicesFeeEvent[]',
+        'network_commingling_transaction_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\NetworkComminglingTransactionEvent[]',
+        'affordability_expense_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\AffordabilityExpenseEvent[]',
+        'affordability_expense_reversal_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\AffordabilityExpenseEvent[]',
+        'removal_shipment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentEvent[]',
+        'removal_shipment_adjustment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentAdjustmentEvent[]',
+        'trial_shipment_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\TrialShipmentEvent[]',
+        'tds_reimbursement_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\TDSReimbursementEvent[]',
+        'adhoc_disbursement_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\AdhocDisbursementEvent[]',
+        'tax_withholding_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\TaxWithholdingEvent[]',
+        'charge_refund_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeRefundEvent[]',
+        'failed_adhoc_disbursement_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\FailedAdhocDisbursementEventList',
+        'value_added_service_charge_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\ValueAddedServiceChargeEventList',
+        'capacity_reservation_billing_event_list' => '\SellingPartnerApiV5\Model\FinancesV0\CapacityReservationBillingEvent[]'
     ];
 
     /**
@@ -329,7 +329,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets shipment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null
      */
     public function getShipmentEventList()
     {
@@ -339,7 +339,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets shipment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null $shipment_event_list A list of shipment event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null $shipment_event_list A list of shipment event information.
      *
      * @return self
      */
@@ -352,7 +352,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets shipment_settle_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null
      */
     public function getShipmentSettleEventList()
     {
@@ -362,7 +362,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets shipment_settle_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null $shipment_settle_event_list A list of `ShipmentEvent` items.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null $shipment_settle_event_list A list of `ShipmentEvent` items.
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets refund_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null
      */
     public function getRefundEventList()
     {
@@ -385,7 +385,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets refund_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null $refund_event_list A list of shipment event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null $refund_event_list A list of shipment event information.
      *
      * @return self
      */
@@ -398,7 +398,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets guarantee_claim_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null
      */
     public function getGuaranteeClaimEventList()
     {
@@ -408,7 +408,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets guarantee_claim_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null $guarantee_claim_event_list A list of shipment event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null $guarantee_claim_event_list A list of shipment event information.
      *
      * @return self
      */
@@ -421,7 +421,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets chargeback_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null
      */
     public function getChargebackEventList()
     {
@@ -431,7 +431,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets chargeback_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentEvent[]|null $chargeback_event_list A list of shipment event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentEvent[]|null $chargeback_event_list A list of shipment event information.
      *
      * @return self
      */
@@ -444,7 +444,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets pay_with_amazon_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\PayWithAmazonEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\PayWithAmazonEvent[]|null
      */
     public function getPayWithAmazonEventList()
     {
@@ -454,7 +454,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets pay_with_amazon_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\PayWithAmazonEvent[]|null $pay_with_amazon_event_list A list of events related to the seller's Pay with Amazon account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\PayWithAmazonEvent[]|null $pay_with_amazon_event_list A list of events related to the seller's Pay with Amazon account.
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets service_provider_credit_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\SolutionProviderCreditEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\SolutionProviderCreditEvent[]|null
      */
     public function getServiceProviderCreditEventList()
     {
@@ -477,7 +477,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets service_provider_credit_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\SolutionProviderCreditEvent[]|null $service_provider_credit_event_list A list of information about solution provider credits.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\SolutionProviderCreditEvent[]|null $service_provider_credit_event_list A list of information about solution provider credits.
      *
      * @return self
      */
@@ -490,7 +490,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets retrocharge_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\RetrochargeEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\RetrochargeEvent[]|null
      */
     public function getRetrochargeEventList()
     {
@@ -500,7 +500,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets retrocharge_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\RetrochargeEvent[]|null $retrocharge_event_list A list of information about Retrocharge or RetrochargeReversal events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\RetrochargeEvent[]|null $retrocharge_event_list A list of information about Retrocharge or RetrochargeReversal events.
      *
      * @return self
      */
@@ -513,7 +513,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets rental_transaction_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\RentalTransactionEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\RentalTransactionEvent[]|null
      */
     public function getRentalTransactionEventList()
     {
@@ -523,7 +523,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets rental_transaction_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\RentalTransactionEvent[]|null $rental_transaction_event_list A list of rental transaction event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\RentalTransactionEvent[]|null $rental_transaction_event_list A list of rental transaction event information.
      *
      * @return self
      */
@@ -536,7 +536,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets product_ads_payment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ProductAdsPaymentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ProductAdsPaymentEvent[]|null
      */
     public function getProductAdsPaymentEventList()
     {
@@ -546,7 +546,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets product_ads_payment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ProductAdsPaymentEvent[]|null $product_ads_payment_event_list A list of sponsored products payment events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ProductAdsPaymentEvent[]|null $product_ads_payment_event_list A list of sponsored products payment events.
      *
      * @return self
      */
@@ -559,7 +559,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets service_fee_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ServiceFeeEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ServiceFeeEvent[]|null
      */
     public function getServiceFeeEventList()
     {
@@ -569,7 +569,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets service_fee_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ServiceFeeEvent[]|null $service_fee_event_list A list of information about service fee events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ServiceFeeEvent[]|null $service_fee_event_list A list of information about service fee events.
      *
      * @return self
      */
@@ -582,7 +582,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets seller_deal_payment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\SellerDealPaymentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\SellerDealPaymentEvent[]|null
      */
     public function getSellerDealPaymentEventList()
     {
@@ -592,7 +592,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets seller_deal_payment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\SellerDealPaymentEvent[]|null $seller_deal_payment_event_list A list of payment events for deal-related fees.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\SellerDealPaymentEvent[]|null $seller_deal_payment_event_list A list of payment events for deal-related fees.
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets debt_recovery_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\DebtRecoveryEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\DebtRecoveryEvent[]|null
      */
     public function getDebtRecoveryEventList()
     {
@@ -615,7 +615,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets debt_recovery_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\DebtRecoveryEvent[]|null $debt_recovery_event_list A list of debt recovery event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\DebtRecoveryEvent[]|null $debt_recovery_event_list A list of debt recovery event information.
      *
      * @return self
      */
@@ -628,7 +628,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets loan_servicing_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\LoanServicingEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\LoanServicingEvent[]|null
      */
     public function getLoanServicingEventList()
     {
@@ -638,7 +638,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets loan_servicing_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\LoanServicingEvent[]|null $loan_servicing_event_list A list of loan servicing events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\LoanServicingEvent[]|null $loan_servicing_event_list A list of loan servicing events.
      *
      * @return self
      */
@@ -651,7 +651,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets adjustment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\AdjustmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\AdjustmentEvent[]|null
      */
     public function getAdjustmentEventList()
     {
@@ -661,7 +661,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets adjustment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\AdjustmentEvent[]|null $adjustment_event_list A list of adjustment event information for the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\AdjustmentEvent[]|null $adjustment_event_list A list of adjustment event information for the seller's account.
      *
      * @return self
      */
@@ -674,7 +674,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets safet_reimbursement_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\SAFETReimbursementEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\SAFETReimbursementEvent[]|null
      */
     public function getSafetReimbursementEventList()
     {
@@ -684,7 +684,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets safet_reimbursement_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\SAFETReimbursementEvent[]|null $safet_reimbursement_event_list A list of SAFETReimbursementEvents.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\SAFETReimbursementEvent[]|null $safet_reimbursement_event_list A list of SAFETReimbursementEvents.
      *
      * @return self
      */
@@ -697,7 +697,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets seller_review_enrollment_payment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\SellerReviewEnrollmentPaymentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\SellerReviewEnrollmentPaymentEvent[]|null
      */
     public function getSellerReviewEnrollmentPaymentEventList()
     {
@@ -707,7 +707,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets seller_review_enrollment_payment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\SellerReviewEnrollmentPaymentEvent[]|null $seller_review_enrollment_payment_event_list A list of information about fee events for the Early Reviewer Program.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\SellerReviewEnrollmentPaymentEvent[]|null $seller_review_enrollment_payment_event_list A list of information about fee events for the Early Reviewer Program.
      *
      * @return self
      */
@@ -720,7 +720,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets fba_liquidation_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FBALiquidationEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FBALiquidationEvent[]|null
      */
     public function getFbaLiquidationEventList()
     {
@@ -730,7 +730,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets fba_liquidation_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FBALiquidationEvent[]|null $fba_liquidation_event_list A list of FBA inventory liquidation payment events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FBALiquidationEvent[]|null $fba_liquidation_event_list A list of FBA inventory liquidation payment events.
      *
      * @return self
      */
@@ -743,7 +743,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets coupon_payment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\CouponPaymentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\CouponPaymentEvent[]|null
      */
     public function getCouponPaymentEventList()
     {
@@ -753,7 +753,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets coupon_payment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\CouponPaymentEvent[]|null $coupon_payment_event_list A list of coupon payment event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\CouponPaymentEvent[]|null $coupon_payment_event_list A list of coupon payment event information.
      *
      * @return self
      */
@@ -766,7 +766,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets imaging_services_fee_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ImagingServicesFeeEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ImagingServicesFeeEvent[]|null
      */
     public function getImagingServicesFeeEventList()
     {
@@ -776,7 +776,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets imaging_services_fee_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ImagingServicesFeeEvent[]|null $imaging_services_fee_event_list A list of fee events related to Amazon Imaging services.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ImagingServicesFeeEvent[]|null $imaging_services_fee_event_list A list of fee events related to Amazon Imaging services.
      *
      * @return self
      */
@@ -789,7 +789,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets network_commingling_transaction_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\NetworkComminglingTransactionEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\NetworkComminglingTransactionEvent[]|null
      */
     public function getNetworkComminglingTransactionEventList()
     {
@@ -799,7 +799,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets network_commingling_transaction_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\NetworkComminglingTransactionEvent[]|null $network_commingling_transaction_event_list A list of network commingling transaction events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\NetworkComminglingTransactionEvent[]|null $network_commingling_transaction_event_list A list of network commingling transaction events.
      *
      * @return self
      */
@@ -812,7 +812,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets affordability_expense_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\AffordabilityExpenseEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\AffordabilityExpenseEvent[]|null
      */
     public function getAffordabilityExpenseEventList()
     {
@@ -822,7 +822,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets affordability_expense_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\AffordabilityExpenseEvent[]|null $affordability_expense_event_list A list of expense information related to an affordability promotion.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\AffordabilityExpenseEvent[]|null $affordability_expense_event_list A list of expense information related to an affordability promotion.
      *
      * @return self
      */
@@ -835,7 +835,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets affordability_expense_reversal_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\AffordabilityExpenseEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\AffordabilityExpenseEvent[]|null
      */
     public function getAffordabilityExpenseReversalEventList()
     {
@@ -845,7 +845,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets affordability_expense_reversal_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\AffordabilityExpenseEvent[]|null $affordability_expense_reversal_event_list A list of expense information related to an affordability promotion.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\AffordabilityExpenseEvent[]|null $affordability_expense_reversal_event_list A list of expense information related to an affordability promotion.
      *
      * @return self
      */
@@ -858,7 +858,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets removal_shipment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\RemovalShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentEvent[]|null
      */
     public function getRemovalShipmentEventList()
     {
@@ -868,7 +868,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets removal_shipment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\RemovalShipmentEvent[]|null $removal_shipment_event_list A list of removal shipment event information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentEvent[]|null $removal_shipment_event_list A list of removal shipment event information.
      *
      * @return self
      */
@@ -881,7 +881,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets removal_shipment_adjustment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\RemovalShipmentAdjustmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentAdjustmentEvent[]|null
      */
     public function getRemovalShipmentAdjustmentEventList()
     {
@@ -891,7 +891,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets removal_shipment_adjustment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\RemovalShipmentAdjustmentEvent[]|null $removal_shipment_adjustment_event_list A comma-delimited list of Removal shipmentAdjustment details for FBA inventory.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentAdjustmentEvent[]|null $removal_shipment_adjustment_event_list A comma-delimited list of Removal shipmentAdjustment details for FBA inventory.
      *
      * @return self
      */
@@ -904,7 +904,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets trial_shipment_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TrialShipmentEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TrialShipmentEvent[]|null
      */
     public function getTrialShipmentEventList()
     {
@@ -914,7 +914,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets trial_shipment_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TrialShipmentEvent[]|null $trial_shipment_event_list A list of information about trial shipment financial events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TrialShipmentEvent[]|null $trial_shipment_event_list A list of information about trial shipment financial events.
      *
      * @return self
      */
@@ -927,7 +927,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets tds_reimbursement_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TDSReimbursementEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TDSReimbursementEvent[]|null
      */
     public function getTdsReimbursementEventList()
     {
@@ -937,7 +937,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets tds_reimbursement_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TDSReimbursementEvent[]|null $tds_reimbursement_event_list A list of `TDSReimbursementEvent` items.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TDSReimbursementEvent[]|null $tds_reimbursement_event_list A list of `TDSReimbursementEvent` items.
      *
      * @return self
      */
@@ -950,7 +950,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets adhoc_disbursement_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\AdhocDisbursementEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\AdhocDisbursementEvent[]|null
      */
     public function getAdhocDisbursementEventList()
     {
@@ -960,7 +960,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets adhoc_disbursement_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\AdhocDisbursementEvent[]|null $adhoc_disbursement_event_list A list of `AdhocDisbursement` events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\AdhocDisbursementEvent[]|null $adhoc_disbursement_event_list A list of `AdhocDisbursement` events.
      *
      * @return self
      */
@@ -973,7 +973,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets tax_withholding_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TaxWithholdingEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TaxWithholdingEvent[]|null
      */
     public function getTaxWithholdingEventList()
     {
@@ -983,7 +983,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets tax_withholding_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TaxWithholdingEvent[]|null $tax_withholding_event_list A list of `TaxWithholding` events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TaxWithholdingEvent[]|null $tax_withholding_event_list A list of `TaxWithholding` events.
      *
      * @return self
      */
@@ -996,7 +996,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets charge_refund_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeRefundEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeRefundEvent[]|null
      */
     public function getChargeRefundEventList()
     {
@@ -1006,7 +1006,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets charge_refund_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeRefundEvent[]|null $charge_refund_event_list A list of charge refund events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeRefundEvent[]|null $charge_refund_event_list A list of charge refund events.
      *
      * @return self
      */
@@ -1019,7 +1019,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets failed_adhoc_disbursement_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FailedAdhocDisbursementEventList|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FailedAdhocDisbursementEventList|null
      */
     public function getFailedAdhocDisbursementEventList()
     {
@@ -1029,7 +1029,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets failed_adhoc_disbursement_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FailedAdhocDisbursementEventList|null $failed_adhoc_disbursement_event_list failed_adhoc_disbursement_event_list
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FailedAdhocDisbursementEventList|null $failed_adhoc_disbursement_event_list failed_adhoc_disbursement_event_list
      *
      * @return self
      */
@@ -1042,7 +1042,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets value_added_service_charge_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ValueAddedServiceChargeEventList|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ValueAddedServiceChargeEventList|null
      */
     public function getValueAddedServiceChargeEventList()
     {
@@ -1052,7 +1052,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets value_added_service_charge_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ValueAddedServiceChargeEventList|null $value_added_service_charge_event_list value_added_service_charge_event_list
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ValueAddedServiceChargeEventList|null $value_added_service_charge_event_list value_added_service_charge_event_list
      *
      * @return self
      */
@@ -1065,7 +1065,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets capacity_reservation_billing_event_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\CapacityReservationBillingEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\CapacityReservationBillingEvent[]|null
      */
     public function getCapacityReservationBillingEventList()
     {
@@ -1075,7 +1075,7 @@ class FinancialEvents extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets capacity_reservation_billing_event_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\CapacityReservationBillingEvent[]|null $capacity_reservation_billing_event_list A list of `CapacityReservationBillingEvent` events.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\CapacityReservationBillingEvent[]|null $capacity_reservation_billing_event_list A list of `CapacityReservationBillingEvent` events.
      *
      * @return self
      */

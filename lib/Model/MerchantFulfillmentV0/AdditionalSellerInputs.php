@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AdditionalSellerInputs Class Doc Comment
  *
  * @category Class
  * @description An additional set of seller inputs required to purchase shipping.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class AdditionalSellerInputs extends BaseModel implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'additional_input_field_name' => 'string',
-        'additional_seller_input' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInput'
+        'additional_seller_input' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInput'
     ];
 
     /**
@@ -172,7 +172,7 @@ class AdditionalSellerInputs extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets additional_seller_input
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInput
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInput
      */
     public function getAdditionalSellerInput()
     {
@@ -182,7 +182,7 @@ class AdditionalSellerInputs extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets additional_seller_input
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInput $additional_seller_input additional_seller_input
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInput $additional_seller_input additional_seller_input
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * VendorShippingV1Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class VendorShippingV1Api extends BaseApi
 {
@@ -68,9 +68,9 @@ class VendorShippingV1Api extends BaseApi
      * @param  string $buyer_warehouse_code Get Shipping Details based on buyer warehouse code. This value should be same as 'shipToParty.partyId' in the Shipment. (optional)
      * @param  string $seller_warehouse_code Get Shipping Details based on vendor warehouse code. This value should be same as 'sellingParty.partyId' in the Shipment. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse
      */
     public function getShipmentDetails($limit = null, $sort_order = null, $next_token = null, $created_after = null, $created_before = null, $shipment_confirmed_before = null, $shipment_confirmed_after = null, $package_label_created_before = null, $package_label_created_after = null, $shipped_before = null, $shipped_after = null, $estimated_delivery_before = null, $estimated_delivery_after = null, $shipment_delivery_before = null, $shipment_delivery_after = null, $requested_pick_up_before = null, $requested_pick_up_after = null, $scheduled_pick_up_before = null, $scheduled_pick_up_after = null, $current_shipment_status = null, $vendor_shipment_identifier = null, $buyer_reference_number = null, $buyer_warehouse_code = null, $seller_warehouse_code = null)
     {
@@ -106,9 +106,9 @@ class VendorShippingV1Api extends BaseApi
      * @param  string $buyer_warehouse_code Get Shipping Details based on buyer warehouse code. This value should be same as 'shipToParty.partyId' in the Shipment. (optional)
      * @param  string $seller_warehouse_code Get Shipping Details based on vendor warehouse code. This value should be same as 'sellingParty.partyId' in the Shipment. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentDetailsWithHttpInfo($limit = null, $sort_order = null, $next_token = null, $created_after = null, $created_before = null, $shipment_confirmed_before = null, $shipment_confirmed_after = null, $package_label_created_before = null, $package_label_created_after = null, $shipped_before = null, $shipped_after = null, $estimated_delivery_before = null, $estimated_delivery_after = null, $shipment_delivery_before = null, $shipment_delivery_after = null, $requested_pick_up_before = null, $requested_pick_up_after = null, $scheduled_pick_up_before = null, $scheduled_pick_up_after = null, $current_shipment_status = null, $vendor_shipment_identifier = null, $buyer_reference_number = null, $buyer_warehouse_code = null, $seller_warehouse_code = null)
     {
@@ -157,80 +157,80 @@ class VendorShippingV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -245,7 +245,7 @@ class VendorShippingV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -253,7 +253,7 @@ class VendorShippingV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -261,7 +261,7 @@ class VendorShippingV1Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -269,7 +269,7 @@ class VendorShippingV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -277,7 +277,7 @@ class VendorShippingV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class VendorShippingV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -293,7 +293,7 @@ class VendorShippingV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class VendorShippingV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -309,7 +309,7 @@ class VendorShippingV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -393,7 +393,7 @@ class VendorShippingV1Api extends BaseApi
      */
     public function getShipmentDetailsAsyncWithHttpInfo($limit = null, $sort_order = null, $next_token = null, $created_after = null, $created_before = null, $shipment_confirmed_before = null, $shipment_confirmed_after = null, $package_label_created_before = null, $package_label_created_after = null, $shipped_before = null, $shipped_after = null, $estimated_delivery_before = null, $estimated_delivery_after = null, $shipment_delivery_before = null, $shipment_delivery_after = null, $requested_pick_up_before = null, $requested_pick_up_after = null, $scheduled_pick_up_before = null, $scheduled_pick_up_after = null, $current_shipment_status = null, $vendor_shipment_identifier = null, $buyer_reference_number = null, $buyer_warehouse_code = null, $seller_warehouse_code = null)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse';
         $request = $this->getShipmentDetailsRequest($limit, $sort_order, $next_token, $created_after, $created_before, $shipment_confirmed_before, $shipment_confirmed_after, $package_label_created_before, $package_label_created_after, $shipped_before, $shipped_after, $estimated_delivery_before, $estimated_delivery_after, $shipment_delivery_before, $shipment_delivery_after, $requested_pick_up_before, $requested_pick_up_after, $scheduled_pick_up_before, $scheduled_pick_up_after, $current_shipment_status, $vendor_shipment_identifier, $buyer_reference_number, $buyer_warehouse_code, $seller_warehouse_code);
         $signedRequest = $this->config->signRequest(
             $request
@@ -744,9 +744,9 @@ class VendorShippingV1Api extends BaseApi
      * @param  string $vendor_shipment_identifier Get transport labels by passing Vendor Shipment ID to retreive the corresponding transport label. (optional)
      * @param  string $seller_warehouse_code Get Shipping labels based Vendor Warehouse code. This value should be same as 'shipFromParty.partyId' in the Shipment. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels
      */
     public function getShipmentLabels($limit = null, $sort_order = null, $next_token = null, $label_created_after = null, $labelcreated_before = null, $buyer_reference_number = null, $vendor_shipment_identifier = null, $seller_warehouse_code = null)
     {
@@ -766,9 +766,9 @@ class VendorShippingV1Api extends BaseApi
      * @param  string $vendor_shipment_identifier Get transport labels by passing Vendor Shipment ID to retreive the corresponding transport label. (optional)
      * @param  string $seller_warehouse_code Get Shipping labels based Vendor Warehouse code. This value should be same as 'shipFromParty.partyId' in the Shipment. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentLabelsWithHttpInfo($limit = null, $sort_order = null, $next_token = null, $label_created_after = null, $labelcreated_before = null, $buyer_reference_number = null, $vendor_shipment_identifier = null, $seller_warehouse_code = null)
     {
@@ -817,80 +817,80 @@ class VendorShippingV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels';
+            $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -905,7 +905,7 @@ class VendorShippingV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -913,7 +913,7 @@ class VendorShippingV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -921,7 +921,7 @@ class VendorShippingV1Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -929,7 +929,7 @@ class VendorShippingV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -937,7 +937,7 @@ class VendorShippingV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -945,7 +945,7 @@ class VendorShippingV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -953,7 +953,7 @@ class VendorShippingV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -961,7 +961,7 @@ class VendorShippingV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class VendorShippingV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1021,7 +1021,7 @@ class VendorShippingV1Api extends BaseApi
      */
     public function getShipmentLabelsAsyncWithHttpInfo($limit = null, $sort_order = null, $next_token = null, $label_created_after = null, $labelcreated_before = null, $buyer_reference_number = null, $vendor_shipment_identifier = null, $seller_warehouse_code = null)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels';
+        $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels';
         $request = $this->getShipmentLabelsRequest($limit, $sort_order, $next_token, $label_created_after, $labelcreated_before, $buyer_reference_number, $vendor_shipment_identifier, $seller_warehouse_code);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1219,11 +1219,11 @@ class VendorShippingV1Api extends BaseApi
     /**
      * Operation submitShipmentConfirmations
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
      */
     public function submitShipmentConfirmations($body)
     {
@@ -1234,11 +1234,11 @@ class VendorShippingV1Api extends BaseApi
     /**
      * Operation submitShipmentConfirmationsWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitShipmentConfirmationsWithHttpInfo($body)
     {
@@ -1287,80 +1287,80 @@ class VendorShippingV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1375,7 +1375,7 @@ class VendorShippingV1Api extends BaseApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1383,7 +1383,7 @@ class VendorShippingV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1391,7 +1391,7 @@ class VendorShippingV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1399,7 +1399,7 @@ class VendorShippingV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1407,7 +1407,7 @@ class VendorShippingV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1415,7 +1415,7 @@ class VendorShippingV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1423,7 +1423,7 @@ class VendorShippingV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1431,7 +1431,7 @@ class VendorShippingV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1439,7 +1439,7 @@ class VendorShippingV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1455,7 +1455,7 @@ class VendorShippingV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1470,14 +1470,14 @@ class VendorShippingV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitShipmentConfirmationsAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
         $request = $this->submitShipmentConfirmationsRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1523,7 +1523,7 @@ class VendorShippingV1Api extends BaseApi
     /**
      * Create request for operation 'submitShipmentConfirmations'
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1609,11 +1609,11 @@ class VendorShippingV1Api extends BaseApi
     /**
      * Operation submitShipments
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments $body body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
      */
     public function submitShipments($body)
     {
@@ -1624,11 +1624,11 @@ class VendorShippingV1Api extends BaseApi
     /**
      * Operation submitShipmentsWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitShipmentsWithHttpInfo($body)
     {
@@ -1677,80 +1677,80 @@ class VendorShippingV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1765,7 +1765,7 @@ class VendorShippingV1Api extends BaseApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1773,7 +1773,7 @@ class VendorShippingV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1781,7 +1781,7 @@ class VendorShippingV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1789,7 +1789,7 @@ class VendorShippingV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1797,7 +1797,7 @@ class VendorShippingV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1805,7 +1805,7 @@ class VendorShippingV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1813,7 +1813,7 @@ class VendorShippingV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1821,7 +1821,7 @@ class VendorShippingV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1829,7 +1829,7 @@ class VendorShippingV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
+                        '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1845,7 +1845,7 @@ class VendorShippingV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1860,14 +1860,14 @@ class VendorShippingV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitShipmentsAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse';
         $request = $this->submitShipmentsRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1913,7 +1913,7 @@ class VendorShippingV1Api extends BaseApi
     /**
      * Create request for operation 'submitShipments'
      *
-     * @param  \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

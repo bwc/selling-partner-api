@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ConfirmShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for an shipment confirmation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ConfirmShipmentRequest extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'package_detail' => '\SellingPartnerApi\Model\OrdersV0\PackageDetail',
+        'package_detail' => '\SellingPartnerApiV5\Model\OrdersV0\PackageDetail',
         'cod_collection_method' => 'string',
         'marketplace_id' => 'string'
     ];
@@ -187,7 +187,7 @@ class ConfirmShipmentRequest extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets package_detail
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\PackageDetail
+     * @return \SellingPartnerApiV5\Model\OrdersV0\PackageDetail
      */
     public function getPackageDetail()
     {
@@ -197,7 +197,7 @@ class ConfirmShipmentRequest extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets package_detail
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\PackageDetail $package_detail package_detail
+     * @param \SellingPartnerApiV5\Model\OrdersV0\PackageDetail $package_detail package_detail
      *
      * @return self
      */

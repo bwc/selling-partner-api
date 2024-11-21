@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AdjustmentEvent Class Doc Comment
  *
  * @category Class
  * @description An adjustment to the seller's account.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class AdjustmentEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     protected static $openAPITypes = [
         'adjustment_type' => 'string',
         'posted_date' => 'string',
-        'adjustment_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'adjustment_item_list' => '\SellingPartnerApi\Model\FinancesV0\AdjustmentItem[]'
+        'adjustment_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'adjustment_item_list' => '\SellingPartnerApiV5\Model\FinancesV0\AdjustmentItem[]'
     ];
 
     /**
@@ -210,7 +210,7 @@ class AdjustmentEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets adjustment_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getAdjustmentAmount()
     {
@@ -220,7 +220,7 @@ class AdjustmentEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets adjustment_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $adjustment_amount adjustment_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $adjustment_amount adjustment_amount
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class AdjustmentEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets adjustment_item_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\AdjustmentItem[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\AdjustmentItem[]|null
      */
     public function getAdjustmentItemList()
     {
@@ -243,7 +243,7 @@ class AdjustmentEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets adjustment_item_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\AdjustmentItem[]|null $adjustment_item_list A list of information about items in an adjustment to the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\AdjustmentItem[]|null $adjustment_item_list A list of information about items in an adjustment to the seller's account.
      *
      * @return self
      */

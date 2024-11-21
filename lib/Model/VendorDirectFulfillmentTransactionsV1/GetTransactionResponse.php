@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetTransactionResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getTransactionStatus operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetTransactionResponse extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\TransactionStatus',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\TransactionStatus',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetTransactionResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\TransactionStatus|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\TransactionStatus|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetTransactionResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\TransactionStatus|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\TransactionStatus|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetTransactionResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetTransactionResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

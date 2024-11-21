@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description An item in a package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,16 +58,16 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'item_value' => '\SellingPartnerApi\Model\ShippingV2\Currency',
+        'item_value' => '\SellingPartnerApiV5\Model\ShippingV2\Currency',
         'description' => 'string',
         'item_identifier' => 'string',
         'quantity' => 'int',
-        'weight' => '\SellingPartnerApi\Model\ShippingV2\Weight',
+        'weight' => '\SellingPartnerApiV5\Model\ShippingV2\Weight',
         'is_hazmat' => 'bool',
         'product_type' => 'string',
-        'invoice_details' => '\SellingPartnerApi\Model\ShippingV2\InvoiceDetails',
+        'invoice_details' => '\SellingPartnerApiV5\Model\ShippingV2\InvoiceDetails',
         'serial_numbers' => 'string[]',
-        'direct_fulfillment_item_identifiers' => '\SellingPartnerApi\Model\ShippingV2\DirectFulfillmentItemIdentifiers'
+        'direct_fulfillment_item_identifiers' => '\SellingPartnerApiV5\Model\ShippingV2\DirectFulfillmentItemIdentifiers'
     ];
 
     /**
@@ -197,7 +197,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets item_value
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Currency|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Currency|null
      */
     public function getItemValue()
     {
@@ -207,7 +207,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets item_value
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Currency|null $item_value item_value
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Currency|null $item_value item_value
      *
      * @return self
      */
@@ -289,7 +289,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Weight
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Weight
      */
     public function getWeight()
     {
@@ -299,7 +299,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Weight $weight weight
      *
      * @return self
      */
@@ -358,7 +358,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets invoice_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\InvoiceDetails|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\InvoiceDetails|null
      */
     public function getInvoiceDetails()
     {
@@ -368,7 +368,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets invoice_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\InvoiceDetails|null $invoice_details invoice_details
+     * @param \SellingPartnerApiV5\Model\ShippingV2\InvoiceDetails|null $invoice_details invoice_details
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets direct_fulfillment_item_identifiers
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DirectFulfillmentItemIdentifiers|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DirectFulfillmentItemIdentifiers|null
      */
     public function getDirectFulfillmentItemIdentifiers()
     {
@@ -414,7 +414,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets direct_fulfillment_item_identifiers
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DirectFulfillmentItemIdentifiers|null $direct_fulfillment_item_identifiers direct_fulfillment_item_identifiers
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DirectFulfillmentItemIdentifiers|null $direct_fulfillment_item_identifiers direct_fulfillment_item_identifiers
      *
      * @return self
      */

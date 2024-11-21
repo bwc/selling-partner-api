@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderList Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class OrderList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Pagination',
-        'orders' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order[]'
+        'pagination' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Pagination',
+        'orders' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order[]'
     ];
 
     /**
@@ -167,7 +167,7 @@ class OrderList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Pagination|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Pagination|null
      */
     public function getPagination()
     {
@@ -177,7 +177,7 @@ class OrderList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class OrderList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets orders
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order[]|null
      */
     public function getOrders()
     {
@@ -200,7 +200,7 @@ class OrderList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets orders
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order[]|null $orders orders
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order[]|null $orders orders
      *
      * @return self
      */

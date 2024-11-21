@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateFulfillmentReturnResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'return_items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItem[]',
-        'invalid_return_items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\InvalidReturnItem[]',
-        'return_authorizations' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ReturnAuthorization[]'
+        'return_items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItem[]',
+        'invalid_return_items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidReturnItem[]',
+        'return_authorizations' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnAuthorization[]'
     ];
 
     /**
@@ -148,7 +148,7 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
     /**
      * Gets return_items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItem[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItem[]|null
      */
     public function getReturnItems()
     {
@@ -158,7 +158,7 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
     /**
      * Sets return_items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnItem[]|null $return_items An array of items that Amazon accepted for return. Returns empty if no items were accepted for return.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnItem[]|null $return_items An array of items that Amazon accepted for return. Returns empty if no items were accepted for return.
      *
      * @return self
      */
@@ -171,7 +171,7 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
     /**
      * Gets invalid_return_items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\InvalidReturnItem[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidReturnItem[]|null
      */
     public function getInvalidReturnItems()
     {
@@ -181,7 +181,7 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
     /**
      * Sets invalid_return_items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\InvalidReturnItem[]|null $invalid_return_items An array of invalid return item information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidReturnItem[]|null $invalid_return_items An array of invalid return item information.
      *
      * @return self
      */
@@ -194,7 +194,7 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
     /**
      * Gets return_authorizations
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnAuthorization[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnAuthorization[]|null
      */
     public function getReturnAuthorizations()
     {
@@ -204,7 +204,7 @@ class CreateFulfillmentReturnResult extends BaseModel implements ModelInterface,
     /**
      * Sets return_authorizations
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ReturnAuthorization[]|null $return_authorizations An array of return authorization information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReturnAuthorization[]|null $return_authorizations An array of return authorization information.
      *
      * @return self
      */

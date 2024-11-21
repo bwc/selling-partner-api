@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsRestrictionsV20210801;
+namespace SellingPartnerApiV5\Model\ListingsRestrictionsV20210801;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RestrictionList Class Doc Comment
  *
  * @category Class
  * @description A list of restrictions for the specified Amazon catalog item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class RestrictionList extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'restrictions' => '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Restriction[]'
+        'restrictions' => '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Restriction[]'
     ];
 
     /**
@@ -165,7 +165,7 @@ class RestrictionList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets restrictions
      *
-     * @return \SellingPartnerApi\Model\ListingsRestrictionsV20210801\Restriction[]
+     * @return \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Restriction[]
      */
     public function getRestrictions()
     {
@@ -175,7 +175,7 @@ class RestrictionList extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets restrictions
      *
-     * @param \SellingPartnerApi\Model\ListingsRestrictionsV20210801\Restriction[] $restrictions restrictions
+     * @param \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Restriction[] $restrictions restrictions
      *
      * @return self
      */

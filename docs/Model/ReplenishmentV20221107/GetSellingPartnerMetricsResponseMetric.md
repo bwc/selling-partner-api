@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **active_subscriptions** | **float** | The number of active subscriptions present at the end of the period. Applicable only for the PERFORMANCE timePeriodType. | [optional]
 **subscriber_average_revenue** | **double** | The average revenue per subscriber of the program over a period of past 12 months for sellers and 6 months for vendors. Applicable only for the PERFORMANCE timePeriodType. | [optional]
 **non_subscriber_average_revenue** | **double** | The average revenue per non-subscriber of the program over a period of past 12 months for sellers and 6 months for vendors. Applicable only for the PERFORMANCE timePeriodType. | [optional]
-**time_interval** | [**\SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval**](TimeInterval.md) |  | [optional]
+**time_interval** | [**\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval**](TimeInterval.md) |  | [optional]
 **currency_code** | **string** | The currency code in ISO 4217 format. | [optional]
 
 [[ReplenishmentV20221107 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

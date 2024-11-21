@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseShipmentResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the purchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'shipment_id' => 'string',
-        'package_document_details' => '\SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail[]',
-        'promise' => '\SellingPartnerApi\Model\ShippingV2\Promise'
+        'package_document_details' => '\SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail[]',
+        'promise' => '\SellingPartnerApiV5\Model\ShippingV2\Promise'
     ];
 
     /**
@@ -181,7 +181,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets package_document_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail[]
      */
     public function getPackageDocumentDetails()
     {
@@ -191,7 +191,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets package_document_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail[] $package_document_details A list of post-purchase details about a package that will be shipped using a shipping service.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail[] $package_document_details A list of post-purchase details about a package that will be shipped using a shipping service.
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets promise
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Promise
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Promise
      */
     public function getPromise()
     {
@@ -214,7 +214,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets promise
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Promise $promise promise
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Promise $promise promise
      *
      * @return self
      */

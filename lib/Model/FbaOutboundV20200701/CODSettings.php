@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CODSettings Class Doc Comment
  *
  * @category Class
  * @description The COD (Cash On Delivery) charges that you associate with a COD fulfillment order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,10 +59,10 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'is_cod_required' => 'bool',
-        'cod_charge' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money',
-        'cod_charge_tax' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money',
-        'shipping_charge' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money',
-        'shipping_charge_tax' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Money'
+        'cod_charge' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money',
+        'cod_charge_tax' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money',
+        'shipping_charge' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money',
+        'shipping_charge_tax' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Money'
     ];
 
     /**
@@ -187,7 +187,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets cod_charge
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getCodCharge()
     {
@@ -197,7 +197,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets cod_charge
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $cod_charge cod_charge
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $cod_charge cod_charge
      *
      * @return self
      */
@@ -210,7 +210,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets cod_charge_tax
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getCodChargeTax()
     {
@@ -220,7 +220,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets cod_charge_tax
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $cod_charge_tax cod_charge_tax
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $cod_charge_tax cod_charge_tax
      *
      * @return self
      */
@@ -233,7 +233,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets shipping_charge
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getShippingCharge()
     {
@@ -243,7 +243,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets shipping_charge
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $shipping_charge shipping_charge
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $shipping_charge shipping_charge
      *
      * @return self
      */
@@ -256,7 +256,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets shipping_charge_tax
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null
      */
     public function getShippingChargeTax()
     {
@@ -266,7 +266,7 @@ class CODSettings extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets shipping_charge_tax
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Money|null $shipping_charge_tax shipping_charge_tax
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Money|null $shipping_charge_tax shipping_charge_tax
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSchemaResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,9 +57,9 @@ class GetSchemaResponse extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_links' => '\SellingPartnerApi\Model\MessagingV1\GetSchemaResponseLinks',
+        '_links' => '\SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponseLinks',
         'payload' => 'map[string,object]',
-        'errors' => '\SellingPartnerApi\Model\MessagingV1\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\MessagingV1\Error[]'
     ];
 
     /**
@@ -148,7 +148,7 @@ class GetSchemaResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets _links
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetSchemaResponseLinks|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponseLinks|null
      */
     public function getLinks()
     {
@@ -158,7 +158,7 @@ class GetSchemaResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets _links
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetSchemaResponseLinks|null $_links _links
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponseLinks|null $_links _links
      *
      * @return self
      */
@@ -194,7 +194,7 @@ class GetSchemaResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -204,7 +204,7 @@ class GetSchemaResponse extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

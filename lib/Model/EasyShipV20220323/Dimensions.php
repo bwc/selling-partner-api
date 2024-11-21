@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Dimensions Class Doc Comment
  *
  * @category Class
  * @description The dimensions of the scheduled package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
         'length' => 'float',
         'width' => 'float',
         'height' => 'float',
-        'unit' => '\SellingPartnerApi\Model\EasyShipV20220323\UnitOfLength',
+        'unit' => '\SellingPartnerApiV5\Model\EasyShipV20220323\UnitOfLength',
         'identifier' => 'string'
     ];
 
@@ -265,7 +265,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets unit
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\UnitOfLength|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\UnitOfLength|null
      */
     public function getUnit()
     {
@@ -275,7 +275,7 @@ class Dimensions extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets unit
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\UnitOfLength|null $unit unit
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\UnitOfLength|null $unit unit
      *
      * @return self
      */

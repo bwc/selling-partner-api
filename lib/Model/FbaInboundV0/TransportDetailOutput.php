@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportDetailOutput Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information, including carrier details and shipment status.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'partnered_small_parcel_data' => '\SellingPartnerApi\Model\FbaInboundV0\PartneredSmallParcelDataOutput',
-        'non_partnered_small_parcel_data' => '\SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelDataOutput',
-        'partnered_ltl_data' => '\SellingPartnerApi\Model\FbaInboundV0\PartneredLtlDataOutput',
-        'non_partnered_ltl_data' => '\SellingPartnerApi\Model\FbaInboundV0\NonPartneredLtlDataOutput'
+        'partnered_small_parcel_data' => '\SellingPartnerApiV5\Model\FbaInboundV0\PartneredSmallParcelDataOutput',
+        'non_partnered_small_parcel_data' => '\SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelDataOutput',
+        'partnered_ltl_data' => '\SellingPartnerApiV5\Model\FbaInboundV0\PartneredLtlDataOutput',
+        'non_partnered_ltl_data' => '\SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredLtlDataOutput'
     ];
 
     /**
@@ -155,7 +155,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets partnered_small_parcel_data
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PartneredSmallParcelDataOutput|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PartneredSmallParcelDataOutput|null
      */
     public function getPartneredSmallParcelData()
     {
@@ -165,7 +165,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets partnered_small_parcel_data
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PartneredSmallParcelDataOutput|null $partnered_small_parcel_data partnered_small_parcel_data
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PartneredSmallParcelDataOutput|null $partnered_small_parcel_data partnered_small_parcel_data
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets non_partnered_small_parcel_data
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelDataOutput|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelDataOutput|null
      */
     public function getNonPartneredSmallParcelData()
     {
@@ -188,7 +188,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets non_partnered_small_parcel_data
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelDataOutput|null $non_partnered_small_parcel_data non_partnered_small_parcel_data
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelDataOutput|null $non_partnered_small_parcel_data non_partnered_small_parcel_data
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets partnered_ltl_data
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PartneredLtlDataOutput|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PartneredLtlDataOutput|null
      */
     public function getPartneredLtlData()
     {
@@ -211,7 +211,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets partnered_ltl_data
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PartneredLtlDataOutput|null $partnered_ltl_data partnered_ltl_data
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PartneredLtlDataOutput|null $partnered_ltl_data partnered_ltl_data
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets non_partnered_ltl_data
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\NonPartneredLtlDataOutput|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredLtlDataOutput|null
      */
     public function getNonPartneredLtlData()
     {
@@ -234,7 +234,7 @@ class TransportDetailOutput extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets non_partnered_ltl_data
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\NonPartneredLtlDataOutput|null $non_partnered_ltl_data non_partnered_ltl_data
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredLtlDataOutput|null $non_partnered_ltl_data non_partnered_ltl_data
      *
      * @return self
      */

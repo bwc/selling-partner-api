@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RangeSlotCapacity Class Doc Comment
  *
  * @category Class
  * @description Response schema for the `getRangeSlotCapacity` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class RangeSlotCapacity extends BaseModel implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'resource_id' => 'string',
-        'capacities' => '\SellingPartnerApi\Model\ServiceV1\RangeCapacity[]',
+        'capacities' => '\SellingPartnerApiV5\Model\ServiceV1\RangeCapacity[]',
         'next_page_token' => 'string'
     ];
 
@@ -197,7 +197,7 @@ class RangeSlotCapacity extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets capacities
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\RangeCapacity[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\RangeCapacity[]|null
      */
     public function getCapacities()
     {
@@ -207,7 +207,7 @@ class RangeSlotCapacity extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets capacities
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\RangeCapacity[]|null $capacities Array of range capacities where each entry is for a specific capacity type.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\RangeCapacity[]|null $capacities Array of range capacities where each entry is for a specific capacity type.
      *
      * @return self
      */

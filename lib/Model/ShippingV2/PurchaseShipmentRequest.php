@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the purchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     protected static $openAPITypes = [
         'request_token' => 'string',
         'rate_id' => 'string',
-        'requested_document_specification' => '\SellingPartnerApi\Model\ShippingV2\RequestedDocumentSpecification',
-        'requested_value_added_services' => '\SellingPartnerApi\Model\ShippingV2\RequestedValueAddedService[]',
+        'requested_document_specification' => '\SellingPartnerApiV5\Model\ShippingV2\RequestedDocumentSpecification',
+        'requested_value_added_services' => '\SellingPartnerApiV5\Model\ShippingV2\RequestedValueAddedService[]',
         'additional_inputs' => 'object'
     ];
 
@@ -216,7 +216,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets requested_document_specification
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\RequestedDocumentSpecification
+     * @return \SellingPartnerApiV5\Model\ShippingV2\RequestedDocumentSpecification
      */
     public function getRequestedDocumentSpecification()
     {
@@ -226,7 +226,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets requested_document_specification
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\RequestedDocumentSpecification $requested_document_specification requested_document_specification
+     * @param \SellingPartnerApiV5\Model\ShippingV2\RequestedDocumentSpecification $requested_document_specification requested_document_specification
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets requested_value_added_services
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\RequestedValueAddedService[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\RequestedValueAddedService[]|null
      */
     public function getRequestedValueAddedServices()
     {
@@ -249,7 +249,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets requested_value_added_services
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\RequestedValueAddedService[]|null $requested_value_added_services The value-added services to be added to a shipping service purchase.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\RequestedValueAddedService[]|null $requested_value_added_services The value-added services to be added to a shipping service purchase.
      *
      * @return self
      */

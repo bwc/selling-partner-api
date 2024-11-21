@@ -1,4 +1,4 @@
-# SellingPartnerApi\SmallAndLightV1Api
+# SellingPartnerApiV5\SmallAndLightV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -34,16 +34,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SmallAndLightV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SmallAndLightV1Api($config);
 $seller_sku = 'seller_sku_example'; // string | The seller SKU that identifies the item.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | The marketplace in which to remove the item from the Small and Light program. Note: Accepts a single marketplace only.
 
@@ -77,7 +77,7 @@ void (empty response body)
 ## `getSmallAndLightEligibilityBySellerSKU()`
 
 ```php
-getSmallAndLightEligibilityBySellerSKU($seller_sku, $marketplace_ids): \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEligibility
+getSmallAndLightEligibilityBySellerSKU($seller_sku, $marketplace_ids): \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEligibility
 ```
 
 
@@ -99,16 +99,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SmallAndLightV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SmallAndLightV1Api($config);
 $seller_sku = 'seller_sku_example'; // string | The seller SKU that identifies the item.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | The marketplace for which the eligibility status is retrieved. NOTE: Accepts a single marketplace only.
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEligibility**](../Model/SmallAndLightV1/SmallAndLightEligibility.md)
+[**\SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEligibility**](../Model/SmallAndLightV1/SmallAndLightEligibility.md)
 
 ### HTTP request headers
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 ## `getSmallAndLightEnrollmentBySellerSKU()`
 
 ```php
-getSmallAndLightEnrollmentBySellerSKU($seller_sku, $marketplace_ids): \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollment
+getSmallAndLightEnrollmentBySellerSKU($seller_sku, $marketplace_ids): \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollment
 ```
 
 
@@ -165,16 +165,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SmallAndLightV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SmallAndLightV1Api($config);
 $seller_sku = 'seller_sku_example'; // string | The seller SKU that identifies the item.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | The marketplace for which the enrollment status is retrieved. Note: Accepts a single marketplace only.
 
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollment**](../Model/SmallAndLightV1/SmallAndLightEnrollment.md)
+[**\SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollment**](../Model/SmallAndLightV1/SmallAndLightEnrollment.md)
 
 ### HTTP request headers
 
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 ## `getSmallAndLightFeePreview()`
 
 ```php
-getSmallAndLightFeePreview($body): \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightFeePreviews
+getSmallAndLightFeePreview($body): \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightFeePreviews
 ```
 
 
@@ -231,17 +231,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SmallAndLightV1Api($config);
-$body = new \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightFeePreviewRequest(); // \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightFeePreviewRequest
+$apiInstance = new SellingPartnerApiV5\Api\SmallAndLightV1Api($config);
+$body = new \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightFeePreviewRequest(); // \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightFeePreviewRequest
 
 try {
     $result = $apiInstance->getSmallAndLightFeePreview($body);
@@ -255,11 +255,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightFeePreviewRequest**](../Model/SmallAndLightV1/SmallAndLightFeePreviewRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightFeePreviewRequest**](../Model/SmallAndLightV1/SmallAndLightFeePreviewRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightFeePreviews**](../Model/SmallAndLightV1/SmallAndLightFeePreviews.md)
+[**\SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightFeePreviews**](../Model/SmallAndLightV1/SmallAndLightFeePreviews.md)
 
 ### HTTP request headers
 
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 ## `putSmallAndLightEnrollmentBySellerSKU()`
 
 ```php
-putSmallAndLightEnrollmentBySellerSKU($seller_sku, $marketplace_ids): \SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollment
+putSmallAndLightEnrollmentBySellerSKU($seller_sku, $marketplace_ids): \SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollment
 ```
 
 
@@ -295,16 +295,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\SmallAndLightV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\SmallAndLightV1Api($config);
 $seller_sku = 'seller_sku_example'; // string | The seller SKU that identifies the item.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | The marketplace in which to enroll the item. Note: Accepts a single marketplace only.
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\SmallAndLightV1\SmallAndLightEnrollment**](../Model/SmallAndLightV1/SmallAndLightEnrollment.md)
+[**\SellingPartnerApiV5\Model\SmallAndLightV1\SmallAndLightEnrollment**](../Model/SmallAndLightV1/SmallAndLightEnrollment.md)
 
 ### HTTP request headers
 

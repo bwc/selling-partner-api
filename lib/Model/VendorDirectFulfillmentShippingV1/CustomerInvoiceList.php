@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CustomerInvoiceList Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class CustomerInvoiceList extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Pagination',
-        'customer_invoices' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\CustomerInvoice[]'
+        'pagination' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Pagination',
+        'customer_invoices' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\CustomerInvoice[]'
     ];
 
     /**
@@ -142,7 +142,7 @@ class CustomerInvoiceList extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Pagination|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Pagination|null
      */
     public function getPagination()
     {
@@ -152,7 +152,7 @@ class CustomerInvoiceList extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Pagination|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Pagination|null $pagination pagination
      *
      * @return self
      */
@@ -165,7 +165,7 @@ class CustomerInvoiceList extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets customer_invoices
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\CustomerInvoice[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\CustomerInvoice[]|null
      */
     public function getCustomerInvoices()
     {
@@ -175,7 +175,7 @@ class CustomerInvoiceList extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets customer_invoices
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\CustomerInvoice[]|null $customer_invoices customer_invoices
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\CustomerInvoice[]|null $customer_invoices customer_invoices
      *
      * @return self
      */

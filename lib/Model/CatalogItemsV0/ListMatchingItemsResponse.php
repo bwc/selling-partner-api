@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListMatchingItemsResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class ListMatchingItemsResponse extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\SellingPartnerApi\Model\CatalogItemsV0\Item[]'
+        'items' => '\SellingPartnerApiV5\Model\CatalogItemsV0\Item[]'
     ];
 
     /**
@@ -136,7 +136,7 @@ class ListMatchingItemsResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\Item[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\Item[]|null
      */
     public function getItems()
     {
@@ -146,7 +146,7 @@ class ListMatchingItemsResponse extends BaseModel implements ModelInterface, Arr
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\Item[]|null $items A list of items.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\Item[]|null $items A list of items.
      *
      * @return self
      */

@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **postal_code** | **string** | The postal code. | [optional]
 **country_code** | **string** | The country code. | [optional]
 **phone** | **string** | The phone number. | [optional]
-**address_type** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\AddressTypeEnum**](AddressTypeEnum.md) |  | [optional]
+**address_type** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\AddressTypeEnum**](AddressTypeEnum.md) |  | [optional]
 
 [[ShipmentInvoicingV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

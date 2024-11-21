@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Appointment Class Doc Comment
  *
  * @category Class
  * @description The details of an appointment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'appointment_id' => 'string',
         'appointment_status' => 'string',
-        'appointment_time' => '\SellingPartnerApi\Model\ServiceV1\AppointmentTime',
-        'assigned_technicians' => '\SellingPartnerApi\Model\ServiceV1\Technician[]',
+        'appointment_time' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentTime',
+        'assigned_technicians' => '\SellingPartnerApiV5\Model\ServiceV1\Technician[]',
         'rescheduled_appointment_id' => 'string',
-        'poa' => '\SellingPartnerApi\Model\ServiceV1\Poa'
+        'poa' => '\SellingPartnerApiV5\Model\ServiceV1\Poa'
     ];
 
     /**
@@ -286,7 +286,7 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets appointment_time
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentTime|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentTime|null
      */
     public function getAppointmentTime()
     {
@@ -296,7 +296,7 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets appointment_time
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentTime|null $appointment_time appointment_time
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentTime|null $appointment_time appointment_time
      *
      * @return self
      */
@@ -309,7 +309,7 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets assigned_technicians
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Technician[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Technician[]|null
      */
     public function getAssignedTechnicians()
     {
@@ -319,7 +319,7 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets assigned_technicians
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Technician[]|null $assigned_technicians A list of technicians assigned to the service job.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Technician[]|null $assigned_technicians A list of technicians assigned to the service job.
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets poa
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Poa|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Poa|null
      */
     public function getPoa()
     {
@@ -377,7 +377,7 @@ class Appointment extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets poa
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Poa|null $poa poa
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Poa|null $poa poa
      *
      * @return self
      */

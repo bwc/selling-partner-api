@@ -1,4 +1,4 @@
-# SellingPartnerApi\EasyShipV20220323Api
+# SellingPartnerApiV5\EasyShipV20220323Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `createScheduledPackage()`
 
 ```php
-createScheduledPackage($create_scheduled_package_request): \SellingPartnerApi\Model\EasyShipV20220323\Package
+createScheduledPackage($create_scheduled_package_request): \SellingPartnerApiV5\Model\EasyShipV20220323\Package
 ```
 
 
@@ -46,17 +46,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\EasyShipV20220323Api($config);
-$create_scheduled_package_request = new \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest(); // \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest
+$apiInstance = new SellingPartnerApiV5\Api\EasyShipV20220323Api($config);
+$create_scheduled_package_request = new \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest(); // \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest
 
 try {
     $result = $apiInstance->createScheduledPackage($create_scheduled_package_request);
@@ -70,11 +70,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_scheduled_package_request** | [**\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest**](../Model/EasyShipV20220323/CreateScheduledPackageRequest.md)|  |
+ **create_scheduled_package_request** | [**\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest**](../Model/EasyShipV20220323/CreateScheduledPackageRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\EasyShipV20220323\Package**](../Model/EasyShipV20220323/Package.md)
+[**\SellingPartnerApiV5\Model\EasyShipV20220323\Package**](../Model/EasyShipV20220323/Package.md)
 
 ### HTTP request headers
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 ## `createScheduledPackageBulk()`
 
 ```php
-createScheduledPackageBulk($create_scheduled_packages_request): \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse
+createScheduledPackageBulk($create_scheduled_packages_request): \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse
 ```
 
 
@@ -118,17 +118,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\EasyShipV20220323Api($config);
-$create_scheduled_packages_request = new \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest(); // \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest
+$apiInstance = new SellingPartnerApiV5\Api\EasyShipV20220323Api($config);
+$create_scheduled_packages_request = new \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest(); // \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest
 
 try {
     $result = $apiInstance->createScheduledPackageBulk($create_scheduled_packages_request);
@@ -142,11 +142,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **create_scheduled_packages_request** | [**\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest**](../Model/EasyShipV20220323/CreateScheduledPackagesRequest.md)|  |
+ **create_scheduled_packages_request** | [**\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest**](../Model/EasyShipV20220323/CreateScheduledPackagesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse**](../Model/EasyShipV20220323/CreateScheduledPackagesResponse.md)
+[**\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse**](../Model/EasyShipV20220323/CreateScheduledPackagesResponse.md)
 
 ### HTTP request headers
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 ## `getScheduledPackage()`
 
 ```php
-getScheduledPackage($amazon_order_id, $marketplace_id): \SellingPartnerApi\Model\EasyShipV20220323\Package
+getScheduledPackage($amazon_order_id, $marketplace_id): \SellingPartnerApiV5\Model\EasyShipV20220323\Package
 ```
 
 
@@ -182,16 +182,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\EasyShipV20220323Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\EasyShipV20220323Api($config);
 $amazon_order_id = 'amazon_order_id_example'; // string | An Amazon-defined order identifier. Identifies the order that the seller wants to deliver using Amazon Easy Ship.
 $marketplace_id = 'marketplace_id_example'; // string | An identifier for the marketplace in which the seller is selling.
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\EasyShipV20220323\Package**](../Model/EasyShipV20220323/Package.md)
+[**\SellingPartnerApiV5\Model\EasyShipV20220323\Package**](../Model/EasyShipV20220323/Package.md)
 
 ### HTTP request headers
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Notes
 ## `listHandoverSlots()`
 
 ```php
-listHandoverSlots($list_handover_slots_request): \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse
+listHandoverSlots($list_handover_slots_request): \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse
 ```
 
 
@@ -252,17 +252,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\EasyShipV20220323Api($config);
-$list_handover_slots_request = new \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest(); // \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest
+$apiInstance = new SellingPartnerApiV5\Api\EasyShipV20220323Api($config);
+$list_handover_slots_request = new \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest(); // \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest
 
 try {
     $result = $apiInstance->listHandoverSlots($list_handover_slots_request);
@@ -276,11 +276,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **list_handover_slots_request** | [**\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest**](../Model/EasyShipV20220323/ListHandoverSlotsRequest.md)|  | [optional]
+ **list_handover_slots_request** | [**\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest**](../Model/EasyShipV20220323/ListHandoverSlotsRequest.md)|  | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse**](../Model/EasyShipV20220323/ListHandoverSlotsResponse.md)
+[**\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse**](../Model/EasyShipV20220323/ListHandoverSlotsResponse.md)
 
 ### HTTP request headers
 
@@ -294,7 +294,7 @@ Name | Type | Description  | Notes
 ## `updateScheduledPackages()`
 
 ```php
-updateScheduledPackages($update_scheduled_packages_request): \SellingPartnerApi\Model\EasyShipV20220323\Packages
+updateScheduledPackages($update_scheduled_packages_request): \SellingPartnerApiV5\Model\EasyShipV20220323\Packages
 ```
 
 
@@ -318,17 +318,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\EasyShipV20220323Api($config);
-$update_scheduled_packages_request = new \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest(); // \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest
+$apiInstance = new SellingPartnerApiV5\Api\EasyShipV20220323Api($config);
+$update_scheduled_packages_request = new \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest(); // \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest
 
 try {
     $result = $apiInstance->updateScheduledPackages($update_scheduled_packages_request);
@@ -342,11 +342,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **update_scheduled_packages_request** | [**\SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest**](../Model/EasyShipV20220323/UpdateScheduledPackagesRequest.md)|  | [optional]
+ **update_scheduled_packages_request** | [**\SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest**](../Model/EasyShipV20220323/UpdateScheduledPackagesRequest.md)|  | [optional]
 
 ### Return type
 
-[**\SellingPartnerApi\Model\EasyShipV20220323\Packages**](../Model/EasyShipV20220323/Packages.md)
+[**\SellingPartnerApiV5\Model\EasyShipV20220323\Packages**](../Model/EasyShipV20220323/Packages.md)
 
 ### HTTP request headers
 

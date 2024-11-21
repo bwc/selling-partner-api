@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetAdditionalSellerInputsRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class GetAdditionalSellerInputsRequest extends BaseModel implements ModelInterfa
       */
     protected static $openAPITypes = [
         'shipping_service_id' => 'string',
-        'ship_from_address' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Address',
+        'ship_from_address' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address',
         'order_id' => 'string'
     ];
 
@@ -181,7 +181,7 @@ class GetAdditionalSellerInputsRequest extends BaseModel implements ModelInterfa
     /**
      * Gets ship_from_address
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Address
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address
      */
     public function getShipFromAddress()
     {
@@ -191,7 +191,7 @@ class GetAdditionalSellerInputsRequest extends BaseModel implements ModelInterfa
     /**
      * Sets ship_from_address
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Address $ship_from_address ship_from_address
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address $ship_from_address ship_from_address
      *
      * @return self
      */

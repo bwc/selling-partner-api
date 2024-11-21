@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitInvoiceRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the submitInvoice operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitInvoiceRequest extends BaseModel implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'invoices' => '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]'
+        'invoices' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitInvoiceRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets invoices
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]|null
      */
     public function getInvoices()
     {
@@ -147,7 +147,7 @@ class SubmitInvoiceRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets invoices
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]|null $invoices invoices
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\InvoiceDetail[]|null $invoices invoices
      *
      * @return self
      */

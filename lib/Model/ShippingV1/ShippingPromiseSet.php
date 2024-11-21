@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShippingPromiseSet Class Doc Comment
  *
  * @category Class
  * @description The promised delivery time and pickup time.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ShippingPromiseSet extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_window' => '\SellingPartnerApi\Model\ShippingV1\TimeRange',
-        'receive_window' => '\SellingPartnerApi\Model\ShippingV1\TimeRange'
+        'delivery_window' => '\SellingPartnerApiV5\Model\ShippingV1\TimeRange',
+        'receive_window' => '\SellingPartnerApiV5\Model\ShippingV1\TimeRange'
     ];
 
     /**
@@ -143,7 +143,7 @@ class ShippingPromiseSet extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets delivery_window
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\TimeRange|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\TimeRange|null
      */
     public function getDeliveryWindow()
     {
@@ -153,7 +153,7 @@ class ShippingPromiseSet extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets delivery_window
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\TimeRange|null $delivery_window delivery_window
+     * @param \SellingPartnerApiV5\Model\ShippingV1\TimeRange|null $delivery_window delivery_window
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class ShippingPromiseSet extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets receive_window
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\TimeRange|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\TimeRange|null
      */
     public function getReceiveWindow()
     {
@@ -176,7 +176,7 @@ class ShippingPromiseSet extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets receive_window
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\TimeRange|null $receive_window receive_window
+     * @param \SellingPartnerApiV5\Model\ShippingV1\TimeRange|null $receive_window receive_window
      *
      * @return self
      */

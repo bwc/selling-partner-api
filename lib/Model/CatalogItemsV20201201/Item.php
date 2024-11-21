@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20201201;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20201201;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description An item in the Amazon catalog.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,13 +60,13 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     protected static $openAPITypes = [
         'asin' => 'string',
         'attributes' => 'object',
-        'identifiers' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemIdentifiersByMarketplace[]',
-        'images' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemImagesByMarketplace[]',
-        'product_types' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemProductTypeByMarketplace[]',
-        'ranks' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemSalesRanksByMarketplace[]',
-        'summaries' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemSummaryByMarketplace[]',
-        'variations' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemVariationsByMarketplace[]',
-        'vendor_details' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemVendorDetailsByMarketplace[]'
+        'identifiers' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemIdentifiersByMarketplace[]',
+        'images' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemImagesByMarketplace[]',
+        'product_types' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemProductTypeByMarketplace[]',
+        'ranks' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSalesRanksByMarketplace[]',
+        'summaries' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSummaryByMarketplace[]',
+        'variations' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemVariationsByMarketplace[]',
+        'vendor_details' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemVendorDetailsByMarketplace[]'
     ];
 
     /**
@@ -259,7 +259,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets identifiers
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemIdentifiersByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemIdentifiersByMarketplace[]|null
      */
     public function getIdentifiers()
     {
@@ -269,7 +269,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets identifiers
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemIdentifiersByMarketplace[]|null $identifiers Identifiers associated with the item in the Amazon catalog, such as UPC and EAN identifiers.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemIdentifiersByMarketplace[]|null $identifiers Identifiers associated with the item in the Amazon catalog, such as UPC and EAN identifiers.
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets images
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemImagesByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemImagesByMarketplace[]|null
      */
     public function getImages()
     {
@@ -292,7 +292,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets images
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemImagesByMarketplace[]|null $images Images for an item in the Amazon catalog. All image variants are provided to brand owners. Otherwise, a thumbnail of the \"MAIN\" image variant is provided.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemImagesByMarketplace[]|null $images Images for an item in the Amazon catalog. All image variants are provided to brand owners. Otherwise, a thumbnail of the \"MAIN\" image variant is provided.
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets product_types
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemProductTypeByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemProductTypeByMarketplace[]|null
      */
     public function getProductTypes()
     {
@@ -315,7 +315,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets product_types
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemProductTypeByMarketplace[]|null $product_types Product types associated with the Amazon catalog item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemProductTypeByMarketplace[]|null $product_types Product types associated with the Amazon catalog item.
      *
      * @return self
      */
@@ -328,7 +328,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets ranks
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSalesRanksByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSalesRanksByMarketplace[]|null
      */
     public function getRanks()
     {
@@ -338,7 +338,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets ranks
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSalesRanksByMarketplace[]|null $ranks Sales ranks of an Amazon catalog item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSalesRanksByMarketplace[]|null $ranks Sales ranks of an Amazon catalog item.
      *
      * @return self
      */
@@ -351,7 +351,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets summaries
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSummaryByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSummaryByMarketplace[]|null
      */
     public function getSummaries()
     {
@@ -361,7 +361,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets summaries
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSummaryByMarketplace[]|null $summaries Summary details of an Amazon catalog item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSummaryByMarketplace[]|null $summaries Summary details of an Amazon catalog item.
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets variations
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemVariationsByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemVariationsByMarketplace[]|null
      */
     public function getVariations()
     {
@@ -384,7 +384,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets variations
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemVariationsByMarketplace[]|null $variations Variation details by marketplace for an Amazon catalog item (variation relationships).
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemVariationsByMarketplace[]|null $variations Variation details by marketplace for an Amazon catalog item (variation relationships).
      *
      * @return self
      */
@@ -397,7 +397,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets vendor_details
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemVendorDetailsByMarketplace[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemVendorDetailsByMarketplace[]|null
      */
     public function getVendorDetails()
     {
@@ -407,7 +407,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets vendor_details
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemVendorDetailsByMarketplace[]|null $vendor_details Vendor details associated with an Amazon catalog item. Vendor details are available to vendors only.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemVendorDetailsByMarketplace[]|null $vendor_details Vendor details associated with an Amazon catalog item. Vendor details are available to vendors only.
      *
      * @return self
      */

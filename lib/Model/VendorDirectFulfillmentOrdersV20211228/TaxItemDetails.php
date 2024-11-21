@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TaxItemDetails Class Doc Comment
  *
  * @category Class
  * @description Total tax details for the line item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class TaxItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tax_line_item' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TaxDetails[]'
+        'tax_line_item' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TaxDetails[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class TaxItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets tax_line_item
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TaxDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TaxDetails[]|null
      */
     public function getTaxLineItem()
     {
@@ -147,7 +147,7 @@ class TaxItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets tax_line_item
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TaxDetails[]|null $tax_line_item A list of tax line items.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TaxDetails[]|null $tax_line_item A list of tax line items.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\TokensV20210301;
+namespace SellingPartnerApiV5\Model\TokensV20210301;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateRestrictedDataTokenRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the createRestrictedDataToken operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class CreateRestrictedDataTokenRequest extends BaseModel implements ModelInterfa
       */
     protected static $openAPITypes = [
         'target_application' => 'string',
-        'restricted_resources' => '\SellingPartnerApi\Model\TokensV20210301\RestrictedResource[]'
+        'restricted_resources' => '\SellingPartnerApiV5\Model\TokensV20210301\RestrictedResource[]'
     ];
 
     /**
@@ -169,7 +169,7 @@ class CreateRestrictedDataTokenRequest extends BaseModel implements ModelInterfa
     /**
      * Gets restricted_resources
      *
-     * @return \SellingPartnerApi\Model\TokensV20210301\RestrictedResource[]
+     * @return \SellingPartnerApiV5\Model\TokensV20210301\RestrictedResource[]
      */
     public function getRestrictedResources()
     {
@@ -179,7 +179,7 @@ class CreateRestrictedDataTokenRequest extends BaseModel implements ModelInterfa
     /**
      * Sets restricted_resources
      *
-     * @param \SellingPartnerApi\Model\TokensV20210301\RestrictedResource[] $restricted_resources A list of restricted resources.
+     * @param \SellingPartnerApiV5\Model\TokensV20210301\RestrictedResource[] $restricted_resources A list of restricted resources.
      *   Maximum: 50
      *
      * @return self

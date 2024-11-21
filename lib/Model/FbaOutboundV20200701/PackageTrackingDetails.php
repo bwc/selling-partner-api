@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackageTrackingDetails Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -65,12 +65,12 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
         'carrier_url' => 'string',
         'ship_date' => 'string',
         'estimated_arrival_date' => 'string',
-        'ship_to_address' => '\SellingPartnerApi\Model\FbaOutboundV20200701\TrackingAddress',
-        'current_status' => '\SellingPartnerApi\Model\FbaOutboundV20200701\CurrentStatus',
+        'ship_to_address' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingAddress',
+        'current_status' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CurrentStatus',
         'current_status_description' => 'string',
         'signed_for_by' => 'string',
-        'additional_location_info' => '\SellingPartnerApi\Model\FbaOutboundV20200701\AdditionalLocationInfo',
-        'tracking_events' => '\SellingPartnerApi\Model\FbaOutboundV20200701\TrackingEvent[]'
+        'additional_location_info' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\AdditionalLocationInfo',
+        'tracking_events' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingEvent[]'
     ];
 
     /**
@@ -401,7 +401,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets ship_to_address
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\TrackingAddress|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingAddress|null
      */
     public function getShipToAddress()
     {
@@ -411,7 +411,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets ship_to_address
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\TrackingAddress|null $ship_to_address ship_to_address
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingAddress|null $ship_to_address ship_to_address
      *
      * @return self
      */
@@ -424,7 +424,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets current_status
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CurrentStatus|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CurrentStatus|null
      */
     public function getCurrentStatus()
     {
@@ -434,7 +434,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets current_status
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\CurrentStatus|null $current_status current_status
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\CurrentStatus|null $current_status current_status
      *
      * @return self
      */
@@ -493,7 +493,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets additional_location_info
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\AdditionalLocationInfo|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\AdditionalLocationInfo|null
      */
     public function getAdditionalLocationInfo()
     {
@@ -503,7 +503,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets additional_location_info
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\AdditionalLocationInfo|null $additional_location_info additional_location_info
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\AdditionalLocationInfo|null $additional_location_info additional_location_info
      *
      * @return self
      */
@@ -516,7 +516,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets tracking_events
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\TrackingEvent[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingEvent[]|null
      */
     public function getTrackingEvents()
     {
@@ -526,7 +526,7 @@ class PackageTrackingDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets tracking_events
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\TrackingEvent[]|null $tracking_events An array of tracking event information.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingEvent[]|null $tracking_events An array of tracking event information.
      *
      * @return self
      */

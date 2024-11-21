@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ErrorList Class Doc Comment
  *
  * @category Class
  * @description The error response for when a request is unsuccessful.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ErrorList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]'
+        'errors' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]'
     ];
 
     /**
@@ -165,7 +165,7 @@ class ErrorList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]
      */
     public function getErrors()
     {
@@ -175,7 +175,7 @@ class ErrorList extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[] $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[] $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

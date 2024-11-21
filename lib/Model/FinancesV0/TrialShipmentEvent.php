@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TrialShipmentEvent Class Doc Comment
  *
  * @category Class
  * @description An event related to a trial shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class TrialShipmentEvent extends BaseModel implements ModelInterface, ArrayAcces
         'financial_event_group_id' => 'string',
         'posted_date' => 'string',
         'sku' => 'string',
-        'fee_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]'
+        'fee_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]'
     ];
 
     /**
@@ -253,7 +253,7 @@ class TrialShipmentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets fee_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getFeeList()
     {
@@ -263,7 +263,7 @@ class TrialShipmentEvent extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets fee_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $fee_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $fee_list A list of fee component information.
      *
      * @return self
      */

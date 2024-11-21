@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseShipmentResult Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the purchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         'shipment_id' => 'string',
-        'service_rate' => '\SellingPartnerApi\Model\ShippingV1\ServiceRate',
-        'label_results' => '\SellingPartnerApi\Model\ShippingV1\LabelResult[]'
+        'service_rate' => '\SellingPartnerApiV5\Model\ShippingV1\ServiceRate',
+        'label_results' => '\SellingPartnerApiV5\Model\ShippingV1\LabelResult[]'
     ];
 
     /**
@@ -181,7 +181,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets service_rate
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ServiceRate
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ServiceRate
      */
     public function getServiceRate()
     {
@@ -191,7 +191,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets service_rate
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ServiceRate $service_rate service_rate
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ServiceRate $service_rate service_rate
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets label_results
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\LabelResult[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\LabelResult[]
      */
     public function getLabelResults()
     {
@@ -214,7 +214,7 @@ class PurchaseShipmentResult extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets label_results
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\LabelResult[] $label_results A list of label results
+     * @param \SellingPartnerApiV5\Model\ShippingV1\LabelResult[] $label_results A list of label results
      *
      * @return self
      */

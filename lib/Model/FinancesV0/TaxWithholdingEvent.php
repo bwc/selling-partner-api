@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TaxWithholdingEvent Class Doc Comment
  *
  * @category Class
  * @description A TaxWithholding event on seller's account.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'posted_date' => 'string',
-        'base_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'withheld_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'tax_withholding_period' => '\SellingPartnerApi\Model\FinancesV0\TaxWithholdingPeriod'
+        'base_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'withheld_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'tax_withholding_period' => '\SellingPartnerApiV5\Model\FinancesV0\TaxWithholdingPeriod'
     ];
 
     /**
@@ -178,7 +178,7 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets base_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getBaseAmount()
     {
@@ -188,7 +188,7 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets base_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $base_amount base_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $base_amount base_amount
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets withheld_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getWithheldAmount()
     {
@@ -211,7 +211,7 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets withheld_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $withheld_amount withheld_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $withheld_amount withheld_amount
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets tax_withholding_period
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TaxWithholdingPeriod|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TaxWithholdingPeriod|null
      */
     public function getTaxWithholdingPeriod()
     {
@@ -234,7 +234,7 @@ class TaxWithholdingEvent extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets tax_withholding_period
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TaxWithholdingPeriod|null $tax_withholding_period tax_withholding_period
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TaxWithholdingPeriod|null $tax_withholding_period tax_withholding_period
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListCatalogItemsResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class ListCatalogItemsResponse extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\CatalogItemsV0\ListMatchingItemsResponse',
-        'errors' => '\SellingPartnerApi\Model\CatalogItemsV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\CatalogItemsV0\ListMatchingItemsResponse',
+        'errors' => '\SellingPartnerApiV5\Model\CatalogItemsV0\Error[]'
     ];
 
     /**
@@ -167,7 +167,7 @@ class ListCatalogItemsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\ListMatchingItemsResponse|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\ListMatchingItemsResponse|null
      */
     public function getPayload()
     {
@@ -177,7 +177,7 @@ class ListCatalogItemsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\ListMatchingItemsResponse|null $payload payload
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\ListMatchingItemsResponse|null $payload payload
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class ListCatalogItemsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\Error[]|null
      */
     public function getErrors()
     {
@@ -200,7 +200,7 @@ class ListCatalogItemsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

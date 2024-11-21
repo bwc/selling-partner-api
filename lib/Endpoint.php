@@ -1,6 +1,6 @@
 <?php
 
-namespace SellingPartnerApi;
+namespace SellingPartnerApiV5;
 
 use InvalidArgumentException;
 
@@ -113,7 +113,7 @@ class Endpoint
             $region .= '_SANDBOX';
         }
 
-        return constant("\SellingPartnerApi\Endpoint::$region");
+        return constant("\SellingPartnerApiV5\Endpoint::$region");
     }
 
     /**

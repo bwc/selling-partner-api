@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**height** | [**\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
-**length** | [**\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
-**weight** | [**\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
-**width** | [**\SellingPartnerApi\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
+**height** | [**\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
+**length** | [**\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
+**weight** | [**\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
+**width** | [**\SellingPartnerApiV5\Model\CatalogItemsV20220401\Dimension**](Dimension.md) |  | [optional]
 
 [[CatalogItemsV20220401 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

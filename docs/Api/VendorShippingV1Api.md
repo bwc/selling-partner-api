@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorShippingV1Api
+# SellingPartnerApiV5\VendorShippingV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getShipmentDetails()`
 
 ```php
-getShipmentDetails($limit, $sort_order, $next_token, $created_after, $created_before, $shipment_confirmed_before, $shipment_confirmed_after, $package_label_created_before, $package_label_created_after, $shipped_before, $shipped_after, $estimated_delivery_before, $estimated_delivery_after, $shipment_delivery_before, $shipment_delivery_after, $requested_pick_up_before, $requested_pick_up_after, $scheduled_pick_up_before, $scheduled_pick_up_after, $current_shipment_status, $vendor_shipment_identifier, $buyer_reference_number, $buyer_warehouse_code, $seller_warehouse_code): \SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse
+getShipmentDetails($limit, $sort_order, $next_token, $created_after, $created_before, $shipment_confirmed_before, $shipment_confirmed_after, $package_label_created_before, $package_label_created_after, $shipped_before, $shipped_after, $estimated_delivery_before, $estimated_delivery_after, $shipment_delivery_before, $shipment_delivery_after, $requested_pick_up_before, $requested_pick_up_after, $scheduled_pick_up_before, $scheduled_pick_up_after, $current_shipment_status, $vendor_shipment_identifier, $buyer_reference_number, $buyer_warehouse_code, $seller_warehouse_code): \SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse
 ```
 
 
@@ -33,16 +33,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorShippingV1Api($config);
 $limit = 56; // int | The limit to the number of records returned. Default value is 50 records.
 $sort_order = 'sort_order_example'; // string | Sort in ascending or descending order by purchase order creation date.
 $next_token = 'next_token_example'; // string | Used for pagination when there are more shipments than the specified result size limit.
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorShippingV1\GetShipmentDetailsResponse**](../Model/VendorShippingV1/GetShipmentDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentDetailsResponse**](../Model/VendorShippingV1/GetShipmentDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 ## `getShipmentLabels()`
 
 ```php
-getShipmentLabels($limit, $sort_order, $next_token, $label_created_after, $labelcreated_before, $buyer_reference_number, $vendor_shipment_identifier, $seller_warehouse_code): \SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels
+getShipmentLabels($limit, $sort_order, $next_token, $label_created_after, $labelcreated_before, $buyer_reference_number, $vendor_shipment_identifier, $seller_warehouse_code): \SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels
 ```
 
 
@@ -143,16 +143,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorShippingV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorShippingV1Api($config);
 $limit = 56; // int | The limit to the number of records returned. Default value is 50 records.
 $sort_order = 'sort_order_example'; // string | Sort in ascending or descending order by transport label creation date.
 $next_token = 'next_token_example'; // string | Used for pagination when there are more transport label than the specified result size limit.
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorShippingV1\GetShipmentLabels**](../Model/VendorShippingV1/GetShipmentLabels.md)
+[**\SellingPartnerApiV5\Model\VendorShippingV1\GetShipmentLabels**](../Model/VendorShippingV1/GetShipmentLabels.md)
 
 ### HTTP request headers
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 ## `submitShipmentConfirmations()`
 
 ```php
-submitShipmentConfirmations($body): \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
+submitShipmentConfirmations($body): \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
 ```
 
 
@@ -221,17 +221,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorShippingV1Api($config);
-$body = new \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest(); // \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorShippingV1Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest(); // \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest
 
 try {
     $result = $apiInstance->submitShipmentConfirmations($body);
@@ -245,11 +245,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest**](../Model/VendorShippingV1/SubmitShipmentConfirmationsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsRequest**](../Model/VendorShippingV1/SubmitShipmentConfirmationsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse**](../Model/VendorShippingV1/SubmitShipmentConfirmationsResponse.md)
+[**\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse**](../Model/VendorShippingV1/SubmitShipmentConfirmationsResponse.md)
 
 ### HTTP request headers
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 ## `submitShipments()`
 
 ```php
-submitShipments($body): \SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
+submitShipments($body): \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse
 ```
 
 
@@ -285,17 +285,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorShippingV1Api($config);
-$body = new \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments(); // \SellingPartnerApi\Model\VendorShippingV1\SubmitShipments
+$apiInstance = new SellingPartnerApiV5\Api\VendorShippingV1Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments(); // \SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments
 
 try {
     $result = $apiInstance->submitShipments($body);
@@ -309,11 +309,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorShippingV1\SubmitShipments**](../Model/VendorShippingV1/SubmitShipments.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipments**](../Model/VendorShippingV1/SubmitShipments.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse**](../Model/VendorShippingV1/SubmitShipmentConfirmationsResponse.md)
+[**\SellingPartnerApiV5\Model\VendorShippingV1\SubmitShipmentConfirmationsResponse**](../Model/VendorShippingV1/SubmitShipmentConfirmationsResponse.md)
 
 ### HTTP request headers
 

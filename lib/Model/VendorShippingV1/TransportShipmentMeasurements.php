@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportShipmentMeasurements Class Doc Comment
  *
  * @category Class
  * @description Shipment measurement details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,8 +61,8 @@ class TransportShipmentMeasurements extends BaseModel implements ModelInterface,
         'total_carton_count' => 'int',
         'total_pallet_stackable' => 'int',
         'total_pallet_non_stackable' => 'int',
-        'shipment_weight' => '\SellingPartnerApi\Model\VendorShippingV1\Weight',
-        'shipment_volume' => '\SellingPartnerApi\Model\VendorShippingV1\Volume'
+        'shipment_weight' => '\SellingPartnerApiV5\Model\VendorShippingV1\Weight',
+        'shipment_volume' => '\SellingPartnerApiV5\Model\VendorShippingV1\Volume'
     ];
 
     /**
@@ -230,7 +230,7 @@ class TransportShipmentMeasurements extends BaseModel implements ModelInterface,
     /**
      * Gets shipment_weight
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null
      */
     public function getShipmentWeight()
     {
@@ -240,7 +240,7 @@ class TransportShipmentMeasurements extends BaseModel implements ModelInterface,
     /**
      * Sets shipment_weight
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Weight|null $shipment_weight shipment_weight
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null $shipment_weight shipment_weight
      *
      * @return self
      */
@@ -253,7 +253,7 @@ class TransportShipmentMeasurements extends BaseModel implements ModelInterface,
     /**
      * Gets shipment_volume
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Volume|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Volume|null
      */
     public function getShipmentVolume()
     {
@@ -263,7 +263,7 @@ class TransportShipmentMeasurements extends BaseModel implements ModelInterface,
     /**
      * Sets shipment_volume
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Volume|null $shipment_volume shipment_volume
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Volume|null $shipment_volume shipment_volume
      *
      * @return self
      */

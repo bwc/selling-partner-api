@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * LabelFormatOption Class Doc Comment
  *
  * @category Class
  * @description The label format details and whether to include a packing slip.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class LabelFormatOption extends BaseModel implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'include_packing_slip_with_label' => 'bool',
-        'label_format' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat'
+        'label_format' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat'
     ];
 
     /**
@@ -166,7 +166,7 @@ class LabelFormatOption extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets label_format
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat|null
      */
     public function getLabelFormat()
     {
@@ -176,7 +176,7 @@ class LabelFormatOption extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets label_format
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat|null $label_format label_format
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat|null $label_format label_format
      *
      * @return self
      */

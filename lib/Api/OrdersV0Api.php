@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * OrdersV0Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class OrdersV0Api extends BaseApi
 {
@@ -44,9 +44,9 @@ class OrdersV0Api extends BaseApi
      * Operation confirmShipment
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -59,9 +59,9 @@ class OrdersV0Api extends BaseApi
      * Operation confirmShipmentWithHttpInfo
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -116,7 +116,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -124,7 +124,7 @@ class OrdersV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -132,7 +132,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -140,7 +140,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -148,7 +148,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -156,7 +156,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -164,7 +164,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -181,7 +181,7 @@ class OrdersV0Api extends BaseApi
      * 
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -197,7 +197,7 @@ class OrdersV0Api extends BaseApi
      * 
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -244,7 +244,7 @@ class OrdersV0Api extends BaseApi
      * Create request for operation 'confirmShipment'
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentRequest $payload Request body of confirmShipment. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -348,9 +348,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string[] $data_elements An array of restricted order data elements to retrieve (valid array elements are \"buyerInfo\" and \"shippingAddress\") (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrderResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse
      */
     public function getOrder($order_id, $data_elements = null)
     {
@@ -364,9 +364,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string[] $data_elements An array of restricted order data elements to retrieve (valid array elements are \"buyerInfo\" and \"shippingAddress\") (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrderResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($order_id, $data_elements = null)
     {
@@ -418,64 +418,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -490,7 +490,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -498,7 +498,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -506,7 +506,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -514,7 +514,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -522,7 +522,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -530,7 +530,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -538,7 +538,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -578,7 +578,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrderAsyncWithHttpInfo($order_id, $data_elements = null)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderResponse';
         $request = $this->getOrderRequest($order_id, $data_elements);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -727,9 +727,9 @@ class OrdersV0Api extends BaseApi
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse
      */
     public function getOrderAddress($order_id)
     {
@@ -742,9 +742,9 @@ class OrdersV0Api extends BaseApi
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderAddressWithHttpInfo($order_id)
     {
@@ -796,64 +796,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -868,7 +868,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -876,7 +876,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -884,7 +884,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -892,7 +892,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -908,7 +908,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -916,7 +916,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -954,7 +954,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrderAddressAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderAddressResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderAddressResponse';
         $request = $this->getOrderAddressRequest($order_id);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -1094,9 +1094,9 @@ class OrdersV0Api extends BaseApi
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse
      */
     public function getOrderBuyerInfo($order_id)
     {
@@ -1109,9 +1109,9 @@ class OrdersV0Api extends BaseApi
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderBuyerInfoWithHttpInfo($order_id)
     {
@@ -1163,64 +1163,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1235,7 +1235,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1243,7 +1243,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1251,7 +1251,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1259,7 +1259,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1267,7 +1267,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1275,7 +1275,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1283,7 +1283,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1321,7 +1321,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrderBuyerInfoAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderBuyerInfoResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderBuyerInfoResponse';
         $request = $this->getOrderBuyerInfoRequest($order_id);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -1463,9 +1463,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      * @param  string[] $data_elements An array of restricted order data elements to retrieve (the only valid array element is \"buyerInfo\") (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse
      */
     public function getOrderItems($order_id, $next_token = null, $data_elements = null)
     {
@@ -1480,9 +1480,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      * @param  string[] $data_elements An array of restricted order data elements to retrieve (the only valid array element is \"buyerInfo\") (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderItemsWithHttpInfo($order_id, $next_token = null, $data_elements = null)
     {
@@ -1534,64 +1534,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1606,7 +1606,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1614,7 +1614,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1622,7 +1622,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1630,7 +1630,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1638,7 +1638,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1646,7 +1646,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1654,7 +1654,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1696,7 +1696,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrderItemsAsyncWithHttpInfo($order_id, $next_token = null, $data_elements = null)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsResponse';
         $request = $this->getOrderItemsRequest($order_id, $next_token, $data_elements);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -1855,9 +1855,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse
      */
     public function getOrderItemsBuyerInfo($order_id, $next_token = null)
     {
@@ -1871,9 +1871,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
      * @param  string $next_token A string token returned in the response of your previous request. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderItemsBuyerInfoWithHttpInfo($order_id, $next_token = null)
     {
@@ -1925,64 +1925,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1997,7 +1997,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2005,7 +2005,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2013,7 +2013,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2021,7 +2021,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2029,7 +2029,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2037,7 +2037,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2045,7 +2045,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2085,7 +2085,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrderItemsBuyerInfoAsyncWithHttpInfo($order_id, $next_token = null)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderItemsBuyerInfoResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderItemsBuyerInfoResponse';
         $request = $this->getOrderItemsBuyerInfoRequest($order_id, $next_token);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -2234,9 +2234,9 @@ class OrdersV0Api extends BaseApi
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse
      */
     public function getOrderRegulatedInfo($order_id)
     {
@@ -2249,9 +2249,9 @@ class OrdersV0Api extends BaseApi
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderRegulatedInfoWithHttpInfo($order_id)
     {
@@ -2300,64 +2300,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2372,7 +2372,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2380,7 +2380,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2388,7 +2388,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2396,7 +2396,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2404,7 +2404,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2412,7 +2412,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2420,7 +2420,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2458,7 +2458,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrderRegulatedInfoAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrderRegulatedInfoResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrderRegulatedInfoResponse';
         $request = $this->getOrderRegulatedInfoRequest($order_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -2645,9 +2645,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $store_chain_store_id The store chain store identifier. Linked to a specific store in a store chain. (optional)
      * @param  string[] $data_elements An array of restricted order data elements to retrieve (valid array elements are \"buyerInfo\" and \"shippingAddress\") (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\OrdersV0\GetOrdersResponse
+     * @return \SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse
      */
     public function getOrders($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $electronic_invoice_statuses = null, $next_token = null, $amazon_order_ids = null, $actual_fulfillment_supply_source_id = null, $is_ispu = null, $store_chain_store_id = null, $data_elements = null)
     {
@@ -2710,9 +2710,9 @@ class OrdersV0Api extends BaseApi
      * @param  string $store_chain_store_id The store chain store identifier. Linked to a specific store in a store chain. (optional)
      * @param  string[] $data_elements An array of restricted order data elements to retrieve (valid array elements are \"buyerInfo\" and \"shippingAddress\") (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\OrdersV0\GetOrdersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $electronic_invoice_statuses = null, $next_token = null, $amazon_order_ids = null, $actual_fulfillment_supply_source_id = null, $is_ispu = null, $store_chain_store_id = null, $data_elements = null)
     {
@@ -2764,64 +2764,64 @@ class OrdersV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse';
+            $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2836,7 +2836,7 @@ class OrdersV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2844,7 +2844,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2852,7 +2852,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2860,7 +2860,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2868,7 +2868,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2876,7 +2876,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2884,7 +2884,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3022,7 +3022,7 @@ class OrdersV0Api extends BaseApi
      */
     public function getOrdersAsyncWithHttpInfo($marketplace_ids, $created_after = null, $created_before = null, $last_updated_after = null, $last_updated_before = null, $order_statuses = null, $fulfillment_channels = null, $payment_methods = null, $buyer_email = null, $seller_order_id = null, $max_results_per_page = null, $easy_ship_shipment_statuses = null, $electronic_invoice_statuses = null, $next_token = null, $amazon_order_ids = null, $actual_fulfillment_supply_source_id = null, $is_ispu = null, $store_chain_store_id = null, $data_elements = null)
     {
-        $returnType = '\SellingPartnerApi\Model\OrdersV0\GetOrdersResponse';
+        $returnType = '\SellingPartnerApiV5\Model\OrdersV0\GetOrdersResponse';
         $request = $this->getOrdersRequest($marketplace_ids, $created_after, $created_before, $last_updated_after, $last_updated_before, $order_statuses, $fulfillment_channels, $payment_methods, $buyer_email, $seller_order_id, $max_results_per_page, $easy_ship_shipment_statuses, $electronic_invoice_statuses, $next_token, $amazon_order_ids, $actual_fulfillment_supply_source_id, $is_ispu, $store_chain_store_id, $data_elements);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -3362,9 +3362,9 @@ class OrdersV0Api extends BaseApi
      * Operation updateShipmentStatus
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3377,9 +3377,9 @@ class OrdersV0Api extends BaseApi
      * Operation updateShipmentStatusWithHttpInfo
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3434,7 +3434,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3442,7 +3442,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3450,7 +3450,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3458,7 +3458,7 @@ class OrdersV0Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3466,7 +3466,7 @@ class OrdersV0Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3474,7 +3474,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3482,7 +3482,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3490,7 +3490,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3507,7 +3507,7 @@ class OrdersV0Api extends BaseApi
      * 
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3523,7 +3523,7 @@ class OrdersV0Api extends BaseApi
      * 
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3570,7 +3570,7 @@ class OrdersV0Api extends BaseApi
      * Create request for operation 'updateShipmentStatus'
      *
      * @param  string $order_id An Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateShipmentStatusRequest $payload The request body for the updateShipmentStatus operation. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -3672,9 +3672,9 @@ class OrdersV0Api extends BaseApi
      * Operation updateVerificationStatus
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -3687,9 +3687,9 @@ class OrdersV0Api extends BaseApi
      * Operation updateVerificationStatusWithHttpInfo
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -3744,7 +3744,7 @@ class OrdersV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3752,7 +3752,7 @@ class OrdersV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3760,7 +3760,7 @@ class OrdersV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3768,7 +3768,7 @@ class OrdersV0Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3776,7 +3776,7 @@ class OrdersV0Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3784,7 +3784,7 @@ class OrdersV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3792,7 +3792,7 @@ class OrdersV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3800,7 +3800,7 @@ class OrdersV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
+                        '\SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3817,7 +3817,7 @@ class OrdersV0Api extends BaseApi
      * 
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3833,7 +3833,7 @@ class OrdersV0Api extends BaseApi
      * 
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -3880,7 +3880,7 @@ class OrdersV0Api extends BaseApi
      * Create request for operation 'updateVerificationStatus'
      *
      * @param  string $order_id An orderId is an Amazon-defined order identifier, in 3-7-7 format. (required)
-     * @param  \SellingPartnerApi\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
+     * @param  \SellingPartnerApiV5\Model\OrdersV0\UpdateVerificationStatusRequest $payload The request body for the updateVerificationStatus operation. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOfferMetricsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the `listOfferMetrics` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ListOfferMetricsResponse extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offers' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponseOffer[]',
-        'pagination' => '\SellingPartnerApi\Model\ReplenishmentV20221107\PaginationResponse'
+        'offers' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponseOffer[]',
+        'pagination' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\PaginationResponse'
     ];
 
     /**
@@ -168,7 +168,7 @@ class ListOfferMetricsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Gets offers
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponseOffer[]|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponseOffer[]|null
      */
     public function getOffers()
     {
@@ -178,7 +178,7 @@ class ListOfferMetricsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Sets offers
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ListOfferMetricsResponseOffer[]|null $offers A list of offers and associated metrics.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOfferMetricsResponseOffer[]|null $offers A list of offers and associated metrics.
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class ListOfferMetricsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\PaginationResponse|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\PaginationResponse|null
      */
     public function getPagination()
     {
@@ -201,7 +201,7 @@ class ListOfferMetricsResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\PaginationResponse|null $pagination pagination
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\PaginationResponse|null $pagination pagination
      *
      * @return self
      */

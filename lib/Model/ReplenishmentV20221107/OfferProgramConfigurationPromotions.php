@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferProgramConfigurationPromotions Class Doc Comment
  *
  * @category Class
  * @description An object which represents all promotions applied to an offer.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_partner_funded_base_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding',
-        'selling_partner_funded_tiered_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding',
-        'amazon_funded_base_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding',
-        'amazon_funded_tiered_discount' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding'
+        'selling_partner_funded_base_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding',
+        'selling_partner_funded_tiered_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding',
+        'amazon_funded_base_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding',
+        'amazon_funded_tiered_discount' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding'
     ];
 
     /**
@@ -155,7 +155,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Gets selling_partner_funded_base_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
      */
     public function getSellingPartnerFundedBaseDiscount()
     {
@@ -165,7 +165,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Sets selling_partner_funded_base_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $selling_partner_funded_base_discount selling_partner_funded_base_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $selling_partner_funded_base_discount selling_partner_funded_base_discount
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Gets selling_partner_funded_tiered_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
      */
     public function getSellingPartnerFundedTieredDiscount()
     {
@@ -188,7 +188,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Sets selling_partner_funded_tiered_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $selling_partner_funded_tiered_discount selling_partner_funded_tiered_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $selling_partner_funded_tiered_discount selling_partner_funded_tiered_discount
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Gets amazon_funded_base_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
      */
     public function getAmazonFundedBaseDiscount()
     {
@@ -211,7 +211,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Sets amazon_funded_base_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $amazon_funded_base_discount amazon_funded_base_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $amazon_funded_base_discount amazon_funded_base_discount
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Gets amazon_funded_tiered_discount
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null
      */
     public function getAmazonFundedTieredDiscount()
     {
@@ -234,7 +234,7 @@ class OfferProgramConfigurationPromotions extends BaseModel implements ModelInte
     /**
      * Sets amazon_funded_tiered_discount
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $amazon_funded_tiered_discount amazon_funded_tiered_discount
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfigurationPromotionsDiscountFunding|null $amazon_funded_tiered_discount amazon_funded_tiered_discount
      *
      * @return self
      */

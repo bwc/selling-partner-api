@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetAttributesResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the GetAttributes operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetAttributesResponse extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'buyer' => '\SellingPartnerApi\Model\MessagingV1\GetAttributesResponseBuyer',
-        'errors' => '\SellingPartnerApi\Model\MessagingV1\Error[]'
+        'buyer' => '\SellingPartnerApiV5\Model\MessagingV1\GetAttributesResponseBuyer',
+        'errors' => '\SellingPartnerApiV5\Model\MessagingV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetAttributesResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets buyer
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetAttributesResponseBuyer|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetAttributesResponseBuyer|null
      */
     public function getBuyer()
     {
@@ -178,7 +178,7 @@ class GetAttributesResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets buyer
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetAttributesResponseBuyer|null $buyer buyer
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetAttributesResponseBuyer|null $buyer buyer
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetAttributesResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetAttributesResponse extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

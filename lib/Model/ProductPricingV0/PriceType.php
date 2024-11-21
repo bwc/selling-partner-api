@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PriceType Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,10 +57,10 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'landed_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'listing_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'shipping' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'points' => '\SellingPartnerApi\Model\ProductPricingV0\Points'
+        'landed_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'listing_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'shipping' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'points' => '\SellingPartnerApiV5\Model\ProductPricingV0\Points'
     ];
 
     /**
@@ -157,7 +157,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets landed_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getLandedPrice()
     {
@@ -167,7 +167,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets landed_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $landed_price landed_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $landed_price landed_price
      *
      * @return self
      */
@@ -180,7 +180,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets listing_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getListingPrice()
     {
@@ -190,7 +190,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets listing_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $listing_price listing_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $listing_price listing_price
      *
      * @return self
      */
@@ -203,7 +203,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets shipping
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getShipping()
     {
@@ -213,7 +213,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets shipping
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $shipping shipping
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $shipping shipping
      *
      * @return self
      */
@@ -226,7 +226,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets points
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Points|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Points|null
      */
     public function getPoints()
     {
@@ -236,7 +236,7 @@ class PriceType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets points
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Points|null $points points
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Points|null $points points
      *
      * @return self
      */

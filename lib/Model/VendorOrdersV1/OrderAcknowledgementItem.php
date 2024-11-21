@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderAcknowledgementItem Class Doc Comment
  *
  * @category Class
  * @description Details of the item being acknowledged.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,11 +61,11 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'ordered_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
-        'net_cost' => '\SellingPartnerApi\Model\VendorOrdersV1\Money',
-        'list_price' => '\SellingPartnerApi\Model\VendorOrdersV1\Money',
+        'ordered_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
+        'net_cost' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Money',
+        'list_price' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Money',
         'discount_multiplier' => 'string',
-        'item_acknowledgements' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderItemAcknowledgement[]'
+        'item_acknowledgements' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemAcknowledgement[]'
     ];
 
     /**
@@ -254,7 +254,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets ordered_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -264,7 +264,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets ordered_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity $ordered_quantity ordered_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity $ordered_quantity ordered_quantity
      *
      * @return self
      */
@@ -277,7 +277,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets net_cost
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null
      */
     public function getNetCost()
     {
@@ -287,7 +287,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets net_cost
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Money|null $net_cost net_cost
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null $net_cost net_cost
      *
      * @return self
      */
@@ -300,7 +300,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets list_price
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null
      */
     public function getListPrice()
     {
@@ -310,7 +310,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets list_price
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Money|null $list_price list_price
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null $list_price list_price
      *
      * @return self
      */
@@ -346,7 +346,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Gets item_acknowledgements
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderItemAcknowledgement[]
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemAcknowledgement[]
      */
     public function getItemAcknowledgements()
     {
@@ -356,7 +356,7 @@ class OrderAcknowledgementItem extends BaseModel implements ModelInterface, Arra
     /**
      * Sets item_acknowledgements
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderItemAcknowledgement[] $item_acknowledgements This is used to indicate acknowledged quantity.
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemAcknowledgement[] $item_acknowledgements This is used to indicate acknowledged quantity.
      *
      * @return self
      */

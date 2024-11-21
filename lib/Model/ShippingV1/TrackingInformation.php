@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TrackingInformation Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the getTrackingInformation operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class TrackingInformation extends BaseModel implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'tracking_id' => 'string',
-        'summary' => '\SellingPartnerApi\Model\ShippingV1\TrackingSummary',
+        'summary' => '\SellingPartnerApiV5\Model\ShippingV1\TrackingSummary',
         'promised_delivery_date' => 'string',
-        'event_history' => '\SellingPartnerApi\Model\ShippingV1\Event[]'
+        'event_history' => '\SellingPartnerApiV5\Model\ShippingV1\Event[]'
     ];
 
     /**
@@ -205,7 +205,7 @@ class TrackingInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets summary
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\TrackingSummary
+     * @return \SellingPartnerApiV5\Model\ShippingV1\TrackingSummary
      */
     public function getSummary()
     {
@@ -215,7 +215,7 @@ class TrackingInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets summary
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\TrackingSummary $summary summary
+     * @param \SellingPartnerApiV5\Model\ShippingV1\TrackingSummary $summary summary
      *
      * @return self
      */
@@ -251,7 +251,7 @@ class TrackingInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets event_history
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Event[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Event[]
      */
     public function getEventHistory()
     {
@@ -261,7 +261,7 @@ class TrackingInformation extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets event_history
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Event[] $event_history A list of events of a shipment.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Event[] $event_history A list of events of a shipment.
      *
      * @return self
      */

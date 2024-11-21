@@ -1,4 +1,4 @@
-# SellingPartnerApi\FbaInventoryV1Api
+# SellingPartnerApiV5\FbaInventoryV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getInventorySummaries()`
 
 ```php
-getInventorySummaries($granularity_type, $granularity_id, $marketplace_ids, $details, $start_date_time, $seller_skus, $next_token, $seller_sku): \SellingPartnerApi\Model\FbaInventoryV1\GetInventorySummariesResponse
+getInventorySummaries($granularity_type, $granularity_id, $marketplace_ids, $details, $start_date_time, $seller_skus, $next_token, $seller_sku): \SellingPartnerApiV5\Model\FbaInventoryV1\GetInventorySummariesResponse
 ```
 
 
@@ -37,16 +37,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaInventoryV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaInventoryV1Api($config);
 $granularity_type = 'granularity_type_example'; // string | The granularity type for the inventory aggregation level.
 $granularity_id = 'granularity_id_example'; // string | The granularity ID for the inventory aggregation level.
 $marketplace_ids = array('marketplace_ids_example'); // string[] | The marketplace ID for the marketplace for which to return inventory summaries.
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaInventoryV1\GetInventorySummariesResponse**](../Model/FbaInventoryV1/GetInventorySummariesResponse.md)
+[**\SellingPartnerApiV5\Model\FbaInventoryV1\GetInventorySummariesResponse**](../Model/FbaInventoryV1/GetInventorySummariesResponse.md)
 
 ### HTTP request headers
 

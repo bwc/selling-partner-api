@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListFinancialEventGroupsPayload Class Doc Comment
  *
  * @category Class
  * @description The payload for the listFinancialEventGroups operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ListFinancialEventGroupsPayload extends BaseModel implements ModelInterfac
       */
     protected static $openAPITypes = [
         'next_token' => 'string',
-        'financial_event_group_list' => '\SellingPartnerApi\Model\FinancesV0\FinancialEventGroup[]'
+        'financial_event_group_list' => '\SellingPartnerApiV5\Model\FinancesV0\FinancialEventGroup[]'
     ];
 
     /**
@@ -166,7 +166,7 @@ class ListFinancialEventGroupsPayload extends BaseModel implements ModelInterfac
     /**
      * Gets financial_event_group_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FinancialEventGroup[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FinancialEventGroup[]|null
      */
     public function getFinancialEventGroupList()
     {
@@ -176,7 +176,7 @@ class ListFinancialEventGroupsPayload extends BaseModel implements ModelInterfac
     /**
      * Sets financial_event_group_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FinancialEventGroup[]|null $financial_event_group_list A list of financial event group information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FinancialEventGroup[]|null $financial_event_group_list A list of financial event group information.
      *
      * @return self
      */

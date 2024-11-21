@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeedsV20210630;
+namespace SellingPartnerApiV5\Model\FeedsV20210630;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFeedsResponse Class Doc Comment
  *
  * @category Class
  * @description Response schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetFeedsResponse extends BaseModel implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'feeds' => '\SellingPartnerApi\Model\FeedsV20210630\Feed[]',
+        'feeds' => '\SellingPartnerApiV5\Model\FeedsV20210630\Feed[]',
         'next_token' => 'string'
     ];
 
@@ -171,7 +171,7 @@ class GetFeedsResponse extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets feeds
      *
-     * @return \SellingPartnerApi\Model\FeedsV20210630\Feed[]
+     * @return \SellingPartnerApiV5\Model\FeedsV20210630\Feed[]
      */
     public function getFeeds()
     {
@@ -181,7 +181,7 @@ class GetFeedsResponse extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets feeds
      *
-     * @param \SellingPartnerApi\Model\FeedsV20210630\Feed[] $feeds A list of feeds.
+     * @param \SellingPartnerApiV5\Model\FeedsV20210630\Feed[] $feeds A list of feeds.
      *
      * @return self
      */

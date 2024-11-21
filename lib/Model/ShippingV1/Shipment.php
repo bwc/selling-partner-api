@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Shipment Class Doc Comment
  *
  * @category Class
  * @description The shipment related data.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,11 +60,11 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     protected static $openAPITypes = [
         'shipment_id' => 'string',
         'client_reference_id' => 'string',
-        'ship_from' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'ship_to' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'accepted_rate' => '\SellingPartnerApi\Model\ShippingV1\AcceptedRate',
-        'shipper' => '\SellingPartnerApi\Model\ShippingV1\Party',
-        'containers' => '\SellingPartnerApi\Model\ShippingV1\Container[]'
+        'ship_from' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'ship_to' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'accepted_rate' => '\SellingPartnerApiV5\Model\ShippingV1\AcceptedRate',
+        'shipper' => '\SellingPartnerApiV5\Model\ShippingV1\Party',
+        'containers' => '\SellingPartnerApiV5\Model\ShippingV1\Container[]'
     ];
 
     /**
@@ -242,7 +242,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ship_from
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipFrom()
     {
@@ -252,7 +252,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ship_from
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_from ship_from
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_from ship_from
      *
      * @return self
      */
@@ -265,7 +265,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets ship_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipTo()
     {
@@ -275,7 +275,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets ship_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_to ship_to
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_to ship_to
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets accepted_rate
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\AcceptedRate|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\AcceptedRate|null
      */
     public function getAcceptedRate()
     {
@@ -298,7 +298,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets accepted_rate
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\AcceptedRate|null $accepted_rate accepted_rate
+     * @param \SellingPartnerApiV5\Model\ShippingV1\AcceptedRate|null $accepted_rate accepted_rate
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets shipper
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Party|null
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Party|null
      */
     public function getShipper()
     {
@@ -321,7 +321,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets shipper
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Party|null $shipper shipper
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Party|null $shipper shipper
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Container[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Container[]
      */
     public function getContainers()
     {
@@ -344,7 +344,7 @@ class Shipment extends BaseModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Container[] $containers A list of container.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Container[] $containers A list of container.
      *
      * @return self
      */

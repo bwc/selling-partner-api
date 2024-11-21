@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * CatalogItemsV20220401Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class CatalogItemsV20220401Api extends BaseApi
 {
@@ -48,9 +48,9 @@ class CatalogItemsV20220401Api extends BaseApi
      * @param  string[] $included_data A comma-delimited list of data sets to include in the response. Default: `summaries`. (optional)
      * @param  string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\Item
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\Item
      */
     public function getCatalogItem($asin, $marketplace_ids, $included_data = null, $locale = null)
     {
@@ -66,9 +66,9 @@ class CatalogItemsV20220401Api extends BaseApi
      * @param  string[] $included_data A comma-delimited list of data sets to include in the response. Default: `summaries`. (optional)
      * @param  string $locale Locale for retrieving localized summaries. Defaults to the primary locale of the marketplace. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\CatalogItemsV20220401\Item, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\CatalogItemsV20220401\Item, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCatalogItemWithHttpInfo($asin, $marketplace_ids, $included_data = null, $locale = null)
     {
@@ -117,80 +117,80 @@ class CatalogItemsV20220401Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\Item' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\Item' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\Item', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Item', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\CatalogItemsV20220401\Item';
+            $returnType = '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Item';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -205,7 +205,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\Item',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Item',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -213,7 +213,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -221,7 +221,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -229,7 +229,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -237,7 +237,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -253,7 +253,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -261,7 +261,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -269,7 +269,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -313,7 +313,7 @@ class CatalogItemsV20220401Api extends BaseApi
      */
     public function getCatalogItemAsyncWithHttpInfo($asin, $marketplace_ids, $included_data = null, $locale = null)
     {
-        $returnType = '\SellingPartnerApi\Model\CatalogItemsV20220401\Item';
+        $returnType = '\SellingPartnerApiV5\Model\CatalogItemsV20220401\Item';
         $request = $this->getCatalogItemRequest($asin, $marketplace_ids, $included_data, $locale);
         $signedRequest = $this->config->signRequest(
             $request
@@ -494,9 +494,9 @@ class CatalogItemsV20220401Api extends BaseApi
      * @param  string $page_token A token to fetch a certain page when there are multiple pages worth of results. (optional)
      * @param  string $keywords_locale The language of the keywords provided for `keywords`-based queries. Defaults to the primary locale of the marketplace. **Note:** Cannot be used with `identifiers`. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults
      */
     public function searchCatalogItems($marketplace_ids, $identifiers = null, $identifiers_type = null, $included_data = null, $locale = null, $seller_id = null, $keywords = null, $brand_names = null, $classification_ids = null, $page_size = 10, $page_token = null, $keywords_locale = null)
     {
@@ -520,9 +520,9 @@ class CatalogItemsV20220401Api extends BaseApi
      * @param  string $page_token A token to fetch a certain page when there are multiple pages worth of results. (optional)
      * @param  string $keywords_locale The language of the keywords provided for `keywords`-based queries. Defaults to the primary locale of the marketplace. **Note:** Cannot be used with `identifiers`. (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchCatalogItemsWithHttpInfo($marketplace_ids, $identifiers = null, $identifiers_type = null, $included_data = null, $locale = null, $seller_id = null, $keywords = null, $brand_names = null, $classification_ids = null, $page_size = 10, $page_token = null, $keywords_locale = null)
     {
@@ -571,80 +571,80 @@ class CatalogItemsV20220401Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults';
+            $returnType = '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -659,7 +659,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -667,7 +667,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -675,7 +675,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -683,7 +683,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -691,7 +691,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -699,7 +699,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -707,7 +707,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -723,7 +723,7 @@ class CatalogItemsV20220401Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\CatalogItemsV20220401\ErrorList',
+                        '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -783,7 +783,7 @@ class CatalogItemsV20220401Api extends BaseApi
      */
     public function searchCatalogItemsAsyncWithHttpInfo($marketplace_ids, $identifiers = null, $identifiers_type = null, $included_data = null, $locale = null, $seller_id = null, $keywords = null, $brand_names = null, $classification_ids = null, $page_size = 10, $page_token = null, $keywords_locale = null)
     {
-        $returnType = '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemSearchResults';
+        $returnType = '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemSearchResults';
         $request = $this->searchCatalogItemsRequest($marketplace_ids, $identifiers, $identifiers_type, $included_data, $locale, $seller_id, $keywords, $brand_names, $classification_ids, $page_size, $page_token, $keywords_locale);
         $signedRequest = $this->config->signRequest(
             $request

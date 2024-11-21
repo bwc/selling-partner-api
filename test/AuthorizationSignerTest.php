@@ -1,12 +1,12 @@
 <?php
 
-namespace SellingPartnerApi\Tests;
+namespace SellingPartnerApiV5\Tests;
 
 use GuzzleHttp\Psr7\Request;
 use PHPUnit\Framework\TestCase;
-use SellingPartnerApi\Endpoint;
-use SellingPartnerApi\Credentials;
-use SellingPartnerApi\AuthorizationSigner;
+use SellingPartnerApiV5\Endpoint;
+use SellingPartnerApiV5\Credentials;
+use SellingPartnerApiV5\AuthorizationSigner;
 
 class AuthorizationSignerTest extends TestCase
 {

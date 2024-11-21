@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,30 +24,30 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * EasyShipV20220323Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class EasyShipV20220323Api extends BaseApi
 {
     /**
      * Operation createScheduledPackage
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request create_scheduled_package_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request create_scheduled_package_request (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Package
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Package
      */
     public function createScheduledPackage($create_scheduled_package_request)
     {
@@ -58,11 +58,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation createScheduledPackageWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\EasyShipV20220323\Package, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\EasyShipV20220323\Package, HTTP status code, HTTP response headers (array of strings)
      */
     public function createScheduledPackageWithHttpInfo($create_scheduled_package_request)
     {
@@ -111,80 +111,80 @@ class EasyShipV20220323Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\Package' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\Package' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\Package', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\Package', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\Package';
+            $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\Package';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -199,7 +199,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\Package',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\Package',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -279,7 +279,7 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -294,14 +294,14 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createScheduledPackageAsyncWithHttpInfo($create_scheduled_package_request)
     {
-        $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\Package';
+        $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\Package';
         $request = $this->createScheduledPackageRequest($create_scheduled_package_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -347,7 +347,7 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Create request for operation 'createScheduledPackage'
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackageRequest $create_scheduled_package_request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -433,11 +433,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation createScheduledPackageBulk
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request create_scheduled_packages_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request create_scheduled_packages_request (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse
      */
     public function createScheduledPackageBulk($create_scheduled_packages_request)
     {
@@ -448,11 +448,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation createScheduledPackageBulkWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createScheduledPackageBulkWithHttpInfo($create_scheduled_packages_request)
     {
@@ -501,80 +501,80 @@ class EasyShipV20220323Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse';
+            $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -589,7 +589,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -597,7 +597,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -605,7 +605,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -613,7 +613,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -621,7 +621,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -629,7 +629,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -637,7 +637,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -645,7 +645,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -653,7 +653,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -669,7 +669,7 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -684,14 +684,14 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createScheduledPackageBulkAsyncWithHttpInfo($create_scheduled_packages_request)
     {
-        $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesResponse';
+        $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesResponse';
         $request = $this->createScheduledPackageBulkRequest($create_scheduled_packages_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -737,7 +737,7 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Create request for operation 'createScheduledPackageBulk'
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\CreateScheduledPackagesRequest $create_scheduled_packages_request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -826,9 +826,9 @@ class EasyShipV20220323Api extends BaseApi
      * @param  string $amazon_order_id An Amazon-defined order identifier. Identifies the order that the seller wants to deliver using Amazon Easy Ship. (required)
      * @param  string $marketplace_id An identifier for the marketplace in which the seller is selling. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Package
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Package
      */
     public function getScheduledPackage($amazon_order_id, $marketplace_id)
     {
@@ -842,9 +842,9 @@ class EasyShipV20220323Api extends BaseApi
      * @param  string $amazon_order_id An Amazon-defined order identifier. Identifies the order that the seller wants to deliver using Amazon Easy Ship. (required)
      * @param  string $marketplace_id An identifier for the marketplace in which the seller is selling. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\EasyShipV20220323\Package, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\EasyShipV20220323\Package, HTTP status code, HTTP response headers (array of strings)
      */
     public function getScheduledPackageWithHttpInfo($amazon_order_id, $marketplace_id)
     {
@@ -893,80 +893,80 @@ class EasyShipV20220323Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\Package' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\Package' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\Package', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\Package', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\Package';
+            $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\Package';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -981,7 +981,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\Package',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\Package',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -989,7 +989,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -997,7 +997,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1005,7 +1005,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1013,7 +1013,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1021,7 +1021,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1029,7 +1029,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1037,7 +1037,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1045,7 +1045,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1085,7 +1085,7 @@ class EasyShipV20220323Api extends BaseApi
      */
     public function getScheduledPackageAsyncWithHttpInfo($amazon_order_id, $marketplace_id)
     {
-        $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\Package';
+        $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\Package';
         $request = $this->getScheduledPackageRequest($amazon_order_id, $marketplace_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1248,11 +1248,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation listHandoverSlots
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request list_handover_slots_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request list_handover_slots_request (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse
      */
     public function listHandoverSlots($list_handover_slots_request = null)
     {
@@ -1263,11 +1263,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation listHandoverSlotsWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function listHandoverSlotsWithHttpInfo($list_handover_slots_request = null)
     {
@@ -1316,80 +1316,80 @@ class EasyShipV20220323Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1404,7 +1404,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1412,7 +1412,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1420,7 +1420,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1428,7 +1428,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1436,7 +1436,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1444,7 +1444,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1460,7 +1460,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1468,7 +1468,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,7 +1484,7 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1499,14 +1499,14 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function listHandoverSlotsAsyncWithHttpInfo($list_handover_slots_request = null)
     {
-        $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsResponse';
         $request = $this->listHandoverSlotsRequest($list_handover_slots_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1552,7 +1552,7 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Create request for operation 'listHandoverSlots'
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\ListHandoverSlotsRequest $list_handover_slots_request (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1632,11 +1632,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation updateScheduledPackages
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request update_scheduled_packages_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request update_scheduled_packages_request (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Packages
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Packages
      */
     public function updateScheduledPackages($update_scheduled_packages_request = null)
     {
@@ -1647,11 +1647,11 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Operation updateScheduledPackagesWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\EasyShipV20220323\Packages, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\EasyShipV20220323\Packages, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateScheduledPackagesWithHttpInfo($update_scheduled_packages_request = null)
     {
@@ -1700,80 +1700,80 @@ class EasyShipV20220323Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\Packages' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\Packages' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\Packages', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\Packages', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\Packages';
+            $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\Packages';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1788,7 +1788,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\Packages',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\Packages',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1796,7 +1796,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1804,7 +1804,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1812,7 +1812,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1820,7 +1820,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1828,7 +1828,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1836,7 +1836,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1844,7 +1844,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1852,7 +1852,7 @@ class EasyShipV20220323Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\EasyShipV20220323\ErrorList',
+                        '\SellingPartnerApiV5\Model\EasyShipV20220323\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1868,7 +1868,7 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1883,14 +1883,14 @@ class EasyShipV20220323Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateScheduledPackagesAsyncWithHttpInfo($update_scheduled_packages_request = null)
     {
-        $returnType = '\SellingPartnerApi\Model\EasyShipV20220323\Packages';
+        $returnType = '\SellingPartnerApiV5\Model\EasyShipV20220323\Packages';
         $request = $this->updateScheduledPackagesRequest($update_scheduled_packages_request);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1936,7 +1936,7 @@ class EasyShipV20220323Api extends BaseApi
     /**
      * Create request for operation 'updateScheduledPackages'
      *
-     * @param  \SellingPartnerApi\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
+     * @param  \SellingPartnerApiV5\Model\EasyShipV20220323\UpdateScheduledPackagesRequest $update_scheduled_packages_request (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

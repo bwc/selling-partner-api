@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InvalidItemReason Class Doc Comment
  *
  * @category Class
  * @description The reason that the item is invalid for return.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class InvalidItemReason extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'invalid_item_reason_code' => '\SellingPartnerApi\Model\FbaOutboundV20200701\InvalidItemReasonCode',
+        'invalid_item_reason_code' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidItemReasonCode',
         'description' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class InvalidItemReason extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_item_reason_code
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\InvalidItemReasonCode
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidItemReasonCode
      */
     public function getInvalidItemReasonCode()
     {
@@ -159,7 +159,7 @@ class InvalidItemReason extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_item_reason_code
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\InvalidItemReasonCode $invalid_item_reason_code invalid_item_reason_code
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidItemReasonCode $invalid_item_reason_code invalid_item_reason_code
      *
      * @return self
      */

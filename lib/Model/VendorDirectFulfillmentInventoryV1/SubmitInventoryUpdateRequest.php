@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitInventoryUpdateRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the submitInventoryUpdate operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitInventoryUpdateRequest extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inventory' => '\SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\InventoryUpdate'
+        'inventory' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\InventoryUpdate'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitInventoryUpdateRequest extends BaseModel implements ModelInterface, 
     /**
      * Gets inventory
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\InventoryUpdate|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\InventoryUpdate|null
      */
     public function getInventory()
     {
@@ -147,7 +147,7 @@ class SubmitInventoryUpdateRequest extends BaseModel implements ModelInterface, 
     /**
      * Sets inventory
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentInventoryV1\InventoryUpdate|null $inventory inventory
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentInventoryV1\InventoryUpdate|null $inventory inventory
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# SellingPartnerApi\ProductTypeDefinitionsV20200901Api
+# SellingPartnerApiV5\ProductTypeDefinitionsV20200901Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 ## `getDefinitionsProductType()`
 
 ```php
-getDefinitionsProductType($product_type, $marketplace_ids, $seller_id, $product_type_version, $requirements, $requirements_enforced, $locale): \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition
+getDefinitionsProductType($product_type, $marketplace_ids, $seller_id, $product_type_version, $requirements, $requirements_enforced, $locale): \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition
 ```
 
 
@@ -32,16 +32,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductTypeDefinitionsV20200901Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ProductTypeDefinitionsV20200901Api($config);
 $product_type = LUGGAGE; // string | The Amazon product type name.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
     // Note: This parameter is limited to one marketplaceId at this time.
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition**](../Model/ProductTypeDefinitionsV20200901/ProductTypeDefinition.md)
+[**\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeDefinition**](../Model/ProductTypeDefinitionsV20200901/ProductTypeDefinition.md)
 
 ### HTTP request headers
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 ## `searchDefinitionsProductTypes()`
 
 ```php
-searchDefinitionsProductTypes($marketplace_ids, $keywords): \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList
+searchDefinitionsProductTypes($marketplace_ids, $keywords): \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList
 ```
 
 
@@ -110,16 +110,16 @@ The x-amzn-RateLimit-Limit response header returns the usage plan rate limits th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductTypeDefinitionsV20200901Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ProductTypeDefinitionsV20200901Api($config);
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
 $keywords = LUGGAGE; // string[] | A comma-delimited list of keywords to search product types by.
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\ProductTypeList**](../Model/ProductTypeDefinitionsV20200901/ProductTypeList.md)
+[**\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\ProductTypeList**](../Model/ProductTypeDefinitionsV20200901/ProductTypeList.md)
 
 ### HTTP request headers
 

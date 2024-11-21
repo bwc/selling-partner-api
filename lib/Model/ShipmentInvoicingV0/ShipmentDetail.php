@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentDetail Class Doc Comment
  *
  * @category Class
  * @description The information required by a selling partner to issue a shipment invoice.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,16 +62,16 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
         'amazon_order_id' => 'string',
         'amazon_shipment_id' => 'string',
         'purchase_date' => 'string',
-        'shipping_address' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\Address',
+        'shipping_address' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\Address',
         'payment_method_details' => 'string[]',
         'marketplace_id' => 'string',
         'seller_id' => 'string',
         'buyer_name' => 'string',
         'buyer_county' => 'string',
-        'buyer_tax_info' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\BuyerTaxInfo',
-        'marketplace_tax_info' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\MarketplaceTaxInfo',
+        'buyer_tax_info' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\BuyerTaxInfo',
+        'marketplace_tax_info' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\MarketplaceTaxInfo',
         'seller_display_name' => 'string',
-        'shipment_items' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentItem[]'
+        'shipment_items' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentItem[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets shipping_address
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\Address|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Address|null
      */
     public function getShippingAddress()
     {
@@ -317,7 +317,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets shipping_address
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\Address|null $shipping_address shipping_address
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\Address|null $shipping_address shipping_address
      *
      * @return self
      */
@@ -445,7 +445,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets buyer_tax_info
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\BuyerTaxInfo|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\BuyerTaxInfo|null
      */
     public function getBuyerTaxInfo()
     {
@@ -455,7 +455,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets buyer_tax_info
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\BuyerTaxInfo|null $buyer_tax_info buyer_tax_info
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\BuyerTaxInfo|null $buyer_tax_info buyer_tax_info
      *
      * @return self
      */
@@ -468,7 +468,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets marketplace_tax_info
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\MarketplaceTaxInfo|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\MarketplaceTaxInfo|null
      */
     public function getMarketplaceTaxInfo()
     {
@@ -478,7 +478,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets marketplace_tax_info
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\MarketplaceTaxInfo|null $marketplace_tax_info marketplace_tax_info
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\MarketplaceTaxInfo|null $marketplace_tax_info marketplace_tax_info
      *
      * @return self
      */
@@ -514,7 +514,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets shipment_items
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentItem[]|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentItem[]|null
      */
     public function getShipmentItems()
     {
@@ -524,7 +524,7 @@ class ShipmentDetail extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets shipment_items
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\ShipmentItem[]|null $shipment_items A list of shipment items.
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\ShipmentItem[]|null $shipment_items A list of shipment items.
      *
      * @return self
      */

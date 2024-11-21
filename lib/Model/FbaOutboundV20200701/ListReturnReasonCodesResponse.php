@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListReturnReasonCodesResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the listReturnReasonCodes operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ListReturnReasonCodesResponse extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResult',
-        'errors' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResult',
+        'errors' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class ListReturnReasonCodesResponse extends BaseModel implements ModelInterface,
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResult|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResult|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class ListReturnReasonCodesResponse extends BaseModel implements ModelInterface,
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResult|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class ListReturnReasonCodesResponse extends BaseModel implements ModelInterface,
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Error[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class ListReturnReasonCodesResponse extends BaseModel implements ModelInterface,
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

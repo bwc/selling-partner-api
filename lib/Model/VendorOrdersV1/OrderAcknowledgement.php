@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderAcknowledgement Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class OrderAcknowledgement extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
         'acknowledgement_date' => 'string',
-        'items' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgementItem[]'
+        'items' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgementItem[]'
     ];
 
     /**
@@ -189,7 +189,7 @@ class OrderAcknowledgement extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -199,7 +199,7 @@ class OrderAcknowledgement extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -235,7 +235,7 @@ class OrderAcknowledgement extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgementItem[]
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgementItem[]
      */
     public function getItems()
     {
@@ -245,7 +245,7 @@ class OrderAcknowledgement extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgementItem[] $items A list of the items being acknowledged with associated details.
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgementItem[] $items A list of the items being acknowledged with associated details.
      *
      * @return self
      */

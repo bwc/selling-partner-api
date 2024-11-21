@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InvoiceRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the sendInvoice operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class InvoiceRequest extends BaseModel implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attachments' => '\SellingPartnerApi\Model\MessagingV1\Attachment[]'
+        'attachments' => '\SellingPartnerApiV5\Model\MessagingV1\Attachment[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class InvoiceRequest extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets attachments
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\Attachment[]|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\Attachment[]|null
      */
     public function getAttachments()
     {
@@ -147,7 +147,7 @@ class InvoiceRequest extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets attachments
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\Attachment[]|null $attachments Attachments to include in the message to the buyer.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\Attachment[]|null $attachments Attachments to include in the message to the buyer.
      *
      * @return self
      */

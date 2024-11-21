@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RetrochargeEvent Class Doc Comment
  *
  * @category Class
  * @description A retrocharge or retrocharge reversal.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,10 +61,10 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
         'retrocharge_event_type' => 'string',
         'amazon_order_id' => 'string',
         'posted_date' => 'string',
-        'base_tax' => '\SellingPartnerApi\Model\FinancesV0\Currency',
-        'shipping_tax' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'base_tax' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
+        'shipping_tax' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'marketplace_name' => 'string',
-        'retrocharge_tax_withheld_list' => '\SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]'
+        'retrocharge_tax_withheld_list' => '\SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]'
     ];
 
     /**
@@ -245,7 +245,7 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets base_tax
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getBaseTax()
     {
@@ -255,7 +255,7 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets base_tax
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $base_tax base_tax
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $base_tax base_tax
      *
      * @return self
      */
@@ -268,7 +268,7 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets shipping_tax
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getShippingTax()
     {
@@ -278,7 +278,7 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets shipping_tax
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $shipping_tax shipping_tax
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $shipping_tax shipping_tax
      *
      * @return self
      */
@@ -314,7 +314,7 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets retrocharge_tax_withheld_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]|null
      */
     public function getRetrochargeTaxWithheldList()
     {
@@ -324,7 +324,7 @@ class RetrochargeEvent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets retrocharge_tax_withheld_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\TaxWithheldComponent[]|null $retrocharge_tax_withheld_list A list of information about taxes withheld.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\TaxWithheldComponent[]|null $retrocharge_tax_withheld_list A list of information about taxes withheld.
      *
      * @return self
      */

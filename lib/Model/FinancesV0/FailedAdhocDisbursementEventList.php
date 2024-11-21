@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FailedAdhocDisbursementEventList Class Doc Comment
  *
  * @category Class
  * @description Failed ad hoc disbursement event list.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,7 +63,7 @@ class FailedAdhocDisbursementEventList extends BaseModel implements ModelInterfa
         'disbursement_id' => 'string',
         'payment_disbursement_type' => 'string',
         'status' => 'string',
-        'transfer_amount' => '\SellingPartnerApi\Model\FinancesV0\Currency',
+        'transfer_amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency',
         'posted_date' => 'string'
     ];
 
@@ -291,7 +291,7 @@ class FailedAdhocDisbursementEventList extends BaseModel implements ModelInterfa
     /**
      * Gets transfer_amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getTransferAmount()
     {
@@ -301,7 +301,7 @@ class FailedAdhocDisbursementEventList extends BaseModel implements ModelInterfa
     /**
      * Sets transfer_amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $transfer_amount transfer_amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $transfer_amount transfer_amount
      *
      * @return self
      */

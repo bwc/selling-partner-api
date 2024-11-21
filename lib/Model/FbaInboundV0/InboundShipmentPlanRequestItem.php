@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InboundShipmentPlanRequestItem Class Doc Comment
  *
  * @category Class
  * @description Item information for creating an inbound shipment plan. Submitted with a call to the createInboundShipmentPlan operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class InboundShipmentPlanRequestItem extends BaseModel implements ModelInterface
     protected static $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'condition' => '\SellingPartnerApi\Model\FbaInboundV0\Condition',
+        'condition' => '\SellingPartnerApiV5\Model\FbaInboundV0\Condition',
         'quantity' => 'int',
         'quantity_in_case' => 'int',
-        'prep_details_list' => '\SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]'
+        'prep_details_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]'
     ];
 
     /**
@@ -225,7 +225,7 @@ class InboundShipmentPlanRequestItem extends BaseModel implements ModelInterface
     /**
      * Gets condition
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Condition
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Condition
      */
     public function getCondition()
     {
@@ -235,7 +235,7 @@ class InboundShipmentPlanRequestItem extends BaseModel implements ModelInterface
     /**
      * Sets condition
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Condition $condition condition
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Condition $condition condition
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class InboundShipmentPlanRequestItem extends BaseModel implements ModelInterface
     /**
      * Gets prep_details_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]|null
      */
     public function getPrepDetailsList()
     {
@@ -304,7 +304,7 @@ class InboundShipmentPlanRequestItem extends BaseModel implements ModelInterface
     /**
      * Sets prep_details_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepDetails[]|null $prep_details_list A list of preparation instructions and who is responsible for that preparation.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepDetails[]|null $prep_details_list A list of preparation instructions and who is responsible for that preparation.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * IneligibleRate Class Doc Comment
  *
  * @category Class
  * @description Detailed information for an ineligible shipping service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class IneligibleRate extends BaseModel implements ModelInterface, ArrayAccess, \
         'service_name' => 'string',
         'carrier_name' => 'string',
         'carrier_id' => 'string',
-        'ineligibility_reasons' => '\SellingPartnerApi\Model\ShippingV2\IneligibilityReason[]'
+        'ineligibility_reasons' => '\SellingPartnerApiV5\Model\ShippingV2\IneligibilityReason[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class IneligibleRate extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets ineligibility_reasons
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\IneligibilityReason[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\IneligibilityReason[]
      */
     public function getIneligibilityReasons()
     {
@@ -278,7 +278,7 @@ class IneligibleRate extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets ineligibility_reasons
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\IneligibilityReason[] $ineligibility_reasons A list of reasons why a shipping service offering is ineligible.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\IneligibilityReason[] $ineligibility_reasons A list of reasons why a shipping service offering is ineligible.
      *
      * @return self
      */

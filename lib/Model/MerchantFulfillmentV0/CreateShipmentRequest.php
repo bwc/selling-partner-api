@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipment_request_details' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentRequestDetails',
+        'shipment_request_details' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentRequestDetails',
         'shipping_service_id' => 'string',
         'shipping_service_offer_id' => 'string',
-        'hazmat_type' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\HazmatType',
-        'label_format_option' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormatOptionRequest',
-        'shipment_level_seller_inputs_list' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInputs[]'
+        'hazmat_type' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\HazmatType',
+        'label_format_option' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormatOptionRequest',
+        'shipment_level_seller_inputs_list' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInputs[]'
     ];
 
     /**
@@ -173,7 +173,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets shipment_request_details
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentRequestDetails
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentRequestDetails
      */
     public function getShipmentRequestDetails()
     {
@@ -183,7 +183,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets shipment_request_details
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ShipmentRequestDetails $shipment_request_details shipment_request_details
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShipmentRequestDetails $shipment_request_details shipment_request_details
      *
      * @return self
      */
@@ -242,7 +242,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets hazmat_type
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\HazmatType|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\HazmatType|null
      */
     public function getHazmatType()
     {
@@ -252,7 +252,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets hazmat_type
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\HazmatType|null $hazmat_type hazmat_type
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\HazmatType|null $hazmat_type hazmat_type
      *
      * @return self
      */
@@ -265,7 +265,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets label_format_option
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormatOptionRequest|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormatOptionRequest|null
      */
     public function getLabelFormatOption()
     {
@@ -275,7 +275,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets label_format_option
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormatOptionRequest|null $label_format_option label_format_option
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormatOptionRequest|null $label_format_option label_format_option
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets shipment_level_seller_inputs_list
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInputs[]|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInputs[]|null
      */
     public function getShipmentLevelSellerInputsList()
     {
@@ -298,7 +298,7 @@ class CreateShipmentRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets shipment_level_seller_inputs_list
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInputs[]|null $shipment_level_seller_inputs_list A list of additional seller input pairs required to purchase shipping.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInputs[]|null $shipment_level_seller_inputs_list A list of additional seller input pairs required to purchase shipping.
      *
      * @return self
      */

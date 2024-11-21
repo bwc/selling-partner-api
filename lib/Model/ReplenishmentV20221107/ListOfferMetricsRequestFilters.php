@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOfferMetricsRequestFilters Class Doc Comment
  *
  * @category Class
  * @description Use these parameters to filter results. Any result must match all provided parameters. For any parameter that is an array, the result must match at least one element in the provided array.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,11 +58,11 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aggregation_frequency' => '\SellingPartnerApi\Model\ReplenishmentV20221107\AggregationFrequency',
-        'time_interval' => '\SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval',
-        'time_period_type' => '\SellingPartnerApi\Model\ReplenishmentV20221107\TimePeriodType',
+        'aggregation_frequency' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\AggregationFrequency',
+        'time_interval' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval',
+        'time_period_type' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimePeriodType',
         'marketplace_id' => 'string',
-        'program_types' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[]',
+        'program_types' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[]',
         'asins' => 'string[]'
     ];
 
@@ -191,7 +191,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Gets aggregation_frequency
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\AggregationFrequency|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\AggregationFrequency|null
      */
     public function getAggregationFrequency()
     {
@@ -201,7 +201,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Sets aggregation_frequency
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\AggregationFrequency|null $aggregation_frequency aggregation_frequency
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\AggregationFrequency|null $aggregation_frequency aggregation_frequency
      *
      * @return self
      */
@@ -214,7 +214,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Gets time_interval
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval
      */
     public function getTimeInterval()
     {
@@ -224,7 +224,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Sets time_interval
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval $time_interval time_interval
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval $time_interval time_interval
      *
      * @return self
      */
@@ -237,7 +237,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Gets time_period_type
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\TimePeriodType
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimePeriodType
      */
     public function getTimePeriodType()
     {
@@ -247,7 +247,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Sets time_period_type
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\TimePeriodType $time_period_type time_period_type
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimePeriodType $time_period_type time_period_type
      *
      * @return self
      */
@@ -283,7 +283,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Gets program_types
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[]
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[]
      */
     public function getProgramTypes()
     {
@@ -293,7 +293,7 @@ class ListOfferMetricsRequestFilters extends BaseModel implements ModelInterface
     /**
      * Sets program_types
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType[] $program_types A list of replenishment program types.
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType[] $program_types A list of replenishment program types.
      *
      * @return self
      */

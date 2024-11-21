@@ -1,4 +1,4 @@
-# SellingPartnerApi\VendorDirectFulfillmentSandboxV20211028Api
+# SellingPartnerApiV5\VendorDirectFulfillmentSandboxV20211028Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 ## `generateOrderScenarios()`
 
 ```php
-generateOrderScenarios($body): \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TransactionReference
+generateOrderScenarios($body): \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TransactionReference
 ```
 
 
@@ -23,17 +23,17 @@ Submits a request to generate test order data for Vendor Direct Fulfillment API 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentSandboxV20211028Api($config);
-$body = new \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\GenerateOrderScenarioRequest(); // \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\GenerateOrderScenarioRequest
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentSandboxV20211028Api($config);
+$body = new \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\GenerateOrderScenarioRequest(); // \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\GenerateOrderScenarioRequest
 
 try {
     $result = $apiInstance->generateOrderScenarios($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\GenerateOrderScenarioRequest**](../Model/VendorDirectFulfillmentSandboxV20211028/GenerateOrderScenarioRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\GenerateOrderScenarioRequest**](../Model/VendorDirectFulfillmentSandboxV20211028/GenerateOrderScenarioRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TransactionReference**](../Model/VendorDirectFulfillmentSandboxV20211028/TransactionReference.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TransactionReference**](../Model/VendorDirectFulfillmentSandboxV20211028/TransactionReference.md)
 
 ### HTTP request headers
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 ## `getOrderScenarios()`
 
 ```php
-getOrderScenarios($transaction_id): \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TransactionStatus
+getOrderScenarios($transaction_id): \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TransactionStatus
 ```
 
 
@@ -79,16 +79,16 @@ Returns the status of the transaction indicated by the specified transactionId. 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\VendorDirectFulfillmentSandboxV20211028Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\VendorDirectFulfillmentSandboxV20211028Api($config);
 $transaction_id = 'transaction_id_example'; // string | The transaction identifier returned in the response to the generateOrderScenarios operation.
 
 try {
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\TransactionStatus**](../Model/VendorDirectFulfillmentSandboxV20211028/TransactionStatus.md)
+[**\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\TransactionStatus**](../Model/VendorDirectFulfillmentSandboxV20211028/TransactionStatus.md)
 
 ### HTTP request headers
 

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FulfillmentPreviewItem Class Doc Comment
  *
  * @category Class
  * @description Item information for a shipment in a fulfillment order preview.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class FulfillmentPreviewItem extends BaseModel implements ModelInterface, ArrayA
         'seller_sku' => 'string',
         'quantity' => 'int',
         'seller_fulfillment_order_item_id' => 'string',
-        'estimated_shipping_weight' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Weight',
+        'estimated_shipping_weight' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Weight',
         'shipping_weight_calculation_method' => 'string'
     ];
 
@@ -273,7 +273,7 @@ class FulfillmentPreviewItem extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets estimated_shipping_weight
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Weight|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Weight|null
      */
     public function getEstimatedShippingWeight()
     {
@@ -283,7 +283,7 @@ class FulfillmentPreviewItem extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets estimated_shipping_weight
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Weight|null $estimated_shipping_weight estimated_shipping_weight
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Weight|null $estimated_shipping_weight estimated_shipping_weight
      *
      * @return self
      */

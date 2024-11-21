@@ -1,16 +1,16 @@
 <?php
 
-namespace SellingPartnerApi\Tests;
+namespace SellingPartnerApiV5\Tests;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
-use SellingPartnerApi\Contract\RequestSignerContract;
-use SellingPartnerApi\Authentication;
-use SellingPartnerApi\Configuration;
-use SellingPartnerApi\Endpoint;
+use SellingPartnerApiV5\Contract\RequestSignerContract;
+use SellingPartnerApiV5\Authentication;
+use SellingPartnerApiV5\Configuration;
+use SellingPartnerApiV5\Endpoint;
 
 class RequestSignerTest extends TestCase
 {

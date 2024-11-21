@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMessagingActionsForOrderResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getMessagingActionsForOrder operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_links' => '\SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponseLinks',
-        '_embedded' => '\SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponseEmbedded',
-        'errors' => '\SellingPartnerApi\Model\MessagingV1\Error[]'
+        '_links' => '\SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponseLinks',
+        '_embedded' => '\SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponseEmbedded',
+        'errors' => '\SellingPartnerApiV5\Model\MessagingV1\Error[]'
     ];
 
     /**
@@ -174,7 +174,7 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
     /**
      * Gets _links
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponseLinks|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponseLinks|null
      */
     public function getLinks()
     {
@@ -184,7 +184,7 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
     /**
      * Sets _links
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponseLinks|null $_links _links
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponseLinks|null $_links _links
      *
      * @return self
      */
@@ -197,7 +197,7 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
     /**
      * Gets _embedded
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponseEmbedded|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponseEmbedded|null
      */
     public function getEmbedded()
     {
@@ -207,7 +207,7 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
     /**
      * Sets _embedded
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetMessagingActionsForOrderResponseEmbedded|null $_embedded _embedded
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionsForOrderResponseEmbedded|null $_embedded _embedded
      *
      * @return self
      */
@@ -220,7 +220,7 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -230,7 +230,7 @@ class GetMessagingActionsForOrderResponse extends BaseModel implements ModelInte
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

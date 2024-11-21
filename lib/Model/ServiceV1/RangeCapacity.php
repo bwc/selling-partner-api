@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RangeCapacity Class Doc Comment
  *
  * @category Class
  * @description Range capacity entity where each entry has a capacity type and corresponding slots.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class RangeCapacity extends BaseModel implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'capacity_type' => '\SellingPartnerApi\Model\ServiceV1\CapacityType',
-        'slots' => '\SellingPartnerApi\Model\ServiceV1\RangeSlot[]'
+        'capacity_type' => '\SellingPartnerApiV5\Model\ServiceV1\CapacityType',
+        'slots' => '\SellingPartnerApiV5\Model\ServiceV1\RangeSlot[]'
     ];
 
     /**
@@ -143,7 +143,7 @@ class RangeCapacity extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets capacity_type
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\CapacityType|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\CapacityType|null
      */
     public function getCapacityType()
     {
@@ -153,7 +153,7 @@ class RangeCapacity extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets capacity_type
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\CapacityType|null $capacity_type capacity_type
+     * @param \SellingPartnerApiV5\Model\ServiceV1\CapacityType|null $capacity_type capacity_type
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class RangeCapacity extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets slots
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\RangeSlot[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\RangeSlot[]|null
      */
     public function getSlots()
     {
@@ -176,7 +176,7 @@ class RangeCapacity extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets slots
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\RangeSlot[]|null $slots Array of capacity slots in range slot format.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\RangeSlot[]|null $slots Array of capacity slots in range slot format.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemRelationshipsByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Relationship details for the Amazon catalog item for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ItemRelationshipsByMarketplace extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'relationships' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemRelationship[]'
+        'relationships' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemRelationship[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class ItemRelationshipsByMarketplace extends BaseModel implements ModelInterface
     /**
      * Gets relationships
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemRelationship[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemRelationship[]
      */
     public function getRelationships()
     {
@@ -182,7 +182,7 @@ class ItemRelationshipsByMarketplace extends BaseModel implements ModelInterface
     /**
      * Sets relationships
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemRelationship[] $relationships Relationships for the item.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemRelationship[] $relationships Relationships for the item.
      *
      * @return self
      */

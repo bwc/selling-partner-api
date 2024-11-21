@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitFulfillmentOrderStatusUpdateRequest Class Doc Comment
  *
  * @category Class
  * @description The request body schema for the submitFulfillmentOrderStatusUpdate operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitFulfillmentOrderStatusUpdateRequest extends BaseModel implements Mod
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fulfillment_order_status' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderStatus'
+        'fulfillment_order_status' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderStatus'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitFulfillmentOrderStatusUpdateRequest extends BaseModel implements Mod
     /**
      * Gets fulfillment_order_status
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderStatus|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderStatus|null
      */
     public function getFulfillmentOrderStatus()
     {
@@ -147,7 +147,7 @@ class SubmitFulfillmentOrderStatusUpdateRequest extends BaseModel implements Mod
     /**
      * Sets fulfillment_order_status
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentOrderStatus|null $fulfillment_order_status fulfillment_order_status
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentOrderStatus|null $fulfillment_order_status fulfillment_order_status
      *
      * @return self
      */

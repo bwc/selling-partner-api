@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemOffersResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,10 +57,10 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headers' => '\SellingPartnerApi\Model\ProductPricingV0\HttpResponseHeaders',
-        'status' => '\SellingPartnerApi\Model\ProductPricingV0\GetOffersHttpStatusLine',
-        'body' => '\SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse',
-        'request' => '\SellingPartnerApi\Model\ProductPricingV0\ItemOffersRequestParams'
+        'headers' => '\SellingPartnerApiV5\Model\ProductPricingV0\HttpResponseHeaders',
+        'status' => '\SellingPartnerApiV5\Model\ProductPricingV0\GetOffersHttpStatusLine',
+        'body' => '\SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse',
+        'request' => '\SellingPartnerApiV5\Model\ProductPricingV0\ItemOffersRequestParams'
     ];
 
     /**
@@ -160,7 +160,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets headers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\HttpResponseHeaders|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\HttpResponseHeaders|null
      */
     public function getHeaders()
     {
@@ -170,7 +170,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets headers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\HttpResponseHeaders|null $headers headers
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\HttpResponseHeaders|null $headers headers
      *
      * @return self
      */
@@ -183,7 +183,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\GetOffersHttpStatusLine|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersHttpStatusLine|null
      */
     public function getStatus()
     {
@@ -193,7 +193,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\GetOffersHttpStatusLine|null $status status
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersHttpStatusLine|null $status status
      *
      * @return self
      */
@@ -206,7 +206,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets body
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse
      */
     public function getBody()
     {
@@ -216,7 +216,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets body
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse $body body
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse $body body
      *
      * @return self
      */
@@ -229,7 +229,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets request
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ItemOffersRequestParams
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ItemOffersRequestParams
      */
     public function getRequest()
     {
@@ -239,7 +239,7 @@ class ItemOffersResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets request
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ItemOffersRequestParams $request request
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ItemOffersRequestParams $request request
      *
      * @return self
      */

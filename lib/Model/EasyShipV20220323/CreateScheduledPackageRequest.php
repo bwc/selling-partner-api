@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateScheduledPackageRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the `createScheduledPackage` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class CreateScheduledPackageRequest extends BaseModel implements ModelInterface,
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
         'marketplace_id' => 'string',
-        'package_details' => '\SellingPartnerApi\Model\EasyShipV20220323\PackageDetails'
+        'package_details' => '\SellingPartnerApiV5\Model\EasyShipV20220323\PackageDetails'
     ];
 
     /**
@@ -219,7 +219,7 @@ class CreateScheduledPackageRequest extends BaseModel implements ModelInterface,
     /**
      * Gets package_details
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\PackageDetails
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\PackageDetails
      */
     public function getPackageDetails()
     {
@@ -229,7 +229,7 @@ class CreateScheduledPackageRequest extends BaseModel implements ModelInterface,
     /**
      * Sets package_details
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\PackageDetails $package_details package_details
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\PackageDetails $package_details package_details
      *
      * @return self
      */

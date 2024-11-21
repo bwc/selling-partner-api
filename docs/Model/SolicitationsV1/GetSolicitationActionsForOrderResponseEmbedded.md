@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**actions** | [**\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponse[]**](GetSolicitationActionResponse.md) |  |
+**actions** | [**\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponse[]**](GetSolicitationActionResponse.md) |  |
 
 [[SolicitationsV1 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

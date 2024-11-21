@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardSingleImageSpecsDetailModule Class Doc Comment
  *
  * @category Class
  * @description A standard image with paragraphs and a bulleted list, and extra space for technical details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,14 +58,14 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'image' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageComponent',
-        'description_headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'description_block1' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock',
-        'description_block2' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock',
-        'specification_headline' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent',
-        'specification_list_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardHeaderTextListBlock',
-        'specification_text_block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock'
+        'headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'image' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent',
+        'description_headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'description_block1' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock',
+        'description_block2' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock',
+        'specification_headline' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent',
+        'specification_list_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardHeaderTextListBlock',
+        'specification_text_block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock'
     ];
 
     /**
@@ -179,7 +179,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getHeadline()
     {
@@ -189,7 +189,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $headline headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $headline headline
      *
      * @return self
      */
@@ -202,7 +202,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets image
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null
      */
     public function getImage()
     {
@@ -212,7 +212,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets image
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null $image image
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null $image image
      *
      * @return self
      */
@@ -225,7 +225,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets description_headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getDescriptionHeadline()
     {
@@ -235,7 +235,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets description_headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $description_headline description_headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $description_headline description_headline
      *
      * @return self
      */
@@ -248,7 +248,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets description_block1
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getDescriptionBlock1()
     {
@@ -258,7 +258,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets description_block1
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $description_block1 description_block1
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $description_block1 description_block1
      *
      * @return self
      */
@@ -271,7 +271,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets description_block2
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getDescriptionBlock2()
     {
@@ -281,7 +281,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets description_block2
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $description_block2 description_block2
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $description_block2 description_block2
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets specification_headline
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getSpecificationHeadline()
     {
@@ -304,7 +304,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets specification_headline
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $specification_headline specification_headline
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $specification_headline specification_headline
      *
      * @return self
      */
@@ -317,7 +317,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets specification_list_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardHeaderTextListBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardHeaderTextListBlock|null
      */
     public function getSpecificationListBlock()
     {
@@ -327,7 +327,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets specification_list_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardHeaderTextListBlock|null $specification_list_block specification_list_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardHeaderTextListBlock|null $specification_list_block specification_list_block
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Gets specification_text_block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null
      */
     public function getSpecificationTextBlock()
     {
@@ -350,7 +350,7 @@ class StandardSingleImageSpecsDetailModule extends BaseModel implements ModelInt
     /**
      * Sets specification_text_block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardTextBlock|null $specification_text_block specification_text_block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardTextBlock|null $specification_text_block specification_text_block
      *
      * @return self
      */

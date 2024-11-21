@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ImageOffsets Class Doc Comment
  *
  * @category Class
  * @description The top left corner of the cropped image, specified in the original image's coordinate space.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ImageOffsets extends BaseModel implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'x' => '\SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits',
-        'y' => '\SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits'
+        'x' => '\SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits',
+        'y' => '\SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits'
     ];
 
     /**
@@ -149,7 +149,7 @@ class ImageOffsets extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets x
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits
      */
     public function getX()
     {
@@ -159,7 +159,7 @@ class ImageOffsets extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets x
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits $x x
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits $x x
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class ImageOffsets extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets y
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits
      */
     public function getY()
     {
@@ -182,7 +182,7 @@ class ImageOffsets extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets y
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits $y y
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits $y y
      *
      * @return self
      */

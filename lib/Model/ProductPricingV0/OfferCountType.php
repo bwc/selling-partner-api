@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferCountType Class Doc Comment
  *
  * @category Class
  * @description The total number of offers for the specified condition and fulfillment channel.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class OfferCountType extends BaseModel implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'condition' => 'string',
-        'fulfillment_channel' => '\SellingPartnerApi\Model\ProductPricingV0\FulfillmentChannelType',
+        'fulfillment_channel' => '\SellingPartnerApiV5\Model\ProductPricingV0\FulfillmentChannelType',
         'offer_count' => 'int'
     ];
 
@@ -172,7 +172,7 @@ class OfferCountType extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets fulfillment_channel
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\FulfillmentChannelType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\FulfillmentChannelType|null
      */
     public function getFulfillmentChannel()
     {
@@ -182,7 +182,7 @@ class OfferCountType extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets fulfillment_channel
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\FulfillmentChannelType|null $fulfillment_channel fulfillment_channel
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\FulfillmentChannelType|null $fulfillment_channel fulfillment_channel
      *
      * @return self
      */

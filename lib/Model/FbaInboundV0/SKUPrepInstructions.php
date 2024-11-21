@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SKUPrepInstructions Class Doc Comment
  *
  * @category Class
  * @description Labeling requirements and item preparation instructions to help you prepare items for shipment to Amazon's fulfillment network.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'seller_sku' => 'string',
         'asin' => 'string',
-        'barcode_instruction' => '\SellingPartnerApi\Model\FbaInboundV0\BarcodeInstruction',
-        'prep_guidance' => '\SellingPartnerApi\Model\FbaInboundV0\PrepGuidance',
-        'prep_instruction_list' => '\SellingPartnerApi\Model\FbaInboundV0\PrepInstruction[]',
-        'amazon_prep_fees_details_list' => '\SellingPartnerApi\Model\FbaInboundV0\AmazonPrepFeesDetails[]'
+        'barcode_instruction' => '\SellingPartnerApiV5\Model\FbaInboundV0\BarcodeInstruction',
+        'prep_guidance' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepGuidance',
+        'prep_instruction_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction[]',
+        'amazon_prep_fees_details_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\AmazonPrepFeesDetails[]'
     ];
 
     /**
@@ -213,7 +213,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets barcode_instruction
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\BarcodeInstruction|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\BarcodeInstruction|null
      */
     public function getBarcodeInstruction()
     {
@@ -223,7 +223,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets barcode_instruction
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\BarcodeInstruction|null $barcode_instruction barcode_instruction
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\BarcodeInstruction|null $barcode_instruction barcode_instruction
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets prep_guidance
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepGuidance|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepGuidance|null
      */
     public function getPrepGuidance()
     {
@@ -246,7 +246,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets prep_guidance
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepGuidance|null $prep_guidance prep_guidance
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepGuidance|null $prep_guidance prep_guidance
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets prep_instruction_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction[]|null
      */
     public function getPrepInstructionList()
     {
@@ -269,7 +269,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets prep_instruction_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction[]|null $prep_instruction_list A list of preparation instructions to help with item sourcing decisions.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction[]|null $prep_instruction_list A list of preparation instructions to help with item sourcing decisions.
      *
      * @return self
      */
@@ -282,7 +282,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets amazon_prep_fees_details_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\AmazonPrepFeesDetails[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\AmazonPrepFeesDetails[]|null
      */
     public function getAmazonPrepFeesDetailsList()
     {
@@ -292,7 +292,7 @@ class SKUPrepInstructions extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets amazon_prep_fees_details_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\AmazonPrepFeesDetails[]|null $amazon_prep_fees_details_list A list of preparation instructions and fees for Amazon to prep goods for shipment.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\AmazonPrepFeesDetails[]|null $amazon_prep_fees_details_list A list of preparation instructions and fees for Amazon to prep goods for shipment.
      *
      * @return self
      */

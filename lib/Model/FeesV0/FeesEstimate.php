@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeesEstimate Class Doc Comment
  *
  * @category Class
  * @description The total estimated fees for an item and a list of details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class FeesEstimate extends BaseModel implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'time_of_fees_estimation' => 'string',
-        'total_fees_estimate' => '\SellingPartnerApi\Model\FeesV0\MoneyType',
-        'fee_detail_list' => '\SellingPartnerApi\Model\FeesV0\FeeDetail[]'
+        'total_fees_estimate' => '\SellingPartnerApiV5\Model\FeesV0\MoneyType',
+        'fee_detail_list' => '\SellingPartnerApiV5\Model\FeesV0\FeeDetail[]'
     ];
 
     /**
@@ -175,7 +175,7 @@ class FeesEstimate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets total_fees_estimate
      *
-     * @return \SellingPartnerApi\Model\FeesV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\MoneyType|null
      */
     public function getTotalFeesEstimate()
     {
@@ -185,7 +185,7 @@ class FeesEstimate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets total_fees_estimate
      *
-     * @param \SellingPartnerApi\Model\FeesV0\MoneyType|null $total_fees_estimate total_fees_estimate
+     * @param \SellingPartnerApiV5\Model\FeesV0\MoneyType|null $total_fees_estimate total_fees_estimate
      *
      * @return self
      */
@@ -198,7 +198,7 @@ class FeesEstimate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets fee_detail_list
      *
-     * @return \SellingPartnerApi\Model\FeesV0\FeeDetail[]|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeeDetail[]|null
      */
     public function getFeeDetailList()
     {
@@ -208,7 +208,7 @@ class FeesEstimate extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets fee_detail_list
      *
-     * @param \SellingPartnerApi\Model\FeesV0\FeeDetail[]|null $fee_detail_list A list of other fees that contribute to a given fee.
+     * @param \SellingPartnerApiV5\Model\FeesV0\FeeDetail[]|null $fee_detail_list A list of other fees that contribute to a given fee.
      *
      * @return self
      */

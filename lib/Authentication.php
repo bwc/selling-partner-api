@@ -1,6 +1,6 @@
 <?php
 
-namespace SellingPartnerApi;
+namespace SellingPartnerApiV5;
 
 use DateInterval;
 use DateTime;
@@ -11,10 +11,10 @@ use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\RequestInterface;
 use RuntimeException;
-use SellingPartnerApi\Api\TokensV20210301Api as TokensApi;
-use SellingPartnerApi\Contract\AuthorizationSignerContract;
-use SellingPartnerApi\Contract\RequestSignerContract;
-use SellingPartnerApi\Model\TokensV20210301 as Tokens;
+use SellingPartnerApiV5\Api\TokensV20210301Api as TokensApi;
+use SellingPartnerApiV5\Contract\AuthorizationSignerContract;
+use SellingPartnerApiV5\Contract\RequestSignerContract;
+use SellingPartnerApiV5\Model\TokensV20210301 as Tokens;
 
 class Authentication implements RequestSignerContract
 {
@@ -45,7 +45,7 @@ class Authentication implements RequestSignerContract
      */
     private $awsSecretAccessKey;
     
-    /** @var \SellingPartnerApi\Api\TokensV20210301Api */
+    /** @var \SellingPartnerApiV5\Api\TokensV20210301Api */
     private $tokensApi = null;
 
     /** @var AuthorizationSignerContract */
@@ -189,7 +189,7 @@ class Authentication implements RequestSignerContract
             if ($operation === 'getReportDocument') {
                 // We added a reportType query parameter that isn't in the official models, so that we can
                 // determine if the getReportDocument call requires an RDT
-                $constantPath = isset($params['reportType']) ? 'SellingPartnerApi\ReportType::' . $params['reportType'] : null;
+                $constantPath = isset($params['reportType']) ? 'SellingPartnerApiV5\ReportType::' . $params['reportType'] : null;
 
                 if ($constantPath === null || !defined($constantPath) || !constant($constantPath)['restricted']) {
                     $needRdt = false;
@@ -235,7 +235,7 @@ class Authentication implements RequestSignerContract
     /**
      * Get credentials for standard API operations.
      *
-     * @return \SellingPartnerApi\Credentials A set of access credentials for making calls to the SP API
+     * @return \SellingPartnerApiV5\Credentials A set of access credentials for making calls to the SP API
      */
     public function getAwsCredentials(): Credentials
     {
@@ -248,7 +248,7 @@ class Authentication implements RequestSignerContract
     /**
      * Get credentials for grantless operations with the given scope.
      *
-     * @return \SellingPartnerApi\Credentials The grantless credentials
+     * @return \SellingPartnerApiV5\Credentials The grantless credentials
      */
     public function getGrantlessAwsCredentials(): Credentials
     {
@@ -262,7 +262,7 @@ class Authentication implements RequestSignerContract
     /**
      * Get a security token using a role ARN.
      *
-     * @return \SellingPartnerApi\Credentials A set of STS credentials
+     * @return \SellingPartnerApiV5\Credentials A set of STS credentials
      */
     public function getRoleCredentials(): Credentials
     {
@@ -304,7 +304,7 @@ class Authentication implements RequestSignerContract
      * @param string $method The HTTP method of the restricted operation
      * @param ?array $dataElements The restricted data elements to request access to, if any.
      *      Only applies to getOrder, getOrders, and getOrderItems. Default empty array.
-     * @return \SellingPartnerApi\Credentials A Credentials object holding the RDT
+     * @return \SellingPartnerApiV5\Credentials A Credentials object holding the RDT
      */
     public function getRestrictedDataToken(string $path, string $method, ?array $dataElements = []): Credentials
     {
@@ -488,7 +488,7 @@ class Authentication implements RequestSignerContract
     /**
      * Check if the given credentials need to be created/renewed.
      *
-     * @param ?\SellingPartnerApi\Credentials $creds The credentials to check
+     * @param ?\SellingPartnerApiV5\Credentials $creds The credentials to check
      * @return bool True if the credentials need to be updated, false otherwise
      */
     private function needNewCredentials(?Credentials $creds = null): bool

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateReservationRecord Class Doc Comment
  *
  * @category Class
  * @description `CreateReservationRecord` entity contains the `Reservation` if there is an error/warning while performing the requested operation on it, otherwise it will contain the new `reservationId`.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reservation' => '\SellingPartnerApi\Model\ServiceV1\Reservation',
-        'warnings' => '\SellingPartnerApi\Model\ServiceV1\Warning[]',
-        'errors' => '\SellingPartnerApi\Model\ServiceV1\Error[]'
+        'reservation' => '\SellingPartnerApiV5\Model\ServiceV1\Reservation',
+        'warnings' => '\SellingPartnerApiV5\Model\ServiceV1\Warning[]',
+        'errors' => '\SellingPartnerApiV5\Model\ServiceV1\Error[]'
     ];
 
     /**
@@ -149,7 +149,7 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
     /**
      * Gets reservation
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Reservation|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Reservation|null
      */
     public function getReservation()
     {
@@ -159,7 +159,7 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
     /**
      * Sets reservation
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Reservation|null $reservation reservation
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Reservation|null $reservation reservation
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Warning[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null
      */
     public function getWarnings()
     {
@@ -182,7 +182,7 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Error[]|null
      */
     public function getErrors()
     {
@@ -205,7 +205,7 @@ class CreateReservationRecord extends BaseModel implements ModelInterface, Array
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

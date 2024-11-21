@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetListingOffersBatchResponse Class Doc Comment
  *
  * @category Class
  * @description The response associated with the `getListingOffersBatch` API call.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetListingOffersBatchResponse extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'responses' => '\SellingPartnerApi\Model\ProductPricingV0\ListingOffersResponse[]'
+        'responses' => '\SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersResponse[]'
     ];
 
     /**
@@ -170,7 +170,7 @@ class GetListingOffersBatchResponse extends BaseModel implements ModelInterface,
     /**
      * Gets responses
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ListingOffersResponse[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersResponse[]|null
      */
     public function getResponses()
     {
@@ -180,7 +180,7 @@ class GetListingOffersBatchResponse extends BaseModel implements ModelInterface,
     /**
      * Sets responses
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ListingOffersResponse[]|null $responses A list of `getListingOffers` batched responses.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ListingOffersResponse[]|null $responses A list of `getListingOffers` batched responses.
      *
      * @return self
      */

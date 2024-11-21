@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseShipmentResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the purchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class PurchaseShipmentResponse extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\ShippingV2\PurchaseShipmentResult'
+        'payload' => '\SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentResult'
     ];
 
     /**
@@ -162,7 +162,7 @@ class PurchaseShipmentResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\PurchaseShipmentResult|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentResult|null
      */
     public function getPayload()
     {
@@ -172,7 +172,7 @@ class PurchaseShipmentResponse extends BaseModel implements ModelInterface, Arra
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\PurchaseShipmentResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\ShippingV2\PurchaseShipmentResult|null $payload payload
      *
      * @return self
      */

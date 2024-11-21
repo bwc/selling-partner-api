@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PutTransportDetailsRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for a putTransportDetails operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class PutTransportDetailsRequest extends BaseModel implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'is_partnered' => 'bool',
-        'shipment_type' => '\SellingPartnerApi\Model\FbaInboundV0\ShipmentType',
-        'transport_details' => '\SellingPartnerApi\Model\FbaInboundV0\TransportDetailInput'
+        'shipment_type' => '\SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType',
+        'transport_details' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportDetailInput'
     ];
 
     /**
@@ -181,7 +181,7 @@ class PutTransportDetailsRequest extends BaseModel implements ModelInterface, Ar
     /**
      * Gets shipment_type
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\ShipmentType
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType
      */
     public function getShipmentType()
     {
@@ -191,7 +191,7 @@ class PutTransportDetailsRequest extends BaseModel implements ModelInterface, Ar
     /**
      * Sets shipment_type
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\ShipmentType $shipment_type shipment_type
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType $shipment_type shipment_type
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class PutTransportDetailsRequest extends BaseModel implements ModelInterface, Ar
     /**
      * Gets transport_details
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportDetailInput
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportDetailInput
      */
     public function getTransportDetails()
     {
@@ -214,7 +214,7 @@ class PutTransportDetailsRequest extends BaseModel implements ModelInterface, Ar
     /**
      * Sets transport_details
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportDetailInput $transport_details transport_details
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportDetailInput $transport_details transport_details
      *
      * @return self
      */

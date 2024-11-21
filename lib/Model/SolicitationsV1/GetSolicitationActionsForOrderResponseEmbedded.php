@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SolicitationsV1;
+namespace SellingPartnerApiV5\Model\SolicitationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetSolicitationActionsForOrderResponseEmbedded Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetSolicitationActionsForOrderResponseEmbedded extends BaseModel implement
       * @var string[]
       */
     protected static $openAPITypes = [
-        'actions' => '\SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponse[]'
+        'actions' => '\SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponse[]'
     ];
 
     /**
@@ -139,7 +139,7 @@ class GetSolicitationActionsForOrderResponseEmbedded extends BaseModel implement
     /**
      * Gets actions
      *
-     * @return \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponse[]
+     * @return \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponse[]
      */
     public function getActions()
     {
@@ -149,7 +149,7 @@ class GetSolicitationActionsForOrderResponseEmbedded extends BaseModel implement
     /**
      * Sets actions
      *
-     * @param \SellingPartnerApi\Model\SolicitationsV1\GetSolicitationActionResponse[] $actions actions
+     * @param \SellingPartnerApiV5\Model\SolicitationsV1\GetSolicitationActionResponse[] $actions actions
      *
      * @return self
      */

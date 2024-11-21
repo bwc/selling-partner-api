@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SellersV1;
+namespace SellingPartnerApiV5\Model\SellersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * MarketplaceParticipation Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class MarketplaceParticipation extends BaseModel implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace' => '\SellingPartnerApi\Model\SellersV1\Marketplace',
-        'participation' => '\SellingPartnerApi\Model\SellersV1\Participation'
+        'marketplace' => '\SellingPartnerApiV5\Model\SellersV1\Marketplace',
+        'participation' => '\SellingPartnerApiV5\Model\SellersV1\Participation'
     ];
 
     /**
@@ -148,7 +148,7 @@ class MarketplaceParticipation extends BaseModel implements ModelInterface, Arra
     /**
      * Gets marketplace
      *
-     * @return \SellingPartnerApi\Model\SellersV1\Marketplace
+     * @return \SellingPartnerApiV5\Model\SellersV1\Marketplace
      */
     public function getMarketplace()
     {
@@ -158,7 +158,7 @@ class MarketplaceParticipation extends BaseModel implements ModelInterface, Arra
     /**
      * Sets marketplace
      *
-     * @param \SellingPartnerApi\Model\SellersV1\Marketplace $marketplace marketplace
+     * @param \SellingPartnerApiV5\Model\SellersV1\Marketplace $marketplace marketplace
      *
      * @return self
      */
@@ -171,7 +171,7 @@ class MarketplaceParticipation extends BaseModel implements ModelInterface, Arra
     /**
      * Gets participation
      *
-     * @return \SellingPartnerApi\Model\SellersV1\Participation
+     * @return \SellingPartnerApiV5\Model\SellersV1\Participation
      */
     public function getParticipation()
     {
@@ -181,7 +181,7 @@ class MarketplaceParticipation extends BaseModel implements ModelInterface, Arra
     /**
      * Sets participation
      *
-     * @param \SellingPartnerApi\Model\SellersV1\Participation $participation participation
+     * @param \SellingPartnerApiV5\Model\SellersV1\Participation $participation participation
      *
      * @return self
      */

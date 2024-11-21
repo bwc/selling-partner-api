@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportContent Class Doc Comment
  *
  * @category Class
  * @description Inbound shipment information, including carrier details, shipment status, and the workflow status for a request for shipment with an Amazon-partnered carrier.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transport_header' => '\SellingPartnerApi\Model\FbaInboundV0\TransportHeader',
-        'transport_details' => '\SellingPartnerApi\Model\FbaInboundV0\TransportDetailOutput',
-        'transport_result' => '\SellingPartnerApi\Model\FbaInboundV0\TransportResult'
+        'transport_header' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportHeader',
+        'transport_details' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportDetailOutput',
+        'transport_result' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportResult'
     ];
 
     /**
@@ -158,7 +158,7 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets transport_header
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportHeader
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportHeader
      */
     public function getTransportHeader()
     {
@@ -168,7 +168,7 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets transport_header
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportHeader $transport_header transport_header
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportHeader $transport_header transport_header
      *
      * @return self
      */
@@ -181,7 +181,7 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets transport_details
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportDetailOutput
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportDetailOutput
      */
     public function getTransportDetails()
     {
@@ -191,7 +191,7 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets transport_details
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportDetailOutput $transport_details transport_details
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportDetailOutput $transport_details transport_details
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets transport_result
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportResult
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportResult
      */
     public function getTransportResult()
     {
@@ -214,7 +214,7 @@ class TransportContent extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets transport_result
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportResult $transport_result transport_result
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportResult $transport_result transport_result
      *
      * @return self
      */

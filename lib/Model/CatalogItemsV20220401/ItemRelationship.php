@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemRelationship Class Doc Comment
  *
  * @category Class
  * @description Relationship details for an Amazon catalog item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ItemRelationship extends BaseModel implements ModelInterface, ArrayAccess,
     protected static $openAPITypes = [
         'child_asins' => 'string[]',
         'parent_asins' => 'string[]',
-        'variation_theme' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemVariationTheme',
+        'variation_theme' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVariationTheme',
         'type' => 'string'
     ];
 
@@ -238,7 +238,7 @@ class ItemRelationship extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets variation_theme
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemVariationTheme|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVariationTheme|null
      */
     public function getVariationTheme()
     {
@@ -248,7 +248,7 @@ class ItemRelationship extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets variation_theme
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemVariationTheme|null $variation_theme variation_theme
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVariationTheme|null $variation_theme variation_theme
      *
      * @return self
      */

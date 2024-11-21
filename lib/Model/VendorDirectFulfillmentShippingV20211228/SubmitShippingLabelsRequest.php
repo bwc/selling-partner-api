@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitShippingLabelsRequest Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class SubmitShippingLabelsRequest extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipping_label_requests' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelRequest[]'
+        'shipping_label_requests' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelRequest[]'
     ];
 
     /**
@@ -136,7 +136,7 @@ class SubmitShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Gets shipping_label_requests
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelRequest[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelRequest[]|null
      */
     public function getShippingLabelRequests()
     {
@@ -146,7 +146,7 @@ class SubmitShippingLabelsRequest extends BaseModel implements ModelInterface, A
     /**
      * Sets shipping_label_requests
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelRequest[]|null $shipping_label_requests shipping_label_requests
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ShippingLabelRequest[]|null $shipping_label_requests shipping_label_requests
      *
      * @return self
      */

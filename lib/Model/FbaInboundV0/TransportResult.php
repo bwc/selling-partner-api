@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportResult Class Doc Comment
  *
  * @category Class
  * @description The workflow status for a shipment with an Amazon-partnered carrier.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class TransportResult extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transport_status' => '\SellingPartnerApi\Model\FbaInboundV0\TransportStatus',
+        'transport_status' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportStatus',
         'error_code' => 'string',
         'error_description' => 'string'
     ];
@@ -152,7 +152,7 @@ class TransportResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets transport_status
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportStatus
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportStatus
      */
     public function getTransportStatus()
     {
@@ -162,7 +162,7 @@ class TransportResult extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets transport_status
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportStatus $transport_status transport_status
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportStatus $transport_status transport_status
      *
      * @return self
      */

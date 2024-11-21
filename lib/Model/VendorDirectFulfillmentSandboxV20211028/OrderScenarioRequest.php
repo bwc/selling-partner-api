@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderScenarioRequest Class Doc Comment
  *
  * @category Class
  * @description The party identifiers required to generate the test data.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class OrderScenarioRequest extends BaseModel implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification'
     ];
 
     /**
@@ -149,7 +149,7 @@ class OrderScenarioRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -159,7 +159,7 @@ class OrderScenarioRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class OrderScenarioRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -182,7 +182,7 @@ class OrderScenarioRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */

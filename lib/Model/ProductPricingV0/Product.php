@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Product Class Doc Comment
  *
  * @category Class
  * @description An item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'identifiers' => '\SellingPartnerApi\Model\ProductPricingV0\IdentifierType',
+        'identifiers' => '\SellingPartnerApiV5\Model\ProductPricingV0\IdentifierType',
         'attribute_sets' => 'object[]',
         'relationships' => 'object[]',
-        'competitive_pricing' => '\SellingPartnerApi\Model\ProductPricingV0\CompetitivePricingType',
-        'sales_rankings' => '\SellingPartnerApi\Model\ProductPricingV0\SalesRankType[]',
-        'offers' => '\SellingPartnerApi\Model\ProductPricingV0\OfferType[]'
+        'competitive_pricing' => '\SellingPartnerApiV5\Model\ProductPricingV0\CompetitivePricingType',
+        'sales_rankings' => '\SellingPartnerApiV5\Model\ProductPricingV0\SalesRankType[]',
+        'offers' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferType[]'
     ];
 
     /**
@@ -170,7 +170,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets identifiers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\IdentifierType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\IdentifierType
      */
     public function getIdentifiers()
     {
@@ -180,7 +180,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets identifiers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\IdentifierType $identifiers identifiers
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\IdentifierType $identifiers identifiers
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets competitive_pricing
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\CompetitivePricingType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\CompetitivePricingType|null
      */
     public function getCompetitivePricing()
     {
@@ -249,7 +249,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets competitive_pricing
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\CompetitivePricingType|null $competitive_pricing competitive_pricing
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\CompetitivePricingType|null $competitive_pricing competitive_pricing
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets sales_rankings
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\SalesRankType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\SalesRankType[]|null
      */
     public function getSalesRankings()
     {
@@ -272,7 +272,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sales_rankings
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\SalesRankType[]|null $sales_rankings A list of sales rank information for the item, by category.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\SalesRankType[]|null $sales_rankings A list of sales rank information for the item, by category.
      *
      * @return self
      */
@@ -285,7 +285,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets offers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferType[]|null
      */
     public function getOffers()
     {
@@ -295,7 +295,7 @@ class Product extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets offers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferType[]|null $offers A list of offers.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferType[]|null $offers A list of offers.
      *
      * @return self
      */

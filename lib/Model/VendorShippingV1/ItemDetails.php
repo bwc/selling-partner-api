@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemDetails Class Doc Comment
  *
  * @category Class
  * @description Item details for be provided for every item in shipment at either the item or carton or pallet level, whichever is appropriate.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
         'lot_number' => 'string',
-        'expiry' => '\SellingPartnerApi\Model\VendorShippingV1\Expiry',
-        'maximum_retail_price' => '\SellingPartnerApi\Model\VendorShippingV1\Money',
+        'expiry' => '\SellingPartnerApiV5\Model\VendorShippingV1\Expiry',
+        'maximum_retail_price' => '\SellingPartnerApiV5\Model\VendorShippingV1\Money',
         'handling_code' => 'string'
     ];
 
@@ -245,7 +245,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets expiry
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Expiry|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Expiry|null
      */
     public function getExpiry()
     {
@@ -255,7 +255,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets expiry
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Expiry|null $expiry expiry
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Expiry|null $expiry expiry
      *
      * @return self
      */
@@ -268,7 +268,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets maximum_retail_price
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Money|null
      */
     public function getMaximumRetailPrice()
     {
@@ -278,7 +278,7 @@ class ItemDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets maximum_retail_price
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Money|null $maximum_retail_price maximum_retail_price
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Money|null $maximum_retail_price maximum_retail_price
      *
      * @return self
      */

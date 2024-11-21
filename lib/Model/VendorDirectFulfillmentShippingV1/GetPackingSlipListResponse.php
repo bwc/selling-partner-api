@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetPackingSlipListResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class GetPackingSlipListResponse extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PackingSlipList',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PackingSlipList',
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]'
     ];
 
     /**
@@ -167,7 +167,7 @@ class GetPackingSlipListResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PackingSlipList|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PackingSlipList|null
      */
     public function getPayload()
     {
@@ -177,7 +177,7 @@ class GetPackingSlipListResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PackingSlipList|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PackingSlipList|null $payload payload
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class GetPackingSlipListResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -200,7 +200,7 @@ class GetPackingSlipListResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

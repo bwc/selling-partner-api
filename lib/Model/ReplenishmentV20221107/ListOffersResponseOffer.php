@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOffersResponseOffer Class Doc Comment
  *
  * @category Class
  * @description An object which contains details about an offer.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,9 +61,9 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
         'sku' => 'string',
         'asin' => 'string',
         'marketplace_id' => 'string',
-        'eligibility' => '\SellingPartnerApi\Model\ReplenishmentV20221107\EligibilityStatus',
-        'offer_program_configuration' => '\SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfiguration',
-        'program_type' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType',
+        'eligibility' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\EligibilityStatus',
+        'offer_program_configuration' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfiguration',
+        'program_type' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType',
         'vendor_codes' => 'string[]'
     ];
 
@@ -242,7 +242,7 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
     /**
      * Gets eligibility
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\EligibilityStatus|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\EligibilityStatus|null
      */
     public function getEligibility()
     {
@@ -252,7 +252,7 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
     /**
      * Sets eligibility
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\EligibilityStatus|null $eligibility eligibility
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\EligibilityStatus|null $eligibility eligibility
      *
      * @return self
      */
@@ -265,7 +265,7 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
     /**
      * Gets offer_program_configuration
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfiguration|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfiguration|null
      */
     public function getOfferProgramConfiguration()
     {
@@ -275,7 +275,7 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
     /**
      * Sets offer_program_configuration
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\OfferProgramConfiguration|null $offer_program_configuration offer_program_configuration
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\OfferProgramConfiguration|null $offer_program_configuration offer_program_configuration
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
     /**
      * Gets program_type
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType|null
      */
     public function getProgramType()
     {
@@ -298,7 +298,7 @@ class ListOffersResponseOffer extends BaseModel implements ModelInterface, Array
     /**
      * Sets program_type
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ProgramType|null $program_type program_type
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ProgramType|null $program_type program_type
      *
      * @return self
      */

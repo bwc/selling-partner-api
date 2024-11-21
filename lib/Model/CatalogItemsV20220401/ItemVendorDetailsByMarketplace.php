@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemVendorDetailsByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Vendor details associated with an Amazon catalog item for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,9 +62,9 @@ class ItemVendorDetailsByMarketplace extends BaseModel implements ModelInterface
         'brand_code' => 'string',
         'manufacturer_code' => 'string',
         'manufacturer_code_parent' => 'string',
-        'product_category' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemVendorDetailsCategory',
+        'product_category' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVendorDetailsCategory',
         'product_group' => 'string',
-        'product_subcategory' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemVendorDetailsCategory',
+        'product_subcategory' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVendorDetailsCategory',
         'replenishment_category' => 'string'
     ];
 
@@ -324,7 +324,7 @@ class ItemVendorDetailsByMarketplace extends BaseModel implements ModelInterface
     /**
      * Gets product_category
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null
      */
     public function getProductCategory()
     {
@@ -334,7 +334,7 @@ class ItemVendorDetailsByMarketplace extends BaseModel implements ModelInterface
     /**
      * Sets product_category
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null $product_category product_category
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null $product_category product_category
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class ItemVendorDetailsByMarketplace extends BaseModel implements ModelInterface
     /**
      * Gets product_subcategory
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null
      */
     public function getProductSubcategory()
     {
@@ -380,7 +380,7 @@ class ItemVendorDetailsByMarketplace extends BaseModel implements ModelInterface
     /**
      * Sets product_subcategory
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null $product_subcategory product_subcategory
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemVendorDetailsCategory|null $product_subcategory product_subcategory
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# SellingPartnerApi\NotificationsV1Api
+# SellingPartnerApiV5\NotificationsV1Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 ## `createDestination()`
 
 ```php
-createDestination($body): \SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse
+createDestination($body): \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse
 ```
 
 
@@ -37,17 +37,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
-$body = new \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest(); // \SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
+$body = new \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest(); // \SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest
 
 try {
     $result = $apiInstance->createDestination($body);
@@ -61,11 +61,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\NotificationsV1\CreateDestinationRequest**](../Model/NotificationsV1/CreateDestinationRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationRequest**](../Model/NotificationsV1/CreateDestinationRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\CreateDestinationResponse**](../Model/NotificationsV1/CreateDestinationResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\CreateDestinationResponse**](../Model/NotificationsV1/CreateDestinationResponse.md)
 
 ### HTTP request headers
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 ## `createSubscription()`
 
 ```php
-createSubscription($notification_type, $body): \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse
+createSubscription($notification_type, $body): \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse
 ```
 
 
@@ -101,20 +101,20 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 $notification_type = 'notification_type_example'; // string | The type of notification.
 
 // For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide).
-$body = new \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest(); // \SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest
+$body = new \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest(); // \SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest
 
 try {
     $result = $apiInstance->createSubscription($notification_type, $body);
@@ -131,11 +131,11 @@ Name | Type | Description  | Notes
  **notification_type** | **string**| The type of notification.
 
  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). |
- **body** | [**\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionRequest**](../Model/NotificationsV1/CreateSubscriptionRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionRequest**](../Model/NotificationsV1/CreateSubscriptionRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\CreateSubscriptionResponse**](../Model/NotificationsV1/CreateSubscriptionResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\CreateSubscriptionResponse**](../Model/NotificationsV1/CreateSubscriptionResponse.md)
 
 ### HTTP request headers
 
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
 ## `deleteDestination()`
 
 ```php
-deleteDestination($destination_id): \SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse
+deleteDestination($destination_id): \SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse
 ```
 
 
@@ -171,16 +171,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 $destination_id = 'destination_id_example'; // string | The identifier for the destination that you want to delete.
 
 try {
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\DeleteDestinationResponse**](../Model/NotificationsV1/DeleteDestinationResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\DeleteDestinationResponse**](../Model/NotificationsV1/DeleteDestinationResponse.md)
 
 ### HTTP request headers
 
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 ## `deleteSubscriptionById()`
 
 ```php
-deleteSubscriptionById($subscription_id, $notification_type): \SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse
+deleteSubscriptionById($subscription_id, $notification_type): \SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse
 ```
 
 
@@ -235,16 +235,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 $subscription_id = 'subscription_id_example'; // string | The identifier for the subscription that you want to delete.
 $notification_type = 'notification_type_example'; // string | The type of notification.
 
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\DeleteSubscriptionByIdResponse**](../Model/NotificationsV1/DeleteSubscriptionByIdResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\DeleteSubscriptionByIdResponse**](../Model/NotificationsV1/DeleteSubscriptionByIdResponse.md)
 
 ### HTTP request headers
 
@@ -283,7 +283,7 @@ Name | Type | Description  | Notes
 ## `getDestination()`
 
 ```php
-getDestination($destination_id): \SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse
+getDestination($destination_id): \SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse
 ```
 
 
@@ -305,16 +305,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 $destination_id = 'destination_id_example'; // string | The identifier generated when you created the destination.
 
 try {
@@ -333,7 +333,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\GetDestinationResponse**](../Model/NotificationsV1/GetDestinationResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationResponse**](../Model/NotificationsV1/GetDestinationResponse.md)
 
 ### HTTP request headers
 
@@ -347,7 +347,7 @@ Name | Type | Description  | Notes
 ## `getDestinations()`
 
 ```php
-getDestinations(): \SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse
+getDestinations(): \SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse
 ```
 
 
@@ -369,16 +369,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 
 try {
     $result = $apiInstance->getDestinations();
@@ -394,7 +394,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\GetDestinationsResponse**](../Model/NotificationsV1/GetDestinationsResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\GetDestinationsResponse**](../Model/NotificationsV1/GetDestinationsResponse.md)
 
 ### HTTP request headers
 
@@ -408,7 +408,7 @@ This endpoint does not need any parameter.
 ## `getSubscription()`
 
 ```php
-getSubscription($notification_type): \SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse
+getSubscription($notification_type): \SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse
 ```
 
 
@@ -430,16 +430,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 $notification_type = 'notification_type_example'; // string | The type of notification.
 
  For more information about notification types, see [the Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide).
@@ -462,7 +462,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionResponse**](../Model/NotificationsV1/GetSubscriptionResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionResponse**](../Model/NotificationsV1/GetSubscriptionResponse.md)
 
 ### HTTP request headers
 
@@ -476,7 +476,7 @@ Name | Type | Description  | Notes
 ## `getSubscriptionById()`
 
 ```php
-getSubscriptionById($subscription_id, $notification_type): \SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse
+getSubscriptionById($subscription_id, $notification_type): \SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse
 ```
 
 
@@ -498,16 +498,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\NotificationsV1Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\NotificationsV1Api($config);
 $subscription_id = 'subscription_id_example'; // string | The identifier for the subscription that you want to get.
 $notification_type = 'notification_type_example'; // string | The type of notification.
 
@@ -532,7 +532,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\NotificationsV1\GetSubscriptionByIdResponse**](../Model/NotificationsV1/GetSubscriptionByIdResponse.md)
+[**\SellingPartnerApiV5\Model\NotificationsV1\GetSubscriptionByIdResponse**](../Model/NotificationsV1/GetSubscriptionByIdResponse.md)
 
 ### HTTP request headers
 

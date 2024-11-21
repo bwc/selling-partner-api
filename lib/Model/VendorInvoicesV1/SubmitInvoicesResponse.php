@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorInvoicesV1;
+namespace SellingPartnerApiV5\Model\VendorInvoicesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitInvoicesResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the submitInvoices operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class SubmitInvoicesResponse extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\VendorInvoicesV1\TransactionId',
-        'errors' => '\SellingPartnerApi\Model\VendorInvoicesV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\TransactionId',
+        'errors' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class SubmitInvoicesResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\TransactionId|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\TransactionId|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class SubmitInvoicesResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\TransactionId|null $payload payload
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\TransactionId|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class SubmitInvoicesResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class SubmitInvoicesResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

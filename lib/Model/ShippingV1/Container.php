@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Container Class Doc Comment
  *
  * @category Class
  * @description Container in the shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     protected static $openAPITypes = [
         'container_type' => 'string',
         'container_reference_id' => 'string',
-        'value' => '\SellingPartnerApi\Model\ShippingV1\Currency',
-        'dimensions' => '\SellingPartnerApi\Model\ShippingV1\Dimensions',
-        'items' => '\SellingPartnerApi\Model\ShippingV1\ContainerItem[]',
-        'weight' => '\SellingPartnerApi\Model\ShippingV1\Weight'
+        'value' => '\SellingPartnerApiV5\Model\ShippingV1\Currency',
+        'dimensions' => '\SellingPartnerApiV5\Model\ShippingV1\Dimensions',
+        'items' => '\SellingPartnerApiV5\Model\ShippingV1\ContainerItem[]',
+        'weight' => '\SellingPartnerApiV5\Model\ShippingV1\Weight'
     ];
 
     /**
@@ -278,7 +278,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets value
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Currency
      */
     public function getValue()
     {
@@ -288,7 +288,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets value
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Currency $value value
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Currency $value value
      *
      * @return self
      */
@@ -301,7 +301,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Dimensions
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Dimensions
      */
     public function getDimensions()
     {
@@ -311,7 +311,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Dimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -324,7 +324,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ContainerItem[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ContainerItem[]
      */
     public function getItems()
     {
@@ -334,7 +334,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ContainerItem[] $items A list of the items in the container.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ContainerItem[] $items A list of the items in the container.
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Weight
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Weight
      */
     public function getWeight()
     {
@@ -357,7 +357,7 @@ class Container extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Weight $weight weight
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseLabelsResult Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the purchaseLabels operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class PurchaseLabelsResult extends BaseModel implements ModelInterface, ArrayAcc
     protected static $openAPITypes = [
         'shipment_id' => 'string',
         'client_reference_id' => 'string',
-        'accepted_rate' => '\SellingPartnerApi\Model\ShippingV1\AcceptedRate',
-        'label_results' => '\SellingPartnerApi\Model\ShippingV1\LabelResult[]'
+        'accepted_rate' => '\SellingPartnerApiV5\Model\ShippingV1\AcceptedRate',
+        'label_results' => '\SellingPartnerApiV5\Model\ShippingV1\LabelResult[]'
     ];
 
     /**
@@ -218,7 +218,7 @@ class PurchaseLabelsResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets accepted_rate
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\AcceptedRate
+     * @return \SellingPartnerApiV5\Model\ShippingV1\AcceptedRate
      */
     public function getAcceptedRate()
     {
@@ -228,7 +228,7 @@ class PurchaseLabelsResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets accepted_rate
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\AcceptedRate $accepted_rate accepted_rate
+     * @param \SellingPartnerApiV5\Model\ShippingV1\AcceptedRate $accepted_rate accepted_rate
      *
      * @return self
      */
@@ -241,7 +241,7 @@ class PurchaseLabelsResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets label_results
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\LabelResult[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\LabelResult[]
      */
     public function getLabelResults()
     {
@@ -251,7 +251,7 @@ class PurchaseLabelsResult extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets label_results
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\LabelResult[] $label_results A list of label results
+     * @param \SellingPartnerApiV5\Model\ShippingV1\LabelResult[] $label_results A list of label results
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FeesV0;
+namespace SellingPartnerApiV5\Model\FeesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeesEstimateRequest Class Doc Comment
  *
  * @category Class
  * @description A product, marketplace, and proposed price used to request estimated fees.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,9 +60,9 @@ class FeesEstimateRequest extends BaseModel implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
         'is_amazon_fulfilled' => 'bool',
-        'price_to_estimate_fees' => '\SellingPartnerApi\Model\FeesV0\PriceToEstimateFees',
+        'price_to_estimate_fees' => '\SellingPartnerApiV5\Model\FeesV0\PriceToEstimateFees',
         'identifier' => 'string',
-        'optional_fulfillment_program' => '\SellingPartnerApi\Model\FeesV0\OptionalFulfillmentProgram'
+        'optional_fulfillment_program' => '\SellingPartnerApiV5\Model\FeesV0\OptionalFulfillmentProgram'
     ];
 
     /**
@@ -216,7 +216,7 @@ class FeesEstimateRequest extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets price_to_estimate_fees
      *
-     * @return \SellingPartnerApi\Model\FeesV0\PriceToEstimateFees
+     * @return \SellingPartnerApiV5\Model\FeesV0\PriceToEstimateFees
      */
     public function getPriceToEstimateFees()
     {
@@ -226,7 +226,7 @@ class FeesEstimateRequest extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets price_to_estimate_fees
      *
-     * @param \SellingPartnerApi\Model\FeesV0\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
+     * @param \SellingPartnerApiV5\Model\FeesV0\PriceToEstimateFees $price_to_estimate_fees price_to_estimate_fees
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class FeesEstimateRequest extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets optional_fulfillment_program
      *
-     * @return \SellingPartnerApi\Model\FeesV0\OptionalFulfillmentProgram|null
+     * @return \SellingPartnerApiV5\Model\FeesV0\OptionalFulfillmentProgram|null
      */
     public function getOptionalFulfillmentProgram()
     {
@@ -272,7 +272,7 @@ class FeesEstimateRequest extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets optional_fulfillment_program
      *
-     * @param \SellingPartnerApi\Model\FeesV0\OptionalFulfillmentProgram|null $optional_fulfillment_program optional_fulfillment_program
+     * @param \SellingPartnerApiV5\Model\FeesV0\OptionalFulfillmentProgram|null $optional_fulfillment_program optional_fulfillment_program
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DirectPurchaseRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the directPurchaseShipment operation. When the channel type is Amazon, the shipTo address is not required and will be ignored.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ship_to' => '\SellingPartnerApi\Model\ShippingV2\Address',
-        'ship_from' => '\SellingPartnerApi\Model\ShippingV2\Address',
-        'return_to' => '\SellingPartnerApi\Model\ShippingV2\Address',
-        'packages' => '\SellingPartnerApi\Model\ShippingV2\Package[]',
-        'channel_details' => '\SellingPartnerApi\Model\ShippingV2\ChannelDetails',
-        'label_specifications' => '\SellingPartnerApi\Model\ShippingV2\RequestedDocumentSpecification'
+        'ship_to' => '\SellingPartnerApiV5\Model\ShippingV2\Address',
+        'ship_from' => '\SellingPartnerApiV5\Model\ShippingV2\Address',
+        'return_to' => '\SellingPartnerApiV5\Model\ShippingV2\Address',
+        'packages' => '\SellingPartnerApiV5\Model\ShippingV2\Package[]',
+        'channel_details' => '\SellingPartnerApiV5\Model\ShippingV2\ChannelDetails',
+        'label_specifications' => '\SellingPartnerApiV5\Model\ShippingV2\RequestedDocumentSpecification'
     ];
 
     /**
@@ -170,7 +170,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets ship_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Address|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Address|null
      */
     public function getShipTo()
     {
@@ -180,7 +180,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets ship_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Address|null $ship_to ship_to
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Address|null $ship_to ship_to
      *
      * @return self
      */
@@ -193,7 +193,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets ship_from
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Address|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Address|null
      */
     public function getShipFrom()
     {
@@ -203,7 +203,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets ship_from
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Address|null $ship_from ship_from
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Address|null $ship_from ship_from
      *
      * @return self
      */
@@ -216,7 +216,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets return_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Address|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Address|null
      */
     public function getReturnTo()
     {
@@ -226,7 +226,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets return_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Address|null $return_to return_to
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Address|null $return_to return_to
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets packages
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Package[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Package[]|null
      */
     public function getPackages()
     {
@@ -249,7 +249,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets packages
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Package[]|null $packages A list of packages to be shipped through a shipping service offering.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Package[]|null $packages A list of packages to be shipped through a shipping service offering.
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets channel_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\ChannelDetails
+     * @return \SellingPartnerApiV5\Model\ShippingV2\ChannelDetails
      */
     public function getChannelDetails()
     {
@@ -272,7 +272,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets channel_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\ChannelDetails $channel_details channel_details
+     * @param \SellingPartnerApiV5\Model\ShippingV2\ChannelDetails $channel_details channel_details
      *
      * @return self
      */
@@ -285,7 +285,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets label_specifications
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\RequestedDocumentSpecification|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\RequestedDocumentSpecification|null
      */
     public function getLabelSpecifications()
     {
@@ -295,7 +295,7 @@ class DirectPurchaseRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets label_specifications
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\RequestedDocumentSpecification|null $label_specifications label_specifications
+     * @param \SellingPartnerApiV5\Model\ShippingV2\RequestedDocumentSpecification|null $label_specifications label_specifications
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItemStatus Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,11 +60,11 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'net_cost' => '\SellingPartnerApi\Model\VendorOrdersV1\Money',
-        'list_price' => '\SellingPartnerApi\Model\VendorOrdersV1\Money',
-        'ordered_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusOrderedQuantity',
-        'acknowledgement_status' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusAcknowledgementStatus',
-        'receiving_status' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusReceivingStatus'
+        'net_cost' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Money',
+        'list_price' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Money',
+        'ordered_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusOrderedQuantity',
+        'acknowledgement_status' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusAcknowledgementStatus',
+        'receiving_status' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusReceivingStatus'
     ];
 
     /**
@@ -250,7 +250,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets net_cost
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null
      */
     public function getNetCost()
     {
@@ -260,7 +260,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets net_cost
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Money|null $net_cost net_cost
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null $net_cost net_cost
      *
      * @return self
      */
@@ -273,7 +273,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets list_price
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null
      */
     public function getListPrice()
     {
@@ -283,7 +283,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets list_price
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Money|null $list_price list_price
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null $list_price list_price
      *
      * @return self
      */
@@ -296,7 +296,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets ordered_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusOrderedQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusOrderedQuantity|null
      */
     public function getOrderedQuantity()
     {
@@ -306,7 +306,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets ordered_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusOrderedQuantity|null $ordered_quantity ordered_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusOrderedQuantity|null $ordered_quantity ordered_quantity
      *
      * @return self
      */
@@ -319,7 +319,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets acknowledgement_status
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusAcknowledgementStatus|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusAcknowledgementStatus|null
      */
     public function getAcknowledgementStatus()
     {
@@ -329,7 +329,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets acknowledgement_status
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusAcknowledgementStatus|null $acknowledgement_status acknowledgement_status
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusAcknowledgementStatus|null $acknowledgement_status acknowledgement_status
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets receiving_status
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusReceivingStatus|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusReceivingStatus|null
      */
     public function getReceivingStatus()
     {
@@ -352,7 +352,7 @@ class OrderItemStatus extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets receiving_status
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatusReceivingStatus|null $receiving_status receiving_status
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatusReceivingStatus|null $receiving_status receiving_status
      *
      * @return self
      */

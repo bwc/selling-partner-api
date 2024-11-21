@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20201201;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20201201;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemSearchResults Class Doc Comment
  *
  * @category Class
  * @description Items in the Amazon catalog and search related metadata.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'number_of_results' => 'int',
-        'pagination' => '\SellingPartnerApi\Model\CatalogItemsV20201201\Pagination',
-        'refinements' => '\SellingPartnerApi\Model\CatalogItemsV20201201\Refinements',
-        'items' => '\SellingPartnerApi\Model\CatalogItemsV20201201\Item[]'
+        'pagination' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\Pagination',
+        'refinements' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\Refinements',
+        'items' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\Item[]'
     ];
 
     /**
@@ -216,7 +216,7 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\Pagination
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\Pagination
      */
     public function getPagination()
     {
@@ -226,7 +226,7 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\Pagination $pagination pagination
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\Pagination $pagination pagination
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets refinements
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\Refinements
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\Refinements
      */
     public function getRefinements()
     {
@@ -249,7 +249,7 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets refinements
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\Refinements $refinements refinements
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\Refinements $refinements refinements
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\Item[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\Item[]
      */
     public function getItems()
     {
@@ -272,7 +272,7 @@ class ItemSearchResults extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\Item[] $items A list of items from the Amazon catalog.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\Item[] $items A list of items from the Amazon catalog.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * VendorDirectFulfillmentOrdersV20211228Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
 {
@@ -45,9 +45,9 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      *
      * @param  string $purchase_order_number The order identifier for the purchase order that you want. Formatting Notes: alpha-numeric code. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order
      */
     public function getOrder($purchase_order_number)
     {
@@ -60,9 +60,9 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      *
      * @param  string $purchase_order_number The order identifier for the purchase order that you want. Formatting Notes: alpha-numeric code. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($purchase_order_number)
     {
@@ -114,80 +114,80 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order';
+            $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -202,7 +202,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -234,7 +234,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -250,7 +250,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -258,7 +258,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -266,7 +266,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -304,7 +304,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      */
     public function getOrderAsyncWithHttpInfo($purchase_order_number)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\Order';
+        $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\Order';
         $request = $this->getOrderRequest($purchase_order_number);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -451,9 +451,9 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      * @param  string $next_token Used for pagination when there are more orders than the specified result size limit. The token value is returned in the previous API call. (optional)
      * @param  bool $include_details When true, returns the complete purchase order details. Otherwise, only purchase order numbers are returned. (optional, default to 'true')
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList
      */
     public function getOrders($created_after, $created_before, $ship_from_party_id = null, $status = null, $limit = null, $sort_order = null, $next_token = null, $include_details = 'true')
     {
@@ -473,9 +473,9 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      * @param  string $next_token Used for pagination when there are more orders than the specified result size limit. The token value is returned in the previous API call. (optional)
      * @param  bool $include_details When true, returns the complete purchase order details. Otherwise, only purchase order numbers are returned. (optional, default to 'true')
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($created_after, $created_before, $ship_from_party_id = null, $status = null, $limit = null, $sort_order = null, $next_token = null, $include_details = 'true')
     {
@@ -527,72 +527,72 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList';
+            $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -607,7 +607,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -623,7 +623,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -631,7 +631,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -639,7 +639,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -647,7 +647,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -655,7 +655,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -663,7 +663,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      */
     public function getOrdersAsyncWithHttpInfo($created_after, $created_before, $ship_from_party_id = null, $status = null, $limit = null, $sort_order = null, $next_token = null, $include_details = 'true')
     {
-        $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\OrderList';
+        $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\OrderList';
         $request = $this->getOrdersRequest($created_after, $created_before, $ship_from_party_id, $status, $limit, $sort_order, $next_token, $include_details);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -928,11 +928,11 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
     /**
      * Operation submitAcknowledgement
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId
      */
     public function submitAcknowledgement($body)
     {
@@ -943,11 +943,11 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
     /**
      * Operation submitAcknowledgementWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitAcknowledgementWithHttpInfo($body)
     {
@@ -996,80 +996,80 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId';
+            $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1084,7 +1084,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1092,7 +1092,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1100,7 +1100,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1108,7 +1108,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1116,7 +1116,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1124,7 +1124,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1132,7 +1132,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1140,7 +1140,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1148,7 +1148,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\ErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1164,7 +1164,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1179,14 +1179,14 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitAcknowledgementAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId';
+        $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\TransactionId';
         $request = $this->submitAcknowledgementRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1232,7 +1232,7 @@ class VendorDirectFulfillmentOrdersV20211228Api extends BaseApi
     /**
      * Create request for operation 'submitAcknowledgement'
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV20211228\SubmitAcknowledgementRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

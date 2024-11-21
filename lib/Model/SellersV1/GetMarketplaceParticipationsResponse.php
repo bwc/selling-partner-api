@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SellersV1;
+namespace SellingPartnerApiV5\Model\SellersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMarketplaceParticipationsResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the getMarketplaceParticipations operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetMarketplaceParticipationsResponse extends BaseModel implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\SellersV1\MarketplaceParticipation[]',
-        'errors' => '\SellingPartnerApi\Model\SellersV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\SellersV1\MarketplaceParticipation[]',
+        'errors' => '\SellingPartnerApiV5\Model\SellersV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class GetMarketplaceParticipationsResponse extends BaseModel implements ModelInt
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\SellersV1\MarketplaceParticipation[]|null
+     * @return \SellingPartnerApiV5\Model\SellersV1\MarketplaceParticipation[]|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class GetMarketplaceParticipationsResponse extends BaseModel implements ModelInt
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\SellersV1\MarketplaceParticipation[]|null $payload List of marketplace participations.
+     * @param \SellingPartnerApiV5\Model\SellersV1\MarketplaceParticipation[]|null $payload List of marketplace participations.
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class GetMarketplaceParticipationsResponse extends BaseModel implements ModelInt
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\SellersV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\SellersV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class GetMarketplaceParticipationsResponse extends BaseModel implements ModelInt
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\SellersV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\SellersV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

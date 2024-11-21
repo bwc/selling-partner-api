@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportationDetails Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class TransportationDetails extends BaseModel implements ModelInterface, ArrayAc
         'shipped_date' => 'string',
         'estimated_delivery_date' => 'string',
         'shipment_delivery_date' => 'string',
-        'carrier_details' => '\SellingPartnerApi\Model\VendorShippingV1\CarrierDetails',
+        'carrier_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\CarrierDetails',
         'bill_of_lading_number' => 'string'
     ];
 
@@ -379,7 +379,7 @@ class TransportationDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets carrier_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\CarrierDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\CarrierDetails|null
      */
     public function getCarrierDetails()
     {
@@ -389,7 +389,7 @@ class TransportationDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets carrier_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\CarrierDetails|null $carrier_details carrier_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\CarrierDetails|null $carrier_details carrier_details
      *
      * @return self
      */

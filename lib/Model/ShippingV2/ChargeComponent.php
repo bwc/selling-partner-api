@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ChargeComponent Class Doc Comment
  *
  * @category Class
  * @description The type and amount of a charge applied on a package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ChargeComponent extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'amount' => '\SellingPartnerApi\Model\ShippingV2\Currency',
+        'amount' => '\SellingPartnerApiV5\Model\ShippingV2\Currency',
         'charge_type' => 'string'
     ];
 
@@ -177,7 +177,7 @@ class ChargeComponent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets amount
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Currency|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Currency|null
      */
     public function getAmount()
     {
@@ -187,7 +187,7 @@ class ChargeComponent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets amount
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Currency|null $amount amount
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Currency|null $amount amount
      *
      * @return self
      */

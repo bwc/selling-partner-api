@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PointsGrantedDetail Class Doc Comment
  *
  * @category Class
  * @description The number of Amazon Points offered with the purchase of an item, and their monetary value.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class PointsGrantedDetail extends BaseModel implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'points_number' => 'int',
-        'points_monetary_value' => '\SellingPartnerApi\Model\OrdersV0\Money'
+        'points_monetary_value' => '\SellingPartnerApiV5\Model\OrdersV0\Money'
     ];
 
     /**
@@ -166,7 +166,7 @@ class PointsGrantedDetail extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets points_monetary_value
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getPointsMonetaryValue()
     {
@@ -176,7 +176,7 @@ class PointsGrantedDetail extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets points_monetary_value
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $points_monetary_value points_monetary_value
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $points_monetary_value points_monetary_value
      *
      * @return self
      */

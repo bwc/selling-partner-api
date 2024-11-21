@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AssignAppointmentResourcesResponse Class Doc Comment
  *
  * @category Class
  * @description Response schema for the `assignAppointmentResources` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class AssignAppointmentResourcesResponse extends BaseModel implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponsePayload',
-        'errors' => '\SellingPartnerApi\Model\ServiceV1\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponsePayload',
+        'errors' => '\SellingPartnerApiV5\Model\ServiceV1\Error[]'
     ];
 
     /**
@@ -168,7 +168,7 @@ class AssignAppointmentResourcesResponse extends BaseModel implements ModelInter
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponsePayload|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponsePayload|null
      */
     public function getPayload()
     {
@@ -178,7 +178,7 @@ class AssignAppointmentResourcesResponse extends BaseModel implements ModelInter
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AssignAppointmentResourcesResponsePayload|null $payload payload
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AssignAppointmentResourcesResponsePayload|null $payload payload
      *
      * @return self
      */
@@ -191,7 +191,7 @@ class AssignAppointmentResourcesResponse extends BaseModel implements ModelInter
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Error[]|null
      */
     public function getErrors()
     {
@@ -201,7 +201,7 @@ class AssignAppointmentResourcesResponse extends BaseModel implements ModelInter
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

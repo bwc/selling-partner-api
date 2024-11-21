@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PaymentExecutionDetailItem Class Doc Comment
  *
  * @category Class
  * @description Information about a sub-payment method used to pay for a COD order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class PaymentExecutionDetailItem extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payment' => '\SellingPartnerApi\Model\OrdersV0\Money',
+        'payment' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
         'payment_method' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class PaymentExecutionDetailItem extends BaseModel implements ModelInterface, Ar
     /**
      * Gets payment
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money
      */
     public function getPayment()
     {
@@ -159,7 +159,7 @@ class PaymentExecutionDetailItem extends BaseModel implements ModelInterface, Ar
     /**
      * Sets payment
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money $payment payment
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money $payment payment
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListReturnReasonCodesResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class ListReturnReasonCodesResult extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reason_code_details' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ReasonCodeDetails[]'
+        'reason_code_details' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ReasonCodeDetails[]'
     ];
 
     /**
@@ -136,7 +136,7 @@ class ListReturnReasonCodesResult extends BaseModel implements ModelInterface, A
     /**
      * Gets reason_code_details
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ReasonCodeDetails[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReasonCodeDetails[]|null
      */
     public function getReasonCodeDetails()
     {
@@ -146,7 +146,7 @@ class ListReturnReasonCodesResult extends BaseModel implements ModelInterface, A
     /**
      * Sets reason_code_details
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ReasonCodeDetails[]|null $reason_code_details An array of return reason code details.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ReasonCodeDetails[]|null $reason_code_details An array of return reason code details.
      *
      * @return self
      */

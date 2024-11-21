@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GenerateOrderScenarioRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the generateOrderScenarios operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GenerateOrderScenarioRequest extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'orders' => '\SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\OrderScenarioRequest[]'
+        'orders' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\OrderScenarioRequest[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class GenerateOrderScenarioRequest extends BaseModel implements ModelInterface, 
     /**
      * Gets orders
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\OrderScenarioRequest[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\OrderScenarioRequest[]|null
      */
     public function getOrders()
     {
@@ -147,7 +147,7 @@ class GenerateOrderScenarioRequest extends BaseModel implements ModelInterface, 
     /**
      * Sets orders
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentSandboxV20211028\OrderScenarioRequest[]|null $orders The list of test orders requested as indicated by party identifiers.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentSandboxV20211028\OrderScenarioRequest[]|null $orders The list of test orders requested as indicated by party identifiers.
      *
      * @return self
      */

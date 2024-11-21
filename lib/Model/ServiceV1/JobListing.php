@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * JobListing Class Doc Comment
  *
  * @category Class
  * @description The payload for the `getServiceJobs` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class JobListing extends BaseModel implements ModelInterface, ArrayAccess, \Json
         'total_result_size' => 'int',
         'next_page_token' => 'string',
         'previous_page_token' => 'string',
-        'jobs' => '\SellingPartnerApi\Model\ServiceV1\ServiceJob[]'
+        'jobs' => '\SellingPartnerApiV5\Model\ServiceV1\ServiceJob[]'
     ];
 
     /**
@@ -224,7 +224,7 @@ class JobListing extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets jobs
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\ServiceJob[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\ServiceJob[]|null
      */
     public function getJobs()
     {
@@ -234,7 +234,7 @@ class JobListing extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets jobs
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\ServiceJob[]|null $jobs List of job details for the given input.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\ServiceJob[]|null $jobs List of job details for the given input.
      *
      * @return self
      */

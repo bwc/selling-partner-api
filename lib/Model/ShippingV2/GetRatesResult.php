@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetRatesResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the getRates operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'request_token' => 'string',
-        'rates' => '\SellingPartnerApi\Model\ShippingV2\Rate[]',
-        'ineligible_rates' => '\SellingPartnerApi\Model\ShippingV2\IneligibleRate[]'
+        'rates' => '\SellingPartnerApiV5\Model\ShippingV2\Rate[]',
+        'ineligible_rates' => '\SellingPartnerApiV5\Model\ShippingV2\IneligibleRate[]'
     ];
 
     /**
@@ -178,7 +178,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets rates
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Rate[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Rate[]
      */
     public function getRates()
     {
@@ -188,7 +188,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets rates
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Rate[] $rates A list of eligible shipping service offerings.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Rate[] $rates A list of eligible shipping service offerings.
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets ineligible_rates
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\IneligibleRate[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\IneligibleRate[]|null
      */
     public function getIneligibleRates()
     {
@@ -211,7 +211,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets ineligible_rates
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\IneligibleRate[]|null $ineligible_rates A list of ineligible shipping service offerings.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\IneligibleRate[]|null $ineligible_rates A list of ineligible shipping service offerings.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsV20210801;
+namespace SellingPartnerApiV5\Model\ListingsV20210801;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemOfferByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Offer details of a listings item for an Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class ItemOfferByMarketplace extends BaseModel implements ModelInterface, ArrayA
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
         'offer_type' => 'string',
-        'price' => '\SellingPartnerApi\Model\ListingsV20210801\Money',
-        'points' => '\SellingPartnerApi\Model\ListingsV20210801\Points'
+        'price' => '\SellingPartnerApiV5\Model\ListingsV20210801\Money',
+        'points' => '\SellingPartnerApiV5\Model\ListingsV20210801\Points'
     ];
 
     /**
@@ -254,7 +254,7 @@ class ItemOfferByMarketplace extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets price
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\Money
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\Money
      */
     public function getPrice()
     {
@@ -264,7 +264,7 @@ class ItemOfferByMarketplace extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets price
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\Money $price price
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\Money $price price
      *
      * @return self
      */
@@ -277,7 +277,7 @@ class ItemOfferByMarketplace extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets points
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\Points|null
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\Points|null
      */
     public function getPoints()
     {
@@ -287,7 +287,7 @@ class ItemOfferByMarketplace extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets points
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\Points|null $points points
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\Points|null $points points
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShippingOfferingFilter Class Doc Comment
  *
  * @category Class
  * @description Filter for use when requesting eligible shipping services.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class ShippingOfferingFilter extends BaseModel implements ModelInterface, ArrayA
     protected static $openAPITypes = [
         'include_packing_slip_with_label' => 'bool',
         'include_complex_shipping_options' => 'bool',
-        'carrier_will_pick_up' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption',
-        'delivery_experience' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceOption'
+        'carrier_will_pick_up' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption',
+        'delivery_experience' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceOption'
     ];
 
     /**
@@ -201,7 +201,7 @@ class ShippingOfferingFilter extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets carrier_will_pick_up
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null
      */
     public function getCarrierWillPickUp()
     {
@@ -211,7 +211,7 @@ class ShippingOfferingFilter extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets carrier_will_pick_up
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null $carrier_will_pick_up carrier_will_pick_up
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CarrierWillPickUpOption|null $carrier_will_pick_up carrier_will_pick_up
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class ShippingOfferingFilter extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets delivery_experience
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceOption|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceOption|null
      */
     public function getDeliveryExperience()
     {
@@ -234,7 +234,7 @@ class ShippingOfferingFilter extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets delivery_experience
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\DeliveryExperienceOption|null $delivery_experience delivery_experience
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\DeliveryExperienceOption|null $delivery_experience delivery_experience
      *
      * @return self
      */

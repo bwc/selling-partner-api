@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMessagingActionsForOrderResponseEmbedded Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetMessagingActionsForOrderResponseEmbedded extends BaseModel implements M
       * @var string[]
       */
     protected static $openAPITypes = [
-        'actions' => '\SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponse[]'
+        'actions' => '\SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponse[]'
     ];
 
     /**
@@ -139,7 +139,7 @@ class GetMessagingActionsForOrderResponseEmbedded extends BaseModel implements M
     /**
      * Gets actions
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponse[]
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponse[]
      */
     public function getActions()
     {
@@ -149,7 +149,7 @@ class GetMessagingActionsForOrderResponseEmbedded extends BaseModel implements M
     /**
      * Sets actions
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponse[] $actions actions
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponse[] $actions actions
      *
      * @return self
      */

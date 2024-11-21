@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20201201;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20201201;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemImagesByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Images for an item in the Amazon catalog for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ItemImagesByMarketplace extends BaseModel implements ModelInterface, Array
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'images' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemImage[]'
+        'images' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemImage[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class ItemImagesByMarketplace extends BaseModel implements ModelInterface, Array
     /**
      * Gets images
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemImage[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemImage[]
      */
     public function getImages()
     {
@@ -182,7 +182,7 @@ class ItemImagesByMarketplace extends BaseModel implements ModelInterface, Array
     /**
      * Sets images
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemImage[] $images Images for an item in the Amazon catalog for the indicated Amazon marketplace.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemImage[] $images Images for an item in the Amazon catalog for the indicated Amazon marketplace.
      *
      * @return self
      */

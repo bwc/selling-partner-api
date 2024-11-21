@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ServiceFeeEvent Class Doc Comment
  *
  * @category Class
  * @description A service fee on the seller's account.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ServiceFeeEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
         'fee_reason' => 'string',
-        'fee_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
+        'fee_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
         'seller_sku' => 'string',
         'fn_sku' => 'string',
         'fee_description' => 'string',
@@ -219,7 +219,7 @@ class ServiceFeeEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets fee_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getFeeList()
     {
@@ -229,7 +229,7 @@ class ServiceFeeEvent extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets fee_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $fee_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $fee_list A list of fee component information.
      *
      * @return self
      */

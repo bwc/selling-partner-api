@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseOrders Class Doc Comment
  *
  * @category Class
  * @description Transport Request pickup date
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class PurchaseOrders extends BaseModel implements ModelInterface, ArrayAccess, \
         'purchase_order_number' => 'string',
         'purchase_order_date' => 'string',
         'ship_window' => 'string',
-        'items' => '\SellingPartnerApi\Model\VendorShippingV1\PurchaseOrderItems[]'
+        'items' => '\SellingPartnerApiV5\Model\VendorShippingV1\PurchaseOrderItems[]'
     ];
 
     /**
@@ -224,7 +224,7 @@ class PurchaseOrders extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PurchaseOrderItems[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PurchaseOrderItems[]|null
      */
     public function getItems()
     {
@@ -234,7 +234,7 @@ class PurchaseOrders extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PurchaseOrderItems[]|null $items A list of the items that are associated to the PO in this transport and their associated details.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PurchaseOrderItems[]|null $items A list of the items that are associated to the PO in this transport and their associated details.
      *
      * @return self
      */

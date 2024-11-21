@@ -1,4 +1,4 @@
-# SellingPartnerApi\ProductPricingV0Api
+# SellingPartnerApiV5\ProductPricingV0Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 ## `getCompetitivePricing()`
 
 ```php
-getCompetitivePricing($marketplace_id, $item_type, $asins, $skus, $customer_type): \SellingPartnerApi\Model\ProductPricingV0\GetPricingResponse
+getCompetitivePricing($marketplace_id, $item_type, $asins, $skus, $customer_type): \SellingPartnerApiV5\Model\ProductPricingV0\GetPricingResponse
 ```
 
 
@@ -37,16 +37,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for which prices are returned.
 $item_type = 'item_type_example'; // string | Indicates whether ASIN values or seller SKU values are used to identify items. If you specify Asin, the information in the response will be dependent on the list of Asins you provide in the Asins parameter. If you specify Sku, the information in the response will be dependent on the list of Skus you provide in the Skus parameter. Possible values: Asin, Sku.
 $asins = array('asins_example'); // string[] | A list of up to twenty Amazon Standard Identification Number (ASIN) values used to identify items in the given marketplace.
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV0\GetPricingResponse**](../Model/ProductPricingV0/GetPricingResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV0\GetPricingResponse**](../Model/ProductPricingV0/GetPricingResponse.md)
 
 ### HTTP request headers
 
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 ## `getItemOffers()`
 
 ```php
-getItemOffers($marketplace_id, $item_condition, $asin, $customer_type): \SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse
+getItemOffers($marketplace_id, $item_condition, $asin, $customer_type): \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse
 ```
 
 
@@ -109,16 +109,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for which prices are returned.
 $item_condition = 'item_condition_example'; // string | Filters the offer listings to be considered based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
 $asin = 'asin_example'; // string | The Amazon Standard Identification Number (ASIN) of the item.
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse**](../Model/ProductPricingV0/GetOffersResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse**](../Model/ProductPricingV0/GetOffersResponse.md)
 
 ### HTTP request headers
 
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 ## `getItemOffersBatch()`
 
 ```php
-getItemOffersBatch($get_item_offers_batch_request_body): \SellingPartnerApi\Model\ProductPricingV0\GetItemOffersBatchResponse
+getItemOffersBatch($get_item_offers_batch_request_body): \SellingPartnerApiV5\Model\ProductPricingV0\GetItemOffersBatchResponse
 ```
 
 
@@ -179,17 +179,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV0Api($config);
-$get_item_offers_batch_request_body = new \SellingPartnerApi\Model\ProductPricingV0\GetItemOffersBatchRequest(); // \SellingPartnerApi\Model\ProductPricingV0\GetItemOffersBatchRequest
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV0Api($config);
+$get_item_offers_batch_request_body = new \SellingPartnerApiV5\Model\ProductPricingV0\GetItemOffersBatchRequest(); // \SellingPartnerApiV5\Model\ProductPricingV0\GetItemOffersBatchRequest
 
 try {
     $result = $apiInstance->getItemOffersBatch($get_item_offers_batch_request_body);
@@ -203,11 +203,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **get_item_offers_batch_request_body** | [**\SellingPartnerApi\Model\ProductPricingV0\GetItemOffersBatchRequest**](../Model/ProductPricingV0/GetItemOffersBatchRequest.md)|  |
+ **get_item_offers_batch_request_body** | [**\SellingPartnerApiV5\Model\ProductPricingV0\GetItemOffersBatchRequest**](../Model/ProductPricingV0/GetItemOffersBatchRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV0\GetItemOffersBatchResponse**](../Model/ProductPricingV0/GetItemOffersBatchResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV0\GetItemOffersBatchResponse**](../Model/ProductPricingV0/GetItemOffersBatchResponse.md)
 
 ### HTTP request headers
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 ## `getListingOffers()`
 
 ```php
-getListingOffers($marketplace_id, $item_condition, $seller_sku, $customer_type): \SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse
+getListingOffers($marketplace_id, $item_condition, $seller_sku, $customer_type): \SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse
 ```
 
 
@@ -245,16 +245,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for which prices are returned.
 $item_condition = 'item_condition_example'; // string | Filters the offer listings based on item condition. Possible values: New, Used, Collectible, Refurbished, Club.
 $seller_sku = 'seller_sku_example'; // string | Identifies an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
@@ -279,7 +279,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV0\GetOffersResponse**](../Model/ProductPricingV0/GetOffersResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV0\GetOffersResponse**](../Model/ProductPricingV0/GetOffersResponse.md)
 
 ### HTTP request headers
 
@@ -293,7 +293,7 @@ Name | Type | Description  | Notes
 ## `getListingOffersBatch()`
 
 ```php
-getListingOffersBatch($get_listing_offers_batch_request_body): \SellingPartnerApi\Model\ProductPricingV0\GetListingOffersBatchResponse
+getListingOffersBatch($get_listing_offers_batch_request_body): \SellingPartnerApiV5\Model\ProductPricingV0\GetListingOffersBatchResponse
 ```
 
 
@@ -315,17 +315,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV0Api($config);
-$get_listing_offers_batch_request_body = new \SellingPartnerApi\Model\ProductPricingV0\GetListingOffersBatchRequest(); // \SellingPartnerApi\Model\ProductPricingV0\GetListingOffersBatchRequest
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV0Api($config);
+$get_listing_offers_batch_request_body = new \SellingPartnerApiV5\Model\ProductPricingV0\GetListingOffersBatchRequest(); // \SellingPartnerApiV5\Model\ProductPricingV0\GetListingOffersBatchRequest
 
 try {
     $result = $apiInstance->getListingOffersBatch($get_listing_offers_batch_request_body);
@@ -339,11 +339,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **get_listing_offers_batch_request_body** | [**\SellingPartnerApi\Model\ProductPricingV0\GetListingOffersBatchRequest**](../Model/ProductPricingV0/GetListingOffersBatchRequest.md)|  |
+ **get_listing_offers_batch_request_body** | [**\SellingPartnerApiV5\Model\ProductPricingV0\GetListingOffersBatchRequest**](../Model/ProductPricingV0/GetListingOffersBatchRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV0\GetListingOffersBatchResponse**](../Model/ProductPricingV0/GetListingOffersBatchResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV0\GetListingOffersBatchResponse**](../Model/ProductPricingV0/GetListingOffersBatchResponse.md)
 
 ### HTTP request headers
 
@@ -357,7 +357,7 @@ Name | Type | Description  | Notes
 ## `getPricing()`
 
 ```php
-getPricing($marketplace_id, $item_type, $asins, $skus, $item_condition, $offer_type): \SellingPartnerApi\Model\ProductPricingV0\GetPricingResponse
+getPricing($marketplace_id, $item_type, $asins, $skus, $item_condition, $offer_type): \SellingPartnerApiV5\Model\ProductPricingV0\GetPricingResponse
 ```
 
 
@@ -381,16 +381,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for which prices are returned.
 $item_type = 'item_type_example'; // string | Indicates whether ASIN values or seller SKU values are used to identify items. If you specify Asin, the information in the response will be dependent on the list of Asins you provide in the Asins parameter. If you specify Sku, the information in the response will be dependent on the list of Skus you provide in the Skus parameter.
 $asins = array('asins_example'); // string[] | A list of up to twenty Amazon Standard Identification Number (ASIN) values used to identify items in the given marketplace.
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV0\GetPricingResponse**](../Model/ProductPricingV0/GetPricingResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV0\GetPricingResponse**](../Model/ProductPricingV0/GetPricingResponse.md)
 
 ### HTTP request headers
 

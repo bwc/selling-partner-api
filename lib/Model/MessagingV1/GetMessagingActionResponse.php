@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMessagingActionResponse Class Doc Comment
  *
  * @category Class
  * @description Describes a messaging action that can be taken for an order. Provides a JSON Hypertext Application Language (HAL) link to the JSON schema document that describes the expected input.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_links' => '\SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponseLinks',
-        '_embedded' => '\SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponseEmbedded',
-        'payload' => '\SellingPartnerApi\Model\MessagingV1\MessagingAction',
-        'errors' => '\SellingPartnerApi\Model\MessagingV1\Error[]'
+        '_links' => '\SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponseLinks',
+        '_embedded' => '\SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponseEmbedded',
+        'payload' => '\SellingPartnerApiV5\Model\MessagingV1\MessagingAction',
+        'errors' => '\SellingPartnerApiV5\Model\MessagingV1\Error[]'
     ];
 
     /**
@@ -155,7 +155,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets _links
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponseLinks|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponseLinks|null
      */
     public function getLinks()
     {
@@ -165,7 +165,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets _links
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponseLinks|null $_links _links
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponseLinks|null $_links _links
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets _embedded
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponseEmbedded|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponseEmbedded|null
      */
     public function getEmbedded()
     {
@@ -188,7 +188,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets _embedded
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\GetMessagingActionResponseEmbedded|null $_embedded _embedded
+     * @param \SellingPartnerApiV5\Model\MessagingV1\GetMessagingActionResponseEmbedded|null $_embedded _embedded
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\MessagingAction|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\MessagingAction|null
      */
     public function getPayload()
     {
@@ -211,7 +211,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\MessagingAction|null $payload payload
+     * @param \SellingPartnerApiV5\Model\MessagingV1\MessagingAction|null $payload payload
      *
      * @return self
      */
@@ -224,7 +224,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\MessagingV1\Error[]|null
      */
     public function getErrors()
     {
@@ -234,7 +234,7 @@ class GetMessagingActionResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

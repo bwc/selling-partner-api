@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Package Class Doc Comment
  *
  * @category Class
  * @description A package to be shipped through a shipping service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,14 +58,14 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'dimensions' => '\SellingPartnerApi\Model\ShippingV2\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\ShippingV2\Weight',
-        'insured_value' => '\SellingPartnerApi\Model\ShippingV2\Currency',
+        'dimensions' => '\SellingPartnerApiV5\Model\ShippingV2\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\ShippingV2\Weight',
+        'insured_value' => '\SellingPartnerApiV5\Model\ShippingV2\Currency',
         'is_hazmat' => 'bool',
         'seller_display_name' => 'string',
-        'charges' => '\SellingPartnerApi\Model\ShippingV2\ChargeComponent[]',
+        'charges' => '\SellingPartnerApiV5\Model\ShippingV2\ChargeComponent[]',
         'package_client_reference_id' => 'string',
-        'items' => '\SellingPartnerApi\Model\ShippingV2\Item[]'
+        'items' => '\SellingPartnerApiV5\Model\ShippingV2\Item[]'
     ];
 
     /**
@@ -194,7 +194,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Dimensions
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Dimensions
      */
     public function getDimensions()
     {
@@ -204,7 +204,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Dimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -217,7 +217,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Weight
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Weight
      */
     public function getWeight()
     {
@@ -227,7 +227,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Weight $weight weight
      *
      * @return self
      */
@@ -240,7 +240,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets insured_value
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Currency
      */
     public function getInsuredValue()
     {
@@ -250,7 +250,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets insured_value
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Currency $insured_value insured_value
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Currency $insured_value insured_value
      *
      * @return self
      */
@@ -309,7 +309,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets charges
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\ChargeComponent[]|null
      */
     public function getCharges()
     {
@@ -319,7 +319,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets charges
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\ChargeComponent[]|null $charges A list of charges based on the shipping service charges applied on a package.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\ChargeComponent[]|null $charges A list of charges based on the shipping service charges applied on a package.
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Item[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Item[]
      */
     public function getItems()
     {
@@ -365,7 +365,7 @@ class Package extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Item[] $items A list of items.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Item[] $items A list of items.
      *
      * @return self
      */

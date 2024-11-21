@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorInvoicesV1;
+namespace SellingPartnerApiV5\Model\VendorInvoicesV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Invoice Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,17 +61,17 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
         'id' => 'string',
         'reference_number' => 'string',
         'date' => 'string',
-        'remit_to_party' => '\SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification',
-        'bill_to_party' => '\SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification',
-        'payment_terms' => '\SellingPartnerApi\Model\VendorInvoicesV1\PaymentTerms',
-        'invoice_total' => '\SellingPartnerApi\Model\VendorInvoicesV1\Money',
-        'tax_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]',
-        'additional_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\AdditionalDetails[]',
-        'charge_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\ChargeDetails[]',
-        'allowance_details' => '\SellingPartnerApi\Model\VendorInvoicesV1\AllowanceDetails[]',
-        'items' => '\SellingPartnerApi\Model\VendorInvoicesV1\InvoiceItem[]'
+        'remit_to_party' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification',
+        'bill_to_party' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification',
+        'payment_terms' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\PaymentTerms',
+        'invoice_total' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\Money',
+        'tax_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]',
+        'additional_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\AdditionalDetails[]',
+        'charge_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\ChargeDetails[]',
+        'allowance_details' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\AllowanceDetails[]',
+        'items' => '\SellingPartnerApiV5\Model\VendorInvoicesV1\InvoiceItem[]'
     ];
 
     /**
@@ -371,7 +371,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets remit_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification
      */
     public function getRemitToParty()
     {
@@ -381,7 +381,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets remit_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification $remit_to_party remit_to_party
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification $remit_to_party remit_to_party
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification|null
      */
     public function getShipToParty()
     {
@@ -404,7 +404,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification|null $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification|null $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -417,7 +417,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification|null
      */
     public function getShipFromParty()
     {
@@ -427,7 +427,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification|null $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification|null $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -440,7 +440,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets bill_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification|null
      */
     public function getBillToParty()
     {
@@ -450,7 +450,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets bill_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\PartyIdentification|null $bill_to_party bill_to_party
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\PartyIdentification|null $bill_to_party bill_to_party
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets payment_terms
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\PaymentTerms|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\PaymentTerms|null
      */
     public function getPaymentTerms()
     {
@@ -473,7 +473,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets payment_terms
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\PaymentTerms|null $payment_terms payment_terms
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\PaymentTerms|null $payment_terms payment_terms
      *
      * @return self
      */
@@ -486,7 +486,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets invoice_total
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\Money
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\Money
      */
     public function getInvoiceTotal()
     {
@@ -496,7 +496,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets invoice_total
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\Money $invoice_total invoice_total
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\Money $invoice_total invoice_total
      *
      * @return self
      */
@@ -509,7 +509,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets tax_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null
      */
     public function getTaxDetails()
     {
@@ -519,7 +519,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets tax_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Total tax amount details for all line items.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\TaxDetails[]|null $tax_details Total tax amount details for all line items.
      *
      * @return self
      */
@@ -532,7 +532,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets additional_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\AdditionalDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\AdditionalDetails[]|null
      */
     public function getAdditionalDetails()
     {
@@ -542,7 +542,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets additional_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\AdditionalDetails[]|null $additional_details Additional details provided by the selling party, for tax related or other purposes.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\AdditionalDetails[]|null $additional_details Additional details provided by the selling party, for tax related or other purposes.
      *
      * @return self
      */
@@ -555,7 +555,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets charge_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\ChargeDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\ChargeDetails[]|null
      */
     public function getChargeDetails()
     {
@@ -565,7 +565,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets charge_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\ChargeDetails[]|null $charge_details Total charge amount details for all line items.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\ChargeDetails[]|null $charge_details Total charge amount details for all line items.
      *
      * @return self
      */
@@ -578,7 +578,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets allowance_details
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\AllowanceDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\AllowanceDetails[]|null
      */
     public function getAllowanceDetails()
     {
@@ -588,7 +588,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets allowance_details
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\AllowanceDetails[]|null $allowance_details Total allowance amount details for all line items.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\AllowanceDetails[]|null $allowance_details Total allowance amount details for all line items.
      *
      * @return self
      */
@@ -601,7 +601,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorInvoicesV1\InvoiceItem[]|null
+     * @return \SellingPartnerApiV5\Model\VendorInvoicesV1\InvoiceItem[]|null
      */
     public function getItems()
     {
@@ -611,7 +611,7 @@ class Invoice extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorInvoicesV1\InvoiceItem[]|null $items The list of invoice items.
+     * @param \SellingPartnerApiV5\Model\VendorInvoicesV1\InvoiceItem[]|null $items The list of invoice items.
      *
      * @return self
      */

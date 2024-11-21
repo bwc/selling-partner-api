@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InvalidReturnItem Class Doc Comment
  *
  * @category Class
  * @description An item that is invalid for return.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class InvalidReturnItem extends BaseModel implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'seller_return_item_id' => 'string',
         'seller_fulfillment_order_item_id' => 'string',
-        'invalid_item_reason' => '\SellingPartnerApi\Model\FbaOutboundV20200701\InvalidItemReason'
+        'invalid_item_reason' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidItemReason'
     ];
 
     /**
@@ -204,7 +204,7 @@ class InvalidReturnItem extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets invalid_item_reason
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\InvalidItemReason
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidItemReason
      */
     public function getInvalidItemReason()
     {
@@ -214,7 +214,7 @@ class InvalidReturnItem extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets invalid_item_reason
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\InvalidItemReason $invalid_item_reason invalid_item_reason
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\InvalidItemReason $invalid_item_reason invalid_item_reason
      *
      * @return self
      */

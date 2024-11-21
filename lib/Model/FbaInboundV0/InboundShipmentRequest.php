@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * InboundShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for an inbound shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class InboundShipmentRequest extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inbound_shipment_header' => '\SellingPartnerApi\Model\FbaInboundV0\InboundShipmentHeader',
-        'inbound_shipment_items' => '\SellingPartnerApi\Model\FbaInboundV0\InboundShipmentItem[]',
+        'inbound_shipment_header' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentHeader',
+        'inbound_shipment_items' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentItem[]',
         'marketplace_id' => 'string'
     ];
 
@@ -158,7 +158,7 @@ class InboundShipmentRequest extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets inbound_shipment_header
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentHeader
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentHeader
      */
     public function getInboundShipmentHeader()
     {
@@ -168,7 +168,7 @@ class InboundShipmentRequest extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets inbound_shipment_header
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentHeader $inbound_shipment_header inbound_shipment_header
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentHeader $inbound_shipment_header inbound_shipment_header
      *
      * @return self
      */
@@ -181,7 +181,7 @@ class InboundShipmentRequest extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets inbound_shipment_items
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentItem[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentItem[]
      */
     public function getInboundShipmentItems()
     {
@@ -191,7 +191,7 @@ class InboundShipmentRequest extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets inbound_shipment_items
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentItem[] $inbound_shipment_items A list of inbound shipment item information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentItem[] $inbound_shipment_items A list of inbound shipment item information.
      *
      * @return self
      */

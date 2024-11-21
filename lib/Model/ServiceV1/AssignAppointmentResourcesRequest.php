@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AssignAppointmentResourcesRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema for the `assignAppointmentResources` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class AssignAppointmentResourcesRequest extends BaseModel implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'resources' => '\SellingPartnerApi\Model\ServiceV1\AppointmentResource[]'
+        'resources' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentResource[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class AssignAppointmentResourcesRequest extends BaseModel implements ModelInterf
     /**
      * Gets resources
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentResource[]
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentResource[]
      */
     public function getResources()
     {
@@ -150,7 +150,7 @@ class AssignAppointmentResourcesRequest extends BaseModel implements ModelInterf
     /**
      * Sets resources
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentResource[] $resources List of resources that performs or performed job appointment fulfillment.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentResource[] $resources List of resources that performs or performed job appointment fulfillment.
      *
      * @return self
      */

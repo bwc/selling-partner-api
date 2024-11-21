@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductTypeDefinitionsV20200901;
+namespace SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SchemaLink Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class SchemaLink extends BaseModel implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'link' => '\SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLinkLink',
+        'link' => '\SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLinkLink',
         'checksum' => 'string'
     ];
 
@@ -148,7 +148,7 @@ class SchemaLink extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets link
      *
-     * @return \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLinkLink
+     * @return \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLinkLink
      */
     public function getLink()
     {
@@ -158,7 +158,7 @@ class SchemaLink extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets link
      *
-     * @param \SellingPartnerApi\Model\ProductTypeDefinitionsV20200901\SchemaLinkLink $link link
+     * @param \SellingPartnerApiV5\Model\ProductTypeDefinitionsV20200901\SchemaLinkLink $link link
      *
      * @return self
      */

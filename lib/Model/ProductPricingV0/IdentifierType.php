@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * IdentifierType Class Doc Comment
  *
  * @category Class
  * @description Specifies the identifiers used to uniquely identify an item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class IdentifierType extends BaseModel implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'marketplace_asin' => '\SellingPartnerApi\Model\ProductPricingV0\ASINIdentifier',
-        'sku_identifier' => '\SellingPartnerApi\Model\ProductPricingV0\SellerSKUIdentifier'
+        'marketplace_asin' => '\SellingPartnerApiV5\Model\ProductPricingV0\ASINIdentifier',
+        'sku_identifier' => '\SellingPartnerApiV5\Model\ProductPricingV0\SellerSKUIdentifier'
     ];
 
     /**
@@ -146,7 +146,7 @@ class IdentifierType extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets marketplace_asin
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\ASINIdentifier
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\ASINIdentifier
      */
     public function getMarketplaceAsin()
     {
@@ -156,7 +156,7 @@ class IdentifierType extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets marketplace_asin
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\ASINIdentifier $marketplace_asin marketplace_asin
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\ASINIdentifier $marketplace_asin marketplace_asin
      *
      * @return self
      */
@@ -169,7 +169,7 @@ class IdentifierType extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets sku_identifier
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\SellerSKUIdentifier|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\SellerSKUIdentifier|null
      */
     public function getSkuIdentifier()
     {
@@ -179,7 +179,7 @@ class IdentifierType extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets sku_identifier
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\SellerSKUIdentifier|null $sku_identifier sku_identifier
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\SellerSKUIdentifier|null $sku_identifier sku_identifier
      *
      * @return self
      */

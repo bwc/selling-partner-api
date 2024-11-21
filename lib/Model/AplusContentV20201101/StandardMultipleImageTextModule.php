@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardMultipleImageTextModule Class Doc Comment
  *
  * @category Class
  * @description Standard images with text, presented one at a time. The user clicks on thumbnails to view each block.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class StandardMultipleImageTextModule extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'blocks' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextCaptionBlock[]'
+        'blocks' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextCaptionBlock[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class StandardMultipleImageTextModule extends BaseModel implements ModelInterfac
     /**
      * Gets blocks
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextCaptionBlock[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextCaptionBlock[]|null
      */
     public function getBlocks()
     {
@@ -147,7 +147,7 @@ class StandardMultipleImageTextModule extends BaseModel implements ModelInterfac
     /**
      * Sets blocks
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextCaptionBlock[]|null $blocks blocks
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextCaptionBlock[]|null $blocks blocks
      *
      * @return self
      */

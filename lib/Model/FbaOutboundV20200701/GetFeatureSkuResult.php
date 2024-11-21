@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetFeatureSkuResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the getFeatureSKU operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,7 +62,7 @@ class GetFeatureSkuResult extends BaseModel implements ModelInterface, ArrayAcce
         'feature_name' => 'string',
         'is_eligible' => 'bool',
         'ineligible_reasons' => 'string[]',
-        'sku_info' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSku'
+        'sku_info' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSku'
     ];
 
     /**
@@ -266,7 +266,7 @@ class GetFeatureSkuResult extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets sku_info
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSku|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSku|null
      */
     public function getSkuInfo()
     {
@@ -276,7 +276,7 @@ class GetFeatureSkuResult extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets sku_info
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSku|null $sku_info sku_info
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSku|null $sku_info sku_info
      *
      * @return self
      */

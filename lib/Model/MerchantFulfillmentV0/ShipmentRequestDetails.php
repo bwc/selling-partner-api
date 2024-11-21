@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentRequestDetails Class Doc Comment
  *
  * @category Class
  * @description Shipment information required for requesting shipping service offers or for creating a shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,14 +60,14 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
-        'item_list' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\FBMItem[]',
-        'ship_from_address' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Address',
-        'package_dimensions' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\PackageDimensions',
-        'weight' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Weight',
+        'item_list' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\FBMItem[]',
+        'ship_from_address' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address',
+        'package_dimensions' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\PackageDimensions',
+        'weight' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight',
         'must_arrive_by_date' => 'string',
         'ship_date' => 'string',
-        'shipping_service_options' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingServiceOptions',
-        'label_customization' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\LabelCustomization'
+        'shipping_service_options' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingServiceOptions',
+        'label_customization' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelCustomization'
     ];
 
     /**
@@ -263,7 +263,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets item_list
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\FBMItem[]
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FBMItem[]
      */
     public function getItemList()
     {
@@ -273,7 +273,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets item_list
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\FBMItem[] $item_list The list of items to be included in a shipment.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FBMItem[] $item_list The list of items to be included in a shipment.
      *
      * @return self
      */
@@ -286,7 +286,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets ship_from_address
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Address
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address
      */
     public function getShipFromAddress()
     {
@@ -296,7 +296,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets ship_from_address
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Address $ship_from_address ship_from_address
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Address $ship_from_address ship_from_address
      *
      * @return self
      */
@@ -309,7 +309,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets package_dimensions
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\PackageDimensions
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\PackageDimensions
      */
     public function getPackageDimensions()
     {
@@ -319,7 +319,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets package_dimensions
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\PackageDimensions $package_dimensions package_dimensions
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\PackageDimensions $package_dimensions package_dimensions
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Weight
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight
      */
     public function getWeight()
     {
@@ -342,7 +342,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Weight $weight weight
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets shipping_service_options
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingServiceOptions
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingServiceOptions
      */
     public function getShippingServiceOptions()
     {
@@ -411,7 +411,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets shipping_service_options
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ShippingServiceOptions $shipping_service_options shipping_service_options
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ShippingServiceOptions $shipping_service_options shipping_service_options
      *
      * @return self
      */
@@ -424,7 +424,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets label_customization
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelCustomization|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelCustomization|null
      */
     public function getLabelCustomization()
     {
@@ -434,7 +434,7 @@ class ShipmentRequestDetails extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets label_customization
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelCustomization|null $label_customization label_customization
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelCustomization|null $label_customization label_customization
      *
      * @return self
      */

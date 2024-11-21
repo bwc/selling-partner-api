@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ServiceJob Class Doc Comment
  *
  * @category Class
  * @description The job details of a service.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,17 +61,17 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
         'create_time' => 'string',
         'service_job_id' => 'string',
         'service_job_status' => 'string',
-        'scope_of_work' => '\SellingPartnerApi\Model\ServiceV1\ScopeOfWork',
-        'seller' => '\SellingPartnerApi\Model\ServiceV1\Seller',
-        'service_job_provider' => '\SellingPartnerApi\Model\ServiceV1\ServiceJobProvider',
-        'preferred_appointment_times' => '\SellingPartnerApi\Model\ServiceV1\AppointmentTime[]',
-        'appointments' => '\SellingPartnerApi\Model\ServiceV1\Appointment[]',
+        'scope_of_work' => '\SellingPartnerApiV5\Model\ServiceV1\ScopeOfWork',
+        'seller' => '\SellingPartnerApiV5\Model\ServiceV1\Seller',
+        'service_job_provider' => '\SellingPartnerApiV5\Model\ServiceV1\ServiceJobProvider',
+        'preferred_appointment_times' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentTime[]',
+        'appointments' => '\SellingPartnerApiV5\Model\ServiceV1\Appointment[]',
         'service_order_id' => 'string',
         'marketplace_id' => 'string',
         'store_id' => 'string',
-        'buyer' => '\SellingPartnerApi\Model\ServiceV1\Buyer',
-        'associated_items' => '\SellingPartnerApi\Model\ServiceV1\AssociatedItem[]',
-        'service_location' => '\SellingPartnerApi\Model\ServiceV1\ServiceLocation'
+        'buyer' => '\SellingPartnerApiV5\Model\ServiceV1\Buyer',
+        'associated_items' => '\SellingPartnerApiV5\Model\ServiceV1\AssociatedItem[]',
+        'service_location' => '\SellingPartnerApiV5\Model\ServiceV1\ServiceLocation'
     ];
 
     /**
@@ -373,7 +373,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets scope_of_work
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\ScopeOfWork|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\ScopeOfWork|null
      */
     public function getScopeOfWork()
     {
@@ -383,7 +383,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets scope_of_work
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\ScopeOfWork|null $scope_of_work scope_of_work
+     * @param \SellingPartnerApiV5\Model\ServiceV1\ScopeOfWork|null $scope_of_work scope_of_work
      *
      * @return self
      */
@@ -396,7 +396,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets seller
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Seller|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Seller|null
      */
     public function getSeller()
     {
@@ -406,7 +406,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets seller
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Seller|null $seller seller
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Seller|null $seller seller
      *
      * @return self
      */
@@ -419,7 +419,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets service_job_provider
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\ServiceJobProvider|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\ServiceJobProvider|null
      */
     public function getServiceJobProvider()
     {
@@ -429,7 +429,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets service_job_provider
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\ServiceJobProvider|null $service_job_provider service_job_provider
+     * @param \SellingPartnerApiV5\Model\ServiceV1\ServiceJobProvider|null $service_job_provider service_job_provider
      *
      * @return self
      */
@@ -442,7 +442,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets preferred_appointment_times
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentTime[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentTime[]|null
      */
     public function getPreferredAppointmentTimes()
     {
@@ -452,7 +452,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets preferred_appointment_times
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentTime[]|null $preferred_appointment_times A list of appointment windows preferred by the buyer. Included only if the buyer selected appointment windows when creating the order.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentTime[]|null $preferred_appointment_times A list of appointment windows preferred by the buyer. Included only if the buyer selected appointment windows when creating the order.
      *
      * @return self
      */
@@ -465,7 +465,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets appointments
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Appointment[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Appointment[]|null
      */
     public function getAppointments()
     {
@@ -475,7 +475,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets appointments
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Appointment[]|null $appointments A list of appointments.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Appointment[]|null $appointments A list of appointments.
      *
      * @return self
      */
@@ -576,7 +576,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets buyer
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Buyer|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Buyer|null
      */
     public function getBuyer()
     {
@@ -586,7 +586,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets buyer
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Buyer|null $buyer buyer
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Buyer|null $buyer buyer
      *
      * @return self
      */
@@ -599,7 +599,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets associated_items
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AssociatedItem[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AssociatedItem[]|null
      */
     public function getAssociatedItems()
     {
@@ -609,7 +609,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets associated_items
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AssociatedItem[]|null $associated_items A list of items associated with the service job.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AssociatedItem[]|null $associated_items A list of items associated with the service job.
      *
      * @return self
      */
@@ -622,7 +622,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets service_location
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\ServiceLocation|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\ServiceLocation|null
      */
     public function getServiceLocation()
     {
@@ -632,7 +632,7 @@ class ServiceJob extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets service_location
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\ServiceLocation|null $service_location service_location
+     * @param \SellingPartnerApiV5\Model\ServiceV1\ServiceLocation|null $service_location service_location
      *
      * @return self
      */

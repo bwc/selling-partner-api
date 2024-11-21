@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackedItem Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class PackedItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
         'buyer_product_identifier' => 'string',
         'piece_number' => 'int',
         'vendor_product_identifier' => 'string',
-        'packed_quantity' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ItemQuantity'
+        'packed_quantity' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ItemQuantity'
     ];
 
     /**
@@ -258,7 +258,7 @@ class PackedItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets packed_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ItemQuantity
      */
     public function getPackedQuantity()
     {
@@ -268,7 +268,7 @@ class PackedItem extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets packed_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV20211228\ItemQuantity $packed_quantity packed_quantity
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV20211228\ItemQuantity $packed_quantity packed_quantity
      *
      * @return self
      */

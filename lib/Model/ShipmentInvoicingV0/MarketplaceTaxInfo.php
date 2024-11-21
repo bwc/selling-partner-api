@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShipmentInvoicingV0;
+namespace SellingPartnerApiV5\Model\ShipmentInvoicingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * MarketplaceTaxInfo Class Doc Comment
  *
  * @category Class
  * @description Tax information about the marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class MarketplaceTaxInfo extends BaseModel implements ModelInterface, ArrayAcces
     protected static $openAPITypes = [
         'company_legal_name' => 'string',
         'taxing_region' => 'string',
-        'tax_classifications' => '\SellingPartnerApi\Model\ShipmentInvoicingV0\TaxClassification[]'
+        'tax_classifications' => '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\TaxClassification[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class MarketplaceTaxInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets tax_classifications
      *
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\TaxClassification[]|null
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\TaxClassification[]|null
      */
     public function getTaxClassifications()
     {
@@ -205,7 +205,7 @@ class MarketplaceTaxInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets tax_classifications
      *
-     * @param \SellingPartnerApi\Model\ShipmentInvoicingV0\TaxClassification[]|null $tax_classifications The list of tax classifications.
+     * @param \SellingPartnerApiV5\Model\ShipmentInvoicingV0\TaxClassification[]|null $tax_classifications The list of tax classifications.
      *
      * @return self
      */

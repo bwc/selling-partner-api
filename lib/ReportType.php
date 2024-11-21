@@ -1,6 +1,6 @@
 <?php
 
-namespace SellingPartnerApi;
+namespace SellingPartnerApiV5;
 
 /*******************************************/
 /* Report types and associated information */

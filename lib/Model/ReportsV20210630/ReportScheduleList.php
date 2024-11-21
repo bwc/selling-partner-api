@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReportsV20210630;
+namespace SellingPartnerApiV5\Model\ReportsV20210630;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ReportScheduleList Class Doc Comment
  *
  * @category Class
  * @description A list of report schedules.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ReportScheduleList extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'report_schedules' => '\SellingPartnerApi\Model\ReportsV20210630\ReportSchedule[]'
+        'report_schedules' => '\SellingPartnerApiV5\Model\ReportsV20210630\ReportSchedule[]'
     ];
 
     /**
@@ -165,7 +165,7 @@ class ReportScheduleList extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets report_schedules
      *
-     * @return \SellingPartnerApi\Model\ReportsV20210630\ReportSchedule[]
+     * @return \SellingPartnerApiV5\Model\ReportsV20210630\ReportSchedule[]
      */
     public function getReportSchedules()
     {
@@ -175,7 +175,7 @@ class ReportScheduleList extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets report_schedules
      *
-     * @param \SellingPartnerApi\Model\ReportsV20210630\ReportSchedule[] $report_schedules report_schedules
+     * @param \SellingPartnerApiV5\Model\ReportsV20210630\ReportSchedule[] $report_schedules report_schedules
      *
      * @return self
      */

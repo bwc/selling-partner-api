@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateScheduleRequest Class Doc Comment
  *
  * @category Class
  * @description Request schema for the `updateSchedule` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class UpdateScheduleRequest extends BaseModel implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'schedules' => '\SellingPartnerApi\Model\ServiceV1\AvailabilityRecord[]'
+        'schedules' => '\SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class UpdateScheduleRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets schedules
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AvailabilityRecord[]
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord[]
      */
     public function getSchedules()
     {
@@ -150,7 +150,7 @@ class UpdateScheduleRequest extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets schedules
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AvailabilityRecord[] $schedules List of `AvailabilityRecord`s to represent the capacity of a resource over a time range.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord[] $schedules List of `AvailabilityRecord`s to represent the capacity of a resource over a time range.
      *
      * @return self
      */

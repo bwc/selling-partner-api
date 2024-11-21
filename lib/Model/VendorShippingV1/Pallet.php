@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Pallet Class Doc Comment
  *
  * @category Class
  * @description Details of the Pallet/Tare being shipped.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,13 +58,13 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pallet_identifiers' => '\SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]',
+        'pallet_identifiers' => '\SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]',
         'tier' => 'int',
         'block' => 'int',
-        'dimensions' => '\SellingPartnerApi\Model\VendorShippingV1\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\VendorShippingV1\Weight',
-        'carton_reference_details' => '\SellingPartnerApi\Model\VendorShippingV1\CartonReferenceDetails',
-        'items' => '\SellingPartnerApi\Model\VendorShippingV1\ContainerItem[]'
+        'dimensions' => '\SellingPartnerApiV5\Model\VendorShippingV1\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\VendorShippingV1\Weight',
+        'carton_reference_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\CartonReferenceDetails',
+        'items' => '\SellingPartnerApiV5\Model\VendorShippingV1\ContainerItem[]'
     ];
 
     /**
@@ -176,7 +176,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets pallet_identifiers
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]
      */
     public function getPalletIdentifiers()
     {
@@ -186,7 +186,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets pallet_identifiers
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[] $pallet_identifiers A list of pallet identifiers.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[] $pallet_identifiers A list of pallet identifiers.
      *
      * @return self
      */
@@ -245,7 +245,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Dimensions|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Dimensions|null
      */
     public function getDimensions()
     {
@@ -255,7 +255,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Dimensions|null $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Dimensions|null $dimensions dimensions
      *
      * @return self
      */
@@ -268,7 +268,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null
      */
     public function getWeight()
     {
@@ -278,7 +278,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Weight|null $weight weight
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null $weight weight
      *
      * @return self
      */
@@ -291,7 +291,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets carton_reference_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\CartonReferenceDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\CartonReferenceDetails|null
      */
     public function getCartonReferenceDetails()
     {
@@ -301,7 +301,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets carton_reference_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\CartonReferenceDetails|null $carton_reference_details carton_reference_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\CartonReferenceDetails|null $carton_reference_details carton_reference_details
      *
      * @return self
      */
@@ -314,7 +314,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ContainerItem[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ContainerItem[]|null
      */
     public function getItems()
     {
@@ -324,7 +324,7 @@ class Pallet extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ContainerItem[]|null $items A list of container item details.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ContainerItem[]|null $items A list of container item details.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShippingLabelRequest Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'purchase_order_number' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
-        'containers' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Container[]'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification',
+        'containers' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Container[]'
     ];
 
     /**
@@ -195,7 +195,7 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -205,7 +205,7 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -218,7 +218,7 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -228,7 +228,7 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -241,7 +241,7 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Container[]|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Container[]|null
      */
     public function getContainers()
     {
@@ -251,7 +251,7 @@ class ShippingLabelRequest extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\Container[]|null $containers A list of the packages in this shipment.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\Container[]|null $containers A list of the packages in this shipment.
      *
      * @return self
      */

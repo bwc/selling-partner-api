@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsRestrictionsV20210801;
+namespace SellingPartnerApiV5\Model\ListingsRestrictionsV20210801;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Reason Class Doc Comment
  *
  * @category Class
  * @description A reason for the restriction, including path forward links that may allow Selling Partners to remove the restriction, if available.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Reason extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     protected static $openAPITypes = [
         'message' => 'string',
         'reason_code' => 'string',
-        'links' => '\SellingPartnerApi\Model\ListingsRestrictionsV20210801\Link[]'
+        'links' => '\SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Link[]'
     ];
 
     /**
@@ -244,7 +244,7 @@ class Reason extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets links
      *
-     * @return \SellingPartnerApi\Model\ListingsRestrictionsV20210801\Link[]|null
+     * @return \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Link[]|null
      */
     public function getLinks()
     {
@@ -254,7 +254,7 @@ class Reason extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets links
      *
-     * @param \SellingPartnerApi\Model\ListingsRestrictionsV20210801\Link[]|null $links A list of path forward links that may allow Selling Partners to remove the restriction.
+     * @param \SellingPartnerApiV5\Model\ListingsRestrictionsV20210801\Link[]|null $links A list of path forward links that may allow Selling Partners to remove the restriction.
      *
      * @return self
      */

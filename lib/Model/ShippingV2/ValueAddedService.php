@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ValueAddedService Class Doc Comment
  *
  * @category Class
  * @description A value-added service available for purchase with a shipment service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ValueAddedService extends BaseModel implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'cost' => '\SellingPartnerApi\Model\ShippingV2\Currency'
+        'cost' => '\SellingPartnerApiV5\Model\ShippingV2\Currency'
     ];
 
     /**
@@ -204,7 +204,7 @@ class ValueAddedService extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets cost
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV2\Currency
      */
     public function getCost()
     {
@@ -214,7 +214,7 @@ class ValueAddedService extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets cost
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\Currency $cost cost
+     * @param \SellingPartnerApiV5\Model\ShippingV2\Currency $cost cost
      *
      * @return self
      */

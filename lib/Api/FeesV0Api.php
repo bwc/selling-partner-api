@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * FeesV0Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class FeesV0Api extends BaseApi
 {
@@ -44,11 +44,11 @@ class FeesV0Api extends BaseApi
      * Operation getMyFeesEstimateForASIN
      *
      * @param  string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse
+     * @return \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse
      */
     public function getMyFeesEstimateForASIN($asin, $body)
     {
@@ -60,11 +60,11 @@ class FeesV0Api extends BaseApi
      * Operation getMyFeesEstimateForASINWithHttpInfo
      *
      * @param  string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMyFeesEstimateForASINWithHttpInfo($asin, $body)
     {
@@ -113,72 +113,72 @@ class FeesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -193,7 +193,7 @@ class FeesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -201,7 +201,7 @@ class FeesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -209,7 +209,7 @@ class FeesV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -217,7 +217,7 @@ class FeesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -225,7 +225,7 @@ class FeesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -233,7 +233,7 @@ class FeesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -241,7 +241,7 @@ class FeesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -249,7 +249,7 @@ class FeesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -266,7 +266,7 @@ class FeesV0Api extends BaseApi
      * 
      *
      * @param  string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -282,14 +282,14 @@ class FeesV0Api extends BaseApi
      * 
      *
      * @param  string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getMyFeesEstimateForASINAsyncWithHttpInfo($asin, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse';
         $request = $this->getMyFeesEstimateForASINRequest($asin, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -336,7 +336,7 @@ class FeesV0Api extends BaseApi
      * Create request for operation 'getMyFeesEstimateForASIN'
      *
      * @param  string $asin The Amazon Standard Identification Number (ASIN) of the item. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -438,11 +438,11 @@ class FeesV0Api extends BaseApi
      * Operation getMyFeesEstimateForSKU
      *
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse
+     * @return \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse
      */
     public function getMyFeesEstimateForSKU($seller_sku, $body)
     {
@@ -454,11 +454,11 @@ class FeesV0Api extends BaseApi
      * Operation getMyFeesEstimateForSKUWithHttpInfo
      *
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMyFeesEstimateForSKUWithHttpInfo($seller_sku, $body)
     {
@@ -507,72 +507,72 @@ class FeesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse';
+            $returnType = '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -587,7 +587,7 @@ class FeesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -595,7 +595,7 @@ class FeesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -603,7 +603,7 @@ class FeesV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -611,7 +611,7 @@ class FeesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class FeesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -627,7 +627,7 @@ class FeesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -635,7 +635,7 @@ class FeesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -643,7 +643,7 @@ class FeesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -660,7 +660,7 @@ class FeesV0Api extends BaseApi
      * 
      *
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -676,14 +676,14 @@ class FeesV0Api extends BaseApi
      * 
      *
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getMyFeesEstimateForSKUAsyncWithHttpInfo($seller_sku, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateResponse';
+        $returnType = '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateResponse';
         $request = $this->getMyFeesEstimateForSKURequest($seller_sku, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -730,7 +730,7 @@ class FeesV0Api extends BaseApi
      * Create request for operation 'getMyFeesEstimateForSKU'
      *
      * @param  string $seller_sku Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit. (required)
-     * @param  \SellingPartnerApi\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimateRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -831,11 +831,11 @@ class FeesV0Api extends BaseApi
     /**
      * Operation getMyFeesEstimates
      *
-     * @param  \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[] $body body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[] $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]
+     * @return \SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]
      */
     public function getMyFeesEstimates($body)
     {
@@ -846,11 +846,11 @@ class FeesV0Api extends BaseApi
     /**
      * Operation getMyFeesEstimatesWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\FeesV0\FeesEstimateResult[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getMyFeesEstimatesWithHttpInfo($body)
     {
@@ -899,72 +899,72 @@ class FeesV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]';
+            $returnType = '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -979,7 +979,7 @@ class FeesV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]',
+                        '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -987,7 +987,7 @@ class FeesV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -995,7 +995,7 @@ class FeesV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1003,7 +1003,7 @@ class FeesV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1011,7 +1011,7 @@ class FeesV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1019,7 +1019,7 @@ class FeesV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1027,7 +1027,7 @@ class FeesV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1035,7 +1035,7 @@ class FeesV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\FeesV0\GetMyFeesEstimatesErrorList',
+                        '\SellingPartnerApiV5\Model\FeesV0\GetMyFeesEstimatesErrorList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1051,7 +1051,7 @@ class FeesV0Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1066,14 +1066,14 @@ class FeesV0Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getMyFeesEstimatesAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\FeesV0\FeesEstimateResult[]';
+        $returnType = '\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult[]';
         $request = $this->getMyFeesEstimatesRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1119,7 +1119,7 @@ class FeesV0Api extends BaseApi
     /**
      * Create request for operation 'getMyFeesEstimates'
      *
-     * @param  \SellingPartnerApi\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
+     * @param  \SellingPartnerApiV5\Model\FeesV0\FeesEstimateByIdRequest[] $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

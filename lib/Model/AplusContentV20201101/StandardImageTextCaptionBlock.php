@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardImageTextCaptionBlock Class Doc Comment
  *
  * @category Class
  * @description The A+ Content standard image and text block, with a related caption. The caption may not display on all devices.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class StandardImageTextCaptionBlock extends BaseModel implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'block' => '\SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock',
-        'caption' => '\SellingPartnerApi\Model\AplusContentV20201101\TextComponent'
+        'block' => '\SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock',
+        'caption' => '\SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent'
     ];
 
     /**
@@ -143,7 +143,7 @@ class StandardImageTextCaptionBlock extends BaseModel implements ModelInterface,
     /**
      * Gets block
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null
      */
     public function getBlock()
     {
@@ -153,7 +153,7 @@ class StandardImageTextCaptionBlock extends BaseModel implements ModelInterface,
     /**
      * Sets block
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\StandardImageTextBlock|null $block block
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\StandardImageTextBlock|null $block block
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class StandardImageTextCaptionBlock extends BaseModel implements ModelInterface,
     /**
      * Gets caption
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null
      */
     public function getCaption()
     {
@@ -176,7 +176,7 @@ class StandardImageTextCaptionBlock extends BaseModel implements ModelInterface,
     /**
      * Sets caption
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\TextComponent|null $caption caption
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\TextComponent|null $caption caption
      *
      * @return self
      */

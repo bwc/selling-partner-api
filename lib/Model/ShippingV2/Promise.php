@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Promise Class Doc Comment
  *
  * @category Class
  * @description The time windows promised for pickup and delivery events.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class Promise extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_window' => '\SellingPartnerApi\Model\ShippingV2\TimeWindow',
-        'pickup_window' => '\SellingPartnerApi\Model\ShippingV2\TimeWindow'
+        'delivery_window' => '\SellingPartnerApiV5\Model\ShippingV2\TimeWindow',
+        'pickup_window' => '\SellingPartnerApiV5\Model\ShippingV2\TimeWindow'
     ];
 
     /**
@@ -143,7 +143,7 @@ class Promise extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets delivery_window
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\TimeWindow|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\TimeWindow|null
      */
     public function getDeliveryWindow()
     {
@@ -153,7 +153,7 @@ class Promise extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets delivery_window
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\TimeWindow|null $delivery_window delivery_window
+     * @param \SellingPartnerApiV5\Model\ShippingV2\TimeWindow|null $delivery_window delivery_window
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class Promise extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets pickup_window
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\TimeWindow|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\TimeWindow|null
      */
     public function getPickupWindow()
     {
@@ -176,7 +176,7 @@ class Promise extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets pickup_window
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\TimeWindow|null $pickup_window pickup_window
+     * @param \SellingPartnerApiV5\Model\ShippingV2\TimeWindow|null $pickup_window pickup_window
      *
      * @return self
      */

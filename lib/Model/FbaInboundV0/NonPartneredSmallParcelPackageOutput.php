@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * NonPartneredSmallParcelPackageOutput Class Doc Comment
  *
  * @category Class
  * @description Carrier, tracking number, and status information for the package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class NonPartneredSmallParcelPackageOutput extends BaseModel implements ModelInt
     protected static $openAPITypes = [
         'carrier_name' => 'string',
         'tracking_id' => 'string',
-        'package_status' => '\SellingPartnerApi\Model\FbaInboundV0\PackageStatus'
+        'package_status' => '\SellingPartnerApiV5\Model\FbaInboundV0\PackageStatus'
     ];
 
     /**
@@ -204,7 +204,7 @@ class NonPartneredSmallParcelPackageOutput extends BaseModel implements ModelInt
     /**
      * Gets package_status
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PackageStatus
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PackageStatus
      */
     public function getPackageStatus()
     {
@@ -214,7 +214,7 @@ class NonPartneredSmallParcelPackageOutput extends BaseModel implements ModelInt
     /**
      * Sets package_status
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PackageStatus $package_status package_status
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PackageStatus $package_status package_status
      *
      * @return self
      */

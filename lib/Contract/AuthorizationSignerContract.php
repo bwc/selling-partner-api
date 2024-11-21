@@ -1,10 +1,10 @@
 <?php
 
-namespace SellingPartnerApi\Contract;
+namespace SellingPartnerApiV5\Contract;
 
 use DateTime;
 use Psr\Http\Message\RequestInterface;
-use SellingPartnerApi\Credentials;
+use SellingPartnerApiV5\Credentials;
 
 interface AuthorizationSignerContract
 {

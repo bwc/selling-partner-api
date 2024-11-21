@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ServiceLocation Class Doc Comment
  *
  * @category Class
  * @description Information about the location of the service job.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ServiceLocation extends BaseModel implements ModelInterface, ArrayAccess, 
       */
     protected static $openAPITypes = [
         'service_location_type' => 'string',
-        'address' => '\SellingPartnerApi\Model\ServiceV1\Address'
+        'address' => '\SellingPartnerApiV5\Model\ServiceV1\Address'
     ];
 
     /**
@@ -212,7 +212,7 @@ class ServiceLocation extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets address
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Address|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Address|null
      */
     public function getAddress()
     {
@@ -222,7 +222,7 @@ class ServiceLocation extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets address
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Address|null $address address
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Address|null $address address
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Summary Class Doc Comment
  *
  * @category Class
  * @description Contains price information about the product, including the LowestPrices and BuyBoxPrices, the ListPrice, the SuggestedLowerPricePlusShipping, and NumberOfOffers and NumberOfBuyBoxEligibleOffers.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,14 +59,14 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'total_offer_count' => 'int',
-        'number_of_offers' => '\SellingPartnerApi\Model\ProductPricingV0\OfferCountType[]',
-        'lowest_prices' => '\SellingPartnerApi\Model\ProductPricingV0\LowestPriceType[]',
-        'buy_box_prices' => '\SellingPartnerApi\Model\ProductPricingV0\BuyBoxPriceType[]',
-        'list_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'competitive_price_threshold' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'suggested_lower_price_plus_shipping' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'sales_rankings' => '\SellingPartnerApi\Model\ProductPricingV0\SalesRankType[]',
-        'buy_box_eligible_offers' => '\SellingPartnerApi\Model\ProductPricingV0\OfferCountType[]',
+        'number_of_offers' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferCountType[]',
+        'lowest_prices' => '\SellingPartnerApiV5\Model\ProductPricingV0\LowestPriceType[]',
+        'buy_box_prices' => '\SellingPartnerApiV5\Model\ProductPricingV0\BuyBoxPriceType[]',
+        'list_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'competitive_price_threshold' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'suggested_lower_price_plus_shipping' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'sales_rankings' => '\SellingPartnerApiV5\Model\ProductPricingV0\SalesRankType[]',
+        'buy_box_eligible_offers' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferCountType[]',
         'offers_available_time' => 'string'
     ];
 
@@ -217,7 +217,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets number_of_offers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferCountType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferCountType[]|null
      */
     public function getNumberOfOffers()
     {
@@ -227,7 +227,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets number_of_offers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferCountType[]|null $number_of_offers number_of_offers
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferCountType[]|null $number_of_offers number_of_offers
      *
      * @return self
      */
@@ -240,7 +240,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets lowest_prices
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\LowestPriceType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\LowestPriceType[]|null
      */
     public function getLowestPrices()
     {
@@ -250,7 +250,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets lowest_prices
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\LowestPriceType[]|null $lowest_prices lowest_prices
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\LowestPriceType[]|null $lowest_prices lowest_prices
      *
      * @return self
      */
@@ -263,7 +263,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets buy_box_prices
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\BuyBoxPriceType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\BuyBoxPriceType[]|null
      */
     public function getBuyBoxPrices()
     {
@@ -273,7 +273,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets buy_box_prices
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\BuyBoxPriceType[]|null $buy_box_prices buy_box_prices
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\BuyBoxPriceType[]|null $buy_box_prices buy_box_prices
      *
      * @return self
      */
@@ -286,7 +286,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets list_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getListPrice()
     {
@@ -296,7 +296,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets list_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $list_price list_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $list_price list_price
      *
      * @return self
      */
@@ -309,7 +309,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets competitive_price_threshold
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getCompetitivePriceThreshold()
     {
@@ -319,7 +319,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets competitive_price_threshold
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $competitive_price_threshold competitive_price_threshold
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $competitive_price_threshold competitive_price_threshold
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets suggested_lower_price_plus_shipping
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getSuggestedLowerPricePlusShipping()
     {
@@ -342,7 +342,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets suggested_lower_price_plus_shipping
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $suggested_lower_price_plus_shipping suggested_lower_price_plus_shipping
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $suggested_lower_price_plus_shipping suggested_lower_price_plus_shipping
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets sales_rankings
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\SalesRankType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\SalesRankType[]|null
      */
     public function getSalesRankings()
     {
@@ -365,7 +365,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sales_rankings
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\SalesRankType[]|null $sales_rankings A list of sales rank information for the item, by category.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\SalesRankType[]|null $sales_rankings A list of sales rank information for the item, by category.
      *
      * @return self
      */
@@ -378,7 +378,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets buy_box_eligible_offers
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferCountType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferCountType[]|null
      */
     public function getBuyBoxEligibleOffers()
     {
@@ -388,7 +388,7 @@ class Summary extends BaseModel implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets buy_box_eligible_offers
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferCountType[]|null $buy_box_eligible_offers buy_box_eligible_offers
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferCountType[]|null $buy_box_eligible_offers buy_box_eligible_offers
      *
      * @return self
      */

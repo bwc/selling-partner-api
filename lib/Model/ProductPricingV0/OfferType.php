@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OfferType Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,11 +57,11 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_type' => '\SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType',
-        'buying_price' => '\SellingPartnerApi\Model\ProductPricingV0\PriceType',
-        'regular_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'business_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'quantity_discount_prices' => '\SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountPriceType[]',
+        'offer_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType',
+        'buying_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\PriceType',
+        'regular_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'business_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'quantity_discount_prices' => '\SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountPriceType[]',
         'fulfillment_channel' => 'string',
         'item_condition' => 'string',
         'item_sub_condition' => 'string',
@@ -202,7 +202,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets offer_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null
      */
     public function getOfferType()
     {
@@ -212,7 +212,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets offer_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
      *
      * @return self
      */
@@ -225,7 +225,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets buying_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\PriceType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\PriceType
      */
     public function getBuyingPrice()
     {
@@ -235,7 +235,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets buying_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\PriceType $buying_price buying_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\PriceType $buying_price buying_price
      *
      * @return self
      */
@@ -248,7 +248,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets regular_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getRegularPrice()
     {
@@ -258,7 +258,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets regular_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $regular_price regular_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $regular_price regular_price
      *
      * @return self
      */
@@ -271,7 +271,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets business_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null
      */
     public function getBusinessPrice()
     {
@@ -281,7 +281,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets business_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType|null $business_price business_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType|null $business_price business_price
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets quantity_discount_prices
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountPriceType[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountPriceType[]|null
      */
     public function getQuantityDiscountPrices()
     {
@@ -304,7 +304,7 @@ class OfferType extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets quantity_discount_prices
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountPriceType[]|null $quantity_discount_prices quantity_discount_prices
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountPriceType[]|null $quantity_discount_prices quantity_discount_prices
      *
      * @return self
      */

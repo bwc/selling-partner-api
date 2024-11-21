@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * IneligibilityReason Class Doc Comment
  *
  * @category Class
  * @description The reason why a shipping service offering is ineligible.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class IneligibilityReason extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'code' => '\SellingPartnerApi\Model\ShippingV2\IneligibilityReasonCode',
+        'code' => '\SellingPartnerApiV5\Model\ShippingV2\IneligibilityReasonCode',
         'message' => 'string'
     ];
 
@@ -149,7 +149,7 @@ class IneligibilityReason extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets code
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\IneligibilityReasonCode
+     * @return \SellingPartnerApiV5\Model\ShippingV2\IneligibilityReasonCode
      */
     public function getCode()
     {
@@ -159,7 +159,7 @@ class IneligibilityReason extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets code
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\IneligibilityReasonCode $code code
+     * @param \SellingPartnerApiV5\Model\ShippingV2\IneligibilityReasonCode $code code
      *
      * @return self
      */

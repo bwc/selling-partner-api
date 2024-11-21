@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateFulfillmentOrderRequest Class Doc Comment
  *
  * @category Class
  * @description The request body schema for the createFulfillmentOrder operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,16 +63,16 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
         'displayable_order_id' => 'string',
         'displayable_order_date' => 'string',
         'displayable_order_comment' => 'string',
-        'shipping_speed_category' => '\SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory',
-        'delivery_window' => '\SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow',
-        'destination_address' => '\SellingPartnerApi\Model\FbaOutboundV20200701\Address',
-        'fulfillment_action' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction',
-        'fulfillment_policy' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy',
-        'cod_settings' => '\SellingPartnerApi\Model\FbaOutboundV20200701\CODSettings',
+        'shipping_speed_category' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory',
+        'delivery_window' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow',
+        'destination_address' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\Address',
+        'fulfillment_action' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction',
+        'fulfillment_policy' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy',
+        'cod_settings' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CODSettings',
         'ship_from_country_code' => 'string',
         'notification_emails' => 'string[]',
-        'feature_constraints' => '\SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]',
-        'items' => '\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderItem[]'
+        'feature_constraints' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]',
+        'items' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderItem[]'
     ];
 
     /**
@@ -381,7 +381,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets shipping_speed_category
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory
      */
     public function getShippingSpeedCategory()
     {
@@ -391,7 +391,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets shipping_speed_category
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\ShippingSpeedCategory $shipping_speed_category shipping_speed_category
      *
      * @return self
      */
@@ -404,7 +404,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets delivery_window
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow|null
      */
     public function getDeliveryWindow()
     {
@@ -414,7 +414,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets delivery_window
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\DeliveryWindow|null $delivery_window delivery_window
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\DeliveryWindow|null $delivery_window delivery_window
      *
      * @return self
      */
@@ -427,7 +427,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets destination_address
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\Address
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address
      */
     public function getDestinationAddress()
     {
@@ -437,7 +437,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets destination_address
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\Address $destination_address destination_address
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\Address $destination_address destination_address
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets fulfillment_action
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction|null
      */
     public function getFulfillmentAction()
     {
@@ -460,7 +460,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets fulfillment_action
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentAction|null $fulfillment_action fulfillment_action
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentAction|null $fulfillment_action fulfillment_action
      *
      * @return self
      */
@@ -473,7 +473,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets fulfillment_policy
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy|null
      */
     public function getFulfillmentPolicy()
     {
@@ -483,7 +483,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets fulfillment_policy
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FulfillmentPolicy|null $fulfillment_policy fulfillment_policy
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FulfillmentPolicy|null $fulfillment_policy fulfillment_policy
      *
      * @return self
      */
@@ -496,7 +496,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets cod_settings
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CODSettings|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CODSettings|null
      */
     public function getCodSettings()
     {
@@ -506,7 +506,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets cod_settings
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\CODSettings|null $cod_settings cod_settings
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\CODSettings|null $cod_settings cod_settings
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets feature_constraints
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null
      */
     public function getFeatureConstraints()
     {
@@ -575,7 +575,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets feature_constraints
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\FeatureSettings[]|null $feature_constraints A list of features and their fulfillment policies to apply to the order.
      *
      * @return self
      */
@@ -588,7 +588,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderItem[]
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderItem[]
      */
     public function getItems()
     {
@@ -598,7 +598,7 @@ class CreateFulfillmentOrderRequest extends BaseModel implements ModelInterface,
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderItem[] $items An array of item information for creating a fulfillment order.
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderItem[] $items An array of item information for creating a fulfillment order.
      *
      * @return self
      */

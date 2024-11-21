@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderDetails Class Doc Comment
  *
  * @category Class
  * @description Details of an order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,13 +61,13 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
         'customer_order_number' => 'string',
         'order_date' => 'string',
         'order_status' => 'string',
-        'shipment_details' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\ShipmentDetails',
-        'tax_total' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderDetailsTaxTotal',
-        'selling_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\Address',
-        'bill_to_party' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification',
-        'items' => '\SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderItem[]'
+        'shipment_details' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\ShipmentDetails',
+        'tax_total' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderDetailsTaxTotal',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\Address',
+        'bill_to_party' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification',
+        'items' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderItem[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets shipment_details
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\ShipmentDetails
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\ShipmentDetails
      */
     public function getShipmentDetails()
     {
@@ -342,7 +342,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets shipment_details
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\ShipmentDetails $shipment_details shipment_details
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\ShipmentDetails $shipment_details shipment_details
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets tax_total
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderDetailsTaxTotal|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderDetailsTaxTotal|null
      */
     public function getTaxTotal()
     {
@@ -365,7 +365,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets tax_total
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderDetailsTaxTotal|null $tax_total tax_total
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderDetailsTaxTotal|null $tax_total tax_total
      *
      * @return self
      */
@@ -378,7 +378,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -388,7 +388,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -411,7 +411,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -424,7 +424,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\Address
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\Address
      */
     public function getShipToParty()
     {
@@ -434,7 +434,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\Address $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\Address $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -447,7 +447,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets bill_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification
      */
     public function getBillToParty()
     {
@@ -457,7 +457,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets bill_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification $bill_to_party bill_to_party
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\PartyIdentification $bill_to_party bill_to_party
      *
      * @return self
      */
@@ -470,7 +470,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderItem[]
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderItem[]
      */
     public function getItems()
     {
@@ -480,7 +480,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentOrdersV1\OrderItem[] $items A list of items in this purchase order.
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentOrdersV1\OrderItem[] $items A list of items in this purchase order.
      *
      * @return self
      */

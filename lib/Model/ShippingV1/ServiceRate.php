@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ServiceRate Class Doc Comment
  *
  * @category Class
  * @description The specific rate for a shipping service, or null if no service available.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'total_charge' => '\SellingPartnerApi\Model\ShippingV1\Currency',
-        'billable_weight' => '\SellingPartnerApi\Model\ShippingV1\Weight',
-        'service_type' => '\SellingPartnerApi\Model\ShippingV1\ServiceType',
-        'promise' => '\SellingPartnerApi\Model\ShippingV1\ShippingPromiseSet'
+        'total_charge' => '\SellingPartnerApiV5\Model\ShippingV1\Currency',
+        'billable_weight' => '\SellingPartnerApiV5\Model\ShippingV1\Weight',
+        'service_type' => '\SellingPartnerApiV5\Model\ShippingV1\ServiceType',
+        'promise' => '\SellingPartnerApiV5\Model\ShippingV1\ShippingPromiseSet'
     ];
 
     /**
@@ -167,7 +167,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets total_charge
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Currency
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Currency
      */
     public function getTotalCharge()
     {
@@ -177,7 +177,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets total_charge
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Currency $total_charge total_charge
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Currency $total_charge total_charge
      *
      * @return self
      */
@@ -190,7 +190,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets billable_weight
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Weight
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Weight
      */
     public function getBillableWeight()
     {
@@ -200,7 +200,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets billable_weight
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Weight $billable_weight billable_weight
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Weight $billable_weight billable_weight
      *
      * @return self
      */
@@ -213,7 +213,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets service_type
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ServiceType
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ServiceType
      */
     public function getServiceType()
     {
@@ -223,7 +223,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets service_type
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ServiceType $service_type service_type
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ServiceType $service_type service_type
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets promise
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ShippingPromiseSet
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ShippingPromiseSet
      */
     public function getPromise()
     {
@@ -246,7 +246,7 @@ class ServiceRate extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets promise
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ShippingPromiseSet $promise promise
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ShippingPromiseSet $promise promise
      *
      * @return self
      */

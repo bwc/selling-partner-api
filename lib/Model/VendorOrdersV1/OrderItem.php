@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItem Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
         'item_sequence_number' => 'string',
         'amazon_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'ordered_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
+        'ordered_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
         'is_back_order_allowed' => 'bool',
-        'net_cost' => '\SellingPartnerApi\Model\VendorOrdersV1\Money',
-        'list_price' => '\SellingPartnerApi\Model\VendorOrdersV1\Money'
+        'net_cost' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Money',
+        'list_price' => '\SellingPartnerApiV5\Model\VendorOrdersV1\Money'
     ];
 
     /**
@@ -250,7 +250,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets ordered_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity
      */
     public function getOrderedQuantity()
     {
@@ -260,7 +260,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets ordered_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity $ordered_quantity ordered_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity $ordered_quantity ordered_quantity
      *
      * @return self
      */
@@ -296,7 +296,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets net_cost
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null
      */
     public function getNetCost()
     {
@@ -306,7 +306,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets net_cost
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Money|null $net_cost net_cost
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null $net_cost net_cost
      *
      * @return self
      */
@@ -319,7 +319,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets list_price
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null
      */
     public function getListPrice()
     {
@@ -329,7 +329,7 @@ class OrderItem extends BaseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets list_price
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\Money|null $list_price list_price
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\Money|null $list_price list_price
      *
      * @return self
      */

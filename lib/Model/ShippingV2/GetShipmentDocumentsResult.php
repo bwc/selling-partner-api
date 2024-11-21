@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetShipmentDocumentsResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the getShipmentDocuments operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class GetShipmentDocumentsResult extends BaseModel implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'shipment_id' => 'string',
-        'package_document_detail' => '\SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail'
+        'package_document_detail' => '\SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail'
     ];
 
     /**
@@ -172,7 +172,7 @@ class GetShipmentDocumentsResult extends BaseModel implements ModelInterface, Ar
     /**
      * Gets package_document_detail
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail
+     * @return \SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail
      */
     public function getPackageDocumentDetail()
     {
@@ -182,7 +182,7 @@ class GetShipmentDocumentsResult extends BaseModel implements ModelInterface, Ar
     /**
      * Sets package_document_detail
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\PackageDocumentDetail $package_document_detail package_document_detail
+     * @param \SellingPartnerApiV5\Model\ShippingV2\PackageDocumentDetail $package_document_detail package_document_detail
      *
      * @return self
      */

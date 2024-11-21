@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**fees_estimate_result** | [**\SellingPartnerApi\Model\FeesV0\FeesEstimateResult**](FeesEstimateResult.md) |  | [optional]
+**fees_estimate_result** | [**\SellingPartnerApiV5\Model\FeesV0\FeesEstimateResult**](FeesEstimateResult.md) |  | [optional]
 
 [[FeesV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

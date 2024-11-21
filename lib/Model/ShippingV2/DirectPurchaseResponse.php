@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * DirectPurchaseResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the directPurchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class DirectPurchaseResponse extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\ShippingV2\DirectPurchaseResult'
+        'payload' => '\SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseResult'
     ];
 
     /**
@@ -162,7 +162,7 @@ class DirectPurchaseResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DirectPurchaseResult|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseResult|null
      */
     public function getPayload()
     {
@@ -172,7 +172,7 @@ class DirectPurchaseResponse extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DirectPurchaseResult|null $payload payload
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DirectPurchaseResult|null $payload payload
      *
      * @return self
      */

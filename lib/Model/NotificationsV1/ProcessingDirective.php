@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ProcessingDirective Class Doc Comment
  *
  * @category Class
  * @description Additional information passed to the subscription to control the processing of notifications. For example, you can use an `eventFilter` to customize your subscription to send notifications for only the specified marketplaceId's, or select the aggregation time period at which to send notifications (e.g. limit to one notification every five minutes for high frequency notifications). The specific features available vary depending on the notificationType. This feature is currently only supported by the `ANY_OFFER_CHANGED` and `ORDER_CHANGE` notificationTypes.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ProcessingDirective extends BaseModel implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'event_filter' => '\SellingPartnerApi\Model\NotificationsV1\EventFilter'
+        'event_filter' => '\SellingPartnerApiV5\Model\NotificationsV1\EventFilter'
     ];
 
     /**
@@ -137,7 +137,7 @@ class ProcessingDirective extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Gets event_filter
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\EventFilter|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\EventFilter|null
      */
     public function getEventFilter()
     {
@@ -147,7 +147,7 @@ class ProcessingDirective extends BaseModel implements ModelInterface, ArrayAcce
     /**
      * Sets event_filter
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\EventFilter|null $event_filter event_filter
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\EventFilter|null $event_filter event_filter
      *
      * @return self
      */

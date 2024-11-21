@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Image Class Doc Comment
  *
  * @category Class
  * @description The image attribute of the item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class Image extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'url' => 'string',
-        'height' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'width' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits'
+        'height' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'width' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits'
     ];
 
     /**
@@ -172,7 +172,7 @@ class Image extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets height
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getHeight()
     {
@@ -182,7 +182,7 @@ class Image extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets height
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $height height
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $height height
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class Image extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets width
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getWidth()
     {
@@ -205,7 +205,7 @@ class Image extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets width
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $width width
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $width width
      *
      * @return self
      */

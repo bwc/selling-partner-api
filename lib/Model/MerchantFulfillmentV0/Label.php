@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Label Class Doc Comment
  *
  * @category Class
  * @description Data for creating a shipping label and dimensions for printing the label.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,10 +59,10 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'custom_text_for_label' => 'string',
-        'dimensions' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\LabelDimensions',
-        'file_contents' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\FileContents',
-        'label_format' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat',
-        'standard_id_for_label' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\StandardIdForLabel'
+        'dimensions' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelDimensions',
+        'file_contents' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\FileContents',
+        'label_format' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat',
+        'standard_id_for_label' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\StandardIdForLabel'
     ];
 
     /**
@@ -190,7 +190,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelDimensions
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelDimensions
      */
     public function getDimensions()
     {
@@ -200,7 +200,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelDimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelDimensions $dimensions dimensions
      *
      * @return self
      */
@@ -213,7 +213,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets file_contents
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\FileContents
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FileContents
      */
     public function getFileContents()
     {
@@ -223,7 +223,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets file_contents
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\FileContents $file_contents file_contents
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FileContents $file_contents file_contents
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets label_format
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat|null
      */
     public function getLabelFormat()
     {
@@ -246,7 +246,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets label_format
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\LabelFormat|null $label_format label_format
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\LabelFormat|null $label_format label_format
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets standard_id_for_label
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\StandardIdForLabel|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\StandardIdForLabel|null
      */
     public function getStandardIdForLabel()
     {
@@ -269,7 +269,7 @@ class Label extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets standard_id_for_label
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\StandardIdForLabel|null $standard_id_for_label standard_id_for_label
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\StandardIdForLabel|null $standard_id_for_label standard_id_for_label
      *
      * @return self
      */

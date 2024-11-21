@@ -1,4 +1,4 @@
-# SellingPartnerApi\CatalogItemsV0Api
+# SellingPartnerApiV5\CatalogItemsV0Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getCatalogItem()`
 
 ```php
-getCatalogItem($marketplace_id, $asin): \SellingPartnerApi\Model\CatalogItemsV0\GetCatalogItemResponse
+getCatalogItem($marketplace_id, $asin): \SellingPartnerApiV5\Model\CatalogItemsV0\GetCatalogItemResponse
 ```
 
 
@@ -25,16 +25,16 @@ _Note:_ The [`listCatalogCategories`](#get-catalogv0categories) operation is not
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\CatalogItemsV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\CatalogItemsV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for the item.
 $asin = 'asin_example'; // string | The Amazon Standard Identification Number (ASIN) of the item.
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\CatalogItemsV0\GetCatalogItemResponse**](../Model/CatalogItemsV0/GetCatalogItemResponse.md)
+[**\SellingPartnerApiV5\Model\CatalogItemsV0\GetCatalogItemResponse**](../Model/CatalogItemsV0/GetCatalogItemResponse.md)
 
 ### HTTP request headers
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 ## `listCatalogCategories()`
 
 ```php
-listCatalogCategories($marketplace_id, $asin, $seller_sku): \SellingPartnerApi\Model\CatalogItemsV0\ListCatalogCategoriesResponse
+listCatalogCategories($marketplace_id, $asin, $seller_sku): \SellingPartnerApiV5\Model\CatalogItemsV0\ListCatalogCategoriesResponse
 ```
 
 
@@ -91,16 +91,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\CatalogItemsV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\CatalogItemsV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for the item.
 $asin = 'asin_example'; // string | The Amazon Standard Identification Number (ASIN) of the item.
 $seller_sku = 'seller_sku_example'; // string | Used to identify items in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\CatalogItemsV0\ListCatalogCategoriesResponse**](../Model/CatalogItemsV0/ListCatalogCategoriesResponse.md)
+[**\SellingPartnerApiV5\Model\CatalogItemsV0\ListCatalogCategoriesResponse**](../Model/CatalogItemsV0/ListCatalogCategoriesResponse.md)
 
 ### HTTP request headers
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 ## `listCatalogItems()`
 
 ```php
-listCatalogItems($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan): \SellingPartnerApi\Model\CatalogItemsV0\ListCatalogItemsResponse
+listCatalogItems($marketplace_id, $query, $query_context_id, $seller_sku, $upc, $ean, $isbn, $jan): \SellingPartnerApiV5\Model\CatalogItemsV0\ListCatalogItemsResponse
 ```
 
 
@@ -152,16 +152,16 @@ _Note:_ The [`listCatalogCategories`](#get-catalogv0categories) operation is not
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\CatalogItemsV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\CatalogItemsV0Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | A marketplace identifier. Specifies the marketplace for which items are returned.
 $query = 'query_example'; // string | Keyword(s) to use to search for items in the catalog. Example: 'harry potter books'.
 $query_context_id = 'query_context_id_example'; // string | An identifier for the context within which the given search will be performed. A marketplace might provide mechanisms for constraining a search to a subset of potential items. For example, the retail marketplace allows queries to be constrained to a specific category. The QueryContextId parameter specifies such a subset. If it is omitted, the search will be performed using the default context for the marketplace, which will typically contain the largest set of items.
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\CatalogItemsV0\ListCatalogItemsResponse**](../Model/CatalogItemsV0/ListCatalogItemsResponse.md)
+[**\SellingPartnerApiV5\Model\CatalogItemsV0\ListCatalogItemsResponse**](../Model/CatalogItemsV0/ListCatalogItemsResponse.md)
 
 ### HTTP request headers
 

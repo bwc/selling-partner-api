@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Item Class Doc Comment
  *
  * @category Class
  * @description Details of the item being shipped.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
         'item_sequence_number' => 'int',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'shipped_quantity' => '\SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ItemQuantity'
+        'shipped_quantity' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ItemQuantity'
     ];
 
     /**
@@ -230,7 +230,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets shipped_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ItemQuantity
      */
     public function getShippedQuantity()
     {
@@ -240,7 +240,7 @@ class Item extends BaseModel implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets shipped_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentShippingV1\ItemQuantity $shipped_quantity shipped_quantity
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentShippingV1\ItemQuantity $shipped_quantity shipped_quantity
      *
      * @return self
      */

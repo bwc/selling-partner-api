@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetRatesResult Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the getRates operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'service_rates' => '\SellingPartnerApi\Model\ShippingV1\ServiceRate[]'
+        'service_rates' => '\SellingPartnerApiV5\Model\ShippingV1\ServiceRate[]'
     ];
 
     /**
@@ -140,7 +140,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets service_rates
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ServiceRate[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ServiceRate[]
      */
     public function getServiceRates()
     {
@@ -150,7 +150,7 @@ class GetRatesResult extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets service_rates
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ServiceRate[] $service_rates A list of service rates.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ServiceRate[] $service_rates A list of service rates.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOfferMetricsResponseOffer Class Doc Comment
  *
  * @category Class
  * @description An object which contains offer metrics.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -70,7 +70,7 @@ class ListOfferMetricsResponseOffer extends BaseModel implements ModelInterface,
         'next30_day_shipped_subscription_units' => 'float',
         'next60_day_shipped_subscription_units' => 'float',
         'next90_day_shipped_subscription_units' => 'float',
-        'time_interval' => '\SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval',
+        'time_interval' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval',
         'currency_code' => 'string'
     ];
 
@@ -604,7 +604,7 @@ class ListOfferMetricsResponseOffer extends BaseModel implements ModelInterface,
     /**
      * Gets time_interval
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval|null
      */
     public function getTimeInterval()
     {
@@ -614,7 +614,7 @@ class ListOfferMetricsResponseOffer extends BaseModel implements ModelInterface,
     /**
      * Sets time_interval
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\TimeInterval|null $time_interval time_interval
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\TimeInterval|null $time_interval time_interval
      *
      * @return self
      */

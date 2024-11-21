@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrdersList Class Doc Comment
  *
  * @category Class
  * @description A list of orders along with additional information to make subsequent API calls.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class OrdersList extends BaseModel implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'orders' => '\SellingPartnerApi\Model\OrdersV0\Order[]',
+        'orders' => '\SellingPartnerApiV5\Model\OrdersV0\Order[]',
         'next_token' => 'string',
         'last_updated_before' => 'string',
         'created_before' => 'string'
@@ -158,7 +158,7 @@ class OrdersList extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets orders
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Order[]
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Order[]
      */
     public function getOrders()
     {
@@ -168,7 +168,7 @@ class OrdersList extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets orders
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Order[] $orders A list of orders.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Order[] $orders A list of orders.
      *
      * @return self
      */

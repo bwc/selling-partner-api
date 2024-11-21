@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TransportHeader Class Doc Comment
  *
  * @category Class
  * @description The shipping identifier, information about whether the shipment is by an Amazon-partnered carrier, and information about whether the shipment is Small Parcel or Less Than Truckload/Full Truckload (LTL/FTL).
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class TransportHeader extends BaseModel implements ModelInterface, ArrayAccess, 
         'seller_id' => 'string',
         'shipment_id' => 'string',
         'is_partnered' => 'bool',
-        'shipment_type' => '\SellingPartnerApi\Model\FbaInboundV0\ShipmentType'
+        'shipment_type' => '\SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType'
     ];
 
     /**
@@ -236,7 +236,7 @@ class TransportHeader extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets shipment_type
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\ShipmentType
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType
      */
     public function getShipmentType()
     {
@@ -246,7 +246,7 @@ class TransportHeader extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets shipment_type
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\ShipmentType $shipment_type shipment_type
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType $shipment_type shipment_type
      *
      * @return self
      */

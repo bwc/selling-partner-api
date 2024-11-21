@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaOutboundV20200701;
+namespace SellingPartnerApiV5\Model\FbaOutboundV20200701;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * TrackingEvent Class Doc Comment
  *
  * @category Class
  * @description Information for tracking package deliveries.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class TrackingEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'event_date' => 'string',
-        'event_address' => '\SellingPartnerApi\Model\FbaOutboundV20200701\TrackingAddress',
-        'event_code' => '\SellingPartnerApi\Model\FbaOutboundV20200701\EventCode',
+        'event_address' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingAddress',
+        'event_code' => '\SellingPartnerApiV5\Model\FbaOutboundV20200701\EventCode',
         'event_description' => 'string'
     ];
 
@@ -190,7 +190,7 @@ class TrackingEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets event_address
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\TrackingAddress
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingAddress
      */
     public function getEventAddress()
     {
@@ -200,7 +200,7 @@ class TrackingEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets event_address
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\TrackingAddress $event_address event_address
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\TrackingAddress $event_address event_address
      *
      * @return self
      */
@@ -213,7 +213,7 @@ class TrackingEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets event_code
      *
-     * @return \SellingPartnerApi\Model\FbaOutboundV20200701\EventCode
+     * @return \SellingPartnerApiV5\Model\FbaOutboundV20200701\EventCode
      */
     public function getEventCode()
     {
@@ -223,7 +223,7 @@ class TrackingEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets event_code
      *
-     * @param \SellingPartnerApi\Model\FbaOutboundV20200701\EventCode $event_code event_code
+     * @param \SellingPartnerApiV5\Model\FbaOutboundV20200701\EventCode $event_code event_code
      *
      * @return self
      */

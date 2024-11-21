@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetPricingResponse Class Doc Comment
  *
  * @category Class
  * @description The response schema for the `getPricing` and `getCompetitivePricing` operations.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetPricingResponse extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payload' => '\SellingPartnerApi\Model\ProductPricingV0\Price[]',
-        'errors' => '\SellingPartnerApi\Model\ProductPricingV0\Error[]'
+        'payload' => '\SellingPartnerApiV5\Model\ProductPricingV0\Price[]',
+        'errors' => '\SellingPartnerApiV5\Model\ProductPricingV0\Error[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class GetPricingResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets payload
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Price[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Price[]|null
      */
     public function getPayload()
     {
@@ -182,7 +182,7 @@ class GetPricingResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets payload
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Price[]|null $payload payload
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Price[]|null $payload payload
      *
      * @return self
      */
@@ -199,7 +199,7 @@ class GetPricingResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Error[]|null
      */
     public function getErrors()
     {
@@ -209,7 +209,7 @@ class GetPricingResponse extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

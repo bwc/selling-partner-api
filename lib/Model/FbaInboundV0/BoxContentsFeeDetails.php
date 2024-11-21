@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BoxContentsFeeDetails Class Doc Comment
  *
  * @category Class
  * @description The manual processing fee per unit and total fee for a shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class BoxContentsFeeDetails extends BaseModel implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'total_units' => 'int',
-        'fee_per_unit' => '\SellingPartnerApi\Model\FbaInboundV0\Amount',
-        'total_fee' => '\SellingPartnerApi\Model\FbaInboundV0\Amount'
+        'fee_per_unit' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount',
+        'total_fee' => '\SellingPartnerApiV5\Model\FbaInboundV0\Amount'
     ];
 
     /**
@@ -172,7 +172,7 @@ class BoxContentsFeeDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets fee_per_unit
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null
      */
     public function getFeePerUnit()
     {
@@ -182,7 +182,7 @@ class BoxContentsFeeDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets fee_per_unit
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount|null $fee_per_unit fee_per_unit
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null $fee_per_unit fee_per_unit
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class BoxContentsFeeDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets total_fee
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Amount|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null
      */
     public function getTotalFee()
     {
@@ -205,7 +205,7 @@ class BoxContentsFeeDetails extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets total_fee
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Amount|null $total_fee total_fee
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Amount|null $total_fee total_fee
      *
      * @return self
      */

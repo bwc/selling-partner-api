@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * ShipmentInvoicingV0Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class ShipmentInvoicingV0Api extends BaseApi
 {
@@ -45,9 +45,9 @@ class ShipmentInvoicingV0Api extends BaseApi
      *
      * @param  string $shipment_id The shipment identifier for the shipment. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse
      */
     public function getInvoiceStatus($shipment_id)
     {
@@ -60,9 +60,9 @@ class ShipmentInvoicingV0Api extends BaseApi
      *
      * @param  string $shipment_id The shipment identifier for the shipment. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoiceStatusWithHttpInfo($shipment_id)
     {
@@ -111,80 +111,80 @@ class ShipmentInvoicingV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -199,7 +199,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class ShipmentInvoicingV0Api extends BaseApi
      */
     public function getInvoiceStatusAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse';
         $request = $this->getInvoiceStatusRequest($shipment_id);
         $signedRequest = $this->config->signRequest(
             $request
@@ -438,9 +438,9 @@ class ShipmentInvoicingV0Api extends BaseApi
      *
      * @param  string $shipment_id The identifier for the shipment. Get this value from the FBAOutboundShipmentStatus notification. For information about subscribing to notifications, see the [Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse
      */
     public function getShipmentDetails($shipment_id)
     {
@@ -453,9 +453,9 @@ class ShipmentInvoicingV0Api extends BaseApi
      *
      * @param  string $shipment_id The identifier for the shipment. Get this value from the FBAOutboundShipmentStatus notification. For information about subscribing to notifications, see the [Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide). (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentDetailsWithHttpInfo($shipment_id)
     {
@@ -507,80 +507,80 @@ class ShipmentInvoicingV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -595,7 +595,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -603,7 +603,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -611,7 +611,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -627,7 +627,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -635,7 +635,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -643,7 +643,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -651,7 +651,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -659,7 +659,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -697,7 +697,7 @@ class ShipmentInvoicingV0Api extends BaseApi
      */
     public function getShipmentDetailsAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse';
         $request = $this->getShipmentDetailsRequest($shipment_id);
         $signedRequest = $this->config->signRequest(
             $request,
@@ -836,11 +836,11 @@ class ShipmentInvoicingV0Api extends BaseApi
      * Operation submitInvoice
      *
      * @param  string $shipment_id The identifier for the shipment. (required)
-     * @param  \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse
+     * @return \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse
      */
     public function submitInvoice($shipment_id, $body)
     {
@@ -852,11 +852,11 @@ class ShipmentInvoicingV0Api extends BaseApi
      * Operation submitInvoiceWithHttpInfo
      *
      * @param  string $shipment_id The identifier for the shipment. (required)
-     * @param  \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitInvoiceWithHttpInfo($shipment_id, $body)
     {
@@ -905,80 +905,80 @@ class ShipmentInvoicingV0Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse';
+            $returnType = '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -993,7 +993,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1001,7 +1001,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1009,7 +1009,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1017,7 +1017,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1025,7 +1025,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1033,7 +1033,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1041,7 +1041,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1049,7 +1049,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1057,7 +1057,7 @@ class ShipmentInvoicingV0Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1074,7 +1074,7 @@ class ShipmentInvoicingV0Api extends BaseApi
      * 
      *
      * @param  string $shipment_id The identifier for the shipment. (required)
-     * @param  \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1090,14 +1090,14 @@ class ShipmentInvoicingV0Api extends BaseApi
      * 
      *
      * @param  string $shipment_id The identifier for the shipment. (required)
-     * @param  \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitInvoiceAsyncWithHttpInfo($shipment_id, $body)
     {
-        $returnType = '\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse';
+        $returnType = '\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse';
         $request = $this->submitInvoiceRequest($shipment_id, $body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -1144,7 +1144,7 @@ class ShipmentInvoicingV0Api extends BaseApi
      * Create request for operation 'submitInvoice'
      *
      * @param  string $shipment_id The identifier for the shipment. (required)
-     * @param  \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

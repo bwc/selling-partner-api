@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AcknowledgementStatusDetails Class Doc Comment
  *
  * @category Class
  * @description Details of item quantity ordered
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class AcknowledgementStatusDetails extends BaseModel implements ModelInterface, 
       */
     protected static $openAPITypes = [
         'acknowledgement_date' => 'string',
-        'accepted_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
-        'rejected_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity'
+        'accepted_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
+        'rejected_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity'
     ];
 
     /**
@@ -172,7 +172,7 @@ class AcknowledgementStatusDetails extends BaseModel implements ModelInterface, 
     /**
      * Gets accepted_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null
      */
     public function getAcceptedQuantity()
     {
@@ -182,7 +182,7 @@ class AcknowledgementStatusDetails extends BaseModel implements ModelInterface, 
     /**
      * Sets accepted_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null $accepted_quantity accepted_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null $accepted_quantity accepted_quantity
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class AcknowledgementStatusDetails extends BaseModel implements ModelInterface, 
     /**
      * Gets rejected_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null
      */
     public function getRejectedQuantity()
     {
@@ -205,7 +205,7 @@ class AcknowledgementStatusDetails extends BaseModel implements ModelInterface, 
     /**
      * Sets rejected_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null $rejected_quantity rejected_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null $rejected_quantity rejected_quantity
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * AvailableValueAddedServiceGroup Class Doc Comment
  *
  * @category Class
  * @description The value-added services available for purchase with a shipping service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class AvailableValueAddedServiceGroup extends BaseModel implements ModelInterfac
         'group_id' => 'string',
         'group_description' => 'string',
         'is_required' => 'bool',
-        'value_added_services' => '\SellingPartnerApi\Model\ShippingV2\ValueAddedService[]'
+        'value_added_services' => '\SellingPartnerApiV5\Model\ShippingV2\ValueAddedService[]'
     ];
 
     /**
@@ -233,7 +233,7 @@ class AvailableValueAddedServiceGroup extends BaseModel implements ModelInterfac
     /**
      * Gets value_added_services
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\ValueAddedService[]|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\ValueAddedService[]|null
      */
     public function getValueAddedServices()
     {
@@ -243,7 +243,7 @@ class AvailableValueAddedServiceGroup extends BaseModel implements ModelInterfac
     /**
      * Sets value_added_services
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\ValueAddedService[]|null $value_added_services A list of optional value-added services available for purchase with a shipping service offering.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\ValueAddedService[]|null $value_added_services A list of optional value-added services available for purchase with a shipping service offering.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListContentDocumentAsinRelationsResponseAllOf Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class ListContentDocumentAsinRelationsResponseAllOf extends BaseModel implements
       * @var string[]
       */
     protected static $openAPITypes = [
-        'asin_metadata_set' => '\SellingPartnerApi\Model\AplusContentV20201101\AsinMetadata[]'
+        'asin_metadata_set' => '\SellingPartnerApiV5\Model\AplusContentV20201101\AsinMetadata[]'
     ];
 
     /**
@@ -139,7 +139,7 @@ class ListContentDocumentAsinRelationsResponseAllOf extends BaseModel implements
     /**
      * Gets asin_metadata_set
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\AsinMetadata[]
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\AsinMetadata[]
      */
     public function getAsinMetadataSet()
     {
@@ -149,7 +149,7 @@ class ListContentDocumentAsinRelationsResponseAllOf extends BaseModel implements
     /**
      * Sets asin_metadata_set
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\AsinMetadata[] $asin_metadata_set The set of ASIN metadata.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\AsinMetadata[] $asin_metadata_set The set of ASIN metadata.
      *
      * @return self
      */

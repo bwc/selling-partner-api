@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV0;
+namespace SellingPartnerApiV5\Model\CatalogItemsV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RelationshipType Class Doc Comment
  *
  * @category Class
  * @description Specific variations of the item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'identifiers' => '\SellingPartnerApi\Model\CatalogItemsV0\IdentifierType',
+        'identifiers' => '\SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType',
         'color' => 'string',
         'edition' => 'string',
         'flavor' => 'string',
@@ -76,11 +76,11 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
         'scent' => 'string',
         'size' => 'string',
         'size_per_pearl' => 'string',
-        'golf_club_loft' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'total_diamond_weight' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
-        'total_gem_weight' => '\SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits',
+        'golf_club_loft' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'total_diamond_weight' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
+        'total_gem_weight' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits',
         'package_quantity' => 'int',
-        'item_dimensions' => '\SellingPartnerApi\Model\CatalogItemsV0\DimensionType'
+        'item_dimensions' => '\SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType'
     ];
 
     /**
@@ -269,7 +269,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets identifiers
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\IdentifierType|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType|null
      */
     public function getIdentifiers()
     {
@@ -279,7 +279,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets identifiers
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\IdentifierType|null $identifiers identifiers
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\IdentifierType|null $identifiers identifiers
      *
      * @return self
      */
@@ -683,7 +683,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets golf_club_loft
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getGolfClubLoft()
     {
@@ -693,7 +693,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets golf_club_loft
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $golf_club_loft golf_club_loft
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $golf_club_loft golf_club_loft
      *
      * @return self
      */
@@ -706,7 +706,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets total_diamond_weight
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getTotalDiamondWeight()
     {
@@ -716,7 +716,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets total_diamond_weight
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $total_diamond_weight total_diamond_weight
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $total_diamond_weight total_diamond_weight
      *
      * @return self
      */
@@ -729,7 +729,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets total_gem_weight
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null
      */
     public function getTotalGemWeight()
     {
@@ -739,7 +739,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets total_gem_weight
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DecimalWithUnits|null $total_gem_weight total_gem_weight
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DecimalWithUnits|null $total_gem_weight total_gem_weight
      *
      * @return self
      */
@@ -775,7 +775,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets item_dimensions
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV0\DimensionType|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType|null
      */
     public function getItemDimensions()
     {
@@ -785,7 +785,7 @@ class RelationshipType extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets item_dimensions
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV0\DimensionType|null $item_dimensions item_dimensions
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV0\DimensionType|null $item_dimensions item_dimensions
      *
      * @return self
      */

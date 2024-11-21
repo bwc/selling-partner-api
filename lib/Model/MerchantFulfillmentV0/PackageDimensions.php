@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackageDimensions Class Doc Comment
  *
  * @category Class
  * @description The dimensions of a package contained in a shipment.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,8 +61,8 @@ class PackageDimensions extends BaseModel implements ModelInterface, ArrayAccess
         'length' => 'double',
         'width' => 'double',
         'height' => 'double',
-        'unit' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\UnitOfLength',
-        'predefined_package_dimensions' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\PredefinedPackageDimensions'
+        'unit' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\UnitOfLength',
+        'predefined_package_dimensions' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\PredefinedPackageDimensions'
     ];
 
     /**
@@ -230,7 +230,7 @@ class PackageDimensions extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets unit
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\UnitOfLength|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\UnitOfLength|null
      */
     public function getUnit()
     {
@@ -240,7 +240,7 @@ class PackageDimensions extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets unit
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\UnitOfLength|null $unit unit
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\UnitOfLength|null $unit unit
      *
      * @return self
      */
@@ -253,7 +253,7 @@ class PackageDimensions extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets predefined_package_dimensions
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\PredefinedPackageDimensions|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\PredefinedPackageDimensions|null
      */
     public function getPredefinedPackageDimensions()
     {
@@ -263,7 +263,7 @@ class PackageDimensions extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets predefined_package_dimensions
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\PredefinedPackageDimensions|null $predefined_package_dimensions predefined_package_dimensions
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\PredefinedPackageDimensions|null $predefined_package_dimensions predefined_package_dimensions
      *
      * @return self
      */

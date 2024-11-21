@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **value** | **double** |  |
-**unit** | [**\SellingPartnerApi\Model\FbaInboundV0\UnitOfWeight**](UnitOfWeight.md) |  |
+**unit** | [**\SellingPartnerApiV5\Model\FbaInboundV0\UnitOfWeight**](UnitOfWeight.md) |  |
 
 [[FbaInboundV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

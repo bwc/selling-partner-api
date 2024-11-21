@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ChargeRefundEvent Class Doc Comment
  *
  * @category Class
  * @description An event related to charge refund.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class ChargeRefundEvent extends BaseModel implements ModelInterface, ArrayAccess
         'posted_date' => 'string',
         'reason_code' => 'string',
         'reason_code_description' => 'string',
-        'charge_refund_transactions' => '\SellingPartnerApi\Model\FinancesV0\ChargeRefundTransaction'
+        'charge_refund_transactions' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeRefundTransaction'
     ];
 
     /**
@@ -226,7 +226,7 @@ class ChargeRefundEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets charge_refund_transactions
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeRefundTransaction|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeRefundTransaction|null
      */
     public function getChargeRefundTransactions()
     {
@@ -236,7 +236,7 @@ class ChargeRefundEvent extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets charge_refund_transactions
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeRefundTransaction|null $charge_refund_transactions charge_refund_transactions
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeRefundTransaction|null $charge_refund_transactions charge_refund_transactions
      *
      * @return self
      */

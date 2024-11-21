@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackageDocument Class Doc Comment
  *
  * @category Class
  * @description A document related to a package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PackageDocument extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => '\SellingPartnerApi\Model\ShippingV2\DocumentType',
-        'format' => '\SellingPartnerApi\Model\ShippingV2\DocumentFormat',
+        'type' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentType',
+        'format' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentFormat',
         'contents' => 'string'
     ];
 
@@ -158,7 +158,7 @@ class PackageDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets type
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentType
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentType
      */
     public function getType()
     {
@@ -168,7 +168,7 @@ class PackageDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets type
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentType $type type
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentType $type type
      *
      * @return self
      */
@@ -181,7 +181,7 @@ class PackageDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets format
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentFormat
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentFormat
      */
     public function getFormat()
     {
@@ -191,7 +191,7 @@ class PackageDocument extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets format
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentFormat $format format
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentFormat $format format
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# SellingPartnerApi\ProductPricingV20220501Api
+# SellingPartnerApiV5\ProductPricingV20220501Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `getFeaturedOfferExpectedPriceBatch()`
 
 ```php
-getFeaturedOfferExpectedPriceBatch($get_featured_offer_expected_price_batch_request_body): \SellingPartnerApi\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchResponse
+getFeaturedOfferExpectedPriceBatch($get_featured_offer_expected_price_batch_request_body): \SellingPartnerApiV5\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchResponse
 ```
 
 
@@ -30,17 +30,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ProductPricingV20220501Api($config);
-$get_featured_offer_expected_price_batch_request_body = new \SellingPartnerApi\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchRequest(); // \SellingPartnerApi\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchRequest
+$apiInstance = new SellingPartnerApiV5\Api\ProductPricingV20220501Api($config);
+$get_featured_offer_expected_price_batch_request_body = new \SellingPartnerApiV5\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchRequest(); // \SellingPartnerApiV5\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchRequest
 
 try {
     $result = $apiInstance->getFeaturedOfferExpectedPriceBatch($get_featured_offer_expected_price_batch_request_body);
@@ -54,11 +54,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **get_featured_offer_expected_price_batch_request_body** | [**\SellingPartnerApi\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchRequest**](../Model/ProductPricingV20220501/GetFeaturedOfferExpectedPriceBatchRequest.md)|  |
+ **get_featured_offer_expected_price_batch_request_body** | [**\SellingPartnerApiV5\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchRequest**](../Model/ProductPricingV20220501/GetFeaturedOfferExpectedPriceBatchRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchResponse**](../Model/ProductPricingV20220501/GetFeaturedOfferExpectedPriceBatchResponse.md)
+[**\SellingPartnerApiV5\Model\ProductPricingV20220501\GetFeaturedOfferExpectedPriceBatchResponse**](../Model/ProductPricingV20220501/GetFeaturedOfferExpectedPriceBatchResponse.md)
 
 ### HTTP request headers
 

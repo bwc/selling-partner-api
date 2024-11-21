@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\SmallAndLightV1;
+namespace SellingPartnerApiV5\Model\SmallAndLightV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeeLineItem Class Doc Comment
  *
  * @category Class
  * @description Fee details for a specific fee.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class FeeLineItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'fee_type' => 'string',
-        'fee_charge' => '\SellingPartnerApi\Model\SmallAndLightV1\MoneyType'
+        'fee_charge' => '\SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType'
     ];
 
     /**
@@ -220,7 +220,7 @@ class FeeLineItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets fee_charge
      *
-     * @return \SellingPartnerApi\Model\SmallAndLightV1\MoneyType
+     * @return \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType
      */
     public function getFeeCharge()
     {
@@ -230,7 +230,7 @@ class FeeLineItem extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets fee_charge
      *
-     * @param \SellingPartnerApi\Model\SmallAndLightV1\MoneyType $fee_charge fee_charge
+     * @param \SellingPartnerApiV5\Model\SmallAndLightV1\MoneyType $fee_charge fee_charge
      *
      * @return self
      */

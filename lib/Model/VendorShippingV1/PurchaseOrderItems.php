@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseOrderItems Class Doc Comment
  *
  * @category Class
  * @description Details of the item being shipped.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,8 +61,8 @@ class PurchaseOrderItems extends BaseModel implements ModelInterface, ArrayAcces
         'item_sequence_number' => 'string',
         'buyer_product_identifier' => 'string',
         'vendor_product_identifier' => 'string',
-        'shipped_quantity' => '\SellingPartnerApi\Model\VendorShippingV1\ItemQuantity',
-        'maximum_retail_price' => '\SellingPartnerApi\Model\VendorShippingV1\Money'
+        'shipped_quantity' => '\SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity',
+        'maximum_retail_price' => '\SellingPartnerApiV5\Model\VendorShippingV1\Money'
     ];
 
     /**
@@ -236,7 +236,7 @@ class PurchaseOrderItems extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets shipped_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ItemQuantity
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity
      */
     public function getShippedQuantity()
     {
@@ -246,7 +246,7 @@ class PurchaseOrderItems extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets shipped_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ItemQuantity $shipped_quantity shipped_quantity
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ItemQuantity $shipped_quantity shipped_quantity
      *
      * @return self
      */
@@ -259,7 +259,7 @@ class PurchaseOrderItems extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets maximum_retail_price
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Money|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Money|null
      */
     public function getMaximumRetailPrice()
     {
@@ -269,7 +269,7 @@ class PurchaseOrderItems extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets maximum_retail_price
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Money|null $maximum_retail_price maximum_retail_price
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Money|null $maximum_retail_price maximum_retail_price
      *
      * @return self
      */

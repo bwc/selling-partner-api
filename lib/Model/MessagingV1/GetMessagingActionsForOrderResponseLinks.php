@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MessagingV1;
+namespace SellingPartnerApiV5\Model\MessagingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetMessagingActionsForOrderResponseLinks Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class GetMessagingActionsForOrderResponseLinks extends BaseModel implements Mode
       * @var string[]
       */
     protected static $openAPITypes = [
-        'self' => '\SellingPartnerApi\Model\MessagingV1\LinkObject',
-        'actions' => '\SellingPartnerApi\Model\MessagingV1\LinkObject[]'
+        'self' => '\SellingPartnerApiV5\Model\MessagingV1\LinkObject',
+        'actions' => '\SellingPartnerApiV5\Model\MessagingV1\LinkObject[]'
     ];
 
     /**
@@ -148,7 +148,7 @@ class GetMessagingActionsForOrderResponseLinks extends BaseModel implements Mode
     /**
      * Gets self
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\LinkObject
+     * @return \SellingPartnerApiV5\Model\MessagingV1\LinkObject
      */
     public function getSelf()
     {
@@ -158,7 +158,7 @@ class GetMessagingActionsForOrderResponseLinks extends BaseModel implements Mode
     /**
      * Sets self
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\LinkObject $self self
+     * @param \SellingPartnerApiV5\Model\MessagingV1\LinkObject $self self
      *
      * @return self
      */
@@ -171,7 +171,7 @@ class GetMessagingActionsForOrderResponseLinks extends BaseModel implements Mode
     /**
      * Gets actions
      *
-     * @return \SellingPartnerApi\Model\MessagingV1\LinkObject[]
+     * @return \SellingPartnerApiV5\Model\MessagingV1\LinkObject[]
      */
     public function getActions()
     {
@@ -181,7 +181,7 @@ class GetMessagingActionsForOrderResponseLinks extends BaseModel implements Mode
     /**
      * Sets actions
      *
-     * @param \SellingPartnerApi\Model\MessagingV1\LinkObject[] $actions Eligible actions for the specified amazonOrderId.
+     * @param \SellingPartnerApiV5\Model\MessagingV1\LinkObject[] $actions Eligible actions for the specified amazonOrderId.
      *
      * @return self
      */

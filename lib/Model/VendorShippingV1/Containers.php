@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Containers Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,14 +59,14 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     protected static $openAPITypes = [
         'container_type' => 'string',
         'container_sequence_number' => 'string',
-        'container_identifiers' => '\SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]',
+        'container_identifiers' => '\SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]',
         'tracking_number' => 'string',
-        'dimensions' => '\SellingPartnerApi\Model\VendorShippingV1\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\VendorShippingV1\Weight',
+        'dimensions' => '\SellingPartnerApiV5\Model\VendorShippingV1\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\VendorShippingV1\Weight',
         'tier' => 'int',
         'block' => 'int',
-        'inner_containers_details' => '\SellingPartnerApi\Model\VendorShippingV1\InnerContainersDetails',
-        'packed_items' => '\SellingPartnerApi\Model\VendorShippingV1\PackedItems[]'
+        'inner_containers_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\InnerContainersDetails',
+        'packed_items' => '\SellingPartnerApiV5\Model\VendorShippingV1\PackedItems[]'
     ];
 
     /**
@@ -286,7 +286,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets container_identifiers
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[]
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[]
      */
     public function getContainerIdentifiers()
     {
@@ -296,7 +296,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets container_identifiers
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ContainerIdentification[] $container_identifiers A list of carton identifiers.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ContainerIdentification[] $container_identifiers A list of carton identifiers.
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Dimensions|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Dimensions|null
      */
     public function getDimensions()
     {
@@ -342,7 +342,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Dimensions|null $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Dimensions|null $dimensions dimensions
      *
      * @return self
      */
@@ -355,7 +355,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Weight|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null
      */
     public function getWeight()
     {
@@ -365,7 +365,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Weight|null $weight weight
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Weight|null $weight weight
      *
      * @return self
      */
@@ -424,7 +424,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets inner_containers_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\InnerContainersDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\InnerContainersDetails|null
      */
     public function getInnerContainersDetails()
     {
@@ -434,7 +434,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets inner_containers_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\InnerContainersDetails|null $inner_containers_details inner_containers_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\InnerContainersDetails|null $inner_containers_details inner_containers_details
      *
      * @return self
      */
@@ -447,7 +447,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets packed_items
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PackedItems[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PackedItems[]|null
      */
     public function getPackedItems()
     {
@@ -457,7 +457,7 @@ class Containers extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets packed_items
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PackedItems[]|null $packed_items A list of packed items.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PackedItems[]|null $packed_items A list of packed items.
      *
      * @return self
      */

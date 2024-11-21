@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateInboundShipmentPlanResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class CreateInboundShipmentPlanResult extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inbound_shipment_plans' => '\SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlan[]'
+        'inbound_shipment_plans' => '\SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlan[]'
     ];
 
     /**
@@ -136,7 +136,7 @@ class CreateInboundShipmentPlanResult extends BaseModel implements ModelInterfac
     /**
      * Gets inbound_shipment_plans
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlan[]|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlan[]|null
      */
     public function getInboundShipmentPlans()
     {
@@ -146,7 +146,7 @@ class CreateInboundShipmentPlanResult extends BaseModel implements ModelInterfac
     /**
      * Sets inbound_shipment_plans
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\InboundShipmentPlan[]|null $inbound_shipment_plans A list of inbound shipment plan information
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\InboundShipmentPlan[]|null $inbound_shipment_plans A list of inbound shipment plan information
      *
      * @return self
      */

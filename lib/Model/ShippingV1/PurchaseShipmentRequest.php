@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV1;
+namespace SellingPartnerApiV5\Model\ShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PurchaseShipmentRequest Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the purchaseShipment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,12 +59,12 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
       */
     protected static $openAPITypes = [
         'client_reference_id' => 'string',
-        'ship_to' => '\SellingPartnerApi\Model\ShippingV1\Address',
-        'ship_from' => '\SellingPartnerApi\Model\ShippingV1\Address',
+        'ship_to' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
+        'ship_from' => '\SellingPartnerApiV5\Model\ShippingV1\Address',
         'ship_date' => 'string',
-        'service_type' => '\SellingPartnerApi\Model\ShippingV1\ServiceType',
-        'containers' => '\SellingPartnerApi\Model\ShippingV1\Container[]',
-        'label_specification' => '\SellingPartnerApi\Model\ShippingV1\LabelSpecification'
+        'service_type' => '\SellingPartnerApiV5\Model\ShippingV1\ServiceType',
+        'containers' => '\SellingPartnerApiV5\Model\ShippingV1\Container[]',
+        'label_specification' => '\SellingPartnerApiV5\Model\ShippingV1\LabelSpecification'
     ];
 
     /**
@@ -222,7 +222,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets ship_to
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipTo()
     {
@@ -232,7 +232,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets ship_to
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_to ship_to
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_to ship_to
      *
      * @return self
      */
@@ -245,7 +245,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets ship_from
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Address
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Address
      */
     public function getShipFrom()
     {
@@ -255,7 +255,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets ship_from
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Address $ship_from ship_from
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Address $ship_from ship_from
      *
      * @return self
      */
@@ -291,7 +291,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets service_type
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\ServiceType
+     * @return \SellingPartnerApiV5\Model\ShippingV1\ServiceType
      */
     public function getServiceType()
     {
@@ -301,7 +301,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets service_type
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\ServiceType $service_type service_type
+     * @param \SellingPartnerApiV5\Model\ShippingV1\ServiceType $service_type service_type
      *
      * @return self
      */
@@ -314,7 +314,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets containers
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\Container[]
+     * @return \SellingPartnerApiV5\Model\ShippingV1\Container[]
      */
     public function getContainers()
     {
@@ -324,7 +324,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets containers
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\Container[] $containers A list of container.
+     * @param \SellingPartnerApiV5\Model\ShippingV1\Container[] $containers A list of container.
      *
      * @return self
      */
@@ -337,7 +337,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Gets label_specification
      *
-     * @return \SellingPartnerApi\Model\ShippingV1\LabelSpecification
+     * @return \SellingPartnerApiV5\Model\ShippingV1\LabelSpecification
      */
     public function getLabelSpecification()
     {
@@ -347,7 +347,7 @@ class PurchaseShipmentRequest extends BaseModel implements ModelInterface, Array
     /**
      * Sets label_specification
      *
-     * @param \SellingPartnerApi\Model\ShippingV1\LabelSpecification $label_specification label_specification
+     * @param \SellingPartnerApiV5\Model\ShippingV1\LabelSpecification $label_specification label_specification
      *
      * @return self
      */

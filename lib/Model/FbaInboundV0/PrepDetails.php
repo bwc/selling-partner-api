@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PrepDetails Class Doc Comment
  *
  * @category Class
  * @description Preparation instructions and who is responsible for the preparation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PrepDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'prep_instruction' => '\SellingPartnerApi\Model\FbaInboundV0\PrepInstruction',
-        'prep_owner' => '\SellingPartnerApi\Model\FbaInboundV0\PrepOwner'
+        'prep_instruction' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction',
+        'prep_owner' => '\SellingPartnerApiV5\Model\FbaInboundV0\PrepOwner'
     ];
 
     /**
@@ -149,7 +149,7 @@ class PrepDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets prep_instruction
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction
      */
     public function getPrepInstruction()
     {
@@ -159,7 +159,7 @@ class PrepDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets prep_instruction
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepInstruction $prep_instruction prep_instruction
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepInstruction $prep_instruction prep_instruction
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class PrepDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets prep_owner
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PrepOwner
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PrepOwner
      */
     public function getPrepOwner()
     {
@@ -182,7 +182,7 @@ class PrepDetails extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets prep_owner
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PrepOwner $prep_owner prep_owner
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PrepOwner $prep_owner prep_owner
      *
      * @return self
      */

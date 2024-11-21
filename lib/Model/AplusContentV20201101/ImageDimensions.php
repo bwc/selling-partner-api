@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ImageDimensions Class Doc Comment
  *
  * @category Class
  * @description The dimensions extending from the top left corner of the cropped image, or the top left corner of the original image if there is no cropping. Only `pixels` is allowed as the units value for ImageDimensions.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ImageDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'width' => '\SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits',
-        'height' => '\SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits'
+        'width' => '\SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits',
+        'height' => '\SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits'
     ];
 
     /**
@@ -149,7 +149,7 @@ class ImageDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets width
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits
      */
     public function getWidth()
     {
@@ -159,7 +159,7 @@ class ImageDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets width
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits $width width
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits $width width
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class ImageDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets height
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits
      */
     public function getHeight()
     {
@@ -182,7 +182,7 @@ class ImageDimensions extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets height
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\IntegerWithUnits $height height
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\IntegerWithUnits $height height
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Poa Class Doc Comment
  *
  * @category Class
  * @description Proof of Appointment (POA) details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class Poa extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'appointment_time' => '\SellingPartnerApi\Model\ServiceV1\AppointmentTime',
-        'technicians' => '\SellingPartnerApi\Model\ServiceV1\Technician[]',
+        'appointment_time' => '\SellingPartnerApiV5\Model\ServiceV1\AppointmentTime',
+        'technicians' => '\SellingPartnerApiV5\Model\ServiceV1\Technician[]',
         'uploading_technician' => 'string',
         'upload_time' => 'string',
         'poa_type' => 'string'
@@ -207,7 +207,7 @@ class Poa extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets appointment_time
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AppointmentTime|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AppointmentTime|null
      */
     public function getAppointmentTime()
     {
@@ -217,7 +217,7 @@ class Poa extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets appointment_time
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AppointmentTime|null $appointment_time appointment_time
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AppointmentTime|null $appointment_time appointment_time
      *
      * @return self
      */
@@ -230,7 +230,7 @@ class Poa extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets technicians
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Technician[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Technician[]|null
      */
     public function getTechnicians()
     {
@@ -240,7 +240,7 @@ class Poa extends BaseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets technicians
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Technician[]|null $technicians A list of technicians.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Technician[]|null $technicians A list of technicians.
      *
      * @return self
      */

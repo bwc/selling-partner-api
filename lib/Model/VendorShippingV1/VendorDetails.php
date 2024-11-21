@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * VendorDetails Class Doc Comment
  *
  * @category Class
  * @description Vendor Details as part of Label response.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class VendorDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'selling_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
         'vendor_shipment_id' => 'string'
     ];
 
@@ -143,7 +143,7 @@ class VendorDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification|null
      */
     public function getSellingParty()
     {
@@ -153,7 +153,7 @@ class VendorDetails extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification|null $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification|null $selling_party selling_party
      *
      * @return self
      */

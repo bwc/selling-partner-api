@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetAdditionalSellerInputsResult Class Doc Comment
  *
  * @category Class
  * @description The payload for the getAdditionalSellerInputs operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetAdditionalSellerInputsResult extends BaseModel implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipment_level_fields' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalInputs[]',
-        'item_level_fields_list' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\ItemLevelFields[]'
+        'shipment_level_fields' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalInputs[]',
+        'item_level_fields_list' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\ItemLevelFields[]'
     ];
 
     /**
@@ -143,7 +143,7 @@ class GetAdditionalSellerInputsResult extends BaseModel implements ModelInterfac
     /**
      * Gets shipment_level_fields
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalInputs[]|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalInputs[]|null
      */
     public function getShipmentLevelFields()
     {
@@ -153,7 +153,7 @@ class GetAdditionalSellerInputsResult extends BaseModel implements ModelInterfac
     /**
      * Sets shipment_level_fields
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalInputs[]|null $shipment_level_fields A list of additional inputs.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalInputs[]|null $shipment_level_fields A list of additional inputs.
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class GetAdditionalSellerInputsResult extends BaseModel implements ModelInterfac
     /**
      * Gets item_level_fields_list
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\ItemLevelFields[]|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ItemLevelFields[]|null
      */
     public function getItemLevelFieldsList()
     {
@@ -176,7 +176,7 @@ class GetAdditionalSellerInputsResult extends BaseModel implements ModelInterfac
     /**
      * Sets item_level_fields_list
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\ItemLevelFields[]|null $item_level_fields_list A list of item level fields.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\ItemLevelFields[]|null $item_level_fields_list A list of item level fields.
      *
      * @return self
      */

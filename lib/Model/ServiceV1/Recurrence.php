@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Recurrence Class Doc Comment
  *
  * @category Class
  * @description Repeated occurrence of an event in a time range.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class Recurrence extends BaseModel implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'end_time' => 'string',
-        'days_of_week' => '\SellingPartnerApi\Model\ServiceV1\DayOfWeek[]',
+        'days_of_week' => '\SellingPartnerApiV5\Model\ServiceV1\DayOfWeek[]',
         'days_of_month' => 'int[]'
     ];
 
@@ -175,7 +175,7 @@ class Recurrence extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets days_of_week
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\DayOfWeek[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\DayOfWeek[]|null
      */
     public function getDaysOfWeek()
     {
@@ -185,7 +185,7 @@ class Recurrence extends BaseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets days_of_week
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\DayOfWeek[]|null $days_of_week Days of the week when recurrence is valid. If the schedule is valid every Monday, input will only contain `MONDAY` in the list.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\DayOfWeek[]|null $days_of_week Days of the week when recurrence is valid. If the schedule is valid every Monday, input will only contain `MONDAY` in the list.
      *
      * @return self
      */

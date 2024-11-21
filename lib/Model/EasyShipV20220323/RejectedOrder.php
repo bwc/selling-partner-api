@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RejectedOrder Class Doc Comment
  *
  * @category Class
  * @description A order which we couldn't schedule on your behalf. It contains its id, and information on the error.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class RejectedOrder extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
-        'error' => '\SellingPartnerApi\Model\EasyShipV20220323\Error'
+        'error' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Error'
     ];
 
     /**
@@ -169,7 +169,7 @@ class RejectedOrder extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets error
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Error|null
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Error|null
      */
     public function getError()
     {
@@ -179,7 +179,7 @@ class RejectedOrder extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets error
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Error|null $error error
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Error|null $error error
      *
      * @return self
      */

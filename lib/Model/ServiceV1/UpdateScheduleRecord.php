@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ServiceV1;
+namespace SellingPartnerApiV5\Model\ServiceV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateScheduleRecord Class Doc Comment
  *
  * @category Class
  * @description `UpdateScheduleRecord` entity contains the `AvailabilityRecord` if there is an error/warning while performing the requested operation on it.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'availability' => '\SellingPartnerApi\Model\ServiceV1\AvailabilityRecord',
-        'warnings' => '\SellingPartnerApi\Model\ServiceV1\Warning[]',
-        'errors' => '\SellingPartnerApi\Model\ServiceV1\Error[]'
+        'availability' => '\SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord',
+        'warnings' => '\SellingPartnerApiV5\Model\ServiceV1\Warning[]',
+        'errors' => '\SellingPartnerApiV5\Model\ServiceV1\Error[]'
     ];
 
     /**
@@ -149,7 +149,7 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets availability
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\AvailabilityRecord|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord|null
      */
     public function getAvailability()
     {
@@ -159,7 +159,7 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets availability
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\AvailabilityRecord|null $availability availability
+     * @param \SellingPartnerApiV5\Model\ServiceV1\AvailabilityRecord|null $availability availability
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Warning[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null
      */
     public function getWarnings()
     {
@@ -182,7 +182,7 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Warning[]|null $warnings A list of warnings returned in the sucessful execution response of an API request.
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\ServiceV1\Error[]|null
+     * @return \SellingPartnerApiV5\Model\ServiceV1\Error[]|null
      */
     public function getErrors()
     {
@@ -205,7 +205,7 @@ class UpdateScheduleRecord extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
+     * @param \SellingPartnerApiV5\Model\ServiceV1\Error[]|null $errors A list of error responses returned when a request is unsuccessful.
      *
      * @return self
      */

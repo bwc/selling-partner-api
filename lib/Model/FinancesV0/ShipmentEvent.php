@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentEvent Class Doc Comment
  *
  * @category Class
  * @description A shipment, refund, guarantee claim, or chargeback.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,16 +61,16 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
         'amazon_order_id' => 'string',
         'seller_order_id' => 'string',
         'marketplace_name' => 'string',
-        'order_charge_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]',
-        'order_charge_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\ChargeComponent[]',
-        'shipment_fee_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
-        'shipment_fee_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
-        'order_fee_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
-        'order_fee_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\FeeComponent[]',
-        'direct_payment_list' => '\SellingPartnerApi\Model\FinancesV0\DirectPayment[]',
+        'order_charge_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]',
+        'order_charge_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]',
+        'shipment_fee_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
+        'shipment_fee_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
+        'order_fee_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
+        'order_fee_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]',
+        'direct_payment_list' => '\SellingPartnerApiV5\Model\FinancesV0\DirectPayment[]',
         'posted_date' => 'string',
-        'shipment_item_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentItem[]',
-        'shipment_item_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\ShipmentItem[]'
+        'shipment_item_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentItem[]',
+        'shipment_item_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\ShipmentItem[]'
     ];
 
     /**
@@ -278,7 +278,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets order_charge_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getOrderChargeList()
     {
@@ -288,7 +288,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets order_charge_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $order_charge_list A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $order_charge_list A list of charge information on the seller's account.
      *
      * @return self
      */
@@ -301,7 +301,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets order_charge_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null
      */
     public function getOrderChargeAdjustmentList()
     {
@@ -311,7 +311,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets order_charge_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ChargeComponent[]|null $order_charge_adjustment_list A list of charge information on the seller's account.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ChargeComponent[]|null $order_charge_adjustment_list A list of charge information on the seller's account.
      *
      * @return self
      */
@@ -324,7 +324,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets shipment_fee_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getShipmentFeeList()
     {
@@ -334,7 +334,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets shipment_fee_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $shipment_fee_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $shipment_fee_list A list of fee component information.
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets shipment_fee_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getShipmentFeeAdjustmentList()
     {
@@ -357,7 +357,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets shipment_fee_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $shipment_fee_adjustment_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $shipment_fee_adjustment_list A list of fee component information.
      *
      * @return self
      */
@@ -370,7 +370,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets order_fee_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getOrderFeeList()
     {
@@ -380,7 +380,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets order_fee_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $order_fee_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $order_fee_list A list of fee component information.
      *
      * @return self
      */
@@ -393,7 +393,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets order_fee_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null
      */
     public function getOrderFeeAdjustmentList()
     {
@@ -403,7 +403,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets order_fee_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\FeeComponent[]|null $order_fee_adjustment_list A list of fee component information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\FeeComponent[]|null $order_fee_adjustment_list A list of fee component information.
      *
      * @return self
      */
@@ -416,7 +416,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets direct_payment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\DirectPayment[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\DirectPayment[]|null
      */
     public function getDirectPaymentList()
     {
@@ -426,7 +426,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets direct_payment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\DirectPayment[]|null $direct_payment_list A list of direct payment information.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\DirectPayment[]|null $direct_payment_list A list of direct payment information.
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets shipment_item_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentItem[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentItem[]|null
      */
     public function getShipmentItemList()
     {
@@ -472,7 +472,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets shipment_item_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentItem[]|null $shipment_item_list A list of shipment items.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentItem[]|null $shipment_item_list A list of shipment items.
      *
      * @return self
      */
@@ -485,7 +485,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets shipment_item_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\ShipmentItem[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\ShipmentItem[]|null
      */
     public function getShipmentItemAdjustmentList()
     {
@@ -495,7 +495,7 @@ class ShipmentEvent extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets shipment_item_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\ShipmentItem[]|null $shipment_item_adjustment_list A list of shipment items.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\ShipmentItem[]|null $shipment_item_adjustment_list A list of shipment items.
      *
      * @return self
      */

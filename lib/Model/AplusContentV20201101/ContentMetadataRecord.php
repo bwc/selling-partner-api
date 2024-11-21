@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContentMetadataRecord Class Doc Comment
  *
  * @category Class
  * @description The metadata for an A+ Content document, with additional information for content management.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ContentMetadataRecord extends BaseModel implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'content_reference_key' => 'string',
-        'content_metadata' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentMetadata'
+        'content_metadata' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadata'
     ];
 
     /**
@@ -181,7 +181,7 @@ class ContentMetadataRecord extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets content_metadata
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentMetadata
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadata
      */
     public function getContentMetadata()
     {
@@ -191,7 +191,7 @@ class ContentMetadataRecord extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets content_metadata
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentMetadata $content_metadata content_metadata
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadata $content_metadata content_metadata
      *
      * @return self
      */

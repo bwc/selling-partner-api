@@ -1,4 +1,4 @@
-# SellingPartnerApi\FbaOutboundV20200701Api
+# SellingPartnerApiV5\FbaOutboundV20200701Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 ## `cancelFulfillmentOrder()`
 
 ```php
-cancelFulfillmentOrder($seller_fulfillment_order_id): \SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse
+cancelFulfillmentOrder($seller_fulfillment_order_id): \SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse
 ```
 
 
@@ -42,16 +42,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $seller_fulfillment_order_id = 'seller_fulfillment_order_id_example'; // string | The identifier assigned to the item by the seller when the fulfillment order was created.
 
 try {
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/CancelFulfillmentOrderResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\CancelFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/CancelFulfillmentOrderResponse.md)
 
 ### HTTP request headers
 
@@ -84,7 +84,7 @@ Name | Type | Description  | Notes
 ## `createFulfillmentOrder()`
 
 ```php
-createFulfillmentOrder($body): \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse
+createFulfillmentOrder($body): \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse
 ```
 
 
@@ -106,17 +106,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
-$body = new \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest(); // \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
+$body = new \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest(); // \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest
 
 try {
     $result = $apiInstance->createFulfillmentOrder($body);
@@ -130,11 +130,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest**](../Model/FbaOutboundV20200701/CreateFulfillmentOrderRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderRequest**](../Model/FbaOutboundV20200701/CreateFulfillmentOrderRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/CreateFulfillmentOrderResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/CreateFulfillmentOrderResponse.md)
 
 ### HTTP request headers
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 ## `createFulfillmentReturn()`
 
 ```php
-createFulfillmentReturn($seller_fulfillment_order_id, $body): \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse
+createFulfillmentReturn($seller_fulfillment_order_id, $body): \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse
 ```
 
 
@@ -170,18 +170,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $seller_fulfillment_order_id = 'seller_fulfillment_order_id_example'; // string | An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items.
-$body = new \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest(); // \SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest
+$body = new \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest(); // \SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest
 
 try {
     $result = $apiInstance->createFulfillmentReturn($seller_fulfillment_order_id, $body);
@@ -196,11 +196,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_fulfillment_order_id** | **string**| An identifier assigned by the seller to the fulfillment order at the time it was created. The seller uses their own records to find the correct SellerFulfillmentOrderId value based on the buyer's request to return items. |
- **body** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest**](../Model/FbaOutboundV20200701/CreateFulfillmentReturnRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnRequest**](../Model/FbaOutboundV20200701/CreateFulfillmentReturnRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse**](../Model/FbaOutboundV20200701/CreateFulfillmentReturnResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\CreateFulfillmentReturnResponse**](../Model/FbaOutboundV20200701/CreateFulfillmentReturnResponse.md)
 
 ### HTTP request headers
 
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 ## `getFeatureInventory()`
 
 ```php
-getFeatureInventory($marketplace_id, $feature_name, $next_token): \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse
+getFeatureInventory($marketplace_id, $feature_name, $next_token): \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse
 ```
 
 
@@ -236,16 +236,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The marketplace for which to return a list of the inventory that is eligible for the specified feature.
 $feature_name = 'feature_name_example'; // string | The name of the feature for which to return a list of eligible inventory.
 $next_token = 'next_token_example'; // string | A string token returned in the response to your previous request that is used to return the next response page. A value of null will return the first page.
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureInventoryResponse**](../Model/FbaOutboundV20200701/GetFeatureInventoryResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureInventoryResponse**](../Model/FbaOutboundV20200701/GetFeatureInventoryResponse.md)
 
 ### HTTP request headers
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 ## `getFeatureSKU()`
 
 ```php
-getFeatureSKU($marketplace_id, $feature_name, $seller_sku): \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse
+getFeatureSKU($marketplace_id, $feature_name, $seller_sku): \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse
 ```
 
 
@@ -304,16 +304,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The marketplace for which to return the count.
 $feature_name = 'feature_name_example'; // string | The name of the feature.
 $seller_sku = 'seller_sku_example'; // string | Used to identify an item in the given marketplace. SellerSKU is qualified by the seller's SellerId, which is included with every operation that you submit.
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeatureSkuResponse**](../Model/FbaOutboundV20200701/GetFeatureSkuResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeatureSkuResponse**](../Model/FbaOutboundV20200701/GetFeatureSkuResponse.md)
 
 ### HTTP request headers
 
@@ -350,7 +350,7 @@ Name | Type | Description  | Notes
 ## `getFeatures()`
 
 ```php
-getFeatures($marketplace_id): \SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse
+getFeatures($marketplace_id): \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse
 ```
 
 
@@ -372,16 +372,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $marketplace_id = 'marketplace_id_example'; // string | The marketplace for which to return the list of features.
 
 try {
@@ -400,7 +400,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\GetFeaturesResponse**](../Model/FbaOutboundV20200701/GetFeaturesResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFeaturesResponse**](../Model/FbaOutboundV20200701/GetFeaturesResponse.md)
 
 ### HTTP request headers
 
@@ -414,7 +414,7 @@ Name | Type | Description  | Notes
 ## `getFulfillmentOrder()`
 
 ```php
-getFulfillmentOrder($seller_fulfillment_order_id): \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse
+getFulfillmentOrder($seller_fulfillment_order_id): \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse
 ```
 
 
@@ -436,16 +436,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $seller_fulfillment_order_id = 'seller_fulfillment_order_id_example'; // string | The identifier assigned to the item by the seller when the fulfillment order was created.
 
 try {
@@ -464,7 +464,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/GetFulfillmentOrderResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/GetFulfillmentOrderResponse.md)
 
 ### HTTP request headers
 
@@ -478,7 +478,7 @@ Name | Type | Description  | Notes
 ## `getFulfillmentPreview()`
 
 ```php
-getFulfillmentPreview($body): \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse
+getFulfillmentPreview($body): \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse
 ```
 
 
@@ -500,17 +500,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
-$body = new \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest(); // \SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
+$body = new \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest(); // \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest
 
 try {
     $result = $apiInstance->getFulfillmentPreview($body);
@@ -524,11 +524,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest**](../Model/FbaOutboundV20200701/GetFulfillmentPreviewRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewRequest**](../Model/FbaOutboundV20200701/GetFulfillmentPreviewRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse**](../Model/FbaOutboundV20200701/GetFulfillmentPreviewResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetFulfillmentPreviewResponse**](../Model/FbaOutboundV20200701/GetFulfillmentPreviewResponse.md)
 
 ### HTTP request headers
 
@@ -542,7 +542,7 @@ Name | Type | Description  | Notes
 ## `getPackageTrackingDetails()`
 
 ```php
-getPackageTrackingDetails($package_number): \SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse
+getPackageTrackingDetails($package_number): \SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse
 ```
 
 
@@ -564,16 +564,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $package_number = 56; // int | The unencrypted package identifier returned by the getFulfillmentOrder operation.
 
 try {
@@ -592,7 +592,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse**](../Model/FbaOutboundV20200701/GetPackageTrackingDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\GetPackageTrackingDetailsResponse**](../Model/FbaOutboundV20200701/GetPackageTrackingDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -606,7 +606,7 @@ Name | Type | Description  | Notes
 ## `listAllFulfillmentOrders()`
 
 ```php
-listAllFulfillmentOrders($query_start_date, $next_token): \SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse
+listAllFulfillmentOrders($query_start_date, $next_token): \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse
 ```
 
 
@@ -628,16 +628,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $query_start_date = 'query_start_date_example'; // string | A date used to select fulfillment orders that were last updated after (or at) a specified time. An update is defined as any change in fulfillment order status, including the creation of a new fulfillment order. Must be in ISO 8601 format.
 $next_token = 'next_token_example'; // string | A string token returned in the response to your previous request.
 
@@ -658,7 +658,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse**](../Model/FbaOutboundV20200701/ListAllFulfillmentOrdersResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListAllFulfillmentOrdersResponse**](../Model/FbaOutboundV20200701/ListAllFulfillmentOrdersResponse.md)
 
 ### HTTP request headers
 
@@ -672,7 +672,7 @@ Name | Type | Description  | Notes
 ## `listReturnReasonCodes()`
 
 ```php
-listReturnReasonCodes($seller_sku, $language, $marketplace_id, $seller_fulfillment_order_id): \SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse
+listReturnReasonCodes($seller_sku, $language, $marketplace_id, $seller_fulfillment_order_id): \SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse
 ```
 
 
@@ -694,16 +694,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $seller_sku = 'seller_sku_example'; // string | The seller SKU for which return reason codes are required.
 $language = 'language_example'; // string | The language that the TranslatedDescription property of the ReasonCodeDetails response object should be translated into.
 $marketplace_id = 'marketplace_id_example'; // string | The marketplace for which the seller wants return reason codes.
@@ -728,7 +728,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse**](../Model/FbaOutboundV20200701/ListReturnReasonCodesResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\ListReturnReasonCodesResponse**](../Model/FbaOutboundV20200701/ListReturnReasonCodesResponse.md)
 
 ### HTTP request headers
 
@@ -742,7 +742,7 @@ Name | Type | Description  | Notes
 ## `submitFulfillmentOrderStatusUpdate()`
 
 ```php
-submitFulfillmentOrderStatusUpdate($seller_fulfillment_order_id, $body): \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse
+submitFulfillmentOrderStatusUpdate($seller_fulfillment_order_id, $body): \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse
 ```
 
 
@@ -756,18 +756,18 @@ Requests that Amazon update the status of an order in the sandbox testing enviro
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $seller_fulfillment_order_id = 'seller_fulfillment_order_id_example'; // string | The identifier assigned to the item by the seller when the fulfillment order was created.
-$body = new \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest(); // \SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest
+$body = new \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest(); // \SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest
 
 try {
     $result = $apiInstance->submitFulfillmentOrderStatusUpdate($seller_fulfillment_order_id, $body);
@@ -782,11 +782,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_fulfillment_order_id** | **string**| The identifier assigned to the item by the seller when the fulfillment order was created. |
- **body** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest**](../Model/FbaOutboundV20200701/SubmitFulfillmentOrderStatusUpdateRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateRequest**](../Model/FbaOutboundV20200701/SubmitFulfillmentOrderStatusUpdateRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse**](../Model/FbaOutboundV20200701/SubmitFulfillmentOrderStatusUpdateResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\SubmitFulfillmentOrderStatusUpdateResponse**](../Model/FbaOutboundV20200701/SubmitFulfillmentOrderStatusUpdateResponse.md)
 
 ### HTTP request headers
 
@@ -800,7 +800,7 @@ Name | Type | Description  | Notes
 ## `updateFulfillmentOrder()`
 
 ```php
-updateFulfillmentOrder($seller_fulfillment_order_id, $body): \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse
+updateFulfillmentOrder($seller_fulfillment_order_id, $body): \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse
 ```
 
 
@@ -822,18 +822,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\FbaOutboundV20200701Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\FbaOutboundV20200701Api($config);
 $seller_fulfillment_order_id = 'seller_fulfillment_order_id_example'; // string | The identifier assigned to the item by the seller when the fulfillment order was created.
-$body = new \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest(); // \SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest
+$body = new \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest(); // \SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest
 
 try {
     $result = $apiInstance->updateFulfillmentOrder($seller_fulfillment_order_id, $body);
@@ -848,11 +848,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seller_fulfillment_order_id** | **string**| The identifier assigned to the item by the seller when the fulfillment order was created. |
- **body** | [**\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest**](../Model/FbaOutboundV20200701/UpdateFulfillmentOrderRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderRequest**](../Model/FbaOutboundV20200701/UpdateFulfillmentOrderRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/UpdateFulfillmentOrderResponse.md)
+[**\SellingPartnerApiV5\Model\FbaOutboundV20200701\UpdateFulfillmentOrderResponse**](../Model/FbaOutboundV20200701/UpdateFulfillmentOrderResponse.md)
 
 ### HTTP request headers
 

@@ -13,6 +13,6 @@ Possible values:
 * true - Request is for an Amazon-partnered carrier.
 
 * false - Request is for a non-Amazon-partnered carrier. |
-**shipment_type** | [**\SellingPartnerApi\Model\FbaInboundV0\ShipmentType**](ShipmentType.md) |  |
+**shipment_type** | [**\SellingPartnerApiV5\Model\FbaInboundV0\ShipmentType**](ShipmentType.md) |  |
 
 [[FbaInboundV0 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

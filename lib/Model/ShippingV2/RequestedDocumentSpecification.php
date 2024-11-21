@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RequestedDocumentSpecification Class Doc Comment
  *
  * @category Class
  * @description The document specifications requested. For calls to the purchaseShipment operation, the shipment purchase fails if the specified document specifications are not among those returned in the response to the getRates operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,12 +58,12 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'format' => '\SellingPartnerApi\Model\ShippingV2\DocumentFormat',
-        'size' => '\SellingPartnerApi\Model\ShippingV2\DocumentSize',
+        'format' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentFormat',
+        'size' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentSize',
         'dpi' => 'int',
         'page_layout' => 'string',
         'need_file_joining' => 'bool',
-        'requested_document_types' => '\SellingPartnerApi\Model\ShippingV2\DocumentType[]'
+        'requested_document_types' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentType[]'
     ];
 
     /**
@@ -179,7 +179,7 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Gets format
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentFormat
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentFormat
      */
     public function getFormat()
     {
@@ -189,7 +189,7 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Sets format
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentFormat $format format
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentFormat $format format
      *
      * @return self
      */
@@ -202,7 +202,7 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Gets size
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentSize
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentSize
      */
     public function getSize()
     {
@@ -212,7 +212,7 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Sets size
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentSize $size size
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentSize $size size
      *
      * @return self
      */
@@ -294,7 +294,7 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Gets requested_document_types
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentType[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentType[]
      */
     public function getRequestedDocumentTypes()
     {
@@ -304,7 +304,7 @@ class RequestedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Sets requested_document_types
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentType[] $requested_document_types A list of the document types requested.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentType[] $requested_document_types A list of the document types requested.
      *
      * @return self
      */

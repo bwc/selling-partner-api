@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\EasyShipV20220323;
+namespace SellingPartnerApiV5\Model\EasyShipV20220323;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListHandoverSlotsRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the `listHandoverSlots` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,8 +60,8 @@ class ListHandoverSlotsRequest extends BaseModel implements ModelInterface, Arra
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
         'amazon_order_id' => 'string',
-        'package_dimensions' => '\SellingPartnerApi\Model\EasyShipV20220323\Dimensions',
-        'package_weight' => '\SellingPartnerApi\Model\EasyShipV20220323\Weight'
+        'package_dimensions' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Dimensions',
+        'package_weight' => '\SellingPartnerApiV5\Model\EasyShipV20220323\Weight'
     ];
 
     /**
@@ -228,7 +228,7 @@ class ListHandoverSlotsRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Gets package_dimensions
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Dimensions
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Dimensions
      */
     public function getPackageDimensions()
     {
@@ -238,7 +238,7 @@ class ListHandoverSlotsRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Sets package_dimensions
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Dimensions $package_dimensions package_dimensions
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Dimensions $package_dimensions package_dimensions
      *
      * @return self
      */
@@ -251,7 +251,7 @@ class ListHandoverSlotsRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Gets package_weight
      *
-     * @return \SellingPartnerApi\Model\EasyShipV20220323\Weight
+     * @return \SellingPartnerApiV5\Model\EasyShipV20220323\Weight
      */
     public function getPackageWeight()
     {
@@ -261,7 +261,7 @@ class ListHandoverSlotsRequest extends BaseModel implements ModelInterface, Arra
     /**
      * Sets package_weight
      *
-     * @param \SellingPartnerApi\Model\EasyShipV20220323\Weight $package_weight package_weight
+     * @param \SellingPartnerApiV5\Model\EasyShipV20220323\Weight $package_weight package_weight
      *
      * @return self
      */

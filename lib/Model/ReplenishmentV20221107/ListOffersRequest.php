@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ReplenishmentV20221107;
+namespace SellingPartnerApiV5\Model\ReplenishmentV20221107;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ListOffersRequest Class Doc Comment
  *
  * @category Class
  * @description The request body for the `listOffers` operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pagination' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestPagination',
-        'filters' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestFilters',
-        'sort' => '\SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestSort'
+        'pagination' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestPagination',
+        'filters' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestFilters',
+        'sort' => '\SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestSort'
     ];
 
     /**
@@ -155,7 +155,7 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets pagination
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestPagination
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestPagination
      */
     public function getPagination()
     {
@@ -165,7 +165,7 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets pagination
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestPagination $pagination pagination
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestPagination $pagination pagination
      *
      * @return self
      */
@@ -178,7 +178,7 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets filters
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestFilters
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestFilters
      */
     public function getFilters()
     {
@@ -188,7 +188,7 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets filters
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestFilters $filters filters
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestFilters $filters filters
      *
      * @return self
      */
@@ -201,7 +201,7 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Gets sort
      *
-     * @return \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestSort|null
+     * @return \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestSort|null
      */
     public function getSort()
     {
@@ -211,7 +211,7 @@ class ListOffersRequest extends BaseModel implements ModelInterface, ArrayAccess
     /**
      * Sets sort
      *
-     * @param \SellingPartnerApi\Model\ReplenishmentV20221107\ListOffersRequestSort|null $sort sort
+     * @param \SellingPartnerApiV5\Model\ReplenishmentV20221107\ListOffersRequestSort|null $sort sort
      *
      * @return self
      */

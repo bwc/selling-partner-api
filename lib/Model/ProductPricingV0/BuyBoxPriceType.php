@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV0;
+namespace SellingPartnerApiV5\Model\ProductPricingV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * BuyBoxPriceType Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,13 +58,13 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
       */
     protected static $openAPITypes = [
         'condition' => 'string',
-        'offer_type' => '\SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType',
+        'offer_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType',
         'quantity_tier' => 'int',
-        'quantity_discount_type' => '\SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType',
-        'landed_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'listing_price' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'shipping' => '\SellingPartnerApi\Model\ProductPricingV0\MoneyType',
-        'points' => '\SellingPartnerApi\Model\ProductPricingV0\Points',
+        'quantity_discount_type' => '\SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType',
+        'landed_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'listing_price' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'shipping' => '\SellingPartnerApiV5\Model\ProductPricingV0\MoneyType',
+        'points' => '\SellingPartnerApiV5\Model\ProductPricingV0\Points',
         'seller_id' => 'string'
     ];
 
@@ -219,7 +219,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets offer_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null
      */
     public function getOfferType()
     {
@@ -229,7 +229,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets offer_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\OfferCustomerType|null $offer_type offer_type
      *
      * @return self
      */
@@ -265,7 +265,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets quantity_discount_type
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType|null
      */
     public function getQuantityDiscountType()
     {
@@ -275,7 +275,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets quantity_discount_type
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\QuantityDiscountType|null $quantity_discount_type quantity_discount_type
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\QuantityDiscountType|null $quantity_discount_type quantity_discount_type
      *
      * @return self
      */
@@ -288,7 +288,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets landed_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getLandedPrice()
     {
@@ -298,7 +298,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets landed_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $landed_price landed_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $landed_price landed_price
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets listing_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getListingPrice()
     {
@@ -321,7 +321,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets listing_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $listing_price listing_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $listing_price listing_price
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets shipping
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\MoneyType
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType
      */
     public function getShipping()
     {
@@ -344,7 +344,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets shipping
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\MoneyType $shipping shipping
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\MoneyType $shipping shipping
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets points
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV0\Points|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV0\Points|null
      */
     public function getPoints()
     {
@@ -367,7 +367,7 @@ class BuyBoxPriceType extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets points
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV0\Points|null $points points
+     * @param \SellingPartnerApiV5\Model\ProductPricingV0\Points|null $points points
      *
      * @return self
      */

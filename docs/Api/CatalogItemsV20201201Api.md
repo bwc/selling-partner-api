@@ -1,4 +1,4 @@
-# SellingPartnerApi\CatalogItemsV20201201Api
+# SellingPartnerApiV5\CatalogItemsV20201201Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 ## `getCatalogItem()`
 
 ```php
-getCatalogItem($asin, $marketplace_ids, $included_data, $locale): \SellingPartnerApi\Model\CatalogItemsV20201201\Item
+getCatalogItem($asin, $marketplace_ids, $included_data, $locale): \SellingPartnerApiV5\Model\CatalogItemsV20201201\Item
 ```
 
 
@@ -31,16 +31,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\CatalogItemsV20201201Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\CatalogItemsV20201201Api($config);
 $asin = 'asin_example'; // string | The Amazon Standard Identification Number (ASIN) of the item.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers. Data sets in the response contain data only for the specified marketplaces.
 $included_data = summaries; // string[] | A comma-delimited list of data sets to include in the response. Default: summaries.
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\CatalogItemsV20201201\Item**](../Model/CatalogItemsV20201201/Item.md)
+[**\SellingPartnerApiV5\Model\CatalogItemsV20201201\Item**](../Model/CatalogItemsV20201201/Item.md)
 
 ### HTTP request headers
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 ## `searchCatalogItems()`
 
 ```php
-searchCatalogItems($keywords, $marketplace_ids, $included_data, $brand_names, $classification_ids, $page_size, $page_token, $keywords_locale, $locale): \SellingPartnerApi\Model\CatalogItemsV20201201\ItemSearchResults
+searchCatalogItems($keywords, $marketplace_ids, $included_data, $brand_names, $classification_ids, $page_size, $page_token, $keywords_locale, $locale): \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSearchResults
 ```
 
 
@@ -101,16 +101,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\CatalogItemsV20201201Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\CatalogItemsV20201201Api($config);
 $keywords = shoes; // string[] | A comma-delimited list of words or item identifiers to search the Amazon catalog for.
 $marketplace_ids = ATVPDKIKX0DER; // string[] | A comma-delimited list of Amazon marketplace identifiers for the request.
 $included_data = summaries; // string[] | A comma-delimited list of data sets to include in the response. Default: summaries.
@@ -145,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\CatalogItemsV20201201\ItemSearchResults**](../Model/CatalogItemsV20201201/ItemSearchResults.md)
+[**\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemSearchResults**](../Model/CatalogItemsV20201201/ItemSearchResults.md)
 
 ### HTTP request headers
 

@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ChannelDetails Class Doc Comment
  *
  * @category Class
  * @description Shipment source channel related information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class ChannelDetails extends BaseModel implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'channel_type' => 'string',
-        'amazon_order_details' => '\SellingPartnerApi\Model\ShippingV2\AmazonOrderDetails',
-        'amazon_shipment_details' => '\SellingPartnerApi\Model\ShippingV2\AmazonShipmentDetails'
+        'amazon_order_details' => '\SellingPartnerApiV5\Model\ShippingV2\AmazonOrderDetails',
+        'amazon_shipment_details' => '\SellingPartnerApiV5\Model\ShippingV2\AmazonShipmentDetails'
     ];
 
     /**
@@ -219,7 +219,7 @@ class ChannelDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets amazon_order_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\AmazonOrderDetails|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\AmazonOrderDetails|null
      */
     public function getAmazonOrderDetails()
     {
@@ -229,7 +229,7 @@ class ChannelDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets amazon_order_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\AmazonOrderDetails|null $amazon_order_details amazon_order_details
+     * @param \SellingPartnerApiV5\Model\ShippingV2\AmazonOrderDetails|null $amazon_order_details amazon_order_details
      *
      * @return self
      */
@@ -242,7 +242,7 @@ class ChannelDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets amazon_shipment_details
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\AmazonShipmentDetails|null
+     * @return \SellingPartnerApiV5\Model\ShippingV2\AmazonShipmentDetails|null
      */
     public function getAmazonShipmentDetails()
     {
@@ -252,7 +252,7 @@ class ChannelDetails extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets amazon_shipment_details
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\AmazonShipmentDetails|null $amazon_shipment_details amazon_shipment_details
+     * @param \SellingPartnerApiV5\Model\ShippingV2\AmazonShipmentDetails|null $amazon_shipment_details amazon_shipment_details
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,30 +24,30 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * VendorDirectFulfillmentPaymentsV1Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
 {
     /**
      * Operation submitInvoice
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse
      */
     public function submitInvoice($body)
     {
@@ -58,11 +58,11 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
     /**
      * Operation submitInvoiceWithHttpInfo
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function submitInvoiceWithHttpInfo($body)
     {
@@ -111,80 +111,80 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 413:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse';
+            $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -199,7 +199,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 413:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -279,7 +279,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -294,14 +294,14 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
      *
      * 
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function submitInvoiceAsyncWithHttpInfo($body)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse';
+        $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceResponse';
         $request = $this->submitInvoiceRequest($body);
         $signedRequest = $this->config->signRequest(
             $request
@@ -347,7 +347,7 @@ class VendorDirectFulfillmentPaymentsV1Api extends BaseApi
     /**
      * Create request for operation 'submitInvoice'
      *
-     * @param  \SellingPartnerApi\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
+     * @param  \SellingPartnerApiV5\Model\VendorDirectFulfillmentPaymentsV1\SubmitInvoiceRequest $body (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

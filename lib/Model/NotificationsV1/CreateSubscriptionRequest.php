@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * CreateSubscriptionRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the createSubscription operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class CreateSubscriptionRequest extends BaseModel implements ModelInterface, Arr
     protected static $openAPITypes = [
         'payload_version' => 'string',
         'destination_id' => 'string',
-        'processing_directive' => '\SellingPartnerApi\Model\NotificationsV1\ProcessingDirective'
+        'processing_directive' => '\SellingPartnerApiV5\Model\NotificationsV1\ProcessingDirective'
     ];
 
     /**
@@ -195,7 +195,7 @@ class CreateSubscriptionRequest extends BaseModel implements ModelInterface, Arr
     /**
      * Gets processing_directive
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\ProcessingDirective|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\ProcessingDirective|null
      */
     public function getProcessingDirective()
     {
@@ -205,7 +205,7 @@ class CreateSubscriptionRequest extends BaseModel implements ModelInterface, Arr
     /**
      * Sets processing_directive
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\ProcessingDirective|null $processing_directive processing_directive
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\ProcessingDirective|null $processing_directive processing_directive
      *
      * @return self
      */

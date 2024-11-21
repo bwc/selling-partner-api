@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20201201;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20201201;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemIdentifiersByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ItemIdentifiersByMarketplace extends BaseModel implements ModelInterface, 
       */
     protected static $openAPITypes = [
         'marketplace_id' => 'string',
-        'identifiers' => '\SellingPartnerApi\Model\CatalogItemsV20201201\ItemIdentifier[]'
+        'identifiers' => '\SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemIdentifier[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class ItemIdentifiersByMarketplace extends BaseModel implements ModelInterface, 
     /**
      * Gets identifiers
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20201201\ItemIdentifier[]
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemIdentifier[]
      */
     public function getIdentifiers()
     {
@@ -182,7 +182,7 @@ class ItemIdentifiersByMarketplace extends BaseModel implements ModelInterface, 
     /**
      * Sets identifiers
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20201201\ItemIdentifier[] $identifiers Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20201201\ItemIdentifier[] $identifiers Identifiers associated with the item in the Amazon catalog for the indicated Amazon marketplace.
      *
      * @return self
      */

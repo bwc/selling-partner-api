@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ListingsV20210801;
+namespace SellingPartnerApiV5\Model\ListingsV20210801;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemProcurement Class Doc Comment
  *
  * @category Class
  * @description Vendor procurement information for the listings item.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class ItemProcurement extends BaseModel implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cost_price' => '\SellingPartnerApi\Model\ListingsV20210801\Money'
+        'cost_price' => '\SellingPartnerApiV5\Model\ListingsV20210801\Money'
     ];
 
     /**
@@ -140,7 +140,7 @@ class ItemProcurement extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Gets cost_price
      *
-     * @return \SellingPartnerApi\Model\ListingsV20210801\Money
+     * @return \SellingPartnerApiV5\Model\ListingsV20210801\Money
      */
     public function getCostPrice()
     {
@@ -150,7 +150,7 @@ class ItemProcurement extends BaseModel implements ModelInterface, ArrayAccess, 
     /**
      * Sets cost_price
      *
-     * @param \SellingPartnerApi\Model\ListingsV20210801\Money $cost_price cost_price
+     * @param \SellingPartnerApiV5\Model\ListingsV20210801\Money $cost_price cost_price
      *
      * @return self
      */

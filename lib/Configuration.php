@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -13,20 +13,20 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi;
+namespace SellingPartnerApiV5;
 
 use Exception;
 use GuzzleHttp\Psr7\Request;
 use InvalidArgumentException;
 use RuntimeException;
-use SellingPartnerApi\Contract\RequestSignerContract;
+use SellingPartnerApiV5\Contract\RequestSignerContract;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class Configuration
 {

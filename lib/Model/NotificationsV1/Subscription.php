@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\NotificationsV1;
+namespace SellingPartnerApiV5\Model\NotificationsV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Subscription Class Doc Comment
  *
  * @category Class
  * @description Represents a subscription to receive notifications.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,7 +61,7 @@ class Subscription extends BaseModel implements ModelInterface, ArrayAccess, \Js
         'subscription_id' => 'string',
         'payload_version' => 'string',
         'destination_id' => 'string',
-        'processing_directive' => '\SellingPartnerApi\Model\NotificationsV1\ProcessingDirective'
+        'processing_directive' => '\SellingPartnerApiV5\Model\NotificationsV1\ProcessingDirective'
     ];
 
     /**
@@ -233,7 +233,7 @@ class Subscription extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets processing_directive
      *
-     * @return \SellingPartnerApi\Model\NotificationsV1\ProcessingDirective|null
+     * @return \SellingPartnerApiV5\Model\NotificationsV1\ProcessingDirective|null
      */
     public function getProcessingDirective()
     {
@@ -243,7 +243,7 @@ class Subscription extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets processing_directive
      *
-     * @param \SellingPartnerApi\Model\NotificationsV1\ProcessingDirective|null $processing_directive processing_directive
+     * @param \SellingPartnerApiV5\Model\NotificationsV1\ProcessingDirective|null $processing_directive processing_directive
      *
      * @return self
      */

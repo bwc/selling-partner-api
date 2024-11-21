@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItemBuyerInfo Class Doc Comment
  *
  * @category Class
  * @description A single order item's buyer information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'order_item_id' => 'string',
-        'buyer_customized_info' => '\SellingPartnerApi\Model\OrdersV0\BuyerCustomizedInfoDetail',
-        'gift_wrap_price' => '\SellingPartnerApi\Model\OrdersV0\Money',
-        'gift_wrap_tax' => '\SellingPartnerApi\Model\OrdersV0\Money',
+        'buyer_customized_info' => '\SellingPartnerApiV5\Model\OrdersV0\BuyerCustomizedInfoDetail',
+        'gift_wrap_price' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
+        'gift_wrap_tax' => '\SellingPartnerApiV5\Model\OrdersV0\Money',
         'gift_message_text' => 'string',
         'gift_wrap_level' => 'string'
     ];
@@ -193,7 +193,7 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets buyer_customized_info
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\BuyerCustomizedInfoDetail|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\BuyerCustomizedInfoDetail|null
      */
     public function getBuyerCustomizedInfo()
     {
@@ -203,7 +203,7 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets buyer_customized_info
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\BuyerCustomizedInfoDetail|null $buyer_customized_info buyer_customized_info
+     * @param \SellingPartnerApiV5\Model\OrdersV0\BuyerCustomizedInfoDetail|null $buyer_customized_info buyer_customized_info
      *
      * @return self
      */
@@ -216,7 +216,7 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets gift_wrap_price
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getGiftWrapPrice()
     {
@@ -226,7 +226,7 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets gift_wrap_price
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $gift_wrap_price gift_wrap_price
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $gift_wrap_price gift_wrap_price
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets gift_wrap_tax
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\Money|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\Money|null
      */
     public function getGiftWrapTax()
     {
@@ -249,7 +249,7 @@ class OrderItemBuyerInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets gift_wrap_tax
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\Money|null $gift_wrap_tax gift_wrap_tax
+     * @param \SellingPartnerApiV5\Model\OrdersV0\Money|null $gift_wrap_tax gift_wrap_tax
      *
      * @return self
      */

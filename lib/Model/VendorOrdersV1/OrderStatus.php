@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderStatus Class Doc Comment
  *
  * @category Class
  * @description Current status of a purchase order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,9 +62,9 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
         'purchase_order_status' => 'string',
         'purchase_order_date' => 'string',
         'last_updated_date' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
-        'item_status' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatus[]'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
+        'item_status' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatus[]'
     ];
 
     /**
@@ -327,7 +327,7 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -337,7 +337,7 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -350,7 +350,7 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification
      */
     public function getShipToParty()
     {
@@ -360,7 +360,7 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -373,7 +373,7 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets item_status
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatus[]
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatus[]
      */
     public function getItemStatus()
     {
@@ -383,7 +383,7 @@ class OrderStatus extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets item_status
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderItemStatus[] $item_status Detailed description of items order status.
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItemStatus[] $item_status Detailed description of items order status.
      *
      * @return self
      */

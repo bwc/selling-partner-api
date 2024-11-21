@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PackageDetail Class Doc Comment
  *
  * @category Class
  * @description Properties of packages
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -65,7 +65,7 @@ class PackageDetail extends BaseModel implements ModelInterface, ArrayAccess, \J
         'tracking_number' => 'string',
         'ship_date' => 'string',
         'ship_from_supply_source_id' => 'string',
-        'order_items' => '\SellingPartnerApi\Model\OrdersV0\ConfirmShipmentOrderItem[]'
+        'order_items' => '\SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentOrderItem[]'
     ];
 
     /**
@@ -355,7 +355,7 @@ class PackageDetail extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets order_items
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentOrderItem[]
+     * @return \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentOrderItem[]
      */
     public function getOrderItems()
     {
@@ -365,7 +365,7 @@ class PackageDetail extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets order_items
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\ConfirmShipmentOrderItem[] $order_items A list of order items.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\ConfirmShipmentOrderItem[] $order_items A list of order items.
      *
      * @return self
      */

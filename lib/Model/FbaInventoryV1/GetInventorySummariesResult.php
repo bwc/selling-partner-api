@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInventoryV1;
+namespace SellingPartnerApiV5\Model\FbaInventoryV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetInventorySummariesResult Class Doc Comment
  *
  * @category Class
  * @description The payload schema for the getInventorySummaries operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class GetInventorySummariesResult extends BaseModel implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'granularity' => '\SellingPartnerApi\Model\FbaInventoryV1\Granularity',
-        'inventory_summaries' => '\SellingPartnerApi\Model\FbaInventoryV1\InventorySummary[]'
+        'granularity' => '\SellingPartnerApiV5\Model\FbaInventoryV1\Granularity',
+        'inventory_summaries' => '\SellingPartnerApiV5\Model\FbaInventoryV1\InventorySummary[]'
     ];
 
     /**
@@ -149,7 +149,7 @@ class GetInventorySummariesResult extends BaseModel implements ModelInterface, A
     /**
      * Gets granularity
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\Granularity
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\Granularity
      */
     public function getGranularity()
     {
@@ -159,7 +159,7 @@ class GetInventorySummariesResult extends BaseModel implements ModelInterface, A
     /**
      * Sets granularity
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\Granularity $granularity granularity
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\Granularity $granularity granularity
      *
      * @return self
      */
@@ -172,7 +172,7 @@ class GetInventorySummariesResult extends BaseModel implements ModelInterface, A
     /**
      * Gets inventory_summaries
      *
-     * @return \SellingPartnerApi\Model\FbaInventoryV1\InventorySummary[]
+     * @return \SellingPartnerApiV5\Model\FbaInventoryV1\InventorySummary[]
      */
     public function getInventorySummaries()
     {
@@ -182,7 +182,7 @@ class GetInventorySummariesResult extends BaseModel implements ModelInterface, A
     /**
      * Sets inventory_summaries
      *
-     * @param \SellingPartnerApi\Model\FbaInventoryV1\InventorySummary[] $inventory_summaries A list of inventory summaries.
+     * @param \SellingPartnerApiV5\Model\FbaInventoryV1\InventorySummary[] $inventory_summaries A list of inventory summaries.
      *
      * @return self
      */

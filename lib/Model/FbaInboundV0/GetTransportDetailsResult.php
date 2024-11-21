@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetTransportDetailsResult Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,7 +57,7 @@ class GetTransportDetailsResult extends BaseModel implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transport_content' => '\SellingPartnerApi\Model\FbaInboundV0\TransportContent'
+        'transport_content' => '\SellingPartnerApiV5\Model\FbaInboundV0\TransportContent'
     ];
 
     /**
@@ -136,7 +136,7 @@ class GetTransportDetailsResult extends BaseModel implements ModelInterface, Arr
     /**
      * Gets transport_content
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\TransportContent|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\TransportContent|null
      */
     public function getTransportContent()
     {
@@ -146,7 +146,7 @@ class GetTransportDetailsResult extends BaseModel implements ModelInterface, Arr
     /**
      * Sets transport_content
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\TransportContent|null $transport_content transport_content
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\TransportContent|null $transport_content transport_content
      *
      * @return self
      */

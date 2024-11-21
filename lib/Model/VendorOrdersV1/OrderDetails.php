@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderDetails Class Doc Comment
  *
  * @category Class
  * @description Details of an order.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,16 +62,16 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
         'purchase_order_changed_date' => 'string',
         'purchase_order_state_changed_date' => 'string',
         'purchase_order_type' => 'string',
-        'import_details' => '\SellingPartnerApi\Model\VendorOrdersV1\ImportDetails',
+        'import_details' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ImportDetails',
         'deal_code' => 'string',
         'payment_method' => 'string',
-        'buying_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
-        'selling_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
-        'bill_to_party' => '\SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification',
+        'buying_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
+        'bill_to_party' => '\SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification',
         'ship_window' => 'string',
         'delivery_window' => 'string',
-        'items' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderItem[]'
+        'items' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderItem[]'
     ];
 
     /**
@@ -402,7 +402,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets import_details
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ImportDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ImportDetails|null
      */
     public function getImportDetails()
     {
@@ -412,7 +412,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets import_details
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ImportDetails|null $import_details import_details
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ImportDetails|null $import_details import_details
      *
      * @return self
      */
@@ -481,7 +481,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets buying_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null
      */
     public function getBuyingParty()
     {
@@ -491,7 +491,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets buying_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null $buying_party buying_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null $buying_party buying_party
      *
      * @return self
      */
@@ -504,7 +504,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null
      */
     public function getSellingParty()
     {
@@ -514,7 +514,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null $selling_party selling_party
      *
      * @return self
      */
@@ -527,7 +527,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null
      */
     public function getShipToParty()
     {
@@ -537,7 +537,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -550,7 +550,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets bill_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null
      */
     public function getBillToParty()
     {
@@ -560,7 +560,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets bill_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\PartyIdentification|null $bill_to_party bill_to_party
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\PartyIdentification|null $bill_to_party bill_to_party
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets items
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderItem[]
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItem[]
      */
     public function getItems()
     {
@@ -629,7 +629,7 @@ class OrderDetails extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets items
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderItem[] $items A list of items in this purchase order.
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderItem[] $items A list of items in this purchase order.
      *
      * @return self
      */

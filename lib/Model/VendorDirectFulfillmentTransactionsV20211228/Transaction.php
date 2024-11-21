@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV20211228;
+namespace SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV20211228;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * Transaction Class Doc Comment
  *
  * @category Class
  * @description The transaction status details.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'transaction_id' => 'string',
         'status' => 'string',
-        'errors' => '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV20211228\ErrorList'
+        'errors' => '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV20211228\ErrorList'
     ];
 
     /**
@@ -247,7 +247,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets errors
      *
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV20211228\ErrorList|null
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV20211228\ErrorList|null
      */
     public function getErrors()
     {
@@ -257,7 +257,7 @@ class Transaction extends BaseModel implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets errors
      *
-     * @param \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV20211228\ErrorList|null $errors errors
+     * @param \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV20211228\ErrorList|null $errors errors
      *
      * @return self
      */

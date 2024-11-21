@@ -1,4 +1,4 @@
-# SellingPartnerApi\TokensV20210301Api
+# SellingPartnerApiV5\TokensV20210301Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 ## `createRestrictedDataToken()`
 
 ```php
-createRestrictedDataToken($body): \SellingPartnerApi\Model\TokensV20210301\CreateRestrictedDataTokenResponse
+createRestrictedDataToken($body): \SellingPartnerApiV5\Model\TokensV20210301\CreateRestrictedDataTokenResponse
 ```
 
 
@@ -30,17 +30,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\TokensV20210301Api($config);
-$body = new \SellingPartnerApi\Model\TokensV20210301\CreateRestrictedDataTokenRequest(); // \SellingPartnerApi\Model\TokensV20210301\CreateRestrictedDataTokenRequest | The restricted data token request details.
+$apiInstance = new SellingPartnerApiV5\Api\TokensV20210301Api($config);
+$body = new \SellingPartnerApiV5\Model\TokensV20210301\CreateRestrictedDataTokenRequest(); // \SellingPartnerApiV5\Model\TokensV20210301\CreateRestrictedDataTokenRequest | The restricted data token request details.
 
 try {
     $result = $apiInstance->createRestrictedDataToken($body);
@@ -54,11 +54,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\TokensV20210301\CreateRestrictedDataTokenRequest**](../Model/TokensV20210301/CreateRestrictedDataTokenRequest.md)| The restricted data token request details. |
+ **body** | [**\SellingPartnerApiV5\Model\TokensV20210301\CreateRestrictedDataTokenRequest**](../Model/TokensV20210301/CreateRestrictedDataTokenRequest.md)| The restricted data token request details. |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\TokensV20210301\CreateRestrictedDataTokenResponse**](../Model/TokensV20210301/CreateRestrictedDataTokenResponse.md)
+[**\SellingPartnerApiV5\Model\TokensV20210301\CreateRestrictedDataTokenResponse**](../Model/TokensV20210301/CreateRestrictedDataTokenResponse.md)
 
 ### HTTP request headers
 

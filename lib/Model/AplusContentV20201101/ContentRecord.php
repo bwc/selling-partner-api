@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ContentRecord Class Doc Comment
  *
  * @category Class
  * @description A content document with additional information for content management.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,8 +59,8 @@ class ContentRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'content_reference_key' => 'string',
-        'content_metadata' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentMetadata',
-        'content_document' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentDocument'
+        'content_metadata' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadata',
+        'content_document' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentDocument'
     ];
 
     /**
@@ -184,7 +184,7 @@ class ContentRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets content_metadata
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentMetadata|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadata|null
      */
     public function getContentMetadata()
     {
@@ -194,7 +194,7 @@ class ContentRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets content_metadata
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentMetadata|null $content_metadata content_metadata
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentMetadata|null $content_metadata content_metadata
      *
      * @return self
      */
@@ -207,7 +207,7 @@ class ContentRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets content_document
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentDocument|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentDocument|null
      */
     public function getContentDocument()
     {
@@ -217,7 +217,7 @@ class ContentRecord extends BaseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets content_document
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentDocument|null $content_document content_document
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentDocument|null $content_document content_document
      *
      * @return self
      */

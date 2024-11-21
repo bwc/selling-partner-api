@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * UpdateVerificationStatusRequestBody Class Doc Comment
  *
  * @category Class
  * @description The updated values of the VerificationStatus field.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class UpdateVerificationStatusRequestBody extends BaseModel implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => '\SellingPartnerApi\Model\OrdersV0\VerificationStatus',
+        'status' => '\SellingPartnerApiV5\Model\OrdersV0\VerificationStatus',
         'external_reviewer_id' => 'string',
         'rejection_reason_id' => 'string'
     ];
@@ -155,7 +155,7 @@ class UpdateVerificationStatusRequestBody extends BaseModel implements ModelInte
     /**
      * Gets status
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\VerificationStatus
+     * @return \SellingPartnerApiV5\Model\OrdersV0\VerificationStatus
      */
     public function getStatus()
     {
@@ -165,7 +165,7 @@ class UpdateVerificationStatusRequestBody extends BaseModel implements ModelInte
     /**
      * Sets status
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\VerificationStatus $status status
+     * @param \SellingPartnerApiV5\Model\OrdersV0\VerificationStatus $status status
      *
      * @return self
      */

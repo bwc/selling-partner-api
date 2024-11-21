@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * StandardComparisonProductBlock Class Doc Comment
  *
  * @category Class
  * @description The A+ Content standard comparison product block.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,11 +59,11 @@ class StandardComparisonProductBlock extends BaseModel implements ModelInterface
       */
     protected static $openAPITypes = [
         'position' => 'int',
-        'image' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageComponent',
+        'image' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent',
         'title' => 'string',
         'asin' => 'string',
         'highlight' => 'bool',
-        'metrics' => '\SellingPartnerApi\Model\AplusContentV20201101\PlainTextItem[]'
+        'metrics' => '\SellingPartnerApiV5\Model\AplusContentV20201101\PlainTextItem[]'
     ];
 
     /**
@@ -221,7 +221,7 @@ class StandardComparisonProductBlock extends BaseModel implements ModelInterface
     /**
      * Gets image
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null
      */
     public function getImage()
     {
@@ -231,7 +231,7 @@ class StandardComparisonProductBlock extends BaseModel implements ModelInterface
     /**
      * Sets image
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageComponent|null $image image
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageComponent|null $image image
      *
      * @return self
      */
@@ -317,7 +317,7 @@ class StandardComparisonProductBlock extends BaseModel implements ModelInterface
     /**
      * Gets metrics
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\PlainTextItem[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\PlainTextItem[]|null
      */
     public function getMetrics()
     {
@@ -327,7 +327,7 @@ class StandardComparisonProductBlock extends BaseModel implements ModelInterface
     /**
      * Sets metrics
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\PlainTextItem[]|null $metrics Comparison metrics for the product.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\PlainTextItem[]|null $metrics Comparison metrics for the product.
      *
      * @return self
      */

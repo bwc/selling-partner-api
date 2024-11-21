@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderRegulatedInfo Class Doc Comment
  *
  * @category Class
  * @description The order's regulated information along with its verification status.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,9 +59,9 @@ class OrderRegulatedInfo extends BaseModel implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'amazon_order_id' => 'string',
-        'regulated_information' => '\SellingPartnerApi\Model\OrdersV0\RegulatedInformation',
+        'regulated_information' => '\SellingPartnerApiV5\Model\OrdersV0\RegulatedInformation',
         'requires_dosage_label' => 'bool',
-        'regulated_order_verification_status' => '\SellingPartnerApi\Model\OrdersV0\RegulatedOrderVerificationStatus'
+        'regulated_order_verification_status' => '\SellingPartnerApiV5\Model\OrdersV0\RegulatedOrderVerificationStatus'
     ];
 
     /**
@@ -190,7 +190,7 @@ class OrderRegulatedInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets regulated_information
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\RegulatedInformation
+     * @return \SellingPartnerApiV5\Model\OrdersV0\RegulatedInformation
      */
     public function getRegulatedInformation()
     {
@@ -200,7 +200,7 @@ class OrderRegulatedInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets regulated_information
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\RegulatedInformation $regulated_information regulated_information
+     * @param \SellingPartnerApiV5\Model\OrdersV0\RegulatedInformation $regulated_information regulated_information
      *
      * @return self
      */
@@ -236,7 +236,7 @@ class OrderRegulatedInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets regulated_order_verification_status
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\RegulatedOrderVerificationStatus
+     * @return \SellingPartnerApiV5\Model\OrdersV0\RegulatedOrderVerificationStatus
      */
     public function getRegulatedOrderVerificationStatus()
     {
@@ -246,7 +246,7 @@ class OrderRegulatedInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets regulated_order_verification_status
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\RegulatedOrderVerificationStatus $regulated_order_verification_status regulated_order_verification_status
+     * @param \SellingPartnerApiV5\Model\OrdersV0\RegulatedOrderVerificationStatus $regulated_order_verification_status regulated_order_verification_status
      *
      * @return self
      */

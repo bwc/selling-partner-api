@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ImageComponent Class Doc Comment
  *
  * @category Class
  * @description A reference to an image, hosted in the A+ Content media library.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class ImageComponent extends BaseModel implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'upload_destination_id' => 'string',
-        'image_crop_specification' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageCropSpecification',
+        'image_crop_specification' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageCropSpecification',
         'alt_text' => 'string'
     ];
 
@@ -194,7 +194,7 @@ class ImageComponent extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Gets image_crop_specification
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageCropSpecification
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageCropSpecification
      */
     public function getImageCropSpecification()
     {
@@ -204,7 +204,7 @@ class ImageComponent extends BaseModel implements ModelInterface, ArrayAccess, \
     /**
      * Sets image_crop_specification
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageCropSpecification $image_crop_specification image_crop_specification
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageCropSpecification $image_crop_specification image_crop_specification
      *
      * @return self
      */

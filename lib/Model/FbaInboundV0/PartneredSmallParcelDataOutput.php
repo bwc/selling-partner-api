@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartneredSmallParcelDataOutput Class Doc Comment
  *
  * @category Class
  * @description Information returned by Amazon about a Small Parcel shipment by an Amazon-partnered carrier.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class PartneredSmallParcelDataOutput extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'package_list' => '\SellingPartnerApi\Model\FbaInboundV0\PartneredSmallParcelPackageOutput[]',
-        'partnered_estimate' => '\SellingPartnerApi\Model\FbaInboundV0\PartneredEstimate'
+        'package_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\PartneredSmallParcelPackageOutput[]',
+        'partnered_estimate' => '\SellingPartnerApiV5\Model\FbaInboundV0\PartneredEstimate'
     ];
 
     /**
@@ -146,7 +146,7 @@ class PartneredSmallParcelDataOutput extends BaseModel implements ModelInterface
     /**
      * Gets package_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PartneredSmallParcelPackageOutput[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PartneredSmallParcelPackageOutput[]
      */
     public function getPackageList()
     {
@@ -156,7 +156,7 @@ class PartneredSmallParcelDataOutput extends BaseModel implements ModelInterface
     /**
      * Sets package_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PartneredSmallParcelPackageOutput[] $package_list A list of packages, including shipping information from the Amazon-partnered carrier.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PartneredSmallParcelPackageOutput[] $package_list A list of packages, including shipping information from the Amazon-partnered carrier.
      *
      * @return self
      */
@@ -169,7 +169,7 @@ class PartneredSmallParcelDataOutput extends BaseModel implements ModelInterface
     /**
      * Gets partnered_estimate
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PartneredEstimate|null
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PartneredEstimate|null
      */
     public function getPartneredEstimate()
     {
@@ -179,7 +179,7 @@ class PartneredSmallParcelDataOutput extends BaseModel implements ModelInterface
     /**
      * Sets partnered_estimate
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PartneredEstimate|null $partnered_estimate partnered_estimate
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PartneredEstimate|null $partnered_estimate partnered_estimate
      *
      * @return self
      */

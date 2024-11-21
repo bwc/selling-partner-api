@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ChargeInstrument Class Doc Comment
  *
  * @category Class
  * @description A payment instrument.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,7 +60,7 @@ class ChargeInstrument extends BaseModel implements ModelInterface, ArrayAccess,
     protected static $openAPITypes = [
         'description' => 'string',
         'tail' => 'string',
-        'amount' => '\SellingPartnerApi\Model\FinancesV0\Currency'
+        'amount' => '\SellingPartnerApiV5\Model\FinancesV0\Currency'
     ];
 
     /**
@@ -195,7 +195,7 @@ class ChargeInstrument extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Gets amount
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\Currency|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\Currency|null
      */
     public function getAmount()
     {
@@ -205,7 +205,7 @@ class ChargeInstrument extends BaseModel implements ModelInterface, ArrayAccess,
     /**
      * Sets amount
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\Currency|null $amount amount
+     * @param \SellingPartnerApiV5\Model\FinancesV0\Currency|null $amount amount
      *
      * @return self
      */

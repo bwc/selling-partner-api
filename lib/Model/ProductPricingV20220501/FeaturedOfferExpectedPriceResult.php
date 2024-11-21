@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ProductPricingV20220501;
+namespace SellingPartnerApiV5\Model\ProductPricingV20220501;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FeaturedOfferExpectedPriceResult Class Doc Comment
  *
  * @category Class
  * @description The featured offer expected price result data for the requested offer.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,10 +58,10 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'featured_offer_expected_price' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPrice',
+        'featured_offer_expected_price' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPrice',
         'result_status' => 'string',
-        'competing_featured_offer' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOffer',
-        'current_featured_offer' => '\SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOffer'
+        'competing_featured_offer' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOffer',
+        'current_featured_offer' => '\SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOffer'
     ];
 
     /**
@@ -158,7 +158,7 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
     /**
      * Gets featured_offer_expected_price
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPrice|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPrice|null
      */
     public function getFeaturedOfferExpectedPrice()
     {
@@ -168,7 +168,7 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
     /**
      * Sets featured_offer_expected_price
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOfferExpectedPrice|null $featured_offer_expected_price featured_offer_expected_price
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOfferExpectedPrice|null $featured_offer_expected_price featured_offer_expected_price
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
     /**
      * Gets competing_featured_offer
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOffer|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOffer|null
      */
     public function getCompetingFeaturedOffer()
     {
@@ -214,7 +214,7 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
     /**
      * Sets competing_featured_offer
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOffer|null $competing_featured_offer competing_featured_offer
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOffer|null $competing_featured_offer competing_featured_offer
      *
      * @return self
      */
@@ -227,7 +227,7 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
     /**
      * Gets current_featured_offer
      *
-     * @return \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOffer|null
+     * @return \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOffer|null
      */
     public function getCurrentFeaturedOffer()
     {
@@ -237,7 +237,7 @@ class FeaturedOfferExpectedPriceResult extends BaseModel implements ModelInterfa
     /**
      * Sets current_featured_offer
      *
-     * @param \SellingPartnerApi\Model\ProductPricingV20220501\FeaturedOffer|null $current_featured_offer current_featured_offer
+     * @param \SellingPartnerApiV5\Model\ProductPricingV20220501\FeaturedOffer|null $current_featured_offer current_featured_offer
      *
      * @return self
      */

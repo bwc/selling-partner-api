@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SubmitAcknowledgementRequest Class Doc Comment
  *
  * @category Class
  * @description The request schema for the submitAcknowledgment operation.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class SubmitAcknowledgementRequest extends BaseModel implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'acknowledgements' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgement[]'
+        'acknowledgements' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgement[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class SubmitAcknowledgementRequest extends BaseModel implements ModelInterface, 
     /**
      * Gets acknowledgements
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgement[]|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgement[]|null
      */
     public function getAcknowledgements()
     {
@@ -147,7 +147,7 @@ class SubmitAcknowledgementRequest extends BaseModel implements ModelInterface, 
     /**
      * Sets acknowledgements
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderAcknowledgement[]|null $acknowledgements acknowledgements
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderAcknowledgement[]|null $acknowledgements acknowledgements
      *
      * @return self
      */

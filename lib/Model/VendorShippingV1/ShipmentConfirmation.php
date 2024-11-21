@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorShippingV1;
+namespace SellingPartnerApiV5\Model\VendorShippingV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ShipmentConfirmation Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -61,19 +61,19 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
         'shipment_confirmation_type' => 'string',
         'shipment_type' => 'string',
         'shipment_structure' => 'string',
-        'transportation_details' => '\SellingPartnerApi\Model\VendorShippingV1\TransportationDetails',
+        'transportation_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\TransportationDetails',
         'amazon_reference_number' => 'string',
         'shipment_confirmation_date' => 'string',
         'shipped_date' => 'string',
         'estimated_delivery_date' => 'string',
-        'selling_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'ship_from_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'ship_to_party' => '\SellingPartnerApi\Model\VendorShippingV1\PartyIdentification',
-        'shipment_measurements' => '\SellingPartnerApi\Model\VendorShippingV1\ShipmentMeasurements',
-        'import_details' => '\SellingPartnerApi\Model\VendorShippingV1\ImportDetails',
-        'shipped_items' => '\SellingPartnerApi\Model\VendorShippingV1\Item[]',
-        'cartons' => '\SellingPartnerApi\Model\VendorShippingV1\Carton[]',
-        'pallets' => '\SellingPartnerApi\Model\VendorShippingV1\Pallet[]'
+        'selling_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'ship_from_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'ship_to_party' => '\SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification',
+        'shipment_measurements' => '\SellingPartnerApiV5\Model\VendorShippingV1\ShipmentMeasurements',
+        'import_details' => '\SellingPartnerApiV5\Model\VendorShippingV1\ImportDetails',
+        'shipped_items' => '\SellingPartnerApiV5\Model\VendorShippingV1\Item[]',
+        'cartons' => '\SellingPartnerApiV5\Model\VendorShippingV1\Carton[]',
+        'pallets' => '\SellingPartnerApiV5\Model\VendorShippingV1\Pallet[]'
     ];
 
     /**
@@ -489,7 +489,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets transportation_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\TransportationDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\TransportationDetails|null
      */
     public function getTransportationDetails()
     {
@@ -499,7 +499,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets transportation_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\TransportationDetails|null $transportation_details transportation_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\TransportationDetails|null $transportation_details transportation_details
      *
      * @return self
      */
@@ -604,7 +604,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets selling_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification
      */
     public function getSellingParty()
     {
@@ -614,7 +614,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets selling_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification $selling_party selling_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification $selling_party selling_party
      *
      * @return self
      */
@@ -627,7 +627,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets ship_from_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification
      */
     public function getShipFromParty()
     {
@@ -637,7 +637,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets ship_from_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification $ship_from_party ship_from_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification $ship_from_party ship_from_party
      *
      * @return self
      */
@@ -650,7 +650,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets ship_to_party
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification
      */
     public function getShipToParty()
     {
@@ -660,7 +660,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets ship_to_party
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\PartyIdentification $ship_to_party ship_to_party
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\PartyIdentification $ship_to_party ship_to_party
      *
      * @return self
      */
@@ -673,7 +673,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets shipment_measurements
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ShipmentMeasurements|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentMeasurements|null
      */
     public function getShipmentMeasurements()
     {
@@ -683,7 +683,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets shipment_measurements
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ShipmentMeasurements|null $shipment_measurements shipment_measurements
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ShipmentMeasurements|null $shipment_measurements shipment_measurements
      *
      * @return self
      */
@@ -696,7 +696,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets import_details
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\ImportDetails|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\ImportDetails|null
      */
     public function getImportDetails()
     {
@@ -706,7 +706,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets import_details
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\ImportDetails|null $import_details import_details
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\ImportDetails|null $import_details import_details
      *
      * @return self
      */
@@ -719,7 +719,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets shipped_items
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Item[]
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Item[]
      */
     public function getShippedItems()
     {
@@ -729,7 +729,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets shipped_items
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Item[] $shipped_items A list of the items in this shipment and their associated details. If any of the item detail fields are common at a carton or a pallet level, provide them at the corresponding carton or pallet level.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Item[] $shipped_items A list of the items in this shipment and their associated details. If any of the item detail fields are common at a carton or a pallet level, provide them at the corresponding carton or pallet level.
      *
      * @return self
      */
@@ -742,7 +742,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets cartons
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Carton[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Carton[]|null
      */
     public function getCartons()
     {
@@ -752,7 +752,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets cartons
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Carton[]|null $cartons A list of the cartons in this shipment.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Carton[]|null $cartons A list of the cartons in this shipment.
      *
      * @return self
      */
@@ -765,7 +765,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Gets pallets
      *
-     * @return \SellingPartnerApi\Model\VendorShippingV1\Pallet[]|null
+     * @return \SellingPartnerApiV5\Model\VendorShippingV1\Pallet[]|null
      */
     public function getPallets()
     {
@@ -775,7 +775,7 @@ class ShipmentConfirmation extends BaseModel implements ModelInterface, ArrayAcc
     /**
      * Sets pallets
      *
-     * @param \SellingPartnerApi\Model\VendorShippingV1\Pallet[]|null $pallets A list of the pallets in this shipment.
+     * @param \SellingPartnerApiV5\Model\VendorShippingV1\Pallet[]|null $pallets A list of the pallets in this shipment.
      *
      * @return self
      */

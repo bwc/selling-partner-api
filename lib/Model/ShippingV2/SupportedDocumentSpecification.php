@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\ShippingV2;
+namespace SellingPartnerApiV5\Model\ShippingV2;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SupportedDocumentSpecification Class Doc Comment
  *
  * @category Class
  * @description Document specification that is supported for a service offering.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,9 +58,9 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'format' => '\SellingPartnerApi\Model\ShippingV2\DocumentFormat',
-        'size' => '\SellingPartnerApi\Model\ShippingV2\DocumentSize',
-        'print_options' => '\SellingPartnerApi\Model\ShippingV2\PrintOption[]'
+        'format' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentFormat',
+        'size' => '\SellingPartnerApiV5\Model\ShippingV2\DocumentSize',
+        'print_options' => '\SellingPartnerApiV5\Model\ShippingV2\PrintOption[]'
     ];
 
     /**
@@ -158,7 +158,7 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Gets format
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentFormat
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentFormat
      */
     public function getFormat()
     {
@@ -168,7 +168,7 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Sets format
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentFormat $format format
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentFormat $format format
      *
      * @return self
      */
@@ -181,7 +181,7 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Gets size
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\DocumentSize
+     * @return \SellingPartnerApiV5\Model\ShippingV2\DocumentSize
      */
     public function getSize()
     {
@@ -191,7 +191,7 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Sets size
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\DocumentSize $size size
+     * @param \SellingPartnerApiV5\Model\ShippingV2\DocumentSize $size size
      *
      * @return self
      */
@@ -204,7 +204,7 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Gets print_options
      *
-     * @return \SellingPartnerApi\Model\ShippingV2\PrintOption[]
+     * @return \SellingPartnerApiV5\Model\ShippingV2\PrintOption[]
      */
     public function getPrintOptions()
     {
@@ -214,7 +214,7 @@ class SupportedDocumentSpecification extends BaseModel implements ModelInterface
     /**
      * Sets print_options
      *
-     * @param \SellingPartnerApi\Model\ShippingV2\PrintOption[] $print_options A list of the format options for a label.
+     * @param \SellingPartnerApiV5\Model\ShippingV2\PrintOption[] $print_options A list of the format options for a label.
      *
      * @return self
      */

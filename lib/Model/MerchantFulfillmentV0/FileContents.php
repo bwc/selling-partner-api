@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * FileContents Class Doc Comment
  *
  * @category Class
  * @description The document data and checksum.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class FileContents extends BaseModel implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'contents' => 'string',
-        'file_type' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\FileType',
+        'file_type' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\FileType',
         'checksum' => 'string'
     ];
 
@@ -181,7 +181,7 @@ class FileContents extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets file_type
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\FileType
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FileType
      */
     public function getFileType()
     {
@@ -191,7 +191,7 @@ class FileContents extends BaseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets file_type
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\FileType $file_type file_type
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\FileType $file_type file_type
      *
      * @return self
      */

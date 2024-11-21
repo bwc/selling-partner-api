@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\VendorOrdersV1;
+namespace SellingPartnerApiV5\Model\VendorOrdersV1;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * OrderItemStatusOrderedQuantity Class Doc Comment
  *
  * @category Class
  * @description Ordered quantity information.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class OrderItemStatusOrderedQuantity extends BaseModel implements ModelInterface
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ordered_quantity' => '\SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity',
-        'ordered_quantity_details' => '\SellingPartnerApi\Model\VendorOrdersV1\OrderedQuantityDetails[]'
+        'ordered_quantity' => '\SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity',
+        'ordered_quantity_details' => '\SellingPartnerApiV5\Model\VendorOrdersV1\OrderedQuantityDetails[]'
     ];
 
     /**
@@ -143,7 +143,7 @@ class OrderItemStatusOrderedQuantity extends BaseModel implements ModelInterface
     /**
      * Gets ordered_quantity
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null
      */
     public function getOrderedQuantity()
     {
@@ -153,7 +153,7 @@ class OrderItemStatusOrderedQuantity extends BaseModel implements ModelInterface
     /**
      * Sets ordered_quantity
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\ItemQuantity|null $ordered_quantity ordered_quantity
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\ItemQuantity|null $ordered_quantity ordered_quantity
      *
      * @return self
      */
@@ -166,7 +166,7 @@ class OrderItemStatusOrderedQuantity extends BaseModel implements ModelInterface
     /**
      * Gets ordered_quantity_details
      *
-     * @return \SellingPartnerApi\Model\VendorOrdersV1\OrderedQuantityDetails[]|null
+     * @return \SellingPartnerApiV5\Model\VendorOrdersV1\OrderedQuantityDetails[]|null
      */
     public function getOrderedQuantityDetails()
     {
@@ -176,7 +176,7 @@ class OrderItemStatusOrderedQuantity extends BaseModel implements ModelInterface
     /**
      * Sets ordered_quantity_details
      *
-     * @param \SellingPartnerApi\Model\VendorOrdersV1\OrderedQuantityDetails[]|null $ordered_quantity_details Details of item quantity ordered.
+     * @param \SellingPartnerApiV5\Model\VendorOrdersV1\OrderedQuantityDetails[]|null $ordered_quantity_details Details of item quantity ordered.
      *
      * @return self
      */

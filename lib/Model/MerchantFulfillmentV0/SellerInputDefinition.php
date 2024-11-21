@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\MerchantFulfillmentV0;
+namespace SellingPartnerApiV5\Model\MerchantFulfillmentV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * SellerInputDefinition Class Doc Comment
  *
  * @category Class
  * @description Specifies characteristics that apply to a seller input.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -60,10 +60,10 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     protected static $openAPITypes = [
         'is_required' => 'bool',
         'data_type' => 'string',
-        'constraints' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\Constraint[]',
+        'constraints' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\Constraint[]',
         'input_display_text' => 'string',
-        'input_target' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\InputTargetType',
-        'stored_value' => '\SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInput',
+        'input_target' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\InputTargetType',
+        'stored_value' => '\SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInput',
         'restricted_set_values' => 'string[]'
     ];
 
@@ -234,7 +234,7 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets constraints
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\Constraint[]
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Constraint[]
      */
     public function getConstraints()
     {
@@ -244,7 +244,7 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets constraints
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\Constraint[] $constraints List of constraints.
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\Constraint[] $constraints List of constraints.
      *
      * @return self
      */
@@ -280,7 +280,7 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets input_target
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\InputTargetType|null
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\InputTargetType|null
      */
     public function getInputTarget()
     {
@@ -290,7 +290,7 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets input_target
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\InputTargetType|null $input_target input_target
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\InputTargetType|null $input_target input_target
      *
      * @return self
      */
@@ -303,7 +303,7 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Gets stored_value
      *
-     * @return \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInput
+     * @return \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInput
      */
     public function getStoredValue()
     {
@@ -313,7 +313,7 @@ class SellerInputDefinition extends BaseModel implements ModelInterface, ArrayAc
     /**
      * Sets stored_value
      *
-     * @param \SellingPartnerApi\Model\MerchantFulfillmentV0\AdditionalSellerInput $stored_value stored_value
+     * @param \SellingPartnerApiV5\Model\MerchantFulfillmentV0\AdditionalSellerInput $stored_value stored_value
      *
      * @return self
      */

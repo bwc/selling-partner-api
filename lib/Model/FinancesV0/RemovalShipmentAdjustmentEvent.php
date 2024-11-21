@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FinancesV0;
+namespace SellingPartnerApiV5\Model\FinancesV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * RemovalShipmentAdjustmentEvent Class Doc Comment
  *
  * @category Class
  * @description A financial adjustment event for FBA liquidated inventory. A positive value indicates money owed to Amazon by the buyer (for example, when the charge was incorrectly calculated as less than it should be). A negative value indicates a full or partial refund owed to the buyer (for example, when the buyer receives damaged items or fewer items than ordered).
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -63,7 +63,7 @@ class RemovalShipmentAdjustmentEvent extends BaseModel implements ModelInterface
         'merchant_order_id' => 'string',
         'order_id' => 'string',
         'transaction_type' => 'string',
-        'removal_shipment_item_adjustment_list' => '\SellingPartnerApi\Model\FinancesV0\RemovalShipmentItemAdjustment[]'
+        'removal_shipment_item_adjustment_list' => '\SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentItemAdjustment[]'
     ];
 
     /**
@@ -284,7 +284,7 @@ class RemovalShipmentAdjustmentEvent extends BaseModel implements ModelInterface
     /**
      * Gets removal_shipment_item_adjustment_list
      *
-     * @return \SellingPartnerApi\Model\FinancesV0\RemovalShipmentItemAdjustment[]|null
+     * @return \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentItemAdjustment[]|null
      */
     public function getRemovalShipmentItemAdjustmentList()
     {
@@ -294,7 +294,7 @@ class RemovalShipmentAdjustmentEvent extends BaseModel implements ModelInterface
     /**
      * Sets removal_shipment_item_adjustment_list
      *
-     * @param \SellingPartnerApi\Model\FinancesV0\RemovalShipmentItemAdjustment[]|null $removal_shipment_item_adjustment_list A comma-delimited list of Removal shipmentItemAdjustment details for FBA inventory.
+     * @param \SellingPartnerApiV5\Model\FinancesV0\RemovalShipmentItemAdjustment[]|null $removal_shipment_item_adjustment_list A comma-delimited list of Removal shipmentItemAdjustment details for FBA inventory.
      *
      * @return self
      */

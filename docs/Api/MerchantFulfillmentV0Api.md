@@ -1,4 +1,4 @@
-# SellingPartnerApi\MerchantFulfillmentV0Api
+# SellingPartnerApiV5\MerchantFulfillmentV0Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 ## `cancelShipment()`
 
 ```php
-cancelShipment($shipment_id): \SellingPartnerApi\Model\MerchantFulfillmentV0\CancelShipmentResponse
+cancelShipment($shipment_id): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CancelShipmentResponse
 ```
 
 
@@ -37,16 +37,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
 $shipment_id = 'shipment_id_example'; // string | The Amazon-defined shipment identifier for the shipment to cancel.
 
 try {
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\CancelShipmentResponse**](../Model/MerchantFulfillmentV0/CancelShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CancelShipmentResponse**](../Model/MerchantFulfillmentV0/CancelShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 ## `cancelShipmentOld()`
 
 ```php
-cancelShipmentOld($shipment_id): \SellingPartnerApi\Model\MerchantFulfillmentV0\CancelShipmentResponse
+cancelShipmentOld($shipment_id): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CancelShipmentResponse
 ```
 
 
@@ -101,16 +101,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
 $shipment_id = 'shipment_id_example'; // string | The Amazon-defined shipment identifier for the shipment to cancel.
 
 try {
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\CancelShipmentResponse**](../Model/MerchantFulfillmentV0/CancelShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CancelShipmentResponse**](../Model/MerchantFulfillmentV0/CancelShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 ## `createShipment()`
 
 ```php
-createShipment($body): \SellingPartnerApi\Model\MerchantFulfillmentV0\CreateShipmentResponse
+createShipment($body): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CreateShipmentResponse
 ```
 
 
@@ -165,17 +165,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
-$body = new \SellingPartnerApi\Model\MerchantFulfillmentV0\CreateShipmentRequest(); // \SellingPartnerApi\Model\MerchantFulfillmentV0\CreateShipmentRequest
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
+$body = new \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CreateShipmentRequest(); // \SellingPartnerApiV5\Model\MerchantFulfillmentV0\CreateShipmentRequest
 
 try {
     $result = $apiInstance->createShipment($body);
@@ -189,11 +189,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\CreateShipmentRequest**](../Model/MerchantFulfillmentV0/CreateShipmentRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CreateShipmentRequest**](../Model/MerchantFulfillmentV0/CreateShipmentRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\CreateShipmentResponse**](../Model/MerchantFulfillmentV0/CreateShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\CreateShipmentResponse**](../Model/MerchantFulfillmentV0/CreateShipmentResponse.md)
 
 ### HTTP request headers
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 ## `getAdditionalSellerInputs()`
 
 ```php
-getAdditionalSellerInputs($body): \SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse
+getAdditionalSellerInputs($body): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse
 ```
 
 
@@ -229,17 +229,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
-$body = new \SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest(); // \SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
+$body = new \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest(); // \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest
 
 try {
     $result = $apiInstance->getAdditionalSellerInputs($body);
@@ -253,11 +253,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsResponse.md)
 
 ### HTTP request headers
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 ## `getAdditionalSellerInputsOld()`
 
 ```php
-getAdditionalSellerInputsOld($body): \SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse
+getAdditionalSellerInputsOld($body): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse
 ```
 
 
@@ -293,17 +293,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
-$body = new \SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest(); // \SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
+$body = new \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest(); // \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest
 
 try {
     $result = $apiInstance->getAdditionalSellerInputsOld($body);
@@ -317,11 +317,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsRequest**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetAdditionalSellerInputsResponse**](../Model/MerchantFulfillmentV0/GetAdditionalSellerInputsResponse.md)
 
 ### HTTP request headers
 
@@ -335,7 +335,7 @@ Name | Type | Description  | Notes
 ## `getEligibleShipmentServices()`
 
 ```php
-getEligibleShipmentServices($body): \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse
+getEligibleShipmentServices($body): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse
 ```
 
 
@@ -357,17 +357,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
-$body = new \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest(); // \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
+$body = new \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest(); // \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest
 
 try {
     $result = $apiInstance->getEligibleShipmentServices($body);
@@ -381,11 +381,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesResponse.md)
 
 ### HTTP request headers
 
@@ -399,7 +399,7 @@ Name | Type | Description  | Notes
 ## `getEligibleShipmentServicesOld()`
 
 ```php
-getEligibleShipmentServicesOld($body): \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse
+getEligibleShipmentServicesOld($body): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse
 ```
 
 
@@ -421,17 +421,17 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
-$body = new \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest(); // \SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
+$body = new \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest(); // \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest
 
 try {
     $result = $apiInstance->getEligibleShipmentServicesOld($body);
@@ -445,11 +445,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesRequest**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetEligibleShipmentServicesResponse**](../Model/MerchantFulfillmentV0/GetEligibleShipmentServicesResponse.md)
 
 ### HTTP request headers
 
@@ -463,7 +463,7 @@ Name | Type | Description  | Notes
 ## `getShipment()`
 
 ```php
-getShipment($shipment_id): \SellingPartnerApi\Model\MerchantFulfillmentV0\GetShipmentResponse
+getShipment($shipment_id): \SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetShipmentResponse
 ```
 
 
@@ -485,16 +485,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\MerchantFulfillmentV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\MerchantFulfillmentV0Api($config);
 $shipment_id = 'shipment_id_example'; // string | The Amazon-defined shipment identifier for the shipment.
 
 try {
@@ -513,7 +513,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\MerchantFulfillmentV0\GetShipmentResponse**](../Model/MerchantFulfillmentV0/GetShipmentResponse.md)
+[**\SellingPartnerApiV5\Model\MerchantFulfillmentV0\GetShipmentResponse**](../Model/MerchantFulfillmentV0/GetShipmentResponse.md)
 
 ### HTTP request headers
 

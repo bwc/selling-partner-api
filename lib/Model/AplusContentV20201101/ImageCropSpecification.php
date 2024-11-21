@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ImageCropSpecification Class Doc Comment
  *
  * @category Class
  * @description The instructions for optionally cropping an image. If no cropping is desired, set the dimensions to the original image size. If the image is cropped and no offset values are provided, then the coordinates of the top left corner of the cropped image, relative to the original image, are defaulted to (0,0).
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,8 +58,8 @@ class ImageCropSpecification extends BaseModel implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'size' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageDimensions',
-        'offset' => '\SellingPartnerApi\Model\AplusContentV20201101\ImageOffsets'
+        'size' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageDimensions',
+        'offset' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ImageOffsets'
     ];
 
     /**
@@ -146,7 +146,7 @@ class ImageCropSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets size
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageDimensions
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageDimensions
      */
     public function getSize()
     {
@@ -156,7 +156,7 @@ class ImageCropSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets size
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageDimensions $size size
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageDimensions $size size
      *
      * @return self
      */
@@ -169,7 +169,7 @@ class ImageCropSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Gets offset
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ImageOffsets|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ImageOffsets|null
      */
     public function getOffset()
     {
@@ -179,7 +179,7 @@ class ImageCropSpecification extends BaseModel implements ModelInterface, ArrayA
     /**
      * Sets offset
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ImageOffsets|null $offset offset
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ImageOffsets|null $offset offset
      *
      * @return self
      */

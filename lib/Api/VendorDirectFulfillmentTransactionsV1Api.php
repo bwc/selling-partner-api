@@ -4,7 +4,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -24,19 +24,19 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Api;
+namespace SellingPartnerApiV5\Api;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
-use SellingPartnerApi\ApiException;
-use SellingPartnerApi\ObjectSerializer;
+use SellingPartnerApiV5\ApiException;
+use SellingPartnerApiV5\ObjectSerializer;
 
 /**
  * VendorDirectFulfillmentTransactionsV1Api Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
 {
@@ -45,9 +45,9 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
      *
      * @param  string $transaction_id Previously returned in the response to the POST request of a specific transaction. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse
+     * @return \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse
      */
     public function getTransactionStatus($transaction_id)
     {
@@ -60,9 +60,9 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
      *
      * @param  string $transaction_id Previously returned in the response to the POST request of a specific transaction. (required)
      *
-     * @throws \SellingPartnerApi\ApiException on non-2xx response
+     * @throws \SellingPartnerApiV5\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTransactionStatusWithHttpInfo($transaction_id)
     {
@@ -111,80 +111,80 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 400:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 401:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 403:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 404:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 415:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 429:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 500:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
                 case 503:
-                    if ('\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
+                    if ('\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
-                    return ObjectSerializer::deserialize($content, '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
+                    return ObjectSerializer::deserialize($content, '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse', $response->getHeaders());
             }
 
-            $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse';
+            $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -199,7 +199,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -207,7 +207,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -215,7 +215,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -223,7 +223,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -231,7 +231,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 415:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -247,7 +247,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -255,7 +255,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -263,7 +263,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
                 case 503:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
+                        '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class VendorDirectFulfillmentTransactionsV1Api extends BaseApi
      */
     public function getTransactionStatusAsyncWithHttpInfo($transaction_id)
     {
-        $returnType = '\SellingPartnerApi\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse';
+        $returnType = '\SellingPartnerApiV5\Model\VendorDirectFulfillmentTransactionsV1\GetTransactionResponse';
         $request = $this->getTransactionStatusRequest($transaction_id);
         $signedRequest = $this->config->signRequest(
             $request

@@ -1,4 +1,4 @@
-# SellingPartnerApi\ShipmentInvoicingV0Api
+# SellingPartnerApiV5\ShipmentInvoicingV0Api
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getInvoiceStatus()`
 
 ```php
-getInvoiceStatus($shipment_id): \SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse
+getInvoiceStatus($shipment_id): \SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse
 ```
 
 
@@ -32,16 +32,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShipmentInvoicingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShipmentInvoicingV0Api($config);
 $shipment_id = 'shipment_id_example'; // string | The shipment identifier for the shipment.
 
 try {
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse**](../Model/ShipmentInvoicingV0/GetInvoiceStatusResponse.md)
+[**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetInvoiceStatusResponse**](../Model/ShipmentInvoicingV0/GetInvoiceStatusResponse.md)
 
 ### HTTP request headers
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 ## `getShipmentDetails()`
 
 ```php
-getShipmentDetails($shipment_id): \SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse
+getShipmentDetails($shipment_id): \SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse
 ```
 
 
@@ -96,16 +96,16 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShipmentInvoicingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShipmentInvoicingV0Api($config);
 $shipment_id = 'shipment_id_example'; // string | The identifier for the shipment. Get this value from the FBAOutboundShipmentStatus notification. For information about subscribing to notifications, see the [Notifications API Use Case Guide](https://developer-docs.amazon.com/sp-api/docs/notifications-api-v1-use-case-guide).
 
 try {
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse**](../Model/ShipmentInvoicingV0/GetShipmentDetailsResponse.md)
+[**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\GetShipmentDetailsResponse**](../Model/ShipmentInvoicingV0/GetShipmentDetailsResponse.md)
 
 ### HTTP request headers
 
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 ## `submitInvoice()`
 
 ```php
-submitInvoice($shipment_id, $body): \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse
+submitInvoice($shipment_id, $body): \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse
 ```
 
 
@@ -160,18 +160,18 @@ The `x-amzn-RateLimit-Limit` response header returns the usage plan rate limits 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // See README for more information on the Configuration object's options
-$config = new SellingPartnerApi\Configuration([
+$config = new SellingPartnerApiV5\Configuration([
     "lwaClientId" => "<LWA client ID>",
     "lwaClientSecret" => "<LWA client secret>",
     "lwaRefreshToken" => "<LWA refresh token>",
     "awsAccessKeyId" => "<AWS access key ID>",
     "awsSecretAccessKey" => "<AWS secret access key>",
-    "endpoint" => SellingPartnerApi\Endpoint::NA  // or another endpoint from lib/Endpoints.php
+    "endpoint" => SellingPartnerApiV5\Endpoint::NA  // or another endpoint from lib/Endpoints.php
 ]);
 
-$apiInstance = new SellingPartnerApi\Api\ShipmentInvoicingV0Api($config);
+$apiInstance = new SellingPartnerApiV5\Api\ShipmentInvoicingV0Api($config);
 $shipment_id = 'shipment_id_example'; // string | The identifier for the shipment.
-$body = new \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest(); // \SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest
+$body = new \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest(); // \SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest
 
 try {
     $result = $apiInstance->submitInvoice($shipment_id, $body);
@@ -186,11 +186,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **shipment_id** | **string**| The identifier for the shipment. |
- **body** | [**\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceRequest**](../Model/ShipmentInvoicingV0/SubmitInvoiceRequest.md)|  |
+ **body** | [**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceRequest**](../Model/ShipmentInvoicingV0/SubmitInvoiceRequest.md)|  |
 
 ### Return type
 
-[**\SellingPartnerApi\Model\ShipmentInvoicingV0\SubmitInvoiceResponse**](../Model/ShipmentInvoicingV0/SubmitInvoiceResponse.md)
+[**\SellingPartnerApiV5\Model\ShipmentInvoicingV0\SubmitInvoiceResponse**](../Model/ShipmentInvoicingV0/SubmitInvoiceResponse.md)
 
 ### HTTP request headers
 

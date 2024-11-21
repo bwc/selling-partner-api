@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\CatalogItemsV20220401;
+namespace SellingPartnerApiV5\Model\CatalogItemsV20220401;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * ItemSummaryByMarketplace Class Doc Comment
  *
  * @category Class
  * @description Summary details of an Amazon catalog item for the indicated Amazon marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -62,9 +62,9 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
         'adult_product' => 'bool',
         'autographed' => 'bool',
         'brand' => 'string',
-        'browse_classification' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemBrowseClassification',
+        'browse_classification' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemBrowseClassification',
         'color' => 'string',
-        'contributors' => '\SellingPartnerApi\Model\CatalogItemsV20220401\ItemContributor[]',
+        'contributors' => '\SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemContributor[]',
         'item_classification' => 'string',
         'item_name' => 'string',
         'manufacturer' => 'string',
@@ -384,7 +384,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
     /**
      * Gets browse_classification
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemBrowseClassification|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemBrowseClassification|null
      */
     public function getBrowseClassification()
     {
@@ -394,7 +394,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
     /**
      * Sets browse_classification
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemBrowseClassification|null $browse_classification browse_classification
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemBrowseClassification|null $browse_classification browse_classification
      *
      * @return self
      */
@@ -430,7 +430,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
     /**
      * Gets contributors
      *
-     * @return \SellingPartnerApi\Model\CatalogItemsV20220401\ItemContributor[]|null
+     * @return \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemContributor[]|null
      */
     public function getContributors()
     {
@@ -440,7 +440,7 @@ class ItemSummaryByMarketplace extends BaseModel implements ModelInterface, Arra
     /**
      * Sets contributors
      *
-     * @param \SellingPartnerApi\Model\CatalogItemsV20220401\ItemContributor[]|null $contributors Individual contributors to the creation of an item, such as the authors or actors.
+     * @param \SellingPartnerApiV5\Model\CatalogItemsV20220401\ItemContributor[]|null $contributors Individual contributors to the creation of an item, such as the authors or actors.
      *
      * @return self
      */

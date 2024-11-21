@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,16 +25,16 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\AplusContentV20201101;
+namespace SellingPartnerApiV5\Model\AplusContentV20201101;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * GetContentDocumentResponse Class Doc Comment
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -57,8 +57,8 @@ class GetContentDocumentResponse extends BaseModel implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'warnings' => '\SellingPartnerApi\Model\AplusContentV20201101\Error[]',
-        'content_record' => '\SellingPartnerApi\Model\AplusContentV20201101\ContentRecord'
+        'warnings' => '\SellingPartnerApiV5\Model\AplusContentV20201101\Error[]',
+        'content_record' => '\SellingPartnerApiV5\Model\AplusContentV20201101\ContentRecord'
     ];
 
     /**
@@ -170,7 +170,7 @@ class GetContentDocumentResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets warnings
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null
      */
     public function getWarnings()
     {
@@ -180,7 +180,7 @@ class GetContentDocumentResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets warnings
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\Error[]|null $warnings A set of messages to the user, such as warnings or comments.
      *
      * @return self
      */
@@ -195,7 +195,7 @@ class GetContentDocumentResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Gets content_record
      *
-     * @return \SellingPartnerApi\Model\AplusContentV20201101\ContentRecord
+     * @return \SellingPartnerApiV5\Model\AplusContentV20201101\ContentRecord
      */
     public function getContentRecord()
     {
@@ -205,7 +205,7 @@ class GetContentDocumentResponse extends BaseModel implements ModelInterface, Ar
     /**
      * Sets content_record
      *
-     * @param \SellingPartnerApi\Model\AplusContentV20201101\ContentRecord $content_record content_record
+     * @param \SellingPartnerApiV5\Model\AplusContentV20201101\ContentRecord $content_record content_record
      *
      * @return self
      */

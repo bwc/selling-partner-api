@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\OrdersV0;
+namespace SellingPartnerApiV5\Model\OrdersV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * MarketplaceTaxInfo Class Doc Comment
  *
  * @category Class
  * @description Tax information about the marketplace.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,7 +58,7 @@ class MarketplaceTaxInfo extends BaseModel implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tax_classifications' => '\SellingPartnerApi\Model\OrdersV0\TaxClassification[]'
+        'tax_classifications' => '\SellingPartnerApiV5\Model\OrdersV0\TaxClassification[]'
     ];
 
     /**
@@ -137,7 +137,7 @@ class MarketplaceTaxInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Gets tax_classifications
      *
-     * @return \SellingPartnerApi\Model\OrdersV0\TaxClassification[]|null
+     * @return \SellingPartnerApiV5\Model\OrdersV0\TaxClassification[]|null
      */
     public function getTaxClassifications()
     {
@@ -147,7 +147,7 @@ class MarketplaceTaxInfo extends BaseModel implements ModelInterface, ArrayAcces
     /**
      * Sets tax_classifications
      *
-     * @param \SellingPartnerApi\Model\OrdersV0\TaxClassification[]|null $tax_classifications A list of tax classifications that apply to the order.
+     * @param \SellingPartnerApiV5\Model\OrdersV0\TaxClassification[]|null $tax_classifications A list of tax classifications that apply to the order.
      *
      * @return self
      */

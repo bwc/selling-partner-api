@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**schema** | [**\SellingPartnerApi\Model\MessagingV1\GetSchemaResponse**](GetSchemaResponse.md) |  | [optional]
+**schema** | [**\SellingPartnerApiV5\Model\MessagingV1\GetSchemaResponse**](GetSchemaResponse.md) |  | [optional]
 
 [[MessagingV1 Models]](../) [[API list]](../../Api) [[README]](../../../README.md)

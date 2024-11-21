@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * NonPartneredSmallParcelDataInput Class Doc Comment
  *
  * @category Class
  * @description Information that you provide to Amazon about a Small Parcel shipment shipped by a carrier that has not partnered with Amazon.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -59,7 +59,7 @@ class NonPartneredSmallParcelDataInput extends BaseModel implements ModelInterfa
       */
     protected static $openAPITypes = [
         'carrier_name' => 'string',
-        'package_list' => '\SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelPackageInput[]'
+        'package_list' => '\SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelPackageInput[]'
     ];
 
     /**
@@ -172,7 +172,7 @@ class NonPartneredSmallParcelDataInput extends BaseModel implements ModelInterfa
     /**
      * Gets package_list
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelPackageInput[]
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelPackageInput[]
      */
     public function getPackageList()
     {
@@ -182,7 +182,7 @@ class NonPartneredSmallParcelDataInput extends BaseModel implements ModelInterfa
     /**
      * Sets package_list
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\NonPartneredSmallParcelPackageInput[] $package_list A list of package tracking information.
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\NonPartneredSmallParcelPackageInput[] $package_list A list of package tracking information.
      *
      * @return self
      */

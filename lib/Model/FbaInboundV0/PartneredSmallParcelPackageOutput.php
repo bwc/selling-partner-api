@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  */
 
 /**
@@ -25,17 +25,17 @@
  * Do not edit the class manually.
  */
 
-namespace SellingPartnerApi\Model\FbaInboundV0;
+namespace SellingPartnerApiV5\Model\FbaInboundV0;
 use ArrayAccess;
-use SellingPartnerApi\Model\BaseModel;
-use SellingPartnerApi\Model\ModelInterface;
+use SellingPartnerApiV5\Model\BaseModel;
+use SellingPartnerApiV5\Model\ModelInterface;
 
 /**
  * PartneredSmallParcelPackageOutput Class Doc Comment
  *
  * @category Class
  * @description Dimension, weight, and shipping information for the package.
- * @package  SellingPartnerApi
+ * @package  SellingPartnerApiV5
  * @group 
  * @implements \ArrayAccess<TKey, TValue>
  * @template TKey int|null
@@ -58,11 +58,11 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'dimensions' => '\SellingPartnerApi\Model\FbaInboundV0\Dimensions',
-        'weight' => '\SellingPartnerApi\Model\FbaInboundV0\Weight',
+        'dimensions' => '\SellingPartnerApiV5\Model\FbaInboundV0\Dimensions',
+        'weight' => '\SellingPartnerApiV5\Model\FbaInboundV0\Weight',
         'carrier_name' => 'string',
         'tracking_id' => 'string',
-        'package_status' => '\SellingPartnerApi\Model\FbaInboundV0\PackageStatus'
+        'package_status' => '\SellingPartnerApiV5\Model\FbaInboundV0\PackageStatus'
     ];
 
     /**
@@ -176,7 +176,7 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
     /**
      * Gets dimensions
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Dimensions
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Dimensions
      */
     public function getDimensions()
     {
@@ -186,7 +186,7 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
     /**
      * Sets dimensions
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Dimensions $dimensions dimensions
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Dimensions $dimensions dimensions
      *
      * @return self
      */
@@ -199,7 +199,7 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
     /**
      * Gets weight
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\Weight
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\Weight
      */
     public function getWeight()
     {
@@ -209,7 +209,7 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
     /**
      * Sets weight
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\Weight $weight weight
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\Weight $weight weight
      *
      * @return self
      */
@@ -268,7 +268,7 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
     /**
      * Gets package_status
      *
-     * @return \SellingPartnerApi\Model\FbaInboundV0\PackageStatus
+     * @return \SellingPartnerApiV5\Model\FbaInboundV0\PackageStatus
      */
     public function getPackageStatus()
     {
@@ -278,7 +278,7 @@ class PartneredSmallParcelPackageOutput extends BaseModel implements ModelInterf
     /**
      * Sets package_status
      *
-     * @param \SellingPartnerApi\Model\FbaInboundV0\PackageStatus $package_status package_status
+     * @param \SellingPartnerApiV5\Model\FbaInboundV0\PackageStatus $package_status package_status
      *
      * @return self
      */
